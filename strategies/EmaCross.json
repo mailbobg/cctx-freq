@@ -1,0 +1,8 @@
+{
+  "strategy_name": "EmaCross",
+  "params": {
+    "buy": {"ema_period": 600},
+    "sell": {"exit_threshold": 2.0},
+    "roi": {}, "stoploss": {}, "trailing": {}
+  }
+}

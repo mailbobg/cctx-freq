@@ -1,0 +1,17 @@
+{
+  "x7": {
+    "description": "NFI X7，100 币动态选币"
+  },
+  "x8": {
+    "description": "NFI X8，100 币动态选币"
+  },
+  "x12": {
+    "description": "E0V1EN + 崩盘保护，118 币现货"
+  },
+  "e0v1en": {
+    "description": "E0V1EN 原版，118 币现货"
+  },
+  "c-hold": {
+    "description": "C：BTC/ETH 每周按趋势和波动率调仓（参考记录，未过预注册标准 1）"
+  }
+}

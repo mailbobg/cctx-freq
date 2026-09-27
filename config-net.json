@@ -1,0 +1,34 @@
+{
+  "exchange": {
+    "ccxt_config": {
+      "timeout": 30000,
+      "urls": {
+        "api": {
+          "public": "https://data-api.binance.vision/api/v3"
+        }
+      },
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "spot"
+          ]
+        }
+      }
+    },
+    "ccxt_async_config": {
+      "timeout": 30000,
+      "urls": {
+        "api": {
+          "public": "https://data-api.binance.vision/api/v3"
+        }
+      },
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "spot"
+          ]
+        }
+      }
+    }
+  }
+}

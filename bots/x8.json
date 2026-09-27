@@ -1,0 +1,14 @@
+{
+  "add_config_files": [
+    "common.json",
+    "family-nfi.json",
+    "secrets.json",
+    "local-network.json"
+  ],
+  "strategy": "NostalgiaForInfinityX8",
+  "bot_name": "nfi-x8",
+  "db_url": "sqlite:///user_data/tradesv3.nfi-x8.dryrun.sqlite",
+  "api_server": {
+    "listen_port": 8081
+  }
+}

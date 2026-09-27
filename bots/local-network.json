@@ -1,0 +1,39 @@
+{
+  "_comment": "This Mac only: api.binance.com is unreliable from here (TLS resets), so market data comes from Binance's official market-data mirror. Dry-run only - order endpoints still point at api.binance.com. Use {} on the VPS.",
+  "exchange": {
+    "ccxt_config": {
+      "urls": {
+        "api": {
+          "public": "https://data-api.binance.vision/api/v3",
+          "ws": {
+            "spot": "wss://data-stream.binance.vision/ws"
+          }
+        }
+      },
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "spot"
+          ]
+        }
+      }
+    },
+    "ccxt_async_config": {
+      "urls": {
+        "api": {
+          "public": "https://data-api.binance.vision/api/v3",
+          "ws": {
+            "spot": "wss://data-stream.binance.vision/ws"
+          }
+        }
+      },
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "spot"
+          ]
+        }
+      }
+    }
+  }
+}

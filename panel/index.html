@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCXT-FR 控制台</title>
+<style>
+  @font-face { font-family: "Chakra"; src: url(/static/chakra-petch-latin-400-normal.woff2) format("woff2"); font-weight: 400; }
+  @font-face { font-family: "Chakra"; src: url(/static/chakra-petch-latin-600-normal.woff2) format("woff2"); font-weight: 600; }
+  @font-face { font-family: "Plex"; src: url(/static/ibm-plex-mono-latin-400-normal.woff2) format("woff2"); font-weight: 400; }
+  @font-face { font-family: "Plex"; src: url(/static/ibm-plex-mono-latin-500-normal.woff2) format("woff2"); font-weight: 500; }
+
+  :root {
+    --bg: #0c0d0b;
+    --rack: #141512;
+    --rack-hi: #1b1c18;
+    --edge: #2a2b25;
+    --edge-hi: #3a3b33;
+    --ink: #ebe6d6;
+    --dim: #bdb7a3;
+    --faint: #9a9482;
+    --amber: #ffb224;
+    --amber-dim: #7a5a1c;
+    --green: #8dff6a;
+    --red: #ff5a3c;
+    --blue: #7cc4ff;
+    --display: "Chakra", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    --mono: "Plex", "SF Mono", Menlo, "PingFang SC", monospace;
+    --body: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0; min-height: 100vh; color: var(--ink); font: 14px/1.5 var(--body);
+    background:
+      radial-gradient(1200px 500px at 85% -10%, rgba(255,178,36,.07), transparent 60%),
+      linear-gradient(var(--bg), var(--bg));
+  }
+  /* engineering grid + grain */
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size: 32px 32px;
+    mask-image: linear-gradient(to bottom, #000 0%, transparent 85%);
+  }
+  body::after {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0; opacity: .06;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+  .wrap { position: relative; z-index: 1; max-width: 1240px; margin: 0 auto; padding: 28px 28px 48px; }
+
+  /* ---------- masthead ---------- */
+  .mast { display: grid; grid-template-columns: 1fr auto; gap: 24px; align-items: end;
+    border-bottom: 1px solid var(--edge); padding-bottom: 18px; }
+  .brand { font-family: var(--display); font-weight: 600; letter-spacing: .04em; font-size: 30px; line-height: 1; }
+  .brand b { color: var(--amber); font-weight: 600; }
+  .brand small { display: block; margin-top: 8px; font: 12px var(--mono); letter-spacing: .16em; color: var(--dim); }
+  .clocks { display: flex; gap: 26px; font-family: var(--mono); text-align: right; }
+  .clock span { display: block; font-size: 11px; letter-spacing: .18em; color: var(--dim); }
+  .clock b { font-weight: 500; font-size: 18px; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+  /* ---------- readouts strip ---------- */
+  .strip { display: grid; grid-template-columns: repeat(5, 1fr) auto; margin-top: 18px;
+    border: 1px solid var(--edge); background: var(--rack); }
+  .cell { padding: 12px 16px; border-right: 1px solid var(--edge); min-width: 0; }
+  .cell:last-child { border-right: 0; }
+  .lbl { font: 11px var(--mono); letter-spacing: .16em; color: var(--dim); text-transform: uppercase; }
+  .val { font: 500 22px var(--mono); font-variant-numeric: tabular-nums; margin-top: 2px; white-space: nowrap; }
+  .val small { font-size: 13px; color: var(--dim); margin-left: 4px; }
+  .pos { color: var(--green); } .neg { color: var(--red); } .amb { color: var(--amber); }
+  .master { display: flex; gap: 8px; align-items: center; padding: 10px 14px; }
+
+  /* ---------- rack modules ---------- */
+  .rack { margin-top: 26px; display: flex; flex-direction: column; gap: 14px; }
+  .unit { position: relative; background: linear-gradient(180deg, var(--rack-hi), var(--rack));
+    border: 1px solid var(--edge); border-left: 3px solid var(--edge-hi);
+    opacity: 0; transform: translateY(8px); animation: rise .5s cubic-bezier(.2,.7,.2,1) forwards; }
+  .unit.on { border-left-color: var(--amber); }
+  .unit.fault { border-left-color: var(--red); }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  /* screw heads */
+  .unit::before, .unit::after { content: ""; position: absolute; top: 10px; width: 7px; height: 7px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #4a4a42, #1d1d19); box-shadow: inset 0 0 0 1px #0006; }
+  .unit::before { right: 10px; } .unit::after { right: 10px; top: auto; bottom: 10px; }
+
+  .row { display: grid; grid-template-columns: 250px 1fr 210px 190px; align-items: stretch; }
+  .id { padding: 16px 18px; border-right: 1px dashed var(--edge); display: flex; flex-direction: column; gap: 6px; }
+  .name { display: flex; align-items: center; gap: 10px; font: 600 20px var(--display); letter-spacing: .03em; }
+  .led { width: 10px; height: 10px; border-radius: 50%; background: #333; box-shadow: inset 0 0 0 1px #0008; flex: none; }
+  .led.on { background: var(--green); box-shadow: 0 0 10px var(--green), 0 0 2px #fff inset; animation: pulse 2.4s ease-in-out infinite; }
+  .led.boot { background: var(--amber); box-shadow: 0 0 10px var(--amber); animation: blink .6s steps(2) infinite; }
+  .led.fault { background: var(--red); box-shadow: 0 0 10px var(--red); animation: blink 1s steps(2) infinite; }
+  @keyframes pulse { 50% { box-shadow: 0 0 4px var(--green), 0 0 2px #fff inset; } }
+  @keyframes blink { 50% { opacity: .25; } }
+  .strat { font: 12px var(--mono); color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .desc { font-size: 12.5px; color: var(--dim); }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 2px; }
+  .tag { font: 11px var(--mono); letter-spacing: .1em; padding: 1px 6px; border: 1px solid #55564c; color: var(--dim); }
+  .tag.live { border-color: var(--red); color: var(--red); }
+  .tag.state { color: var(--amber); border-color: var(--amber-dim); }
+
+  .metrics { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .metric { padding: 16px 16px 14px; border-right: 1px solid var(--edge); }
+  .metric .val { font-size: 26px; }
+  .metric .val.big { font-size: 28px; }
+  .sub { font: 12px var(--mono); color: var(--dim); margin-top: 2px; }
+
+  .chart { padding: 14px 16px; border-right: 1px solid var(--edge); display: flex; flex-direction: column; }
+  .bars { flex: 1; display: flex; align-items: center; gap: 3px; min-height: 58px; position: relative; }
+  .bars::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1px dashed var(--edge-hi); }
+  .bar { flex: 1; height: 100%; position: relative; }
+  .bar i { position: absolute; left: 0; right: 0; border-radius: 1px; }
+  .bar i.up { bottom: 50%; background: var(--green); opacity: .85; }
+  .bar i.dn { top: 50%; background: var(--red); opacity: .85; }
+  .bar i.zero { top: calc(50% - 1px); height: 2px; background: var(--faint); opacity: .5; }
+
+  .controls { padding: 14px 30px 14px 16px; display: flex; flex-direction: column; gap: 10px; justify-content: center; }
+  .switch { display: flex; align-items: center; gap: 12px; cursor: pointer; user-select: none; border: 0; background: none;
+    color: var(--ink); padding: 0; font: 12px var(--mono); letter-spacing: .15em; }
+  .switch .track { width: 58px; height: 26px; border-radius: 3px; background: #0a0a09; border: 1px solid var(--edge-hi);
+    position: relative; box-shadow: inset 0 2px 6px #000a; transition: border-color .2s; }
+  .switch .knob { position: absolute; top: 2px; left: 2px; width: 26px; height: 20px; border-radius: 2px;
+    background: linear-gradient(180deg, #5b5a50, #34342e); box-shadow: 0 1px 0 #ffffff22 inset, 0 2px 4px #000c;
+    transition: left .25s cubic-bezier(.3,1.4,.5,1), background .2s; }
+  .switch.on .track { border-color: var(--amber-dim); }
+  .switch.on .knob { left: 28px; background: linear-gradient(180deg, #ffc557, #d98d00); }
+  .switch:disabled { opacity: .5; cursor: wait; }
+  .btns { display: flex; gap: 6px; flex-wrap: wrap; }
+  .btn { font: 12px var(--mono); letter-spacing: .08em; padding: 5px 10px; color: var(--ink); background: #0f100e;
+    border: 1px solid var(--edge-hi); cursor: pointer; text-decoration: none; transition: color .15s, border-color .15s; }
+  .btn:hover { color: var(--amber); border-color: var(--amber-dim); }
+  .btn.solid { color: #120d02; background: var(--amber); border-color: var(--amber); }
+  .btn.solid:hover { color: #120d02; filter: brightness(1.1); }
+  .btn.warn:hover { color: var(--red); border-color: var(--red); }
+
+  /* drawer: positions + log */
+  .drawer { border-top: 1px dashed var(--edge); display: grid; grid-template-columns: 1fr; }
+  .positions { display: flex; gap: 8px; flex-wrap: wrap; padding: 10px 18px; }
+  .pos-chip { font: 12px var(--mono); padding: 4px 10px; background: #0e0f0c; border: 1px solid var(--edge); display: flex; gap: 10px; }
+  .pos-chip b { font-weight: 500; }
+  .pos-chip span { color: var(--dim); }
+  .empty { font: 12px var(--mono); color: var(--dim); padding: 10px 18px; }
+  pre.log { margin: 0; padding: 12px 18px; max-height: 280px; overflow: auto; background: #080907;
+    font: 11px/1.55 var(--mono); color: #b9b39e; white-space: pre-wrap; word-break: break-all; border-top: 1px solid var(--edge); }
+  pre.log .e { color: var(--red); } pre.log .w { color: var(--amber); }
+
+  /* confirm dialog */
+  dialog { background: var(--rack-hi); color: var(--ink); border: 1px solid var(--amber-dim); padding: 22px 24px; min-width: 320px;
+    box-shadow: 0 20px 60px #000c; }
+  dialog::backdrop { background: rgba(0,0,0,.6); backdrop-filter: blur(2px); }
+  dialog h3 { margin: 0 0 6px; font: 600 18px var(--display); }
+  dialog p { margin: 0 0 18px; color: var(--dim); font-size: 13px; }
+  dialog .btns { justify-content: flex-end; }
+
+  .liqmsg { font: 12px var(--mono); line-height: 1.5; }
+  .foot { margin-top: 28px; font: 12px var(--mono); color: var(--dim); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .flash { animation: flash .8s ease-out; }
+  @keyframes flash { from { text-shadow: 0 0 12px var(--amber); } }
+  .toast { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); background: var(--red); color: #fff;
+    font: 12px var(--mono); padding: 8px 14px; display: none; z-index: 5; }
+
+
+  /* ---------- odometer digits ---------- */
+  .tk { display: inline-flex; align-items: baseline; white-space: nowrap; transition: color .9s ease, text-shadow .9s ease; }
+  .tk .c { display: inline-block; }
+  .tk .d { display: inline-block; position: relative; overflow: hidden; height: 1.15em; line-height: 1.15em; vertical-align: bottom; }
+  .tk .d .roll { display: flex; flex-direction: column; will-change: transform; }
+  .tk .d .roll > i { font-style: normal; height: 1.15em; line-height: 1.15em; text-align: center; }
+  .tk .d.up .roll { animation: rollUp .55s cubic-bezier(.25,1.3,.4,1) both; }
+  .tk .d.dn .roll { animation: rollDn .55s cubic-bezier(.25,1.3,.4,1) both; }
+  @keyframes rollUp { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+  @keyframes rollDn { from { transform: translateY(-50%); } to { transform: translateY(0); } }
+  .tk.glow-up { color: var(--green) !important; text-shadow: 0 0 14px rgba(141,255,106,.55); transition: none; }
+  .tk.glow-dn { color: var(--red) !important; text-shadow: 0 0 14px rgba(255,90,60,.55); transition: none; }
+  .bar i { transition: height .6s cubic-bezier(.2,.8,.2,1); }
+  .led, .unit { transition: border-color .4s, background .4s, box-shadow .4s; }
+
+
+  /* ---------- C signal module ---------- */
+  .signal { margin-top: 26px; border: 1px solid var(--edge); background:
+      repeating-linear-gradient(135deg, rgba(255,178,36,.035) 0 10px, transparent 10px 20px), var(--rack);
+    display: grid; grid-template-columns: 260px 1fr 230px; opacity: 0; animation: rise .5s .1s cubic-bezier(.2,.7,.2,1) forwards; }
+  .signal > div { padding: 16px 18px; }
+  .signal .head { border-right: 1px dashed var(--edge); display: flex; flex-direction: column; gap: 6px; }
+  .signal .title { font: 600 18px var(--display); letter-spacing: .03em; }
+  .signal .title b { color: var(--amber); font-weight: 600; }
+  .signal .note { font-size: 12.5px; color: var(--dim); line-height: 1.6; }
+  .alloc { display: flex; height: 34px; border: 1px solid var(--edge-hi); background: #0a0a09; overflow: hidden; }
+  .alloc span { display: flex; align-items: center; justify-content: center; font: 500 13px var(--mono); color: #120d02;
+    transition: flex-grow .8s cubic-bezier(.2,.8,.2,1); min-width: 0; overflow: hidden; white-space: nowrap; }
+  .alloc .btc { background: var(--amber); } .alloc .eth { background: var(--blue); } .alloc .usdt { background: #3a3b33; color: var(--ink); }
+  .coins { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
+  .coin { border: 1px solid var(--edge); background: #0e0f0c; padding: 8px 10px; }
+  .coin .lbl { display: flex; justify-content: space-between; }
+  .coin .val { font-size: 20px; }
+  .onoff { font: 10px var(--mono); letter-spacing: .15em; padding: 0 5px; border: 1px solid var(--edge-hi); }
+  .onoff.on { color: var(--green); border-color: #3c6b2c; } .onoff.off { color: var(--red); border-color: #6b2c22; }
+  .signal .side { border-left: 1px solid var(--edge); display: flex; flex-direction: column; gap: 10px; }
+  .hist { display: flex; gap: 3px; height: 54px; align-items: stretch; }
+  .hist div { flex: 1; display: flex; flex-direction: column-reverse; background: #0a0a09; }
+  .hist i { display: block; transition: height .6s; } .hist i.b { background: var(--amber); } .hist i.e { background: var(--blue); }
+  .change { font: 11px var(--mono); color: var(--amber); }
+
+  @media (max-width: 1020px) {
+    .row { grid-template-columns: 1fr 1fr; }
+    .id { grid-column: 1 / -1; border-right: 0; border-bottom: 1px dashed var(--edge); }
+    .metrics { grid-column: 1 / -1; border-bottom: 1px solid var(--edge); }
+    .strip { grid-template-columns: repeat(3, 1fr); }
+    .master { grid-column: 1 / -1; border-top: 1px solid var(--edge); }
+    .signal { grid-template-columns: 1fr; } .signal .head, .signal .side { border: 0; }
+  }
+  @media (max-width: 560px) {
+    .wrap { padding: 18px 16px 36px; }
+    .mast { grid-template-columns: 1fr; }
+    .clocks { justify-content: flex-start; text-align: left; }
+    .strip { grid-template-columns: repeat(2, 1fr); }
+    .row { grid-template-columns: 1fr; }
+    .chart { border-right: 0; border-bottom: 1px solid var(--edge); }
+    .metric .val { font-size: 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } .unit { opacity: 1; transform: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <div class="brand">CCXT<b>—</b>FR 交易控制台<small>FREQTRADE BOT RACK · 127.0.0.1:8090</small></div>
+    <div class="clocks">
+      <div class="clock"><span>北京</span><b id="clk-bj" class="tk" data-noglow="1"></b></div>
+      <div class="clock"><span>UTC</span><b id="clk-utc" class="tk" data-noglow="1"></b></div>
+    </div>
+  </header>
+
+  <section class="strip">
+    <div class="cell"><div class="lbl">运行中</div><div class="val" id="s-run"><span class="tk"></span><small></small></div></div>
+    <div class="cell"><div class="lbl">持仓</div><div class="val" id="s-open"><span class="tk"></span></div></div>
+    <div class="cell"><div class="lbl">总盈亏 USDT</div><div class="val" id="s-pnl"><span class="tk"></span></div></div>
+    <div class="cell"><div class="lbl">行情线路</div><div class="val" id="s-net1"><span class="tk"></span><small></small></div></div>
+    <div class="cell"><div class="lbl">交易接口</div><div class="val" id="s-net2"><span class="tk"></span><small></small></div></div>
+    <div class="cell master">
+      <button class="btn solid" onclick="ask('all','start','全部启动','按顺序逐个启动所有机器人，每个等上一个的接口连通后再启动。')">全部启动</button>
+      <button class="btn warn" onclick="ask('all','stop','全部停止','停止所有机器人。持仓会保留在数据库里，重新启动后继续管理。')">全部停止</button>
+    </div>
+  </section>
+
+  <section class="signal" id="csig">
+    <div class="head">
+      <div class="lbl">每周持仓信号 · C</div>
+      <div class="title">BTC <b>/</b> ETH 风险管理持有</div>
+      <div class="note">每周日收盘判断，周一开盘调仓。30 天上涨才持有，按波动率定仓位（年化 60%，单币最多 50%），目标变化超过 5 个百分点才调。</div>
+      <div class="tags"><span class="tag live" id="c-verdict">未通过预注册标准 1 · 仅作参考</span></div>
+    </div>
+    <div>
+      <div class="lbl" id="c-decided">本周目标仓位</div>
+      <div class="alloc" style="margin-top:8px"><span class="btc" id="c-bar-btc"></span><span class="eth" id="c-bar-eth"></span><span class="usdt" id="c-bar-usdt"></span></div>
+      <div class="coins">
+        <div class="coin"><div class="lbl">BTC <span class="onoff" id="c-btc-on"></span></div><div class="val"><span class="tk" id="c-btc-w"></span><small>%</small></div><div class="sub" id="c-btc-sub"></div></div>
+        <div class="coin"><div class="lbl">ETH <span class="onoff" id="c-eth-on"></span></div><div class="val"><span class="tk" id="c-eth-w"></span><small>%</small></div><div class="sub" id="c-eth-sub"></div></div>
+        <div class="coin"><div class="lbl">USDT</div><div class="val"><span class="tk" id="c-usdt-w"></span><small>%</small></div><div class="sub" id="c-change"></div></div>
+      </div>
+    </div>
+    <div class="side">
+      <div><div class="lbl">下次判断（周日收盘）</div><div class="val"><span class="tk" id="c-countdown"></span></div><div class="sub" id="c-trade"></div></div>
+      <div><div class="lbl">最近 13 周仓位</div><div class="hist" id="c-hist"></div></div>
+      <div class="sub" id="c-bt" style="line-height:1.6"></div>
+    </div>
+  </section>
+
+  <section class="rack" id="rack"></section>
+
+  <footer class="foot">
+    <span id="updated">正在读取…</span>
+    <span>停止只停进程，不会平仓 · 看护：意外退出会自动拉起（10 分钟内最多 3 次）</span>
+  </footer>
+</div>
+
+<dialog id="dlg">
+  <h3 id="dlg-t"></h3>
+  <p id="dlg-p"></p>
+  <div class="btns">
+    <button class="btn" onclick="dlg.close()">取消</button>
+    <button class="btn solid" id="dlg-ok">确定</button>
+  </div>
+</dialog>
+<div class="toast" id="toast"></div>
+
+<script src="/static/panel.js"></script>
+</body>
+</html>

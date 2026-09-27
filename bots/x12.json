@@ -1,0 +1,14 @@
+{
+  "add_config_files": [
+    "common.json",
+    "family-spot118.json",
+    "secrets.json",
+    "local-network.json"
+  ],
+  "strategy": "E0V1ENX12",
+  "bot_name": "x12",
+  "db_url": "sqlite:///user_data/tradesv3.x12-spot.dryrun.sqlite",
+  "api_server": {
+    "listen_port": 8082
+  }
+}
