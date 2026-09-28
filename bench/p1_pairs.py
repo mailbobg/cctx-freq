@@ -6,6 +6,7 @@ candles and all fills at the next hourly open. Data from p1_fetch.py (user_data/
 Usage:
   python user_data/bench/p1_pairs.py            # per-year, halves, full, fee×2, top-3-pairs-removed, grid, look-ahead check
   python user_data/bench/p1_pairs.py quick      # full window only
+  python user_data/bench/p1_pairs.py coint      # pre-registered variant (a): cointegration-based pair selection
 """
 
 import json
@@ -34,6 +35,12 @@ class Params:
     fee: float = 0.0005
     slip: float = 0.0002
     start_equity: float = 10_000.0
+    selection: str = "distance"       # "distance" (main spec) or "coint" (pre-registered variant a)
+    coint_p: float = 0.05
+
+
+_SEL_CACHE: dict = {}                 # (t, form_days, selection, n_pairs, corr_min) -> selected pairs; past data only
+USE_CACHE = True
 
 
 @dataclass
@@ -77,7 +84,18 @@ def load():
 
 
 def select_pairs(close: pd.DataFrame, syms: list[str], t: pd.Timestamp, p: Params) -> list[dict]:
-    """Distance-method formation on the window [t − form_days, t): the n_pairs closest normalised price paths."""
+    """Formation on the window [t − form_days, t): distance method (main spec) or Engle–Granger cointegration
+    (variant a: the n_pairs lowest p-values below coint_p). Correlation filter applies to both."""
+    key = (t, p.form_days, p.selection, p.n_pairs, p.corr_min, p.coint_p)
+    if USE_CACHE and key in _SEL_CACHE:
+        return _SEL_CACHE[key]
+    out = _select_pairs(close, syms, t, p)
+    if USE_CACHE:
+        _SEL_CACHE[key] = out
+    return out
+
+
+def _select_pairs(close: pd.DataFrame, syms: list[str], t: pd.Timestamp, p: Params) -> list[dict]:
     win = close.loc[t - pd.Timedelta(days=p.form_days): t - H, [s for s in syms if s in close.columns]]
     win = win.loc[:, win.notna().mean() >= 0.95].ffill().dropna()
     if len(win) < p.form_days * 24 * 0.9 or win.shape[1] < 2:
@@ -92,8 +110,15 @@ def select_pairs(close: pd.DataFrame, syms: list[str], t: pd.Timestamp, p: Param
         for j in range(i + 1, n):
             if corr[i, j] < p.corr_min:
                 continue
-            dist = float(np.sum((norm[:, i] - norm[:, j]) ** 2))
-            cand.append((dist, i, j))
+            if p.selection == "coint":
+                from statsmodels.tsa.stattools import coint
+                pval = float(coint(logp[:, i], logp[:, j], trend="c", autolag=None, maxlag=4)[1])
+                if pval >= p.coint_p:
+                    continue
+                cand.append((pval, i, j))
+            else:
+                dist = float(np.sum((norm[:, i] - norm[:, j]) ** 2))
+                cand.append((dist, i, j))
     cand.sort()
     out = []
     for dist, i, j in cand[: p.n_pairs]:
@@ -124,11 +149,15 @@ def run(close: pd.DataFrame, open_: pd.DataFrame, funding: dict, universe: dict,
         v = frame.at[t, sym] if t in frame.index else np.nan
         return float(v)
 
+    def last_price(sym, t):
+        s = close[sym].loc[:t].dropna()
+        return float(s.iloc[-1]) if len(s) else np.nan
+
     def close_position(pos: Position, t_exec: pd.Timestamp, reason: str):
         nonlocal cash
         pa, pb = price(open_, pos.a, t_exec), price(open_, pos.b, t_exec)
-        if np.isnan(pa) or np.isnan(pb):                 # no open at t_exec (delisted mid-week): use last close
-            pa, pb = price(close, pos.a, t_exec - H), price(close, pos.b, t_exec - H)
+        if np.isnan(pa) or np.isnan(pb):                 # no open at t_exec (archive gap, delisting): last valid close
+            pa, pb = last_price(pos.a, t_exec), last_price(pos.b, t_exec)
         cost = (p.fee + p.slip) * (pos.units_a * pa + pos.units_b * pb)
         pnl = pos.side * (pos.units_a * (pa - pos.pa) - pos.units_b * (pb - pos.pb)) - cost - pos.funding - pos.costs
         cash += pnl
@@ -190,7 +219,7 @@ def run(close: pd.DataFrame, open_: pd.DataFrame, funding: dict, universe: dict,
                     if key in positions or len(positions) >= p.n_pairs:
                         continue
                     z = zw[key][i]
-                    if np.isnan(z) or abs(z) < p.entry_z:
+                    if np.isnan(z) or not (p.entry_z <= abs(z) < p.stop_z):
                         continue
                     pa, pb = price(open_, s["a"], nxt), price(open_, s["b"], nxt)
                     if np.isnan(pa) or np.isnan(pb):
@@ -257,25 +286,30 @@ def fmt(name: str, m: dict) -> str:
 
 def lookahead_check(close, open_, funding, universe, start, end, p, n=50) -> int:
     """Decisions on data truncated at random times must match the full run's decisions before those times."""
+    global USE_CACHE
+    USE_CACHE = False
     full = run(close, open_, funding, universe, start, end, p, record_events=True)
     rng = np.random.default_rng(1)
     hours = close.index[(close.index > pd.Timestamp(start, tz="UTC") + pd.Timedelta(days=90)) & (close.index < pd.Timestamp(end, tz="UTC"))]
     same = 0
     for T in rng.choice(hours, n, replace=False):
         T = pd.Timestamp(T)
-        cut = run(close.loc[:T], open_.loc[:T], funding, universe, start, str(T.date()), p, record_events=True)
+        cut = run(close.loc[:T], open_.loc[:T], funding, universe, start, T.strftime("%Y-%m-%d %H:%M"), p, record_events=True)
         f = [e for e in full.events if e[3] <= T - 2 * H]
         c = [e for e in cut.events if e[3] <= T - 2 * H and e[4] != "end"]
         same += f == c
+    USE_CACHE = True
     return same
 
 
 def main() -> None:
-    quick = len(sys.argv) > 1 and sys.argv[1] == "quick"
+    quick = "quick" in sys.argv[1:]
+    variant = "coint" if "coint" in sys.argv[1:] else "distance"
+    tag = "" if variant == "distance" else "_coint"
     close, open_, funding, universe = load()
     btc_daily = close["BTCUSDT"].resample("1D").last().pct_change()
-    p = Params()
-    results = {}
+    p = Params(selection=variant)
+    results = {"variant": variant}
     windows = {"2021-2026": ("2021-01-04", "2026-09-23")}
     if not quick:
         windows.update({str(y): (f"{y}-01-01", f"{y + 1}-01-01") for y in range(2021, 2026)})
@@ -293,12 +327,12 @@ def main() -> None:
             mean, lo, hi = monthly_ci(res.equity)
             results["monthly_ci"] = {"mean%": mean, "lo": lo, "hi": hi}
             print(f"  monthly mean {mean:+.2f}%  bootstrap 95% CI [{lo:+.2f}, {hi:+.2f}]")
-            res.trades.to_csv(OUT / "p1_trades_full.csv", index=False)
-            res.equity.to_csv(OUT / "p1_equity_full.csv")
+            res.trades.to_csv(OUT / f"p1_trades_full{tag}.csv", index=False)
+            res.equity.to_csv(OUT / f"p1_equity_full{tag}.csv")
     if quick:
         return
     print("\n== fee ×2")
-    m = metrics(run(close, open_, funding, universe, "2021-01-04", "2026-09-23", Params(fee=0.001)), btc_daily)
+    m = metrics(run(close, open_, funding, universe, "2021-01-04", "2026-09-23", Params(fee=0.001, selection=variant)), btc_daily)
     results["fee2"] = m
     print(fmt("fee2", m))
     print("\n== robustness grid (entry z × formation days), 2021-2026 return")
@@ -306,7 +340,7 @@ def main() -> None:
     for ez in (1.5, 2.0, 2.5):
         row = []
         for fd in (30, 60, 90):
-            r = metrics(run(close, open_, funding, universe, "2021-01-04", "2026-09-23", Params(entry_z=ez, form_days=fd)), btc_daily)
+            r = metrics(run(close, open_, funding, universe, "2021-01-04", "2026-09-23", Params(entry_z=ez, form_days=fd, selection=variant)), btc_daily)
             grid[f"z{ez}_f{fd}"] = r["return%"]
             row.append(f"z{ez} f{fd}: {r['return%']:+7.1f}% (DD {r['maxDD%']:.0f}%, n {r['trades']})")
         print("  " + " | ".join(row))
@@ -315,7 +349,7 @@ def main() -> None:
     same = lookahead_check(close, open_, funding, universe, "2021-01-04", "2026-09-23", p, n=50)
     results["lookahead_same"] = same
     print(f"  {same}/50 truncated reruns identical")
-    (OUT / "p1_results.json").write_text(json.dumps(results, indent=1, default=str))
+    (OUT / f"p1_results{tag}.json").write_text(json.dumps(results, indent=1, default=str))
 
 
 if __name__ == "__main__":

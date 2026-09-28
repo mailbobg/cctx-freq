@@ -158,15 +158,25 @@ def step_universe() -> None:
         print(" ", k, universe[k][:8], "…")
 
 
-def funding_via_server(sym: str, start: pd.Timestamp, end: pd.Timestamp) -> pd.DataFrame:
-    url = (f"https://fapi.binance.com/fapi/v1/fundingRate?symbol={sym}&startTime={int(start.timestamp() * 1000)}"
-           f"&endTime={int(end.timestamp() * 1000)}&limit=1000")
-    r = subprocess.run(SSH + [SERVER, f"curl -s -m 30 '{url}'"], capture_output=True, text=True, timeout=60)
-    rows = json.loads(r.stdout or "[]")
-    if not isinstance(rows, list):
-        return pd.DataFrame(columns=["time", "rate"])
-    return pd.DataFrame({"time": pd.to_datetime([x["fundingTime"] for x in rows], unit="ms", utc=True),
-                         "rate": [float(x["fundingRate"]) for x in rows]})
+def funding_via_server(symbols: list[str], start: pd.Timestamp, end: pd.Timestamp) -> dict[str, pd.DataFrame]:
+    """Funding rates from fapi through the server, all symbols in ONE ssh session (many quick ssh connections get
+    throttled by sshd). Returns {symbol: DataFrame(time, rate)}; symbols with no data are simply absent."""
+    a, b = int(start.timestamp() * 1000), int(end.timestamp() * 1000)
+    script = ("for s in " + " ".join(symbols) + "; do printf '%s\\t' \"$s\"; "
+              f"curl -s -m 30 -A 'Mozilla/5.0' 'https://fapi.binance.com/fapi/v1/fundingRate?symbol='\"$s\"'&startTime={a}&endTime={b}&limit=100'; "
+              "echo; sleep 0.2; done")
+    r = subprocess.run(SSH + [SERVER, script], capture_output=True, text=True, timeout=600)
+    out = {}
+    for line in r.stdout.splitlines():
+        sym, _, body = line.partition("\t")
+        try:
+            rows = json.loads(body)
+        except ValueError:
+            continue
+        if isinstance(rows, list) and rows:
+            out[sym] = pd.DataFrame({"time": pd.to_datetime([x["fundingTime"] for x in rows], unit="ms", utc=True),
+                                     "rate": [float(x["fundingRate"]) for x in rows]})
+    return out
 
 
 def step_hourly() -> None:
@@ -207,13 +217,14 @@ def step_hourly() -> None:
             unit = "us" if t.iloc[0] > 10**14 else "ms"
             fund.append(pd.DataFrame({"symbol": s, "time": pd.to_datetime(t, unit=unit, utc=True),
                                       "rate": f.iloc[:, 2].astype(float).to_numpy()}))
-        try:                                   # September 2026: no monthly funding archive yet
-            sept = funding_via_server(s, pd.Timestamp("2026-09-01", tz="UTC"), END)
-            if len(sept):
-                sept["symbol"] = s
-                fund.append(sept)
-        except Exception as e:  # noqa: BLE001
-            print("sept funding failed:", s, e, flush=True)
+    try:                                       # September 2026: no monthly funding archive yet
+        sept = funding_via_server(list(opens), pd.Timestamp("2026-09-01", tz="UTC"), END)
+        for s, df in sept.items():
+            df["symbol"] = s
+            fund.append(df)
+        print(f"september funding via server: {len(sept)} of {len(opens)} symbols", flush=True)
+    except Exception as e:  # noqa: BLE001
+        print("september funding failed:", e, flush=True)
     pd.DataFrame(opens).sort_index().to_parquet(ROOT / "hourly_open.parquet")
     pd.DataFrame(closes).sort_index().to_parquet(ROOT / "hourly_close.parquet")
     pd.DataFrame(qvs).sort_index().to_parquet(ROOT / "hourly_qv.parquet")
