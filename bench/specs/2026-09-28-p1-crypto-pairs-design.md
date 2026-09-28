@@ -34,6 +34,12 @@ taker fee 0.05% + slippage 0.02%; funding paid/received every 8 h on both legs f
 quote volume over the previous 30 days, excluding stablecoin/fiat bases and index/leveraged products, each with at least
 90 days of history. Data: data.binance.vision `futures/um` monthly 1h klines and funding rates, 2020-10 → 2026-09.
 
+*Scope clarification added 2026-09-28 before any backtest run:* Binance now lists perpetuals on tokenized stocks,
+commodities and FX (MSTR, QQQ, XAU, XAG, CL, SNDK, SK Hynix …). These are not crypto and are excluded by Binance's
+own `underlyingType` field (keep only `COIN`; 13 symbols dropped from the raw top-20 lists, all in 2025–26).
+Symbols delisted before that field existed are all crypto and stay. The monthly 1d archives end at 2026-08-31, so the
+three formation Mondays 2026-09-07/14/21 carry forward the 2026-08-31 universe (past information only).
+
 **Formation (every Monday 00:00 UTC).** For every pair of the 20 coins (190 pairs), over the previous 60 days of hourly
 closes: normalise each price to 1 at the window start; distance = sum of squared differences of the two normalised
 series (Gatev's distance method). Keep the 5 pairs with the smallest distance, provided their hourly log-return

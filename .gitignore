@@ -42,3 +42,4 @@ bench/**/*.csv.gz
 # --- local development mode (deploy/dev-panel.sh): databases and state ---
 dev/
 panel/state.dev.json
+data_p1/
