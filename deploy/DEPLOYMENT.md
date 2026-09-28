@@ -94,6 +94,31 @@ ssh -i ~/.ssh/ccxt_vps -o IdentitiesOnly=yes root@45.77.8.169
 - 回测、研究仍然在 Mac 上做；服务器只负责跑机器人。
 - 如果以后要把某个机器人搬回 Mac：先在服务器控制台停掉它，把它的 `tradesv3.*.sqlite` 拷回 Mac，再在 Mac 上启动。
 
+### 本地开发模式（在 Mac 上调试机器人或控制台）
+
+Mac 的 8080–8090 被通往服务器的隧道占用，本地调试用另一组端口：
+
+```bash
+~/Documents/07-Hero/CCXT-Fr/user_data/deploy/dev-panel.sh start     # 启动本地开发控制台
+~/Documents/07-Hero/CCXT-Fr/user_data/deploy/dev-panel.sh status
+~/Documents/07-Hero/CCXT-Fr/user_data/deploy/dev-panel.sh stop      # 停掉所有本地开发机器人和控制台
+```
+
+| | 服务器（经隧道） | 本地开发 |
+|---|---|---|
+| 控制台 | http://127.0.0.1:8090 | http://127.0.0.1:9090（顶部蓝色"本地开发"横条，标签页标题带【本地开发】） |
+| FreqUI | http://127.0.0.1:8089 | http://127.0.0.1:9089 |
+| 机器人接口 | 8080–8086 | 9080–9086（配置里的端口 + 1000，自动换算，不用改配置） |
+| 交易数据库 | 服务器上的 `tradesv3.*.sqlite` | `user_data/dev/tradesv3.<名字>.sqlite` |
+| 日志 | 服务器 `user_data/logs/` | `user_data/logs/dev/` |
+| 运行状态 | 服务器 `panel/state.json` | `panel/state.dev.json` |
+
+- 本地开发的机器人和服务器上的同名机器人互不影响：端口、数据库、状态文件都是分开的。
+- 本地依然用行情镜像（`bots/local-network.json`），因为这台 Mac 连不上币安交易接口；本地只适合跑模拟盘调试。
+- 实现：控制台的环境变量 `PANEL_PORT`、`FREQUI_PORT`、`PANEL_BOT_PORT_OFFSET`、`PANEL_ENV_LABEL`、`PANEL_STATE_FILE`，
+  由 `dev-panel.sh` 设置；服务器上不设这些变量，行为不变。
+- 回测、研究脚本不需要控制台，照常在 Mac 上直接运行。
+
 ---
 
 ## 4. 服务器上做过的初始化

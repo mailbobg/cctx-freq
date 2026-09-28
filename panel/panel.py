@@ -46,6 +46,16 @@ if RUNNER == "docker":
     from panel.docker_runner import DockerBackend, container_command
     docker = DockerBackend(local_user_data=str(ROOT / "user_data"))
 
+# Local development mode (deploy/dev-panel.sh): every bot's API port is shifted by PANEL_BOT_PORT_OFFSET, and each bot
+# gets its own database (user_data/dev/), log (logs/dev/) and panel state, so a local panel can run next to the SSH
+# tunnel to the server without touching the server's ports or the dry-run records.
+PORT_OFFSET = int(os.environ.get("PANEL_BOT_PORT_OFFSET", "0"))
+ENV_LABEL = os.environ.get("PANEL_ENV_LABEL", "")
+if os.environ.get("PANEL_STATE_FILE"):
+    STATE = Path(os.environ["PANEL_STATE_FILE"])
+BOT_LOGS = LOGS / "dev" if PORT_OFFSET else LOGS
+DEV_DB_DIR = ROOT / "user_data" / "dev"
+
 
 def raise_fd_limit(target: int = 2048) -> None:
     """Give the panel and its child bots room for concurrent exchange connections."""
@@ -93,8 +103,8 @@ def bots() -> dict[str, dict]:
             "config": f,
             "strategy": cfg["strategy"],
             "bot_name": cfg.get("bot_name", name),
-            "port": cfg.get("api_server", {}).get("listen_port"),
-            "db_url": cfg.get("db_url"),
+            "port": (cfg.get("api_server", {}).get("listen_port") or 0) + PORT_OFFSET,
+            "db_url": f"sqlite:///user_data/dev/tradesv3.{name}.sqlite" if PORT_OFFSET else cfg.get("db_url"),
             "max_trades": cfg.get("max_open_trades", _common().get("max_open_trades")),
             "description": meta.get(name, {}).get("description", ""),
             "runtime": cfg.get("runtime", "freqtrade"),
@@ -128,15 +138,49 @@ def shared_market_config() -> str:
     return str(path.relative_to(ROOT))
 
 
+def dev_config(bot: dict) -> str:
+    """Development-mode config for a bot (written under logs/dev/, no credentials inside), returned repo-relative.
+
+    freqtrade bots: an overlay passed as an extra -c (port, database, CORS for the dev FreqUI).
+    cross_venue_paper bots take a single --config: a copy of the bot's file with the overrides and absolute
+    add_config_files paths.
+    """
+    BOT_LOGS.mkdir(parents=True, exist_ok=True)
+    DEV_DB_DIR.mkdir(parents=True, exist_ok=True)
+    frequi = int(os.environ.get("FREQUI_PORT", "8089"))
+    cors = [f"http://127.0.0.1:{frequi}", f"http://localhost:{frequi}", f"http://127.0.0.1:{PORT}", f"http://localhost:{PORT}"]
+    if bot.get("runtime") == "cross_venue_paper":
+        cfg = json.loads(bot["config"].read_text())
+        cfg["add_config_files"] = [str((bot["config"].parent / f).resolve()) for f in cfg.get("add_config_files", [])]
+        cfg["db_url"] = bot["db_url"]
+        cfg.setdefault("api_server", {})["listen_port"] = bot["port"]
+    else:
+        cfg = {"db_url": bot["db_url"], "api_server": {"listen_port": bot["port"], "CORS_origins": cors}}
+    path = _dev_config_path(bot)
+    path.write_text(json.dumps(cfg, indent=2))
+    return str(path.relative_to(ROOT))
+
+
+def _dev_config_path(bot: dict) -> Path:
+    # cross_venue/service.py derives the repo root as the config's parents[2], so its file must sit at
+    # user_data/<dir>/<file>; freqtrade overlays have no such constraint
+    if bot.get("runtime") == "cross_venue_paper":
+        return DEV_DB_DIR / f"{bot['name']}.config.json"
+    return BOT_LOGS / f"{bot['name']}.config.json"
+
+
 def command_for_bot(bot: dict) -> list[str]:
     runtime = bot.get("runtime", "freqtrade")
     if runtime not in ("freqtrade", "cross_venue_paper"):
         raise ValueError(f"Unknown bot runtime: {runtime}")
     cfg = str(bot["config"].relative_to(ROOT))
     if runtime == "cross_venue_paper":
-        return [sys.executable, str(ROOT / "user_data/cross_venue/service.py"), "--config", cfg]
+        return [sys.executable, str(ROOT / "user_data/cross_venue/service.py"), "--config",
+                dev_config(bot) if PORT_OFFSET else cfg]
     shared=["-c",shared_market_config()] if bot.get('exchange','binance')=='binance' and bot.get('dry_run',True) else []
-    return [str(FREQTRADE), "trade", "-c", cfg, *shared, "--logfile", f"user_data/logs/{bot['name']}.log"]
+    dev = ["-c", dev_config(bot)] if PORT_OFFSET else []
+    logfile = f"user_data/logs/{'dev/' if PORT_OFFSET else ''}{bot['name']}.log"
+    return [str(FREQTRADE), "trade", "-c", cfg, *shared, *dev, "--logfile", logfile]
 
 
 def find_process(bot: dict) -> psutil.Process | None:
@@ -149,7 +193,8 @@ def find_process(bot: dict) -> psutil.Process | None:
         native = "trade" in cmd and any(c.endswith("freqtrade") for c in cmd)
         paper = any(c.endswith("cross_venue/service.py") for c in cmd)
         matched = paper if bot.get("runtime") == "cross_venue_paper" else native
-        if matched and (cfg in cmd or str(bot["config"]) in cmd):
+        dev_cfg = str(_dev_config_path(bot).relative_to(ROOT))
+        if matched and (cfg in cmd or str(bot["config"]) in cmd or (PORT_OFFSET and dev_cfg in cmd)):
             return p
     return None
 
@@ -183,7 +228,8 @@ def start_bot(name: str) -> None:
         if owner:
             raise HTTPException(409, f"端口 {bot['port']} 已被进程 {owner.pid}（{' '.join(owner.cmdline()[1:4])}）占用")
         LOGS.mkdir(exist_ok=True)
-        with open(LOGS / f"{name}.console.log", "ab") as console:
+        BOT_LOGS.mkdir(parents=True, exist_ok=True)
+        with open(BOT_LOGS / f"{name}.console.log", "ab") as console:
             subprocess.Popen(
                 command_for_bot(bot),
                 cwd=ROOT, stdout=console, stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL, start_new_session=True,
@@ -424,6 +470,11 @@ def index():
     html = (Path(__file__).parent / "index.html").read_text()
     html = html.replace('src="/static/panel.js"', f'src="/static/panel.js?v={v}"')
     html = html.replace("<head>", f'<head><meta name="ui-version" content="{v}">', 1)
+    if ENV_LABEL:   # e.g. local development: make it impossible to mistake this page for the server's panel
+        html = html.replace("<title>", f"<title>【{ENV_LABEL}】", 1)
+        html = html.replace("<body>", '<body><div style="position:sticky;top:0;z-index:10;background:#1f6feb;color:#fff;'
+                            'font:600 13px/1.4 var(--mono,monospace);padding:8px 16px;text-align:center;letter-spacing:.08em">'
+                            f'{ENV_LABEL} · 本机 127.0.0.1:{PORT} · 机器人端口 +{PORT_OFFSET} · 独立数据库 user_data/dev/</div>', 1)
     return HTMLResponse(html, headers={"Cache-Control": "no-store"})
 
 
@@ -618,7 +669,7 @@ def liquidate(name: str):
 
 @app.get("/api/bots/{name}/log", response_class=PlainTextResponse)
 def log(name: str, lines: int = 80):
-    f = LOGS / f"{name}.log"
+    f = BOT_LOGS / f"{name}.log"
     if name not in bots() or not f.exists():
         return ""
     with open(f, "rb") as fh:

@@ -38,3 +38,7 @@ bench/**/results/**/*.zip
 bench/**/results/**/*.meta.json
 bench/**/*.log
 bench/**/*.csv.gz
+
+# --- local development mode (deploy/dev-panel.sh): databases and state ---
+dev/
+panel/state.dev.json
