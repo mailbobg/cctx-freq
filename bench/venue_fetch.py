@@ -80,23 +80,21 @@ class Bybit:
                       if x["quoteCoin"] == "USDT" and x["contractType"] == "LinearPerpetual")
 
     def klines(self, sym: str, interval: str, start_ms: int, end_ms: int) -> list[list]:
-        """Ascending [t, o, h, l, c, v, qv] over [start, end] by paging forward (1000 per call)."""
-        out, cur = [], start_ms
-        while cur <= end_ms:
+        """Ascending [t, o, h, l, c, v, qv] over [start, end]. Bybit returns the NEWEST `limit` rows inside the
+        window, so page backwards with `end` until the window is covered."""
+        out, end = [], end_ms
+        while end > start_ms:
             d = get(f"{self.base}/v5/market/kline", {"category": "linear", "symbol": sym, "interval": interval,
-                                                      "start": cur, "end": end_ms, "limit": 1000})
-            rows = d["result"]["list"]
+                                                      "start": start_ms, "end": end, "limit": 1000})
+            rows = d["result"].get("list") or []
             if not rows:
                 break
-            rows = sorted(rows, key=lambda r: int(r[0]))
             out += [[int(r[0]), float(r[1]), float(r[2]), float(r[3]), float(r[4]), float(r[5]), float(r[6])] for r in rows]
-            nxt = int(rows[-1][0]) + 1
-            if nxt <= cur:
+            oldest = min(int(r[0]) for r in rows)
+            if oldest <= start_ms or len(rows) < 1000:
                 break
-            cur = nxt
-            if len(rows) < 1000:
-                break
-        return out
+            end = oldest - 1
+        return sorted({r[0]: r for r in out}.values(), key=lambda r: r[0])
 
     def funding(self, sym: str, start_ms: int, end_ms: int) -> list[tuple[int, float]]:
         out, end = [], end_ms
