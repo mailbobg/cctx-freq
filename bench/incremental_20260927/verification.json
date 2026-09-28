@@ -1,0 +1,26 @@
+{
+  "checks": {
+    "base_entry_times_matched": true,
+    "stress_entry_times_matched": true,
+    "all_trades_short_1x": true,
+    "blocked_gap_week_respected": true,
+    "unchanged_source_strategy": true
+  },
+  "trades_checked": 1390,
+  "tests": {
+    "new": 14,
+    "existing": 22
+  },
+  "funding_pages": 10,
+  "funding_events": 1008,
+  "independent_review": {
+    "verdict": "clean",
+    "critical": 0,
+    "important": 0,
+    "minor": 0,
+    "reviewed_head": "b8af02dbf",
+    "hourly_curves_reconstructed": 8,
+    "hours_per_curve": 23953,
+    "funding_cached_replay_equal": true
+  }
+}

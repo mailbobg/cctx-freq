@@ -1,0 +1,106 @@
+{
+  "verified_utc": "2026-09-27T14:04:46.453954+00:00",
+  "api_http_status": {
+    "show_config": 200,
+    "balance": 200,
+    "profit": 200,
+    "count": 200,
+    "status": 200,
+    "trades": 200,
+    "daily": 200,
+    "whitelist": 200,
+    "locks": 200,
+    "performance": 200
+  },
+  "login_inventory": [
+    "ccxt.e0v1en",
+    "ccxt.c-hold",
+    "ccxt.unlock-short",
+    "ccxt.funding-spread"
+  ],
+  "bots": [
+    {
+      "name": "x7",
+      "port": 8080,
+      "pid": null,
+      "api": "down",
+      "trading": null,
+      "dry_run": null,
+      "open_trades": 0,
+      "max_trades": 6
+    },
+    {
+      "name": "x8",
+      "port": 8081,
+      "pid": null,
+      "api": "down",
+      "trading": null,
+      "dry_run": null,
+      "open_trades": 0,
+      "max_trades": 6
+    },
+    {
+      "name": "x12",
+      "port": 8082,
+      "pid": null,
+      "api": "down",
+      "trading": null,
+      "dry_run": null,
+      "open_trades": 0,
+      "max_trades": 6
+    },
+    {
+      "name": "e0v1en",
+      "port": 8083,
+      "pid": 61179,
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "open_trades": 0,
+      "max_trades": 6
+    },
+    {
+      "name": "c-hold",
+      "port": 8084,
+      "pid": 53915,
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "open_trades": 0,
+      "max_trades": 2
+    },
+    {
+      "name": "unlock-short",
+      "port": 8085,
+      "pid": 7126,
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "open_trades": 0,
+      "max_trades": 1
+    },
+    {
+      "name": "funding-spread",
+      "port": 8086,
+      "pid": 21408,
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "open_trades": 0,
+      "max_trades": 1
+    }
+  ],
+  "funding_health": {
+    "status": "monitoring",
+    "note": "BTC: 预估资金费不足以覆盖开平仓成本与缓冲；ETH: 预估资金费不足以覆盖开平仓成本与缓冲",
+    "updated_ms": 1790517884477,
+    "faults": [],
+    "age_seconds": 1.828
+  },
+  "funding_equity": 10000.0,
+  "funding_open_portfolios": 0,
+  "paired_control": "stopbuy -> stopped, start -> running; dry_run preserved",
+  "root_redirect": "http://127.0.0.1:8089/?bot=funding-spread",
+  "regression_suite": "52/52 passing",
+  "browser": "Selected funding-spread; dashboard, trade page, balance and config render successfully"
+}

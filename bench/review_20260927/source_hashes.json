@@ -1,0 +1,17 @@
+{
+  "user_data/strategies/RiskHoldC.py": "b9b12549b20e06a1c3d6726ff7685344e4d3233fcc42b2a14e2ee8bd3cf4ca98",
+  "user_data/strategies/RiskHoldCPortfolio.py": "bf46fff1c67075be98d8a61e24cbc06eda69899db28dab90b79b5ebc5680f4c2",
+  "user_data/strategies/portfolio_risk.py": "cd9b2e7c5454dac2a9b8026ae371ebe3f065c382c473ffeaee2d8edfec53d0ad",
+  "user_data/strategies/E0V1EN.py": "6fbb805b7c252101c5c876bba0db6058c06d5dfb85e37c2bc1a3c922c593e702",
+  "user_data/strategies/E0V1ENPF.py": "8b147a88c85229eed8b6a4454051b28ae182a2d1e4518bab07eb0c9f2819e268",
+  "user_data/strategies/E0V1ENBounded.py": "e2279b8be69f63f1de377b0f0403e6ebac4841fcdeac68ceb4f6e90e0aa0701b",
+  "user_data/strategies/NostalgiaForInfinityX8.py": "9b13df0335fafc93c5bbb8418c06f8903c6d1d06195a1721a9265644eb0585db",
+  "user_data/strategies/NostalgiaForInfinityX8PF.py": "c52c2f77147859cc8ca125bca6ffffeb6e2e04d40f077d46203324135fda303b",
+  "user_data/strategies/NostalgiaForInfinityX8Budget.py": "385a6f05f5d4413369493e8d0a3959fd8317ff73ff874d982f8934cee4363e5f",
+  "user_data/strategies/phantom_fill.py": "af773507dc80214542fdb5446ae2f74484a3cea5a771ed43f91c82d7a1631f06",
+  "user_data/bench/mtm.py": "61ddeb82a12c0c87c830c21cb251b1bb8cedba1d6d93a0e41f25e7a461ff6c6e",
+  "user_data/bench/evaluate.py": "6087e2320b863e300ca2a41fe2283b306c42039e4269327b27fb40b216285c1e",
+  "user_data/bench/block_bootstrap.py": "1bf14d9f435ab5044e1997d2ff44d6d783145eb54a375f49f8a25cf6a94faeda",
+  "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+  "user_data/bots/common.json": "9a020d3d889e1a4f8b626c4fbe2048a977295c6aa9390ef0545aba7e0e34e3de"
+}

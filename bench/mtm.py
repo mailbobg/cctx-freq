@@ -5,6 +5,8 @@ losing positions open for months (DCA, "grinding") hides most of its risk that
 way. This script rebuilds the daily equity curve from the exported orders,
 valuing open positions at each day's close, and reports the real drawdown.
 
+Supports unleveraged long positions only; rejects shorts/leverage rather than
+reporting a spot cash-account reconstruction for futures.
 Usage: python user_data/bench/mtm.py <result.zip> [<result.zip> ...]
 """
 
@@ -33,20 +35,27 @@ def daily_closes(pairs, days: pd.DatetimeIndex) -> pd.DataFrame:
 
 
 def equity_curve(trades: pd.DataFrame, start_balance: float, days: pd.DatetimeIndex):
+    if ('is_short' in trades and trades['is_short'].any()) or ('leverage' in trades and (trades['leverage'] != 1).any()):
+        raise ValueError('This cash/holdings reconstruction supports unleveraged long positions only')
     closes = daily_closes(trades["pair"].unique(), days)
+    missing = set(trades['pair']) - set(closes.columns)
+    if missing:
+        raise ValueError(f'Missing daily prices: {sorted(missing)}')
     cash = pd.Series(0.0, index=days)
     pos = pd.DataFrame(0.0, index=days, columns=closes.columns)
     for _, t in trades.iterrows():
-        fee = t["fee_open"]
         for o in t["orders"]:
             day = pd.Timestamp(o["order_filled_timestamp"], unit="ms", tz="UTC").floor("D")
             if day < days[0]:
                 day = days[0]
+            # Backtest order.cost already includes an entry-style fee even on
+            # sells. Reconstruct raw notional, then charge each side once.
+            notional = o['amount'] * o['safe_price']
             if o["ft_order_side"] == "buy":
-                cash[day] -= o["cost"] * (1 + fee)
+                cash[day] -= notional * (1 + t['fee_open'])
                 pos.loc[day, t["pair"]] += o["amount"]
             else:
-                cash[day] += o["cost"] * (1 - fee)
+                cash[day] += notional * (1 - t['fee_close'])
                 pos.loc[day, t["pair"]] -= o["amount"]
     # funding fees (futures) are booked by freqtrade into profit_abs; add them as cash at trade close
     if "funding_fees" in trades.columns:
@@ -55,6 +64,8 @@ def equity_curve(trades: pd.DataFrame, start_balance: float, days: pd.DatetimeIn
                 cash[day] += fee
     cash = start_balance + cash.cumsum()
     pos = pos.cumsum()
+    if (closes.isna() & (pos.abs() > 1e-8)).any().any():
+        raise ValueError('Cannot value an open position without a daily price')
     holdings = (pos * closes).fillna(0.0)
     equity = cash + holdings.sum(axis=1)
     return equity, cash, holdings
@@ -69,7 +80,7 @@ def report(name: str, s: dict, trades: pd.DataFrame) -> None:
         tz="UTC",
     )
     equity, cash, holdings = equity_curve(trades, start, days)
-    peak = equity.cummax()
+    peak = equity.cummax().clip(lower=start)
     dd = equity / peak - 1
     worst = dd.idxmin()
     exposure = holdings.sum(axis=1) / equity

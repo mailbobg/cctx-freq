@@ -9,12 +9,16 @@ Run:  .venv/bin/python user_data/panel/panel.py      (on macOS a LaunchAgent sta
 
 import json
 import os
+import resource
 import signal
 import subprocess
 import sys
 import threading
 import time
 from pathlib import Path
+
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from panel.market_data import MarketDataGateway, install_routes
 
 import psutil
 import requests
@@ -34,6 +38,21 @@ STOP_GRACE = 40           # seconds before SIGKILL
 
 lock = threading.RLock()
 restarts: dict[str, list[float]] = {}
+market_data = MarketDataGateway()
+
+# PANEL_RUNNER=docker: bots run as containers (see panel/docker_runner.py); default: local processes
+RUNNER = os.environ.get("PANEL_RUNNER", "process")
+if RUNNER == "docker":
+    from panel.docker_runner import DockerBackend, container_command
+    docker = DockerBackend(local_user_data=str(ROOT / "user_data"))
+
+
+def raise_fd_limit(target: int = 2048) -> None:
+    """Give the panel and its child bots room for concurrent exchange connections."""
+    soft, hard = resource.getrlimit(resource.RLIMIT_NOFILE)
+    desired = target if hard == resource.RLIM_INFINITY else min(target, hard)
+    if desired > soft:
+        resource.setrlimit(resource.RLIMIT_NOFILE, (desired, hard))
 
 
 def load_state() -> dict:
@@ -78,6 +97,9 @@ def bots() -> dict[str, dict]:
             "db_url": cfg.get("db_url"),
             "max_trades": cfg.get("max_open_trades", _common().get("max_open_trades")),
             "description": meta.get(name, {}).get("description", ""),
+            "runtime": cfg.get("runtime", "freqtrade"),
+            "exchange": cfg.get("exchange",{}).get("name",_common().get("exchange",{}).get("name")),
+            "dry_run": cfg.get("dry_run",_common().get("dry_run",False)),
         }
     order = list(meta)
     return dict(sorted(out.items(), key=lambda kv: order.index(kv[0]) if kv[0] in order else 99))
@@ -88,12 +110,46 @@ def credentials() -> tuple[str, str]:
     return s["username"], s["password"]
 
 
+def shared_market_config() -> str:
+    if PORT==8090:
+        return 'user_data/bots/shared-market-data.json'
+    # Runtime-only, credential-free overlay for the existing custom PANEL_PORT option.
+    from tempfile import NamedTemporaryFile
+    cfg=json.loads((Path(__file__).parents[1]/'bots/shared-market-data.json').read_text())
+    for mode in ['ccxt_config','ccxt_async_config']:
+        urls=cfg['exchange'][mode]['urls']['api']
+        for name,url in urls.items():urls[name]=url.replace(':8090/',f':{PORT}/')
+    path=ROOT/'user_data/logs'/f'shared-market-data-{PORT}.json'
+    with lock:
+        path.parent.mkdir(parents=True,exist_ok=True)
+        with NamedTemporaryFile(mode='w',dir=path.parent,delete=False) as tmp:
+            json.dump(cfg,tmp);temp_path=tmp.name
+        os.replace(temp_path,path)
+    return str(path.relative_to(ROOT))
+
+
+def command_for_bot(bot: dict) -> list[str]:
+    runtime = bot.get("runtime", "freqtrade")
+    if runtime not in ("freqtrade", "cross_venue_paper"):
+        raise ValueError(f"Unknown bot runtime: {runtime}")
+    cfg = str(bot["config"].relative_to(ROOT))
+    if runtime == "cross_venue_paper":
+        return [sys.executable, str(ROOT / "user_data/cross_venue/service.py"), "--config", cfg]
+    shared=["-c",shared_market_config()] if bot.get('exchange','binance')=='binance' and bot.get('dry_run',True) else []
+    return [str(FREQTRADE), "trade", "-c", cfg, *shared, "--logfile", f"user_data/logs/{bot['name']}.log"]
+
+
 def find_process(bot: dict) -> psutil.Process | None:
     """The running freqtrade process for this bot, started by the panel or by hand with the same config."""
+    if RUNNER == "docker":
+        return docker.find(bot)
     cfg = str(bot["config"].relative_to(ROOT))
     for p in psutil.process_iter(["cmdline"]):
         cmd = p.info.get("cmdline") or []
-        if "trade" in cmd and any(c.endswith("freqtrade") for c in cmd) and (cfg in cmd or str(bot["config"]) in cmd):
+        native = "trade" in cmd and any(c.endswith("freqtrade") for c in cmd)
+        paper = any(c.endswith("cross_venue/service.py") for c in cmd)
+        matched = paper if bot.get("runtime") == "cross_venue_paper" else native
+        if matched and (cfg in cmd or str(bot["config"]) in cmd):
             return p
     return None
 
@@ -117,15 +173,21 @@ def start_bot(name: str) -> None:
     with lock:
         if find_process(bot):
             return
+        if RUNNER == "docker":
+            docker.start(bot, container_command(command_for_bot(bot), str(ROOT), sys.executable, str(FREQTRADE)))
+            state = load_state()
+            state[name] = {"want": "running", "since": time.time()}
+            save_state(state)
+            return
         owner = port_owner(bot["port"])
         if owner:
             raise HTTPException(409, f"端口 {bot['port']} 已被进程 {owner.pid}（{' '.join(owner.cmdline()[1:4])}）占用")
         LOGS.mkdir(exist_ok=True)
-        console = open(LOGS / f"{name}.console.log", "ab")
-        subprocess.Popen(
-            [str(FREQTRADE), "trade", "-c", str(bot["config"].relative_to(ROOT)), "--logfile", f"user_data/logs/{name}.log"],
-            cwd=ROOT, stdout=console, stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL, start_new_session=True,
-        )
+        with open(LOGS / f"{name}.console.log", "ab") as console:
+            subprocess.Popen(
+                command_for_bot(bot),
+                cwd=ROOT, stdout=console, stderr=subprocess.STDOUT, stdin=subprocess.DEVNULL, start_new_session=True,
+            )
         state = load_state()
         state[name] = {"want": "running", "since": time.time()}
         save_state(state)
@@ -137,7 +199,11 @@ def stop_bot(name: str) -> None:
         state = load_state()
         state[name] = {"want": "stopped", "since": time.time()}
         save_state(state)
-        p = find_process(bot)
+        p = None if RUNNER == "docker" else find_process(bot)
+    if RUNNER == "docker":
+        docker.stop(bot, STOP_GRACE)          # outside the lock: may take up to STOP_GRACE seconds
+        return
+    with lock:
         if not p:
             return
         p.send_signal(signal.SIGTERM)
@@ -173,9 +239,9 @@ def _prices(pairs: set[str]) -> dict[str, float]:
     if time.time() - _tickers["t"] > 60 or not pairs <= set(_tickers["px"]):
         try:
             syms = json.dumps(sorted(p.replace("/", "") for p in pairs), separators=(",", ":"))
-            r = requests.get("https://data-api.binance.vision/api/v3/ticker/price", params={"symbols": syms}, timeout=6)
-            r.raise_for_status()
-            _tickers.update(t=time.time(), px={f"{x['symbol'][:-4]}/USDT": float(x["price"]) for x in r.json()})
+            r = market_data.get('spot','ticker/price',[('symbols',syms)])
+            if r.status!=200:raise ValueError('public price unavailable')
+            _tickers.update(t=time.time(), px={f"{x['symbol'][:-4]}/USDT": float(x["price"]) for x in json.loads(r.body)})
         except Exception:
             pass
     return _tickers["px"]
@@ -191,6 +257,21 @@ def offline_stats(bot: dict) -> dict:
     if not path.exists():
         return {}
     con = sqlite3.connect(f"file:{path}?mode=ro", uri=True)
+    if bot.get("runtime") == "cross_venue_paper":
+        try:
+            row = con.execute("SELECT payload FROM state WHERE key='summary'").fetchone()
+        finally:
+            con.close()
+        if not row:
+            return {}
+        summary = json.loads(row[0])
+        return {"offline": True, "open_trades": summary["open_trades"], "max_trades": 1,
+                "closed_trades": summary["closed_trade_count"], "profit_closed": summary["profit_closed_coin"],
+                "profit_all": summary["profit_all_coin"], "winrate": summary["winrate"], "stake": "USDT",
+                "positions": [{"pair": p["pair"], "profit_pct": p["profit_ratio"]*100,
+                               "profit_abs": p["profit_abs"], "open_date": p["open_date"],
+                               "stake": p["stake_amount"], "tag": p["enter_tag"]} for p in summary["positions"]],
+                "note": "模拟服务已停止；权益与浮盈为最后一次采集估值", "daily": []}
     try:
         closed = con.execute("select close_profit_abs, close_date from trades where is_open = 0").fetchall()
         opened = con.execute("select pair, open_date, open_rate, amount, stake_amount from trades where is_open = 1").fetchall()
@@ -228,6 +309,10 @@ def status(bot: dict) -> dict:
     st = load_state().get(bot["name"], {})
     p = find_process(bot)
     out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description")}
+    out["runtime"] = bot.get("runtime", "freqtrade")
+    if out["runtime"] == "cross_venue_paper":
+        out["detail_url"] = f"http://127.0.0.1:{bot['port']}/"
+        out["portfolio_url"] = f"http://127.0.0.1:{bot['port']}/portfolio"
     liq = liquidations.get(bot["name"])
     if liq and (not liq.get("done") or time.time() - liq["started"] < 600):
         out["liq"] = liq
@@ -238,6 +323,20 @@ def status(bot: dict) -> dict:
         out["mem_mb"] = int(p.memory_info().rss / 2**20)
     try:
         cfg = bot_api(bot, "show_config")
+        if out["runtime"] == "cross_venue_paper":
+            summary = bot_api(bot, "portfolio")
+            daily = bot_api(bot, "daily?timescale=14&scope=portfolio")
+            out.update(api="up",trading=cfg.get("state"),dry_run=True,open_trades=summary["open_trades"],
+                       max_trades=1,closed_trades=summary["closed_trade_count"],
+                       profit_all=summary["profit_all_coin"],profit_closed=summary["profit_closed_coin"],
+                       winrate=summary["winrate"],stake="USDT",timeframe=f"{cfg['poll_seconds']}s",
+                       note=summary["health"].get("note", ""))
+            out["positions"]=[{"pair":p["pair"],"profit_pct":round(p["profit_ratio"]*100,2),
+                               "profit_abs":p["profit_abs"],"open_date":p["open_date"],
+                               "stake":p["stake_amount"],"tag":p["enter_tag"]} for p in summary["positions"]]
+            out["daily"]=[{"date":d["date"],"abs":d["abs_profit"],"trades":d["trade_count"]}
+                          for d in reversed(daily["data"])]
+            return out
         prof = bot_api(bot, "profit")
         cnt = bot_api(bot, "count")
         out.update(
@@ -287,6 +386,7 @@ def supervisor() -> None:
 
 
 app = FastAPI(title="CCXT-Fr panel")
+install_routes(app,market_data)
 app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
 
 _net = {"t": 0.0, "data": {}}
@@ -346,11 +446,10 @@ C_LOOKBACK, C_VOL_TARGET, C_CAP, C_BAND = 30, 0.60, 0.5, 0.05
 
 
 def _daily(symbol: str) -> list[tuple[int, float]]:
-    r = requests.get("https://data-api.binance.vision/api/v3/klines",
-                     params={"symbol": symbol, "interval": "1d", "limit": 200}, timeout=15)
-    r.raise_for_status()
+    r = market_data.get('spot','klines',[('symbol',symbol),('interval','1d'),('limit','200')])
+    if r.status!=200:raise ValueError('public daily candles unavailable')
     now_ms = time.time() * 1000
-    return [(k[0], float(k[4])) for k in r.json() if k[6] < now_ms]      # closed daily candles only
+    return [(k[0], float(k[4])) for k in json.loads(r.body) if k[6] < now_ms]      # closed daily candles only
 
 
 def _weights(closes: list[float]) -> dict:
@@ -419,6 +518,11 @@ def act(name: str, action: str):
             start_bot(n)
         else:
             raise HTTPException(400, "未知操作")
+        if action in ("start", "restart") and bots()[n].get("runtime") == "cross_venue_paper":
+            bot = bots()[n]
+            if not wait_api(bot, 30):
+                raise HTTPException(503, "模拟组合服务尚未就绪，请查看日志")
+            _bot_post(bot, "start")
     return {"ok": True}
 
 
@@ -536,6 +640,8 @@ def _frequi_logins() -> dict:
     user, pw = credentials()
     out = {}
     for i, b in enumerate(bots().values()):
+        if b.get("runtime", "freqtrade") not in ("freqtrade", "cross_venue_paper"):
+            continue
         url = f"http://127.0.0.1:{b['port']}"
         try:
             r = requests.post(f"{url}/api/v1/token/login", auth=(user, pw), timeout=4)
@@ -595,6 +701,7 @@ def frequi(path: str, bot: str | None = None):
 
 
 if __name__ == "__main__":
+    raise_fd_limit()
     threading.Thread(target=supervisor, daemon=True).start()
     threading.Thread(target=lambda: uvicorn.run(ui, host=HOST, port=FREQUI_PORT, log_level="warning"), daemon=True).start()
     uvicorn.run(app, host=HOST, port=PORT, log_level="warning")

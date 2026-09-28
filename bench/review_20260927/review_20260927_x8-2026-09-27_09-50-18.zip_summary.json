@@ -1,0 +1,418 @@
+{
+  "NostalgiaForInfinityX8PF": {
+    "trades": 177,
+    "profit_pct": 39.9497092126,
+    "MTM_DD_pct": -2.929938744390659,
+    "MTM_block7_pct": [
+      24.049059801493083,
+      58.31442897855404
+    ],
+    "MTM_block30_pct": [
+      24.984792044144882,
+      55.29524556810484
+    ],
+    "accounting_gap_USDT": 3.5629454941954464e-09,
+    "max_daily_exposure_pct": 27.608655063579846,
+    "by_entry_tag": [
+      {
+        "enter_tag": "1 ",
+        "count": 1,
+        "sum": 11.6859036
+      },
+      {
+        "enter_tag": "101 ",
+        "count": 3,
+        "sum": 208.80613705
+      },
+      {
+        "enter_tag": "102 ",
+        "count": 2,
+        "sum": 39.77716914
+      },
+      {
+        "enter_tag": "103 ",
+        "count": 2,
+        "sum": 158.6541043
+      },
+      {
+        "enter_tag": "120 ",
+        "count": 2,
+        "sum": 117.77752667000004
+      },
+      {
+        "enter_tag": "141 ",
+        "count": 11,
+        "sum": 574.84368946
+      },
+      {
+        "enter_tag": "141 142 ",
+        "count": 1,
+        "sum": 20.4006522
+      },
+      {
+        "enter_tag": "142 ",
+        "count": 6,
+        "sum": 175.84346361000001
+      },
+      {
+        "enter_tag": "143 ",
+        "count": 6,
+        "sum": 331.53727625
+      },
+      {
+        "enter_tag": "144 ",
+        "count": 8,
+        "sum": 400.50091407
+      },
+      {
+        "enter_tag": "145 ",
+        "count": 7,
+        "sum": 240.50643072
+      },
+      {
+        "enter_tag": "161 ",
+        "count": 3,
+        "sum": 35.15856833
+      },
+      {
+        "enter_tag": "163 ",
+        "count": 4,
+        "sum": 78.91049471
+      },
+      {
+        "enter_tag": "2 ",
+        "count": 4,
+        "sum": 125.42087072
+      },
+      {
+        "enter_tag": "2 6 ",
+        "count": 2,
+        "sum": 34.96370556
+      },
+      {
+        "enter_tag": "21 ",
+        "count": 2,
+        "sum": 50.82538405
+      },
+      {
+        "enter_tag": "3 ",
+        "count": 2,
+        "sum": 17.38952053
+      },
+      {
+        "enter_tag": "41 ",
+        "count": 1,
+        "sum": 21.215628
+      },
+      {
+        "enter_tag": "41 61 ",
+        "count": 1,
+        "sum": 60.007107
+      },
+      {
+        "enter_tag": "42 ",
+        "count": 5,
+        "sum": 70.40544731
+      },
+      {
+        "enter_tag": "42 62 ",
+        "count": 2,
+        "sum": 27.31265994
+      },
+      {
+        "enter_tag": "42 62 104 ",
+        "count": 1,
+        "sum": 67.47778822
+      },
+      {
+        "enter_tag": "42 63 ",
+        "count": 1,
+        "sum": 32.66252364
+      },
+      {
+        "enter_tag": "43 ",
+        "count": 1,
+        "sum": 20.19712362
+      },
+      {
+        "enter_tag": "44 ",
+        "count": 1,
+        "sum": 50.4507855
+      },
+      {
+        "enter_tag": "46 ",
+        "count": 3,
+        "sum": 67.29932178
+      },
+      {
+        "enter_tag": "47 ",
+        "count": 2,
+        "sum": 13.94230002
+      },
+      {
+        "enter_tag": "5 ",
+        "count": 1,
+        "sum": 11.41327408
+      },
+      {
+        "enter_tag": "6 ",
+        "count": 3,
+        "sum": -72.40196014999995
+      },
+      {
+        "enter_tag": "6 101 ",
+        "count": 1,
+        "sum": 39.85529545
+      },
+      {
+        "enter_tag": "6 102 ",
+        "count": 1,
+        "sum": 11.4206526
+      },
+      {
+        "enter_tag": "6 102 141 ",
+        "count": 1,
+        "sum": 27.80998602
+      },
+      {
+        "enter_tag": "61 ",
+        "count": 4,
+        "sum": 19.32687629
+      },
+      {
+        "enter_tag": "62 ",
+        "count": 9,
+        "sum": 139.22500822
+      },
+      {
+        "enter_tag": "62 144 ",
+        "count": 1,
+        "sum": 3.76883347
+      },
+      {
+        "enter_tag": "63 ",
+        "count": 9,
+        "sum": 158.59450398
+      },
+      {
+        "enter_tag": "64 ",
+        "count": 35,
+        "sum": 307.07374868
+      },
+      {
+        "enter_tag": "65 ",
+        "count": 28,
+        "sum": 294.91220662
+      }
+    ],
+    "source": "user_data/backtest_results/review_20260927_x8-2026-09-27_09-50-18.zip"
+  },
+  "NostalgiaForInfinityX8Budget": {
+    "trades": 174,
+    "profit_pct": 20.1825714878,
+    "MTM_DD_pct": -3.9059360714016833,
+    "MTM_block7_pct": [
+      5.175413020570217,
+      35.55525109879749
+    ],
+    "MTM_block30_pct": [
+      5.899009127304831,
+      36.357728607097286
+    ],
+    "accounting_gap_USDT": 7.97763277660124e-09,
+    "max_daily_exposure_pct": 35.65098189155565,
+    "by_entry_tag": [
+      {
+        "enter_tag": "1 ",
+        "count": 1,
+        "sum": 9.32207354
+      },
+      {
+        "enter_tag": "101 ",
+        "count": 3,
+        "sum": 167.43161078
+      },
+      {
+        "enter_tag": "102 ",
+        "count": 2,
+        "sum": 32.4015896
+      },
+      {
+        "enter_tag": "103 ",
+        "count": 2,
+        "sum": 127.1439549
+      },
+      {
+        "enter_tag": "120 ",
+        "count": 2,
+        "sum": 98.06148357999999
+      },
+      {
+        "enter_tag": "141 ",
+        "count": 11,
+        "sum": 476.30362193
+      },
+      {
+        "enter_tag": "141 142 ",
+        "count": 1,
+        "sum": 17.87583
+      },
+      {
+        "enter_tag": "142 ",
+        "count": 6,
+        "sum": 142.53078553
+      },
+      {
+        "enter_tag": "143 ",
+        "count": 6,
+        "sum": 270.74705121
+      },
+      {
+        "enter_tag": "144 ",
+        "count": 8,
+        "sum": 121.56089666999999
+      },
+      {
+        "enter_tag": "145 ",
+        "count": 7,
+        "sum": 194.03880322
+      },
+      {
+        "enter_tag": "161 ",
+        "count": 3,
+        "sum": 29.225705129999998
+      },
+      {
+        "enter_tag": "163 ",
+        "count": 4,
+        "sum": 63.95814068
+      },
+      {
+        "enter_tag": "2 ",
+        "count": 3,
+        "sum": 98.72793326
+      },
+      {
+        "enter_tag": "2 6 ",
+        "count": 2,
+        "sum": 27.9656112
+      },
+      {
+        "enter_tag": "21 ",
+        "count": 2,
+        "sum": 45.74471717
+      },
+      {
+        "enter_tag": "3 ",
+        "count": 2,
+        "sum": -311.42150067
+      },
+      {
+        "enter_tag": "41 ",
+        "count": 1,
+        "sum": 17.88147
+      },
+      {
+        "enter_tag": "41 61 ",
+        "count": 1,
+        "sum": 47.84155888
+      },
+      {
+        "enter_tag": "42 ",
+        "count": 5,
+        "sum": 73.71606536
+      },
+      {
+        "enter_tag": "42 62 ",
+        "count": 2,
+        "sum": 27.31265994
+      },
+      {
+        "enter_tag": "42 62 104 ",
+        "count": 1,
+        "sum": 54.34308162
+      },
+      {
+        "enter_tag": "42 63 ",
+        "count": 1,
+        "sum": 25.3572816
+      },
+      {
+        "enter_tag": "43 ",
+        "count": 1,
+        "sum": 16.27360791
+      },
+      {
+        "enter_tag": "44 ",
+        "count": 1,
+        "sum": 50.4507855
+      },
+      {
+        "enter_tag": "46 ",
+        "count": 3,
+        "sum": 58.785133779999995
+      },
+      {
+        "enter_tag": "47 ",
+        "count": 2,
+        "sum": 14.688804419999999
+      },
+      {
+        "enter_tag": "5 ",
+        "count": 1,
+        "sum": 9.16539549
+      },
+      {
+        "enter_tag": "6 ",
+        "count": 3,
+        "sum": -144.68072315999999
+      },
+      {
+        "enter_tag": "6 101 ",
+        "count": 1,
+        "sum": 32.22448724
+      },
+      {
+        "enter_tag": "6 102 ",
+        "count": 1,
+        "sum": 11.4206526
+      },
+      {
+        "enter_tag": "6 102 141 ",
+        "count": 1,
+        "sum": 22.48579341
+      },
+      {
+        "enter_tag": "61 ",
+        "count": 4,
+        "sum": 17.772017509999998
+      },
+      {
+        "enter_tag": "62 ",
+        "count": 9,
+        "sum": 110.43919096
+      },
+      {
+        "enter_tag": "62 144 ",
+        "count": 1,
+        "sum": 3.76883347
+      },
+      {
+        "enter_tag": "63 ",
+        "count": 9,
+        "sum": 121.15453698
+      },
+      {
+        "enter_tag": "64 ",
+        "count": 34,
+        "sum": -53.11645661999998
+      },
+      {
+        "enter_tag": "65 ",
+        "count": 27,
+        "sum": -110.64533584000003
+      }
+    ],
+    "source": "user_data/backtest_results/review_20260927_x8-2026-09-27_09-50-18.zip"
+  }
+}

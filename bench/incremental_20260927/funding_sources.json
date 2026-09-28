@@ -1,0 +1,72 @@
+[
+  {
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&endTime=1790467199999&limit=200",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.581481+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/bybit_BTC/page_00.json",
+    "sha256": "f3342a5a621ea0ee410ef1639394c111a82295cb9157958af187e8f6bfb7e73b"
+  },
+  {
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&endTime=1784707199999&limit=200",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.960235+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/bybit_BTC/page_01.json",
+    "sha256": "680840d4598ced3800a7cd7f309606506e6abaf42d682db6bd4cfb52ccde6575"
+  },
+  {
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ETHUSDT&endTime=1790467199999&limit=200",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.581451+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/bybit_ETH/page_00.json",
+    "sha256": "97c742e8725d497d59e4d773e042af0da97c75790fee91a77e9720421ee70d78"
+  },
+  {
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ETHUSDT&endTime=1784707199999&limit=200",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.960085+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/bybit_ETH/page_01.json",
+    "sha256": "bc6d1be757ab0b4ba1c260c6e48e882dcce02ddc2b9a70b70eb86308ef21ac3b"
+  },
+  {
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1790467200000&limit=100",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.565380+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/okx_BTC/page_00.json",
+    "sha256": "64ae5ffafea85954ad9b74ad1e1495229f31310c4b41e3b5cfd532a5b58088a0"
+  },
+  {
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1787587200000&limit=100",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.919432+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/okx_BTC/page_01.json",
+    "sha256": "6cb2b5240313e59a5cac44dd78c39a5fb29dd398277db095bb1f9fbdc09f5267"
+  },
+  {
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1784707200000&limit=100",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:29.320622+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/okx_BTC/page_02.json",
+    "sha256": "10ad3d9003c048138116c324ae134ea06db3ea77a107be15dc83d52139d8fdf2"
+  },
+  {
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1790467200000&limit=100",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.581571+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/okx_ETH/page_00.json",
+    "sha256": "cf860ff2dbee796de9052cfeb4e4b4ada9981f366ac452f0b6be77f5afb15037"
+  },
+  {
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1787587200000&limit=100",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:28.960106+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/okx_ETH/page_01.json",
+    "sha256": "317ab06c95fd0978075dbeed0a822e47dde518bde4dfcd613c741a7b66d56ef6"
+  },
+  {
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1784707200000&limit=100",
+    "status": 200,
+    "retrieved_at": "2026-09-27T15:34:29.330524+00:00",
+    "path": "/Users/bobmax/.codex/worktrees/new-strategy-research/CCXT-Fr/research/incremental_20260927/.cache/funding/okx_ETH/page_02.json",
+    "sha256": "142897d1cbdc2cdd7e968e2d8c5bfd87e834844a5f1893424b2767e56e3517c5"
+  }
+]

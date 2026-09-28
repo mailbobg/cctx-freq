@@ -1,0 +1,38 @@
+{
+  "c-hold": {
+    "strategy": "RiskHoldC",
+    "dry_run": true,
+    "state": "running",
+    "timeframe": "1d",
+    "order_types": {
+      "entry": "limit",
+      "exit": "limit",
+      "emergency_exit": "market",
+      "force_exit": "market",
+      "force_entry": "limit",
+      "stoploss": "market",
+      "stoploss_on_exchange": false,
+      "stoploss_on_exchange_interval": 60
+    }
+  },
+  "e0v1en": {
+    "strategy": "E0V1EN",
+    "dry_run": true,
+    "state": "running",
+    "timeframe": "5m",
+    "order_types": {
+      "entry": "limit",
+      "exit": "limit",
+      "emergency_exit": "market",
+      "force_exit": "market",
+      "force_entry": "limit",
+      "stoploss": "market",
+      "stoploss_on_exchange": false,
+      "stoploss_on_exchange_interval": 60
+    }
+  },
+  "x8": {
+    "api": "offline",
+    "action": "left stopped"
+  }
+}

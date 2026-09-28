@@ -1,0 +1,32 @@
+# --- market data, results, runtime state (large or reproducible) ---
+data/
+data_holdout/
+data_survivor/
+data_1m_raw/
+backtest_results/
+hyperopt_results/
+freqaimodels/
+plot/
+logs/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+__pycache__/
+*.pyc
+.DS_Store
+panel/state.json
+nfix*-profit_max-*.json
+
+# --- credentials: never commit ---
+bots/secrets.json
+config.json
+config-*-dryrun.json
+config-*-dryrun.json.bak
+
+# --- bench raw event data; keep only the small result tables the specs cite ---
+bench/events/*
+!bench/events/bnb_rewards.csv
+!bench/events/bnb_rewards_yield.csv
+!bench/events/ct_step1.csv
+!bench/events/x13_tickcheck_fee10.csv
+!bench/events/holdout_flush_episodes.csv

@@ -1,0 +1,671 @@
+{
+  "retrieved_at_utc": "2026-09-27T10:02:41.355652+00:00",
+  "purpose": "Selected-date availability and schema audit, not continuous coverage or alpha evidence",
+  "limitations": [
+    "Archive retrieval does not establish original publication/receipt timestamps.",
+    "Selected crash dates are illustrative, not a representative event-study sample.",
+    "Full historical coverage, revisions and live feature latency remain unverified.",
+    "OI measures outstanding contracts, not identified liquidations or the side closing."
+  ],
+  "results": [
+    {
+      "label": "oi:BTCUSDT:2022-11-09",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2022-11-09.zip",
+      "http_status": 200,
+      "archive_sha256": "62baa3946055e3472f312b0e7850ce355f23251912e55bfa9626ebe9dd056abe",
+      "member": "BTCUSDT-metrics-2022-11-09.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2022-11-09 00:00:00",
+        "BTCUSDT",
+        "120220.08300000",
+        "2227906556.14770000",
+        "",
+        "",
+        "3.204822844359641",
+        "1.1177523366"
+      ],
+      "last": [
+        "2022-11-09 23:55:00",
+        "BTCUSDT",
+        "131804.47300000",
+        "2077737801.60310050",
+        "",
+        "",
+        "2.515788389223716",
+        "0.7794973586"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:BTCUSDT:2023-08-17",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2023-08-17.zip",
+      "http_status": 200,
+      "archive_sha256": "554fdab78eb74076e9e4f1fc3477cbfd1bef63ff0fbad4d897db90dda78a2115",
+      "member": "BTCUSDT-metrics-2023-08-17.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2023-08-17 00:00:00",
+        "BTCUSDT",
+        "117034.66700000",
+        "3360810891.49740460",
+        "2.14811300",
+        "1.34805216",
+        "2.39241329",
+        "0.63865015"
+      ],
+      "last": [
+        "2023-08-17 23:55:00",
+        "BTCUSDT",
+        "106577.39300000",
+        "2834308531.70270000",
+        "2.22718360",
+        "1.00785740",
+        "2.22468877",
+        "1.07054529"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:BTCUSDT:2024-08-05",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2024-08-05.zip",
+      "http_status": 200,
+      "archive_sha256": "e506044fbba467ac507137cbd252b240ca7e28ede9aec23c42911ea772fa1a60",
+      "member": "BTCUSDT-metrics-2024-08-05.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2024-08-05 00:00:00",
+        "BTCUSDT",
+        "88072.4410000000000000",
+        "5132483149.9837000000000000",
+        "2.65185390",
+        "1.94502900",
+        "2.56857334",
+        "1.10876000"
+      ],
+      "last": [
+        "2024-08-05 23:55:00",
+        "BTCUSDT",
+        "75212.5030000000000000",
+        "4060141944.6017113000000000",
+        "2.00538193",
+        "1.87329000",
+        "1.89314940",
+        "0.96028700"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:BTCUSDT:2025-10-10",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2025-10-10.zip",
+      "http_status": 200,
+      "archive_sha256": "1ec1cc9a6b2f0bde686f0d9bdcea028a994ee16cbba7a836f783b156de1782e1",
+      "member": "BTCUSDT-metrics-2025-10-10.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2025-10-10 00:00:00",
+        "BTCUSDT",
+        "96714.4990000000000000",
+        "11765324685.4136410000000000",
+        "1.08330794",
+        "1.64406900",
+        "0.90543065",
+        "1.25862400"
+      ],
+      "last": [
+        "2025-10-10 23:55:00",
+        "BTCUSDT",
+        "72613.7820000000000000",
+        "8185170734.6040000000000000",
+        "1.49434523",
+        "2.03425100",
+        "1.18583475",
+        "0.82331000"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:ETHUSDT:2022-11-09",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2022-11-09.zip",
+      "http_status": 200,
+      "archive_sha256": "df227bfc5dd53782c53bb477eade2088cddc04baf2381de3162aea74d5066699",
+      "member": "ETHUSDT-metrics-2022-11-09.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2022-11-09 00:00:00",
+        "ETHUSDT",
+        "936173.51000000",
+        "1248462269.46580000",
+        "",
+        "",
+        "2.3397592355106935",
+        "1.2048720228"
+      ],
+      "last": [
+        "2022-11-09 23:55:00",
+        "ETHUSDT",
+        "1113131.19000000",
+        "1216750074.92238640",
+        "",
+        "",
+        "1.9446586289078929",
+        "0.8347931217"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:ETHUSDT:2023-08-17",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2023-08-17.zip",
+      "http_status": 200,
+      "archive_sha256": "834d911abe079de07ddf51fc718855ea0401e334230ffa9e3a023b80ce60238a",
+      "member": "ETHUSDT-metrics-2023-08-17.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2023-08-17 00:00:00",
+        "ETHUSDT",
+        "872908.21800000",
+        "1577511002.48742000",
+        "2.36573265",
+        "1.29662851",
+        "2.53921307",
+        "0.76904354"
+      ],
+      "last": [
+        "2023-08-17 23:55:00",
+        "ETHUSDT",
+        "788530.17800000",
+        "1326914927.63306000",
+        "2.06596823",
+        "0.93667052",
+        "2.07239485",
+        "0.77540093"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:ETHUSDT:2024-08-05",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2024-08-05.zip",
+      "http_status": 200,
+      "archive_sha256": "29bcb1d51d174e3e7c93142e30f39e008a67db74d8ab07b3ad9d9899db5b2b4e",
+      "member": "ETHUSDT-metrics-2024-08-05.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2024-08-05 00:00:00",
+        "ETHUSDT",
+        "908427.4150000000000000",
+        "2449056720.9209500000000000",
+        "4.67805494",
+        "2.00798800",
+        "4.13860623",
+        "1.24215300"
+      ],
+      "last": [
+        "2024-08-05 23:55:00",
+        "ETHUSDT",
+        "776987.1480000000000000",
+        "1878747153.9925200000000000",
+        "3.18893965",
+        "1.76364200",
+        "2.81094503",
+        "1.24706200"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:ETHUSDT:2025-10-10",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2025-10-10.zip",
+      "http_status": 200,
+      "archive_sha256": "b71ac6b8305ebde25da47d3b6750f312e7d05d61cd8c3879469060df0790cfb6",
+      "member": "ETHUSDT-metrics-2025-10-10.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2025-10-10 00:00:00",
+        "ETHUSDT",
+        "1917463.4520000000000000",
+        "8378748072.8022830000000000",
+        "2.56349379",
+        "2.22912900",
+        "2.08324590",
+        "1.54221200"
+      ],
+      "last": [
+        "2025-10-10 23:55:00",
+        "ETHUSDT",
+        "1394726.8590000000000000",
+        "5327856601.3800000000000000",
+        "2.90506241",
+        "2.77794000",
+        "2.21633378",
+        "0.70018100"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:SOLUSDT:2022-11-09",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/SOLUSDT/SOLUSDT-metrics-2022-11-09.zip",
+      "http_status": 200,
+      "archive_sha256": "dce59b305da050c79ddea014e861b944866e891b6cd74f8930a8867d3ee9e774",
+      "member": "SOLUSDT-metrics-2022-11-09.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2022-11-09 00:00:00",
+        "SOLUSDT",
+        "7196135.00000000",
+        "171268013.00000000",
+        "",
+        "",
+        "4.3394011568560735",
+        "1.3299720830"
+      ],
+      "last": [
+        "2022-11-09 23:55:00",
+        "SOLUSDT",
+        "14887038.00000000",
+        "168982768.33800000",
+        "",
+        "",
+        "0.8383834600546837",
+        "1.0146402472"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:SOLUSDT:2023-08-17",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/SOLUSDT/SOLUSDT-metrics-2023-08-17.zip",
+      "http_status": 200,
+      "archive_sha256": "a74eafb151d476519af6f60cbca13b3424df730214e42601a57fe9a269037556",
+      "member": "SOLUSDT-metrics-2023-08-17.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2023-08-17 00:00:00",
+        "SOLUSDT",
+        "4898338.00000000",
+        "111742771.48341253",
+        "2.10631013",
+        "1.26462135",
+        "2.31831377",
+        "1.09351495"
+      ],
+      "last": [
+        "2023-08-17 23:55:00",
+        "SOLUSDT",
+        "4229781.00000000",
+        "91773540.88800447",
+        "1.86525097",
+        "1.26214087",
+        "1.95798825",
+        "1.16127698"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:SOLUSDT:2024-08-05",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/SOLUSDT/SOLUSDT-metrics-2024-08-05.zip",
+      "http_status": 200,
+      "archive_sha256": "90ab8d80584ce7c50a9770b6cdb66e6131194e4311fb5ce05ccc32bcfce0e844",
+      "member": "SOLUSDT-metrics-2024-08-05.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2024-08-05 00:00:00",
+        "SOLUSDT",
+        "5005252.0000000000000000",
+        "696307419.9561194000000000",
+        "2.96039334",
+        "1.85663600",
+        "2.88475369",
+        "1.33870200"
+      ],
+      "last": [
+        "2024-08-05 23:55:00",
+        "SOLUSDT",
+        "4389952.0000000000000000",
+        "569591882.0480000000000000",
+        "2.36373507",
+        "1.63513800",
+        "2.27324725",
+        "1.03698500"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "oi:SOLUSDT:2025-10-10",
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/SOLUSDT/SOLUSDT-metrics-2025-10-10.zip",
+      "http_status": 200,
+      "archive_sha256": "18b63089044bb1ced80893c8f4f32b09e547cd0a9d5f62c91ed3a5ff35d33556",
+      "member": "SOLUSDT-metrics-2025-10-10.csv",
+      "header": [
+        "create_time",
+        "symbol",
+        "sum_open_interest",
+        "sum_open_interest_value",
+        "count_toptrader_long_short_ratio",
+        "sum_toptrader_long_short_ratio",
+        "count_long_short_ratio",
+        "sum_taker_long_short_vol_ratio"
+      ],
+      "observations": 288,
+      "first": [
+        "2025-10-10 00:00:00",
+        "SOLUSDT",
+        "10384213.2200000000000000",
+        "2296874102.3006220000000000",
+        "3.46819338",
+        "2.70616900",
+        "3.05316896",
+        "1.31539300"
+      ],
+      "last": [
+        "2025-10-10 23:55:00",
+        "SOLUSDT",
+        "7935933.3200000000000000",
+        "1489019168.8316000000000000",
+        "3.21921968",
+        "1.80598600",
+        "2.82967419",
+        "0.78766000"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "dated:BTCUSDT_240927:2024-08-05",
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT_240927/1h/BTCUSDT_240927-1h-2024-08-05.zip",
+      "http_status": 200,
+      "archive_sha256": "9ebdf17e721d4ed2122accc1aaaa9f78ea011f74f67947c105f93fd2ea914a12",
+      "member": "BTCUSDT_240927-1h-2024-08-05.csv",
+      "header": [
+        "open_time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "close_time",
+        "quote_volume",
+        "count",
+        "taker_buy_volume",
+        "taker_buy_quote_volume",
+        "ignore"
+      ],
+      "observations": 24,
+      "first": [
+        "1722816000000",
+        "58830.0",
+        "58975.8",
+        "56181.2",
+        "56805.2",
+        "142.260",
+        "1722819599999",
+        "8200425.3715",
+        "10530",
+        "72.122",
+        "4152461.8567",
+        "0"
+      ],
+      "last": [
+        "1722898800000",
+        "55260.5",
+        "55660.8",
+        "54433.4",
+        "54578.1",
+        "32.809",
+        "1722902399999",
+        "1803624.5499",
+        "3026",
+        "15.656",
+        "861410.1272",
+        "0"
+      ],
+      "unique_timestamps": 24
+    },
+    {
+      "label": "dated:ETHUSDT_240927:2024-08-05",
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT_240927/1h/ETHUSDT_240927-1h-2024-08-05.zip",
+      "http_status": 200,
+      "archive_sha256": "815937996a754dc1d4dac93e3afd8f14fdd07455d43d7ad0eec3472c2f8b3c3c",
+      "member": "ETHUSDT_240927-1h-2024-08-05.csv",
+      "header": [
+        "open_time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "close_time",
+        "quote_volume",
+        "count",
+        "taker_buy_volume",
+        "taker_buy_quote_volume",
+        "ignore"
+      ],
+      "observations": 24,
+      "first": [
+        "1722816000000",
+        "2720.73",
+        "2728.85",
+        "2508.00",
+        "2553.67",
+        "2940.151",
+        "1722819599999",
+        "7748217.67695",
+        "13970",
+        "1241.605",
+        "3281175.97688",
+        "0"
+      ],
+      "last": [
+        "1722898800000",
+        "2474.14",
+        "2496.03",
+        "2431.22",
+        "2440.64",
+        "719.628",
+        "1722902399999",
+        "1774564.84434",
+        "5227",
+        "326.742",
+        "805728.34308",
+        "0"
+      ],
+      "unique_timestamps": 24
+    },
+    {
+      "label": "flow:spot:BTCUSDT:2024-08-05",
+      "url": "https://data.binance.vision/data/spot/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2024-08-05.zip",
+      "http_status": 200,
+      "archive_sha256": "2a6a84ff64d7acbb0c8fc77d9dafa955f0b96aff76f11b3134bde04eadc3c69c",
+      "member": "BTCUSDT-5m-2024-08-05.csv",
+      "header": null,
+      "observations": 288,
+      "first": [
+        "1722816000000",
+        "58161.00000000",
+        "58299.76000000",
+        "58118.00000000",
+        "58298.01000000",
+        "94.56035000",
+        "1722816299999",
+        "5501616.46109730",
+        "8466",
+        "55.37983000",
+        "3222102.60065920",
+        "0"
+      ],
+      "last": [
+        "1722902100000",
+        "53980.00000000",
+        "54045.61000000",
+        "53876.47000000",
+        "54018.81000000",
+        "182.30182000",
+        "1722902399999",
+        "9839015.45286180",
+        "10567",
+        "68.29233000",
+        "3686144.80720930",
+        "0"
+      ],
+      "unique_timestamps": 288
+    },
+    {
+      "label": "flow:futures/um:BTCUSDT:2024-08-05",
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2024-08-05.zip",
+      "http_status": 200,
+      "archive_sha256": "ff7ea2f535153c9528d43a723da75e35ff769562679c5231d0ec643717d3cba0",
+      "member": "BTCUSDT-5m-2024-08-05.csv",
+      "header": [
+        "open_time",
+        "open",
+        "high",
+        "low",
+        "close",
+        "volume",
+        "close_time",
+        "quote_volume",
+        "count",
+        "taker_buy_volume",
+        "taker_buy_quote_volume",
+        "ignore"
+      ],
+      "observations": 288,
+      "first": [
+        "1722816000000",
+        "58144.50",
+        "58277.70",
+        "58092.20",
+        "58273.20",
+        "1530.742",
+        "1722816299999",
+        "89045999.24150",
+        "18111",
+        "805.582",
+        "46867011.23230",
+        "0"
+      ],
+      "last": [
+        "1722902100000",
+        "53950.90",
+        "54036.40",
+        "53853.60",
+        "54003.10",
+        "1467.535",
+        "1722902399999",
+        "79178583.62993",
+        "20354",
+        "719.434",
+        "38821617.72747",
+        "0"
+      ],
+      "unique_timestamps": 288
+    }
+  ]
+}

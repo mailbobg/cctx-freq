@@ -1,0 +1,32 @@
+[
+  {
+    "name": "e0v1en",
+    "strategy": "E0V1EN",
+    "port": 8083,
+    "want": "running",
+    "api": "up",
+    "pid": 61179,
+    "trading": "running",
+    "dry_run": true
+  },
+  {
+    "name": "c-hold",
+    "strategy": "RiskHoldC",
+    "port": 8084,
+    "want": "running",
+    "api": "up",
+    "pid": 53915,
+    "trading": "running",
+    "dry_run": true
+  },
+  {
+    "name": "unlock-short",
+    "strategy": "UnlockPressureShortV1",
+    "port": 8085,
+    "want": "stopped",
+    "api": "down",
+    "pid": null,
+    "trading": null,
+    "dry_run": null
+  }
+]

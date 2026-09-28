@@ -8,6 +8,7 @@ Timeframe 1d: the Sunday candle closes at Monday 00:00 UTC and orders go out at 
 """
 
 from datetime import datetime
+import math
 
 import numpy as np
 from pandas import DataFrame
@@ -52,14 +53,37 @@ class RiskHoldC(IStrategy):
             return None                                     # only act on the Sunday close
         return float(df["weight"].iloc[-1])
 
-    def _equity(self) -> float:
-        return self.wallets.get_total_stake_amount()
+    def _equity(self, pair: str | None = None, current_rate: float | None = None) -> float | None:
+        """Spot equity, including unrealized P&L; unavailable quotes block sizing.
+
+        Use callback price for the current pair, live bids for other positions,
+        and only analyzed (closed) candles in backtests. Never fetch live quotes
+        from a historical simulation.
+        """
+        value = self.wallets.get_total(self.config.get("stake_currency", "USDT"))
+        for trade in Trade.get_trades_proxy(is_open=True):
+            if not trade.amount:
+                continue
+            if trade.pair == pair:
+                price = current_rate
+            elif self.dp.runmode.value in ("live", "dry_run"):
+                price = self.dp.ticker(trade.pair).get("bid")
+            else:
+                df, _ = self.dp.get_analyzed_dataframe(trade.pair, self.timeframe)
+                price = None if df.empty else df["close"].iloc[-1]
+            if price is None or not math.isfinite(price) or price <= 0:
+                return None
+            value += trade.amount * price
+        value *= self.config.get("tradable_balance_ratio", 1.0)
+        return value if math.isfinite(value) and value > 0 else None
 
     def custom_stake_amount(self, pair: str, current_time: datetime, current_rate: float, proposed_stake: float,
                             min_stake: float | None, max_stake: float, leverage: float, entry_tag: str | None,
                             side: str, **kwargs) -> float:
         w = self._target(pair)
-        return min(max_stake, self._equity() * w) if w else 0.0
+        equity = self._equity(pair, current_rate) if w else None
+        stake = min(max_stake, equity * w) if equity else 0.0
+        return stake if stake >= (min_stake or 0.0) else 0.0
 
     def adjust_trade_position(self, trade: Trade, current_time: datetime, current_rate: float, current_profit: float,
                               min_stake: float | None, max_stake: float, current_entry_rate: float,
@@ -72,11 +96,15 @@ class RiskHoldC(IStrategy):
         monday = current_time.replace(hour=0, minute=0, second=0, microsecond=0)
         if trade.date_last_filled_utc >= monday:
             return None
-        equity = self._equity()
+        equity = self._equity(trade.pair, current_rate)
+        if equity is None:
+            return None
         current_value = trade.amount * current_rate
         diff = equity * w - current_value
         if abs(diff) <= self.band * equity:
             return None
         if diff < 0:
-            return max(diff, -current_value * 0.999), "weekly_trim"
-        return min(diff, max_stake), "weekly_add"
+            # Negative stake is a cost-basis amount, not sale proceeds.
+            return max(diff / current_value, -0.999) * trade.stake_amount, "weekly_trim"
+        stake = min(diff, max_stake)
+        return (stake, "weekly_add") if stake >= (min_stake or 0.0) and stake > 0 else None

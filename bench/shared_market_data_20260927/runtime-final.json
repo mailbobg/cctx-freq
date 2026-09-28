@@ -1,0 +1,197 @@
+{
+  "verified_at": "2026-09-27T14:29:35.406859+00:00",
+  "bots": [
+    {
+      "name": "x7",
+      "port": 8080,
+      "pid": 24338,
+      "runtime": "freqtrade",
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "restarts_24h": 0
+    },
+    {
+      "name": "x8",
+      "port": 8081,
+      "pid": 24648,
+      "runtime": "freqtrade",
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "restarts_24h": 1
+    },
+    {
+      "name": "x12",
+      "port": 8082,
+      "pid": 24675,
+      "runtime": "freqtrade",
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "restarts_24h": 1
+    },
+    {
+      "name": "e0v1en",
+      "port": 8083,
+      "pid": 23979,
+      "runtime": "freqtrade",
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "restarts_24h": 0
+    },
+    {
+      "name": "c-hold",
+      "port": 8084,
+      "pid": 23884,
+      "runtime": "freqtrade",
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "restarts_24h": 0
+    },
+    {
+      "name": "unlock-short",
+      "port": 8085,
+      "pid": 23913,
+      "runtime": "freqtrade",
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "restarts_24h": 0
+    },
+    {
+      "name": "funding-spread",
+      "port": 8086,
+      "pid": 21408,
+      "runtime": "cross_venue_paper",
+      "api": "up",
+      "trading": "running",
+      "dry_run": true,
+      "restarts_24h": 0
+    }
+  ],
+  "native_candles": [
+    {
+      "bot": "x7",
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "rows": 2
+    },
+    {
+      "bot": "x8",
+      "pair": "BTC/USDT",
+      "timeframe": "5m",
+      "rows": 2
+    },
+    {
+      "bot": "x12",
+      "pair": "1INCH/USDT",
+      "timeframe": "5m",
+      "rows": 2
+    },
+    {
+      "bot": "e0v1en",
+      "pair": "1INCH/USDT",
+      "timeframe": "5m",
+      "rows": 2
+    },
+    {
+      "bot": "c-hold",
+      "pair": "BTC/USDT",
+      "timeframe": "1d",
+      "rows": 2
+    },
+    {
+      "bot": "unlock-short",
+      "pair": "APT/USDT:USDT",
+      "timeframe": "1h",
+      "rows": 2
+    }
+  ],
+  "same_query_probe": {
+    "clients": 8,
+    "upstream_requests": 1,
+    "identical_responses": true,
+    "query": {
+      "symbol": "XRPUSDT"
+    },
+    "endpoint": "spot/exchangeInfo"
+  },
+  "gateway_stats": {
+    "requests": 2799,
+    "upstream_requests": 2756,
+    "coalesced": 30,
+    "cache_hits": 13,
+    "cache_entries": 433,
+    "cache_bytes": 67025064,
+    "in_flight": 0,
+    "endpoints": {
+      "spot/ticker/24hr": {
+        "requests": 142,
+        "upstream_requests": 142
+      },
+      "spot/exchangeInfo": {
+        "requests": 29,
+        "upstream_requests": 6,
+        "coalesced": 21,
+        "cache_hits": 2
+      },
+      "spot/time": {
+        "requests": 5,
+        "upstream_requests": 5
+      },
+      "spot/klines": {
+        "requests": 2613,
+        "upstream_requests": 2598,
+        "cache_hits": 11,
+        "coalesced": 4
+      },
+      "spot/ticker/price": {
+        "requests": 10,
+        "coalesced": 5,
+        "upstream_requests": 5
+      }
+    }
+  },
+  "frequi_bot_names": [
+    "ccxt.x7",
+    "ccxt.x8",
+    "ccxt.x12",
+    "ccxt.e0v1en",
+    "ccxt.c-hold",
+    "ccxt.unlock-short",
+    "ccxt.funding-spread"
+  ],
+  "tests": {
+    "source": 68,
+    "installed": 68,
+    "passed": true
+  },
+  "scope": {
+    "public_rest_shared": true,
+    "binance_bots": 6,
+    "websockets_per_process": true,
+    "private_apis_direct": true,
+    "dry_run_only": true,
+    "funding_venues": [
+      "Bybit",
+      "OKX"
+    ]
+  },
+  "native_runtime_incident": {
+    "affected": [
+      "x8",
+      "x12"
+    ],
+    "observed": [
+      "SQLAlchemy QueuePool exhaustion",
+      "CoinGecko 429"
+    ],
+    "recovered": true,
+    "separate_root_cause_fixed": false
+  },
+  "source_commit": "e19f182b91e94f777c30855160c5cef21815ab59",
+  "last_health_check": "2026-09-27T14:30:46.175224+00:00"
+}

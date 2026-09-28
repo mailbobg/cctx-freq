@@ -1,0 +1,213 @@
+{
+  "bots": [
+    {
+      "name": "x7",
+      "pid": null,
+      "api": "down",
+      "trading": null,
+      "runtime": "freqtrade",
+      "dry_run": null,
+      "detail_url": null,
+      "note": null
+    },
+    {
+      "name": "x8",
+      "pid": null,
+      "api": "down",
+      "trading": null,
+      "runtime": "freqtrade",
+      "dry_run": null,
+      "detail_url": null,
+      "note": null
+    },
+    {
+      "name": "x12",
+      "pid": null,
+      "api": "down",
+      "trading": null,
+      "runtime": "freqtrade",
+      "dry_run": null,
+      "detail_url": null,
+      "note": null
+    },
+    {
+      "name": "e0v1en",
+      "pid": 61179,
+      "api": "up",
+      "trading": "running",
+      "runtime": "freqtrade",
+      "dry_run": true,
+      "detail_url": null,
+      "note": null
+    },
+    {
+      "name": "c-hold",
+      "pid": 53915,
+      "api": "up",
+      "trading": "running",
+      "runtime": "freqtrade",
+      "dry_run": true,
+      "detail_url": null,
+      "note": null
+    },
+    {
+      "name": "unlock-short",
+      "pid": 7126,
+      "api": "up",
+      "trading": "running",
+      "runtime": "freqtrade",
+      "dry_run": true,
+      "detail_url": null,
+      "note": null
+    },
+    {
+      "name": "funding-spread",
+      "pid": 9736,
+      "api": "up",
+      "trading": "running",
+      "runtime": "cross_venue_paper",
+      "dry_run": true,
+      "detail_url": "http://127.0.0.1:8086/",
+      "note": "BTC: 尚未进入结算前开仓窗口；ETH: 尚未进入结算前开仓窗口"
+    }
+  ],
+  "paper_summary": {
+    "equity": 10000.0,
+    "wallets": {
+      "bybit": {
+        "cash": 5000.0,
+        "margin_used": 0.0,
+        "equity": 5000.0,
+        "free_margin": 5000.0
+      },
+      "okx": {
+        "cash": 5000.0,
+        "margin_used": 0.0,
+        "equity": 5000.0,
+        "free_margin": 5000.0
+      }
+    },
+    "profit_closed_coin": 0,
+    "profit_all_coin": 0.0,
+    "closed_trade_count": 0,
+    "winrate": 0.0,
+    "open_trades": 0,
+    "positions": [],
+    "marks_fresh": true,
+    "funding_pending": 0,
+    "funding_total": 0,
+    "health": {
+      "status": "monitoring",
+      "note": "BTC: 尚未进入结算前开仓窗口；ETH: 尚未进入结算前开仓窗口",
+      "updated_ms": 1790515137065,
+      "faults": [],
+      "age_seconds": 29.363
+    },
+    "candidates": {
+      "BTC": {
+        "short_venue": "bybit",
+        "long_venue": "okx",
+        "funding_estimate": 0.2129613044054797,
+        "roundtrip_cost": 11.159407400939068,
+        "basis_buffer": 3.98213375,
+        "expected_net": -14.928579846533587,
+        "notional_per_leg": 3982.13375,
+        "spread_bps": 0.5347919426500422,
+        "symbol": "BTC",
+        "settlement_ms": 1790524800000,
+        "interval_seconds": 28800,
+        "quantity": 0.047,
+        "eligible": false,
+        "reason": "尚未进入结算前开仓窗口"
+      },
+      "ETH": {
+        "short_venue": "bybit",
+        "long_venue": "okx",
+        "funding_estimate": 0.01720951741253954,
+        "roundtrip_cost": 11.152025642939645,
+        "basis_buffer": 3.9723295500000004,
+        "expected_net": -15.107145675527107,
+        "notional_per_leg": 3972.3295500000004,
+        "spread_bps": 0.043323488637893946,
+        "symbol": "ETH",
+        "settlement_ms": 1790524800000,
+        "interval_seconds": 28800,
+        "quantity": 1.47,
+        "eligible": false,
+        "reason": "尚未进入结算前开仓窗口"
+      }
+    },
+    "quotes": {
+      "BTC": {
+        "bybit": {
+          "venue": "bybit",
+          "symbol": "BTC",
+          "bid": 84728.1,
+          "ask": 84728.2,
+          "bid_qty": 3.921,
+          "ask_qty": 2.73,
+          "mark": 84728.2,
+          "rate": 3.715e-05,
+          "settlement_ms": 1790524800000,
+          "interval_seconds": 28800,
+          "timestamp_ms": 1790515136768,
+          "rate_timestamp_ms": 1790515136768
+        },
+        "okx": {
+          "venue": "okx",
+          "symbol": "BTC",
+          "bid": 84724.8,
+          "ask": 84724.9,
+          "bid_qty": 7.0189,
+          "ask_qty": 6.214600000000001,
+          "mark": 84724.3,
+          "rate": -1.63287150569e-05,
+          "settlement_ms": 1790524800000,
+          "interval_seconds": 28800,
+          "timestamp_ms": 1790515136166,
+          "rate_timestamp_ms": 1790515099943
+        }
+      },
+      "ETH": {
+        "bybit": {
+          "venue": "bybit",
+          "symbol": "ETH",
+          "bid": 2702.26,
+          "ask": 2702.27,
+          "bid_qty": 6.06,
+          "ask_qty": 53.01,
+          "mark": 2702.27,
+          "rate": 8.57e-05,
+          "settlement_ms": 1790524800000,
+          "interval_seconds": 28800,
+          "timestamp_ms": 1790515136971,
+          "rate_timestamp_ms": 1790515136971
+        },
+        "okx": {
+          "venue": "okx",
+          "symbol": "ETH",
+          "bid": 2702.31,
+          "ask": 2702.32,
+          "bid_qty": 255.381,
+          "ask_qty": 121.001,
+          "mark": 2702.26,
+          "rate": 8.1367960262e-05,
+          "settlement_ms": 1790524800000,
+          "interval_seconds": 28800,
+          "timestamp_ms": 1790515136071,
+          "rate_timestamp_ms": 1790515100008
+        }
+      }
+    },
+    "entries_enabled": true,
+    "strategy": "CrossVenueFundingV1",
+    "bot_name": "funding-spread",
+    "dry_run": true,
+    "assumptions": {
+      "fee": 0.0005,
+      "slippage": 0.0002,
+      "basis_buffer": 0.001,
+      "weight": 0.4
+    }
+  }
+}

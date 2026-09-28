@@ -1,0 +1,128 @@
+{
+  "bybit": {
+    "url": "https://api.bybit.com/v5/market/tickers?category=linear&symbol=BTCUSDT",
+    "retrieved_at": "2026-09-27T12:37:56.717349+00:00",
+    "http_status": 200,
+    "data": {
+      "retCode": 0,
+      "retMsg": "OK",
+      "result": {
+        "category": "linear",
+        "list": [
+          {
+            "symbol": "BTCUSDT",
+            "lastPrice": "84935.00",
+            "indexPrice": "84980.17",
+            "markPrice": "84946.78",
+            "prevPrice24h": "84072.80",
+            "price24hPcnt": "0.010255",
+            "highPrice24h": "85095.30",
+            "lowPrice24h": "83725.50",
+            "prevPrice1h": "84809.00",
+            "openInterest": "56228.847",
+            "openInterestValue": "4776459495.76",
+            "singleOpenInterest": "28114.424",
+            "singleOpenInterestValue": "2388229790.35",
+            "turnover24h": "1531468582.4668",
+            "volume24h": "18146.5030",
+            "fundingRate": "0.00005211",
+            "nextFundingTime": "1790524800000",
+            "predictedDeliveryPrice": "",
+            "basisRate": "",
+            "deliveryFeeRate": "",
+            "deliveryTime": "0",
+            "ask1Size": "6.585",
+            "bid1Price": "84935.00",
+            "ask1Price": "84935.10",
+            "bid1Size": "2.785",
+            "basis": "",
+            "preOpenPrice": "",
+            "preQty": "",
+            "curPreListingPhase": "",
+            "fundingIntervalHour": "8",
+            "basisRateYear": "",
+            "fundingCap": "0.00333"
+          }
+        ]
+      },
+      "retExtInfo": {},
+      "time": 1790512677225
+    }
+  },
+  "okx_funding": {
+    "url": "https://www.okx.com/api/v5/public/funding-rate?instId=BTC-USDT-SWAP",
+    "retrieved_at": "2026-09-27T12:37:56.717772+00:00",
+    "http_status": 200,
+    "data": {
+      "code": "0",
+      "data": [
+        {
+          "formulaType": "withRate",
+          "fundingRate": "-0.0000094774449358",
+          "fundingTime": "1790524800000",
+          "impactValue": "20000.0000000000000000",
+          "instId": "BTC-USDT-SWAP",
+          "instType": "SWAP",
+          "interestRate": "0.0001000000000000",
+          "maxFundingRate": "0.00375",
+          "method": "current_period",
+          "minFundingRate": "-0.00375",
+          "nextFundingRate": "",
+          "nextFundingTime": "1790553600000",
+          "premium": "-0.0004882272527276",
+          "prevFundingTime": "1790496000000",
+          "settFundingRate": "-0.0000181443987004",
+          "settState": "settled",
+          "ts": "1790512626926"
+        }
+      ],
+      "msg": ""
+    }
+  },
+  "okx_ticker": {
+    "url": "https://www.okx.com/api/v5/market/ticker?instId=BTC-USDT-SWAP",
+    "retrieved_at": "2026-09-27T12:37:56.717864+00:00",
+    "http_status": 200,
+    "data": {
+      "code": "0",
+      "data": [
+        {
+          "instType": "SWAP",
+          "instId": "BTC-USDT-SWAP",
+          "last": "84930",
+          "lastSz": "0.14",
+          "askPx": "84930.1",
+          "askSz": "2900.31",
+          "bidPx": "84930",
+          "bidSz": "15.05",
+          "open24h": "84050",
+          "high24h": "85088",
+          "low24h": "83764.7",
+          "volCcy24h": "26829.2722",
+          "vol24h": "2682927.22",
+          "ts": "1790512676872",
+          "sodUtc0": "84394.1",
+          "sodUtc8": "84106"
+        }
+      ],
+      "msg": ""
+    }
+  },
+  "comparison": {
+    "checked_at": "2026-09-27T12:37:57.281734+00:00",
+    "bybit_rate": 5.211e-05,
+    "okx_rate": -9.4774449358e-06,
+    "difference": 6.15874449358e-05,
+    "single_leg_notional_assumption": 10000,
+    "gross_funding_usdt_if_rates_and_notionals_hold": 0.615874449358,
+    "bybit_next_settlement_utc": "2026-09-27T16:00:00+00:00",
+    "okx_current_period_settlement_utc": "2026-09-27T16:00:00+00:00",
+    "bybit_response_age_seconds": 0.05673388671875,
+    "okx_rate_age_seconds": 50.35573388671875,
+    "okx_ticker_age_seconds": 0.40973388671875,
+    "fee_example_per_fill": 0.0005,
+    "fee_example_four_fills_usdt": 20,
+    "funding_is_estimate_not_realized": true,
+    "matched_settlement": true
+  }
+}

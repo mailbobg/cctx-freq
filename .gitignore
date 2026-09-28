@@ -13,6 +13,7 @@ logs/
 *.sqlite-wal
 __pycache__/
 *.pyc
+cross_venue/.cache/
 .DS_Store
 panel/state.json
 nfix*-profit_max-*.json
@@ -30,3 +31,10 @@ bench/events/*
 !bench/events/ct_step1.csv
 !bench/events/x13_tickcheck_fee10.csv
 !bench/events/holdout_flush_episodes.csv
+
+# --- bench run artefacts: downloaded data caches, backtest result archives, logs ---
+bench/**/cache/
+bench/**/results/**/*.zip
+bench/**/results/**/*.meta.json
+bench/**/*.log
+bench/**/*.csv.gz

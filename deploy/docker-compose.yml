@@ -1,0 +1,22 @@
+# Run from user_data/deploy:  docker compose up -d --build
+# Only the panel is a compose service; it creates one container per bot (ccxt-bot-<name>) on demand,
+# from the same image, when you press "start" on http://127.0.0.1:8090 (reach it through an SSH tunnel).
+services:
+  panel:
+    image: ccxt-freqtrade:local
+    build:
+      context: ../..
+      dockerfile: user_data/deploy/Dockerfile
+    container_name: ccxt-panel
+    entrypoint: ["python", "/freqtrade/user_data/panel/panel.py"]
+    network_mode: host          # bots, the market-data gateway and FreqUI all talk over 127.0.0.1
+    restart: unless-stopped
+    user: root                  # needs the docker socket; bot containers themselves run as ftuser
+    environment:
+      PANEL_RUNNER: docker
+      PANEL_BOT_IMAGE: ccxt-freqtrade:local
+      PANEL_HOST_USER_DATA: ${CCXT_USER_DATA:?set CCXT_USER_DATA to the absolute host path of user_data}
+      PANEL_HOST: 127.0.0.1
+    volumes:
+      - ${CCXT_USER_DATA}:/freqtrade/user_data
+      - /var/run/docker.sock:/var/run/docker.sock

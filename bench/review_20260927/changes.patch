@@ -1,0 +1,504 @@
+--- a/user_data/strategies/RiskHoldC.py
++++ b/user_data/strategies/RiskHoldC.py
+@@ -8,6 +8,7 @@
+ """
+ 
+ from datetime import datetime
++import math
+ 
+ import numpy as np
+ from pandas import DataFrame
+@@ -52,14 +53,37 @@
+             return None                                     # only act on the Sunday close
+         return float(df["weight"].iloc[-1])
+ 
+-    def _equity(self) -> float:
+-        return self.wallets.get_total_stake_amount()
++    def _equity(self, pair: str | None = None, current_rate: float | None = None) -> float | None:
++        """Spot equity, including unrealized P&L; unavailable quotes block sizing.
++
++        Use callback price for the current pair, live bids for other positions,
++        and only analyzed (closed) candles in backtests. Never fetch live quotes
++        from a historical simulation.
++        """
++        value = self.wallets.get_total(self.config.get("stake_currency", "USDT"))
++        for trade in Trade.get_trades_proxy(is_open=True):
++            if not trade.amount:
++                continue
++            if trade.pair == pair:
++                price = current_rate
++            elif self.dp.runmode.value in ("live", "dry_run"):
++                price = self.dp.ticker(trade.pair).get("bid")
++            else:
++                df, _ = self.dp.get_analyzed_dataframe(trade.pair, self.timeframe)
++                price = None if df.empty else df["close"].iloc[-1]
++            if price is None or not math.isfinite(price) or price <= 0:
++                return None
++            value += trade.amount * price
++        value *= self.config.get("tradable_balance_ratio", 1.0)
++        return value if math.isfinite(value) and value > 0 else None
+ 
+     def custom_stake_amount(self, pair: str, current_time: datetime, current_rate: float, proposed_stake: float,
+                             min_stake: float | None, max_stake: float, leverage: float, entry_tag: str | None,
+                             side: str, **kwargs) -> float:
+         w = self._target(pair)
+-        return min(max_stake, self._equity() * w) if w else 0.0
++        equity = self._equity(pair, current_rate) if w else None
++        stake = min(max_stake, equity * w) if equity else 0.0
++        return stake if stake >= (min_stake or 0.0) else 0.0
+ 
+     def adjust_trade_position(self, trade: Trade, current_time: datetime, current_rate: float, current_profit: float,
+                               min_stake: float | None, max_stake: float, current_entry_rate: float,
+@@ -72,11 +96,15 @@
+         monday = current_time.replace(hour=0, minute=0, second=0, microsecond=0)
+         if trade.date_last_filled_utc >= monday:
+             return None
+-        equity = self._equity()
++        equity = self._equity(trade.pair, current_rate)
++        if equity is None:
++            return None
+         current_value = trade.amount * current_rate
+         diff = equity * w - current_value
+         if abs(diff) <= self.band * equity:
+             return None
+         if diff < 0:
+-            return max(diff, -current_value * 0.999), "weekly_trim"
+-        return min(diff, max_stake), "weekly_add"
++            # Negative stake is a cost-basis amount, not sale proceeds.
++            return max(diff / current_value, -0.999) * trade.stake_amount, "weekly_trim"
++        stake = min(diff, max_stake)
++        return (stake, "weekly_add") if stake >= (min_stake or 0.0) and stake > 0 else None
+--- a/user_data/strategies/E0V1EN.py
++++ b/user_data/strategies/E0V1EN.py
+@@ -17,7 +17,7 @@
+     }
+     timeframe = '5m'
+     process_only_new_candles = True
+-    startup_candle_count = 200  # was 20: RSI(14) needs far more warmup to match the backtest
++    startup_candle_count = 400  # includes the 288-bar return and recursive indicator warm-up
+     order_types = {
+         'entry': 'market',
+         'exit': 'market',
+--- a/user_data/bots/common.json
++++ b/user_data/bots/common.json
+@@ -17,10 +17,10 @@
+   "order_types": {
+     "entry": "limit",
+     "exit": "limit",
+-    "emergency_exit": "limit",
++    "emergency_exit": "market",
+     "force_entry": "limit",
+-    "force_exit": "limit",
+-    "stoploss": "limit",
++    "force_exit": "market",
++    "stoploss": "market",
+     "stoploss_on_exchange": false,
+     "stoploss_on_exchange_interval": 60,
+     "stoploss_on_exchange_limit_ratio": 0.99
+--- a/user_data/bench/evaluate.py
++++ b/user_data/bench/evaluate.py
+@@ -16,6 +16,7 @@
+ 
+ import numpy as np
+ import pandas as pd
++from block_bootstrap import block_interval
+ 
+ from freqtrade.data.btanalysis import (
+     get_latest_backtest_filename,
+@@ -35,6 +36,12 @@
+     close_utc = trades["close_date"].dt.tz_convert("UTC").dt.tz_localize(None)
+     by_month = trades.groupby(close_utc.dt.to_period("M"))["profit_abs"].sum()
+     return by_month / start_balance * 100
++
++
++def daily_realized_pnl(trades: pd.DataFrame, start: str, end: str) -> pd.Series:
++    days = pd.date_range(pd.to_datetime(start, utc=True).floor('D'),
++                         pd.to_datetime(end, utc=True).floor('D'), freq='D')
++    return trades.groupby(trades['close_date'].dt.floor('D'))['profit_abs'].sum().reindex(days, fill_value=0.)
+ 
+ 
+ def evaluate_strategy(name: str, s: dict, trades: pd.DataFrame) -> None:
+@@ -57,9 +64,20 @@
+     pnl = trades["profit_abs"].to_numpy()
+     draws = rng.choice(pnl, size=(5000, len(pnl)), replace=True).sum(axis=1) / start * 100
+     lo, hi = np.percentile(draws, [2.5, 97.5])
+-    print(f"bootstrap 95% CI of total profit: [{lo:+.1f}%, {hi:+.1f}%]  (half-width {(hi - lo) / 2:.1f}pp, {len(pnl)} trades)")
++    print(f"Legacy IID-trade bootstrap (ignores dependence): [{lo:+.1f}%, {hi:+.1f}%] ({len(pnl)} trades)")
++
++    daily = daily_realized_pnl(trades, s['backtest_start'], s['backtest_end'])
++    days = daily.index
++    for block in (7, 30):
++        lo, hi = block_interval(daily.to_numpy() / start * 100, block)
++        print(f'{block}-day block interval, realized P&L only: [{lo:+.1f}, {hi:+.1f}]%; not MTM or selection-adjusted')
++
++    if 'enter_tag' in trades:
++        tags = trades.groupby('enter_tag', dropna=False)['profit_abs'].agg(['count', 'sum'])
++        print('Entry-tag attribution (combined tags stay combined):\n' + tags.sort_values('sum').to_string())
+ 
+     m = monthly_profit(trades, start)
++    m = m.reindex(pd.period_range(days[0].strftime('%Y-%m'), days[-1].strftime('%Y-%m'), freq='M'), fill_value=0.)
+     yearly = m.groupby(m.index.year).sum()
+     print("yearly:  " + "  ".join(f"{y}: {v:+.1f}%" for y, v in yearly.items()))
+ 
+--- a/user_data/bench/mtm.py
++++ b/user_data/bench/mtm.py
+@@ -5,6 +5,8 @@
+ way. This script rebuilds the daily equity curve from the exported orders,
+ valuing open positions at each day's close, and reports the real drawdown.
+ 
++Supports unleveraged long positions only; rejects shorts/leverage rather than
++reporting a spot cash-account reconstruction for futures.
+ Usage: python user_data/bench/mtm.py <result.zip> [<result.zip> ...]
+ """
+ 
+@@ -33,20 +35,27 @@
+ 
+ 
+ def equity_curve(trades: pd.DataFrame, start_balance: float, days: pd.DatetimeIndex):
++    if ('is_short' in trades and trades['is_short'].any()) or ('leverage' in trades and (trades['leverage'] != 1).any()):
++        raise ValueError('This cash/holdings reconstruction supports unleveraged long positions only')
+     closes = daily_closes(trades["pair"].unique(), days)
++    missing = set(trades['pair']) - set(closes.columns)
++    if missing:
++        raise ValueError(f'Missing daily prices: {sorted(missing)}')
+     cash = pd.Series(0.0, index=days)
+     pos = pd.DataFrame(0.0, index=days, columns=closes.columns)
+     for _, t in trades.iterrows():
+-        fee = t["fee_open"]
+         for o in t["orders"]:
+             day = pd.Timestamp(o["order_filled_timestamp"], unit="ms", tz="UTC").floor("D")
+             if day < days[0]:
+                 day = days[0]
++            # Backtest order.cost already includes an entry-style fee even on
++            # sells. Reconstruct raw notional, then charge each side once.
++            notional = o['amount'] * o['safe_price']
+             if o["ft_order_side"] == "buy":
+-                cash[day] -= o["cost"] * (1 + fee)
++                cash[day] -= notional * (1 + t['fee_open'])
+                 pos.loc[day, t["pair"]] += o["amount"]
+             else:
+-                cash[day] += o["cost"] * (1 - fee)
++                cash[day] += notional * (1 - t['fee_close'])
+                 pos.loc[day, t["pair"]] -= o["amount"]
+     # funding fees (futures) are booked by freqtrade into profit_abs; add them as cash at trade close
+     if "funding_fees" in trades.columns:
+@@ -55,6 +64,8 @@
+                 cash[day] += fee
+     cash = start_balance + cash.cumsum()
+     pos = pos.cumsum()
++    if (closes.isna() & (pos.abs() > 1e-8)).any().any():
++        raise ValueError('Cannot value an open position without a daily price')
+     holdings = (pos * closes).fillna(0.0)
+     equity = cash + holdings.sum(axis=1)
+     return equity, cash, holdings
+@@ -69,7 +80,7 @@
+         tz="UTC",
+     )
+     equity, cash, holdings = equity_curve(trades, start, days)
+-    peak = equity.cummax()
++    peak = equity.cummax().clip(lower=start)
+     dd = equity / peak - 1
+     worst = dd.idxmin()
+     exposure = holdings.sum(axis=1) / equity
+--- /dev/null
++++ b/user_data/strategies/portfolio_risk.py
+@@ -0,0 +1,27 @@
++"""Closed-candle portfolio sizing shared by research and the candidate bot."""
++import numpy as np
++import pandas as pd
++
++
++def cap_weights(weights, covariance, vol_target=.40, gross_cap=.80):
++    weights = np.asarray(weights, dtype=float)
++    covariance = np.asarray(covariance, dtype=float)
++    if not np.isfinite(weights).all() or not np.isfinite(covariance).all():
++        return np.zeros_like(weights)
++    vol = np.sqrt(max(0., weights @ covariance @ weights))
++    scale = min(1., vol_target / vol if vol > 0 else 1.,
++                gross_cap / weights.sum() if weights.sum() > 0 else 1.)
++    return weights * scale
++
++
++def portfolio_weights(closes):
++    """Two-asset 30-day TSMOM; same timestamp output uses only past/current closes."""
++    returns = np.log(closes).diff()
++    vol = returns.rolling(30).std() * np.sqrt(365)
++    raw = (.5 * np.minimum(1., .60 / vol)).where(closes / closes.shift(30) > 1., 0.)
++    cov = returns.rolling(30).cov() * 365
++    out = raw.copy() * 0.
++    for date in closes.index:
++        matrix = cov.loc[date].reindex(index=closes.columns, columns=closes.columns).to_numpy()
++        out.loc[date] = cap_weights(raw.loc[date].to_numpy(), matrix)
++    return out
+--- /dev/null
++++ b/user_data/strategies/RiskHoldCPortfolio.py
+@@ -0,0 +1,24 @@
++"""Research candidate: covariance-aware portfolio cap on the fixed weekly C rule."""
++import sys
++from pathlib import Path
++import pandas as pd
++
++sys.path.insert(0, str(Path(__file__).parent))
++from RiskHoldC import RiskHoldC
++from portfolio_risk import portfolio_weights
++
++
++class RiskHoldCPortfolio(RiskHoldC):
++    def informative_pairs(self):
++        return [('BTC/USDT', '1d'), ('ETH/USDT', '1d')]
++
++    def populate_indicators(self, df, metadata):
++        df = super().populate_indicators(df, metadata)
++        series = {}
++        for pair in ('BTC/USDT', 'ETH/USDT'):
++            frame = df if pair == metadata['pair'] else self.dp.get_pair_dataframe(pair, '1d')
++            series[pair] = frame.set_index('date')['close']
++        closes = pd.DataFrame(series).sort_index().dropna()
++        weights = portfolio_weights(closes)
++        df['weight'] = df['date'].map(weights[metadata['pair']]).fillna(0.)
++        return df
+--- /dev/null
++++ b/user_data/strategies/E0V1ENBounded.py
+@@ -0,0 +1,19 @@
++"""Research only: unchanged dip entries, bounded losses and time in position."""
++import sys
++from pathlib import Path
++from datetime import timedelta
++
++sys.path.insert(0, str(Path(__file__).parent))
++from E0V1ENPF import E0V1ENPF
++
++
++class E0V1ENBounded(E0V1ENPF):
++    trailing_stop = False
++    minimal_roi = {'0': .03}
++    ignore_roi_if_entry_signal = False
++    stoploss = -.10
++
++    def custom_exit(self, pair, trade, current_time, current_rate, current_profit, **kwargs):
++        if current_time - trade.open_date_utc >= timedelta(hours=24):
++            return 'max_hold_24h'
++        return super().custom_exit(pair, trade, current_time, current_rate, current_profit, **kwargs)
+--- /dev/null
++++ b/user_data/strategies/NostalgiaForInfinityX8Budget.py
+@@ -0,0 +1,35 @@
++"""Research only: cap invested cost, suppress loss additions, preserve X8 exits."""
++import sys
++from pathlib import Path
++
++sys.path.insert(0, str(Path(__file__).parent))
++from NostalgiaForInfinityX8PF import NostalgiaForInfinityX8PF
++
++
++class NostalgiaForInfinityX8Budget(NostalgiaForInfinityX8PF):
++    position_budget = .15
++    add_loss_floor = -.05
++
++    def custom_stake_amount(self, pair, current_time, current_rate, proposed_stake,
++                            min_stake, max_stake, leverage, entry_tag, side, **kwargs):
++        stake = super().custom_stake_amount(pair, current_time, current_rate, proposed_stake,
++                                           min_stake, max_stake, leverage, entry_tag, side, **kwargs)
++        stake = min(stake, max_stake, self.wallets.get_total_stake_amount() * self.position_budget)
++        return stake if stake >= (min_stake or 0.) else 0.
++
++    def adjust_trade_position(self, trade, current_time, current_rate, current_profit,
++                              min_stake, max_stake, current_entry_rate, current_exit_rate,
++                              current_entry_profit, current_exit_profit, **kwargs):
++        result = super().adjust_trade_position(trade, current_time, current_rate, current_profit,
++                                              min_stake, max_stake, current_entry_rate, current_exit_rate,
++                                              current_entry_profit, current_exit_profit, **kwargs)
++        stake, tag = result if isinstance(result, tuple) else (result, None)
++        if stake is None or stake <= 0:
++            return result
++        if current_profit <= self.add_loss_floor:
++            return None
++        remaining = self.wallets.get_total_stake_amount() * self.position_budget - trade.stake_amount
++        stake = min(stake, remaining, max_stake)
++        if stake <= 0 or stake < (min_stake or 0.):
++            return None
++        return (stake, tag) if isinstance(result, tuple) else stake
+--- /dev/null
++++ b/user_data/bench/block_bootstrap.py
+@@ -0,0 +1,22 @@
++"""Circular daily-block bootstrap of additive portfolio P&L, not IID trades.
++
++Preserves within-block dependence only; not a model-selection-adjusted CI.
++Input must contain every calendar day, including zero-P&L days.
++"""
++import numpy as np
++
++
++def block_interval(pnl, block_days, draws=5000, seed=0):
++    pnl = np.asarray(pnl, dtype=float)
++    if not len(pnl) or not np.isfinite(pnl).all() or block_days < 1:
++        raise ValueError('Finite daily P&L and a positive block size are required')
++    n = len(pnl)
++    block_days = min(block_days, n)
++    rng = np.random.default_rng(seed)
++    totals = np.empty(draws)
++    # Bounded memory even on long daily histories.
++    for i in range(draws):
++        starts = rng.integers(0, n, size=int(np.ceil(n / block_days)))
++        idx = (starts[:, None] + np.arange(block_days)) % n
++        totals[i] = pnl[idx.ravel()[:n]].sum()
++    return tuple(float(x) for x in np.percentile(totals, [2.5, 97.5]))
+--- /dev/null
++++ b/user_data/bench/test_review_risk.py
+@@ -0,0 +1,157 @@
++"""Offline regression tests; no exchange calls or live databases."""
++import sys
++import unittest
++from pathlib import Path
++from datetime import datetime, timezone, timedelta
++from types import SimpleNamespace
++from unittest.mock import patch
++
++import pandas as pd
++
++sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'strategies'))
++from RiskHoldC import RiskHoldC
++
++NOW = datetime(2026, 9, 28, tzinfo=timezone.utc)
++
++
++class RiskRegression(unittest.TestCase):
++    def test_mtm_uses_fill_notional_and_each_side_fee_once(self):
++        from mtm import equity_curve
++        days = pd.date_range('2026-01-01', periods=2, tz='UTC')
++        orders = [dict(amount=1., safe_price=100., cost=100.1, ft_order_side='buy',
++                       order_filled_timestamp=days[0].value // 10**6),
++                  dict(amount=1., safe_price=110., cost=110.11, ft_order_side='sell',
++                       order_filled_timestamp=days[1].value // 10**6)]
++        trades = pd.DataFrame([dict(pair='BTC/USDT', fee_open=.001, fee_close=.002,
++                                    is_short=False, leverage=1., orders=orders)])
++        with patch('mtm.daily_closes', return_value=pd.DataFrame({'BTC/USDT': [100., 110.]}, index=days)):
++            eq, _, _ = equity_curve(trades, 1000., days)
++        self.assertAlmostEqual(eq.iloc[-1], 1009.68)
++
++    def test_export_naive_boundaries_match_utc_trade_dates(self):
++        from evaluate import daily_realized_pnl
++        trades = pd.DataFrame({'close_date': pd.to_datetime(['2026-01-02'], utc=True), 'profit_abs': [5.]})
++        self.assertEqual(daily_realized_pnl(trades, '2026-01-01', '2026-01-03').tolist(), [0., 5., 0.])
++
++    def test_equity_backtest_uses_only_analyzed_prices(self):
++        s = RiskHoldC({'stake_currency': 'USDT'})
++        s.wallets = SimpleNamespace(get_total=lambda currency: 500.)
++        s.dp = SimpleNamespace(runmode=SimpleNamespace(value='backtest'),
++                               get_analyzed_dataframe=lambda *args: (pd.DataFrame({'close': [100.]}), None))
++        t = SimpleNamespace(pair='BTC/USDT', amount=10.)
++        with patch('RiskHoldC.Trade.get_trades_proxy', return_value=[t]):
++            self.assertEqual(s._equity(), 1500.)
++
++    def test_already_rebalanced_week_is_not_traded_again(self):
++        s = RiskHoldC({})
++        s._target = lambda pair: .5
++        t = SimpleNamespace(pair='BTC/USDT', date_last_filled_utc=NOW)
++        self.assertIsNone(s.adjust_trade_position(t, NOW, 100., .2, 10., 1000., 100., 100., .2, .2))
++
++    def test_block_interval_keeps_zero_pnl_days(self):
++        from block_bootstrap import block_interval
++        self.assertEqual(block_interval([1.] * 30, 7), (30., 30.))
++
++    def test_portfolio_weights_do_not_see_future_prices(self):
++        from portfolio_risk import portfolio_weights
++        import numpy as np
++        dates = pd.date_range('2025-01-01', periods=80, tz='UTC')
++        prices = pd.DataFrame({'BTC': np.exp(np.arange(80) * .01),
++                               'ETH': np.exp(np.arange(80) * .005)}, index=dates)
++        first = portfolio_weights(prices.iloc[:60])
++        prices.iloc[60:] *= 10
++        pd.testing.assert_frame_equal(first, portfolio_weights(prices).iloc[:60])
++
++    def test_portfolio_cap_accounts_for_perfect_correlation(self):
++        from portfolio_risk import cap_weights
++        import numpy as np
++        result = cap_weights(np.array([.5, .5]), np.array([[.36, .36], [.36, .36]]))
++        self.assertAlmostEqual(result.sum(), 2 / 3)
++
++    def test_portfolio_cap_never_increases_small_allocations(self):
++        from portfolio_risk import cap_weights
++        import numpy as np
++        result = cap_weights(np.array([.1, 0]), np.eye(2) * .01)
++        self.assertEqual(result.tolist(), [.1, 0.])
++
++    def test_bounded_dip_exits_deep_loser_at_deadline(self):
++        from E0V1ENBounded import E0V1ENBounded
++        s = E0V1ENBounded({})
++        t = SimpleNamespace(open_date_utc=NOW-timedelta(hours=24))
++        self.assertEqual(s.custom_exit('BTC/USDT', t, NOW, 100., -.09), 'max_hold_24h')
++
++    def test_x8_refuses_loss_adds_but_preserves_trims(self):
++        from NostalgiaForInfinityX8Budget import NostalgiaForInfinityX8Budget
++        from NostalgiaForInfinityX8PF import NostalgiaForInfinityX8PF
++        s = object.__new__(NostalgiaForInfinityX8Budget)
++        s.wallets = SimpleNamespace(get_total_stake_amount=lambda: 10000.)
++        t = SimpleNamespace(stake_amount=1000.)
++        args = (t, NOW, 100., -.06, 10., 1000., 100., 100., -.06, -.06)
++        with patch.object(NostalgiaForInfinityX8PF, 'adjust_trade_position', return_value=(200., 'add')):
++            self.assertIsNone(s.adjust_trade_position(*args))
++        with patch.object(NostalgiaForInfinityX8PF, 'adjust_trade_position', return_value=(-200., 'trim')):
++            self.assertEqual(s.adjust_trade_position(*args), (-200., 'trim'))
++
++    def test_x8_caps_add_at_remaining_budget(self):
++        from NostalgiaForInfinityX8Budget import NostalgiaForInfinityX8Budget
++        from NostalgiaForInfinityX8PF import NostalgiaForInfinityX8PF
++        s = object.__new__(NostalgiaForInfinityX8Budget)
++        s.wallets = SimpleNamespace(get_total_stake_amount=lambda: 10000.)
++        t = SimpleNamespace(stake_amount=1400.)
++        args = (t, NOW, 100., -.01, 10., 1000., 100., 100., -.01, -.01)
++        with patch.object(NostalgiaForInfinityX8PF, 'adjust_trade_position', return_value=(200., 'add')):
++            self.assertEqual(s.adjust_trade_position(*args), (100., 'add'))
++
++    def test_trim_sells_half_not_all_after_price_doubles(self):
++        s = RiskHoldC({})
++        s._target = lambda pair: 0.5
++        s._equity = lambda *args: 1000.0
++        t = SimpleNamespace(pair='BTC/USDT', amount=10., stake_amount=500.,
++                            date_last_filled_utc=NOW-timedelta(days=7))
++        stake, _ = s.adjust_trade_position(t, NOW, 100., 1., 10., 1000., 100., 100., 1., 1.)
++        self.assertEqual(abs(stake) * t.amount / t.stake_amount, 5.)
++
++    def test_trim_cost_conversion_also_works_below_entry_price(self):
++        s = RiskHoldC({})
++        s._target = lambda pair: .5
++        s._equity = lambda *args: 400.
++        t = SimpleNamespace(pair='BTC/USDT', amount=10., stake_amount=1000.,
++                            date_last_filled_utc=NOW-timedelta(days=7))
++        stake, _ = s.adjust_trade_position(t, NOW, 50., -.5, 10., 1000., 50., 50., -.5, -.5)
++        self.assertEqual(abs(stake) * t.amount / t.stake_amount, 6.)
++
++    def test_missing_price_skips_rebalance(self):
++        s = RiskHoldC({})
++        s._target = lambda pair: .5
++        s._equity = lambda *args: None
++        t = SimpleNamespace(pair='BTC/USDT', date_last_filled_utc=NOW-timedelta(days=7))
++        self.assertIsNone(s.adjust_trade_position(t, NOW, 50., -.5, 10., 1000., 50., 50., -.5, -.5))
++
++    def test_equity_uses_callback_quote_for_current_position(self):
++        s = RiskHoldC({'stake_currency': 'USDT'})
++        s.wallets = SimpleNamespace(get_total=lambda currency: 500.)
++        # No data provider: a network lookup here would be a bug.
++        t = SimpleNamespace(pair='BTC/USDT', amount=10.)
++        with patch('RiskHoldC.Trade.get_trades_proxy', return_value=[t]):
++            self.assertEqual(s._equity('BTC/USDT', 90.), 1400.)
++
++    def test_equity_includes_unrealized_profit(self):
++        s = RiskHoldC({'stake_currency': 'USDT', 'tradable_balance_ratio': 0.99})
++        s.wallets = SimpleNamespace(get_total=lambda currency: 500., get_total_stake_amount=lambda: 990.)
++        s.dp = SimpleNamespace(runmode=SimpleNamespace(value='dry_run'), ticker=lambda pair: {'bid': 100.})
++        t = SimpleNamespace(pair='BTC/USDT', amount=10., stake_amount=500.)
++        with patch('RiskHoldC.Trade.get_trades_proxy', return_value=[t]):
++            self.assertEqual(s._equity(), 1485.)
++
++    def test_missing_price_blocks_entry_instead_of_sizing_from_cost(self):
++        s = RiskHoldC({'stake_currency': 'USDT'})
++        s._target = lambda pair: 0.5
++        s.wallets = SimpleNamespace(get_total=lambda currency: 500., get_total_stake_amount=lambda: 1000.)
++        s.dp = SimpleNamespace(runmode=SimpleNamespace(value='dry_run'), ticker=lambda pair: {})
++        t = SimpleNamespace(pair='ETH/USDT', amount=10., stake_amount=500.)
++        with patch('RiskHoldC.Trade.get_trades_proxy', return_value=[t]):
++            self.assertEqual(s.custom_stake_amount('BTC/USDT', NOW, 100., 500., 10., 1000., 1., None, 'long'), 0.)
++
++
++if __name__ == '__main__':
++    unittest.main()

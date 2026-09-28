@@ -1,0 +1,289 @@
+{
+  "window": "2024-01-01/2026-09-25 UTC",
+  "history_reused": true,
+  "runs": [
+    {
+      "condition": "base",
+      "strategy": "UnlockPressureShortV1",
+      "fee_per_side": 0.001,
+      "continuous_calendar_returns": {
+        "2024": -0.11176973173680438,
+        "2025": 0.3918556493538956,
+        "2026": -8.426748585954602e-05
+      },
+      "mtm_drawdown": 0.36460967405767275,
+      "max_observed_gross_equity": 0.5149909115506783,
+      "funding_reconciliation_error": 1.4210854715202004e-14,
+      "profit_reconciliation_error": 4.993466973246541e-09,
+      "marked_final_equity": 12361.84137901,
+      "total_trades": 139,
+      "profit_total": 0.23618413790099999,
+      "final_balance": 12361.84137901,
+      "profit_factor": 1.0784519140260531,
+      "cagr": 0.0806317198085087,
+      "funding_fees": -404.76621830524317,
+      "long_trades": 0
+    },
+    {
+      "condition": "base",
+      "strategy": "FixedAPTShortV1",
+      "fee_per_side": 0.001,
+      "continuous_calendar_returns": {
+        "2024": -0.2301439067297616,
+        "2025": 0.2572489560009965,
+        "2026": -0.03026595125457554
+      },
+      "mtm_drawdown": 0.394575011217266,
+      "max_observed_gross_equity": 0.5143711811417679,
+      "funding_reconciliation_error": 7.105427357601002e-15,
+      "profit_reconciliation_error": 4.996707048121607e-09,
+      "marked_final_equity": 9386.063320250001,
+      "total_trades": 139,
+      "profit_total": -0.06139366797499993,
+      "final_balance": 9386.063320250001,
+      "profit_factor": 0.9761815463099051,
+      "cagr": -0.022906008221597385,
+      "funding_fees": -105.99071683775294,
+      "long_trades": 0
+    },
+    {
+      "condition": "base",
+      "strategy": "FixedTIAShortV1",
+      "fee_per_side": 0.001,
+      "continuous_calendar_returns": {
+        "2024": 0.05940179808353774,
+        "2025": 0.4311869960826422,
+        "2026": -0.24676605528020124
+      },
+      "mtm_drawdown": 0.3816276283928868,
+      "max_observed_gross_equity": 0.5175862821487351,
+      "funding_reconciliation_error": 1.4210854715202004e-14,
+      "profit_reconciliation_error": 4.955836629960686e-09,
+      "marked_final_equity": 11420.548714839997,
+      "total_trades": 139,
+      "profit_total": 0.14205487148400014,
+      "final_balance": 11420.548714839997,
+      "profit_factor": 1.0373601636023486,
+      "cagr": 0.04977914349622181,
+      "funding_fees": -301.4704051373768,
+      "long_trades": 0
+    },
+    {
+      "condition": "base",
+      "strategy": "EqualShortV1",
+      "fee_per_side": 0.001,
+      "continuous_calendar_returns": {
+        "2024": -0.08096463691753719,
+        "2025": 0.35340435061628517,
+        "2026": -0.1406472604189316
+      },
+      "mtm_drawdown": 0.37829148272806123,
+      "max_observed_gross_equity": 0.4977793837056877,
+      "funding_reconciliation_error": 7.105427357601002e-15,
+      "profit_reconciliation_error": 4.993466973246541e-09,
+      "marked_final_equity": 10688.856749040002,
+      "total_trades": 278,
+      "profit_total": 0.06888567490400012,
+      "final_balance": 10688.856749040002,
+      "profit_factor": 1.0217678128154126,
+      "cagr": 0.024663038904990664,
+      "funding_fees": -241.51928694319358,
+      "long_trades": 0
+    },
+    {
+      "condition": "stress",
+      "strategy": "UnlockPressureShortV1",
+      "fee_per_side": 0.002,
+      "continuous_calendar_returns": {
+        "2024": -0.1468505410066676,
+        "2025": 0.33585217157685143,
+        "2026": -0.029298531254478344
+      },
+      "mtm_drawdown": 0.37021565051842265,
+      "max_observed_gross_equity": 0.515479806646637,
+      "funding_reconciliation_error": 7.105427357601002e-15,
+      "profit_reconciliation_error": 4.906269168714061e-09,
+      "marked_final_equity": 11062.90561744,
+      "total_trades": 139,
+      "profit_total": 0.10629056174399988,
+      "final_balance": 11062.90561744,
+      "profit_factor": 1.0366497210127195,
+      "cagr": 0.03763437169891204,
+      "funding_fees": -359.0139439534868,
+      "long_trades": 0
+    },
+    {
+      "condition": "stress",
+      "strategy": "FixedAPTShortV1",
+      "fee_per_side": 0.002,
+      "continuous_calendar_returns": {
+        "2024": -0.2607572100235491,
+        "2025": 0.20647781725003278,
+        "2026": -0.05864423747814529
+      },
+      "mtm_drawdown": 0.4161047001535617,
+      "max_observed_gross_equity": 0.5148227461272631,
+      "funding_reconciliation_error": 7.105427357601002e-15,
+      "profit_reconciliation_error": 4.960270416631829e-09,
+      "marked_final_equity": 8395.76403524,
+      "total_trades": 139,
+      "profit_total": -0.16042359647599982,
+      "final_balance": 8395.76403524,
+      "profit_factor": 0.9355904744661411,
+      "cagr": -0.06194903473674351,
+      "funding_fees": -73.34815324546746,
+      "long_trades": 0
+    },
+    {
+      "condition": "stress",
+      "strategy": "FixedTIAShortV1",
+      "fee_per_side": 0.002,
+      "continuous_calendar_returns": {
+        "2024": 0.017845535010023728,
+        "2025": 0.37361407313329886,
+        "2026": -0.2691740156985708
+      },
+      "mtm_drawdown": 0.390037390974712,
+      "max_observed_gross_equity": 0.5180797694497379,
+      "funding_reconciliation_error": 1.4210854715202004e-14,
+      "profit_reconciliation_error": 4.985849955119193e-09,
+      "marked_final_equity": 10217.87505264,
+      "total_trades": 139,
+      "profit_total": 0.02178750526400021,
+      "final_balance": 10217.87505264,
+      "profit_factor": 1.0059732004240727,
+      "cagr": 0.007913962410617037,
+      "funding_fees": -293.91662397577767,
+      "long_trades": 0
+    },
+    {
+      "condition": "stress",
+      "strategy": "EqualShortV1",
+      "fee_per_side": 0.002,
+      "continuous_calendar_returns": {
+        "2024": -0.11717289643051587,
+        "2025": 0.29886928552438863,
+        "2026": -0.1659238818972203
+      },
+      "mtm_drawdown": 0.38668572676321533,
+      "max_observed_gross_equity": 0.4981196044661574,
+      "funding_reconciliation_error": 7.105427357601002e-15,
+      "profit_reconciliation_error": 4.9913353450392606e-09,
+      "marked_final_equity": 9564.159085969999,
+      "total_trades": 278,
+      "profit_total": -0.043584091403,
+      "final_balance": 9564.159085969999,
+      "profit_factor": 0.9856845486851697,
+      "cagr": -0.016165783501839392,
+      "funding_fees": -217.0396010148766,
+      "long_trades": 0
+    }
+  ],
+  "rule_minus_equal_short": {
+    "base": [
+      {
+        "mean_daily_difference_bps": 1.8134993060679527,
+        "ci95_daily_bps": [
+          -3.5755315647906136,
+          7.0367028602850565
+        ],
+        "block_days": 7,
+        "repeats": 2000,
+        "days": 999
+      },
+      {
+        "mean_daily_difference_bps": 1.8134993060679527,
+        "ci95_daily_bps": [
+          -4.013730700724667,
+          6.827755307306626
+        ],
+        "block_days": 30,
+        "repeats": 2000,
+        "days": 999
+      }
+    ],
+    "stress": [
+      {
+        "mean_daily_difference_bps": 1.8166308445349917,
+        "ci95_daily_bps": [
+          -3.5776903040860404,
+          7.047607712690098
+        ],
+        "block_days": 7,
+        "repeats": 2000,
+        "days": 999
+      },
+      {
+        "mean_daily_difference_bps": 1.8166308445349917,
+        "ci95_daily_bps": [
+          -4.021678988493952,
+          6.83773492739031
+        ],
+        "block_days": 30,
+        "repeats": 2000,
+        "days": 999
+      }
+    ]
+  },
+  "input_hashes": [
+    {
+      "pair": "APT/USDT:USDT",
+      "kind": "futures",
+      "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/data/binance/futures/APT_USDT_USDT-1h-futures.feather",
+      "sha256": "9b74ee2bfa983b24b80a72121b075d798dcfc0a78ce093550f824b6ba8a97dd6",
+      "rows": 26162,
+      "start": "2023-10-01 00:00:00+00:00",
+      "end": "2026-09-25 01:00:00+00:00"
+    },
+    {
+      "pair": "APT/USDT:USDT",
+      "kind": "mark",
+      "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/data/binance/futures/APT_USDT_USDT-1h-mark.feather",
+      "sha256": "e9f5de8e1ea90c0fc3fb06fe7a1989174b909077ea4c7f184e0a9332fd9685b2",
+      "rows": 26162,
+      "start": "2023-10-01 00:00:00+00:00",
+      "end": "2026-09-25 01:00:00+00:00"
+    },
+    {
+      "pair": "APT/USDT:USDT",
+      "kind": "funding_rate",
+      "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/data/binance/futures/APT_USDT_USDT-1h-funding_rate.feather",
+      "sha256": "71972b429e50c2eded7bcb92e1861864972015c0935efc0a9a0fb4df017fdb3d",
+      "rows": 3271,
+      "start": "2023-10-01 00:00:00+00:00",
+      "end": "2026-09-25 00:00:00+00:00"
+    },
+    {
+      "pair": "TIA/USDT:USDT",
+      "kind": "futures",
+      "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/data/binance/futures/TIA_USDT_USDT-1h-futures.feather",
+      "sha256": "898c3986d418b1c8a4f2d3e7a11c0db55f3879c37bbe6ae82bd234d7bcf8378f",
+      "rows": 25425,
+      "start": "2023-10-31 18:00:00+00:00",
+      "end": "2026-09-25 02:00:00+00:00"
+    },
+    {
+      "pair": "TIA/USDT:USDT",
+      "kind": "mark",
+      "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/data/binance/futures/TIA_USDT_USDT-1h-mark.feather",
+      "sha256": "ca86960be5099fdd88140249e097dca989f7456c7c668dce045121d85bf8237d",
+      "rows": 25427,
+      "start": "2023-10-31 16:00:00+00:00",
+      "end": "2026-09-25 02:00:00+00:00"
+    },
+    {
+      "pair": "TIA/USDT:USDT",
+      "kind": "funding_rate",
+      "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/data/binance/futures/TIA_USDT_USDT-1h-funding_rate.feather",
+      "sha256": "561b260386b9aadc56d658c3d73121493343dc6f6dca6bf9fc555f5d12fd957f",
+      "rows": 6355,
+      "start": "2023-10-31 20:00:00+00:00",
+      "end": "2026-09-25 00:00:00+00:00"
+    }
+  ],
+  "strategy_hashes": {
+    "NativeControls.py": "71517419352377932c5ce85e8056375811b54190e690a42aa30054234dc80af3",
+    "UnlockPressure.py": "c2744fdedd9a9912bd9149b671fb0ecef107787d4e447b6f6a58c7a63786010c"
+  },
+  "native_rule_reproduced": true
+}

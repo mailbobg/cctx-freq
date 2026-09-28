@@ -17,7 +17,7 @@ class E0V1EN(IStrategy):
     }
     timeframe = '5m'
     process_only_new_candles = True
-    startup_candle_count = 200  # was 20: RSI(14) needs far more warmup to match the backtest
+    startup_candle_count = 400  # includes the 288-bar return and recursive indicator warm-up
     order_types = {
         'entry': 'market',
         'exit': 'market',

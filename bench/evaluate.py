@@ -16,6 +16,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from block_bootstrap import block_interval
 
 from freqtrade.data.btanalysis import (
     get_latest_backtest_filename,
@@ -35,6 +36,12 @@ def monthly_profit(trades: pd.DataFrame, start_balance: float) -> pd.Series:
     close_utc = trades["close_date"].dt.tz_convert("UTC").dt.tz_localize(None)
     by_month = trades.groupby(close_utc.dt.to_period("M"))["profit_abs"].sum()
     return by_month / start_balance * 100
+
+
+def daily_realized_pnl(trades: pd.DataFrame, start: str, end: str) -> pd.Series:
+    days = pd.date_range(pd.to_datetime(start, utc=True).floor('D'),
+                         pd.to_datetime(end, utc=True).floor('D'), freq='D')
+    return trades.groupby(trades['close_date'].dt.floor('D'))['profit_abs'].sum().reindex(days, fill_value=0.)
 
 
 def evaluate_strategy(name: str, s: dict, trades: pd.DataFrame) -> None:
@@ -57,9 +64,20 @@ def evaluate_strategy(name: str, s: dict, trades: pd.DataFrame) -> None:
     pnl = trades["profit_abs"].to_numpy()
     draws = rng.choice(pnl, size=(5000, len(pnl)), replace=True).sum(axis=1) / start * 100
     lo, hi = np.percentile(draws, [2.5, 97.5])
-    print(f"bootstrap 95% CI of total profit: [{lo:+.1f}%, {hi:+.1f}%]  (half-width {(hi - lo) / 2:.1f}pp, {len(pnl)} trades)")
+    print(f"Legacy IID-trade bootstrap (ignores dependence): [{lo:+.1f}%, {hi:+.1f}%] ({len(pnl)} trades)")
+
+    daily = daily_realized_pnl(trades, s['backtest_start'], s['backtest_end'])
+    days = daily.index
+    for block in (7, 30):
+        lo, hi = block_interval(daily.to_numpy() / start * 100, block)
+        print(f'{block}-day block interval, realized P&L only: [{lo:+.1f}, {hi:+.1f}]%; not MTM or selection-adjusted')
+
+    if 'enter_tag' in trades:
+        tags = trades.groupby('enter_tag', dropna=False)['profit_abs'].agg(['count', 'sum'])
+        print('Entry-tag attribution (combined tags stay combined):\n' + tags.sort_values('sum').to_string())
 
     m = monthly_profit(trades, start)
+    m = m.reindex(pd.period_range(days[0].strftime('%Y-%m'), days[-1].strftime('%Y-%m'), freq='M'), fill_value=0.)
     yearly = m.groupby(m.index.year).sum()
     print("yearly:  " + "  ".join(f"{y}: {v:+.1f}%" for y, v in yearly.items()))
 

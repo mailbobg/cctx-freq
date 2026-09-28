@@ -1,0 +1,23 @@
+{
+  "runtime": "cross_venue_paper",
+  "strategy": "CrossVenueFundingV1",
+  "bot_name": "funding-spread",
+  "dry_run": true,
+  "wallet_total": 10000,
+  "symbols": ["BTC", "ETH"],
+  "max_open_trades": 1,
+  "db_url": "sqlite:///user_data/tradesv3.funding-spread.paper.sqlite",
+  "api_server": {"enabled": true, "listen_ip_address": "127.0.0.1", "listen_port": 8086},
+  "add_config_files": ["secrets.json"],
+  "poll_seconds": 30,
+  "fee": 0.0005,
+  "slippage": 0.0002,
+  "basis_buffer": 0.001,
+  "weight": 0.4,
+  "min_entry_seconds": 600,
+  "max_entry_seconds": 7200,
+  "quote_age_seconds": 15,
+  "rate_age_seconds": 90,
+  "max_hold_hours": 12,
+  "stoploss": 0.2
+}

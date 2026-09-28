@@ -1,0 +1,95 @@
+{
+  "strategy": "UnlockPressureShortV1",
+  "trading_mode": "futures",
+  "margin_mode": "isolated",
+  "stake_currency": "USDT",
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 1.0,
+  "max_open_trades": 1,
+  "dry_run": true,
+  "dry_run_wallet": 10000,
+  "timeframe": "1h",
+  "fee": 0.001,
+  "dataformat_ohlcv": "feather",
+  "dataformat_trades": "feather",
+  "use_exit_signal": true,
+  "exit_profit_only": false,
+  "unfilledtimeout": {
+    "entry": 5,
+    "exit": 5,
+    "unit": "minutes"
+  },
+  "entry_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exchange": {
+    "name": "binance",
+    "key": "",
+    "secret": "",
+    "enable_ws": false,
+    "pair_whitelist": [
+      "APT/USDT:USDT",
+      "TIA/USDT:USDT"
+    ],
+    "pair_blacklist": [],
+    "ccxt_config": {
+      "timeout": 15000,
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "linear"
+          ]
+        }
+      }
+    },
+    "ccxt_async_config": {
+      "timeout": 15000,
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "linear"
+          ]
+        }
+      }
+    }
+  },
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "unlock_pressure": {
+    "blocked_entry_weeks": [
+      "2026-06-22"
+    ]
+  },
+  "bot_name": "unlock-short",
+  "internals": {
+    "process_throttle_secs": 5
+  },
+  "add_config_files": [
+    "secrets.json"
+  ],
+  "db_url": "sqlite:///user_data/tradesv3.unlock-short.dryrun.sqlite",
+  "initial_state": "running",
+  "force_entry_enable": false,
+  "api_server": {
+    "enabled": true,
+    "listen_ip_address": "127.0.0.1",
+    "verbosity": "error",
+    "CORS_origins": [
+      "http://127.0.0.1:8080",
+      "http://localhost:8080",
+      "http://127.0.0.1:8089",
+      "http://localhost:8089"
+    ],
+    "listen_port": 8085
+  }
+}

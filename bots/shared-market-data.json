@@ -1,0 +1,22 @@
+{
+  "exchange": {
+    "ccxt_config": {
+      "urls": {
+        "api": {
+          "public": "http://127.0.0.1:8090/market/spot",
+          "fapiPublic": "http://127.0.0.1:8090/market/usd-m",
+          "fapiPublicV2": "http://127.0.0.1:8090/market/usd-m-v2"
+        }
+      }
+    },
+    "ccxt_async_config": {
+      "urls": {
+        "api": {
+          "public": "http://127.0.0.1:8090/market/spot",
+          "fapiPublic": "http://127.0.0.1:8090/market/usd-m",
+          "fapiPublicV2": "http://127.0.0.1:8090/market/usd-m-v2"
+        }
+      }
+    }
+  }
+}

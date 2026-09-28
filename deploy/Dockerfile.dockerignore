@@ -1,0 +1,11 @@
+# BuildKit picks this file up for user_data/deploy/Dockerfile (instead of the repo's .dockerignore)
+.git
+.venv/
+user_data/
+external/
+tests/
+docs/
+.github
+.devcontainer/
+**/__pycache__
+*.pyc

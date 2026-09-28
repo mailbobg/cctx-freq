@@ -1,0 +1,11 @@
+{
+  "previous_rule": "host-suffix, binance.com, direct",
+  "current_rule": "host-suffix, binance.com, Binance",
+  "observed_group": "VPN-CF-HK1",
+  "verified_endpoints": {
+    "/fapi/v1/ping": 200,
+    "/fapi/v1/exchangeInfo": 200,
+    "/api/v3/ping": 200
+  },
+  "market_symbol_count": 907
+}

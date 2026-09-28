@@ -71,6 +71,7 @@ function build(b, i) {
         <div class="name"><span class="led"></span>${esc(b.bot_name)}</div>
         <div class="strat" title="${esc(b.strategy)}">:${b.port} · ${esc(b.strategy)}</div>
         <div class="desc">${esc(b.description)}</div>
+        <div class="desc strategy-note" hidden></div>
         <div class="liqmsg" hidden></div>
         <div class="tags"><span class="tag state"></span><span class="tag mode" hidden></span><span class="tag up-t" hidden></span><span class="tag live rs" hidden></span></div>
       </div>
@@ -86,6 +87,7 @@ function build(b, i) {
           <button class="btn restart" hidden>重启</button>
           <button class="btn warn liq" hidden>清仓并停止</button>
           <a class="btn ui" target="_blank" hidden>FreqUI ↗</a>
+          <a class="btn portfolio" target="_blank" hidden>组合明细 ↗</a>
           <button class="btn logbtn">明细</button>
         </div>
       </div>
@@ -107,6 +109,10 @@ function build(b, i) {
       `会先暂停开仓，再以市价卖出全部持仓：${list || "（无）"}。全部成交后停止机器人；如果 10 分钟内没卖完，机器人保持运行并提示你。${el.dataset.dry === "1" ? "这是模拟盘，按模拟价成交。" : "这是实盘，会真实下单。"}`);
   };
   $(".ui", el).href = `http://127.0.0.1:8089/?bot=${encodeURIComponent(b.name)}`;
+  if (b.runtime === "cross_venue_paper") {
+    $(".ui", el).href = b.detail_url;
+    $(".portfolio", el).href = b.portfolio_url;
+  }
   $(".logbtn", el).onclick = () => {
     openLogs.has(b.name) ? openLogs.delete(b.name) : openLogs.add(b.name);
     store.set("panel-open", JSON.stringify([...openLogs]));
@@ -180,6 +186,10 @@ function update(el, b) {
     lm.className = "liqmsg " + (b.liq.stage === "完成" ? "pos" : ["失败", "超时"].includes(b.liq.stage) ? "neg" : "amb");
   }
   $(".ui", el).hidden = !up;
+  $(".portfolio", el).hidden = !(up && b.runtime === "cross_venue_paper");
+  const note = $(".strategy-note", el);
+  note.hidden = !b.note;
+  setText(note, b.note || "");
 
   // open positions: chips are keyed by pair; only their numbers change between refreshes
   const drawer = $(".drawer", el), box = $(".positions", el);

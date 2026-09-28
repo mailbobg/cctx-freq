@@ -1,0 +1,42 @@
+[
+  {
+    "strategy": "E0V1ENX13",
+    "timeframe": "5m",
+    "stoploss": -0.25,
+    "trailing_stop": false,
+    "minimal_roi": {
+      "0": 0.03
+    },
+    "ignore_roi_if_entry_signal": false,
+    "startup_candle_count": 400
+  },
+  {
+    "strategy": "E0V1ENBounded",
+    "timeframe": "5m",
+    "stoploss": -0.1,
+    "trailing_stop": false,
+    "minimal_roi": {
+      "0": 0.03
+    },
+    "ignore_roi_if_entry_signal": false,
+    "startup_candle_count": 400
+  },
+  {
+    "strategy": "NostalgiaForInfinityX8PF",
+    "timeframe": "5m",
+    "stoploss": -0.99,
+    "trailing_stop": false,
+    "minimal_roi": {},
+    "ignore_roi_if_entry_signal": true,
+    "startup_candle_count": 800
+  },
+  {
+    "strategy": "NostalgiaForInfinityX8Budget",
+    "timeframe": "5m",
+    "stoploss": -0.99,
+    "trailing_stop": false,
+    "minimal_roi": {},
+    "ignore_roi_if_entry_signal": true,
+    "startup_candle_count": 800
+  }
+]

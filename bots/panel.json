@@ -13,5 +13,11 @@
   },
   "c-hold": {
     "description": "C：BTC/ETH 每周按趋势和波动率调仓（参考记录，未过预注册标准 1）"
+  },
+  "unlock-short": {
+    "description": "解锁供给压力仅做空 · APT/TIA · 1h · 1倍杠杆 · 独立模拟；研究候选，尚未验证稳定盈利"
+  },
+  "funding-spread": {
+    "description": "跨平台资金费差 · Bybit/OKX BTC/ETH · 一个双边组合 · 独立模拟；扣除成本后无优势则空仓"
   }
 }
