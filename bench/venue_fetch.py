@@ -39,11 +39,39 @@ session.headers["User-Agent"] = "ccxt-fr-research/0.1"
 MS5 = 5 * 60 * 1000
 
 
-def get(url: str, params: dict, tries: int = 6):
+class RateLimiter:
+    """Token bucket shared by all threads: at most `rate` requests per second per process (= per IP here)."""
+
+    def __init__(self, rate: float):
+        import threading
+        self.rate, self.tokens, self.last = rate, rate, time.monotonic()
+        self.lock = threading.Lock()
+
+    def wait(self) -> None:
+        while True:
+            with self.lock:
+                now = time.monotonic()
+                self.tokens = min(self.rate, self.tokens + (now - self.last) * self.rate)
+                self.last = now
+                if self.tokens >= 1:
+                    self.tokens -= 1
+                    return
+                need = (1 - self.tokens) / self.rate
+            time.sleep(need)
+
+
+LIMITER = RateLimiter(float(os.environ.get("VENUE_RPS", "8")))
+
+
+def get(url: str, params: dict, tries: int = 12):
     for i in range(tries):
+        LIMITER.wait()
         try:
             r = session.get(url, params=params, timeout=30)
-            if r.status_code == 429 or r.status_code >= 500:
+            if r.status_code == 429:
+                time.sleep(1.0 + 0.5 * i)          # throttled: short pause, no exponential blow-up
+                continue
+            if r.status_code >= 500:
                 raise RuntimeError(f"http {r.status_code}")
             r.raise_for_status()
             d = r.json()
@@ -52,7 +80,8 @@ def get(url: str, params: dict, tries: int = 6):
             if str(code) not in ("0", "00000"):
                 msg = d.get("retMsg") or d.get("msg") or ""
                 if "rate" in msg.lower() or str(code) in ("10006", "10016", "429", "30001", "30002"):
-                    raise RuntimeError(f"rate limited: {code} {msg}")
+                    time.sleep(1.0 + 0.5 * i)
+                    continue
                 return {"result": {"list": []}, "data": [], "_error": f"{code} {msg}"}
             return d
         except Exception as e:  # noqa: BLE001
@@ -117,7 +146,7 @@ class Bybit:
 class Bitget:
     base = "https://api.bitget.com"
     workers = 6
-    workers_5m = 20                 # public limit 20 req/s per IP; each 5m page is 200 candles
+    workers_5m = 12                 # ~8-10 req/s per IP before 429s; LIMITER paces all threads
 
     def symbols(self) -> list[str]:
         d = get(f"{self.base}/api/v2/mix/market/contracts", {"productType": "usdt-futures"})
