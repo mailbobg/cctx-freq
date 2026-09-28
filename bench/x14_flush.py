@@ -67,10 +67,21 @@ class Episode:
 
 def load():
     files = sorted((ROOT / "5m").glob("*.parquet"))
-    frames = {f.stem: pd.read_parquet(f).set_index("date") for f in files}
     idx = pd.date_range("2020-10-01", "2026-09-23", freq="5min", tz="UTC")
-    close = pd.DataFrame({s: d["close"].reindex(idx) for s, d in frames.items()}, index=idx).astype(np.float32)
-    open_ = pd.DataFrame({s: d["open"].reindex(idx) for s, d in frames.items()}, index=idx).astype(np.float32)
+    C = np.full((len(idx), len(files)), np.nan, dtype=np.float32)
+    Op = np.full((len(idx), len(files)), np.nan, dtype=np.float32)
+    base = idx.as_unit("ns").asi8[0]       # parquet stamps are ms, date_range gives µs: compare in ns explicitly
+    step = 5 * 60 * 10**9
+    for j, f in enumerate(files):
+        d = pd.read_parquet(f)
+        ns = pd.DatetimeIndex(d["date"]).as_unit("ns").asi8
+        pos = (ns - base) // step
+        ok = (pos >= 0) & (pos < len(idx)) & ((ns - base) % step == 0)
+        C[pos[ok], j] = d["close"].to_numpy()[ok]
+        Op[pos[ok], j] = d["open"].to_numpy()[ok]
+    cols = [f.stem for f in files]
+    close = pd.DataFrame(C, index=idx, columns=cols)
+    open_ = pd.DataFrame(Op, index=idx, columns=cols)
     fund = pd.read_parquet(P1 / "funding.parquet")
     fund["time"] = fund["time"].dt.floor("h")
     funding = {s: g.groupby("time")["rate"].sum().to_dict() for s, g in fund.groupby("symbol")}
