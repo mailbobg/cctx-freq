@@ -64,3 +64,4 @@ closed for all venues; no further variants (none pre-registered).
 
 | # | date | venue | result |
 |---|---|---|---|
+| 1 | 2026-09-29 | **Bybit** (control; own funding history; 410 symbols, 247 weekly universes of 60; look-ahead 50/50) | **FAIL on 1 (2025 −16.2 %, 2026 +0.0 %) and 4 (2025 maxDD −25.8 %)**; passes 2 (4 of 5 years > 0, halves +53.0 % / +21.2 %), 3 (monthly CI [+0.18, +2.28]), 5 (BTC corr +0.12), 6 (fee ×2 +61.9 %), 7 (without top-3 +5,505), 8 (grid 7 of 9 > 0; the two 48 h cells negative), 9 (282 episodes). Years: 2022 +16.7 / 2023 +31.1 / 2024 +44.6 / 2025 −16.2 / 2026 +0.0 %; per episode +1.5 … +2.9 % in 2022–24, −0.95 % in 2025, +0.03 % in 2026. Same shape as Binance (2021–24 strong, 2025 negative): the decay is not Binance-specific. Note a Bybit paging bug in the first fetch (newest-1000-rows semantics) produced a run on 10 % of the data; it was discarded before any result was read and the fetcher fixed (`cfbebf2`). |
