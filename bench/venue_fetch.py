@@ -12,8 +12,10 @@ Resumable: every API page is cached under raw/ as JSON. Usage:
 """
 
 import json
+import os
 import sys
 import time
+import zlib
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
@@ -250,8 +252,12 @@ def step_fivemin(v, newest_first: bool = True) -> None:
             key = RAW / "5m" / sym / f"{q}.json"
             if not key.exists():
                 jobs.append((str(q), sym, a, b, key))
+    shard = os.environ.get("VENUE_SHARD")            # "k/n": this process takes symbols with crc32(sym) % n == k
+    if shard:
+        k, n = map(int, shard.split("/"))
+        jobs = [j for j in jobs if zlib.crc32(j[1].encode()) % n == k]
     jobs.sort(key=lambda j: j[0], reverse=newest_first)
-    print(f"{VENUE}: {len(first_seen)} symbols, {len(jobs)} quarter jobs to fetch", flush=True)
+    print(f"{VENUE}: {len(first_seen)} symbols, {len(jobs)} quarter jobs to fetch{' (shard ' + shard + ')' if shard else ''}", flush=True)
 
     def one(job):
         _, sym, a, b, key = job
@@ -262,7 +268,8 @@ def step_fivemin(v, newest_first: bool = True) -> None:
         for i, sym in enumerate(ex.map(one, jobs), 1):
             if i % 200 == 0:
                 print(f"  5m quarters {i}/{len(jobs)} ({sym})", flush=True)
-    step_convert(first_seen)
+    if not shard:
+        step_convert(first_seen)
 
 
 def step_convert(first_seen: dict | None = None) -> None:
