@@ -77,7 +77,8 @@ def load():
     close = pd.read_parquet(ROOT / "hourly_close.parquet")
     open_ = pd.read_parquet(ROOT / "hourly_open.parquet")
     fund = pd.read_parquet(ROOT / "funding.parquet")
-    funding = {s: g.set_index("time")["rate"] for s, g in fund.groupby("symbol")}
+    fund["time"] = fund["time"].dt.floor("h")            # archive stamps carry ms offsets (12:00:00.001); some symbols settle every 4h
+    funding = {s: g.groupby("time")["rate"].sum() for s, g in fund.groupby("symbol")}
     uni = json.loads((ROOT / "universe.json").read_text())
     universe = {pd.Timestamp(k, tz="UTC"): v for k, v in uni["mondays"].items()}
     return close, open_, funding, universe
@@ -189,8 +190,8 @@ def run(close: pd.DataFrame, open_: pd.DataFrame, funding: dict, universe: dict,
             i = hour_pos[h]
             nxt = h + H
             has_next = nxt in open_.index and nxt < end_ts
-            # funding at 00/08/16 UTC on open positions (long pays positive rate)
-            if h.hour % 8 == 0:
+            # funding whenever a settlement exists for the symbol at this hour (8h or 4h intervals; long pays positive rate)
+            if h.hour % 4 == 0:
                 for pos in positions.values():
                     ra = funding.get(pos.a, pd.Series(dtype=float)).get(h, 0.0)
                     rb = funding.get(pos.b, pd.Series(dtype=float)).get(h, 0.0)

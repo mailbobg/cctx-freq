@@ -106,3 +106,7 @@ today's labels would leak the future.) Then close the line.
 | — | 2026-09-28 | **verdict** | **Line closed.** Both pre-registered rules lose money in 5 of 6 years with either selection method; the market-neutral construction works (BTC correlation ≈ 0.1) but the spreads between the 20 largest perps trend rather than revert at the 2–4 sd / 7-day horizon. The only positive year, 2021, is the one with the most new listings and rotation. Not pursued further; a different mechanism (e.g. event-driven relative-value around liquidation cascades, or much shorter horizons with maker execution) would need its own spec. |
 
 Look-ahead self-check after fixing the check's truncation time: distance 50/50, cointegration 50/50 truncated reruns identical.
+
+Funding correction (2026-09-28, after the verdict): the archive's funding stamps carry millisecond offsets and some
+symbols settle every 4 h, so the engine had missed ~43 % of settlements. Fixed (stamps floored to the hour, settlements
+applied at any 4 h mark). Headline unchanged: distance −59.8 % (was −59.9), cointegration −25.1 % (same).
