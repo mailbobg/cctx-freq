@@ -44,11 +44,19 @@ def get(url: str, params: dict, tries: int = 6):
             if r.status_code == 429 or r.status_code >= 500:
                 raise RuntimeError(f"http {r.status_code}")
             r.raise_for_status()
-            return r.json()
+            d = r.json()
+            # venue-level error codes (rate limits, invalid symbol) come back as HTTP 200
+            code = d.get("retCode", d.get("code", 0))
+            if str(code) not in ("0", "00000"):
+                msg = d.get("retMsg") or d.get("msg") or ""
+                if "rate" in msg.lower() or str(code) in ("10006", "10016", "429", "30001", "30002"):
+                    raise RuntimeError(f"rate limited: {code} {msg}")
+                return {"result": {"list": []}, "data": [], "_error": f"{code} {msg}"}
+            return d
         except Exception as e:  # noqa: BLE001
             if i == tries - 1:
                 raise
-            time.sleep(1.5 * (i + 1))
+            time.sleep(3 * (i + 1))
 
 
 def cached(key: Path, fn):
@@ -216,7 +224,7 @@ def step_fivemin(v) -> None:
         s0 = int(max(START, pd.Timestamp(monday, tz="UTC") - pd.DateOffset(months=1)).timestamp() * 1000)
         # one cache file per calendar quarter so an interrupted symbol resumes
         rows = []
-        q = pd.Timestamp(s0, unit="ms", tz="UTC").to_period("Q")
+        q = pd.Timestamp(s0, unit="ms", tz="UTC").tz_localize(None).to_period("Q")
         while q.start_time.tz_localize("UTC") <= END:
             a, b = max(s0, int(q.start_time.tz_localize("UTC").timestamp() * 1000)), min(e0, int(q.end_time.tz_localize("UTC").timestamp() * 1000))
             if a <= b:
