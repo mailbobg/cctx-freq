@@ -28,6 +28,10 @@ per venue with venue prices, venue funding and venue costs:
 - window: 2022-01-01 → 2026-09-23 (both APIs start in 2022 for 5m history).
 Nothing is tuned per venue. The engine is `bench/x14_flush.py` with a different data root.
 
+*Data note, written before running:* Bitget's public API keeps only ~33 days of funding history, so Bitget funding is
+proxied by Bybit's funding rate for the same base symbol (missing → 0). On Binance, funding was +4 % of X14's P&L,
+so this approximation cannot decide the outcome. Bybit uses its own funding history (available from 2020).
+
 ## Validation (per venue)
 
 Per calendar year 2022 … 2026, halves 2022–2023 / 2024–2026, full window; fee ×2; the 9-cell neighbourhood;
