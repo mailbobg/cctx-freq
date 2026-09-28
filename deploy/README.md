@@ -1,5 +1,7 @@
 # Deploying CCXT-Fr with Docker
 
+The live deployment (server, access, operations) is documented in Chinese in `DEPLOYMENT.md`.
+
 One image (`ccxt-freqtrade:local`, built from this repo's freqtrade checkout) runs both the control panel and
 every bot. Only the panel is a compose service; it creates one container per bot (`ccxt-bot-<name>`) when you press
 "start" on the panel, and stops/starts it on demand. All containers use host networking and bind to 127.0.0.1 —
@@ -20,13 +22,14 @@ sudo mkdir -p /opt/ccxt && sudo chown $USER /opt/ccxt
 rsync -a --delete --exclude .venv --exclude .git --exclude 'user_data/*' --exclude external \
   ~/Documents/07-Hero/CCXT-Fr/ SERVER:/opt/ccxt/
 # user_data: code and configs (the git-tracked part) + the credentials file, no market data
-cd ~/Documents/07-Hero/CCXT-Fr/user_data && git ls-files -z | rsync -a --from0 --files-from=- ./ SERVER:/opt/ccxt/user_data/
+cd ~/Documents/07-Hero/CCXT-Fr/user_data && git ls-files | grep -v '^bots/local-network.json$' | rsync -a --files-from=- ./ SERVER:/opt/ccxt/user_data/
 rsync -a bots/secrets.json SERVER:/opt/ccxt/user_data/bots/
 # optional: carry over the dry-run records
 rsync -a tradesv3.*.sqlite SERVER:/opt/ccxt/user_data/
 ```
 
-On the server, `user_data/bots/local-network.json` must be `{}` (the Binance mirror override is only for the Mac):
+On the server, `user_data/bots/local-network.json` must be `{}` (the Binance mirror override is only for the Mac; the sync
+command above skips it so it is not overwritten later):
 
 ```bash
 echo '{}' > /opt/ccxt/user_data/bots/local-network.json

@@ -13,6 +13,7 @@ services:
     restart: unless-stopped
     user: root                  # needs the docker socket; bot containers themselves run as ftuser
     environment:
+      PYTHONUSERBASE: /home/ftuser/.local      # the image installs its packages for ftuser; let root use them
       PANEL_RUNNER: docker
       PANEL_BOT_IMAGE: ccxt-freqtrade:local
       PANEL_HOST_USER_DATA: ${CCXT_USER_DATA:?set CCXT_USER_DATA to the absolute host path of user_data}
