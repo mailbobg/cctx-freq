@@ -152,7 +152,25 @@ cd /opt/ccxt/user_data/deploy && export CCXT_USER_DATA=/opt/ccxt/user_data && do
 迁移模拟盘记录时，先在原机器上停掉机器人，把数据库的 WAL 合并（`sqlite3 文件 "PRAGMA wal_checkpoint(TRUNCATE);"`），
 再拷贝 `tradesv3.*.sqlite` 和 `panel/state.json`（记录哪些机器人应当运行）。2026-09-28 的迁移用校验值确认了两边一致。
 
-### 更新代码（策略、控制台、配置）
+### 更新代码（策略、控制台、配置）——用 deploy.sh
+
+改好、测好、提交 git 之后，在 Mac 上运行：
+
+```bash
+~/Documents/07-Hero/CCXT-Fr/user_data/deploy/deploy.sh --dry-run
+```
+
+先看预演结果（会改哪些文件、要不要重建镜像、哪些运行中的机器人受影响），没问题再去掉 `--dry-run` 正式部署：
+
+```bash
+~/Documents/07-Hero/CCXT-Fr/user_data/deploy/deploy.sh
+```
+
+它会：拒绝部署未提交的改动；只同步内容有变化的文件（按校验值比较），跳过 Mac 专用配置；git 里删掉的文件在服务器上也删掉；
+改了 freqtrade 代码或 Dockerfile 时重建镜像，改了控制台时重启控制台；新增机器人时把端口加进 Mac 的隧道；
+最后列出**需要在控制台上重启**的运行中机器人（按策略文件、它引用的辅助模块、配置文件判断）。机器人不会被自动重启。
+
+下面是 deploy.sh 做的手动等价步骤，备查：
 
 1. 在 Mac 上改好、测好、提交 git。
 2. 用上面第 2 条 rsync 命令同步 `user_data`（它会跳过 `local-network.json`，不会把 Mac 专用配置覆盖到服务器）。
