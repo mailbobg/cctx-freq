@@ -8,7 +8,7 @@ Output has the same layout as data_x14/ so bench/x14_flush.py runs unchanged (X1
   funding.parquet        symbol, time, rate
 
 Resumable: every API page is cached under raw/ as JSON. Usage:
-  python user_data/bench/venue_fetch.py bybit|bitget daily|universe|fivemin|funding|all
+  python user_data/bench/venue_fetch.py bybit|bitget daily|universe|fivemin|funding|convert|all
 """
 
 import json
@@ -115,6 +115,7 @@ class Bybit:
 class Bitget:
     base = "https://api.bitget.com"
     workers = 6
+    workers_5m = 20                 # public limit 20 req/s per IP; each 5m page is 200 candles
 
     def symbols(self) -> list[str]:
         d = get(f"{self.base}/api/v2/mix/market/contracts", {"productType": "usdt-futures"})
@@ -206,45 +207,82 @@ def step_universe() -> None:
     print(f"universe: {len(universe)} Mondays, {sizes.min()}–{sizes.max()} symbols, union {len(union)}", flush=True)
 
 
-def step_fivemin(v) -> None:
+def _quarters(s0: int, e0: int):
+    q = pd.Timestamp(s0, unit="ms", tz="UTC").tz_localize(None).to_period("Q")
+    while q.start_time.tz_localize("UTC") <= END:
+        a = max(s0, int(q.start_time.tz_localize("UTC").timestamp() * 1000))
+        b = min(e0, int(q.end_time.tz_localize("UTC").timestamp() * 1000))
+        if a <= b:
+            yield q, a, b
+        q += 1
+
+
+def _convert(sym: str, rows: list) -> int:
+    if not rows:
+        print("no 5m data:", sym, flush=True)
+        return 0
+    df = pd.DataFrame(rows, columns=["t", "open", "high", "low", "close", "volume", "quote_volume"])
+    df["date"] = pd.to_datetime(df["t"], unit="ms", utc=True)
+    df = df[(df["t"] % MS5 == 0)].drop_duplicates("date").sort_values("date")
+    out = df[["date", "open", "close"]].copy()
+    out["open"] = out["open"].astype(np.float32)
+    out["close"] = out["close"].astype(np.float32)
+    out.reset_index(drop=True).to_parquet(ROOT / "5m" / f"{sym}.parquet")
+    return len(out)
+
+
+def step_fivemin(v, newest_first: bool = True) -> None:
+    """Fetch (symbol, quarter) jobs in parallel — newest quarters first, so a partial run already covers 2025–26 —
+    then convert each symbol from its cached quarters."""
     uni = json.loads((ROOT / "universe.json").read_text())
     first_seen = {"BTCUSDT": "2021-12-01"}
     for monday, syms in uni["mondays"].items():
         for s in syms:
             first_seen.setdefault(s, monday)
     (ROOT / "5m").mkdir(parents=True, exist_ok=True)
-    todo = [(s, m) for s, m in first_seen.items() if not (ROOT / "5m" / f"{s}.parquet").exists()]
-    print(f"{VENUE}: {len(first_seen)} symbols, {len(todo)} to fetch", flush=True)
     e0 = int(END.timestamp() * 1000)
-
-    def one(item):
-        sym, monday = item
+    jobs = []
+    for sym, monday in first_seen.items():
+        if (ROOT / "5m" / f"{sym}.parquet").exists():
+            continue
         s0 = int(max(START, pd.Timestamp(monday, tz="UTC") - pd.DateOffset(months=1)).timestamp() * 1000)
-        # one cache file per calendar quarter so an interrupted symbol resumes
-        rows = []
-        q = pd.Timestamp(s0, unit="ms", tz="UTC").tz_localize(None).to_period("Q")
-        while q.start_time.tz_localize("UTC") <= END:
-            a, b = max(s0, int(q.start_time.tz_localize("UTC").timestamp() * 1000)), min(e0, int(q.end_time.tz_localize("UTC").timestamp() * 1000))
-            if a <= b:
-                rows += cached(RAW / "5m" / sym / f"{q}.json", lambda a=a, b=b: v.klines(sym, "5", a, b))
-            q += 1
-        if not rows:
-            print("no 5m data:", sym, flush=True)
-            return sym, 0
-        df = pd.DataFrame(rows, columns=["t", "open", "high", "low", "close", "volume", "quote_volume"])
-        df["date"] = pd.to_datetime(df["t"], unit="ms", utc=True)
-        df = df[(df["t"] % MS5 == 0)].drop_duplicates("date").sort_values("date")
-        out = df[["date", "open", "close"]].copy()
-        out["open"] = out["open"].astype(np.float32)
-        out["close"] = out["close"].astype(np.float32)
-        out.reset_index(drop=True).to_parquet(ROOT / "5m" / f"{sym}.parquet")
-        return sym, len(out)
+        for q, a, b in _quarters(s0, e0):
+            key = RAW / "5m" / sym / f"{q}.json"
+            if not key.exists():
+                jobs.append((str(q), sym, a, b, key))
+    jobs.sort(key=lambda j: j[0], reverse=newest_first)
+    print(f"{VENUE}: {len(first_seen)} symbols, {len(jobs)} quarter jobs to fetch", flush=True)
 
-    with ThreadPoolExecutor(v.workers) as ex:
-        for i, (sym, n) in enumerate(ex.map(one, todo), 1):
-            if i % 20 == 0:
-                print(f"  5m {i}/{len(todo)} ({sym}: {n} candles)", flush=True)
-    print(f"5m parquet files: {len(list((ROOT / '5m').glob('*.parquet')))}", flush=True)
+    def one(job):
+        _, sym, a, b, key = job
+        cached(key, lambda: v.klines(sym, "5", a, b))
+        return sym
+
+    with ThreadPoolExecutor(getattr(v, "workers_5m", v.workers)) as ex:
+        for i, sym in enumerate(ex.map(one, jobs), 1):
+            if i % 200 == 0:
+                print(f"  5m quarters {i}/{len(jobs)} ({sym})", flush=True)
+    step_convert(first_seen)
+
+
+def step_convert(first_seen: dict | None = None) -> None:
+    """Build 5m/<sym>.parquet from whatever quarters are cached (also usable for a partial data set)."""
+    if first_seen is None:
+        uni = json.loads((ROOT / "universe.json").read_text())
+        first_seen = {"BTCUSDT": "2021-12-01"}
+        for monday, syms in uni["mondays"].items():
+            for s in syms:
+                first_seen.setdefault(s, monday)
+    (ROOT / "5m").mkdir(parents=True, exist_ok=True)
+    n = 0
+    for sym in first_seen:
+        files = sorted((RAW / "5m" / sym).glob("*.json"))
+        rows = []
+        for f in files:
+            rows += json.loads(f.read_text())
+        if _convert(sym, rows):
+            n += 1
+    print(f"5m parquet files: {n}", flush=True)
 
 
 def step_funding(v) -> None:
@@ -275,5 +313,7 @@ if __name__ == "__main__":
         step_universe()
     if step in ("fivemin", "all"):
         step_fivemin(v)
+    if step == "convert":
+        step_convert()
     if step in ("funding", "all"):
         step_funding(v)
