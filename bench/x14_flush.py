@@ -16,8 +16,11 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-ROOT = Path("user_data/data_x14")
+import os
+ROOT = Path(os.environ.get("X14_DATA", "user_data/data_x14"))     # venue data root (x14_fetch.py / venue_fetch.py)
 P1 = Path("user_data/data_p1")
+FUNDING_FILE = ROOT / "funding.parquet" if (ROOT / "funding.parquet").exists() else P1 / "funding.parquet"
+OUT_TAG = os.environ.get("X14_TAG", "")
 OUT = Path("user_data/bench/events")
 BTC = "BTCUSDT"
 LOOKBACK, COOLDOWN = 12, 48                    # 1 h of 5m candles; 4 h cooldown after a flush
@@ -36,8 +39,8 @@ class Params:
     stop: float = -0.25                        # disaster stop on a long leg
     max_episodes: int = 2
     hedge: str = "dollar"                      # "dollar" (main) or "beta" (variant a)
-    fee: float = 0.0005
-    slip: float = 0.0002
+    fee: float = float(os.environ.get("X14_FEE", "0.0005"))
+    slip: float = float(os.environ.get("X14_SLIP", "0.0002"))
     start_equity: float = 10_000.0
 
 
@@ -82,7 +85,7 @@ def load():
     cols = [f.stem for f in files]
     close = pd.DataFrame(C, index=idx, columns=cols)
     open_ = pd.DataFrame(Op, index=idx, columns=cols)
-    fund = pd.read_parquet(P1 / "funding.parquet")
+    fund = pd.read_parquet(FUNDING_FILE)
     fund["time"] = fund["time"].dt.floor("h")
     funding = {s: g.groupby("time")["rate"].sum().to_dict() for s, g in fund.groupby("symbol")}
     uni = json.loads((ROOT / "universe.json").read_text())
@@ -329,16 +332,18 @@ def lookahead_check(eng: Engine, start, end, p, n=50, min_days=90) -> int:
 def main():
     quick = "quick" in sys.argv[1:]
     hedge = "beta" if "beta" in sys.argv[1:] else "dollar"
-    tag = "" if hedge == "dollar" else "_beta"
+    tag = ("" if hedge == "dollar" else "_beta") + OUT_TAG
     close, open_, funding, universe = load()
     eng = Engine(close, open_, funding, universe)
     btc_daily = close[BTC].resample("1D").last().pct_change()
     p = Params(hedge=hedge)
     results = {"hedge": hedge}
-    windows = {"2021-2026": ("2021-01-04", "2026-09-23")}
+    y0 = int(os.environ.get("X14_START_YEAR", "2021"))
+    first = f"{y0}-01-04" if y0 == 2021 else f"{y0}-01-03"
+    windows = {f"{y0}-2026": (first, "2026-09-23")}
     if not quick:
-        windows.update({str(y): (f"{y}-01-01", f"{y + 1}-01-01") for y in range(2021, 2026)})
-        windows.update({"2026": ("2026-01-01", "2026-09-23"), "2021-2023": ("2021-01-04", "2024-01-01"),
+        windows.update({str(y): (f"{y}-01-01", f"{y + 1}-01-01") for y in range(y0, 2026)})
+        windows.update({"2026": ("2026-01-01", "2026-09-23"), f"{y0}-2023": (first, "2024-01-01"),
                         "2024-2026": ("2024-01-01", "2026-09-23")})
     print(f"== X14 ({hedge} hedge)", flush=True)
     for name, (a, b) in windows.items():
@@ -346,7 +351,7 @@ def main():
         m = metrics(res, btc_daily, p)
         results[name] = m
         print(fmt(name, m), flush=True)
-        if name == "2021-2026":
+        if name == f"{y0}-2026":
             mean, lo, hi = monthly_ci(res["equity"])
             results["monthly_ci"] = {"mean%": mean, "lo": lo, "hi": hi}
             print(f"  monthly mean {mean:+.2f}%  bootstrap 95% CI [{lo:+.2f}, {hi:+.2f}]", flush=True)
@@ -356,7 +361,7 @@ def main():
     if quick:
         return
     print("== fee ×2", flush=True)
-    m = metrics(eng.run("2021-01-04", "2026-09-23", Params(hedge=hedge, fee=0.001)), btc_daily, p)
+    m = metrics(eng.run(first, "2026-09-23", Params(hedge=hedge, fee=2 * Params().fee)), btc_daily, p)
     results["fee2"] = m
     print(fmt("fee2", m), flush=True)
     print("== grid: breadth fraction × hold, 2021-2026 return", flush=True)
@@ -364,13 +369,13 @@ def main():
     for bf in (0.05, 0.10, 0.15):
         row = []
         for hold in (144, 288, 576):
-            r = metrics(eng.run("2021-01-04", "2026-09-23", Params(hedge=hedge, breadth_frac=bf, breadth_min=max(3, int(np.ceil(bf * 60))), hold=hold)), btc_daily, p)
+            r = metrics(eng.run(first, "2026-09-23", Params(hedge=hedge, breadth_frac=bf, breadth_min=max(3, int(np.ceil(bf * 60))), hold=hold)), btc_daily, p)
             grid[f"b{bf}_h{hold}"] = r["return%"]
             row.append(f"b{bf:.2f} h{hold // 12}h: {r['return%']:+6.1f}% (DD {r['maxDD%']:.0f}%, n {r['episodes']})")
         print("  " + " | ".join(row), flush=True)
     results["grid"] = grid
     print("== look-ahead self-check", flush=True)
-    same = lookahead_check(eng, "2021-01-04", "2026-09-23", p, n=50)
+    same = lookahead_check(eng, first, "2026-09-23", p, n=50)
     results["lookahead_same"] = same
     print(f"  {same}/50 truncated reruns identical", flush=True)
     (OUT / f"x14_results{tag}.json").write_text(json.dumps(results, indent=1, default=str))
