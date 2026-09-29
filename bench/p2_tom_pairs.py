@@ -244,7 +244,7 @@ class Engine:
                         continue
                     px = C[t, lg.j]
                     if np.isnan(px):
-                        if t - lastpx.get(lg.j, (t, 0))[0] > 288:   # data ended: close at last close
+                        if t - lastpx.get(lg.j, (t, 0))[0] > 4 * 288:   # data ended (> 4 days, longer than the 2022-02-26/28 archive gap): close at last close
                             close_leg(s, lg, lastpx[lg.j][1], "delist", t)
                         continue
                     lastpx[lg.j] = (t, px)
