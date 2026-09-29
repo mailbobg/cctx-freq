@@ -1,6 +1,6 @@
 # X14-V: does the hedged flush rebound still work on less efficient venues? (pre-registration)
 
-Date: 2026-09-28. Status: draft for approval — no data download, no code changes beyond parametrising the data root,
+Date: 2026-09-28. Status: closed 2026-09-29 (both venues fail criterion 1; see log). Was: draft for approval — no data download, no code changes beyond parametrising the data root,
 no backtest before this file is agreed. Append-only log at the bottom; criteria may not be edited after the first run.
 
 ## Question
@@ -65,3 +65,8 @@ closed for all venues; no further variants (none pre-registered).
 | # | date | venue | result |
 |---|---|---|---|
 | 1 | 2026-09-29 | **Bybit** (control; own funding history; 410 symbols, 247 weekly universes of 60; look-ahead 50/50) | **FAIL on 1 (2025 −16.2 %, 2026 +0.0 %) and 4 (2025 maxDD −25.8 %)**; passes 2 (4 of 5 years > 0, halves +53.0 % / +21.2 %), 3 (monthly CI [+0.18, +2.28]), 5 (BTC corr +0.12), 6 (fee ×2 +61.9 %), 7 (without top-3 +5,505), 8 (grid 7 of 9 > 0; the two 48 h cells negative), 9 (282 episodes). Years: 2022 +16.7 / 2023 +31.1 / 2024 +44.6 / 2025 −16.2 / 2026 +0.0 %; per episode +1.5 … +2.9 % in 2022–24, −0.95 % in 2025, +0.03 % in 2026. Same shape as Binance (2021–24 strong, 2025 negative): the decay is not Binance-specific. Note a Bybit paging bug in the first fetch (newest-1000-rows semantics) produced a run on 10 % of the data; it was discarded before any result was read and the fetcher fixed (`cfbebf2`). |
+| 2 | 2026-09-29 | **Bitget** (hypothesis venue; Bybit funding proxy; 397 symbols with 5m history, universe top-60 weekly; look-ahead 50/50) | **FAIL on 1 (2025 −14.5 %, 2026 +3.2 %), 3 (monthly CI [−0.01, +2.07]) and 4 (2025 maxDD −25.6 %)**; passes 2 (4 of 5 years > 0, halves +41.1 % / +17.9 %), 5 (BTC corr +0.12), 6 (fee ×2 +47.5 %), 7 (without top-3 +4,198), 8 (grid 8 of 9 > 0; only b0.05/48 h negative), 9 (251 episodes). Full window 2022–2026 +66.4 %, maxDD −25.9 %. Years: 2022 +4.4 / 2023 +35.1 / 2024 +33.7 / 2025 −14.5 / 2026 +3.2 %; per episode +0.7 … +4.1 % in 2022–24, −0.91 % in 2025 (18 leg stops in 72 episodes), +0.57 % in 2026. A first run on partial 2022–23 data (server shard not yet merged) gave the same 2025/2026 numbers because those years were already complete; it was superseded by this run and no criterion was changed in between. |
+
+## Verdict (2026-09-29)
+
+Neither venue passes. On Binance, Bybit and Bitget the hedged flush rebound earned +17 … +45 % a year in 2022–2024 and lost 14–19 % in 2025 with 2026 flat, and the 2025 loss is concentrated in leg stops (deeper cascades after the first −10 % leg). The venue-efficiency hypothesis is rejected: the decay is market-wide, not Binance-specific. Per the pre-registered decision the flush line is closed for all venues; no further variants. At the user's request the Bitget dry-run bot (`x14-bitget`, port 8091) runs on the server as a forward reference record only; `x14-bybit` (8088) is configured but not started (server memory).
