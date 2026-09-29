@@ -59,12 +59,12 @@ def select(close, qv, fund, monday, p: Params):
     last = c.iloc[-1]
     live = last[last.notna()].index
     vol30 = q[q.index >= monday - pd.Timedelta(days=30)].sum()
-    cand = vol30[vol30.index.isin(hist_ok) & vol30.index.isin(live)].nlargest(p.top_n).index
+    cand = vol30[vol30.index.isin(hist_ok) & vol30.index.isin(live)].sort_index().sort_values(ascending=False, kind="mergesort").iloc[:p.top_n].index
     fw = fund[(fund.time < monday) & (fund.time >= monday - pd.Timedelta(days=p.lookback)) & fund.symbol.isin(cand)]
     sig = fw.groupby("symbol")["rate"].mean().dropna()
     if len(sig) < 2 * p.k:
         return None
-    sig = sig.sort_values()
+    sig = sig.sort_index().sort_values(kind="mergesort")        # ties (default 0.01 % funding): symbol order
     longs, shorts = list(sig.index[:p.k]), list(sig.index[-p.k:])
     w = {}
     for side, names in ((1, longs), (-1, shorts)):

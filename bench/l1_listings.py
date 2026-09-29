@@ -47,7 +47,8 @@ def norm_base(sym: str) -> str:
 def events(close: pd.DataFrame, cutoff=None):
     """New listings from data up to `cutoff` (look-ahead safe)."""
     c = close if cutoff is None else close[close.index <= cutoff]
-    first = c.apply(pd.Series.first_valid_index).dropna().sort_values()
+    first = c.apply(pd.Series.first_valid_index).dropna()
+    first = first.sort_index().sort_values(kind="mergesort")      # ties: same-day listings in symbol order
     seen, out = {}, []
     for s, d0 in first.items():
         b = norm_base(s)
