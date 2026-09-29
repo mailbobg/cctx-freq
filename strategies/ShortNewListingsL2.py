@@ -31,7 +31,7 @@ class ShortNewListingsL2(IStrategy):
     minimal_roi = {"0": 100}
     stoploss = -2.0                     # short at 1x: stop price = 3x entry
     trailing_stop = False
-    use_exit_signal = False
+    use_exit_signal = True             # freqtrade only calls custom_exit when exit signals are enabled
     position_adjustment_enable = True
     max_entry_position_adjustment = -1
     order_types = {"entry": "market", "exit": "market", "emergency_exit": "market", "force_entry": "market",
@@ -76,7 +76,7 @@ class ShortNewListingsL2(IStrategy):
         dataframe["enter_long"] = 0
         dataframe["enter_short"] = 0
         if pair == BTC:
-            dataframe.loc[dataframe.index[-1:], ["enter_long", "enter_tag"]] = (1, "hedge")
+            dataframe.loc[:, ["enter_long", "enter_tag"]] = (1, "hedge")   # confirm_trade_entry decides
             return dataframe
         if not self._is_candidate(pair) or dataframe.empty:
             return dataframe
