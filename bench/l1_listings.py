@@ -96,6 +96,9 @@ def run(close, fday, p: Params, stop_at=None):
                 if np.isnan(p1):
                     close_ev(ev, p0, "delist", prev)
                     continue
+                liq = p1 >= 2 * ev["px"]              # 1x isolated short: liquidated at 2x entry, loss capped at the leg's margin
+                if liq:
+                    p1 = 2 * ev["px"]
                 cp = -ev["u"] * (p1 - p0)
                 bp = ev["ub"] * (b1 - b0)
                 fp = ev["u"] * fday.at[d, s] * p0 - ev["ub"] * fday.at[d, BTC] * b0
@@ -104,7 +107,9 @@ def run(close, fday, p: Params, stop_at=None):
                 split["btc"] += bp
                 split["funding"] += fp
                 ev["pnl"] += cp + bp + fp
-                if p.stop and p1 >= p.stop * ev["px"]:
+                if liq:
+                    close_ev(ev, p1, "liq", d)
+                elif p.stop and p1 >= p.stop * ev["px"]:
                     close_ev(ev, p1, "stop", d)
                 elif d >= ev["exit_day"]:
                     close_ev(ev, p1, "time", d)
