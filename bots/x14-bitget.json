@@ -263,7 +263,7 @@
       "options": {
         "fetchMarkets": {
           "types": [
-            "linear"
+            "swap"
           ]
         }
       }
@@ -273,7 +273,7 @@
       "options": {
         "fetchMarkets": {
           "types": [
-            "linear"
+            "swap"
           ]
         }
       }
