@@ -24,6 +24,9 @@ OUT = Path("user_data/bench/events")
 EV_START, EV_END = pd.Timestamp("2021-02-01", tz="UTC"), pd.Timestamp("2026-07-31", tz="UTC")
 END = pd.Timestamp("2026-08-31", tz="UTC")
 BTC = "BTCUSDT"
+LIQ = 1.95                                     # liquidation trigger (maintenance margin of new listings ~2.5-5 %)
+_hl = pd.read_parquet("user_data/data_f1/daily_hl.parquet")
+HIGH = dict(zip(zip(_hl.symbol, _hl.date), _hl.high))
 
 
 @dataclass(frozen=True)
@@ -96,8 +99,9 @@ def run(close, fday, p: Params, stop_at=None):
                 if np.isnan(p1):
                     close_ev(ev, p0, "delist", prev)
                     continue
-                liq = p1 >= 2 * ev["px"]              # 1x isolated short: liquidated at 2x entry, loss capped at the leg's margin
-                if liq:
+                hi = HIGH.get((s, d), p1)
+                liq = max(hi, p1) >= LIQ * ev["px"]   # 1x isolated short: intraday high reaching ~2x entry liquidates it;
+                if liq:                               # the whole margin (= leg notional) is lost
                     p1 = 2 * ev["px"]
                 cp = -ev["u"] * (p1 - p0)
                 bp = ev["ub"] * (b1 - b0)
