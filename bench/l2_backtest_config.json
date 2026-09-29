@@ -292,17 +292,5 @@
     "process_throttle_secs": 5
   },
   "db_url": "sqlite:///user_data/tradesv3.l2-bt.sqlite",
-  "force_entry_enable": false,
-  "api_server": {
-    "enabled": false,
-    "listen_ip_address": "127.0.0.1",
-    "verbosity": "error",
-    "CORS_origins": [
-      "http://127.0.0.1:8080",
-      "http://localhost:8080",
-      "http://127.0.0.1:8089",
-      "http://localhost:8089"
-    ],
-    "listen_port": 8092
-  }
+  "force_entry_enable": false
 }
