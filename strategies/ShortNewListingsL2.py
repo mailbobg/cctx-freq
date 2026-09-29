@@ -76,7 +76,13 @@ class ShortNewListingsL2(IStrategy):
         dataframe["enter_long"] = 0
         dataframe["enter_short"] = 0
         if pair == BTC:
-            dataframe.loc[:, ["enter_long", "enter_tag"]] = (1, "hedge")   # confirm_trade_entry decides
+            live = self.dp is not None and self.dp.runmode.value in ("live", "dry_run")
+            if not live:
+                dataframe.loc[:, ["enter_long", "enter_tag"]] = (1, "hedge")   # backtest: confirm_trade_entry decides
+            elif self._open_shorts():
+                # live: raise the hedge signal only while shorts are open; otherwise freqtrade would try (and fetch an
+                # order book for) a rejected BTC entry every loop. A new first short is hedged at the next hourly candle.
+                dataframe.loc[dataframe.index[-1:], ["enter_long", "enter_tag"]] = (1, "hedge")
             return dataframe
         if not self._is_candidate(pair) or dataframe.empty:
             return dataframe
