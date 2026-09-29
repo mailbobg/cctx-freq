@@ -68,3 +68,10 @@ daily vol), everything else unchanged** — aimed at the squeeze tail. Then the 
 
 | # | date | change | result |
 |---|---|---|---|
+| 1 | 2026-09-29 | **main spec** (engine `bench/f1_carry.py`, funding for 859 perps via `bench/fund_fetch.py`). Implementation fix before this row: ties in the signal (many coins sit at the default 0.01 % funding) and in the volume ranking were broken by an unstable sort; now broken by symbol (first run +96.9 %, same verdict) | **FAIL on 1, 2, 3, 6.** 2021-02 → 2026-08: +82.0 %, MTM maxDD −63.0 %. Years: 2021 +102.1 / 2022 +4.3 / 2023 +35.6 / **2024 −25.9 / 2025 −13.0 / 2026 −1.3 %**; halves +185.9 % / **−36.3 %**. Monthly CI [−1.01, +3.57]. Without top-3 coins −8,992. Passes 4 (BTC corr −0.03), 5 (fee ×2 +56.0 %), 7 (grid 9 of 9 > 0, +54 … +281 %), 8 (funding +44,483). P&L split: funding +44,483, price −29,588, costs −6,691; short side +17,231, long side −2,335; 22 liquidated shorts; turnover 667× start equity. Look-ahead 50/50. The carry is real (funding income every year) but since 2024 the high-funding coins' price rises cost more than the funding they pay: the edge was 2021–23. |
+| 2 | 2026-09-29 | pre-registered variant (a): inverse-volatility weights within each side | **FAIL on 1, 2, 3, 6.** +69.4 %, maxDD −51.8 %. Years 2021 +95.9 / 2022 +2.2 / 2023 +30.8 / **2024 −30.6** / 2025 +0.7 / **2026 −7.4 %**; halves +161.9 % / −35.3 %. CI [−0.99, +2.95]. Fee ×2 +44.1 %. Without top-3 −5,587. Grid 9 of 9 > 0. Look-ahead 50/50. |
+
+## Verdict (2026-09-29)
+
+Fail. Funding carry pays (+44k on 10k over 5.5 years) but the price leg takes most of it back and the whole net result sits
+in 2021–23; 2024–26 lose 35 %. Line closed; no bot.
