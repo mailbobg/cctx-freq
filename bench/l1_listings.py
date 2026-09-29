@@ -36,6 +36,7 @@ class Params:
     size: float = 0.05
     max_open: int = 10
     stop: float = 1.5                  # 0 = no stop
+    cross_stop: float = 0.0            # L2 reference: cross margin, exit when the daily high reaches this × entry (no liquidation)
     volscale: bool = False
     fee: float = 0.0005
     slip_coin: float = 0.0010
@@ -100,9 +101,14 @@ def run(close, fday, p: Params, stop_at=None):
                     close_ev(ev, p0, "delist", prev)
                     continue
                 hi = HIGH.get((s, d), p1)
-                liq = max(hi, p1) >= LIQ * ev["px"]   # 1x isolated short: intraday high reaching ~2x entry liquidates it;
-                if liq:                               # the whole margin (= leg notional) is lost
-                    p1 = 2 * ev["px"]
+                if p.cross_stop:
+                    liq = max(hi, p1) >= p.cross_stop * ev["px"]
+                    if liq:
+                        p1 = p.cross_stop * ev["px"]
+                else:
+                    liq = max(hi, p1) >= LIQ * ev["px"]   # 1x isolated short: intraday high reaching ~2x entry liquidates it;
+                    if liq:                               # the whole margin (= leg notional) is lost
+                        p1 = 2 * ev["px"]
                 cp = -ev["u"] * (p1 - p0)
                 bp = ev["ub"] * (b1 - b0)
                 fp = ev["u"] * fday.at[d, s] * p0 - ev["ub"] * fday.at[d, BTC] * b0
@@ -200,11 +206,12 @@ def report(res, btc, p: Params, verbose=True):
 
 def main():
     variant = "nostop" in sys.argv[1:]
-    tag = "_nostop" if variant else ""
+    l2 = "l2" in sys.argv[1:]
+    tag = "_nostop" if variant else "_l2" if l2 else ""
     close, _, _, fday = load()
     btc = close[BTC].pct_change()
-    p = Params(stop=0.0, volscale=True) if variant else Params()
-    print(f"== L1 short new listings ({'variant (a): no stop, vol-scaled' if variant else 'main spec'})", flush=True)
+    p = Params(stop=0.0, volscale=True) if variant else Params(size=0.025, stop=0.0, cross_stop=3.0) if l2 else Params()
+    print(f"== L1 short new listings ({'variant (a): no stop, vol-scaled' if variant else 'L2 reference: 2.5 %, cross, exit at 3x' if l2 else 'main spec'})", flush=True)
     ex = excess_distribution(close, p)
     print(f"  {len(ex)} listings with a full window: coin − BTC over {p.hold} d after D0+{p.delay}: median {np.median(ex) * 100:+.1f}%  "
           f"mean {ex.mean() * 100:+.1f}%  coin beat BTC {(ex > 0).mean() * 100:.0f}%  coin excess > +50% {(ex > 0.5).mean() * 100:.1f}%  "
