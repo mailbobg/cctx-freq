@@ -1,6 +1,6 @@
 {
-  "strategy": "ShortNewListingsL2",
-  "bot_name": "l2-listings",
+  "strategy": "ShortNewListingsL2P",
+  "bot_name": "l2p-listings",
   "timeframe": "1h",
   "trading_mode": "futures",
   "margin_mode": "cross",
@@ -47,7 +47,6 @@
       "AMD/USDT:USDT",
       "AMZN/USDT:USDT",
       "ANET/USDT:USDT",
-      "ANTHROPIC/USDT:USDT",
       "APLD/USDT:USDT",
       "APP/USDT:USDT",
       "ARM/USDT:USDT",
@@ -145,7 +144,6 @@
       "MEITUAN/USDT:USDT",
       "META/USDT:USDT",
       "MINIMAX/USDT:USDT",
-      "MOONSHOT/USDT:USDT",
       "MRK/USDT:USDT",
       "MRNA/USDT:USDT",
       "MRVL/USDT:USDT",
@@ -166,9 +164,7 @@
       "NVO/USDT:USDT",
       "OKLO/USDT:USDT",
       "ONDS/USDT:USDT",
-      "OPENAI/USDT:USDT",
       "ORCL/USDT:USDT",
-      "OURA/USDT:USDT",
       "PANW/USDT:USDT",
       "PATH/USDT:USDT",
       "PAYP/USDT:USDT",
@@ -291,7 +287,7 @@
     "secrets.json",
     "local-network.json"
   ],
-  "db_url": "sqlite:///user_data/tradesv3.l2-listings.dryrun.sqlite",
+  "db_url": "sqlite:///user_data/tradesv3.l2p-listings.dryrun.sqlite",
   "initial_state": "running",
   "force_entry_enable": false,
   "api_server": {
