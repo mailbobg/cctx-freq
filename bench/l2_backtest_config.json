@@ -291,14 +291,10 @@
   "internals": {
     "process_throttle_secs": 5
   },
-  "add_config_files": [
-    "secrets.json"
-  ],
   "db_url": "sqlite:///user_data/tradesv3.l2-bt.sqlite",
-  "initial_state": "running",
   "force_entry_enable": false,
   "api_server": {
-    "enabled": true,
+    "enabled": false,
     "listen_ip_address": "127.0.0.1",
     "verbosity": "error",
     "CORS_origins": [
