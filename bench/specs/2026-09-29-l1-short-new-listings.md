@@ -65,3 +65,15 @@ median / own 2-day post-listing range, capped at 5 %)**. Then the line is closed
 
 | # | date | change | result |
 |---|---|---|---|
+| — | 2026-09-29 | **engine corrections made while reading results — disclosed in full.** (1) Ties between same-day listings competing for the last slot were broken by an unstable sort (look-ahead check 9/50); now symbol order. (2) The first engine let a short leg lose many times its notional (COAI 2025-09/10: 0.21 → 7.8, −99,684 on a 693 leg) — impossible under the 1x isolated margin every futures spec here uses; added liquidation. (3) Liquidation first checked on daily closes only; new listings wick far above the close, so it now triggers when the **daily high** reaches 1.95× entry (maintenance margin of new listings), losing the whole margin (daily highs via `bench/hl_fetch.py`, closes match daily.parquet 100 %). Intermediate results, for the record: after (1) main −5.2 %, variant +210.5 %; after (2) main +42.8 %, variant +202.8 % (all 8 criteria passed); after (3) the rows below. (3) is the realistic model and the only one judged. | — |
+| 1 | 2026-09-29 | **main spec** (engine `bench/l1_listings.py`) | **FAIL on 1, 2, 3.** 2021-02 → 2026-08: +12.6 %, MTM maxDD −57.9 %, 482 events (591 listings found; 109 skipped at 10 open). Years: **2021 −13.6** / 2022 +17.3 / 2023 +11.0 / 2024 +31.6 / **2025 −14.8 / 2026 −10.7 %**; halves +12.4 % / +0.2 %. CI [−1.34, +2.43]. Fee ×2 +7.3 %. Grid 9 of 9 > 0. BTC corr −0.00. Exits: 382 time +55,097; 62 close-stops −24,448; 35 liquidations −29,469. Event study (all 591 listings, 21 days after D0+2): median coin − BTC −16.8 %, 74 % under-perform BTC, 8.3 % beat it by > 50 %, 3.7 % by > 100 %. Look-ahead 50/50. |
+| 2 | 2026-09-29 | pre-registered variant (a): no stop, volatility-scaled size | **FAIL on 1, 2, 3.** +72.4 %, maxDD −24.9 %, 476 events. Years: **2021 −5.6** / 2022 +18.2 / 2023 +11.1 / 2024 +28.5 / 2025 +13.2 / **2026 −4.4 %** (4 of 6); halves +23.9 % / +39.1 %. CI [−0.31, +2.34]. MTM maxDD per year −11.3 / −5.2 / −13.1 / −14.0 / **−22.2 / −18.9 %**. Passes 4 (corr −0.03), 5 (fee ×2 +66.5 %), 6 (without top-3 +5,590), 7 (grid 9 of 9 > 0, +27 … +72 %), 8. Exits: 406 time +37,797 vs 67 liquidations −30,698; funding −3,148 (new listings' shorts pay). |
+
+## Verdict (2026-09-29)
+
+Fail, but the closest of this round. The under-performance of new listings is large and stable (median −17 % vs BTC in three
+weeks, three quarters of listings) and every grid cell of both rules is positive over the window; what fails is the tail: a
+1x short loses its whole margin in the one listing in fourteen that doubles intraday, and 2021 and 2026 end negative with the
+2025 drawdown above 15 %. Per the spec the line is closed. Anything further (e.g. a smaller short per event with more margin
+so liquidation sits at 3×, or options instead of shorts) would be a new spec and could only be tested forward, since
+2021–2026 has now been seen.
