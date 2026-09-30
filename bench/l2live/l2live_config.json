@@ -1,0 +1,77 @@
+{
+  "strategy": "L2LiveTest",
+  "bot_name": "l2-livetest",
+  "timeframe": "1h",
+  "trading_mode": "futures",
+  "margin_mode": "cross",
+  "stake_currency": "USDT",
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 0.99,
+  "max_open_trades": 11,
+  "dry_run": true,
+  "dry_run_wallet": 10000,
+  "dataformat_ohlcv": "feather",
+  "dataformat_trades": "feather",
+  "use_exit_signal": true,
+  "exit_profit_only": false,
+  "unfilledtimeout": {
+    "entry": 5,
+    "exit": 5,
+    "unit": "minutes"
+  },
+  "entry_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": true,
+    "order_book_top": 1
+  },
+  "exchange": {
+    "name": "binance",
+    "key": "",
+    "secret": "",
+    "enable_ws": false,
+    "pair_whitelist": [
+      "BTC/USDT:USDT",
+      "PONS/USDT:USDT",
+      "MARSCOIN/USDT:USDT"
+    ],
+    "pair_blacklist": [],
+    "ccxt_config": {
+      "timeout": 30000,
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "linear"
+          ]
+        }
+      }
+    },
+    "ccxt_async_config": {
+      "timeout": 30000,
+      "options": {
+        "fetchMarkets": {
+          "types": [
+            "linear"
+          ]
+        }
+      }
+    }
+  },
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "internals": {
+    "process_throttle_secs": 5
+  },
+  "add_config_files": [
+    "../bots/secrets.json"
+  ],
+  "db_url": "sqlite:///user_data/tradesv3.l2-livetest.dryrun.sqlite",
+  "force_entry_enable": false
+}
