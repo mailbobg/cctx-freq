@@ -69,9 +69,6 @@
   "internals": {
     "process_throttle_secs": 5
   },
-  "add_config_files": [
-    "../bots/secrets.json"
-  ],
   "db_url": "sqlite:///user_data/tradesv3.l2-livetest.dryrun.sqlite",
   "force_entry_enable": false
 }
