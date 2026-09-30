@@ -1,0 +1,20 @@
+{
+  "add_config_files": [
+    "common.json",
+    "family-spot118.json",
+    "secrets.json",
+    "live-secrets.json",
+    "local-network.json"
+  ],
+  "strategy": "E0V1EN",
+  "bot_name": "e0v1en-live",
+  "dry_run": false,
+  "max_open_trades": 2,
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 0.99,
+  "force_entry_enable": false,
+  "db_url": "sqlite:///user_data/tradesv3.e0v1en-live.sqlite",
+  "api_server": {
+    "listen_port": 8094
+  }
+}
