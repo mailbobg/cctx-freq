@@ -57,6 +57,10 @@ class ShortNewListingsL2(IStrategy):
             return False
         return m.get("base", "").upper() not in STABLE
 
+    @staticmethod
+    def _history_ok(dataframe: DataFrame, onboard: datetime) -> bool:
+        return bool(dataframe["date"].iloc[0] >= onboard - timedelta(days=1))
+
     def _open_shorts(self) -> list:
         return [t for t in Trade.get_trades_proxy(is_open=True) if t.pair != BTC and t.is_short]
 
@@ -91,7 +95,7 @@ class ShortNewListingsL2(IStrategy):
             return dataframe
         d0 = onboard.replace(hour=0, minute=0, second=0, microsecond=0)
         start = d0 + DELAY
-        if dataframe["date"].iloc[0] < onboard - timedelta(days=1):
+        if not self._history_ok(dataframe, onboard):
             return dataframe                     # history predates onboardDate: re-listing / migrated contract
         close_time = dataframe["date"] + timedelta(hours=1)
         sig = (close_time >= start) & (close_time < start + WINDOW)
