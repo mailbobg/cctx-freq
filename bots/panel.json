@@ -15,7 +15,13 @@
     "description": "C：BTC/ETH 每周按趋势和波动率调仓（参考记录，未过预注册标准 1）"
   },
   "unlock-short": {
-    "description": "解锁供给压力仅做空 · APT/TIA · 1h · 1倍杠杆 · 独立模拟；研究候选，尚未验证稳定盈利"
+    "description": "解锁供给压力仅做空 · APT/TIA · 1h · 1倍杠杆 · 独立模拟；研究候选，尚未验证稳定盈利",
+    "wait": {
+      "kind": "weekly",
+      "weekday": 0,
+      "hour": 1,
+      "text": "每周只在这个时间点决定一次：APT 和 TIA 里解锁压力更大的开 1 倍空单"
+    }
   },
   "funding-spread": {
     "description": "跨平台资金费差 · Bybit/OKX BTC/ETH · 一个双边组合 · 独立模拟；扣除成本后无优势则空仓"
@@ -30,10 +36,23 @@
     "description": "X14 在 Bitget 合约上的复现（低效率市场假设）· 模拟盘 · X14-V 验证未通过（2025 −14.5%）· 仅作参考记录"
   },
   "l2p-listings": {
-    "description": "L2P：做空新上线合约（币 + Pre-IPO 盘前合约），上线后第3天开空，2.5%仓位，BTC对冲，21天或3倍价格平仓 · 全仓1倍 · 前向模拟测试，2027-03-31后按预注册标准评判"
+    "description": "L2P：做空新上线合约（币 + Pre-IPO 盘前合约），上线后第3天开空，2.5%仓位，BTC对冲，21天或3倍价格平仓 · 全仓1倍 · 前向模拟测试，2027-03-31后按预注册标准评判",
+    "wait": {
+      "kind": "listings",
+      "types": [
+        "COIN",
+        "PREMARKET"
+      ]
+    }
   },
   "l2-listings": {
-    "description": "L2：做空新上线合约（仅币），上线后第3天开空，2.5%仓位，BTC对冲，21天或3倍价格平仓 · 全仓1倍 · 前向模拟测试，2027-03-31后按预注册标准评判"
+    "description": "L2：做空新上线合约（仅币），上线后第3天开空，2.5%仓位，BTC对冲，21天或3倍价格平仓 · 全仓1倍 · 前向模拟测试，2027-03-31后按预注册标准评判",
+    "wait": {
+      "kind": "listings",
+      "types": [
+        "COIN"
+      ]
+    }
   },
   "e0v1en-live": {
     "description": "E0V1EN 实盘（Binance 现货，约 20 USDT，2 个仓位）· 真实资金，只用来测量真实成交和手续费，和 e0v1en 模拟盘对照"

@@ -8,6 +8,7 @@ Run:  .venv/bin/python user_data/panel/panel.py      (on macOS a LaunchAgent sta
 """
 
 import json
+from datetime import datetime, timezone
 import os
 import resource
 import signal
@@ -19,6 +20,7 @@ from pathlib import Path
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from panel.market_data import MarketDataGateway, install_routes
+from panel.waiting import listings_note, weekly_note
 
 import psutil
 import requests
@@ -107,6 +109,7 @@ def bots() -> dict[str, dict]:
             "db_url": f"sqlite:///user_data/dev/tradesv3.{name}.sqlite" if PORT_OFFSET else cfg.get("db_url"),
             "max_trades": cfg.get("max_open_trades", _common().get("max_open_trades")),
             "description": meta.get(name, {}).get("description", ""),
+            "wait": meta.get(name, {}).get("wait"),
             "runtime": cfg.get("runtime", "freqtrade"),
             "exchange": cfg.get("exchange",{}).get("name",_common().get("exchange",{}).get("name")),
             "dry_run": cfg.get("dry_run",_common().get("dry_run",False)),
@@ -293,6 +296,36 @@ def _prices(pairs: set[str]) -> dict[str, float]:
     return _tickers["px"]
 
 
+_listings_cache: dict = {"t": 0.0, "rows": []}
+
+
+def _listings() -> list[tuple[float, str, str]]:
+    """(onboard epoch, base asset, underlyingType) of every Binance USDT-M perpetual (incl. pre-market), cached 10 min."""
+    if time.time() - _listings_cache["t"] > 600:
+        try:
+            r = market_data.get("usd-m", "exchangeInfo", [])
+            if r.status == 200:
+                rows = [(int(x["onboardDate"]) / 1000, x["baseAsset"], x["underlyingType"])
+                        for x in json.loads(r.body)["symbols"]
+                        if x.get("underlyingType") in ("COIN", "PREMARKET")
+                        and x.get("contractType") in ("PERPETUAL", "TRADIFI_PERPETUAL") and x.get("onboardDate")]
+                _listings_cache.update(t=time.time(), rows=rows)
+        except Exception:  # noqa: BLE001
+            pass
+    return _listings_cache["rows"]
+
+
+def waiting_note(bot: dict) -> str:
+    """Event-driven bots are silent most of the time: say when their next chance is (panel.json "wait")."""
+    w = bot.get("wait") or {}
+    now = datetime.now(timezone.utc)
+    if w.get("kind") == "weekly":
+        return weekly_note(now, w["weekday"], w["hour"], w.get("text", ""))
+    if w.get("kind") == "listings":
+        return listings_note(now, _listings(), set(w.get("types", ["COIN"])))
+    return ""
+
+
 def offline_stats(bot: dict) -> dict:
     """Numbers for a bot that is not running, read from its trade database."""
     import sqlite3
@@ -356,6 +389,11 @@ def status(bot: dict) -> dict:
     p = find_process(bot)
     out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description")}
     out["runtime"] = bot.get("runtime", "freqtrade")
+    try:
+        if bot.get("wait"):
+            out["note"] = waiting_note(bot)
+    except Exception as e:  # noqa: BLE001
+        print("waiting note", bot["name"], e, file=sys.stderr, flush=True)
     if out["runtime"] == "cross_venue_paper":
         out["detail_url"] = f"http://127.0.0.1:{bot['port']}/"
         out["portfolio_url"] = f"http://127.0.0.1:{bot['port']}/portfolio"
