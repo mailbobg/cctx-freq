@@ -291,7 +291,7 @@
     }
   ],
   "internals": {
-    "process_throttle_secs": 5
+    "process_throttle_secs": 30
   },
   "add_config_files": [
     "secrets.json",
