@@ -97,3 +97,18 @@ everything else unchanged. Then the line is closed and the APT/TIA bot is judged
 
 | # | date | change | result |
 |---|---|---|---|
+| 0 | 2026-10-01 | engine checks before any real-data run: 5 hand-calculated synthetic tests (`bench/test_u1_unlock.py`: one-week short P&L matches the hand calculation to 0.5 USDT, liquidation loses the whole notional, the control never picks a coin with an unlock and has the same count, selection ignores future prices, P&L scales with weight); daily highs for all 860 perps downloaded (`bench/uh_fetch.py`, closes match daily.parquet 100 %) | — |
+| 1 | 2026-10-01 | **main spec** (`python user_data/bench/u1_unlock.py`) | **FAIL on 8 (20 coin-weeks, needs 150).** Everything else passes numerically but on a sample too small to mean anything: 2022-01 → 2026-08 +8.2 %, MTM maxDD −1.5 %, 20 coin-weeks in 244 Mondays, win 45 %, 0 liquidations, BTC corr +0.02, monthly CI [+0.04, +0.28], fee ×2 +8.1 %, without top-3 coins +242 (W, PYTH, ONDO are +558 of the +787 short P&L), grid 9 of 9 > 0 (but k does not matter: never more than 3 coins qualify), look-ahead 50/50. Real − control: weekly mean +0.029 % CI [+0.008, +0.051]; control mean-equity return +0.9 %. Years: 2022 +0.4 / 2023 0.0 (no trades) / 2024 +5.9 / 2025 +0.2 / 2026 +1.5 %. **Cause: the threshold S ≥ 0.25 was set before looking at the score's distribution and it is far too high**: S is strongly right-skewed (median 0.012, 90th pct 0.059, 99th pct 0.31), 0.25 selects 20 of the 1,186 coin-weeks that have any included unlock in the 100-coin universe. Not an engine bug: ARB's 2024-03 unlock (≈ 2.5 bn USD, S ≈ 0.5) is selected in the two Mondays whose window contains it. |
+| 2 | 2026-10-01 | pre-registered variant (a): `insiders` + `privateSale` only | **FAIL on 8 (18 coin-weeks).** +6.7 %, maxDD −1.5 %, win 43 %, fee ×2 +6.6 %, without top-3 +155, grid 9 of 9 > 0, real − control +0.026 %/wk CI [+0.006, +0.048], look-ahead 50/50. Same cause. |
+| — | 2026-10-01 | **exploratory, not judged** — lower thresholds chosen *after* seeing the coin-week counts (S ≥ 0.02 → 389 coin-weeks, S ≥ 0.05 → 153) and after having seen the grid results at 0.1 and 0.25, so these are in-sample and contaminated | S ≥ 0.02, k 6: **+58.9 %**, MTM maxDD −5.9 %, 389 coin-weeks, win 38 %, 1 liquidation, BTC corr −0.15, fee ×2 +56.3 %, without top-3 +2,742; years 2022 +0.9 / 2023 +0.8 / 2024 +20.6 / 2025 +19.5 / 2026 +8.5 %; halves +19.2 / +33.4 %. **Control (random coins, same weeks): +28.2 %** — the alt-vs-BTC bleed alone is about half of the real result; real − control weekly +0.090 % CI [+0.007, +0.168]. S ≥ 0.05: +26.4 %, 153 coin-weeks, control +9.9 %, diff CI [+0.007, +0.114]. |
+
+## Verdict (2026-10-01)
+
+Per the pre-registration the line is closed: both pre-registered rules fail criterion 8, so there is no statistical claim
+(20 and 18 coin-weeks). The non-result is informative about the design: the score threshold I fixed was unreachable.
+Exploratory lower thresholds look better than the control in every year, and the real − control gap is the part that
+speaks for the unlock timing (the control already earns about half of the headline return from the general alt bleed), but
+they are in-sample and chosen after the fact. They cannot be promoted by another backtest on the same data. The only clean
+test left is forward: the stored schedule holds 2,629 included-category events across 64 perps after 2026-09-25, so a
+dry-run on S ≥ 0.02 would be a clean record (≈ 80 coin-weeks a year; ≥ 40 coin-weeks, about six months). Not built yet:
+needs its own pre-registered forward spec (U2) and server memory.
