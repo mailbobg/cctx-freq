@@ -70,5 +70,6 @@
     "process_throttle_secs": 5
   },
   "db_url": "sqlite:///user_data/tradesv3.l2-livetest.dryrun.sqlite",
-  "force_entry_enable": false
+  "force_entry_enable": false,
+  "initial_state": "running"
 }
