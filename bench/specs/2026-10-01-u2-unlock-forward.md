@@ -65,3 +65,4 @@ own record.
 
 | # | date | entry | result |
 |---|---|---|---|
+| 1 | 2026-10-01 | before the first decision: **entry-day guard added** (`_entry_day`: positions open on Monday only). The first version allowed an entry in the first 6 hours of any daily candle, so a bot started on a Thursday would have opened the 09-28 week's selection after the fact. Found by reading the code before starting the bot, not from a result. Live-path test on the server (today treated as the Monday, a fake unlock for SUI and ADA): decision, 5 % short sizing (495 USDT on 9,900), BTC hedge (990 USDT = sum of the shorts) worked; the forced-drop exit and hedge close are watched in the same test. | — |

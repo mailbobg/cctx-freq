@@ -26,6 +26,9 @@ class U2LiveTest(UnlockXS):
         self._t0 = None
         self._switched_at = None
 
+    def _entry_day(self, now):
+        return True                 # the test treats today as the Monday
+
     def _decision_day(self, now):
         return self._switched_at or now.astimezone(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
 

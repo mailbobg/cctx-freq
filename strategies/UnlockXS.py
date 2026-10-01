@@ -71,6 +71,10 @@ class UnlockXS(IStrategy):
     def _decision_day(self, now: datetime) -> datetime:
         return monday_of(now)
 
+    def _entry_day(self, now: datetime) -> bool:
+        """Positions are opened on Monday only; a bot started on any other day trades nothing until the next Monday."""
+        return now.astimezone(timezone.utc).weekday() == 0
+
     def bot_loop_start(self, current_time: datetime, **kwargs) -> None:
         monday = self._decision_day(current_time)
         if self._week == monday:
@@ -106,6 +110,8 @@ class UnlockXS(IStrategy):
         if dataframe.empty:
             return dataframe
         last = dataframe.index[-1:]
+        if not self._entry_day(datetime.now(timezone.utc)):
+            return dataframe
         if pair == BTC:
             if self._selected:
                 dataframe.loc[last, ["enter_long", "enter_tag"]] = (1, "hedge")
