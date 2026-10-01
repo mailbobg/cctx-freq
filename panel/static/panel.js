@@ -327,6 +327,64 @@ function tickCountdown() {
 refreshSignal(); setInterval(refreshSignal, 600000);
 setInterval(tickCountdown, 1000);
 
+
+/* ---------- judgement page: criteria are static text, only the numbers move ---------- */
+const vCards = new Map();
+function vBuild(e) {
+  const el = document.createElement("article");
+  el.className = "vcard";
+  const cps = (e.checkpoints || []).map((c, i) => `<div data-f="cp${i}"></div>`).join("");
+  el.innerHTML = `
+    <div class="vt">${esc(e.title)}</div>
+    <div class="tags"><span class="tag state" data-f="status"></span></div>
+    ${e.protected ? `<div class="prot">${esc(e.protected)}</div>` : ""}
+    <div class="written">${esc(e.written || "")}</div>
+    ${(e.bots || []).length ? `<div class="vbots" data-f="bots"></div>` : ""}
+    <div class="vcp">${cps}</div>
+    ${e.target ? `<div><div class="vcp"><div data-f="prog"></div></div><div class="vbar"><i data-f="bar"></i></div></div>` : ""}
+    <ul class="vlist">${(e.criteria || []).map(c => `<li>${esc(c)}</li>`).join("")}</ul>
+    <div class="vref">${esc(e.reference || "")}</div>`;
+  return el;
+}
+function vUpdate(el, e) {
+  const f = k => $(`[data-f="${k}"]`, el);
+  const st = f("status"); setText(st, e.status);
+  st.className = "tag " + (e.tone === "paused" || e.tone === "research" ? "paused" : e.tone === "reference" ? "state" : "state ok");
+  const bots = f("bots");
+  if (bots) {
+    const html = (e.live || []).map(b => {
+      const pnl = b.profit_all;
+      return `<div class="vbot"><span><span class="n">${esc(b.name)}</span> · ${b.running ? (b.dry_run === false ? "实盘运行中" : "模拟盘运行中") : "已停止"}</span>` +
+        `<span>持仓 ${b.open ?? "–"} · 已平仓 ${b.closed ?? "–"} · <span class="${tone(pnl)}">${num(pnl)} USDT</span></span></div>`;
+    }).join("");
+    if (bots.dataset.h !== html) { bots.innerHTML = html; bots.dataset.h = html; }
+  }
+  (e.checkpoints || []).forEach((c, i) => {
+    const left = c.days_left;
+    setText(f(`cp${i}`), c.date ? `${c.date} · ${c.what}  ${left > 0 ? `还有 ${left} 天` : left === 0 ? "今天" : `已过 ${-left} 天`}` : `${c.what}`);
+  });
+  if (e.target) {
+    const have = e.target.have ?? 0;
+    setText(f("prog"), `${e.target.label} ${e.target.have ?? "–"} / ${e.target.closed}`);
+    f("bar").style.width = `${Math.min(100, have / e.target.closed * 100)}%`;
+  }
+}
+async function refreshVerdicts() {
+  let d;
+  try { d = await (await fetch("/api/verdicts")).json(); } catch { return; }
+  setText($("#v-intro"), d.intro || "");
+  const grid = $("#v-grid");
+  for (const e of d.entries || []) {
+    let el = vCards.get(e.id);
+    if (!el) { el = vBuild(e); vCards.set(e.id, el); grid.appendChild(el); }
+    vUpdate(el, e);
+  }
+  const list = $("#v-closed-list");
+  const html = (d.closed || []).map(c => `<li><b>${esc(c.name)}</b> · ${esc(c.why)}</li>`).join("");
+  if (list.dataset.h !== html) { list.innerHTML = html; list.dataset.h = html; }
+}
+refreshVerdicts(); setInterval(refreshVerdicts, 60000);
+
 /* ---------- reload the page when the panel's UI code changes ---------- */
 const uiVersion = document.querySelector('meta[name="ui-version"]')?.content;
 setInterval(async () => {

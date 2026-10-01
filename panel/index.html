@@ -203,6 +203,31 @@
   .hist i { display: block; transition: height .6s; } .hist i.b { background: var(--amber); } .hist i.e { background: var(--blue); }
   .change { font: 11px var(--mono); color: var(--amber); }
 
+  /* ---- verdict page ---- */
+  .verdicts { margin-top: 34px; }
+  .verdicts .vhead { display: flex; flex-direction: column; gap: 4px; margin-bottom: 14px; }
+  .verdicts .vtitle { font: 600 18px var(--display); letter-spacing: .03em; } .verdicts .vtitle b { color: var(--amber); font-weight: 600; }
+  .verdicts .vintro { font-size: 12.5px; color: var(--dim); line-height: 1.6; max-width: 80ch; }
+  .vgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(420px, 1fr)); gap: 14px; }
+  .vcard { border: 1px solid var(--edge); background: linear-gradient(180deg, var(--rack-hi), var(--rack)); padding: 16px 18px; display: flex; flex-direction: column; gap: 10px; }
+  .vcard .vt { font: 600 15px var(--display); letter-spacing: .02em; }
+  .vcard .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .vcard .tag.ok { border-color: var(--green); color: var(--green); } .vcard .tag.paused { border-color: #55564c; color: var(--faint); }
+  .vcard .prot { font: 12px var(--mono); color: var(--amber); }
+  .vcard .written { font: 11px var(--mono); color: var(--faint); }
+  .vbots { display: flex; flex-direction: column; gap: 4px; border-top: 1px dashed var(--edge); border-bottom: 1px dashed var(--edge); padding: 8px 0; }
+  .vbot { display: grid; grid-template-columns: 1fr auto; gap: 10px; font: 12px var(--mono); color: var(--dim); }
+  .vbot .n { color: var(--ink); } .vbot .pos { color: var(--green); } .vbot .neg { color: var(--red); }
+  .vcp { display: flex; flex-direction: column; gap: 3px; font: 12px var(--mono); color: var(--dim); }
+  .vcp b { color: var(--amber); font-weight: 500; }
+  .vbar { height: 5px; background: #0a0a09; border: 1px solid var(--edge); } .vbar i { display: block; height: 100%; background: var(--amber); width: 0; transition: width .6s; }
+  .vlist { margin: 0; padding-left: 18px; font-size: 12.5px; line-height: 1.65; color: var(--ink); }
+  .vlist li { margin-bottom: 3px; }
+  .vref { font-size: 12px; color: var(--dim); line-height: 1.6; }
+  .vclosed { margin-top: 16px; border: 1px solid var(--edge); padding: 10px 16px; font-size: 12.5px; color: var(--dim); }
+  .vclosed summary { cursor: pointer; font: 11px var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--dim); }
+  .vclosed ul { margin: 10px 0 2px; padding-left: 18px; line-height: 1.7; } .vclosed li b { color: var(--ink); font-weight: 500; }
+
   @media (max-width: 1020px) {
     .row { grid-template-columns: 1fr 1fr; }
     .id { grid-column: 1 / -1; border-right: 0; border-bottom: 1px dashed var(--edge); }
@@ -269,6 +294,16 @@
   </section>
 
   <section class="rack" id="rack"></section>
+
+  <section class="verdicts" id="verdicts">
+    <div class="vhead">
+      <div class="lbl">判定页</div>
+      <div class="vtitle">什么时候 <b>/</b> 按什么标准判定</div>
+      <div class="vintro" id="v-intro"></div>
+    </div>
+    <div class="vgrid" id="v-grid"></div>
+    <details class="vclosed" id="v-closed"><summary>已关闭的研究线</summary><ul id="v-closed-list"></ul></details>
+  </section>
 
   <footer class="foot">
     <span id="updated">正在读取…</span>

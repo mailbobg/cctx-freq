@@ -588,6 +588,46 @@ def list_bots():
     return [status(b) for b in bots().values()]
 
 
+def _closed_events(bot: dict, exclude: str | None) -> int | None:
+    """Closed trades of a bot, optionally without one pair (the BTC hedge leg of the new-listing bots)."""
+    try:
+        trades = bot_api(bot, "trades?limit=500").get("trades", [])
+    except Exception:  # noqa: BLE001
+        return None
+    return sum(1 for t in trades if not t.get("is_open") and t.get("pair") != exclude)
+
+
+@app.get("/api/verdicts")
+def verdicts():
+    """Judgement page: per strategy the written criteria and review dates (bots/verdicts.json) plus live numbers."""
+    try:
+        data = json.loads((BOTS / "verdicts.json").read_text())
+    except Exception:  # noqa: BLE001
+        return {"entries": [], "closed": [], "intro": ""}
+    live = {s["name"]: s for s in list_bots()}
+    registry = bots()
+    today = datetime.now(timezone.utc).date()
+    for e in data.get("entries", []):
+        rows = []
+        for name in e.get("bots", []):
+            s = live.get(name)
+            if s:
+                rows.append({"name": name, "running": s.get("want") == "running" and s.get("api") == "up",
+                             "dry_run": s.get("dry_run"), "open": s.get("open_trades"), "closed": s.get("closed_trades"),
+                             "profit_all": s.get("profit_all"), "profit_closed": s.get("profit_closed")})
+        e["live"] = rows
+        for c in e.get("checkpoints", []):
+            c["days_left"] = (datetime.strptime(c["date"], "%Y-%m-%d").date() - today).days if c.get("date") else None
+        t = e.get("target")
+        if t:
+            bot = registry.get(t["bot"])
+            have = _closed_events(bot, t.get("exclude")) if bot and live.get(t["bot"], {}).get("api") == "up" else None
+            if have is None:
+                have = (live.get(t["bot"]) or {}).get("closed_trades")
+            t["have"] = have
+    return data
+
+
 @app.post("/api/bots/{name}/{action}")
 def act(name: str, action: str):
     if name != "all" and name not in bots():
