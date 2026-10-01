@@ -1,4 +1,10 @@
 {
+  "e0v1en-live": {
+    "description": "E0V1EN 实盘（Binance 现货，约 20 USDT，2 个仓位）· 真实资金，只用来测量真实成交和手续费，和 e0v1en 模拟盘对照"
+  },
+  "e0v1en": {
+    "description": "E0V1EN 原版，118 币现货"
+  },
   "x7": {
     "description": "NFI X7，100 币动态选币"
   },
@@ -7,9 +13,6 @@
   },
   "x12": {
     "description": "E0V1EN + 崩盘保护，118 币现货"
-  },
-  "e0v1en": {
-    "description": "E0V1EN 原版，118 币现货"
   },
   "c-hold": {
     "description": "C：BTC/ETH 每周按趋势和波动率调仓（参考记录，未过预注册标准 1）"
@@ -53,9 +56,6 @@
         "COIN"
       ]
     }
-  },
-  "e0v1en-live": {
-    "description": "E0V1EN 实盘（Binance 现货，约 20 USDT，2 个仓位）· 真实资金，只用来测量真实成交和手续费，和 e0v1en 模拟盘对照"
   },
   "unlock-xs": {
     "description": "U2：解锁抛压前向模拟盘 · 每周一 00:00 UTC 选解锁量最大的最多 6 个币做空，BTC 对冲 · 全仓位 1 倍 · 排期来自 2026-09-25 的静态文件",
