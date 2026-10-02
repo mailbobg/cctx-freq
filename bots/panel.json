@@ -17,6 +17,15 @@
   "c-hold": {
     "description": "C：BTC/ETH 每周按趋势和波动率调仓（参考记录，未过预注册标准 1）"
   },
+  "c-hold-sma": {
+    "description": "R2b：C 加 200 日均线软过滤（均线下方半仓）· BTC/ETH 每周调仓 · 模拟盘前向记录；回测 6 项预注册标准全过，但回测窗口此前已被看过",
+    "wait": {
+      "kind": "weekly",
+      "weekday": 0,
+      "hour": 0,
+      "text": "每周一 00:00 UTC 用周日收盘决定一次仓位，其余时间不动"
+    }
+  },
   "unlock-short": {
     "description": "解锁供给压力仅做空 · APT/TIA · 1h · 1倍杠杆 · 独立模拟；研究候选，尚未验证稳定盈利",
     "wait": {
