@@ -5,9 +5,9 @@
     "secrets.json",
     "local-network.json"
   ],
-  "strategy": "E0V1EN",
+  "strategy": "E0V1ENWait3",
   "bot_name": "e0v1en",
-  "db_url": "sqlite:///user_data/tradesv3.e0v1en-spot.dryrun.sqlite",
+  "db_url": "sqlite:///user_data/tradesv3.e0v1en-wait3.dryrun.sqlite",
   "api_server": {
     "listen_port": 8083
   }

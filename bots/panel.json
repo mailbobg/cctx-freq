@@ -3,7 +3,7 @@
     "description": "E0V1EN 实盘（Binance 现货，约 20 USDT，2 个仓位）· 真实资金，只用来测量真实成交和手续费，和 e0v1en 模拟盘对照"
   },
   "e0v1en": {
-    "description": "E0V1EN 原版，118 币现货"
+    "description": "E0V1ENWait3：原信号延迟 3 根 5 分钟 K 线，118 币现货模拟盘 · 独立前向记录；历史对照未通过采用标准"
   },
   "x7": {
     "description": "NFI X7，100 币动态选币"
