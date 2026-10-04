@@ -1,0 +1,16 @@
+{
+  "all_reference_and_held_prefix_verification_pass": true,
+  "before_full_candidate_outcomes": true,
+  "captured_utc": "2026-10-04T13:14:35.779257+00:00",
+  "excluded": "Previously archived install_backup and unrelated untracked unfinished modules; not a broad all-current-tree pass",
+  "focused_tests": 26,
+  "independent_checker_sources_sha256": {
+    "r19_reflection.py": "e6d1410d043bb0c7cc6f128c313a67e1a9f29c9f94c19688cabb5380fd0a8d0d",
+    "test_r19_reflection.py": "e2b5eb6aa2badb9579a5d8eed0650652f27b594fdf3093b9395db613336df48e"
+  },
+  "input_manifest_sha256": "7900b836c399e6ae5bf7bf228acfe2ee4cc81dbd29063156b244f4591313be91",
+  "stable_test_files": 46,
+  "stable_tracked_owned_tests": 393,
+  "subtests": 16,
+  "warnings": 4
+}
