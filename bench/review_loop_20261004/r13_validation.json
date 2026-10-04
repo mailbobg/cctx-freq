@@ -1,0 +1,80 @@
+{
+  "captured_utc": "2026-10-04T11:03:31.661074+00:00",
+  "protocol_commit": "c9f0e45",
+  "source_reader_test_commit": "0001091",
+  "engine_input_test_freeze_commit": "f8f3853",
+  "focused_data_and_engine_tests_passed_before_outcomes": 32,
+  "current_source_suite": {
+    "tests_passed": 246,
+    "subtests_passed": 16,
+    "warnings": 4,
+    "elapsed_seconds": 15.96,
+    "command": ".venv/bin/python -m pytest -o addopts= -q user_data/bench user_data/cross_venue user_data/panel --ignore=user_data/bench/shared_market_data_20260927/install_backup",
+    "scope": "Current-source bench/cross-venue/panel only; no upstream full-suite or async-plugin coverage claimed"
+  },
+  "minute_source_validation": {
+    "source_count": 128,
+    "source_manifest_sha256": "71fec3eae75d8e010a064d4160c3382455bdbbc1ae40c93e99edd37e4525fc98",
+    "output_sha256": {
+      "BTCUSDT_1m.parquet": "00893ee218647d945b636dcf4915eaadc03a3d5b6c2790512a187f02907371b3",
+      "ETHUSDT_1m.parquet": "be3f4d46629d0e4daa9e6156e36e7071bdf75d37c4528831fc5d3704168d53a6"
+    },
+    "validation": {
+      "BTC": {
+        "rows": 1402560,
+        "first": "2024-01-01 00:00:00+00:00",
+        "last": "2026-08-31 23:59:00+00:00",
+        "positive_activity_every_minute": true,
+        "daily_OHLC_max_gap": 0.0,
+        "cache_OHLC_max_gap": 0.0,
+        "frozen_daily_sha256": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+        "existing_feather_sha256": "8d7c185c254788a1cc7d911efb1fa5fb5269711cfaabfa2405ea81ad2e280447",
+        "missing_minutes": 0
+      },
+      "ETH": {
+        "rows": 1402560,
+        "first": "2024-01-01 00:00:00+00:00",
+        "last": "2026-08-31 23:59:00+00:00",
+        "positive_activity_every_minute": true,
+        "daily_OHLC_max_gap": 0.0,
+        "cache_OHLC_max_gap": 0.0,
+        "frozen_daily_sha256": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+        "existing_feather_sha256": "d910507946a5a20f6054846ba9a4519b62fb07970dd260d72445a9497a7cd66e",
+        "missing_minutes": 0
+      }
+    }
+  },
+  "offline_checksum_calendar_activity_daily_and_cache_replay": true,
+  "order_aware_daily_and_completed_cycle_profit_replay": true,
+  "frozen_engine_control_prefix_verification": {
+    "source_inputs_sha256": {
+      "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+      "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+      "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+      "r13_data/BTCUSDT_1m.parquet": "00893ee218647d945b636dcf4915eaadc03a3d5b6c2790512a187f02907371b3",
+      "r13_data/ETHUSDT_1m.parquet": "be3f4d46629d0e4daa9e6156e36e7071bdf75d37c4528831fc5d3704168d53a6"
+    },
+    "source_code_sha256": {
+      "R13_PROTOCOL.md": "470248bb941e0a07eb434d5a1375ea35ce115341bee49d77d3aa3704be4c02d9",
+      "r13_atr.py": "38a3f6157fb9d461ba7c582bcb82e6f4d0787d11b6c0e655aee38f558a31c763",
+      "test_r13_atr.py": "058723d7dd84c53d2f4f7c6150d5bab55fbf171390f051f62c5183acd254c5ff",
+      "r13_data.py": "48fb639c090cff81245d53e24de49b5f3675330c06424eadd2aae4df96a78347",
+      "test_r13_data.py": "4fd73174cc0354043e6bf58f2948eb72b917380031b6df902aa90ca88009da34",
+      "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+      "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91"
+    },
+    "minute_source_manifest_sha256": "19d7b24c950c8a40b9f6c4ebd3b4423713d9849f0d1a3960e727a80362d2cc32",
+    "disabled_control_max_abs_gap": {
+      "0.0012": 2.220446049250315e-16,
+      "0.0024": 2.220446049250313e-16
+    },
+    "ATR_unstable_period": 0,
+    "ATR_full_prefix_equal": true,
+    "real_held_execution_and_order_prefix_equal": true
+  },
+  "candidate_rejected": true,
+  "earlier_window_extension_attempted": false,
+  "freqtrade_class_created": false,
+  "activated": false,
+  "limitations": "Modeled following-minute actual candle OPEN, synchronized candle equity; no executable quote, tick, exact intraminute, new holdout or independent forward certification."
+}

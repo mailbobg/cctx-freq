@@ -1,0 +1,884 @@
+{
+  "results": {
+    "Cov10_baseline": {
+      "daily_peak": "2025-10-06 00:00:00+00:00",
+      "daily_trough": "2026-03-29 00:00:00+00:00",
+      "daily_DD_pct": -7.5565427275781865,
+      "sampled_minute_DD_pct": -8.670291985752165,
+      "loss_episode_asset_PnL_USDT_10000_start": {
+        "BTC": -380.91736597393475,
+        "ETH": -616.9752495257129,
+        "costs": -29.448774413349003
+      },
+      "whole_window_asset_PnL_USDT_10000_start": {
+        "BTC": 1787.4776631817856,
+        "ETH": 2285.678318535093,
+        "costs": -168.02624967797885
+      },
+      "all_days_attribution_max_abs_gap": 2.1649348980190553e-15,
+      "completed_position_count": 36,
+      "net_losing_position_count": 18,
+      "longest_chronological_losing_close_sequence": 8,
+      "net_closed_position_profit_USDT_10000_start": 3905.129732038315,
+      "cycles": [
+        {
+          "asset": "BTC",
+          "opened": "2024-01-01 00:00:00+00:00",
+          "closed": "2024-01-08 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 44.508964217678006,
+          "cost_USDT_10000_start": 2.798465872207,
+          "net_pnl_USDT_10000_start": 41.710498345471
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-01-01 00:00:00+00:00",
+          "closed": "2024-01-08 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -30.300181742505828,
+          "cost_USDT_10000_start": 2.7086948970549996,
+          "net_pnl_USDT_10000_start": -33.00887663956083
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-01-15 00:00:00+00:00",
+          "closed": "2024-01-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -143.12182231171428,
+          "cost_USDT_10000_start": 3.761262961606,
+          "net_pnl_USDT_10000_start": -146.8830852733203
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-02-05 00:00:00+00:00",
+          "closed": "2024-02-12 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 165.428234591638,
+          "cost_USDT_10000_start": 4.379676561384,
+          "net_pnl_USDT_10000_start": 161.048558030254
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-02-19 00:00:00+00:00",
+          "closed": "2024-04-08 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 328.22327724770713,
+          "cost_USDT_10000_start": 3.557273670925347,
+          "net_pnl_USDT_10000_start": 324.66600357678175
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-02-12 00:00:00+00:00",
+          "closed": "2024-04-15 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 578.1824478716516,
+          "cost_USDT_10000_start": 7.003884419581871,
+          "net_pnl_USDT_10000_start": 571.1785634520697
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-04-22 00:00:00+00:00",
+          "closed": "2024-04-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -55.8600426709618,
+          "cost_USDT_10000_start": 4.709996027477,
+          "net_pnl_USDT_10000_start": -60.57003869843881
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-05-20 00:00:00+00:00",
+          "closed": "2024-06-17 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 6.694981566820527,
+          "cost_USDT_10000_start": 2.6513534935,
+          "net_pnl_USDT_10000_start": 4.0436280733205265
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-05-20 00:00:00+00:00",
+          "closed": "2024-06-24 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 143.5038300322216,
+          "cost_USDT_10000_start": 4.7910199728426015,
+          "net_pnl_USDT_10000_start": 138.712810059379
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-07-22 00:00:00+00:00",
+          "closed": "2024-07-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -82.90303993603538,
+          "cost_USDT_10000_start": 2.547671525355,
+          "net_pnl_USDT_10000_start": -85.45071146139038
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-07-22 00:00:00+00:00",
+          "closed": "2024-08-19 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -333.92205980609845,
+          "cost_USDT_10000_start": 5.1872769356749995,
+          "net_pnl_USDT_10000_start": -339.1093367417734
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-09-16 00:00:00+00:00",
+          "closed": "2024-09-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 162.92315324530202,
+          "cost_USDT_10000_start": 5.395143598393,
+          "net_pnl_USDT_10000_start": 157.52800964690906
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-09-30 00:00:00+00:00",
+          "closed": "2024-10-28 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -30.94187289959965,
+          "cost_USDT_10000_start": 3.3276345558220446,
+          "net_pnl_USDT_10000_start": -34.269507455421696
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-09-30 00:00:00+00:00",
+          "closed": "2024-12-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 616.9235780947929,
+          "cost_USDT_10000_start": 7.553377983086,
+          "net_pnl_USDT_10000_start": 609.3702001117069
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-11-04 00:00:00+00:00",
+          "closed": "2024-12-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 315.275483381233,
+          "cost_USDT_10000_start": 2.634936371889,
+          "net_pnl_USDT_10000_start": 312.640547009344
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-01-20 00:00:00+00:00",
+          "closed": "2025-02-03 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -92.51179492585955,
+          "cost_USDT_10000_start": 6.085240580637,
+          "net_pnl_USDT_10000_start": -98.59703550649655
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-02-10 00:00:00+00:00",
+          "closed": "2025-02-17 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -10.338972480558915,
+          "cost_USDT_10000_start": 6.932959922972999,
+          "net_pnl_USDT_10000_start": -17.271932403531913
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-04-21 00:00:00+00:00",
+          "closed": "2025-06-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 433.81791659102225,
+          "cost_USDT_10000_start": 5.81757501489485,
+          "net_pnl_USDT_10000_start": 428.0003415761274
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-05-12 00:00:00+00:00",
+          "closed": "2025-06-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -71.92546153886514,
+          "cost_USDT_10000_start": 1.4267596670936804,
+          "net_pnl_USDT_10000_start": -73.35222120595881
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-06-30 00:00:00+00:00",
+          "closed": "2025-08-18 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 129.51819911848835,
+          "cost_USDT_10000_start": 9.086147473653998,
+          "net_pnl_USDT_10000_start": 120.43205164483435
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-07-07 00:00:00+00:00",
+          "closed": "2025-09-22 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 1002.0111018403026,
+          "cost_USDT_10000_start": 4.300602966701,
+          "net_pnl_USDT_10000_start": 997.7104988736016
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-09-29 00:00:00+00:00",
+          "closed": "2025-10-13 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 421.1468945278569,
+          "cost_USDT_10000_start": 13.481012980289,
+          "net_pnl_USDT_10000_start": 407.6658815475679
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-10-06 00:00:00+00:00",
+          "closed": "2025-10-13 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -144.55294745128086,
+          "cost_USDT_10000_start": 4.152531071714,
+          "net_pnl_USDT_10000_start": -148.70547852299487
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-10-27 00:00:00+00:00",
+          "closed": "2025-11-03 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -44.788596336405654,
+          "cost_USDT_10000_start": 3.010486178937,
+          "net_pnl_USDT_10000_start": -47.79908251534265
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-10-27 00:00:00+00:00",
+          "closed": "2025-11-03 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -60.365535799393285,
+          "cost_USDT_10000_start": 2.319440023075,
+          "net_pnl_USDT_10000_start": -62.68497582246828
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-12-22 00:00:00+00:00",
+          "closed": "2025-12-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -10.646831761277133,
+          "cost_USDT_10000_start": 3.195344589361,
+          "net_pnl_USDT_10000_start": -13.842176350638132
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-12-22 00:00:00+00:00",
+          "closed": "2025-12-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -21.76108641749246,
+          "cost_USDT_10000_start": 3.0409023891570004,
+          "net_pnl_USDT_10000_start": -24.80198880664946
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-01-05 00:00:00+00:00",
+          "closed": "2026-01-26 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -103.46149132495191,
+          "cost_USDT_10000_start": 4.552888994132,
+          "net_pnl_USDT_10000_start": -108.01438031908391
+        },
+        {
+          "asset": "ETH",
+          "opened": "2026-01-05 00:00:00+00:00",
+          "closed": "2026-01-26 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -203.14292294731877,
+          "cost_USDT_10000_start": 4.433271276185,
+          "net_pnl_USDT_10000_start": -207.57619422350376
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-03-16 00:00:00+00:00",
+          "closed": "2026-03-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -80.43141959106484,
+          "cost_USDT_10000_start": 2.7394815743530003,
+          "net_pnl_USDT_10000_start": -83.17090116541785
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-03-30 00:00:00+00:00",
+          "closed": "2026-04-13 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 82.28763613747502,
+          "cost_USDT_10000_start": 2.854513450769,
+          "net_pnl_USDT_10000_start": 79.43312268670603
+        },
+        {
+          "asset": "ETH",
+          "opened": "2026-03-16 00:00:00+00:00",
+          "closed": "2026-05-18 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 42.22961406990174,
+          "cost_USDT_10000_start": 4.3581389525392975,
+          "net_pnl_USDT_10000_start": 37.87147511736244
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-04-20 00:00:00+00:00",
+          "closed": "2026-05-25 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 46.22503679824896,
+          "cost_USDT_10000_start": 7.550071997256,
+          "net_pnl_USDT_10000_start": 38.67496480099296
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-07-06 00:00:00+00:00",
+          "closed": "2026-08-17 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -17.754198938671397,
+          "cost_USDT_10000_start": 3.594822554201,
+          "net_pnl_USDT_10000_start": -21.3490214928724
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-08-24 00:00:00+00:00",
+          "closed": "2026-08-31 23:59:00+00:00",
+          "exit_reason": "terminal_daily_close",
+          "price_pnl_USDT_10000_start": 14.964262848298047,
+          "cost_USDT_10000_start": 3.312881898902,
+          "net_pnl_USDT_10000_start": 11.651380949396046
+        },
+        {
+          "asset": "ETH",
+          "opened": "2026-07-06 00:00:00+00:00",
+          "closed": "2026-08-31 23:59:00+00:00",
+          "exit_reason": "terminal_daily_close",
+          "price_pnl_USDT_10000_start": 1078.0216484157013,
+          "cost_USDT_10000_start": 8.773507274347,
+          "net_pnl_USDT_10000_start": 1069.2481411413544
+        }
+      ]
+    },
+    "ATR22x3": {
+      "daily_peak": "2024-03-04 00:00:00+00:00",
+      "daily_trough": "2024-10-10 00:00:00+00:00",
+      "daily_DD_pct": -12.810944210063003,
+      "sampled_minute_DD_pct": -13.862085330486272,
+      "loss_episode_asset_PnL_USDT_10000_start": {
+        "BTC": -826.8582997936602,
+        "ETH": -509.84092239507817,
+        "costs": -55.12907843880399
+      },
+      "whole_window_asset_PnL_USDT_10000_start": {
+        "BTC": 692.1427775278327,
+        "ETH": 1295.376978790645,
+        "costs": -202.9929906367469
+      },
+      "all_days_attribution_max_abs_gap": 3.1488700535931e-14,
+      "completed_position_count": 56,
+      "net_losing_position_count": 36,
+      "longest_chronological_losing_close_sequence": 8,
+      "net_closed_position_profit_USDT_10000_start": 1784.5267656820367,
+      "cycles": [
+        {
+          "asset": "BTC",
+          "opened": "2024-01-01 00:00:00+00:00",
+          "closed": "2024-01-03 12:10:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -37.75050915742823,
+          "cost_USDT_10000_start": 2.699754504157,
+          "net_pnl_USDT_10000_start": -40.45026366158524
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-01-01 00:00:00+00:00",
+          "closed": "2024-01-03 12:10:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -72.48986407942438,
+          "cost_USDT_10000_start": 2.6580672782510004,
+          "net_pnl_USDT_10000_start": -75.14793135767538
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-01-15 00:00:00+00:00",
+          "closed": "2024-01-23 08:50:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -117.33212103464935,
+          "cost_USDT_10000_start": 3.743365874342,
+          "net_pnl_USDT_10000_start": -121.07548690899134
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-02-05 00:00:00+00:00",
+          "closed": "2024-02-12 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 163.77606529403278,
+          "cost_USDT_10000_start": 4.335935738265,
+          "net_pnl_USDT_10000_start": 159.44012955576778
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-02-12 00:00:00+00:00",
+          "closed": "2024-03-05 19:37:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 454.32384489192583,
+          "cost_USDT_10000_start": 6.792234040928,
+          "net_pnl_USDT_10000_start": 447.5316108509978
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-02-19 00:00:00+00:00",
+          "closed": "2024-03-05 19:57:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 181.06852968220326,
+          "cost_USDT_10000_start": 3.3490943232859998,
+          "net_pnl_USDT_10000_start": 177.71943535891725
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-03-11 00:00:00+00:00",
+          "closed": "2024-03-15 09:14:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -84.3929301691462,
+          "cost_USDT_10000_start": 2.565883187547,
+          "net_pnl_USDT_10000_start": -86.9588133566932
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-03-11 00:00:00+00:00",
+          "closed": "2024-03-16 23:14:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -57.634187144185454,
+          "cost_USDT_10000_start": 2.597993679177,
+          "net_pnl_USDT_10000_start": -60.232180823362455
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-03-18 00:00:00+00:00",
+          "closed": "2024-03-20 05:24:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -151.77577843140003,
+          "cost_USDT_10000_start": 2.1016018748364047,
+          "net_pnl_USDT_10000_start": -153.87738030623643
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-03-25 00:00:00+00:00",
+          "closed": "2024-04-08 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -0.1505388137105986,
+          "cost_USDT_10000_start": 1.5799006576726764,
+          "net_pnl_USDT_10000_start": -1.730439471383275
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-03-18 00:00:00+00:00",
+          "closed": "2024-04-13 20:07:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -110.37198754063937,
+          "cost_USDT_10000_start": 3.3041852779526226,
+          "net_pnl_USDT_10000_start": -113.676172818592
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-04-22 00:00:00+00:00",
+          "closed": "2024-04-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -51.83289149058625,
+          "cost_USDT_10000_start": 4.370435490917,
+          "net_pnl_USDT_10000_start": -56.203326981503245
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-05-20 00:00:00+00:00",
+          "closed": "2024-06-11 04:27:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 198.8689141421863,
+          "cost_USDT_10000_start": 2.6913958113051084,
+          "net_pnl_USDT_10000_start": 196.17751833088118
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-05-20 00:00:00+00:00",
+          "closed": "2024-06-14 16:30:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -14.651666088600777,
+          "cost_USDT_10000_start": 2.435171115028,
+          "net_pnl_USDT_10000_start": -17.08683720362878
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-06-17 00:00:00+00:00",
+          "closed": "2024-06-24 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -80.36311331043575,
+          "cost_USDT_10000_start": 3.33867626222,
+          "net_pnl_USDT_10000_start": -83.70178957265574
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-07-22 00:00:00+00:00",
+          "closed": "2024-07-25 04:09:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -112.66168197341061,
+          "cost_USDT_10000_start": 2.312196665712,
+          "net_pnl_USDT_10000_start": -114.9738786391226
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-07-22 00:00:00+00:00",
+          "closed": "2024-08-01 15:28:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -166.76239326255237,
+          "cost_USDT_10000_start": 4.947174474772,
+          "net_pnl_USDT_10000_start": -171.70956773732436
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-08-05 00:00:00+00:00",
+          "closed": "2024-08-05 06:23:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -265.77462279057016,
+          "cost_USDT_10000_start": 4.423410859727,
+          "net_pnl_USDT_10000_start": -270.1980336502972
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-08-12 00:00:00+00:00",
+          "closed": "2024-08-19 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -6.752047209179551,
+          "cost_USDT_10000_start": 3.327448064621,
+          "net_pnl_USDT_10000_start": -10.079495273800552
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-09-16 00:00:00+00:00",
+          "closed": "2024-09-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 147.9411887636289,
+          "cost_USDT_10000_start": 4.8990210513229995,
+          "net_pnl_USDT_10000_start": 143.0421677123059
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-09-30 00:00:00+00:00",
+          "closed": "2024-10-03 15:09:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -95.83256440445784,
+          "cost_USDT_10000_start": 1.6948718123311506,
+          "net_pnl_USDT_10000_start": -97.52743621678898
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-09-30 00:00:00+00:00",
+          "closed": "2024-10-10 18:05:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -145.36919467159004,
+          "cost_USDT_10000_start": 3.445298745626,
+          "net_pnl_USDT_10000_start": -148.81449341721603
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-10-07 00:00:00+00:00",
+          "closed": "2024-10-23 18:05:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 63.15715140331525,
+          "cost_USDT_10000_start": 2.9724089705322267,
+          "net_pnl_USDT_10000_start": 60.184742432783025
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-10-14 00:00:00+00:00",
+          "closed": "2024-11-04 17:21:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 98.69662229608385,
+          "cost_USDT_10000_start": 6.123631597316,
+          "net_pnl_USDT_10000_start": 92.57299069876784
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-11-04 00:00:00+00:00",
+          "closed": "2024-11-15 04:39:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 196.6481393090907,
+          "cost_USDT_10000_start": 2.262178747864,
+          "net_pnl_USDT_10000_start": 194.3859605612267
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-11-18 00:00:00+00:00",
+          "closed": "2024-12-09 21:05:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 122.73785866084889,
+          "cost_USDT_10000_start": 1.9888711831452064,
+          "net_pnl_USDT_10000_start": 120.74898747770366
+        },
+        {
+          "asset": "ETH",
+          "opened": "2024-12-16 00:00:00+00:00",
+          "closed": "2024-12-19 02:13:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -98.53925056651752,
+          "cost_USDT_10000_start": 2.146031460082,
+          "net_pnl_USDT_10000_start": -100.68528202659951
+        },
+        {
+          "asset": "BTC",
+          "opened": "2024-11-11 00:00:00+00:00",
+          "closed": "2024-12-19 18:24:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 204.06569853783768,
+          "cost_USDT_10000_start": 2.58348782015,
+          "net_pnl_USDT_10000_start": 201.48221071768768
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-01-20 00:00:00+00:00",
+          "closed": "2025-02-02 17:50:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -84.58180130867075,
+          "cost_USDT_10000_start": 5.26704166103,
+          "net_pnl_USDT_10000_start": -89.84884296970075
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-02-10 00:00:00+00:00",
+          "closed": "2025-02-17 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -8.953892238753992,
+          "cost_USDT_10000_start": 6.004172674086001,
+          "net_pnl_USDT_10000_start": -14.958064912839992
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-04-21 00:00:00+00:00",
+          "closed": "2025-06-05 16:54:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 415.32654349697685,
+          "cost_USDT_10000_start": 5.085763490116883,
+          "net_pnl_USDT_10000_start": 410.2407800068599
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-05-12 00:00:00+00:00",
+          "closed": "2025-06-06 00:23:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -26.216097323195168,
+          "cost_USDT_10000_start": 1.2789095553067866,
+          "net_pnl_USDT_10000_start": -27.495006878501954
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-06-09 00:00:00+00:00",
+          "closed": "2025-06-13 01:12:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -13.275959211675397,
+          "cost_USDT_10000_start": 2.035615291294,
+          "net_pnl_USDT_10000_start": -15.3115745029694
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-06-09 00:00:00+00:00",
+          "closed": "2025-06-21 21:25:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -72.38265957582,
+          "cost_USDT_10000_start": 4.336166536547,
+          "net_pnl_USDT_10000_start": -76.71882611236701
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-06-16 00:00:00+00:00",
+          "closed": "2025-06-21 21:32:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -97.80105283851579,
+          "cost_USDT_10000_start": 1.9324238247159045,
+          "net_pnl_USDT_10000_start": -99.73347666323168
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-06-30 00:00:00+00:00",
+          "closed": "2025-07-25 07:54:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 83.59077087487681,
+          "cost_USDT_10000_start": 7.747149428106,
+          "net_pnl_USDT_10000_start": 75.84362144677081
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-07-07 00:00:00+00:00",
+          "closed": "2025-08-01 22:32:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 386.09474357426893,
+          "cost_USDT_10000_start": 3.116106200837,
+          "net_pnl_USDT_10000_start": 382.97863737343187
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-07-28 00:00:00+00:00",
+          "closed": "2025-08-18 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -25.358192729323832,
+          "cost_USDT_10000_start": 3.584297822781,
+          "net_pnl_USDT_10000_start": -28.942490552104832
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-08-04 00:00:00+00:00",
+          "closed": "2025-08-19 04:09:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 284.3437550275095,
+          "cost_USDT_10000_start": 3.735090648771,
+          "net_pnl_USDT_10000_start": 280.60866437873847
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-08-25 00:00:00+00:00",
+          "closed": "2025-09-22 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -89.50717774487664,
+          "cost_USDT_10000_start": 2.956286125713,
+          "net_pnl_USDT_10000_start": -92.46346387058964
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-10-06 00:00:00+00:00",
+          "closed": "2025-10-10 15:22:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -104.00660184237891,
+          "cost_USDT_10000_start": 3.4661602065,
+          "net_pnl_USDT_10000_start": -107.47276204887892
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-09-29 00:00:00+00:00",
+          "closed": "2025-10-10 17:00:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 388.93165713450065,
+          "cost_USDT_10000_start": 11.237674052822001,
+          "net_pnl_USDT_10000_start": 377.6939830816786
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-10-27 00:00:00+00:00",
+          "closed": "2025-11-03 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -37.365572040595005,
+          "cost_USDT_10000_start": 2.5115441741330002,
+          "net_pnl_USDT_10000_start": -39.877116214728
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-10-27 00:00:00+00:00",
+          "closed": "2025-11-03 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -50.36087221264235,
+          "cost_USDT_10000_start": 1.935028341257022,
+          "net_pnl_USDT_10000_start": -52.29590055389937
+        },
+        {
+          "asset": "BTC",
+          "opened": "2025-12-22 00:00:00+00:00",
+          "closed": "2025-12-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -8.882282360269691,
+          "cost_USDT_10000_start": 2.665765132524,
+          "net_pnl_USDT_10000_start": -11.548047492793692
+        },
+        {
+          "asset": "ETH",
+          "opened": "2025-12-22 00:00:00+00:00",
+          "closed": "2025-12-29 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -18.154519425148873,
+          "cost_USDT_10000_start": 2.5369193630680003,
+          "net_pnl_USDT_10000_start": -20.69143878821687
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-01-05 00:00:00+00:00",
+          "closed": "2026-01-20 14:49:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -20.670657254567786,
+          "cost_USDT_10000_start": 3.877089741756,
+          "net_pnl_USDT_10000_start": -24.547746996323788
+        },
+        {
+          "asset": "ETH",
+          "opened": "2026-01-05 00:00:00+00:00",
+          "closed": "2026-01-20 14:50:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -52.73833690182497,
+          "cost_USDT_10000_start": 3.83860852618,
+          "net_pnl_USDT_10000_start": -56.576945428004976
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-03-16 00:00:00+00:00",
+          "closed": "2026-03-23 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -68.24823263935801,
+          "cost_USDT_10000_start": 2.324524131841,
+          "net_pnl_USDT_10000_start": -70.572756771199
+        },
+        {
+          "asset": "ETH",
+          "opened": "2026-03-16 00:00:00+00:00",
+          "closed": "2026-03-27 10:38:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": -73.39108796223732,
+          "cost_USDT_10000_start": 3.5669297827587343,
+          "net_pnl_USDT_10000_start": -76.95801774499606
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-03-30 00:00:00+00:00",
+          "closed": "2026-04-13 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": 69.99465912345318,
+          "cost_USDT_10000_start": 2.4280767479580003,
+          "net_pnl_USDT_10000_start": 67.56658237549517
+        },
+        {
+          "asset": "ETH",
+          "opened": "2026-03-30 00:00:00+00:00",
+          "closed": "2026-05-16 07:14:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 124.05350268423234,
+          "cost_USDT_10000_start": 4.162863470046532,
+          "net_pnl_USDT_10000_start": 119.89063921418581
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-04-20 00:00:00+00:00",
+          "closed": "2026-05-18 14:35:00+00:00",
+          "exit_reason": "atr_minute",
+          "price_pnl_USDT_10000_start": 14.979038566095737,
+          "cost_USDT_10000_start": 6.383309908844001,
+          "net_pnl_USDT_10000_start": 8.595728657251737
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-07-06 00:00:00+00:00",
+          "closed": "2026-08-17 00:00:00+00:00",
+          "exit_reason": "weekly",
+          "price_pnl_USDT_10000_start": -15.046593352807198,
+          "cost_USDT_10000_start": 3.0465938415700005,
+          "net_pnl_USDT_10000_start": -18.093187194377197
+        },
+        {
+          "asset": "BTC",
+          "opened": "2026-08-24 00:00:00+00:00",
+          "closed": "2026-08-31 23:59:00+00:00",
+          "exit_reason": "terminal_daily_close",
+          "price_pnl_USDT_10000_start": 12.682136697951904,
+          "cost_USDT_10000_start": 2.807650569358,
+          "net_pnl_USDT_10000_start": 9.874486128593906
+        },
+        {
+          "asset": "ETH",
+          "opened": "2026-07-06 00:00:00+00:00",
+          "closed": "2026-08-31 23:59:00+00:00",
+          "exit_reason": "terminal_daily_close",
+          "price_pnl_USDT_10000_start": 913.6178672589001,
+          "cost_USDT_10000_start": 7.435502817729,
+          "net_pnl_USDT_10000_start": 906.1823644411711
+        }
+      ]
+    }
+  },
+  "ATR_minus_control_asset_PnL_USDT_10000_start": {
+    "BTC": -1095.3348856539528,
+    "ETH": -990.3013397444479,
+    "costs": -34.96674095876804
+  },
+  "scope": "Order-aware attribution of existing frozen paths only. No theoretical-stop fill alternative, no no-cost or identical-capital counterfactual, and no new strategy parameter. Chronological losing-close sequence is a descriptive count across two assets, not proof that those closures alone caused account drawdown."
+}

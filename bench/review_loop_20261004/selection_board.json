@@ -382,7 +382,7 @@
     "historical_profitability_lead": "RiskHoldR2bCov10",
     "strict_default_gate_winner": null,
     "adopted_new_strategy": false,
-    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR and not exact-mark/execution certified. R8 crowding veto, R9 rotation and R10 fixed gold failed frozen screens. R12 daily original-off exits also fail return/risk, no tuning. R11 six real fixed quote samples and partial author source improve source feasibility only; continuous BTC/ETH execution/valuation history unresolved. Reused history is not fresh OOS; no adopted winner or activation.",
+    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR and not exact-mark/execution certified. R8/R9/R10/R12 failed fixed screens. R13 recent minute-executed ATR protection returns6.35% with daily/minute DD12.81%/13.86%, rejected without early-window or ATR/timing/risk tuning. Its matched common control has minute DD8.67%, distinct from R1 longer-window results. R11 real fixed quote samples and partial author source only improve feasibility; continuous quote/valuation history unresolved. Reused history is not fresh OOS. No adopted winner or activation.",
     "low_return_price_screen_lead": "R7 equal-allocation dated carry: costed CAGR2.20%/3.73%, double cost1.45%/2.84%; not exact mark/execution certified"
   },
   {
@@ -682,5 +682,41 @@
     "daily_MTM_DD_pct": -9.253771020631053,
     "adoption_gate": false,
     "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R13 matched common control",
+    "window": "recent_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 13.149826581062207,
+    "daily_MTM_DD_pct": -7.5565427275781865,
+    "sampled_minute_account_DD_pct": -8.670291985752165,
+    "adoption_gate": false,
+    "disposition": "Candidate fails first frozen recent return and daily/minute risk gates; no earlier window, ATR/distance/timing/recovery/risk/band/cost sweep or activation. Candle-price sampling, not exact quote/tick proof."
+  },
+  {
+    "trial": "R13 position-anchored ATR22x3",
+    "window": "recent_reused_ATR22x3_cost0.0012",
+    "CAGR_pct": 6.346634667746809,
+    "daily_MTM_DD_pct": -12.810944210063024,
+    "sampled_minute_account_DD_pct": -13.862085330486273,
+    "adoption_gate": false,
+    "disposition": "Candidate fails first frozen recent return and daily/minute risk gates; no earlier window, ATR/distance/timing/recovery/risk/band/cost sweep or activation. Candle-price sampling, not exact quote/tick proof."
+  },
+  {
+    "trial": "R13 matched common control",
+    "window": "recent_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 12.552807184389646,
+    "daily_MTM_DD_pct": -7.768151264532685,
+    "sampled_minute_account_DD_pct": -8.839367774741913,
+    "adoption_gate": false,
+    "disposition": "Candidate fails first frozen recent return and daily/minute risk gates; no earlier window, ATR/distance/timing/recovery/risk/band/cost sweep or activation. Candle-price sampling, not exact quote/tick proof."
+  },
+  {
+    "trial": "R13 position-anchored ATR22x3",
+    "window": "recent_reused_ATR22x3_cost0.0024",
+    "CAGR_pct": 5.5707612635061965,
+    "daily_MTM_DD_pct": -13.291777761319679,
+    "sampled_minute_account_DD_pct": -14.337448392148922,
+    "adoption_gate": false,
+    "disposition": "Candidate fails first frozen recent return and daily/minute risk gates; no earlier window, ATR/distance/timing/recovery/risk/band/cost sweep or activation. Candle-price sampling, not exact quote/tick proof."
   }
 ]
