@@ -1,0 +1,108 @@
+{
+  "new_economic_variant": false,
+  "no_original_code_curve_order_or_rule_changed": true,
+  "post_outcome_checker": true,
+  "results": {
+    "recent_reused_Cov10_baseline_cost0.0012": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.037111949476413,
+        "equity": 1.067697493098705,
+        "stage": "CLOSE",
+        "time": "2024-08-02T21:30:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 2.220446049250313e-16,
+      "max_abs_daily_risk_label_gap": 2.220446049250313e-14,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -8.670291985752165,
+      "native_fills_checked": 91,
+      "worst_peak": {
+        "equity": 1.1243313203897638,
+        "stage": "OPEN",
+        "time": "2024-03-13T08:29:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.0268485120247086,
+        "stage": "CLOSE",
+        "time": "2024-08-05T06:24:00+00:00"
+      }
+    },
+    "recent_reused_Cov10_baseline_cost0.0024": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.02928167591924,
+        "equity": 1.0655393635102794,
+        "stage": "CLOSE",
+        "time": "2024-08-02T21:14:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 6.661338147750939e-16,
+      "max_abs_daily_risk_label_gap": 1.1546319456101628e-14,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -8.839367774741913,
+      "native_fills_checked": 91,
+      "worst_peak": {
+        "equity": 1.1219662042296057,
+        "stage": "OPEN",
+        "time": "2024-03-13T08:29:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.0227914851294388,
+        "stage": "CLOSE",
+        "time": "2024-08-05T06:24:00+00:00"
+      }
+    },
+    "recent_reused_reserve_quantity_cost0.0012": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.024535115661688,
+        "equity": 1.0711801065715787,
+        "stage": "CLOSE",
+        "time": "2024-07-30T14:58:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 2.220446049250313e-16,
+      "max_abs_daily_risk_label_gap": 2.3092638912203256e-14,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -9.92846959677488,
+      "native_fills_checked": 68,
+      "worst_peak": {
+        "equity": 1.127849290209917,
+        "stage": "OPEN",
+        "time": "2024-03-13T08:29:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.0158711163339842,
+        "stage": "CLOSE",
+        "time": "2024-08-05T06:24:00+00:00"
+      }
+    },
+    "recent_reused_reserve_quantity_cost0.0024": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.0735217977443625,
+        "equity": 1.0679378675025506,
+        "stage": "CLOSE",
+        "time": "2024-07-30T00:21:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 4.440892098500626e-16,
+      "max_abs_daily_risk_label_gap": 4.440892098500626e-16,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -10.027640004739213,
+      "native_fills_checked": 68,
+      "worst_peak": {
+        "equity": 1.1250157887740686,
+        "stage": "OPEN",
+        "time": "2024-03-13T08:29:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.0122032554793277,
+        "stage": "CLOSE",
+        "time": "2024-08-05T06:24:00+00:00"
+      }
+    }
+  },
+  "scope": "Same tested independent native minute OPEN/CLOSE capital checker, including prefill and terminal fees. No continuous quote/tick, actual exchange fill, source first-public clock/edition or forward certification."
+}

@@ -1,0 +1,1 @@
+{'all_eight_outcomes_repeated_offline': True, 'network_disabled_for_outcomes': True, 'independent_native_report_targets_and_minute_accounts_replayed': True, 'original_output_artifacts_byte_identical': 19, 'source_and_account_inputs_verified': 341, 'actual_imported_project_code_digests_verified': 177, 'adopted': False}

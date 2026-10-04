@@ -1,0 +1,8 @@
+early_reused_Cov10_baseline_cost0.0012 {'CAGR_pct': 11.2294, 'daily_MTM_DD_pct': -6.9903, 'fees_USDT_10000_start': 111.6184} minute_DD None gate False
+early_reused_reserve_quantity_cost0.0012 {'CAGR_pct': 5.2175, 'daily_MTM_DD_pct': -10.455, 'fees_USDT_10000_start': 76.9612} minute_DD None gate False
+early_reused_Cov10_baseline_cost0.0024 {'CAGR_pct': 10.8646, 'daily_MTM_DD_pct': -6.9913, 'fees_USDT_10000_start': 222.2} minute_DD None gate False
+early_reused_reserve_quantity_cost0.0024 {'CAGR_pct': 4.9591, 'daily_MTM_DD_pct': -10.7339, 'fees_USDT_10000_start': 153.4104} minute_DD None gate False
+recent_reused_Cov10_baseline_cost0.0012 {'CAGR_pct': 13.1498, 'daily_MTM_DD_pct': -7.5565, 'fees_USDT_10000_start': 168.0262} minute_DD -8.670291985752165 gate False
+recent_reused_reserve_quantity_cost0.0012 {'CAGR_pct': 4.8725, 'daily_MTM_DD_pct': -8.2605, 'fees_USDT_10000_start': 114.623} minute_DD -9.92846959677488 gate False
+recent_reused_Cov10_baseline_cost0.0024 {'CAGR_pct': 12.5528, 'daily_MTM_DD_pct': -7.7682, 'fees_USDT_10000_start': 333.6689} minute_DD -8.839367774741913 gate False
+recent_reused_reserve_quantity_cost0.0024 {'CAGR_pct': 4.4587, 'daily_MTM_DD_pct': -8.3611, 'fees_USDT_10000_start': 228.0883} minute_DD -10.027640004739213 gate False

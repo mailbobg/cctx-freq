@@ -1,0 +1,30 @@
+{
+  "actual_imported_project_code_digests_verified": 177,
+  "adopted": false,
+  "all_eight_outcomes_repeated_offline": true,
+  "independent_native_report_targets_and_minute_accounts_replayed": true,
+  "network_disabled_for_outcomes": true,
+  "original_output_artifacts_byte_identical": 19,
+  "output_sha256": {
+    "r33_decision_audit.csv": "ce8bb871a1ba0e5fd0eeed7dcf18ca54aa54742a462bfcf20e3da76e2aec95fb",
+    "r33_early_reused_Cov10_baseline_cost0.0012_daily.csv": "c3f21a0911e3d2728b16eba4c318b31395060090b1bbff1fe36fef1356f8d13e",
+    "r33_early_reused_Cov10_baseline_cost0.0024_daily.csv": "1da8c021e0be8b01c85d69b989edd96cdf51c5bafe38b2d110e7ada0ebf4c6b0",
+    "r33_early_reused_reserve_quantity_cost0.0012_daily.csv": "3fa64a250e192a193611afdb3a2a7e73079db0f9664fd6e3cf2b3cc8fd31f8a6",
+    "r33_early_reused_reserve_quantity_cost0.0024_daily.csv": "d6711c42cb7b9c8a72df423b15e6e2c2bb406d46a5645382d2538bad5c1df05c",
+    "r33_input_manifest.json": "9f661d94d4eb2777c3338b05aef7054e526d0de085e030d32f3dfa89f842aff2",
+    "r33_native_feature_validation.json": "528f3ae988c182d0b3789f30b68da47b374c2aa076f8e1d46bef6926d2343aff",
+    "r33_recent_reused_Cov10_baseline_cost0.0012_daily.csv": "00308b3b563dd7e990da5606b67e7bda0ad8835b6f521da318465b2d4ef2cdf2",
+    "r33_recent_reused_Cov10_baseline_cost0.0012_orders.csv": "1faea2a82f5bbf470a24ba82920c0ef64fd66db8a5ed8fd5645459c86e843080",
+    "r33_recent_reused_Cov10_baseline_cost0.0024_daily.csv": "df719596bf9e2680c66d41a1237eef38fa288b96a46a0af56a6ade694555808e",
+    "r33_recent_reused_Cov10_baseline_cost0.0024_orders.csv": "82be654c6079d402f60365c242a598fdb1708fe82bdc5f0b6654a2a2b8aab7df",
+    "r33_recent_reused_reserve_quantity_cost0.0012_daily.csv": "b2e9d5ca1a8f61a5c95d7b30fc6d2b78903b4ad7e50b4b825492a37f9f09b537",
+    "r33_recent_reused_reserve_quantity_cost0.0012_orders.csv": "6801d6ccebc1a9401bef056a46ce32691a0fd69f52f4f8bb60bb41d0f6c909a8",
+    "r33_recent_reused_reserve_quantity_cost0.0024_daily.csv": "4f90378acfaccb867f407748d8e7ad0d19896187e91feb96633aa62af79701fe",
+    "r33_recent_reused_reserve_quantity_cost0.0024_orders.csv": "1753d361c373e45e4178d6fbe4e493de1461b22d46a597c517c5125611bd26ae",
+    "r33_reflection.json": "59dd405906c9df6204d8ce6d3191bbc9b4a4d5855b3f46d90aeca36c02d3372f",
+    "r33_results.json": "101e350d97235ac37276673b23541ab5195f75769f0b35db94f417309739d516",
+    "r33_source_audit.json": "847e143123c768d189fdfa8fe9819d1e3e25987e0866b38ac047d1feec71845a",
+    "r33_weight_audit.csv": "b2eb34b2c56ca9782ab7b7334bd15f638d939520f73a6484c39afe23704e0483"
+  },
+  "source_and_account_inputs_verified": 341
+}

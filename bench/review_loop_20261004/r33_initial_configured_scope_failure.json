@@ -1,0 +1,8 @@
+{
+  "actual_configuration_count": 17,
+  "initial_expected_configuration_count": 16,
+  "initial_strict_census_failure": "Reviewed configuration population differs",
+  "new_role": "wta2",
+  "new_source": "E0V1ENWTA2",
+  "no_config_source_or_runtime_mutation": true
+}

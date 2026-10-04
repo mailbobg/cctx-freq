@@ -1,0 +1,20 @@
+{
+  "adopted": false,
+  "all_four_independent_minute_paths_equal": true,
+  "all_original_controls_and_source_held_order_prefixes_equal": true,
+  "all_registered_source_output_and_root_hashes_verified": true,
+  "complementary_checks_passed": 80,
+  "current_selection_rows": 171,
+  "existing_pytest_option_warnings": 2,
+  "guarded_native_account_inputs": 341,
+  "imported_project_code_digests": 177,
+  "necessary_candidate_window_gates_failed": 2,
+  "no_strategy_bot_image_live_or_forward_cohort_change": true,
+  "offline_output_artifacts_byte_identical": 19,
+  "prior_selection_rows_unchanged": 163,
+  "registered_outputs_before_this_validation": 4635,
+  "registered_sources": 245,
+  "required_independent_quantity_cell_joins": 584,
+  "root_sources": 1,
+  "source_editions": 296
+}
