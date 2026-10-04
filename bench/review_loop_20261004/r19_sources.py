@@ -8,6 +8,7 @@ from pathlib import Path
 from urllib.parse import urlencode
 
 import requests
+import pandas as pd
 
 HERE = Path(__file__).resolve().parent
 DATA = HERE / 'r19_sources'
@@ -29,6 +30,17 @@ def probe_targets():
         'cboe_current_vix3m_lead': 'https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv',
         **{'archive_' + v: archive_url(v, start) for v, start in zip(VINTAGES, ('2021-01-17', '2023-12-24', '2026-08-16'))},
     }
+
+
+def full_targets():
+    from r10_gold import WINDOWS
+    targets = probe_targets()
+    for _, start, end in WINDOWS:
+        for monday in pd.date_range(start, end, freq='W-MON', tz='UTC'):
+            saturday = monday - pd.Timedelta(days=2)
+            v = str(saturday.date())
+            targets['archive_' + v] = archive_url(v, str((saturday-pd.Timedelta(days=13)).date()))
+    return targets
 
 
 def collect(targets, fetch=False):
@@ -71,9 +83,9 @@ def collect(targets, fetch=False):
 
 
 if __name__ == '__main__':
-    p = argparse.ArgumentParser(); p.add_argument('--fetch', action='store_true')
-    records = collect(probe_targets(), p.parse_args().fetch)
-    for key, (body, record) in records.items():
+    p = argparse.ArgumentParser(); p.add_argument('--fetch', action='store_true'); p.add_argument('--full', action='store_true')
+    args = p.parse_args(); records = collect(full_targets() if args.full else probe_targets(), args.fetch)
+    for key, (body, record) in (records.items() if not args.full else []):
         if key.startswith('archive_') and body is not None:
             lines = body.decode('utf-8', errors='replace').splitlines()
             print(key, 'header', lines[:1], 'last rows', lines[-2:])
