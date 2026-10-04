@@ -1,0 +1,15 @@
+{
+  "source_inputs_sha256": {
+    "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+    "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+    "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313"
+  },
+  "baseline_max_abs_csv_serialization_gap": {
+    "early_reused_cost0.0012": 2.220446049250313e-16,
+    "early_reused_cost0.0024": 2.220446049250313e-16,
+    "recent_reused_cost0.0012": 2.220446049250313e-16,
+    "recent_reused_cost0.0024": 2.220446049250313e-16
+  },
+  "full_prefix_weights_equal": true,
+  "real_held_execution_prefix_equal": true
+}
