@@ -23,6 +23,7 @@ HERE=Path(__file__).resolve().parent
 DATA=HERE/'r17_prices'
 BEGIN=pd.Timestamp('2024-01-01',tz='UTC')
 END=pd.Timestamp('2026-09-01',tz='UTC')
+XRP_VOLUME_URL='https://fapi.binance.com/fapi/v1/klines?symbol=XRPUSDT&interval=1h&startTime=1699959600000&endTime=1699963199999&limit=1'
 
 
 def verified_zip(body,checksum,name):
@@ -33,6 +34,21 @@ def verified_zip(body,checksum,name):
         member=name.replace('.zip','.csv')
         if archive.namelist()!=[member]:raise ValueError('Unexpected ZIP member identity')
         return archive.read(member)
+
+
+def verified_volume_counterpart(body,api,timestamp):
+    """Explicit retained counterpart; original raw archive is never modified."""
+    rows=list(csv.reader(io.StringIO(body.decode())))
+    actual=json.loads(api,parse_float=str)
+    if len(actual)!=1 or len(actual[0])!=12 or int(actual[0][0])!=timestamp:
+        raise ValueError('Counterpart candle identity differs')
+    matches=[i for i,r in enumerate(rows) if r[0] not in ('open_time','openTime') and int(r[0])==timestamp]
+    if len(matches)!=1:raise ValueError('Counterpart archive candle identity differs')
+    i=matches[0];replacement=[str(v) for v in actual[0]]
+    if any(rate_decimal(rows[i][j])!=rate_decimal(replacement[j]) for j in range(12) if j!=5):
+        raise ValueError('Counterpart changes a non-volume candle field')
+    rows[i][5]=replacement[5]
+    return ('\n'.join(','.join(r) for r in rows)+'\n').encode()
 
 
 def parse_hourly(body,start,end,trade,allow_gaps=False):
@@ -133,7 +149,13 @@ def main(fetch=False):
         name=f'{symbol}-1h-{tag}.zip';frequency='daily' if daily else 'monthly'
         url=f'https://data.binance.vision/data/{base}/{frequency}/{endpoint}/{symbol}/1h/{name}'
         body=downloaded(url,session);check=downloaded(url+'.CHECKSUM',session)
-        return verified_zip(body,check,name)
+        native=verified_zip(body,check,name)
+        # One exact, separately documented availability-only source exception.
+        # Daily and monthly archives agree on the erroneous native volume;
+        # the retained exchange counterpart differs in that field alone.
+        if kind=='trade' and symbol=='XRPUSDT' and tag=='2023-11' and not daily:
+            native=verified_volume_counterpart(native,downloaded(XRP_VOLUME_URL,session),1699959600000)
+        return native
 
     def reuse(symbol,kind):
         if kind=='mark':
@@ -200,6 +222,7 @@ def main(fetch=False):
     manifest=dict(source_only=True,new_performance=False,decision_hashes=forecast['decision_outputs_sha256'],
                   required_hour_count=len(needed),months_retrieved=months,new_http_records=len(records),coverage=coverage,
                   reused_raw_bodies_verified=reused_raw_counts,
+                  source_reconciliation='r17_price_reconciliation.json',
                   reused_dependency_sha256=dependencies,output_sha256=outputs,
                   limitations='All eight pairs cover every actually held/order hour and control. Other full-window hours are flat cash without invented prices. Reused inputs keep original provenance. Hourly candle prices are not executable quotes or intrahour ticks; no profitability screen here.')
     (DATA/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

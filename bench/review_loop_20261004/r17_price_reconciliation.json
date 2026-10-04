@@ -1,0 +1,17 @@
+{
+  "stage": "source validation before any R17 historical performance",
+  "asset": "XRPUSDT",
+  "archive": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip",
+  "daily_counterpart": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11-14.zip",
+  "api_counterpart": "https://fapi.binance.com/fapi/v1/klines?symbol=XRPUSDT&interval=1h&startTime=1699959600000&endTime=1699963199999&limit=1",
+  "hour_open_time_ms": 1699959600000,
+  "archived_native_volume": "62032915.1",
+  "api_native_volume": "78865067.9",
+  "quote_volume_both": "51332637.23413",
+  "low_high_both": ["0.6474", "0.6556"],
+  "all_other_candle_fields_equal": true,
+  "monthly_and_daily_error_equal": true,
+  "original_raw_bodies_retained_unchanged": true,
+  "rule": "Use the exact retained exchange counterpart only for this native-volume field; assert identical identity and every other candle field before parsing the whole month. All other rows/fields retain the original archives; any other physical/calendar error still fails closed.",
+  "scope": "November2023 is availability warmup only, outside every R17 holding/closing interval. No selected identities, dates, hurdle, quantity, price, cost or P&L changed. Current API is evidence of a source discrepancy, not proof of historical point-in-time raw accuracy."
+}

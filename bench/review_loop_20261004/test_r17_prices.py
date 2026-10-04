@@ -1,11 +1,12 @@
 import hashlib
 import io
 import zipfile
+import json
 
 import pandas as pd
 import pytest
 
-from r17_prices import parse_hourly, verified_zip
+from r17_prices import parse_hourly, verified_zip, verified_volume_counterpart
 
 
 def csv_body(micro=False, activity=True):
@@ -52,3 +53,16 @@ def test_checksum_and_exact_zip_member_identity_required():
     assert verified_zip(data,checksum,name)==csv_body()
     with pytest.raises(ValueError,match='checksum'):verified_zip(data,checksum.replace(b'BTC',b'ETH'),name)
     with pytest.raises(ValueError,match='checksum'):verified_zip(data+b'corrupt',checksum,name)
+
+
+def test_only_native_volume_counterpart_may_replace_documented_source_error():
+    rows=[line.decode().split(',') for line in csv_body().splitlines()]
+    actual=[str(v) for v in rows[0]];actual[5]='20';actual[7]='2000'
+    # A matched physical counterpart must not rewrite price or quote volume.
+    with pytest.raises(ValueError,match='non-volume'):verified_volume_counterpart(csv_body(),json.dumps([actual]).encode(),int(actual[0]))
+    original=[r[:] for r in rows];original[0][5]='1'
+    raw=('\n'.join(','.join(r) for r in original)+'\n').encode()
+    output=verified_volume_counterpart(raw,json.dumps([rows[0]]).encode(),int(rows[0][0]))
+    assert output==csv_body()
+    parse_hourly(output,'2025-01-01T00:00:00Z','2025-01-01T02:00:00Z',trade=True)
+    with pytest.raises(ValueError,match='identity'):verified_volume_counterpart(raw,json.dumps([rows[1]]).encode(),int(rows[0][0]))
