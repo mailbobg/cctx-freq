@@ -1,0 +1,22 @@
+{
+  "settlements_per_asset": 273,
+  "sample_days": 91.0,
+  "fixed_asset_perfect_direction_gross_funding_linear_annualized_pct": {
+    "BTC": 1.5262804709977607,
+    "ETH": 1.6673733505006554,
+    "SOL": 2.023685758285448,
+    "XRP": 1.9461108590229856,
+    "BNB": 2.1502941552509816,
+    "ADA": 2.5070956263119606,
+    "DOGE": 2.1566223964844764,
+    "AVAX": 2.278660450645695
+  },
+  "oracle_asset_and_direction_each_settlement_gross_funding_linear_annualized_pct": 5.458132621140805,
+  "assumptions": [
+    "constant matched leg notional",
+    "one-times positions with half account collateral at each venue",
+    "zero fees, zero slippage, zero basis PnL",
+    "perfect hindsight asset and direction at every settlement"
+  ],
+  "limitation": "Upper bound on this sample funding-only component under these assumptions, not an executable strategy, total-return bound, CAGR, or forecast. Changing holding horizon cannot increase sample funding beyond the oracle. Actual prices and collateral can change the answer."
+}

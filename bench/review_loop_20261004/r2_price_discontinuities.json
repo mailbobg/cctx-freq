@@ -1,0 +1,11 @@
+{
+  "daily_open_ratio_outside_half_to_double": [
+    {
+      "pair": "STRAX/USDT",
+      "date": "2024-03-28 00:00:00+00:00",
+      "open_to_previous_close": 0.1
+    }
+  ],
+  "source": "raw cached daily candles; threshold is a data-inspection flag, not a trading rule",
+  "known_STRAX_source": "https://www.binance.com/en/support/announcement/detail/2e6eb8e644664a6ca7b6659a226c41b0"
+}

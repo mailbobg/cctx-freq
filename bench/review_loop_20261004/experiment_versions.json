@@ -6,14 +6,33 @@
     "r4_daily_vol_reductions.py": "c6bfc2e9f0e40936c3843af120215c2479a2ab621e4ac9bb6c61aae84f1859a0",
     "summarize_r1_freqtrade.py": "dad71a6a151ca5ff169eb9e97ff38f8f6096ca67dad1b1e1963150c6c1e3f3a5",
     "funding_probe.py": "2ce1caf9f3050de1a3b578f7ea3a6ce8f0032eebfa7063298e9ad318c180c065",
-    "r5_funding_universe.py": "e0192fece454fe743a5e1d4ffe663ace133b9d440c52ba62d808a4bfb4b1d816"
+    "r5_funding_universe.py": "e0192fece454fe743a5e1d4ffe663ace133b9d440c52ba62d808a4bfb4b1d816",
+    "summarize_r2.py": "5e6d43921714bf20f58ed2e17b12fd574d9f4b323b248378adddebb82a61598e",
+    "r2_data_quality.py": "6708c9b1d1404707d98c5cf3cb8fd503e9226909dc5e19c0f561f917684685cc",
+    "plot_risk.py": "d71431f73ef7ff32ac2ed725ac0d719dc625fba0c563dab8af12c82de92b9b5a",
+    "test_r1_freqtrade.py": "775ea35e09b54e2bba717a3a485779376aaa51e30b78cb81058969ef6ab6bcd9",
+    "../../strategies/RiskHoldR2bCov10.py": "7daf79337d8df1c08eb6d9a7d01029b72003bc9847bc0052a21c03aa58685f2c"
   },
   "output_sha256": {
     "r1_results.json": "3e6ea8516f1a07e3cf4d867eb13b0485157a64ec77f683340e8f7de00cad9fc4",
     "r3_results.json": "79d172c106927c36c34eab7f61c48dcad70dc9810aa1aea5f4375cf8d4060510",
     "r4_results.json": "93b7d12de1cb63c301adcfbf2448a87e1f1de0db78630e4efefe43e3dc96b2c9",
     "r1_freq_results.json": "4c1bc11b0931932e3ba199c0b9038a6c6f62ed5c7ef855708f34a3d0d85fd8ec",
-    "r5_results.json": "b2cb847ca1495a5e689b48b0648bebd9fd6b24a84b8d92087f4de354179e3215"
+    "r5_results.json": "b2cb847ca1495a5e689b48b0648bebd9fd6b24a84b8d92087f4de354179e3215",
+    "r2_data_quality.json": "55801e0ff18bd4f21934b342c1ee81c7c7e607c7b35637f561ef96b7bb2e1b45",
+    "r2_price_discontinuities.json": "7ead98f8d0611ff7873f1038c1ffe5dc3e0d97f8b86f6e433cb76d3e2c6c3b6a",
+    "r1_delayed_exit_attribution.json": "dcebc0155cdbb1b46bec18f2737ff700324354b96032495dcd92c0a6f1d82240",
+    "r5_funding_upper_bound.json": "cfe4f174bb791f53e0a6465a1b87c5b54e8f25f5591d709db44fd8224b3a0e81",
+    "r1_missing_calendar_guard.json": "d129279f1fd185397a5df01fee5d057ee16cd5f9d0e3e9cdb713a8adfcc2a665",
+    "r2_results.json": "005debdb3d7a1750f7e12a91a433f6b43efeb09f24cd832b9e3fab63fec4e4e5",
+    "r2_additional_diagnostics.json": "d038138bd77c6428fbbd237ef78ff41b7eefeb8ceb6bff1175334337d0169720",
+    "selection_board.json": "427e41c95756ad74b8fcba11c981307839d9058ff2c5f469485e6cb2869968bf",
+    "strategy_catalog.json": "6fbc017c431d72aaf9e19d87c033b757c5b52876e098ff3b6d4c981a77df7f51",
+    "runtime_checkpoint.json": "188ea0eb1f3ac0f01062a64dfe56e27bf4404e607a460aa04eec3207bf40f10b",
+    "r2_NostalgiaForInfinityX8CostCap_equity.csv": "95784076dc719c1d6aea113c4a9f5d60c2ebf7d1ce275bf7c9b9283fdf392010",
+    "r2_NostalgiaForInfinityX8PF_equity.csv": "05e3280fa2adf1363c91413e0c793da47d232aa3002fd2ba446b53757f740c9a",
+    "r2_NostalgiaForInfinityX8PF_holdings.csv": "c5bf441fa65fa5e919ea376f26fb0958930efbff21f0114ec1df527fb82ffdf3",
+    "r2_NostalgiaForInfinityX8CostCap_holdings.csv": "c4d4867b432a1020b96612bb1539f72bdca0f7a6e0efcf022602252dbe63cf6b"
   },
-  "note": "R1 terminal-liquidation flag added only for Freqtrade matching; original screens use default False. Baseline pair processing and available-stake constraints differ from the simple common engine. No adoption threshold or running cohort changed."
+  "note": "R1 terminal-liquidation flag added only for Freqtrade matching; original screens use default False. Baseline pair processing and available-stake constraints differ from the simple common engine. No adoption threshold or running cohort changed. Cov10 missing-date guard added after historical outcomes; full/prefix tests prove unchanged original continuous-input weights. New gap tests pass. Funding upper bound and delayed-exit attribution are diagnostics, not new profit trials. Clean R2 completed: cap-only version rejects first2024 screen; no additional-year/cap/fee tuning. STRAX first actual trades only Dec28, so worst July/August loss was not a March swap position loss. Primary5m-open wallet risk separately reported."
 }

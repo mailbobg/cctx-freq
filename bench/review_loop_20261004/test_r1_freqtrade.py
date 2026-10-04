@@ -4,6 +4,8 @@ from pathlib import Path
 from types import SimpleNamespace
 
 import pandas as pd
+import numpy as np
+import pytest
 
 from r1_r2b_risk import DATA, RiskHoldR2b, risk_weights, signals
 
@@ -41,3 +43,25 @@ def test_missing_companion_data_gives_no_entry_weight():
     strategy.dp = SimpleNamespace(get_pair_dataframe=lambda p, tf: pd.DataFrame(columns=["date", "close"]))
     actual = strategy.populate_indicators(frames(px)["BTC/USDT"], {"pair": "BTC/USDT"})
     assert (actual.weight == 0).all()
+
+
+@pytest.mark.parametrize("drop_primary", [False, True])
+def test_internal_daily_gap_does_not_compress_covariance_history(drop_primary):
+    dates = pd.date_range("2020-01-01", periods=400, tz="UTC")
+    t = np.arange(len(dates))
+    inputs = {f"{asset}/USDT": pd.DataFrame({
+        "date": dates, "close": 100 * np.exp(.002 * t + .005 * np.sin(t / period))})
+        for asset, period in (("BTC", 3), ("ETH", 5))}
+    gap = 350
+    inputs["ETH/USDT"] = inputs["ETH/USDT"].drop(index=gap)
+    if drop_primary:
+        inputs["BTC/USDT"] = inputs["BTC/USDT"].drop(index=gap)
+    strategy = strategy_class()({})
+    strategy.dp = SimpleNamespace(get_pair_dataframe=lambda p, tf: inputs[p])
+    actual = strategy.populate_indicators(inputs["BTC/USDT"].copy(), {"pair": "BTC/USDT"})
+    weight = actual.set_index("date").weight
+    assert weight.loc[dates[gap - 1]] > 0
+    # A missing close invalidates two daily returns; require thirty
+    # consecutive completed returns before taking portfolio risk again.
+    assert weight.reindex(dates[gap:gap + 31]).fillna(0).eq(0).all()
+    assert weight.loc[dates[gap + 31]] > 0

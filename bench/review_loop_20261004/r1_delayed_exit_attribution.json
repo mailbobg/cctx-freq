@@ -1,0 +1,18 @@
+{
+  "early": {
+    "trough": "2019-12-26 00:00:00+00:00",
+    "peak": "2019-06-26 00:00:00+00:00",
+    "non_Monday_asset_days_held_after_zero_signal": 120,
+    "open_to_close_PnL_those_days_USDT": 78.68667199999875,
+    "same_PnL_during_worst_drawdown_USDT": -98.51176850000014,
+    "limitation": "Attribution of existing holdings only; this is not PnL of a new daily-exit rule. Overnight gaps, later missed rallies, altered sizing, and extra exit costs require a separate frozen comparison."
+  },
+  "recent": {
+    "trough": "2026-03-29 00:00:00+00:00",
+    "peak": "2025-10-06 00:00:00+00:00",
+    "non_Monday_asset_days_held_after_zero_signal": 236,
+    "open_to_close_PnL_those_days_USDT": 1050.2794289999993,
+    "same_PnL_during_worst_drawdown_USDT": 468.8813604999991,
+    "limitation": "Attribution of existing holdings only; this is not PnL of a new daily-exit rule. Overnight gaps, later missed rallies, altered sizing, and extra exit costs require a separate frozen comparison."
+  }
+}

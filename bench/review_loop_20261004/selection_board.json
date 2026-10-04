@@ -104,7 +104,32 @@
     "disposition": "necessary cost screen rejected: zero qualifying entries across88 coin weeks"
   },
   {
+    "trial": "R2 matched X8 baseline",
+    "strategy": "NostalgiaForInfinityX8PF",
+    "window": "2024-01-03\u20132025-01-01",
+    "return_pct": 26.889190686819852,
+    "CAGR_pct": 26.99300339150814,
+    "daily_MTM_DD_pct": -19.359429358071388,
+    "primary_5m_open_wallet_DD_pct": -24.541974187648396,
+    "adoption_gate": false,
+    "disposition": "profitable reused-history reference; risk rejected"
+  },
+  {
     "trial": "R2 X8 cost cap",
-    "disposition": "pending complete matched2024 run; partial logs are not outcomes"
+    "strategy": "NostalgiaForInfinityX8CostCap",
+    "window": "2024-01-03\u20132025-01-01",
+    "return_pct": 4.977985853501221,
+    "CAGR_pct": 4.99550064317158,
+    "daily_MTM_DD_pct": -10.689482128726613,
+    "primary_5m_open_wallet_DD_pct": -13.506684724280815,
+    "adoption_gate": false,
+    "disposition": "rejected; no remaining-year or cap/fee tuning after first screen failure"
+  },
+  {
+    "trial": "Selection checkpoint",
+    "historical_profitability_lead": "RiskHoldR2bCov10",
+    "strict_default_gate_winner": null,
+    "adopted_new_strategy": false,
+    "reason": "R1 has cross-window, double-cost actual Freqtrade profit, but fails5% daily risk in both windows; R2/R3/R4/R5 also fail frozen criteria. No untouched historical OOS remains in these inputs."
   }
 ]

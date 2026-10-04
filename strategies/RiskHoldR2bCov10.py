@@ -32,7 +32,10 @@ class RiskHoldR2bCov10(RiskHoldR2b):
             analyzed = RiskHoldR2b.populate_indicators(self, frame.copy(), {"pair": name})
             closes[name] = analyzed.set_index("date")["close"]
             raw[name] = analyzed.set_index("date")["weight"]
-        prices = pd.DataFrame(closes).sort_index().dropna()
+        # Keep missing calendar days: compressing them treats a multi-day
+        # return as one observation and understates the intended daily risk.
+        # Thirty complete returns are required again after a missing close.
+        prices = pd.DataFrame(closes).sort_index().asfreq("D")
         weights = pd.DataFrame(raw).reindex(prices.index)
         cov = np.log(prices).diff().rolling(30).cov() * 365
         result = pd.DataFrame(0., index=prices.index, columns=self.portfolio_pairs)

@@ -1,0 +1,7 @@
+{
+  "previous_backtest_source_sha256": "2aeeb91b2c2f1c46a2b820d4989f7ca8e28f75bb0c7d16b946ad287b2a0d3890",
+  "current_source_sha256": "7daf79337d8df1c08eb6d9a7d01029b72003bc9847bc0052a21c03aa58685f2c",
+  "change": "Keep missing daily dates instead of dropping them; zero risk until 30 consecutive complete daily returns. Continuous input indicator weights remain exactly identical to frozen R1.",
+  "validation": "Four strategy tests pass: whole/prefix exact original R1 weights, missing companion, internal companion-only gap, joint calendar gap. Current suite 139 tests and16 subtests pass.",
+  "activation": "No bot config, deployment or activation."
+}

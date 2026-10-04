@@ -1,0 +1,490 @@
+{
+  "assessed_utc": "2026-10-04T08:52:51.466355+00:00",
+  "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r2_clean_2024-2026-10-04_08-52-33.zip",
+  "archive_sha256": "af73dc014e370de84a77c7722d97d0432cb777485be28799ea1054198618eb87",
+  "results": {
+    "NostalgiaForInfinityX8PF": {
+      "return_pct": 26.889190686819852,
+      "CAGR_pct": 26.99300339150814,
+      "maxDD_pct": -19.359429358071388,
+      "sharpe": 1.3551641438298085,
+      "years_pct": {
+        "2024": 26.90484094589185,
+        "2025": -0.012332279017368553
+      },
+      "MTM_block7_interval_pct": [
+        -19.55291332797437,
+        67.351211840017
+      ],
+      "MTM_block30_interval_pct": [
+        -23.841626965110795,
+        80.80491876790391
+      ],
+      "trades": 294,
+      "closed_trade_DD_pct": 22.100868199410023,
+      "accounting_gap_USDT": 2.1984760678606108e-08,
+      "minimum_cash_USDT": 2118.4282908807145,
+      "max_daily_exposure_pct": 80.11316501225237,
+      "max_single_name_marked_weight_pct": 19.417689245663222,
+      "worst_marked_day": "2024-07-04 00:00:00+00:00",
+      "largest_holdings_at_worst_pct": {
+        "MTL/USDT": 3.698093432580479,
+        "CFX/USDT": 0.8443684647151275,
+        "DYDX/USDT": 7.162539640319973e-16,
+        "FLUX/USDT": 0.0,
+        "VET/USDT": 0.0
+      },
+      "profit_without_best3_trades_USDT": 2176.450707310001,
+      "by_entry_tag": [
+        {
+          "enter_tag": "1 ",
+          "count": 5,
+          "sum": 197.83338026
+        },
+        {
+          "enter_tag": "1 61 ",
+          "count": 1,
+          "sum": 15.0288271
+        },
+        {
+          "enter_tag": "101 ",
+          "count": 5,
+          "sum": 117.14921845
+        },
+        {
+          "enter_tag": "102 ",
+          "count": 4,
+          "sum": 83.70626011
+        },
+        {
+          "enter_tag": "104 ",
+          "count": 2,
+          "sum": 43.658670799999996
+        },
+        {
+          "enter_tag": "120 ",
+          "count": 4,
+          "sum": 20.864805289999993
+        },
+        {
+          "enter_tag": "141 ",
+          "count": 21,
+          "sum": 781.88302584
+        },
+        {
+          "enter_tag": "141 142 ",
+          "count": 4,
+          "sum": 86.74188968
+        },
+        {
+          "enter_tag": "142 ",
+          "count": 20,
+          "sum": 177.84512373
+        },
+        {
+          "enter_tag": "142 144 ",
+          "count": 1,
+          "sum": 15.82087884
+        },
+        {
+          "enter_tag": "142 145 ",
+          "count": 1,
+          "sum": 13.6107882
+        },
+        {
+          "enter_tag": "143 ",
+          "count": 6,
+          "sum": -366.0865617499999
+        },
+        {
+          "enter_tag": "144 ",
+          "count": 12,
+          "sum": 387.75461664
+        },
+        {
+          "enter_tag": "145 ",
+          "count": 9,
+          "sum": 217.12890892000001
+        },
+        {
+          "enter_tag": "161 ",
+          "count": 3,
+          "sum": 75.20416742
+        },
+        {
+          "enter_tag": "163 ",
+          "count": 5,
+          "sum": -247.82882772000005
+        },
+        {
+          "enter_tag": "2 ",
+          "count": 4,
+          "sum": 118.3895086
+        },
+        {
+          "enter_tag": "2 101 ",
+          "count": 2,
+          "sum": 23.10404434
+        },
+        {
+          "enter_tag": "2 141 ",
+          "count": 1,
+          "sum": 18.684516
+        },
+        {
+          "enter_tag": "2 4 ",
+          "count": 1,
+          "sum": 60.29912952
+        },
+        {
+          "enter_tag": "2 4 43 ",
+          "count": 1,
+          "sum": -248.10430720000005
+        },
+        {
+          "enter_tag": "2 4 6 ",
+          "count": 1,
+          "sum": 6.36457891
+        },
+        {
+          "enter_tag": "3 ",
+          "count": 4,
+          "sum": 221.26911153000003
+        },
+        {
+          "enter_tag": "4 ",
+          "count": 5,
+          "sum": 143.22357192
+        },
+        {
+          "enter_tag": "4 61 ",
+          "count": 1,
+          "sum": 12.04331909
+        },
+        {
+          "enter_tag": "41 ",
+          "count": 3,
+          "sum": 250.99530033000002
+        },
+        {
+          "enter_tag": "42 ",
+          "count": 2,
+          "sum": -537.70165839
+        },
+        {
+          "enter_tag": "42 62 ",
+          "count": 2,
+          "sum": 138.71381098
+        },
+        {
+          "enter_tag": "43 ",
+          "count": 3,
+          "sum": 97.66095736
+        },
+        {
+          "enter_tag": "43 44 ",
+          "count": 1,
+          "sum": 23.80555344
+        },
+        {
+          "enter_tag": "46 ",
+          "count": 1,
+          "sum": 66.76208963
+        },
+        {
+          "enter_tag": "47 ",
+          "count": 2,
+          "sum": -338.13966637000004
+        },
+        {
+          "enter_tag": "5 61 ",
+          "count": 1,
+          "sum": 8.37431192
+        },
+        {
+          "enter_tag": "6 ",
+          "count": 7,
+          "sum": 281.69790264
+        },
+        {
+          "enter_tag": "6 141 ",
+          "count": 1,
+          "sum": 57.432266940000005
+        },
+        {
+          "enter_tag": "61 ",
+          "count": 4,
+          "sum": 22.41757375
+        },
+        {
+          "enter_tag": "61 162 ",
+          "count": 1,
+          "sum": 4.434242490000003
+        },
+        {
+          "enter_tag": "62 ",
+          "count": 10,
+          "sum": 150.13842231
+        },
+        {
+          "enter_tag": "63 ",
+          "count": 15,
+          "sum": -79.56873938000004
+        },
+        {
+          "enter_tag": "64 ",
+          "count": 89,
+          "sum": 253.33044277000008
+        },
+        {
+          "enter_tag": "65 ",
+          "count": 29,
+          "sum": 312.97761372
+        }
+      ],
+      "actual_start": "2024-01-03 00:00:00+00:00",
+      "actual_end": "2025-01-01 00:00:00+00:00",
+      "default_gate": false
+    },
+    "NostalgiaForInfinityX8CostCap": {
+      "return_pct": 4.977985853501221,
+      "CAGR_pct": 4.99550064317158,
+      "maxDD_pct": -10.689482128726613,
+      "sharpe": 0.5925055184281502,
+      "years_pct": {
+        "2024": 4.99846727695723,
+        "2025": -0.019506402319169336
+      },
+      "MTM_block7_interval_pct": [
+        -14.400636305239525,
+        23.800358511556325
+      ],
+      "MTM_block30_interval_pct": [
+        -13.550575617763721,
+        23.938535804575665
+      ],
+      "trades": 259,
+      "closed_trade_DD_pct": 11.003468026052095,
+      "accounting_gap_USDT": 8.012307262106333e-08,
+      "minimum_cash_USDT": 7470.646382954558,
+      "max_daily_exposure_pct": 26.264022582063156,
+      "max_single_name_marked_weight_pct": 5.187943497240739,
+      "worst_marked_day": "2024-08-05 00:00:00+00:00",
+      "largest_holdings_at_worst_pct": {
+        "YGG/USDT": 3.7734040182337414,
+        "ENS/USDT": 0.9460555018029446,
+        "UMA/USDT": 0.10073299508076697,
+        "DEXE/USDT": 1.0319290763177485e-15,
+        "BEL/USDT": 8.243595167739375e-16
+      },
+      "profit_without_best3_trades_USDT": 282.4028706700001,
+      "by_entry_tag": [
+        {
+          "enter_tag": "1 ",
+          "count": 4,
+          "sum": 49.065933189999996
+        },
+        {
+          "enter_tag": "1 61 ",
+          "count": 1,
+          "sum": 3.642006569999999
+        },
+        {
+          "enter_tag": "101 ",
+          "count": 4,
+          "sum": 27.06245488
+        },
+        {
+          "enter_tag": "102 ",
+          "count": 3,
+          "sum": 12.86152663
+        },
+        {
+          "enter_tag": "104 ",
+          "count": 2,
+          "sum": 11.22093916
+        },
+        {
+          "enter_tag": "120 ",
+          "count": 3,
+          "sum": -27.79178469
+        },
+        {
+          "enter_tag": "141 ",
+          "count": 18,
+          "sum": 159.85654403
+        },
+        {
+          "enter_tag": "141 142 ",
+          "count": 3,
+          "sum": 18.01377266
+        },
+        {
+          "enter_tag": "142 ",
+          "count": 13,
+          "sum": 122.07536596
+        },
+        {
+          "enter_tag": "142 144 ",
+          "count": 1,
+          "sum": 4.44184416
+        },
+        {
+          "enter_tag": "142 145 ",
+          "count": 1,
+          "sum": 3.85693661
+        },
+        {
+          "enter_tag": "143 ",
+          "count": 5,
+          "sum": -119.99517731000003
+        },
+        {
+          "enter_tag": "144 ",
+          "count": 11,
+          "sum": 117.12024798
+        },
+        {
+          "enter_tag": "145 ",
+          "count": 9,
+          "sum": 62.11064761
+        },
+        {
+          "enter_tag": "161 ",
+          "count": 3,
+          "sum": 17.51031492
+        },
+        {
+          "enter_tag": "163 ",
+          "count": 5,
+          "sum": -79.26385996
+        },
+        {
+          "enter_tag": "2 ",
+          "count": 4,
+          "sum": 62.933064390000006
+        },
+        {
+          "enter_tag": "2 101 ",
+          "count": 2,
+          "sum": 6.82099146
+        },
+        {
+          "enter_tag": "2 141 ",
+          "count": 1,
+          "sum": 5.42521734
+        },
+        {
+          "enter_tag": "2 4 ",
+          "count": 1,
+          "sum": 17.83353312
+        },
+        {
+          "enter_tag": "2 4 43 ",
+          "count": 1,
+          "sum": -85.46951062999996
+        },
+        {
+          "enter_tag": "2 4 6 ",
+          "count": 1,
+          "sum": 1.88820416
+        },
+        {
+          "enter_tag": "3 ",
+          "count": 4,
+          "sum": 73.39901751
+        },
+        {
+          "enter_tag": "4 ",
+          "count": 5,
+          "sum": 40.9500033
+        },
+        {
+          "enter_tag": "4 61 ",
+          "count": 1,
+          "sum": 3.65911752
+        },
+        {
+          "enter_tag": "41 ",
+          "count": 3,
+          "sum": 67.95765219
+        },
+        {
+          "enter_tag": "42 ",
+          "count": 2,
+          "sum": -148.58082620999994
+        },
+        {
+          "enter_tag": "42 62 ",
+          "count": 2,
+          "sum": 39.318957999999995
+        },
+        {
+          "enter_tag": "43 ",
+          "count": 1,
+          "sum": 12.11800824
+        },
+        {
+          "enter_tag": "43 44 ",
+          "count": 1,
+          "sum": 6.2698908
+        },
+        {
+          "enter_tag": "46 ",
+          "count": 1,
+          "sum": 19.45714719
+        },
+        {
+          "enter_tag": "47 ",
+          "count": 2,
+          "sum": -95.09431541000002
+        },
+        {
+          "enter_tag": "5 61 ",
+          "count": 1,
+          "sum": 2.08228704
+        },
+        {
+          "enter_tag": "6 ",
+          "count": 7,
+          "sum": 76.57777806
+        },
+        {
+          "enter_tag": "6 141 ",
+          "count": 1,
+          "sum": 12.51690347
+        },
+        {
+          "enter_tag": "61 ",
+          "count": 2,
+          "sum": 7.30772656
+        },
+        {
+          "enter_tag": "62 ",
+          "count": 8,
+          "sum": 135.38390918
+        },
+        {
+          "enter_tag": "63 ",
+          "count": 10,
+          "sum": -101.34086060000001
+        },
+        {
+          "enter_tag": "64 ",
+          "count": 86,
+          "sum": -40.26138214999999
+        },
+        {
+          "enter_tag": "65 ",
+          "count": 26,
+          "sum": -5.1416416600000545
+        }
+      ],
+      "actual_start": "2024-01-03 00:00:00+00:00",
+      "actual_end": "2025-01-01 00:00:00+00:00",
+      "default_gate": false
+    }
+  },
+  "candidate_first_screen_passed": false,
+  "next_step": "Reject this5% cost-cap version; no cap sweep or additional-year tuning"
+}

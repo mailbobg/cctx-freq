@@ -1,0 +1,171 @@
+{
+  "captured_utc": "2026-10-04T08:45:00.869426+00:00",
+  "bots": [
+    {
+      "name": "e0v1en-live",
+      "strategy": "E0V1EN",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 0,
+      "closed_trades": 20,
+      "profit_closed": -2.58671941,
+      "profit_all": -2.58671941,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "e0v1en",
+      "strategy": "E0V1ENWait3",
+      "want": "running",
+      "offline": null,
+      "open_trades": 1,
+      "closed_trades": 0,
+      "profit_closed": 0.0,
+      "profit_all": 0.24791976,
+      "prices_as_of": null
+    },
+    {
+      "name": "x7",
+      "strategy": "NostalgiaForInfinityX7",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 1,
+      "closed_trades": 3,
+      "profit_closed": 7.7911560600000005,
+      "profit_all": -8.58135393999998,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "x8",
+      "strategy": "NostalgiaForInfinityX8",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 0,
+      "closed_trades": 3,
+      "profit_closed": -4.884938540000002,
+      "profit_all": -4.884938540000002,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "x12",
+      "strategy": "E0V1ENX12",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 1,
+      "closed_trades": 7,
+      "profit_closed": -315.15235574999997,
+      "profit_all": -462.8462633499999,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "c-hold",
+      "strategy": "RiskHoldC",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 2,
+      "closed_trades": 2,
+      "profit_closed": -61.69497172,
+      "profit_all": 150.42915867999955,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "c-hold-sma",
+      "strategy": "RiskHoldR2b",
+      "want": "running",
+      "offline": null,
+      "open_trades": 0,
+      "closed_trades": 0,
+      "profit_closed": 0.0,
+      "profit_all": 0.0,
+      "prices_as_of": null
+    },
+    {
+      "name": "unlock-short",
+      "strategy": "UnlockPressureShortV1",
+      "want": "running",
+      "offline": null,
+      "open_trades": 0,
+      "closed_trades": 0,
+      "profit_closed": 0.0,
+      "profit_all": 0.0,
+      "prices_as_of": null
+    },
+    {
+      "name": "funding-spread",
+      "strategy": "CrossVenueFundingV1",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 0,
+      "closed_trades": 0,
+      "profit_closed": 0,
+      "profit_all": 0.0,
+      "prices_as_of": null
+    },
+    {
+      "name": "x14",
+      "strategy": "HedgedFlushX14",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 0,
+      "closed_trades": 0,
+      "profit_closed": 0,
+      "profit_all": 0.0,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "x14-bybit",
+      "strategy": "HedgedFlushX14",
+      "want": "stopped",
+      "offline": null,
+      "open_trades": null,
+      "closed_trades": null,
+      "profit_closed": null,
+      "profit_all": null,
+      "prices_as_of": null
+    },
+    {
+      "name": "x14-bitget",
+      "strategy": "HedgedFlushX14",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 0,
+      "closed_trades": 0,
+      "profit_closed": 0,
+      "profit_all": 0.0,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "l2p-listings",
+      "strategy": "ShortNewListingsL2P",
+      "want": "running",
+      "offline": null,
+      "open_trades": 2,
+      "closed_trades": 0,
+      "profit_closed": 0.0,
+      "profit_all": -6.7378886,
+      "prices_as_of": null
+    },
+    {
+      "name": "l2-listings",
+      "strategy": "ShortNewListingsL2",
+      "want": "stopped",
+      "offline": true,
+      "open_trades": 0,
+      "closed_trades": 0,
+      "profit_closed": 0,
+      "profit_all": 0.0,
+      "prices_as_of": "2026-10-04"
+    },
+    {
+      "name": "unlock-xs",
+      "strategy": "UnlockXS",
+      "want": "running",
+      "offline": null,
+      "open_trades": 0,
+      "closed_trades": 0,
+      "profit_closed": 0.0,
+      "profit_all": 0.0,
+      "prices_as_of": null
+    }
+  ],
+  "limitation": "Stopped-bot prices and PnL may be stale. This is a status checkpoint, not strategy adoption evidence."
+}

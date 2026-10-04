@@ -1,0 +1,38 @@
+{
+  "results": {
+    "NostalgiaForInfinityX8PF": {
+      "primary_5m_open_wallet_DD_pct": -24.541974187648396,
+      "wallet_trough": "2024-08-05 13:30:00+00:00",
+      "total_buy_notional_USDT": 402497.37832845974,
+      "total_sell_notional_USDT": 406156.6822698597,
+      "total_transaction_cost_USDT": 970.3848727179832,
+      "sum_losing_closed_trade_PnL_USDT": -3788.5143832299996,
+      "sum_winning_closed_trade_PnL_USDT": 6477.4334518900005,
+      "STRAX_trades": [
+        {
+          "open_date": "2024-12-28 00:10:00+00:00",
+          "close_date": "2024-12-28 00:45:00+00:00",
+          "profit_abs": "5.94383946"
+        }
+      ]
+    },
+    "NostalgiaForInfinityX8CostCap": {
+      "primary_5m_open_wallet_DD_pct": -13.506684724280815,
+      "wallet_trough": "2024-08-05 13:30:00+00:00",
+      "total_buy_notional_USDT": 161998.04144126,
+      "total_sell_notional_USDT": 162885.70051695994,
+      "total_transaction_cost_USDT": 389.8604903498639,
+      "sum_losing_closed_trade_PnL_USDT": -2079.9575640799994,
+      "sum_winning_closed_trade_PnL_USDT": 2577.75614935,
+      "STRAX_trades": [
+        {
+          "open_date": "2024-12-28 00:10:00+00:00",
+          "close_date": "2024-12-28 00:45:00+00:00",
+          "profit_abs": "5.02243873"
+        }
+      ]
+    }
+  },
+  "wallet_assessment": "Primary5m wallet captures use candle opens before that pair trades. Append final liquidated equity. Not every1m fill or intrabar high/low is captured; source code reviewed.",
+  "STRAX_assessment": "Only Dec28 trades, neither held across swap nor traded in suspension. Residual recursive indicator effects have not yet been excluded. Even deleting its profitable trade cannot make the rejected return/drawdown screen pass."
+}
