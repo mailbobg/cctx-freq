@@ -1,0 +1,8 @@
+{
+  "actual_root_source_was_previously_verified": true,
+  "cause": "relative Path bench/review_loop_20261004 lacks parents[2] for root hash base",
+  "fix": "Resolve checker base to absolute project path; repeat every registered hash",
+  "initial_failure": "IndexError: 2",
+  "no_source_policy_or_economic_outcome_changed": true,
+  "stage": "shared final registry verification after source/output hashes"
+}

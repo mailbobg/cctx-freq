@@ -1,0 +1,19 @@
+{
+  "adopted": false,
+  "all_registered_hashes_verified_before_this_validation": true,
+  "current_selection_rows": 172,
+  "current_source_checks_passed": 6,
+  "existing_pytest_option_warnings": 2,
+  "full_reward_cohort_policy_or_alpha_outcome_defined": false,
+  "initial_registry_root_path_error_retained_and_fixed": true,
+  "native_apr_and_swagger_http403": 4,
+  "native_input_hashes_verified": 11,
+  "no_strategy_bot_image_live_or_existing_forward_change": true,
+  "official_descriptive_docs_http200": 6,
+  "offline_source_audit_byte_identical": true,
+  "original_source_attempts": 10,
+  "prior_selection_rows_unchanged": 171,
+  "registered_outputs_before_supplement": 4654,
+  "registered_sources": 251,
+  "root_sources": 1
+}
