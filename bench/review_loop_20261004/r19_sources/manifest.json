@@ -1,0 +1,131 @@
+{
+  "new_performance": false,
+  "source_only": true,
+  "sources": {
+    "alfred_help": {
+      "bytes": 32108,
+      "final_url": "https://alfred.stlouisfed.org/help/downloaddata",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "path": "raw/2117df3b569dc9933e3118ae4ba65ffed2fff1a975c9c57057d24d2607bbfb16",
+      "requested_utc": "2026-10-04T13:04:33.074870+00:00",
+      "retrieved_utc": "2026-10-04T13:04:33.914793+00:00",
+      "sha256": "8bdcd36d23fc9639043e5626a371d9a768e21c6a5be84552d68112de30755532",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/help/downloaddata"
+    },
+    "alfred_vix3m_identity": {
+      "bytes": 64854,
+      "final_url": "https://alfred.stlouisfed.org/series?seid=VXVCLS",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "path": "raw/930b0b3f0bac2f2788a4dbe5a47bcea98faa1204f4ef24dc0c6b648568129933",
+      "requested_utc": "2026-10-04T13:04:33.075353+00:00",
+      "retrieved_utc": "2026-10-04T13:04:34.028466+00:00",
+      "sha256": "754bd11d16954ba6892a402860b5bff98b7e2c9f537512ccde44985d9b034c19",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/series?seid=VXVCLS"
+    },
+    "alfred_vix_identity": {
+      "bytes": 65216,
+      "final_url": "https://alfred.stlouisfed.org/series?seid=VIXCLS",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8"
+      },
+      "path": "raw/2f9caa301a9fa258f7d94a63325c9de58e0fde5865faf6b5138a697014751cb4",
+      "requested_utc": "2026-10-04T13:04:33.075246+00:00",
+      "retrieved_utc": "2026-10-04T13:04:33.785086+00:00",
+      "sha256": "3b4b9ecc187b7b99579e06dfc200b723891644c1ee9f67d54a0938ec6a91de09",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/series?seid=VIXCLS"
+    },
+    "archive_2021-01-30": {
+      "bytes": 61296,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=VIXCLS%2CVXVCLS&vintage_date=2021-01-30%2C2021-01-30&cosd=2021-01-17&coed=2021-01-30",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Last-Modified": "Mon, 24 Jun 2024 15:19:29 GMT"
+      },
+      "path": "raw/3670d7912eb077596a772f57da89b4c4883356ccfcd8e4ba810e53ab67a0c9ed",
+      "requested_utc": "2026-10-04T13:04:34.732762+00:00",
+      "retrieved_utc": "2026-10-04T13:04:36.137486+00:00",
+      "sha256": "81c4d580e0c6bb2b1e57f2f0a61a2837f9af7c978cc803e87946f3354ed58097",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=VIXCLS%2CVXVCLS&vintage_date=2021-01-30%2C2021-01-30&cosd=2021-01-17&coed=2021-01-30"
+    },
+    "archive_2024-01-06": {
+      "bytes": 74926,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=VIXCLS%2CVXVCLS&vintage_date=2024-01-06%2C2024-01-06&cosd=2023-12-24&coed=2024-01-06",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Last-Modified": "Mon, 24 Jun 2024 15:19:29 GMT"
+      },
+      "path": "raw/80a4422748b0cbf4d6739adf5c17eef7a6d47d8dd40203998364402cfab34348",
+      "requested_utc": "2026-10-04T13:04:35.114133+00:00",
+      "retrieved_utc": "2026-10-04T13:04:36.488667+00:00",
+      "sha256": "74355e2ed1efb3ee96616b0d48a8b8df86398a92d04ad6ef7c7f909214f8490e",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=VIXCLS%2CVXVCLS&vintage_date=2024-01-06%2C2024-01-06&cosd=2023-12-24&coed=2024-01-06"
+    },
+    "archive_2026-08-29": {
+      "bytes": 87221,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=VIXCLS%2CVXVCLS&vintage_date=2026-08-29%2C2026-08-29&cosd=2026-08-16&coed=2026-08-29",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Last-Modified": "Mon, 31 Aug 2026 13:38:37 GMT"
+      },
+      "path": "raw/7f0f1666e6e819b0efa221ec754cd45044497886561d62e5be484bdeb9df6305",
+      "requested_utc": "2026-10-04T13:04:35.253276+00:00",
+      "retrieved_utc": "2026-10-04T13:04:36.901968+00:00",
+      "sha256": "1ffdb8354b4d3c8a97ff795c4e4af9a26b933935f4f2d0a8d2654ba02442d228",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=VIXCLS%2CVXVCLS&vintage_date=2026-08-29%2C2026-08-29&cosd=2026-08-16&coed=2026-08-29"
+    },
+    "cboe_current_vix": {
+      "bytes": 473329,
+      "final_url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv",
+      "headers": {
+        "Content-Type": "text/csv",
+        "ETag": "W/\"0a454fa605beb69282f024e38200537e\"",
+        "Last-Modified": "Sat, 03 Oct 2026 01:11:01 GMT"
+      },
+      "path": "raw/2cbfaef6bdfe2a12ee10911b75aa32344ed45f0f759ec4c7a843c54cad964361",
+      "requested_utc": "2026-10-04T13:04:33.915579+00:00",
+      "retrieved_utc": "2026-10-04T13:04:35.112623+00:00",
+      "sha256": "6edc3e3928c4b164b9e4ed1ec874e0ed53c7d52997557adebb7d6b7451db565a",
+      "status": 200,
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+    },
+    "cboe_current_vix3m_lead": {
+      "bytes": 218611,
+      "final_url": "https://cdn-api.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv",
+      "headers": {
+        "Content-Type": "text/csv",
+        "ETag": "W/\"1c91c94abd5928a07a8ec9770b32e9c4\"",
+        "Last-Modified": "Fri, 02 Oct 2026 22:31:08 GMT"
+      },
+      "path": "raw/7b2af9f774839956fa45779d68aa23e6dbbab5ee010a693f874e659e1bb16d86",
+      "requested_utc": "2026-10-04T13:04:34.029257+00:00",
+      "retrieved_utc": "2026-10-04T13:04:34.727800+00:00",
+      "sha256": "50abada4167749d2b732f56aa1f19350712b56b8e230d6a91c2da934bb7664ec",
+      "status": 200,
+      "url": "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX3M_History.csv"
+    },
+    "cboe_term_definition": {
+      "bytes": 385753,
+      "final_url": "https://www.cboe.com/tradable-products/vix/term-structure",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "ETag": "W/\"s4x6abwzr989i7\""
+      },
+      "path": "raw/1fca49edc23b3cc98ab7dd1f21d071b9f1f7a2714dbf305116c0586bb8d76b01",
+      "requested_utc": "2026-10-04T13:04:33.786369+00:00",
+      "retrieved_utc": "2026-10-04T13:04:35.252131+00:00",
+      "sha256": "56f88edcc4c54b091cb07ddc7d3e0dfa7217c04e0497a891911995ff089583ca",
+      "status": 200,
+      "url": "https://www.cboe.com/tradable_products/vix/term_structure/"
+    }
+  }
+}
