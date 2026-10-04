@@ -1,0 +1,282 @@
+{
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:33.371884+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_b407d9f70d0430b2bc88.json",
+    "sha256": "b0dd11c0db97f52d4fe899ce447a2ec9840c35adb6bab669e909ea3c23ab3f5b",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:33.458539+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_81cd59190c9dd38cfa2a.json",
+    "sha256": "03619285ca40aa602521682a01316b61df7d2d4ee603e51f39299543b05171f1",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:33.929515+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BTCUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_806aadcbcc70549ba491.json",
+    "sha256": "b8d24d58e01777f834e99f017aa054bd71540f060fea1185d1d8a702d9e55e87",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:33.952809+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_2b11bb0b70a980eee53b.json",
+    "sha256": "e299fff3fc3e0d073f5839a1f5d09862d105bc51998d821533685dfbf8ff68b2",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:34.444976+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BTC-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_328d141b0da661dd858c.json",
+    "sha256": "71990d7cfe10d432916dd12edc09e5e2f66c378045ab3ec49bd4e2cdc1f1f0d0",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ETHUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:34.446376+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ETHUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_e0fc0a9ca057933f1308.json",
+    "sha256": "9069248728f14d2e4bbe2907d74c627270db472b9ec12382ae00c7605c1035e1",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:34.972675+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_8cc3a02594eeaf793bc1.json",
+    "sha256": "367c829bf7791e9a7bb6b93c261579543809b53e8abeb42a89d9a1307886f55c",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ETHUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:34.972723+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ETHUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_dc2bc9d06697a5f74ef7.json",
+    "sha256": "45521d374ebaafb8d7eccfba571005c1b8619099b5430977647d141f8126d884",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:35.489315+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_625708d12866ba474879.json",
+    "sha256": "4f3dbaab83b90ebc94366388e369ec54567d22c737cd422998e05dd2765323aa",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=SOLUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:35.499135+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=SOLUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_0557fb6a537a944b1016.json",
+    "sha256": "987df6179bf114873f5ed48de094b56239a033954c9c22b3c29fca6918342b64",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:35.991581+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ETH-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_43b6171e475f42768a2d.json",
+    "sha256": "cfcb8a300aaba7f8a5611fdc07bf72011d9c1586b4d62e922436dd7661895612",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=SOLUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:36.074771+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=SOLUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_0853861f4c656190ce7b.json",
+    "sha256": "8a35897feb8ebb42d2b663ec87c4cfb5b40cbd43e1450753b5a8d0aa10936825",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=SOL-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:36.490259+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=SOL-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_9e002f0370e174035e6d.json",
+    "sha256": "d80cd2472b3eaed9fcc3265103284fc8bbf185c6022470c30f3a3c775636d6d1",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=XRPUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:36.543202+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=XRPUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_4927aa0f6fe6a8f93a12.json",
+    "sha256": "da542cb8d35c4f38b3184c3e5b46f27ac67d03dc5882ba15a76602e72ed5c377",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=SOL-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:37.094987+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=SOL-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_7a148133eb6e23fa72ad.json",
+    "sha256": "9f5ce415de77e3616002978baef286411ff3650f4b2b2cd142e6b324bb2c63f1",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=XRPUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:37.184093+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=XRPUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_c292a97c39908429ab1d.json",
+    "sha256": "8be01bdadb62e93d0621098e5938ea678174c54ceb4a8bbde9be6ea03b3875cf",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=SOL-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:37.591299+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=SOL-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_977636c82e01331df203.json",
+    "sha256": "a8b74c3ad770f4746f39cd75bc1bdc1adb032910509bd2fcecb16c0ad21f5f9e",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BNBUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:37.617157+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BNBUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_b0e5dfe05c921246483b.json",
+    "sha256": "3d6f2c0ccd05704b95b91b204958aafa95b3f0d6bcefe3cf8424aa4ae5f6c49e",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=XRP-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:38.054532+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=XRP-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_dd7ed8207e429bbbd2a4.json",
+    "sha256": "621a9d6a7925f5899ab03514e20f4a1e4b939c726fd1f23f6ee5171ab0f6dd64",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BNBUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:38.194047+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=BNBUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_55c2c135d3ae998afa5a.json",
+    "sha256": "17bb41133c979ddbd76cd63d1cb7b9e4e95ff4c35d166da7f5d51e3ba57a74ec",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=XRP-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:38.583647+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=XRP-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_078ee57102d8d88e5ee1.json",
+    "sha256": "fd5bcd0750c4f9ad2bc74ffa9914ea545d524ca3aa32e73e94367fbcdae3daf7",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ADAUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:38.636951+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ADAUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_55ce5e57d06d72b5bae0.json",
+    "sha256": "5ab7c686fc81332fbcb59208b4466d379d192aa8974db081110636634d04cfde",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ADAUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:39.094791+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=ADAUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_bf7c35dc2cdb9fe65960.json",
+    "sha256": "b0083ddae206f2d31eb4a6e5ee3451fc84415ef70522dadff65f2c87a436158d",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=XRP-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:39.094920+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=XRP-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_c87b56c36fd6c23368ab.json",
+    "sha256": "04d84a9a3a9ff175cba23a19d65ffab4c9252d1fff7c2ea0cdd6b42a772d943c",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=DOGEUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:39.620672+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=DOGEUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_cf013a61c8830fa7c597.json",
+    "sha256": "37066dfd569427789ee86b483afd510037b16f4d751390fc784ecb19c9d8bb1f",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=BNB-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:39.626188+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BNB-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_0239b52b7cf4a39d1260.json",
+    "sha256": "5770430b370639d4cfb0ea58fb1cf330f67c9a2053ef6143591c3d4a8b879862",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=DOGEUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:40.046973+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=DOGEUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_69397c291b67c2539e83.json",
+    "sha256": "784acf5f074bbd92990bc48d14fcd7ab4c663d2f351c30660e2465144af40036",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=AVAXUSDT&endTime=1791071999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:40.552849+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=AVAXUSDT&endTime=1791071999999&limit=200",
+    "path": "r5_raw/bybit_cfae0451b90c55626abb.json",
+    "sha256": "da686e30db0a6fb7859144a64fd89be60d6d4b955fde04daf429cf6131811b49",
+    "status": 200
+  },
+  "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=AVAXUSDT&endTime=1785311999999&limit=200": {
+    "retrieved_utc": "2026-10-04T08:01:40.974954+00:00",
+    "url": "https://api.bybit.com/v5/market/funding/history?category=linear&symbol=AVAXUSDT&endTime=1785311999999&limit=200",
+    "path": "r5_raw/bybit_6d2e73ecd55b3b26eda8.json",
+    "sha256": "8846c8c27f6d0d5275cac4ef835b2d8947097fdbad1d48e330ff2e8e7b008d4b",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=BNB-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:41.110457+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BNB-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_59f368eb90364ea7205f.json",
+    "sha256": "3c04672a6afae6b4a7b6568a24594f3fb6895422a4bcb33613a358ce42aa28e5",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=BNB-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:41.603640+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=BNB-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_dfd695b3ecf7e5a66612.json",
+    "sha256": "ab9f163d69753fa6fbdcd9cb91af99a4b286b2e13d64f463f709df584ef48d58",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=ADA-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:42.130766+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ADA-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_52034b64e2c20c6564e1.json",
+    "sha256": "dca5251e25a4f945cbd0ba28886bec474d0ed25ffdb5e6b233b18465f665b4bd",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=ADA-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:42.650363+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ADA-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_b444845783b67d333b7c.json",
+    "sha256": "5f28757e0cfd3e50590848b4d32b4ceca632b079d5a9bbbd3cde31dd2a9abd8b",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=ADA-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:43.175649+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=ADA-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_1da712ddd18a5548dddc.json",
+    "sha256": "6a108189bc168438a5d1d73cdfb18184baf9db90e3bef42166f68644d82f1b2a",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=DOGE-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:43.699743+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=DOGE-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_4fc6e7b371b49f01b565.json",
+    "sha256": "919cd9256ed0bc84fda7de048c2980c636cec0dc6fdbf44445befd2193a2ba47",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=DOGE-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:44.223995+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=DOGE-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_6557de761e5f3505d718.json",
+    "sha256": "6cfb9439db11e9e0f243e65e3f5912ae80ace0ad9c08f2d88226fadde888cedb",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=DOGE-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:44.748953+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=DOGE-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_6bc00ad9d6a5c93e4e0e.json",
+    "sha256": "cc867c4f9c71fcda99b5387b2ce8905793caf809d72f224aac249a0c47e4e032",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=AVAX-USDT-SWAP&after=1791072000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:45.303536+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=AVAX-USDT-SWAP&after=1791072000000&limit=100",
+    "path": "r5_raw/okx_51de939e4ecad46ddbfa.json",
+    "sha256": "165cf04944c4973dd52d1cf80f2aad28bce96c73ea64cd98043db7fedb38598b",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=AVAX-USDT-SWAP&after=1788192000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:45.796647+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=AVAX-USDT-SWAP&after=1788192000000&limit=100",
+    "path": "r5_raw/okx_0a36b243f36dfd4868fa.json",
+    "sha256": "db84f91fabd57357e3f821d7fb8f634bdd6cdda04ec7b3605316b981a51dad2c",
+    "status": 200
+  },
+  "https://www.okx.com/api/v5/public/funding-rate-history?instId=AVAX-USDT-SWAP&after=1785312000000&limit=100": {
+    "retrieved_utc": "2026-10-04T08:01:46.228295+00:00",
+    "url": "https://www.okx.com/api/v5/public/funding-rate-history?instId=AVAX-USDT-SWAP&after=1785312000000&limit=100",
+    "path": "r5_raw/okx_4bbca925e891876c0946.json",
+    "sha256": "b8757ddb5f3deb2f0ebe34fef46e74ce7c3faf19e6660c646389684bc096cd8f",
+    "status": 200
+  }
+}

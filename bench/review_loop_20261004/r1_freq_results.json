@@ -1,0 +1,266 @@
+{
+  "early_RiskHoldR2b": {
+    "return_pct": 275.5371793573348,
+    "CAGR_pct": 61.90646614395745,
+    "maxDD_pct": -38.93443287437338,
+    "sharpe": 1.4728316230619607,
+    "years_pct": {
+      "2018": -18.47923612761282,
+      "2019": 33.02398389324228,
+      "2020": 246.62645110698085,
+      "2021": -0.0936601443164653
+    },
+    "MTM_block7_interval_pct": [
+      64.90248542464575,
+      506.34938212152366
+    ],
+    "MTM_block30_interval_pct": [
+      27.2633777840182,
+      563.1129759240423
+    ],
+    "trades": 32,
+    "closed_trade_DD_pct": 21.498341842808895,
+    "accounting_gap_USDT": 1.3478711480274796e-08,
+    "min_cash_USDT": 72.5198142199988,
+    "reference_final_gap_pct": 1.7651911663775444,
+    "max_reference_curve_gap_pct": 1.7794986720083728,
+    "all_in_side_cost": 0.0012,
+    "actual_start": "2018-04-04",
+    "actual_end": "2021-01-01",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_early-2026-10-04_07-49-49.zip",
+    "source_sha256": "f7257aac774ae59e930df3b2c4be49db4953d914104537fa9bedcef7544357e9",
+    "default_gate": false
+  },
+  "early_RiskHoldR2bCov10": {
+    "return_pct": 56.45088705290438,
+    "CAGR_pct": 17.702103062269803,
+    "maxDD_pct": -10.983068083922143,
+    "sharpe": 1.6335665724142996,
+    "years_pct": {
+      "2018": -6.685526127190022,
+      "2019": 15.462714717448689,
+      "2020": 45.235997421552,
+      "2021": -0.02003457438989331
+    },
+    "MTM_block7_interval_pct": [
+      15.50771037637749,
+      101.2282770901879
+    ],
+    "MTM_block30_interval_pct": [
+      7.679761891287142,
+      109.09969765753941
+    ],
+    "trades": 32,
+    "closed_trade_DD_pct": 8.034256051014808,
+    "accounting_gap_USDT": 4.383764462545514e-10,
+    "min_cash_USDT": 6847.055372271478,
+    "reference_final_gap_pct": -0.061337135293659806,
+    "max_reference_curve_gap_pct": 0.06837080244748162,
+    "all_in_side_cost": 0.0012,
+    "actual_start": "2018-04-04",
+    "actual_end": "2021-01-01",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_early-2026-10-04_07-49-49.zip",
+    "source_sha256": "f7257aac774ae59e930df3b2c4be49db4953d914104537fa9bedcef7544357e9",
+    "default_gate": false
+  },
+  "recent_RiskHoldR2b": {
+    "return_pct": 542.0127733831383,
+    "CAGR_pct": 38.41861739944199,
+    "maxDD_pct": -24.57687825649424,
+    "sharpe": 1.1855855122539902,
+    "years_pct": {
+      "2021": 83.78558586557239,
+      "2022": -10.164558007990665,
+      "2023": 74.91214649766236,
+      "2024": 56.00533424954015,
+      "2025": 28.983972742482944,
+      "2026": 10.481445029330882
+    },
+    "MTM_block7_interval_pct": [
+      67.52002935844644,
+      1022.9986308570825
+    ],
+    "MTM_block30_interval_pct": [
+      92.00153608288177,
+      1057.6292020287763
+    ],
+    "trades": 65,
+    "closed_trade_DD_pct": 13.986413143549258,
+    "accounting_gap_USDT": 3.383320290595293e-08,
+    "min_cash_USDT": 154.20047417091337,
+    "reference_final_gap_pct": 2.238804377391368,
+    "max_reference_curve_gap_pct": 4.177864707448986,
+    "all_in_side_cost": 0.0012,
+    "actual_start": "2021-01-01",
+    "actual_end": "2026-09-21",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_recent-2026-10-04_07-49-50.zip",
+    "source_sha256": "5842c8e3e91d44574532445a31cf9cdb8feafce033579b894e518c56debdb60a",
+    "default_gate": false
+  },
+  "recent_RiskHoldR2bCov10": {
+    "return_pct": 98.73443161013995,
+    "CAGR_pct": 12.759045542671355,
+    "maxDD_pct": -7.555794018035278,
+    "sharpe": 1.3595446059431733,
+    "years_pct": {
+      "2021": 17.493932534816793,
+      "2022": -2.6200246353097367,
+      "2023": 23.65309454843809,
+      "2024": 16.305505684704634,
+      "2025": 12.61885037585988,
+      "2026": 7.243669023302357
+    },
+    "MTM_block7_interval_pct": [
+      36.07675133846675,
+      164.07340592445155
+    ],
+    "MTM_block30_interval_pct": [
+      37.53844653349136,
+      167.327736905718
+    ],
+    "trades": 65,
+    "closed_trade_DD_pct": 5.202661108043388,
+    "accounting_gap_USDT": 1.399530447088182e-08,
+    "min_cash_USDT": 7826.773529340759,
+    "reference_final_gap_pct": -0.03254860194659148,
+    "max_reference_curve_gap_pct": 0.032796969220849626,
+    "all_in_side_cost": 0.0012,
+    "actual_start": "2021-01-01",
+    "actual_end": "2026-09-21",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_recent-2026-10-04_07-49-50.zip",
+    "source_sha256": "5842c8e3e91d44574532445a31cf9cdb8feafce033579b894e518c56debdb60a",
+    "default_gate": false
+  },
+  "early_cost2_RiskHoldR2b": {
+    "return_pct": 266.15892099654894,
+    "CAGR_pct": 60.422224781567465,
+    "maxDD_pct": -39.295988559773065,
+    "sharpe": 1.4475654548303285,
+    "years_pct": {
+      "2018": -18.974465475423198,
+      "2019": 31.891572438917603,
+      "2020": 243.2775942788153,
+      "2021": -0.1874362447817468
+    },
+    "MTM_block7_interval_pct": [
+      59.336944710253356,
+      493.14993465923413
+    ],
+    "MTM_block30_interval_pct": [
+      23.598256796683973,
+      547.8748899493111
+    ],
+    "trades": 32,
+    "closed_trade_DD_pct": 21.942811137878042,
+    "accounting_gap_USDT": 4.893081495538354e-09,
+    "min_cash_USDT": 62.20617575504002,
+    "reference_final_gap_pct": 2.043857744444555,
+    "max_reference_curve_gap_pct": 2.065706303591508,
+    "all_in_side_cost": 0.0024,
+    "actual_start": "2018-04-04",
+    "actual_end": "2021-01-01",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_early_cost2-2026-10-04_07-55-28.zip",
+    "source_sha256": "fad6de6f6ea384e59a99c62eb50e58d1f1179bae182d779908f81c7887eb2a99",
+    "default_gate": false
+  },
+  "early_cost2_RiskHoldR2bCov10": {
+    "return_pct": 54.79799573278481,
+    "CAGR_pct": 17.247738462929796,
+    "maxDD_pct": -11.143176392404474,
+    "sharpe": 1.5959394001178162,
+    "years_pct": {
+      "2018": -7.0070307865583885,
+      "2019": 15.062691811147522,
+      "2020": 44.72874377663598,
+      "2021": -0.04008083585215205
+    },
+    "MTM_block7_interval_pct": [
+      14.135968614506533,
+      99.2507543603745
+    ],
+    "MTM_block30_interval_pct": [
+      6.4848019857201935,
+      106.8094937330623
+    ],
+    "trades": 32,
+    "closed_trade_DD_pct": 8.331331700268677,
+    "accounting_gap_USDT": -3.1517629395239055e-08,
+    "min_cash_USDT": 6815.603577839121,
+    "reference_final_gap_pct": -0.05116284600201748,
+    "max_reference_curve_gap_pct": 0.05916448403999741,
+    "all_in_side_cost": 0.0024,
+    "actual_start": "2018-04-04",
+    "actual_end": "2021-01-01",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_early_cost2-2026-10-04_07-55-28.zip",
+    "source_sha256": "fad6de6f6ea384e59a99c62eb50e58d1f1179bae182d779908f81c7887eb2a99",
+    "default_gate": false
+  },
+  "recent_cost2_RiskHoldR2b": {
+    "return_pct": 504.61086604777455,
+    "CAGR_pct": 36.97354989253281,
+    "maxDD_pct": -25.112086309752268,
+    "sharpe": 1.1520217430247048,
+    "years_pct": {
+      "2021": 82.0786511241097,
+      "2022": -10.748411035768136,
+      "2023": 73.13621545262066,
+      "2024": 53.58194747616063,
+      "2025": 27.439863535940635,
+      "2026": 9.791211100206997
+    },
+    "MTM_block7_interval_pct": [
+      45.81140869612639,
+      964.4739509816573
+    ],
+    "MTM_block30_interval_pct": [
+      70.15917026127163,
+      1004.3142221580385
+    ],
+    "trades": 65,
+    "closed_trade_DD_pct": 14.52877473602692,
+    "accounting_gap_USDT": -3.2545358408242464e-08,
+    "min_cash_USDT": 132.55054847577412,
+    "reference_final_gap_pct": 0.6227465873691607,
+    "max_reference_curve_gap_pct": 2.8497767113384143,
+    "all_in_side_cost": 0.0024,
+    "actual_start": "2021-01-01",
+    "actual_end": "2026-09-21",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_recent_cost2-2026-10-04_07-55-30.zip",
+    "source_sha256": "d4e3f660433227a1fcbb61ff1a038825a566e8a5b48e66eeb798eccb210db7f8",
+    "default_gate": false
+  },
+  "recent_cost2_RiskHoldR2bCov10": {
+    "return_pct": 94.15777064217772,
+    "CAGR_pct": 12.300646311341534,
+    "maxDD_pct": -7.768070141196182,
+    "sharpe": 1.315124304977206,
+    "years_pct": {
+      "2021": 17.23674923847762,
+      "2022": -2.9389047224065767,
+      "2023": 23.171138884183318,
+      "2024": 15.647689509008323,
+      "2025": 12.05442705090951,
+      "2026": 6.89832105246122
+    },
+    "MTM_block7_interval_pct": [
+      32.19878245545978,
+      158.5932293563633
+    ],
+    "MTM_block30_interval_pct": [
+      33.71008649589196,
+      161.67771056046183
+    ],
+    "trades": 65,
+    "closed_trade_DD_pct": 5.40357057698453,
+    "accounting_gap_USDT": -4.222783900331706e-08,
+    "min_cash_USDT": 7790.296797109202,
+    "reference_final_gap_pct": -0.02944926244969892,
+    "max_reference_curve_gap_pct": 0.029947084747639074,
+    "all_in_side_cost": 0.0024,
+    "actual_start": "2021-01-01",
+    "actual_end": "2026-09-21",
+    "source": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/backtest_results/review_loop_r1_freq_recent_cost2-2026-10-04_07-55-30.zip",
+    "source_sha256": "d4e3f660433227a1fcbb61ff1a038825a566e8a5b48e66eeb798eccb210db7f8",
+    "default_gate": false
+  }
+}

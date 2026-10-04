@@ -1,0 +1,110 @@
+[
+  {
+    "trial": "R1 actual Freqtrade",
+    "window": "early_RiskHoldR2bCov10",
+    "CAGR_pct": 17.702103062269803,
+    "daily_MTM_DD_pct": -10.983068083922143,
+    "cost_per_side": 0.0012,
+    "adoption_gate": false,
+    "disposition": "historically profitable research lead; strict risk rejected; no activation"
+  },
+  {
+    "trial": "R1 actual Freqtrade",
+    "window": "recent_RiskHoldR2bCov10",
+    "CAGR_pct": 12.759045542671355,
+    "daily_MTM_DD_pct": -7.555794018035278,
+    "cost_per_side": 0.0012,
+    "adoption_gate": false,
+    "disposition": "historically profitable research lead; strict risk rejected; no activation"
+  },
+  {
+    "trial": "R1 actual Freqtrade",
+    "window": "early_cost2_RiskHoldR2bCov10",
+    "CAGR_pct": 17.247738462929796,
+    "daily_MTM_DD_pct": -11.143176392404474,
+    "cost_per_side": 0.0024,
+    "adoption_gate": false,
+    "disposition": "historically profitable research lead; strict risk rejected; no activation"
+  },
+  {
+    "trial": "R1 actual Freqtrade",
+    "window": "recent_cost2_RiskHoldR2bCov10",
+    "CAGR_pct": 12.300646311341534,
+    "daily_MTM_DD_pct": -7.768070141196182,
+    "cost_per_side": 0.0024,
+    "adoption_gate": false,
+    "disposition": "historically profitable research lead; strict risk rejected; no activation"
+  },
+  {
+    "trial": "R3",
+    "window": "early_reused_cost0.0012",
+    "CAGR_pct": 2.701595892544928,
+    "daily_MTM_DD_pct": -4.451962248149455,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R3",
+    "window": "early_reused_cost0.0024",
+    "CAGR_pct": 2.3267182086577076,
+    "daily_MTM_DD_pct": -4.478292387942839,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R3",
+    "window": "recent_reused_cost0.0012",
+    "CAGR_pct": 3.861201658486846,
+    "daily_MTM_DD_pct": -4.288477857468942,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R3",
+    "window": "recent_reused_cost0.0024",
+    "CAGR_pct": 3.4039355607754063,
+    "daily_MTM_DD_pct": -4.344151576015198,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R4",
+    "window": "early_reused_cost0.0012",
+    "CAGR_pct": 13.719817142656998,
+    "daily_MTM_DD_pct": -9.740610752013822,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R4",
+    "window": "early_reused_cost0.0024",
+    "CAGR_pct": 13.283363023824668,
+    "daily_MTM_DD_pct": -10.046073216069583,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R4",
+    "window": "recent_reused_cost0.0012",
+    "CAGR_pct": 11.070578642131789,
+    "daily_MTM_DD_pct": -7.1619807397390485,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R4",
+    "window": "recent_reused_cost0.0024",
+    "CAGR_pct": 10.613719270725696,
+    "daily_MTM_DD_pct": -7.346604678910785,
+    "adoption_gate": false,
+    "disposition": "rejected"
+  },
+  {
+    "trial": "R5 funding",
+    "disposition": "necessary cost screen rejected: zero qualifying entries across88 coin weeks"
+  },
+  {
+    "trial": "R2 X8 cost cap",
+    "disposition": "pending complete matched2024 run; partial logs are not outcomes"
+  }
+]

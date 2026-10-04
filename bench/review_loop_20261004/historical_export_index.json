@@ -1,0 +1,311 @@
+{
+  "SampleStrategy": [
+    "user_data/backtest_results/backtest-result-2026-09-23_13-52-11.zip",
+    "user_data/backtest_results/backtest-result-2026-09-23_16-31-38.zip"
+  ],
+  "ClucMay72018": [
+    "user_data/backtest_results/backtest-result-2026-09-23_16-31-38.zip"
+  ],
+  "CombinedBinHAndCluc": [
+    "user_data/backtest_results/backtest-result-2026-09-23_16-31-38.zip"
+  ],
+  "NostalgiaForInfinityX7": [
+    "user_data/backtest_results/backtest-result-2026-09-23_17-31-56.zip",
+    "user_data/backtest_results/backtest-result-2026-09-23_17-41-09.zip",
+    "user_data/backtest_results/backtest-result-2026-09-23_17-56-16.zip",
+    "user_data/backtest_results/backtest-result-2026-09-23_18-25-48.zip",
+    "user_data/backtest_results/backtest-result-2026-09-24_02-25-51.zip",
+    "user_data/backtest_results/backtest-result-2026-09-24_06-29-38.zip"
+  ],
+  "NostalgiaForInfinityX8": [
+    "user_data/backtest_results/backtest-result-2026-09-25_02-10-00.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_02-14-20.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_02-20-18.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_07-38-41.zip"
+  ],
+  "FundingCrowdingX9": [
+    "user_data/backtest_results/backtest-result-2026-09-25_03-56-45.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-57-09.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-57-40.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-57-49.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-57-57.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-58-05.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-58-13.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-58-22.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-58-30.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-58-38.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_03-58-46.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-00-22.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-00-33.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-00-46.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-00-55.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-01-03.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-01-12.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-01-20.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-01-28.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_04-01-36.zip"
+  ],
+  "FundingReversionX9b": [
+    "user_data/backtest_results/backtest-result-2026-09-25_07-42-30.zip"
+  ],
+  "OversoldReversion": [
+    "user_data/backtest_results/backtest-result-2026-09-25_07-42-49.zip",
+    "user_data/backtest_results/backtest-result-2026-09-25_07-44-29.zip"
+  ],
+  "E0V1EN": [
+    "user_data/backtest_results/backtest-result-2026-09-25_07-49-17.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_01-25-35.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_07-20-03.zip",
+    "user_data/backtest_results/recon/backtest-result-2026-09-27_01-18-53.zip",
+    "user_data/backtest_results/recon/backtest-result-2026-09-27_01-20-12.zip",
+    "user_data/backtest_results/recon/backtest-result-2026-09-27_01-37-42.zip"
+  ],
+  "NostalgiaForInfinityX8PF": [
+    "user_data/backtest_results/backtest-result-2026-09-25_07-50-13.zip",
+    "user_data/backtest_results/holdout/x8-2021/backtest-result-2026-09-26_12-03-13.zip",
+    "user_data/backtest_results/holdout/x8-2022/backtest-result-2026-09-26_11-01-40.zip",
+    "user_data/backtest_results/holdout/x8-2023/backtest-result-2026-09-26_10-40-23.zip",
+    "user_data/backtest_results/holdout/x8fee2-2021/backtest-result-2026-09-26_15-32-40.zip",
+    "user_data/backtest_results/holdout/x8fee2-2022/backtest-result-2026-09-26_14-32-17.zip",
+    "user_data/backtest_results/holdout/x8fee2-2023/backtest-result-2026-09-26_14-13-08.zip",
+    "user_data/backtest_results/review_20260927_x8-2026-09-27_09-50-18.zip",
+    "user_data/backtest_results/x8detail/1m-2024/backtest-result-2026-09-27_04-32-45.zip",
+    "user_data/backtest_results/x8detail/1m-2025/backtest-result-2026-09-27_04-13-54.zip",
+    "user_data/backtest_results/x8detail/1m-2026/backtest-result-2026-09-27_04-04-01.zip",
+    "user_data/backtest_results/x8detail/5m-2024/backtest-result-2026-09-27_04-08-34.zip",
+    "user_data/backtest_results/x8detail/5m-2025/backtest-result-2026-09-27_04-03-40.zip",
+    "user_data/backtest_results/x8detail/5m-2026/backtest-result-2026-09-27_03-53-34.zip"
+  ],
+  "E0V1ENPF": [
+    "user_data/backtest_results/backtest-result-2026-09-25_08-00-41.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_07-35-07.zip",
+    "user_data/backtest_results/ct/detail-2024/backtest-result-2026-09-27_03-36-03.zip",
+    "user_data/backtest_results/ct/detail-2025/backtest-result-2026-09-27_03-35-22.zip",
+    "user_data/backtest_results/ct/detail-2026/backtest-result-2026-09-27_03-35-16.zip",
+    "user_data/backtest_results/ct/r5-2026/backtest-result-2026-09-27_03-39-36.zip",
+    "user_data/backtest_results/e0v1en_confirm_20261004/backtest-result-2026-10-04_06-32-56.zip",
+    "user_data/backtest_results/e0v1en_wait3_2025_20261004-2026-10-04_06-38-39.zip",
+    "user_data/backtest_results/holdout/dip-2021/backtest-result-2026-09-26_10-36-51.zip",
+    "user_data/backtest_results/holdout/dip-2022/backtest-result-2026-09-26_10-33-24.zip",
+    "user_data/backtest_results/holdout/dip-2023/backtest-result-2026-09-26_10-33-24.zip",
+    "user_data/backtest_results/holdout/dipfee2-2021/backtest-result-2026-09-26_14-04-32.zip",
+    "user_data/backtest_results/holdout/dipfee2-2022/backtest-result-2026-09-26_14-00-48.zip",
+    "user_data/backtest_results/holdout/dipfee2-2023/backtest-result-2026-09-26_14-00-33.zip",
+    "user_data/backtest_results/x12/control-2021/backtest-result-2026-09-26_14-24-28.zip",
+    "user_data/backtest_results/x12/control-2022/backtest-result-2026-09-26_14-24-29.zip",
+    "user_data/backtest_results/x12/control-2023/backtest-result-2026-09-26_14-24-27.zip",
+    "user_data/backtest_results/x12/control-2426/backtest-result-2026-09-26_14-28-27.zip",
+    "user_data/backtest_results/x12/main-2021/backtest-result-2026-09-26_14-12-20.zip",
+    "user_data/backtest_results/x12/main-2022/backtest-result-2026-09-26_14-09-55.zip",
+    "user_data/backtest_results/x12/main-2023/backtest-result-2026-09-26_14-09-41.zip",
+    "user_data/backtest_results/x12/main-2426/backtest-result-2026-09-26_14-17-47.zip",
+    "user_data/backtest_results/x12smoke/backtest-result-2026-09-26_14-04-14.zip"
+  ],
+  "NostalgiaForInfinityX7PF": [
+    "user_data/backtest_results/backtest-result-2026-09-25_08-12-47.zip"
+  ],
+  "BinHV45": [
+    "user_data/backtest_results/backtest-result-2026-09-25_08-52-50.zip"
+  ],
+  "ReinforcedSmoothScalp": [
+    "user_data/backtest_results/backtest-result-2026-09-25_08-52-50.zip"
+  ],
+  "SmoothScalp": [
+    "user_data/backtest_results/backtest-result-2026-09-25_08-52-50.zip"
+  ],
+  "Scalp": [
+    "user_data/backtest_results/backtest-result-2026-09-25_08-52-50.zip"
+  ],
+  "Elliotv8": [
+    "user_data/backtest_results/backtest-result-2026-09-25_09-12-45.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_01-30-22.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_07-25-32.zip"
+  ],
+  "NASOSv5": [
+    "user_data/backtest_results/backtest-result-2026-09-25_09-13-53.zip"
+  ],
+  "SMAOffsetProtectOptV1": [
+    "user_data/backtest_results/backtest-result-2026-09-25_09-17-50.zip"
+  ],
+  "NotAnotherSMAOffsetStrategy": [
+    "user_data/backtest_results/backtest-result-2026-09-25_09-18-16.zip"
+  ],
+  "Elliotv8PF": [
+    "user_data/backtest_results/backtest-result-2026-09-25_09-25-42.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_07-40-32.zip",
+    "user_data/backtest_results/holdout/dip-2021/backtest-result-2026-09-26_10-36-51.zip",
+    "user_data/backtest_results/holdout/dip-2022/backtest-result-2026-09-26_10-33-24.zip",
+    "user_data/backtest_results/holdout/dip-2023/backtest-result-2026-09-26_10-33-24.zip",
+    "user_data/backtest_results/holdout/dipfee2-2021/backtest-result-2026-09-26_14-04-32.zip",
+    "user_data/backtest_results/holdout/dipfee2-2022/backtest-result-2026-09-26_14-00-48.zip",
+    "user_data/backtest_results/holdout/dipfee2-2023/backtest-result-2026-09-26_14-00-33.zip"
+  ],
+  "MultiMA_TSL3": [
+    "user_data/backtest_results/backtest-result-2026-09-25_09-27-45.zip"
+  ],
+  "ClucHAnix_5m": [
+    "user_data/backtest_results/backtest-result-2026-09-25_09-36-34.zip"
+  ],
+  "XSMomentumX10": [
+    "user_data/backtest_results/backtest-result-2026-09-25_13-17-31.zip"
+  ],
+  "FlushReboundX11": [
+    "user_data/backtest_results/backtest-result-2026-09-26_01-31-07.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_01-37-14.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_01-42-56.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_01-48-46.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_01-54-26.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-00-10.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-06-21.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-12-04.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-17-51.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-23-40.zip"
+  ],
+  "EmaCross": [
+    "user_data/backtest_results/backtest-result-2026-09-26_02-14-45.zip"
+  ],
+  "EmaCrossFunding": [
+    "user_data/backtest_results/backtest-result-2026-09-26_02-14-52.zip"
+  ],
+  "ZScoreTrendSentinel": [
+    "user_data/backtest_results/backtest-result-2026-09-26_02-39-49.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-40-01.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-40-52.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_02-41-00.zip"
+  ],
+  "IBSMeanReversion": [
+    "user_data/backtest_results/backtest-result-2026-09-26_05-50-39.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_05-50-55.zip"
+  ],
+  "BBBreakoutBTC": [
+    "user_data/backtest_results/backtest-result-2026-09-26_05-55-41.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_05-55-51.zip"
+  ],
+  "TurtleCryptoS2": [
+    "user_data/backtest_results/backtest-result-2026-09-26_05-57-24.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_05-57-37.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_05-58-33.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_05-58-48.zip"
+  ],
+  "ConnorsRSI2": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-07-10.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-07-26.zip"
+  ],
+  "TurnOfMonth": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-07-41.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-07-56.zip"
+  ],
+  "NDownDays": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-08-07.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-08-19.zip"
+  ],
+  "GoldenCross": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-08-30.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-08-41.zip"
+  ],
+  "E0V1EN_VEI": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-18-23.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-26-03.zip"
+  ],
+  "EMACross5_40": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-22-25.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-24-03.zip"
+  ],
+  "HiLo10": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-22-34.zip"
+  ],
+  "PriceVsSMA200": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-30-20.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-30-42.zip"
+  ],
+  "TSMOM30": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-30-54.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-31-11.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_10-27-32.zip",
+    "user_data/backtest_results/holdout/tsmom-2026-09-26_10-26-57.zip"
+  ],
+  "VolTargetSMA200": [
+    "user_data/backtest_results/backtest-result-2026-09-26_06-31-27.zip",
+    "user_data/backtest_results/backtest-result-2026-09-26_06-31-39.zip"
+  ],
+  "RiskHoldC": [
+    "user_data/backtest_results/c-hold/backtest-result-2026-09-27_08-11-54.zip"
+  ],
+  "E0V1ENPFCT": [
+    "user_data/backtest_results/ct/c5-2024/backtest-result-2026-09-27_03-28-18.zip",
+    "user_data/backtest_results/ct/c5-2025/backtest-result-2026-09-27_03-28-09.zip",
+    "user_data/backtest_results/ct/c5-2026/backtest-result-2026-09-27_03-27-01.zip",
+    "user_data/backtest_results/ct/c5fee2-2024/backtest-result-2026-09-27_03-33-24.zip",
+    "user_data/backtest_results/ct/c5fee2-2025/backtest-result-2026-09-27_03-33-06.zip",
+    "user_data/backtest_results/ct/c5fee2-2026/backtest-result-2026-09-27_03-31-09.zip",
+    "user_data/backtest_results/ct/detail-2024/backtest-result-2026-09-27_03-36-03.zip",
+    "user_data/backtest_results/ct/detail-2025/backtest-result-2026-09-27_03-35-22.zip",
+    "user_data/backtest_results/ct/detail-2026/backtest-result-2026-09-27_03-35-16.zip",
+    "user_data/backtest_results/ct-smoke/backtest-result-2026-09-27_01-57-24.zip",
+    "user_data/backtest_results/ct-smoke/backtest-result-2026-09-27_01-57-33.zip"
+  ],
+  "E0V1ENX12CT": [
+    "user_data/backtest_results/ct/c5-2024/backtest-result-2026-09-27_03-28-18.zip",
+    "user_data/backtest_results/ct/c5-2025/backtest-result-2026-09-27_03-28-09.zip",
+    "user_data/backtest_results/ct/c5-2026/backtest-result-2026-09-27_03-27-01.zip",
+    "user_data/backtest_results/ct/c5fee2-2024/backtest-result-2026-09-27_03-33-24.zip",
+    "user_data/backtest_results/ct/c5fee2-2025/backtest-result-2026-09-27_03-33-06.zip",
+    "user_data/backtest_results/ct/c5fee2-2026/backtest-result-2026-09-27_03-31-09.zip",
+    "user_data/backtest_results/ct/detail-2024/backtest-result-2026-09-27_03-36-03.zip",
+    "user_data/backtest_results/ct/detail-2025/backtest-result-2026-09-27_03-35-22.zip",
+    "user_data/backtest_results/ct/detail-2026/backtest-result-2026-09-27_03-35-16.zip"
+  ],
+  "E0V1ENX12": [
+    "user_data/backtest_results/ct/detail-2024/backtest-result-2026-09-27_03-36-03.zip",
+    "user_data/backtest_results/ct/detail-2025/backtest-result-2026-09-27_03-35-22.zip",
+    "user_data/backtest_results/ct/detail-2026/backtest-result-2026-09-27_03-35-16.zip",
+    "user_data/backtest_results/recon-x12-1m/backtest-result-2026-09-27_01-52-13.zip",
+    "user_data/backtest_results/recon-x12-5m/backtest-result-2026-09-27_01-51-57.zip",
+    "user_data/backtest_results/x12/fee2-2021/backtest-result-2026-09-26_14-24-27.zip",
+    "user_data/backtest_results/x12/fee2-2022/backtest-result-2026-09-26_14-24-20.zip",
+    "user_data/backtest_results/x12/fee2-2023/backtest-result-2026-09-26_14-24-29.zip",
+    "user_data/backtest_results/x12/fee2-2426/backtest-result-2026-09-26_14-28-17.zip",
+    "user_data/backtest_results/x12/main-2021/backtest-result-2026-09-26_14-12-20.zip",
+    "user_data/backtest_results/x12/main-2022/backtest-result-2026-09-26_14-09-55.zip",
+    "user_data/backtest_results/x12/main-2023/backtest-result-2026-09-26_14-09-41.zip",
+    "user_data/backtest_results/x12/main-2426/backtest-result-2026-09-26_14-17-47.zip",
+    "user_data/backtest_results/x12smoke/backtest-result-2026-09-26_14-04-14.zip"
+  ],
+  "E0V1ENWait3": [
+    "user_data/backtest_results/e0v1en_confirm_20261004/backtest-result-2026-10-04_06-32-56.zip",
+    "user_data/backtest_results/e0v1en_wait3_2025_20261004-2026-10-04_06-38-39.zip"
+  ],
+  "E0V1ENConfirm3": [
+    "user_data/backtest_results/e0v1en_confirm_20261004/backtest-result-2026-10-04_06-32-56.zip"
+  ],
+  "E0V1ENX13": [
+    "user_data/backtest_results/review_20260927_dip-2026-09-27_09-36-48.zip",
+    "user_data/backtest_results/x13/fee075-2024/backtest-result-2026-09-27_05-00-29.zip",
+    "user_data/backtest_results/x13/fee075-2025/backtest-result-2026-09-27_05-00-10.zip",
+    "user_data/backtest_results/x13/fee075-2026/backtest-result-2026-09-27_04-59-55.zip",
+    "user_data/backtest_results/x13/fee10-2024/backtest-result-2026-09-27_05-00-08.zip",
+    "user_data/backtest_results/x13/fee10-2025/backtest-result-2026-09-27_05-00-09.zip",
+    "user_data/backtest_results/x13/fee10-2026/backtest-result-2026-09-27_04-58-35.zip",
+    "user_data/backtest_results/x13/fee20-2024/backtest-result-2026-09-27_05-00-09.zip",
+    "user_data/backtest_results/x13/fee20-2025/backtest-result-2026-09-27_04-59-47.zip",
+    "user_data/backtest_results/x13/fee20-2026/backtest-result-2026-09-27_04-59-52.zip",
+    "user_data/backtest_results/x13smoke/backtest-result-2026-09-27_04-53-36.zip"
+  ],
+  "E0V1ENBounded": [
+    "user_data/backtest_results/review_20260927_dip-2026-09-27_09-36-48.zip"
+  ],
+  "NostalgiaForInfinityX8Budget": [
+    "user_data/backtest_results/review_20260927_x8-2026-09-27_09-50-18.zip"
+  ],
+  "E0V1ENX13R": [
+    "user_data/backtest_results/x13/Rfee075-2024/backtest-result-2026-09-27_05-08-16.zip",
+    "user_data/backtest_results/x13/Rfee075-2025/backtest-result-2026-09-27_05-07-43.zip",
+    "user_data/backtest_results/x13/Rfee075-2026/backtest-result-2026-09-27_05-06-35.zip",
+    "user_data/backtest_results/x13/Rfee10-2024/backtest-result-2026-09-27_05-07-01.zip",
+    "user_data/backtest_results/x13/Rfee10-2025/backtest-result-2026-09-27_05-06-38.zip",
+    "user_data/backtest_results/x13/Rfee10-2026/backtest-result-2026-09-27_05-04-08.zip",
+    "user_data/backtest_results/x13/Rfee20-2024/backtest-result-2026-09-27_05-07-38.zip",
+    "user_data/backtest_results/x13/Rfee20-2025/backtest-result-2026-09-27_05-06-53.zip",
+    "user_data/backtest_results/x13/Rfee20-2026/backtest-result-2026-09-27_05-05-26.zip"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "captured_utc": "2026-10-04T07:35:36.442750+00:00",
+  "root_revision": "6637d6212ee080a44cf9f0ac37e345fc9b0746f6",
+  "user_data_revision": "db6de6de7a22469f4aaeb05306adda53a9e8b1b1",
+  "source_sha256": {
+    "user_data/strategies/NostalgiaForInfinityX8.py": "9b13df0335fafc93c5bbb8418c06f8903c6d1d06195a1721a9265644eb0585db",
+    "user_data/strategies/NostalgiaForInfinityX8PF.py": "7c3b8d333ec8adf4d5dd8433f577e138dcfeba79542e303ffcdae837a19b3d66",
+    "user_data/strategies/NostalgiaForInfinityX8Budget.py": "385a6f05f5d4413369493e8d0a3959fd8317ff73ff874d982f8934cee4363e5f",
+    "user_data/strategies/NostalgiaForInfinityX8CostCap.py": "64715479e2105dff5419d03c55bff95c9537809ef7f3c15d2b07b203f0e757e3",
+    "user_data/strategies/phantom_fill.py": "3e08253da3ae6484419ad485d929cbfb4966c4438add221e3e91e0842c18e2f6",
+    "user_data/strategies/nfi_backtest_state.py": "d4c0fb18c34b4b8267645059013890e245df951c83a440527ce1eff01ffa5a7c",
+    "user_data/bench/review_20260927/x8.json": "e76d3a9f366e5bef989617e0a8656910c90ee8295209d742410040903ce2d59a",
+    "user_data/config-net.json": "57e6d46f43fd440caf7e4b4ad91714a6ce66eb093cd4ac8d6bd8c4599b67a1fc"
+  },
+  "timerange": "20240101-20250101",
+  "all_in_side_cost": 0.0012,
+  "timeframe_detail": "1m",
+  "profit_target_state": "new in-memory cache per instance and bot_start; on-disk historical cache never read",
+  "aborted_runs": [
+    {
+      "label": "r2_2024",
+      "reason": "liquidity reduction unit bug discovered before result"
+    },
+    {
+      "label": "r2_fixed_2024",
+      "reason": "shared persistent historical cache contamination risk; not an admissible outcome"
+    }
+  ],
+  "historical_cache_fix_committed_as": "3403c73",
+  "deployed_cache_regression": "2 server-image tests passed; no running bot dependency affected"
+}

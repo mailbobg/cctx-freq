@@ -1,0 +1,19 @@
+{
+  "source_sha256": {
+    "PROTOCOL.md": "fdde95ae72e4883f4ef7aa0f3addedc8d37c7f5640dfcbcb700749a8a8b2b142",
+    "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+    "r3_drawdown_budget.py": "353ad72350b4302da112278a558fbf1461b75bd05bd3916ed721aa31d2cd8af0",
+    "r4_daily_vol_reductions.py": "c6bfc2e9f0e40936c3843af120215c2479a2ab621e4ac9bb6c61aae84f1859a0",
+    "summarize_r1_freqtrade.py": "dad71a6a151ca5ff169eb9e97ff38f8f6096ca67dad1b1e1963150c6c1e3f3a5",
+    "funding_probe.py": "2ce1caf9f3050de1a3b578f7ea3a6ce8f0032eebfa7063298e9ad318c180c065",
+    "r5_funding_universe.py": "e0192fece454fe743a5e1d4ffe663ace133b9d440c52ba62d808a4bfb4b1d816"
+  },
+  "output_sha256": {
+    "r1_results.json": "3e6ea8516f1a07e3cf4d867eb13b0485157a64ec77f683340e8f7de00cad9fc4",
+    "r3_results.json": "79d172c106927c36c34eab7f61c48dcad70dc9810aa1aea5f4375cf8d4060510",
+    "r4_results.json": "93b7d12de1cb63c301adcfbf2448a87e1f1de0db78630e4efefe43e3dc96b2c9",
+    "r1_freq_results.json": "4c1bc11b0931932e3ba199c0b9038a6c6f62ed5c7ef855708f34a3d0d85fd8ec",
+    "r5_results.json": "b2cb847ca1495a5e689b48b0648bebd9fd6b24a84b8d92087f4de354179e3215"
+  },
+  "note": "R1 terminal-liquidation flag added only for Freqtrade matching; original screens use default False. Baseline pair processing and available-stake constraints differ from the simple common engine. No adoption threshold or running cohort changed."
+}

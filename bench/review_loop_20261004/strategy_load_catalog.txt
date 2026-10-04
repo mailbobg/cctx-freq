@@ -1,0 +1,82 @@
+2026-10-04 15:26:04,571 - freqtrade - INFO - freqtrade 2026.9-dev-6637d6212
+2026-10-04 15:26:04,776 - numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+2026-10-04 15:26:06,096 - freqtrade.configuration.load_config - INFO - Using config: user_data/bench/review_20260927/x8.json ...
+2026-10-04 15:26:06,097 - freqtrade.configuration.configuration - INFO - Parameter --no-color detected ...
+2026-10-04 15:26:06,098 - freqtrade.loggers - INFO - Logfile configured
+2026-10-04 15:26:06,098 - freqtrade.loggers - INFO - Verbosity set to 0
+2026-10-04 15:26:06,098 - freqtrade.configuration.configuration - INFO - Using user-data directory: /Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data ...
+2026-10-04 15:26:06,099 - freqtrade.configuration.configuration - INFO - Using data directory: /Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/data/binance ...
+2026-10-04 15:26:06,099 - freqtrade.exchange.check_exchange - INFO - Checking exchange...
+2026-10-04 15:26:06,103 - freqtrade.exchange.check_exchange - INFO - Exchange "binance" is officially supported by the Freqtrade development team.
+2026-10-04 15:26:06,104 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2026-10-04 15:26:06,104 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/strategies/ReinforcedSmoothScalp.py:9: FutureWarning: 'freqtrade.vendor.qtpylib.indicators' is deprecated and will be removed in a future release. Import from technical instead - either the module (`from technical import qtpylib`) or a single function (`from technical.qtpylib import crossed_above`).
+  import freqtrade.vendor.qtpylib.indicators as qtpylib
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┓
+┃                 Strategy name ┃                         Location ┃ Status ┃ Hyperoptable ┃ Buy-params ┃ Sell-params ┃ Protection-params ┃ Custom-params ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━┩
+│                 BBBreakoutBTC │                 BBBreakoutBTC.py │     OK │           No │          0 │           0 │                 0 │               │
+│                       BinHV45 │                       BinHV45.py │     OK │           No │          0 │           0 │                 0 │               │
+│                     Cluc5mDCA │                  ClucHAnix_5m.py │     OK │          Yes │          5 │           7 │                 0 │               │
+│                  ClucHAnix_5m │                  ClucHAnix_5m.py │     OK │          Yes │          5 │           7 │                 0 │               │
+│                  ClucMay72018 │                  ClucMay72018.py │     OK │           No │          0 │           0 │                 0 │               │
+│           CombinedBinHAndCluc │           CombinedBinHAndCluc.py │     OK │           No │          0 │           0 │                 0 │               │
+│                   ConnorsRSI2 │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│                        E0V1EN │                        E0V1EN.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                 E0V1ENBounded │                 E0V1ENBounded.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                E0V1ENConfirm3 │                 E0V1ENConfirm.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                      E0V1ENPF │                      E0V1ENPF.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                    E0V1ENPFCT │              E0V1ENCloseTrail.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                   E0V1ENWait3 │                 E0V1ENConfirm.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                     E0V1ENX12 │                     E0V1ENX12.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                   E0V1ENX12CT │              E0V1ENCloseTrail.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                     E0V1ENX13 │                     E0V1ENX13.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                    E0V1ENX13R │                     E0V1ENX13.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                    E0V1EN_VEI │                    E0V1EN_VEI.py │     OK │          Yes │          8 │           1 │                 0 │               │
+│                  EMACross5_40 │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│                      Elliotv8 │                      ElliotV8.py │     OK │          Yes │          5 │           3 │                 0 │               │
+│                    Elliotv8PF │                    Elliotv8PF.py │     OK │          Yes │          5 │           3 │                 0 │               │
+│                      EmaCross │                      EmaCross.py │     OK │          Yes │          1 │           1 │                 0 │               │
+│               EmaCrossFunding │               EmaCrossFunding.py │     OK │          Yes │          2 │           1 │                 0 │               │
+│            FixedPairControlV1 │                UnlockPressure.py │     OK │           No │          0 │           0 │                 0 │               │
+│               FlushReboundX11 │               FlushReboundX11.py │     OK │           No │          0 │           0 │                 0 │               │
+│             FundingCrowdingX9 │             FundingCrowdingX9.py │     OK │           No │          0 │           0 │                 0 │               │
+│           FundingReversionX9b │           FundingReversionX9b.py │     OK │           No │          0 │           0 │                 0 │               │
+│                   GoldenCross │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│                HedgedFlushX14 │                HedgedFlushX14.py │     OK │           No │          0 │           0 │                 0 │               │
+│                        HiLo10 │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│              IBSMeanReversion │              IBSMeanReversion.py │     OK │           No │          0 │           0 │                 0 │               │
+│                  MultiMA_TSL3 │                   MultiMA_TSL.py │     OK │          Yes │         28 │           8 │                 4 │               │
+│                 MultiMA_TSL3a │                   MultiMA_TSL.py │     OK │          Yes │         28 │           8 │                 4 │               │
+│                       NASOSv5 │                       NASOSv5.py │     OK │          Yes │         10 │           3 │                 0 │               │
+│                     NDownDays │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│        NostalgiaForInfinityX7 │        NostalgiaForInfinityX7.py │     OK │           No │          0 │           0 │                 0 │               │
+│      NostalgiaForInfinityX7PF │      NostalgiaForInfinityX7PF.py │     OK │           No │          0 │           0 │                 0 │               │
+│        NostalgiaForInfinityX8 │        NostalgiaForInfinityX8.py │     OK │           No │          0 │           0 │                 0 │               │
+│  NostalgiaForInfinityX8Budget │  NostalgiaForInfinityX8Budget.py │     OK │           No │          0 │           0 │                 0 │               │
+│ NostalgiaForInfinityX8CostCap │ NostalgiaForInfinityX8CostCap.py │     OK │           No │          0 │           0 │                 0 │               │
+│      NostalgiaForInfinityX8PF │      NostalgiaForInfinityX8PF.py │     OK │           No │          0 │           0 │                 0 │               │
+│   NotAnotherSMAOffsetStrategy │   NotAnotherSMAOffsetStrategy.py │     OK │          Yes │          7 │           3 │                 0 │               │
+│             OversoldReversion │             OversoldReversion.py │     OK │           No │          0 │           0 │                 0 │               │
+│                 PriceVsSMA200 │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│         ReinforcedSmoothScalp │         ReinforcedSmoothScalp.py │     OK │           No │          0 │           0 │                 0 │               │
+│                     RiskHoldC │                     RiskHoldC.py │     OK │           No │          0 │           0 │                 0 │               │
+│            RiskHoldCPortfolio │            RiskHoldCPortfolio.py │     OK │           No │          0 │           0 │                 0 │               │
+│                   RiskHoldR2b │                   RiskHoldR2b.py │     OK │           No │          0 │           0 │                 0 │               │
+│         SMAOffsetProtectOptV1 │         SMAOffsetProtectOptV1.py │     OK │          Yes │          5 │           2 │                 0 │               │
+│                SampleStrategy │               sample_strategy.py │     OK │          Yes │          1 │           2 │                 0 │       exit: 1 │
+│                         Scalp │                         Scalp.py │     OK │           No │          0 │           0 │                 0 │               │
+│            ShortNewListingsL2 │            ShortNewListingsL2.py │     OK │           No │          0 │           0 │                 0 │               │
+│           ShortNewListingsL2P │           ShortNewListingsL2P.py │     OK │           No │          0 │           0 │                 0 │               │
+│                   SmoothScalp │                   SmoothScalp.py │     OK │           No │          0 │           0 │                 0 │               │
+│                       TSMOM30 │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│                   TurnOfMonth │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│                TurtleCryptoS2 │                TurtleCryptoS2.py │     OK │           No │          0 │           0 │                 0 │               │
+│            UnlockPressureLSV1 │                UnlockPressure.py │     OK │           No │          0 │           0 │                 0 │               │
+│         UnlockPressureShortV1 │                UnlockPressure.py │     OK │           No │          0 │           0 │                 0 │               │
+│                      UnlockXS │                      UnlockXS.py │     OK │           No │          0 │           0 │                 0 │               │
+│               VolTargetSMA200 │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+│                 XSMomentumX10 │                 XSMomentumX10.py │     OK │           No │          0 │           0 │                 0 │               │
+│           ZScoreTrendSentinel │           ZScoreTrendSentinel.py │     OK │           No │          0 │           0 │                 0 │               │
+│                        _Daily │                  ClassicRules.py │     OK │           No │          0 │           0 │                 0 │               │
+└───────────────────────────────┴──────────────────────────────────┴────────┴──────────────┴────────────┴─────────────┴───────────────────┴───────────────┘

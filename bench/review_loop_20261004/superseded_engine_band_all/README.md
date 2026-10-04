@@ -1,0 +1,1 @@
+Superseded research-engine results retained as audit evidence. The engine incorrectly applied the 5pp position-adjustment band to first entries and full off-signal exits. Two regressions reproduced both mismatches before the correction. These results are not current selection evidence; no live bot rule was changed.

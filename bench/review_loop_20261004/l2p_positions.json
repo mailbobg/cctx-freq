@@ -1,0 +1,24 @@
+[
+  {
+    "pair": "CT/USDT:USDT",
+    "is_short": true,
+    "amount": 511.0,
+    "stake_amount": 247.43131,
+    "open_rate": 0.48421,
+    "current_rate": 0.4851,
+    "profit_abs": -0.73717884,
+    "funding_fees": -0.034730139630199997,
+    "open_date": "2026-10-04 00:00:52"
+  },
+  {
+    "pair": "BTC/USDT:USDT",
+    "is_short": false,
+    "amount": 0.002,
+    "stake_amount": 169.5276,
+    "open_rate": 84763.8,
+    "current_rate": 84938.4,
+    "profit_abs": 0.1794978,
+    "funding_fees": 0.0,
+    "open_date": "2026-10-04 01:00:50"
+  }
+]

@@ -1,0 +1,980 @@
+{
+  "analyzed_utc": "2026-10-04T08:04:28.354177+00:00",
+  "assets_fixed_before_fetch": [
+    "BTC",
+    "ETH",
+    "SOL",
+    "XRP",
+    "BNB",
+    "ADA",
+    "DOGE",
+    "AVAX"
+  ],
+  "window": [
+    "2026-07-05 00:00:00+00:00",
+    "2026-10-04 00:00:00+00:00"
+  ],
+  "cost_hurdle_bps": 38.0,
+  "data_errors": {
+    "bybit": {},
+    "okx": {}
+  },
+  "summary": {
+    "BTC": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 8.700047889444,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    },
+    "ETH": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 6.503429011132999,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    },
+    "SOL": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 5.738407368778002,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    },
+    "XRP": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 7.335092900888001,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    },
+    "BNB": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 8.433844493006005,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    },
+    "ADA": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 13.026804451818004,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    },
+    "DOGE": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 9.624541147524,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    },
+    "AVAX": {
+      "complete_weekly_windows": 11,
+      "qualifying_entries": 0,
+      "max_forecast_bps": 6.1602680422619995,
+      "qualified_carry_less_cost_bps": [],
+      "enough_cycles_for_further_profit_test": false
+    }
+  },
+  "weekly_rows": {
+    "BTC": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00010408397152019983,
+        "realized_spread": -0.0002057403109807,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040057403109807
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0002057403109807,
+        "realized_spread": 0.00015088427688140002,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036491157231186
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00015088427688140002,
+        "realized_spread": 8.42611784772e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037157388215228
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 8.42611784772e-05,
+        "realized_spread": 0.00017424942639729997,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036257505736027
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00017424942639729997,
+        "realized_spread": 0.0008700047889444001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0029299952110556
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0008700047889444001,
+        "realized_spread": 4.255294976009995e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037574470502399
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 4.255294976009995e-05,
+        "realized_spread": 0.00023156796125900015,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.003568432038741
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00023156796125900015,
+        "realized_spread": -9.733917194650011e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0038973391719465
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 9.733917194650011e-05,
+        "realized_spread": -0.00035775405077759996,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0041577540507776
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00035775405077759996,
+        "realized_spread": 0.0001947393427876999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036052606572123
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0001947393427876999,
+        "realized_spread": -5.050753144470008e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0038505075314447003
+      }
+    ],
+    "ETH": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0001344294887374001,
+        "realized_spread": 0.0002630898819547,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0035369101180453
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0002630898819547,
+        "realized_spread": 0.0005610813095652,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0032389186904348
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0005610813095652,
+        "realized_spread": 0.00032696665181390004,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0034730333481861
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00032696665181390004,
+        "realized_spread": 0.00012050337411820001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036794966258818
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00012050337411820001,
+        "realized_spread": -0.0005112039981288001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0043112039981288
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0005112039981288001,
+        "realized_spread": -0.00020036313964120014,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040003631396412
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00020036313964120014,
+        "realized_spread": -0.0006503429011132999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0044503429011133
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0006503429011132999,
+        "realized_spread": 8.299432279589968e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037170056772041003
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 8.299432279589968e-05,
+        "realized_spread": 0.0003760940497542001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0034239059502458
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0003760940497542001,
+        "realized_spread": 0.00010072651256999988,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036992734874300003
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00010072651256999988,
+        "realized_spread": -4.046655722609997e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0038404665572261
+      }
+    ],
+    "SOL": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0003320292995018,
+        "realized_spread": 0.0005391674455477,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0032608325544523
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0005391674455477,
+        "realized_spread": 0.00027552386596239994,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0035244761340376
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00027552386596239994,
+        "realized_spread": -0.00021938825719229992,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040193882571923
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00021938825719229992,
+        "realized_spread": -0.0005738407368778003,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0043738407368778005
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0005738407368778003,
+        "realized_spread": -0.0001451431758766001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0039451431758766
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0001451431758766001,
+        "realized_spread": 0.00018054811721059994,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036194518827894
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00018054811721059994,
+        "realized_spread": -0.00010310841177120001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0039031084117712002
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00010310841177120001,
+        "realized_spread": 4.265512899290013e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037573448710071
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 4.265512899290013e-05,
+        "realized_spread": 0.00021143977052899996,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.003588560229471
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00021143977052899996,
+        "realized_spread": 0.00038038581655770005,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0034196141834423
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00038038581655770005,
+        "realized_spread": -3.391795435660021e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0038339179543566003
+      }
+    ],
+    "XRP": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00046547359983820005,
+        "realized_spread": 0.0006532934818614002,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0031467065181385997
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0006532934818614002,
+        "realized_spread": 0.0002963307373472001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0035036692626527997
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0002963307373472001,
+        "realized_spread": -3.751958441249999e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0038375195844125
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 3.751958441249999e-05,
+        "realized_spread": 3.7080378706200016e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037629196212938
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 3.7080378706200016e-05,
+        "realized_spread": -0.0002111974722217001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040111974722217
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0002111974722217001,
+        "realized_spread": 6.819355297440002e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037318064470256
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 6.819355297440002e-05,
+        "realized_spread": 0.0006027075876259,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0031972924123741
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0006027075876259,
+        "realized_spread": 0.00045548837922209967,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0033445116207779
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00045548837922209967,
+        "realized_spread": 0.0007335092900888001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0030664907099112
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0007335092900888001,
+        "realized_spread": 6.426349252850014e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037357365074714996
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 6.426349252850014e-05,
+        "realized_spread": 0.0003506740598282004,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0034493259401717994
+      }
+    ],
+    "BNB": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0004936836881652001,
+        "realized_spread": -0.0004904282310839999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.004290428231084
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0004904282310839999,
+        "realized_spread": -0.00011529064846219994,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0039152906484622
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00011529064846219994,
+        "realized_spread": 0.0008433844493006004,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0029566155506993994
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0008433844493006004,
+        "realized_spread": -0.00043529924518609993,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0042352992451861
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00043529924518609993,
+        "realized_spread": -0.0006880913014470002,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.004488091301447001
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0006880913014470002,
+        "realized_spread": 4.256691911350011e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037574330808865
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 4.256691911350011e-05,
+        "realized_spread": 0.0002767423413190999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0035232576586809
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0002767423413190999,
+        "realized_spread": 0.00017773701368060035,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036222629863193996
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00017773701368060035,
+        "realized_spread": 0.000601994879373,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.003198005120627
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.000601994879373,
+        "realized_spread": 0.0004979497825245,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0033020502174755002
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0004979497825245,
+        "realized_spread": 0.0014091664987678004,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0023908335012321996
+      }
+    ],
+    "ADA": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0003671199891395001,
+        "realized_spread": -0.0003371275825547001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0041371275825547
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0003371275825547001,
+        "realized_spread": 0.00018651216481019994,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036134878351898
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00018651216481019994,
+        "realized_spread": 0.00011805657601790011,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036819434239821
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00011805657601790011,
+        "realized_spread": -0.00047215689514559995,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0042721568951456
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00047215689514559995,
+        "realized_spread": -0.0006395393980964,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0044395393980964
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0006395393980964,
+        "realized_spread": 0.00010033470169549998,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036996652983045
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00010033470169549998,
+        "realized_spread": -0.0013026804451818003,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0051026804451818
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0013026804451818003,
+        "realized_spread": 0.00030282075298450014,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0034971792470154996
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00030282075298450014,
+        "realized_spread": 0.0005790527451641001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0032209472548359
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0005790527451641001,
+        "realized_spread": -0.0002281506741698999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040281506741699
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0002281506741698999,
+        "realized_spread": -0.0007710499999999997,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.00457105
+      }
+    ],
+    "DOGE": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 7.449521922439997e-05,
+        "realized_spread": 0.0009624541147524,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0028375458852476
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0009624541147524,
+        "realized_spread": 0.0006083216227178002,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0031916783772821997
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0006083216227178002,
+        "realized_spread": -6.577359317490002e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0038657735931749
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 6.577359317490002e-05,
+        "realized_spread": -0.00045726780269310006,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0042572678026931
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00045726780269310006,
+        "realized_spread": 0.0009055171868101999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0028944828131898
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0009055171868101999,
+        "realized_spread": 0.00015788014206480003,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036421198579352
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00015788014206480003,
+        "realized_spread": 0.0001319973654528001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036680026345472
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0001319973654528001,
+        "realized_spread": 0.0004605195782803001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0033394804217196997
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0004605195782803001,
+        "realized_spread": 0.0009283824770489,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0028716175229511
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0009283824770489,
+        "realized_spread": 0.0005565202727507,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0032434797272493
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0005565202727507,
+        "realized_spread": 0.0005277556387653,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0032722443612347
+      }
+    ],
+    "AVAX": [
+      {
+        "decision": "2026-07-13T01:00:00+00:00",
+        "exit": "2026-07-20T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 2.1684036564600148e-05,
+        "realized_spread": -0.0006160268042261999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0044160268042261995
+      },
+      {
+        "decision": "2026-07-20T01:00:00+00:00",
+        "exit": "2026-07-27T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0006160268042261999,
+        "realized_spread": -0.0002945946142260999,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040945946142261
+      },
+      {
+        "decision": "2026-07-27T01:00:00+00:00",
+        "exit": "2026-08-03T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0002945946142260999,
+        "realized_spread": 0.0001152914896815001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0036847085103184998
+      },
+      {
+        "decision": "2026-08-03T01:00:00+00:00",
+        "exit": "2026-08-10T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0001152914896815001,
+        "realized_spread": -0.0004419670191832002,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0042419670191832
+      },
+      {
+        "decision": "2026-08-10T01:00:00+00:00",
+        "exit": "2026-08-17T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.0004419670191832002,
+        "realized_spread": -0.0001808962183870001,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.003980896218387
+      },
+      {
+        "decision": "2026-08-17T01:00:00+00:00",
+        "exit": "2026-08-24T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.0001808962183870001,
+        "realized_spread": -4.875878374330017e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0038487587837433
+      },
+      {
+        "decision": "2026-08-24T01:00:00+00:00",
+        "exit": "2026-08-31T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 4.875878374330017e-05,
+        "realized_spread": -0.00026516408414669983,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040651640841467
+      },
+      {
+        "decision": "2026-08-31T01:00:00+00:00",
+        "exit": "2026-09-07T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00026516408414669983,
+        "realized_spread": -0.00029422766478050017,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040942276647805
+      },
+      {
+        "decision": "2026-09-07T01:00:00+00:00",
+        "exit": "2026-09-14T01:00:00+00:00",
+        "short_venue": "okx",
+        "forecast_spread": 0.00029422766478050017,
+        "realized_spread": -0.00027032345184649977,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0040703234518465
+      },
+      {
+        "decision": "2026-09-14T01:00:00+00:00",
+        "exit": "2026-09-21T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 0.00027032345184649977,
+        "realized_spread": 6.214103256669992e-05,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0037378589674333003
+      },
+      {
+        "decision": "2026-09-21T01:00:00+00:00",
+        "exit": "2026-09-28T01:00:00+00:00",
+        "short_venue": "bybit",
+        "forecast_spread": 6.214103256669992e-05,
+        "realized_spread": -0.00013315357399590019,
+        "cost_hurdle": 0.0038,
+        "eligible": false,
+        "carry_less_cost": -0.0039331535739959
+      }
+    ]
+  },
+  "limitation": "Necessary funding-only screen. No mark-weighted funding, basis PnL, executable fills or capital return. Not an OOS profit claim.",
+  "qualifying_entries_total": 0
+}

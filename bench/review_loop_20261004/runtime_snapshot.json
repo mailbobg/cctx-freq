@@ -1,0 +1,1333 @@
+[
+  {
+    "name": "e0v1en-live",
+    "strategy": "E0V1EN",
+    "bot_name": "e0v1en-live",
+    "port": 8094,
+    "description": "E0V1EN 实盘（Binance 现货，约 20 USDT，2 个仓位）· 真实资金，只用来测量真实成交和手续费，和 e0v1en 模拟盘对照",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 0,
+    "max_trades": 2,
+    "closed_trades": 20,
+    "profit_closed": -2.58671941,
+    "profit_all": -2.58671941,
+    "winrate": 0.7,
+    "stake": "USDT",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.70886753,
+        "trades": 3
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.022747689999999987,
+        "trades": 6
+      },
+      {
+        "date": "2026-10-02",
+        "abs": -3.0522977300000003,
+        "trades": 6
+      },
+      {
+        "date": "2026-10-03",
+        "abs": -0.43689903999999996,
+        "trades": 4
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.17086214,
+        "trades": 1
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "e0v1en",
+    "strategy": "E0V1ENWait3",
+    "bot_name": "e0v1en",
+    "port": 8083,
+    "description": "E0V1ENWait3：原信号延迟 3 根 5 分钟 K 线，118 币现货模拟盘 · 独立前向记录；历史对照未通过采用标准",
+    "runtime": "freqtrade",
+    "want": "running",
+    "pid": "6186c8da38e6",
+    "restarts_24h": 0,
+    "uptime_s": 539,
+    "mem_mb": 455,
+    "api": "up",
+    "trading": "running",
+    "dry_run": true,
+    "open_trades": 0,
+    "max_trades": 6,
+    "closed_trades": 0,
+    "profit_all": 0.0,
+    "profit_closed": 0.0,
+    "winrate": 0.0,
+    "stake": "USDT",
+    "timeframe": "5m",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ]
+  },
+  {
+    "name": "x7",
+    "strategy": "NostalgiaForInfinityX7",
+    "bot_name": "nfi-x7",
+    "port": 8080,
+    "description": "NFI X7，100 币动态选币",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 1,
+    "max_trades": 6,
+    "closed_trades": 3,
+    "profit_closed": 7.7911560600000005,
+    "profit_all": -9.984711940000006,
+    "winrate": 0.6666666666666666,
+    "stake": "USDT",
+    "positions": [
+      {
+        "pair": "AUDIO/USDT",
+        "profit_pct": -4.31,
+        "profit_abs": -17.775868000000006,
+        "open_date": "2026-09-28 08:15:44",
+        "stake": 412.821145,
+        "tag": ""
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 4.2969387,
+        "trades": 1
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 21.9377004,
+        "trades": 1
+      },
+      {
+        "date": "2026-09-27",
+        "abs": -18.44348304,
+        "trades": 1
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "x8",
+    "strategy": "NostalgiaForInfinityX8",
+    "bot_name": "nfi-x8",
+    "port": 8081,
+    "description": "NFI X8，100 币动态选币",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 0,
+    "max_trades": 6,
+    "closed_trades": 3,
+    "profit_closed": -4.884938540000002,
+    "profit_all": -4.884938540000002,
+    "winrate": 0.6666666666666666,
+    "stake": "USDT",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 2.3316762,
+        "trades": 1
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 11.2232446,
+        "trades": 1
+      },
+      {
+        "date": "2026-09-27",
+        "abs": -18.43985934,
+        "trades": 1
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "x12",
+    "strategy": "E0V1ENX12",
+    "bot_name": "x12",
+    "port": 8082,
+    "description": "E0V1EN + 崩盘保护，118 币现货",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 1,
+    "max_trades": 6,
+    "closed_trades": 7,
+    "profit_closed": -315.15235574999997,
+    "profit_all": -428.34399805000004,
+    "winrate": 0.42857142857142855,
+    "stake": "USDT",
+    "positions": [
+      {
+        "pair": "ONE/USDT",
+        "profit_pct": -7.08,
+        "profit_abs": -113.19164230000007,
+        "open_date": "2026-09-28 07:06:32",
+        "stake": 1597.999656,
+        "tag": ""
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 8.844938139999996,
+        "trades": 2
+      },
+      {
+        "date": "2026-09-27",
+        "abs": -7.198529439999994,
+        "trades": 3
+      },
+      {
+        "date": "2026-09-28",
+        "abs": -316.79876444999996,
+        "trades": 2
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "c-hold",
+    "strategy": "RiskHoldC",
+    "bot_name": "c-hold",
+    "port": 8084,
+    "description": "C：BTC/ETH 每周按趋势和波动率调仓（参考记录，未过预注册标准 1）",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 2,
+    "max_trades": 2,
+    "closed_trades": 2,
+    "profit_closed": -61.69497172,
+    "profit_all": 132.85838787999984,
+    "winrate": 0.0,
+    "stake": "USDT",
+    "positions": [
+      {
+        "pair": "BTC/USDT",
+        "profit_pct": 2.25,
+        "profit_abs": 110.45980759999986,
+        "open_date": "2026-09-28 07:15:49",
+        "stake": 4919.3568641,
+        "tag": ""
+      },
+      {
+        "pair": "ETH/USDT",
+        "profit_pct": 1.71,
+        "profit_abs": 84.09355199999996,
+        "open_date": "2026-09-28 07:15:49",
+        "stake": 4919.3892,
+        "tag": ""
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": -61.69497172,
+        "trades": 2
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "c-hold-sma",
+    "strategy": "RiskHoldR2b",
+    "bot_name": "c-hold-sma",
+    "port": 8096,
+    "description": "R2b：C 加 200 日均线软过滤（均线下方半仓）· BTC/ETH 每周调仓 · 模拟盘前向记录；回测 6 项预注册标准全过，但回测窗口此前已被看过",
+    "runtime": "freqtrade",
+    "note": "下次决定 10-05 00:00 UTC（周一），还有 16 小时 41 分钟。每周一 00:00 UTC 用周日收盘决定一次仓位，其余时间不动",
+    "want": "running",
+    "pid": "0b77051b6e7b",
+    "restarts_24h": 0,
+    "uptime_s": 188435,
+    "mem_mb": 524,
+    "api": "up",
+    "trading": "running",
+    "dry_run": true,
+    "open_trades": 0,
+    "max_trades": 2,
+    "closed_trades": 0,
+    "profit_all": 0.0,
+    "profit_closed": 0.0,
+    "winrate": 0.0,
+    "stake": "USDT",
+    "timeframe": "1d",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ]
+  },
+  {
+    "name": "unlock-short",
+    "strategy": "UnlockPressureShortV1",
+    "bot_name": "unlock-short",
+    "port": 8085,
+    "description": "解锁供给压力仅做空 · APT/TIA · 1h · 1倍杠杆 · 独立模拟；研究候选，尚未验证稳定盈利",
+    "runtime": "freqtrade",
+    "note": "下次决定 10-05 01:00 UTC（周一），还有 17 小时 41 分钟。每周只在这个时间点决定一次：APT 和 TIA 里解锁压力更大的开 1 倍空单",
+    "want": "running",
+    "pid": "9e66e181ef00",
+    "restarts_24h": 0,
+    "uptime_s": 522444,
+    "mem_mb": 123,
+    "api": "up",
+    "trading": "running",
+    "dry_run": true,
+    "open_trades": 0,
+    "max_trades": 1,
+    "closed_trades": 0,
+    "profit_all": 0.0,
+    "profit_closed": 0.0,
+    "winrate": 0.0,
+    "stake": "USDT",
+    "timeframe": "1h",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ]
+  },
+  {
+    "name": "funding-spread",
+    "strategy": "CrossVenueFundingV1",
+    "bot_name": "funding-spread",
+    "port": 8086,
+    "description": "跨平台资金费差 · Bybit/OKX BTC/ETH · 一个双边组合 · 独立模拟；扣除成本后无优势则空仓",
+    "runtime": "cross_venue_paper",
+    "detail_url": "http://127.0.0.1:8086/",
+    "portfolio_url": "http://127.0.0.1:8086/portfolio",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 0,
+    "max_trades": 1,
+    "closed_trades": 0,
+    "profit_closed": 0,
+    "profit_all": 0.0,
+    "winrate": 0.0,
+    "stake": "USDT",
+    "positions": [],
+    "note": "模拟服务已停止；权益与浮盈为最后一次采集估值",
+    "daily": []
+  },
+  {
+    "name": "x14",
+    "strategy": "HedgedFlushX14",
+    "bot_name": "x14",
+    "port": 8087,
+    "description": "X14：全市场恐慌抛售时做多被砸的 5 个币、等额做空 BTC，24 小时平仓 · 合约模拟 · 参考记录（预注册未通过：2025–26 亏损、回撤 28%）",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 0,
+    "max_trades": 12,
+    "closed_trades": 0,
+    "profit_closed": 0,
+    "profit_all": 0.0,
+    "winrate": 0,
+    "stake": "USDT",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "x14-bybit",
+    "strategy": "HedgedFlushX14",
+    "bot_name": "x14-bybit",
+    "port": 8088,
+    "description": "X14 在 Bybit 合约上的复现（对照组）· 模拟盘 · X14-V 验证未通过（2025 −16%）· 仅作参考记录",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down"
+  },
+  {
+    "name": "x14-bitget",
+    "strategy": "HedgedFlushX14",
+    "bot_name": "x14-bitget",
+    "port": 8091,
+    "description": "X14 在 Bitget 合约上的复现（低效率市场假设）· 模拟盘 · X14-V 验证未通过（2025 −14.5%）· 仅作参考记录",
+    "runtime": "freqtrade",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 0,
+    "max_trades": 12,
+    "closed_trades": 0,
+    "profit_closed": 0,
+    "profit_all": 0.0,
+    "winrate": 0,
+    "stake": "USDT",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "l2p-listings",
+    "strategy": "ShortNewListingsL2P",
+    "bot_name": "l2p-listings",
+    "port": 8092,
+    "description": "L2P：做空新上线合约（币 + Pre-IPO 盘前合约），上线后第3天开空，2.5%仓位，BTC对冲，21天或3倍价格平仓 · 全仓1倍 · 前向模拟测试，2027-03-31后按预注册标准评判",
+    "runtime": "freqtrade",
+    "note": "入场窗口进行中：CT（窗口至 10-05 00:00 UTC）",
+    "want": "running",
+    "pid": "b2ec8854d62c",
+    "restarts_24h": 0,
+    "uptime_s": 261240,
+    "mem_mb": 361,
+    "api": "up",
+    "trading": "running",
+    "dry_run": true,
+    "open_trades": 2,
+    "max_trades": 11,
+    "closed_trades": 0,
+    "profit_all": -0.06957795,
+    "profit_closed": 0.0,
+    "winrate": 0.0,
+    "stake": "USDT",
+    "timeframe": "1h",
+    "positions": [
+      {
+        "pair": "CT/USDT:USDT",
+        "profit_pct": -0.07,
+        "profit_abs": -0.17991035,
+        "open_date": "2026-10-04 00:00:52",
+        "stake": 247.43131,
+        "tag": "new_listing"
+      },
+      {
+        "pair": "BTC/USDT:USDT",
+        "profit_pct": 0.07,
+        "profit_abs": 0.1103324,
+        "open_date": "2026-10-04 01:00:50",
+        "stake": 169.5276,
+        "tag": "hedge"
+      }
+    ],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ]
+  },
+  {
+    "name": "l2-listings",
+    "strategy": "ShortNewListingsL2",
+    "bot_name": "l2-listings",
+    "port": 8093,
+    "description": "L2：做空新上线合约（仅币），上线后第3天开空，2.5%仓位，BTC对冲，21天或3倍价格平仓 · 全仓1倍 · 前向模拟测试，2027-03-31后按预注册标准评判",
+    "runtime": "freqtrade",
+    "note": "入场窗口进行中：CT（窗口至 10-05 00:00 UTC）",
+    "want": "stopped",
+    "pid": null,
+    "restarts_24h": 0,
+    "api": "down",
+    "offline": true,
+    "open_trades": 0,
+    "max_trades": 11,
+    "closed_trades": 0,
+    "profit_closed": 0,
+    "profit_all": 0.0,
+    "winrate": 0,
+    "stake": "USDT",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ],
+    "prices_as_of": "2026-10-04"
+  },
+  {
+    "name": "unlock-xs",
+    "strategy": "UnlockXS",
+    "bot_name": "unlock-xs",
+    "port": 8095,
+    "description": "U2：解锁抛压前向模拟盘 · 每周一 00:00 UTC 选解锁量最大的最多 6 个币做空，BTC 对冲 · 全仓位 1 倍 · 排期来自 2026-09-25 的静态文件",
+    "runtime": "freqtrade",
+    "note": "下次决定 10-05 00:00 UTC（周一），还有 16 小时 41 分钟。只在周一第一个小时开仓；没有币达标的周就空仓",
+    "want": "running",
+    "pid": "55d50f801aa2",
+    "restarts_24h": 0,
+    "uptime_s": 261220,
+    "mem_mb": 153,
+    "api": "up",
+    "trading": "running",
+    "dry_run": true,
+    "open_trades": 0,
+    "max_trades": 7,
+    "closed_trades": 0,
+    "profit_all": 0.0,
+    "profit_closed": 0.0,
+    "winrate": 0.0,
+    "stake": "USDT",
+    "timeframe": "1d",
+    "positions": [],
+    "daily": [
+      {
+        "date": "2026-09-21",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-22",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-23",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-24",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-25",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-26",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-27",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-28",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-29",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-09-30",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-01",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-02",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-03",
+        "abs": 0.0,
+        "trades": 0
+      },
+      {
+        "date": "2026-10-04",
+        "abs": 0.0,
+        "trades": 0
+      }
+    ]
+  }
+]

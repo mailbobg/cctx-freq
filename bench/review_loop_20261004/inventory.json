@@ -1,0 +1,577 @@
+{
+  "captured_utc": "2026-10-04T07:18:20.795829+00:00",
+  "configurations": [
+    {
+      "bot": "c-hold-sma",
+      "config_sha256": "783e6b6a4f43b3b5eac7e350ac8e18661ff54d74c18bbadc25865f3094e969da",
+      "strategy": "RiskHoldR2b",
+      "dry_run": true,
+      "bot_name": "c-hold-sma",
+      "db_url": "sqlite:///user_data/tradesv3.c-hold-sma.dryrun.sqlite",
+      "timeframe": "1d",
+      "trading_mode": "spot",
+      "margin_mode": "",
+      "max_open_trades": 2,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": true,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 2,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "StaticPairList"
+        }
+      ],
+      "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "limit",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+      },
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "c-hold",
+      "config_sha256": "db62f11e17b253793392ea6da5e6dda6d13de03fef636380c204b62c78804b9c",
+      "strategy": "RiskHoldC",
+      "dry_run": true,
+      "bot_name": "c-hold",
+      "db_url": "sqlite:///user_data/tradesv3.c-hold.dryrun.sqlite",
+      "timeframe": "1d",
+      "trading_mode": "spot",
+      "margin_mode": "",
+      "max_open_trades": 2,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": true,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 2,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "StaticPairList"
+        }
+      ],
+      "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "limit",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+      },
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "e0v1en-live",
+      "config_sha256": "39cec3b40d8c7eccc0db8be5324f52447d103fd23948ae829acd579a51b332a0",
+      "effective_config_error": 2
+    },
+    {
+      "bot": "e0v1en",
+      "config_sha256": "f601651c6dc53c3216930ddee5cb660b8604fcd738429f8cb1727e738ad6f49a",
+      "strategy": "E0V1ENWait3",
+      "dry_run": true,
+      "bot_name": "e0v1en",
+      "db_url": "sqlite:///user_data/tradesv3.e0v1en-wait3.dryrun.sqlite",
+      "timeframe": "5m",
+      "trading_mode": "spot",
+      "margin_mode": "",
+      "max_open_trades": 6,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": true,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 118,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "StaticPairList"
+        }
+      ],
+      "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "limit",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+      },
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "funding-spread",
+      "config_sha256": "6989d313eec0dad4e651470b4ffaf8e0f7d10700de772cc4fecfbd37c8834c51",
+      "strategy": "CrossVenueFundingV1",
+      "dry_run": true,
+      "bot_name": "funding-spread",
+      "db_url": "sqlite:///user_data/tradesv3.funding-spread.paper.sqlite",
+      "timeframe": null,
+      "trading_mode": null,
+      "margin_mode": null,
+      "max_open_trades": 1,
+      "stake_amount": null,
+      "dry_run_wallet": null,
+      "tradable_balance_ratio": null,
+      "use_exit_signal": null,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": 0.2,
+      "trailing_stop": null,
+      "runtime": "cross_venue_paper"
+    },
+    {
+      "bot": "l2-listings",
+      "config_sha256": "77582392ea5a604f9ce0642dee035faba05d7be90672742e117c78a1af370396",
+      "strategy": "ShortNewListingsL2",
+      "dry_run": true,
+      "bot_name": "l2-listings",
+      "db_url": "sqlite:///user_data/tradesv3.l2-listings.dryrun.sqlite",
+      "timeframe": "1h",
+      "trading_mode": "futures",
+      "margin_mode": "cross",
+      "max_open_trades": 11,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 300,
+          "sort_key": "quoteVolume",
+          "refresh_period": 1800
+        }
+      ],
+      "order_types": null,
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "l2p-listings",
+      "config_sha256": "b3f9bbfa8ca4c84ce69a45be3f9899ca0683c3a639beb650352914fcad9e4a5b",
+      "strategy": "ShortNewListingsL2P",
+      "dry_run": true,
+      "bot_name": "l2p-listings",
+      "db_url": "sqlite:///user_data/tradesv3.l2p-listings.dryrun.sqlite",
+      "timeframe": "1h",
+      "trading_mode": "futures",
+      "margin_mode": "cross",
+      "max_open_trades": 11,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 300,
+          "sort_key": "quoteVolume",
+          "refresh_period": 1800
+        }
+      ],
+      "order_types": null,
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "unlock-short",
+      "config_sha256": "cdd7665b0ec102191c71c03fe1fb7b9fe2de653564f76042cce2b7af76325cb5",
+      "strategy": "UnlockPressureShortV1",
+      "dry_run": true,
+      "bot_name": "unlock-short",
+      "db_url": "sqlite:///user_data/tradesv3.unlock-short.dryrun.sqlite",
+      "timeframe": "1h",
+      "trading_mode": "futures",
+      "margin_mode": "isolated",
+      "max_open_trades": 1,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 1.0,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 2,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "StaticPairList"
+        }
+      ],
+      "order_types": null,
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "unlock-xs",
+      "config_sha256": "bbc9f0221ae58d4d69db07950872b23c1cd5e1ac7aa4a72d76b6b8e49af6da12",
+      "strategy": "UnlockXS",
+      "dry_run": true,
+      "bot_name": "unlock-xs",
+      "db_url": "sqlite:///user_data/tradesv3.unlock-xs.dryrun.sqlite",
+      "timeframe": "1d",
+      "trading_mode": "futures",
+      "margin_mode": "isolated",
+      "max_open_trades": 7,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 100,
+          "sort_key": "quoteVolume",
+          "lookback_timeframe": "1d",
+          "lookback_period": 30,
+          "refresh_period": 86400
+        },
+        {
+          "method": "AgeFilter",
+          "min_days_listed": 60
+        }
+      ],
+      "order_types": null,
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "x12",
+      "config_sha256": "46c245cb9cd500e6b54145fbb3e01eda55754bad876deb10cc3a358518ed9505",
+      "strategy": "E0V1ENX12",
+      "dry_run": true,
+      "bot_name": "x12",
+      "db_url": "sqlite:///user_data/tradesv3.x12-spot.dryrun.sqlite",
+      "timeframe": "5m",
+      "trading_mode": "spot",
+      "margin_mode": "",
+      "max_open_trades": 6,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": true,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 118,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "StaticPairList"
+        }
+      ],
+      "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "limit",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+      },
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "x14-bitget",
+      "config_sha256": "21f95c0fafe53a8a2182f33260c5ce7b557d763d78ee9c181f53b18ae9a86343",
+      "strategy": "HedgedFlushX14",
+      "dry_run": true,
+      "bot_name": "x14-bitget",
+      "db_url": "sqlite:///user_data/tradesv3.x14-bitget.dryrun.sqlite",
+      "timeframe": "5m",
+      "trading_mode": "futures",
+      "margin_mode": "isolated",
+      "max_open_trades": 12,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "bitget",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 61,
+          "sort_key": "quoteVolume",
+          "lookback_timeframe": "1d",
+          "lookback_period": 30,
+          "refresh_period": 86400
+        }
+      ],
+      "order_types": null,
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "x14-bybit",
+      "config_sha256": "2730e36b7f064c473f846cef490210107680d6b400676ca7f5e6c866f197eff7",
+      "strategy": "HedgedFlushX14",
+      "dry_run": true,
+      "bot_name": "x14-bybit",
+      "db_url": "sqlite:///user_data/tradesv3.x14-bybit.dryrun.sqlite",
+      "timeframe": "5m",
+      "trading_mode": "futures",
+      "margin_mode": "isolated",
+      "max_open_trades": 12,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "bybit",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 61,
+          "sort_key": "quoteVolume",
+          "lookback_timeframe": "1d",
+          "lookback_period": 30,
+          "refresh_period": 86400
+        }
+      ],
+      "order_types": null,
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "x14",
+      "config_sha256": "7125991004eb8b8d4e412564b0e57a43aa45205aa7443767646f8e5eb82cf4ab",
+      "strategy": "HedgedFlushX14",
+      "dry_run": true,
+      "bot_name": "x14",
+      "db_url": "sqlite:///user_data/tradesv3.x14.dryrun.sqlite",
+      "timeframe": "5m",
+      "trading_mode": "futures",
+      "margin_mode": "isolated",
+      "max_open_trades": 12,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": null,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 61,
+          "sort_key": "quoteVolume",
+          "lookback_timeframe": "1d",
+          "lookback_period": 30,
+          "refresh_period": 86400
+        }
+      ],
+      "order_types": null,
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "x7",
+      "config_sha256": "03693e5d9faf77d4e3fb386a78c1ee482cd8a7c39fda7f3b4c3ee585af35c3c1",
+      "strategy": "NostalgiaForInfinityX7",
+      "dry_run": true,
+      "bot_name": "nfi-x7",
+      "db_url": "sqlite:///user_data/tradesv3.nfi.dryrun.sqlite",
+      "timeframe": "5m",
+      "trading_mode": "spot",
+      "margin_mode": "",
+      "max_open_trades": 6,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": true,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 130,
+          "sort_key": "quoteVolume",
+          "refresh_period": 1800
+        },
+        {
+          "method": "FullTradesFilter"
+        },
+        {
+          "method": "AgeFilter",
+          "min_days_listed": 60
+        },
+        {
+          "method": "PriceFilter",
+          "low_price_ratio": 0.003
+        },
+        {
+          "method": "SpreadFilter",
+          "max_spread_ratio": 0.005
+        },
+        {
+          "method": "RangeStabilityFilter",
+          "lookback_days": 3,
+          "min_rate_of_change": 0.03,
+          "max_rate_of_change": 0.95,
+          "refresh_period": 1800
+        },
+        {
+          "method": "VolumePairList",
+          "number_assets": 100,
+          "sort_key": "quoteVolume"
+        }
+      ],
+      "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "limit",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+      },
+      "runtime": "freqtrade"
+    },
+    {
+      "bot": "x8",
+      "config_sha256": "5877aa2176d03479bf57c8b1eb9e7dc3ad8803958c51cf5940576e41390495fb",
+      "strategy": "NostalgiaForInfinityX8",
+      "dry_run": true,
+      "bot_name": "nfi-x8",
+      "db_url": "sqlite:///user_data/tradesv3.nfi-x8.dryrun.sqlite",
+      "timeframe": "5m",
+      "trading_mode": "spot",
+      "margin_mode": "",
+      "max_open_trades": 6,
+      "stake_amount": "unlimited",
+      "dry_run_wallet": 10000,
+      "tradable_balance_ratio": 0.99,
+      "use_exit_signal": true,
+      "ignore_roi_if_entry_signal": true,
+      "process_only_new_candles": null,
+      "stoploss": null,
+      "trailing_stop": null,
+      "pair_count": 0,
+      "exchange": "binance",
+      "pairlists": [
+        {
+          "method": "VolumePairList",
+          "number_assets": 130,
+          "sort_key": "quoteVolume",
+          "refresh_period": 1800
+        },
+        {
+          "method": "FullTradesFilter"
+        },
+        {
+          "method": "AgeFilter",
+          "min_days_listed": 60
+        },
+        {
+          "method": "PriceFilter",
+          "low_price_ratio": 0.003
+        },
+        {
+          "method": "SpreadFilter",
+          "max_spread_ratio": 0.005
+        },
+        {
+          "method": "RangeStabilityFilter",
+          "lookback_days": 3,
+          "min_rate_of_change": 0.03,
+          "max_rate_of_change": 0.95,
+          "refresh_period": 1800
+        },
+        {
+          "method": "VolumePairList",
+          "number_assets": 100,
+          "sort_key": "quoteVolume"
+        }
+      ],
+      "order_types": {
+        "entry": "limit",
+        "exit": "limit",
+        "emergency_exit": "market",
+        "force_entry": "limit",
+        "force_exit": "market",
+        "stoploss": "market",
+        "stoploss_on_exchange": false,
+        "stoploss_on_exchange_interval": 60,
+        "stoploss_on_exchange_limit_ratio": 0.99
+      },
+      "runtime": "freqtrade"
+    }
+  ],
+  "review_scope": [
+    "c-hold-sma",
+    "c-hold",
+    "funding-spread",
+    "l2-listings",
+    "l2p-listings",
+    "unlock-short",
+    "unlock-xs",
+    "x12",
+    "x14-bitget",
+    "x14-bybit",
+    "x14",
+    "x7",
+    "x8"
+  ],
+  "exclusions": {
+    "e0v1en": "fresh E0V1ENWait3 cohort already started",
+    "e0v1en-live": "user-stopped live account; no activation"
+  }
+}

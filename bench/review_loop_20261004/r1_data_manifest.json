@@ -1,0 +1,22 @@
+{
+  "captured_utc": "2026-10-04T07:49:23.088434+00:00",
+  "endpoint": "https://data-api.binance.vision/api/v3/klines",
+  "files": {
+    "BTC": {
+      "raw_sha256": "3428ec0f8d7db8de0fe237de6ac97b209bfbdc013b98d6bc2553b1c1b7db1cb4",
+      "feather_sha256": "f3fd8ac102b38c0cd5f9ac9de71c45a2c1bc3652feab8583e69716e260a20530",
+      "rows": 3323,
+      "start": "2017-08-17 00:00:00+00:00",
+      "end": "2026-09-21 00:00:00+00:00",
+      "cached_open_close_match": true
+    },
+    "ETH": {
+      "raw_sha256": "0b8b352cedb98f43c5a6dd9481120bb65ca84e19f823e5c5e99bb1be33e71a57",
+      "feather_sha256": "72d6fad5fd13a6abcb473b59c7c0343022deed30ecd72d58660ed44b6c309106",
+      "rows": 3323,
+      "start": "2017-08-17 00:00:00+00:00",
+      "end": "2026-09-21 00:00:00+00:00",
+      "cached_open_close_match": true
+    }
+  }
+}
