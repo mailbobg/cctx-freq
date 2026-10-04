@@ -1,0 +1,120 @@
+{
+  "adopted": false,
+  "documentation_http200_roles": 6,
+  "full_current_or_historical_reward_source_gate": false,
+  "native_api_http403_roles": 4,
+  "native_input_sha256": {
+    "r34_sources/manifest.json": "e1b167cda9073a1fdaac52b04a76df4455730719f053a00ced6c6076a06fe44b",
+    "r34_sources/raw/468403dfea75f977ed6c0e8af874923b8421a4b300ae53e19ea5994ab647983e": "6edd8f4304f8b866588ed7c9fcdfb2ac26eb70d19bb9c1173950ef674422319f",
+    "r34_sources/raw/531984663bf3fa8d069ca407e247f349a3edbc0062a29dfba9577366f314b9b2": "18eed547dac8196fb0d6033d1c20dbab4d32f4459dc5c6c541bb49ab80c91376",
+    "r34_sources/raw/7e0daedc9a0d1c2c9117e58c8f2393d2c2351d6384f1d881454f2845dcbcf666": "4857b25b84acdc0c0bd81a1a52a8249017509f7df3228075aa3edfea0cb412f6",
+    "r34_sources/raw/892b8d7741631800b058e2a32947fca30e5a626e1fcce58528b5ab110c2dc16b": "5fba79a137db2d5f9a092fb5211cda9b791cbaa9d047a2b7106735ca5b512d0e",
+    "r34_sources/raw/9a48a33d91df01f9758cb184231ac470ea750962b61e5ff8ffd7928fdde0e0da": "fbc2e114c2bf9e103accf76de322e0c43e9288050d768210404941514ac5d29a",
+    "r34_sources/raw/9cba375dde79bc8d6f58d3f77b395caeb4e1d32d655af850780feb95567c7bd7": "acaea93f137e4dcea973ac12fc986765ec0e5c08d0542d99e221c60163dfe05d",
+    "r34_sources/raw/9faa9caf4f0ccf460745c13efe5c9b667d9e87e0299a44e29054746bb4b34671": "87067149b5eb1881df205f37a863bd7e7534352e60c66f81a94b7c0160d3f222",
+    "r34_sources/raw/a2f2b37ae4a76f33812d3f7176c3a18ca783c4b0fba6024a82058ccb5e45a49e": "da0e52ecb17a92a383c7f962eda962f8c6ed8ae75546a3a93c53b7df0276b889",
+    "r34_sources/raw/c9f118124f50f23746e2fa2953e62a51920f5430df3e37931c65acb5605b15da": "79ccdfcc883dfcc487d0db718e44906f97e0312e6558c0c9d84ba5ef785de971",
+    "r34_sources/raw/f849ae3179f6f42d743582a3c93734dd0bac1425859fca9a80ba91baac0f7535": "895349d6169d99ffeecfe031ecff31c3e44bc1e772148d2219c3578287828f91"
+  },
+  "no_authenticated_historical_protocol_or_publication_clock_or_execution": true,
+  "no_current_apr_backfill_or_parity_or_double_counted_synthetic_income": true,
+  "no_full_cashflow_price_funding_cohort_or_alpha_defined": true,
+  "original_api_endpoint_states": {
+    "apr_last": {
+      "bytes": 5527,
+      "native_access_challenge_markers": true,
+      "native_current_apr_or_schema_unavailable": true,
+      "not_original_public_receipt_or_historical_cohort": true,
+      "original_failure": "HTTP 403",
+      "original_html_title": [
+        "Just a moment..."
+      ],
+      "source_known": false,
+      "source_sha256": "6edd8f4304f8b866588ed7c9fcdfb2ac26eb70d19bb9c1173950ef674422319f",
+      "status": 403,
+      "unknown_not_zero_income": true
+    },
+    "apr_sma": {
+      "bytes": 5524,
+      "native_access_challenge_markers": true,
+      "native_current_apr_or_schema_unavailable": true,
+      "not_original_public_receipt_or_historical_cohort": true,
+      "original_failure": "HTTP 403",
+      "original_html_title": [
+        "Just a moment..."
+      ],
+      "source_known": false,
+      "source_sha256": "87067149b5eb1881df205f37a863bd7e7534352e60c66f81a94b7c0160d3f222",
+      "status": 403,
+      "unknown_not_zero_income": true
+    },
+    "apr_swagger": {
+      "bytes": 5439,
+      "native_access_challenge_markers": true,
+      "native_current_apr_or_schema_unavailable": true,
+      "not_original_public_receipt_or_historical_cohort": true,
+      "original_failure": "HTTP 403",
+      "original_html_title": [
+        "Just a moment..."
+      ],
+      "source_known": false,
+      "source_sha256": "fbc2e114c2bf9e103accf76de322e0c43e9288050d768210404941514ac5d29a",
+      "status": 403,
+      "unknown_not_zero_income": true
+    },
+    "reward_swagger": {
+      "bytes": 5494,
+      "native_access_challenge_markers": true,
+      "native_current_apr_or_schema_unavailable": true,
+      "not_original_public_receipt_or_historical_cohort": true,
+      "original_failure": "HTTP 403",
+      "original_html_title": [
+        "Just a moment..."
+      ],
+      "source_known": false,
+      "source_sha256": "4857b25b84acdc0c0bd81a1a52a8249017509f7df3228075aa3edfea0cb412f6",
+      "status": 403,
+      "unknown_not_zero_income": true
+    }
+  },
+  "original_documentation": {
+    "api_docs": {
+      "address_specific_reward_history_not_global_protocol_cohort": true,
+      "current_doc_not_historical_protocol_certificate": true,
+      "last_and_sma_literal_endpoint_identities_verified": true,
+      "legacy_versus_V2_rebase_semantics_disclosed": true,
+      "source_sha256": "5fba79a137db2d5f9a092fb5211cda9b791cbaa9d047a2b7106735ca5b512d0e",
+      "status": 200
+    },
+    "core_docs": {
+      "current_doc_not_historical_protocol_certificate": true,
+      "source_sha256": "79ccdfcc883dfcc487d0db718e44906f97e0312e6558c0c9d84ba5ef785de971",
+      "status": 200
+    },
+    "deployment_docs": {
+      "current_doc_not_historical_protocol_certificate": true,
+      "source_sha256": "18eed547dac8196fb0d6033d1c20dbab4d32f4459dc5c6c541bb49ab80c91376",
+      "status": 200
+    },
+    "risk_docs": {
+      "current_doc_not_historical_protocol_certificate": true,
+      "source_sha256": "895349d6169d99ffeecfe031ecff31c3e44bc1e772148d2219c3578287828f91",
+      "status": 200
+    },
+    "subgraph_docs": {
+      "current_doc_not_historical_protocol_certificate": true,
+      "native_gateway_requires_api_key_placeholder": true,
+      "source_sha256": "da0e52ecb17a92a383c7f962eda962f8c6ed8ae75546a3a93c53b7df0276b889",
+      "status": 200
+    },
+    "wrapper_docs": {
+      "current_doc_not_historical_protocol_certificate": true,
+      "nonrebasing_balance_and_changing_conversion_value_disclosed": true,
+      "source_sha256": "acaea93f137e4dcea973ac12fc986765ec0e5c08d0542d99e221c60163dfe05d",
+      "status": 200
+    }
+  },
+  "original_requests": 10,
+  "source_only": true,
+  "source_plan_commit": "5c7e0f5"
+}

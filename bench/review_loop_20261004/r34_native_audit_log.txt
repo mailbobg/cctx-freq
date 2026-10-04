@@ -1,0 +1,1 @@
+{'original_requests': 10, 'documentation_http200_roles': 6, 'native_api_http403_roles': 4, 'full_current_or_historical_reward_source_gate': False, 'adopted': False}

@@ -1,0 +1,159 @@
+{
+  "no_full_source_cohort_or_alpha_defined": true,
+  "source_plan_commit": "5c7e0f5",
+  "source_stage_only": true,
+  "sources": {
+    "api_docs": {
+      "bytes": 39205,
+      "final_url": "https://docs.lido.fi/integrations/api/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 18:23:51 GMT",
+        "ETag": "W/\"6abba5d8-9925\"",
+        "Last-Modified": "Tue, 29 Sep 2026 11:49:44 GMT"
+      },
+      "path": "raw/892b8d7741631800b058e2a32947fca30e5a626e1fcce58528b5ab110c2dc16b",
+      "requested_utc": "2026-10-04T18:23:50.088014+00:00",
+      "retrieved_utc": "2026-10-04T18:23:51.778540+00:00",
+      "sha256": "5fba79a137db2d5f9a092fb5211cda9b791cbaa9d047a2b7106735ca5b512d0e",
+      "status": 200,
+      "url": "https://docs.lido.fi/integrations/api/"
+    },
+    "apr_last": {
+      "bytes": 5527,
+      "final_url": "https://eth-api.lido.fi/v1/protocol/steth/apr/last",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 18:23:58 GMT"
+      },
+      "path": "raw/468403dfea75f977ed6c0e8af874923b8421a4b300ae53e19ea5994ab647983e",
+      "requested_utc": "2026-10-04T18:23:57.145091+00:00",
+      "retrieved_utc": "2026-10-04T18:23:58.585358+00:00",
+      "sha256": "6edd8f4304f8b866588ed7c9fcdfb2ac26eb70d19bb9c1173950ef674422319f",
+      "status": 403,
+      "url": "https://eth-api.lido.fi/v1/protocol/steth/apr/last"
+    },
+    "apr_sma": {
+      "bytes": 5524,
+      "final_url": "https://eth-api.lido.fi/v1/protocol/steth/apr/sma",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 18:24:00 GMT"
+      },
+      "path": "raw/9faa9caf4f0ccf460745c13efe5c9b667d9e87e0299a44e29054746bb4b34671",
+      "requested_utc": "2026-10-04T18:23:58.586232+00:00",
+      "retrieved_utc": "2026-10-04T18:24:00.166999+00:00",
+      "sha256": "87067149b5eb1881df205f37a863bd7e7534352e60c66f81a94b7c0160d3f222",
+      "status": 403,
+      "url": "https://eth-api.lido.fi/v1/protocol/steth/apr/sma"
+    },
+    "apr_swagger": {
+      "bytes": 5439,
+      "final_url": "https://eth-api.lido.fi/api/",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 18:23:55 GMT"
+      },
+      "path": "raw/9a48a33d91df01f9758cb184231ac470ea750962b61e5ff8ffd7928fdde0e0da",
+      "requested_utc": "2026-10-04T18:23:54.396957+00:00",
+      "retrieved_utc": "2026-10-04T18:23:55.847784+00:00",
+      "sha256": "fbc2e114c2bf9e103accf76de322e0c43e9288050d768210404941514ac5d29a",
+      "status": 403,
+      "url": "https://eth-api.lido.fi/api/"
+    },
+    "core_docs": {
+      "bytes": 198042,
+      "final_url": "https://docs.lido.fi/contracts/lido/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 18:23:52 GMT",
+        "ETag": "W/\"6abba5d9-3059a\"",
+        "Last-Modified": "Tue, 29 Sep 2026 11:49:45 GMT"
+      },
+      "path": "raw/c9f118124f50f23746e2fa2953e62a51920f5430df3e37931c65acb5605b15da",
+      "requested_utc": "2026-10-04T18:23:51.779482+00:00",
+      "retrieved_utc": "2026-10-04T18:23:52.294802+00:00",
+      "sha256": "79ccdfcc883dfcc487d0db718e44906f97e0312e6558c0c9d84ba5ef785de971",
+      "status": 200,
+      "url": "https://docs.lido.fi/contracts/lido/"
+    },
+    "deployment_docs": {
+      "bytes": 207824,
+      "final_url": "https://docs.lido.fi/deployed-contracts/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 18:23:53 GMT",
+        "ETag": "W/\"6abba5d8-32bd0\"",
+        "Last-Modified": "Tue, 29 Sep 2026 11:49:44 GMT"
+      },
+      "path": "raw/531984663bf3fa8d069ca407e247f349a3edbc0062a29dfba9577366f314b9b2",
+      "requested_utc": "2026-10-04T18:23:52.784672+00:00",
+      "retrieved_utc": "2026-10-04T18:23:53.443589+00:00",
+      "sha256": "18eed547dac8196fb0d6033d1c20dbab4d32f4459dc5c6c541bb49ab80c91376",
+      "status": 200,
+      "url": "https://docs.lido.fi/deployed-contracts/"
+    },
+    "reward_swagger": {
+      "bytes": 5494,
+      "final_url": "https://reward-history-backend.lido.fi/api",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 18:23:57 GMT"
+      },
+      "path": "raw/7e0daedc9a0d1c2c9117e58c8f2393d2c2351d6384f1d881454f2845dcbcf666",
+      "requested_utc": "2026-10-04T18:23:55.849220+00:00",
+      "retrieved_utc": "2026-10-04T18:23:57.144625+00:00",
+      "sha256": "4857b25b84acdc0c0bd81a1a52a8249017509f7df3228075aa3edfea0cb412f6",
+      "status": 403,
+      "url": "https://reward-history-backend.lido.fi/api"
+    },
+    "risk_docs": {
+      "bytes": 51074,
+      "final_url": "https://docs.lido.fi/prd/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 18:23:54 GMT",
+        "ETag": "W/\"6abba5d9-c782\"",
+        "Last-Modified": "Tue, 29 Sep 2026 11:49:45 GMT"
+      },
+      "path": "raw/f849ae3179f6f42d743582a3c93734dd0bac1425859fca9a80ba91baac0f7535",
+      "requested_utc": "2026-10-04T18:23:53.910641+00:00",
+      "retrieved_utc": "2026-10-04T18:23:54.395883+00:00",
+      "sha256": "895349d6169d99ffeecfe031ecff31c3e44bc1e772148d2219c3578287828f91",
+      "status": 200,
+      "url": "https://docs.lido.fi/prd/"
+    },
+    "subgraph_docs": {
+      "bytes": 40702,
+      "final_url": "https://docs.lido.fi/integrations/subgraph/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 18:23:53 GMT",
+        "ETag": "W/\"6abba5d8-9efe\"",
+        "Last-Modified": "Tue, 29 Sep 2026 11:49:44 GMT"
+      },
+      "path": "raw/a2f2b37ae4a76f33812d3f7176c3a18ca783c4b0fba6024a82058ccb5e45a49e",
+      "requested_utc": "2026-10-04T18:23:53.445246+00:00",
+      "retrieved_utc": "2026-10-04T18:23:53.909847+00:00",
+      "sha256": "da0e52ecb17a92a383c7f962eda962f8c6ed8ae75546a3a93c53b7df0276b889",
+      "status": 200,
+      "url": "https://docs.lido.fi/integrations/subgraph/"
+    },
+    "wrapper_docs": {
+      "bytes": 45916,
+      "final_url": "https://docs.lido.fi/contracts/wsteth/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 18:23:52 GMT",
+        "ETag": "W/\"6abba5d9-b35c\"",
+        "Last-Modified": "Tue, 29 Sep 2026 11:49:45 GMT"
+      },
+      "path": "raw/9cba375dde79bc8d6f58d3f77b395caeb4e1d32d655af850780feb95567c7bd7",
+      "requested_utc": "2026-10-04T18:23:52.296293+00:00",
+      "retrieved_utc": "2026-10-04T18:23:52.782929+00:00",
+      "sha256": "acaea93f137e4dcea973ac12fc986765ec0e5c08d0542d99e221c60163dfe05d",
+      "status": 200,
+      "url": "https://docs.lido.fi/contracts/wsteth/"
+    }
+  }
+}

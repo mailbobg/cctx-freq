@@ -1785,5 +1785,19 @@
     "sampled_minute_account_DD_pct": -10.027640004739213,
     "trial": "R33 original-report reserve quantity",
     "window": "recent_reused_reserve_quantity_cost0.0024"
+  },
+  {
+    "adopted": false,
+    "adoption_gate": false,
+    "disposition": "Retain native access failures; no synthetic constantAPR, executable parity or duplicate reward income; not measured alpha loss",
+    "documentation_http200": 6,
+    "fresh_OOS": false,
+    "full_reward_source_gate": false,
+    "native_apr_and_schema_http403": 4,
+    "native_requests": 10,
+    "no_current_or_historical_reward_cohort_policy_or_performance": true,
+    "source_plan_commit": "5c7e0f5",
+    "trial": "R34 native staking-share reward source gate",
+    "window": "ten_native_source_roles_only"
   }
 ]
