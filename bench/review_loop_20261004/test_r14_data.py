@@ -63,3 +63,15 @@ def test_raw_checksums_and_member_identity_are_required():
     assert checked_zip(raw, f'{sha} BTCUSDT-1d-2024-02.zip'.encode(), 'BTCUSDT-1d-2024-02.zip') == csv
     with pytest.raises(ValueError): checked_zip(raw, b'bad BTCUSDT-1d-2024-02.zip', 'BTCUSDT-1d-2024-02.zip')
     with pytest.raises(ValueError): checked_zip(raw, f'{sha} ETHUSDT-1d-2024-02.zip'.encode(), 'BTCUSDT-1d-2024-02.zip')
+
+
+def test_amount_decimal_is_preserved_across_old_csv_float_rounding():
+    from r7_data import parse_archive
+    f = source()
+    f[5], f[7], f[9], f[10] = '9396633.873149893', '939663387.31498930', '4698316.9365749465', '469831693.65749465'
+    csv = f.to_csv(index=False, header=False).encode()
+    old = parse_archive(csv, pd.Timestamp('2024-02-01', tz='UTC'), pd.Timestamp('2024-02-04', tz='UTC'), include_activity=True)
+    preserved = parse(f)
+    assert preserved.quote_volume.iloc[0] == '939663387.31498930'
+    assert float(preserved.quote_volume.iloc[0]) != old.quote_volume.iloc[0]
+    pd.testing.assert_frame_equal(preserved[['open','high','low','close']], old[['open','high','low','close']])

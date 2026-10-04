@@ -10,6 +10,8 @@ import zipfile
 import numpy as np
 import pandas as pd
 
+from r7_data import parse_archive
+
 HERE = Path(__file__).resolve().parent
 DATA, OLD = HERE/'r14_data', HERE/'r7_data'
 START, END = pd.Timestamp('2021-01-01', tz='UTC'), pd.Timestamp('2026-09-01', tz='UTC')
@@ -107,11 +109,13 @@ def main():
         return body
 
     for asset in ASSETS:
-        frames = []
+        frames, original_parses = [], []
         for month in pd.date_range(START, END, freq='MS', inclusive='left'):
             tag = str(month.date())[:7]; name = f'{asset}USDT-1d-{tag}.zip'
             url = f'https://data.binance.vision/data/spot/monthly/klines/{asset}USDT/1d/{name}'
-            frames.append(parse_flow(checked_zip(get(url), get(url+'.CHECKSUM'), name), month, month+pd.offsets.MonthBegin(1)))
+            csv = checked_zip(get(url), get(url+'.CHECKSUM'), name)
+            frames.append(parse_flow(csv, month, month+pd.offsets.MonthBegin(1)))
+            original_parses.append(parse_archive(csv, month, month+pd.offsets.MonthBegin(1), include_activity=True))
         joined = pd.concat(frames)
         expected = pd.date_range(START, END, freq='D', inclusive='left').as_unit('ns')
         if not joined.index.equals(expected): raise ValueError('Full flow calendar disagrees')
@@ -120,8 +124,18 @@ def main():
         if old_sha != prior_outputs[old_path.name]: raise ValueError('Frozen daily output changed')
         old = pd.read_parquet(old_path).reindex(expected)
         columns = ['open','high','low','close','volume','quote_volume','trades']
-        gap = float(np.abs(joined[columns].astype(float).to_numpy()-old[columns].to_numpy()).max())
-        if gap != 0: raise ValueError('Original decimal parsing disagrees with frozen daily prices/activity')
+        replayed = pd.concat(original_parses)
+        gap = float(np.abs(replayed[columns].to_numpy()-old[columns].to_numpy()).max())
+        if gap != 0: raise ValueError('Original R7 source parsing disagrees with frozen prices/activity')
+        exact_price_columns = ['open','high','low','close','trades']
+        if not np.array_equal(joined[exact_price_columns].to_numpy(), old[exact_price_columns].to_numpy()):
+            raise ValueError('Exact source OHLC/trade count changed')
+        # Preserve literal amounts; the old pandas C CSV float parser can round
+        # these differently than Python's correctly rounded string->float.
+        # No floating amount or tolerance participates in the flow sign.
+        decimal_float_gaps = (joined[['volume','quote_volume']].astype(float)-old[['volume','quote_volume']]).abs()
+        conversion_gap = {k:float(v) for k,v in decimal_float_gaps.max().items()}
+        conversion_ulps = float((decimal_float_gaps.to_numpy()/np.spacing(old[['volume','quote_volume']].to_numpy())).max())
         target = DATA/f'{asset}USDT_flow.parquet'
         if args.verify_cache_only:
             pd.testing.assert_frame_equal(pd.read_parquet(target), joined)
@@ -130,6 +144,7 @@ def main():
         outputs[target.name] = hashlib.sha256(target.read_bytes()).hexdigest()
         validation[asset] = dict(rows=len(joined), first=str(joined.index[0]),
             last=str(joined.index[-1]), frozen_daily_sha256=old_sha, daily_OHLC_activity_max_gap=gap,
+            decimal_string_float_conversion_max_gap=conversion_gap, decimal_float_conversion_max_ULPs=conversion_ulps,
             exact_decimal_volume_preserved=True, complete_calendar=True, native_quote_physical_bounds=True)
         print(asset, len(joined), 'source calendar/decimal units/reference PASS', flush=True)
     manifest = dict(reused_source_count=len(used), original_source_manifest_sha256=hashlib.sha256(records_path.read_bytes()).hexdigest(),
