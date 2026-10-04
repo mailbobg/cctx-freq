@@ -786,5 +786,149 @@
     "adoption_gate": false,
     "disposition": "Reject fixed candidate: both base return gates and early daily risk fail. Recent minute risk passes; aggregate doubled-cost profit positive is insufficient. No sign/cutoff/horizon/risk/cost/execution rescue or activation.",
     "sampled_minute_account_DD_pct": -4.245701680085256
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "early_reused_cov10_long_cost0.0012_central",
+    "CAGR_pct": 9.853060080607978,
+    "daily_MTM_DD_pct": -7.017180985323024,
+    "sampled_hour_account_DD_pct": -7.334199859175172,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "early_reused_cov10_long_cost0.0012_adverse",
+    "CAGR_pct": 9.84064076117399,
+    "daily_MTM_DD_pct": -7.017595976612878,
+    "sampled_hour_account_DD_pct": -7.334593578345439,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "early_reused_cov10_long_cost0.0012_favorable",
+    "CAGR_pct": 9.863858219850652,
+    "daily_MTM_DD_pct": -7.016916807153795,
+    "sampled_hour_account_DD_pct": -7.333943154030109,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "early_reused_symmetric_own_trend_cost0.0012_central",
+    "CAGR_pct": 15.633435258525964,
+    "daily_MTM_DD_pct": -7.359130825303661,
+    "sampled_hour_account_DD_pct": -7.654856125326493,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "early_reused_symmetric_own_trend_cost0.0012_adverse",
+    "CAGR_pct": 15.612096780765295,
+    "daily_MTM_DD_pct": -7.360648477403298,
+    "sampled_hour_account_DD_pct": -7.6563521678821855,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "early_reused_symmetric_own_trend_cost0.0012_favorable",
+    "CAGR_pct": 15.652670186640938,
+    "daily_MTM_DD_pct": -7.357523195474725,
+    "sampled_hour_account_DD_pct": -7.653255245432322,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "early_reused_cov10_long_cost0.0024_central",
+    "CAGR_pct": 9.501060996509914,
+    "daily_MTM_DD_pct": -7.018193650180593,
+    "sampled_hour_account_DD_pct": -7.335255519257322,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "early_reused_cov10_long_cost0.0024_adverse",
+    "CAGR_pct": 9.48867757958649,
+    "daily_MTM_DD_pct": -7.0186087079183945,
+    "sampled_hour_account_DD_pct": -7.335649302166791,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "early_reused_cov10_long_cost0.0024_favorable",
+    "CAGR_pct": 9.5118279170467,
+    "daily_MTM_DD_pct": -7.01792942799343,
+    "sampled_hour_account_DD_pct": -7.334998770941059,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "early_reused_symmetric_own_trend_cost0.0024_central",
+    "CAGR_pct": 14.793018931186763,
+    "daily_MTM_DD_pct": -7.532388695299874,
+    "sampled_hour_account_DD_pct": -7.891444446718509,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "early_reused_symmetric_own_trend_cost0.0024_adverse",
+    "CAGR_pct": 14.771824796189236,
+    "daily_MTM_DD_pct": -7.533904303837147,
+    "sampled_hour_account_DD_pct": -7.8929374733984865,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "early_reused_symmetric_own_trend_cost0.0024_favorable",
+    "CAGR_pct": 14.812124050131992,
+    "daily_MTM_DD_pct": -7.530783266859964,
+    "sampled_hour_account_DD_pct": -7.889846843234471,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "recent_reused_cov10_long_cost0.0012_central",
+    "CAGR_pct": 11.67262110180527,
+    "daily_MTM_DD_pct": -7.686909687594989,
+    "sampled_hour_account_DD_pct": -9.056678528919992,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "recent_reused_symmetric_own_trend_cost0.0012_central",
+    "CAGR_pct": 5.755213167767992,
+    "daily_MTM_DD_pct": -13.234094534412144,
+    "sampled_hour_account_DD_pct": -13.53328669165965,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 long-perpetual common control",
+    "window": "recent_reused_cov10_long_cost0.0024_central",
+    "CAGR_pct": 11.083253181491104,
+    "daily_MTM_DD_pct": -7.898166095557658,
+    "sampled_hour_account_DD_pct": -9.225033457245024,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R15 symmetric own-trend",
+    "window": "recent_reused_symmetric_own_trend_cost0.0024_central",
+    "CAGR_pct": 4.451615797024155,
+    "daily_MTM_DD_pct": -13.558453179921637,
+    "sampled_hour_account_DD_pct": -13.85663632102252,
+    "adoption_gate": false,
+    "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
   }
 ]

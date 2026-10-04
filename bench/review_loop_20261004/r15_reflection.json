@@ -1,0 +1,251 @@
+{
+  "results": {
+    "early_reused": {
+      "versions": {
+        "cov10_long": {
+          "daily_peak": "2022-11-04 00:00:00+00:00",
+          "daily_trough": "2022-11-09 00:00:00+00:00",
+          "daily_MTM_DD_pct": -7.017180985323024,
+          "sampled_hour_account_DD_pct": -7.334199859175172,
+          "episode_net_equity_change_USDT_10000_start": -803.3149089931885,
+          "episode_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": -342.86549748851473,
+            "ETHUSDT": -460.27098495225744,
+            "funding": -0.17842655241891348,
+            "costs": 0.0
+          },
+          "whole_window_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": 1847.2364476805274,
+            "ETHUSDT": 1966.0242340689347,
+            "funding": -555.8367527985687,
+            "costs": -106.07685178675379
+          },
+          "directional_PnL_USDT_10000_start": {
+            "long": {
+              "price_pnl": 3813.260681749465,
+              "funding": -555.8367527985688,
+              "costs": -106.07685178675376,
+              "net_pnl": 3151.347077164143
+            },
+            "short": {
+              "price_pnl": 0.0,
+              "funding": 0.0,
+              "costs": 0.0,
+              "net_pnl": 0.0
+            }
+          },
+          "daily_attribution_max_gap_USDT": 5.016431714466307e-12,
+          "actual_pre_fill_funding_max_gap_USDT": 1.7763568394002505e-14,
+          "loss_episode_observed_close_exposure": {
+            "BTCUSDT": {
+              "days": 5,
+              "long_days": 5,
+              "short_days": 0,
+              "min_signed_close_exposure_pct": 9.759506293999316,
+              "max_signed_close_exposure_pct": 12.16189461153941
+            },
+            "ETHUSDT": {
+              "days": 5,
+              "long_days": 5,
+              "short_days": 0,
+              "min_signed_close_exposure_pct": 8.767488643997211,
+              "max_signed_close_exposure_pct": 12.047285883904987
+            }
+          },
+          "weekly_flip_order_counts": {},
+          "max_gross_pct": 40.384801203021816,
+          "observed_margin_breach_hours": 0,
+          "envelope_margin_concern_hours": 0
+        },
+        "symmetric_own_trend": {
+          "daily_peak": "2022-11-04 00:00:00+00:00",
+          "daily_trough": "2023-01-08 00:00:00+00:00",
+          "daily_MTM_DD_pct": -7.359130825303673,
+          "sampled_hour_account_DD_pct": -7.654856125326493,
+          "episode_net_equity_change_USDT_10000_start": -1008.7437401255029,
+          "episode_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": -509.83971789091004,
+            "ETHUSDT": -485.0870121512,
+            "funding": 10.057656257598834,
+            "costs": -23.87466634099138
+          },
+          "whole_window_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": 3088.619653287316,
+            "ETHUSDT": 2887.1093537931347,
+            "funding": -432.41195003382086,
+            "costs": -271.43669456563725
+          },
+          "directional_PnL_USDT_10000_start": {
+            "long": {
+              "price_pnl": 4245.3117434296255,
+              "funding": -632.7610431711753,
+              "costs": -129.02527045435107,
+              "net_pnl": 3483.525429804099
+            },
+            "short": {
+              "price_pnl": 1730.4172636508279,
+              "funding": 200.3490931373544,
+              "costs": -142.41142411128615,
+              "net_pnl": 1788.3549326768962
+            }
+          },
+          "daily_attribution_max_gap_USDT": 6.30961949354969e-12,
+          "actual_pre_fill_funding_max_gap_USDT": 8.659739592076221e-15,
+          "loss_episode_observed_close_exposure": {
+            "BTCUSDT": {
+              "days": 65,
+              "long_days": 30,
+              "short_days": 35,
+              "min_signed_close_exposure_pct": -13.855630447747464,
+              "max_signed_close_exposure_pct": 13.044647722611119
+            },
+            "ETHUSDT": {
+              "days": 65,
+              "long_days": 16,
+              "short_days": 49,
+              "min_signed_close_exposure_pct": -26.227126388135098,
+              "max_signed_close_exposure_pct": 12.047287091886256
+            }
+          },
+          "weekly_flip_order_counts": {
+            "BTCUSDT": 28,
+            "ETHUSDT": 30
+          },
+          "max_gross_pct": 80.78625402511366,
+          "observed_margin_breach_hours": 0,
+          "envelope_margin_concern_hours": 0
+        }
+      },
+      "symmetric_minus_control_PnL_USDT_10000_start": {
+        "BTCUSDT": 1241.3832056067886,
+        "ETHUSDT": 921.0851197242,
+        "funding": 123.42480276474782,
+        "costs": -165.35984277888346
+      }
+    },
+    "recent_reused": {
+      "versions": {
+        "cov10_long": {
+          "daily_peak": "2025-10-06 00:00:00+00:00",
+          "daily_trough": "2026-03-29 00:00:00+00:00",
+          "daily_MTM_DD_pct": -7.686909687595012,
+          "sampled_hour_account_DD_pct": -9.056678528919992,
+          "episode_net_equity_change_USDT_10000_start": -1012.7164880142373,
+          "episode_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": -369.1683086823712,
+            "ETHUSDT": -598.0045242422539,
+            "funding": -17.040167819528385,
+            "costs": -28.503487270075507
+          },
+          "whole_window_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": 1751.567075842397,
+            "ETHUSDT": 2224.065717917317,
+            "funding": -385.6240859666904,
+            "costs": -164.04507487729813
+          },
+          "directional_PnL_USDT_10000_start": {
+            "long": {
+              "price_pnl": 3975.632793759716,
+              "funding": -385.62408596669036,
+              "costs": -164.04507487729813,
+              "net_pnl": 3425.9636329157274
+            },
+            "short": {
+              "price_pnl": 0.0,
+              "funding": 0.0,
+              "costs": 0.0,
+              "net_pnl": 0.0
+            }
+          },
+          "daily_attribution_max_gap_USDT": 6.0254023992456496e-12,
+          "actual_pre_fill_funding_max_gap_USDT": 9.769962616701378e-15,
+          "loss_episode_observed_close_exposure": {
+            "BTCUSDT": {
+              "days": 174,
+              "long_days": 48,
+              "short_days": 0,
+              "min_signed_close_exposure_pct": 0.0,
+              "max_signed_close_exposure_pct": 15.486311719690043
+            },
+            "ETHUSDT": {
+              "days": 174,
+              "long_days": 55,
+              "short_days": 0,
+              "min_signed_close_exposure_pct": 0.0,
+              "max_signed_close_exposure_pct": 15.598270932667072
+            }
+          },
+          "weekly_flip_order_counts": {},
+          "max_gross_pct": 44.35697184572556,
+          "observed_margin_breach_hours": 0,
+          "envelope_margin_concern_hours": 0
+        },
+        "symmetric_own_trend": {
+          "daily_peak": "2025-04-08 00:00:00+00:00",
+          "daily_trough": "2025-07-07 00:00:00+00:00",
+          "daily_MTM_DD_pct": -13.234094534412167,
+          "sampled_hour_account_DD_pct": -13.53328669165965,
+          "episode_net_equity_change_USDT_10000_start": -1510.5597278005844,
+          "episode_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": 519.9253992788992,
+            "ETHUSDT": -1986.9284578868096,
+            "funding": -5.569429220026463,
+            "costs": -37.98723997264006
+          },
+          "whole_window_asset_PnL_USDT_10000_start": {
+            "BTCUSDT": 734.4663080573062,
+            "ETHUSDT": 1454.0298456998487,
+            "funding": -223.68446921858848,
+            "costs": -354.35916552255776
+          },
+          "directional_PnL_USDT_10000_start": {
+            "long": {
+              "price_pnl": 3615.5768124619285,
+              "funding": -384.81190061079974,
+              "costs": -185.09197736105978,
+              "net_pnl": 3045.672934490069
+            },
+            "short": {
+              "price_pnl": -1427.0806587047703,
+              "funding": 161.1274313922113,
+              "costs": -169.26718816149756,
+              "net_pnl": -1435.2204154740566
+            }
+          },
+          "daily_attribution_max_gap_USDT": 5.343281372915953e-12,
+          "actual_pre_fill_funding_max_gap_USDT": 9.769962616701378e-15,
+          "loss_episode_observed_close_exposure": {
+            "BTCUSDT": {
+              "days": 90,
+              "long_days": 71,
+              "short_days": 19,
+              "min_signed_close_exposure_pct": -7.822549381278765,
+              "max_signed_close_exposure_pct": 51.58552810593233
+            },
+            "ETHUSDT": {
+              "days": 90,
+              "long_days": 43,
+              "short_days": 47,
+              "min_signed_close_exposure_pct": -47.45359474860613,
+              "max_signed_close_exposure_pct": 10.743403692241271
+            }
+          },
+          "weekly_flip_order_counts": {
+            "BTCUSDT": 38,
+            "ETHUSDT": 30
+          },
+          "max_gross_pct": 100.1323253790233,
+          "observed_margin_breach_hours": 0,
+          "envelope_margin_concern_hours": 0
+        }
+      },
+      "symmetric_minus_control_PnL_USDT_10000_start": {
+        "BTCUSDT": -1017.1007677850907,
+        "ETHUSDT": -770.0358722174685,
+        "funding": 161.93961674810194,
+        "costs": -190.31409064525963
+      }
+    }
+  },
+  "scope": "Accounting attribution of existing frozen policies only. Directional costs split actual flips across closed/opened quantities. Actual rates and explicit central associated-mark fallback retained; no sign/horizon/risk rescue, cost-free counterfactual or pure-short incremental-alpha claim. Joint sizing changes long positions too."
+}

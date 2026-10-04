@@ -1,0 +1,62 @@
+{
+  "captured_utc": "2026-10-04T11:36:22.882667+00:00",
+  "protocol_commit": "d1f8194",
+  "tested_engine_commit": "b3c09bd",
+  "engine_input_test_freeze_commit": "485733f",
+  "focused_tests_passed_before_outcomes": 13,
+  "current_source_suite": {
+    "tests_passed": 291,
+    "subtests_passed": 16,
+    "warnings": 4,
+    "elapsed_seconds": 16.6,
+    "command": ".venv/bin/python -m pytest -o addopts= -q user_data/bench user_data/cross_venue user_data/panel --ignore=user_data/bench/shared_market_data_20260927/install_backup",
+    "scope": "Current-source bench/cross-venue/panel; no upstream full-suite or async-plugin coverage claimed"
+  },
+  "frozen_engine_control_prefix_verification": {
+    "source_inputs_sha256": {
+      "r6_data/BTCUSDT_mark.parquet": "2c916396785d0df68e82667351acc8b2d2fb7029551d8812fd81cbf140f2a567",
+      "r6_data/ETHUSDT_funding.parquet": "a73c211834cfe9581729be067acbcbc6d3bd313bcb96dbc34e091b0e0fc56a3d",
+      "r6_data/BTCUSDT_trade.parquet": "7bcb0e0435ae657ec4e781796e141e778ef1452e3a4edc798bc1185ad388f55c",
+      "r6_data/ETHUSDT_mark.parquet": "4c5c5670b0f2eb5750f93daa92e14e00eb3440a8d516ae056c1e3e2101377fd8",
+      "r6_data/BTCUSDT_funding.parquet": "ba8d65ba3c1f3aac64110047d488779792f6e933a389fa527e7ef3e739029d30",
+      "r6_data/ETHUSDT_trade.parquet": "d7be30f252cabeec6d2f2a6b9e4735cf95b6d771983e26e7b5f562549e6b5926"
+    },
+    "source_code_sha256": {
+      "R15_PROTOCOL.md": "ee28c9f9832ded93a4296fb336fa4f536e8d24d74439c7e9b6ef8e60250d63a9",
+      "r15_trend.py": "1b7b75397cc04a5d87f95bf53cc4d3f1315a536d20d9db2969b5a4fc2a20aace",
+      "test_r15_trend.py": "0cd69afa3979075c75d1b506f847a978c14bb929776bc0d4898260ed60772235",
+      "r6_relative.py": "7f1ced29f16a84cf831345b10b2e0dbdc7835b23fa8d60616664045da63a62f0",
+      "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+      "../../strategies/RiskHoldR2b.py": "0691d6aa4a6bcec2e902e6642c52bf4e8b554f95dacb486e18202f7a4c15bd08",
+      "../../strategies/portfolio_risk.py": "c29d0f44d4af1ad6f5f0193258c6030904fd3103c61a6c6dce16b463af5912f7"
+    },
+    "source_manifest_sha256": "491c3921d4ceed7567a635cf18e5d7595d143a28e8600aed4c0af08665373314",
+    "control_max_abs_gap_USDT": {
+      "early_reused_0.0012_daily": 1.8189894035458565e-12,
+      "early_reused_0.0012_hourly": 0.0,
+      "early_reused_0.0024_daily": 1.8189894035458565e-12,
+      "early_reused_0.0024_hourly": 0.0,
+      "recent_reused_0.0012_daily": 1.8189894035458565e-12,
+      "recent_reused_0.0012_hourly": 0.0,
+      "recent_reused_0.0024_daily": 1.8189894035458565e-12,
+      "recent_reused_0.0024_hourly": 0.0
+    },
+    "original_positive_raw_and_disabled_weights_equal": true,
+    "raw_and_weight_prefix_equal": true,
+    "actual_long_short_execution_and_order_prefix_equal": true,
+    "new_same_sign_short_band": true,
+    "sign_flips_and_full_zero_bypass_band": true
+  },
+  "all_pre_outcome_hashes_unchanged": true,
+  "marked_order_daily_price_pnl_and_strict_pre_fill_funding_and_directional_costs_replay": true,
+  "candidate_rejected": true,
+  "adopted": false,
+  "retuned": false,
+  "activated": false,
+  "freqtrade_class_created": false,
+  "bot_or_image_changed": false,
+  "scenario_count": 16,
+  "reason": "Both base account risk gates fail and recent base return fails; positive stress profits and strong early return do not override rejection.",
+  "aggregate_central_doubled_cost_profit_USDT_per_two_independent_10000_accounts": 6183.031584223374,
+  "limitations": "Reused history, official hourly mark samples not ticks or executable quotes. Missing associated settlement marks explicit sensitivity, 0.5% maintenance only approximate. No actual Freqtrade or independent forward certification."
+}
