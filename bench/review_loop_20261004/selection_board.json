@@ -1326,5 +1326,14 @@
     "historical_publication_certified": false,
     "disposition": "Positive modeled historical profit but return/risk fail both windows; lower exposure loses price gains and leaves crash exposure. No sign/member/horizon/majority/day/latency/risk/fee rescue or activation.",
     "sampled_minute_account_DD_pct": -10.369540046399761
+  },
+  {
+    "trial": "R23 native inventory source feasibility",
+    "source_only": true,
+    "new_alpha_trial": false,
+    "new_performance": false,
+    "adoption_gate": false,
+    "source_responses": 18,
+    "disposition": "Current six archive label calendars do not reproduce reported boundary; earlier ETH original/checksum404NoSuchKey. Full-history units/measurement/timezone/publication versions not certified. No OI rule/cohort/P&L or activation. Prior verdicts unchanged."
   }
 ]

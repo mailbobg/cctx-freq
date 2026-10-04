@@ -1,0 +1,409 @@
+{
+  "adopted": false,
+  "code_sha256": {
+    "R23_SOURCE_PLAN.md": "bab83e1891ebd3f0b50a9234d1e9f7dcb08ed6630b1b2c2e8f397f1300226641",
+    "r23_audit.py": "fd742979518060ac0ab2d190b6b286077befe5e5aa888e2811999b9b339379b4",
+    "r23_inventory.py": "fb01b0720f726ed6e1fd6439c1e7ef6912fe2b9c35abb3b3adaf97b0677822ec",
+    "r23_sources.py": "09d41113e6fd6c4c11776eb6a6cca32e0315a64b2f33010c6c3ff05a79a51d12",
+    "test_r23_inventory.py": "1e843f6dc93f16ebe7a4883b7f81e919af1c540692b5f000a6a7797b55fe5ce5"
+  },
+  "cross_file_label_comparisons": [
+    {
+      "duplicate_declared_labels": [],
+      "earlier_file_day": "2026-06-24",
+      "later_file_day": "2026-06-25",
+      "naive_boundary_gap_minutes": 5.0,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "duplicate_declared_labels": [],
+      "earlier_file_day": "2026-06-25",
+      "later_file_day": "2026-06-26",
+      "naive_boundary_gap_minutes": 5.0,
+      "symbol": "BTCUSDT"
+    },
+    {
+      "duplicate_declared_labels": [],
+      "earlier_file_day": "2026-06-24",
+      "later_file_day": "2026-06-25",
+      "naive_boundary_gap_minutes": 5.0,
+      "symbol": "ETHUSDT"
+    },
+    {
+      "duplicate_declared_labels": [],
+      "earlier_file_day": "2026-06-25",
+      "later_file_day": "2026-06-26",
+      "naive_boundary_gap_minutes": 5.0,
+      "symbol": "ETHUSDT"
+    }
+  ],
+  "inherited_early_btc": {
+    "authenticated_first_public_receipt": null,
+    "checksum_record": "oi_early_day_checksum",
+    "checksum_sha256": "22b044b57a0aa47aad0f6963682cdb12e1ccdaa8918ff4317eaf094fe9fea31e",
+    "conflicting_within_file_labels": [],
+    "current_capture": "2026-10-04T14:10:21.977139+00:00",
+    "declared_first_label": "2021-01-01T00:00:00",
+    "declared_last_label": "2021-01-01T23:55:00",
+    "duplicate_multiplicity_histogram": {
+      "2": 288
+    },
+    "first_native_row": {
+      "count_long_short_ratio": "1.60088917",
+      "count_toptrader_long_short_ratio": "1.59041180",
+      "create_time": "2021-01-01 00:00:00",
+      "sum_open_interest": "34935.88100000",
+      "sum_open_interest_value": "1011332738.14749436",
+      "sum_taker_long_short_vol_ratio": "0.44027971",
+      "sum_toptrader_long_short_ratio": "1.22061180",
+      "symbol": "BTCUSDT"
+    },
+    "label_start_or_end_semantics_certified": false,
+    "last_native_row": {
+      "count_long_short_ratio": "1.57427888",
+      "count_toptrader_long_short_ratio": "1.51345446",
+      "create_time": "2021-01-01 23:55:00",
+      "sum_open_interest": "36157.80900000",
+      "sum_open_interest_value": "1059723551.93661000",
+      "sum_taker_long_short_vol_ratio": "1.09879227",
+      "sum_toptrader_long_short_ratio": "1.18575028",
+      "symbol": "BTCUSDT"
+    },
+    "measurement_time_zone_certified": false,
+    "naive_label_grid_gaps": [],
+    "original_rows": 576,
+    "raw_duplicates_never_deleted": true,
+    "source_manifest": "r22_sources/manifest.json",
+    "source_record": "oi_early_day",
+    "unique_declared_labels": 288,
+    "zip_sha256": "9c42e4fa6048b185439a3d744066fa1d2bf0637b3654da53bb8930d1a3da364a"
+  },
+  "native_schema": [
+    "create_time",
+    "symbol",
+    "sum_open_interest",
+    "sum_open_interest_value",
+    "count_toptrader_long_short_ratio",
+    "sum_toptrader_long_short_ratio",
+    "count_long_short_ratio",
+    "sum_taker_long_short_vol_ratio"
+  ],
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "next_action": "Preserve actual failure and discrepant source lead. Verify feasible inventory scope, physical units, measurement/availability intervals and authentic historical versions before a distinct critic/rule; do not shift/de-duplicate current data to fit a report or market outcome.",
+  "official_rest": {
+    "api_description_does_not_certify_csv_labels": true,
+    "latest_month_rest_limit_not_archive_history_limit": true,
+    "native_asset_unit_and_historical_contract_scope_certified": false,
+    "period_end_description_present": true
+  },
+  "original_archives": [
+    {
+      "authenticated_first_public_receipt": null,
+      "checksum_sha256": "3219fb9bd0b0ebfc50f930b5cde915a10930a3ec3af72832ebc984c3e30c9c0f",
+      "conflicting_within_file_labels": [],
+      "current_capture": "2026-10-04T14:33:38.511954+00:00",
+      "current_http_last_modified_label": "Wed, 29 Jul 2026 06:12:20 GMT",
+      "declared_first_label": "2026-06-24T00:00:00",
+      "declared_last_label": "2026-06-24T23:55:00",
+      "duplicate_multiplicity_histogram": {
+        "1": 288
+      },
+      "file_day": "2026-06-24",
+      "first_native_row": {
+        "count_long_short_ratio": "2.07317842",
+        "count_toptrader_long_short_ratio": "2.15463483",
+        "create_time": "2026-06-24 00:00:00",
+        "sum_open_interest": "98880.9820000000000000",
+        "sum_open_interest_value": "6201933848.2184000000000000",
+        "sum_taker_long_short_vol_ratio": "1.37401000",
+        "sum_toptrader_long_short_ratio": "1.20576600",
+        "symbol": "BTCUSDT"
+      },
+      "label_start_or_end_semantics_certified": false,
+      "last_native_row": {
+        "count_long_short_ratio": "2.56526891",
+        "count_toptrader_long_short_ratio": "2.66183244",
+        "create_time": "2026-06-24 23:55:00",
+        "sum_open_interest": "100826.8340000000000000",
+        "sum_open_interest_value": "6155589125.2174000000000000",
+        "sum_taker_long_short_vol_ratio": "1.17691400",
+        "sum_toptrader_long_short_ratio": "1.10896000",
+        "symbol": "BTCUSDT"
+      },
+      "measurement_time_zone_certified": false,
+      "naive_label_grid_gaps": [],
+      "original_rows": 288,
+      "raw_duplicates_never_deleted": true,
+      "symbol": "BTCUSDT",
+      "unique_declared_labels": 288,
+      "zip_sha256": "6bb5ab473189fa7c935b4d9a58d34b2c96cc329cd74fd6f9f17f8abc48ece649"
+    },
+    {
+      "authenticated_first_public_receipt": null,
+      "checksum_sha256": "4d56c033651a245dd3cd05a0b77f17546d402415663cac4ddacd135246e85d7f",
+      "conflicting_within_file_labels": [],
+      "current_capture": "2026-10-04T14:33:37.953641+00:00",
+      "current_http_last_modified_label": "Tue, 28 Jul 2026 04:26:19 GMT",
+      "declared_first_label": "2026-06-25T00:00:00",
+      "declared_last_label": "2026-06-25T23:55:00",
+      "duplicate_multiplicity_histogram": {
+        "1": 288
+      },
+      "file_day": "2026-06-25",
+      "first_native_row": {
+        "count_long_short_ratio": "2.56734354",
+        "count_toptrader_long_short_ratio": "2.65979221",
+        "create_time": "2026-06-25 00:00:00",
+        "sum_open_interest": "100861.4190000000000000",
+        "sum_open_interest_value": "6160605386.3781000000000000",
+        "sum_taker_long_short_vol_ratio": "1.03672800",
+        "sum_toptrader_long_short_ratio": "1.10866800",
+        "symbol": "BTCUSDT"
+      },
+      "label_start_or_end_semantics_certified": false,
+      "last_native_row": {
+        "count_long_short_ratio": "2.38611146",
+        "count_toptrader_long_short_ratio": "2.48278958",
+        "create_time": "2026-06-25 23:55:00",
+        "sum_open_interest": "105339.4650000000000000",
+        "sum_open_interest_value": "6295950212.0130000000000000",
+        "sum_taker_long_short_vol_ratio": "1.21799500",
+        "sum_toptrader_long_short_ratio": "1.16710600",
+        "symbol": "BTCUSDT"
+      },
+      "measurement_time_zone_certified": false,
+      "naive_label_grid_gaps": [],
+      "original_rows": 288,
+      "raw_duplicates_never_deleted": true,
+      "symbol": "BTCUSDT",
+      "unique_declared_labels": 288,
+      "zip_sha256": "56e0751dabd8108d61d1f9de86931ac68e901dad202d4dbac03173e2768be68e"
+    },
+    {
+      "authenticated_first_public_receipt": null,
+      "checksum_sha256": "edc58e4e9297a6169b1e9155b0cc11cfff1ee44f2854c9bbbe4ca83a5a58acf9",
+      "conflicting_within_file_labels": [],
+      "current_capture": "2026-10-04T14:33:38.607625+00:00",
+      "current_http_last_modified_label": "Mon, 27 Jul 2026 07:09:29 GMT",
+      "declared_first_label": "2026-06-26T00:00:00",
+      "declared_last_label": "2026-06-26T23:55:00",
+      "duplicate_multiplicity_histogram": {
+        "1": 288
+      },
+      "file_day": "2026-06-26",
+      "first_native_row": {
+        "count_long_short_ratio": "2.36491221",
+        "count_toptrader_long_short_ratio": "2.46114619",
+        "create_time": "2026-06-26 00:00:00",
+        "sum_open_interest": "105403.5810000000000000",
+        "sum_open_interest_value": "6305215155.7236130000000000",
+        "sum_taker_long_short_vol_ratio": "1.83399500",
+        "sum_toptrader_long_short_ratio": "1.16771000",
+        "symbol": "BTCUSDT"
+      },
+      "label_start_or_end_semantics_certified": false,
+      "last_native_row": {
+        "count_long_short_ratio": "2.13291472",
+        "count_toptrader_long_short_ratio": "2.21606923",
+        "create_time": "2026-06-26 23:55:00",
+        "sum_open_interest": "103637.4870000000000000",
+        "sum_open_interest_value": "6225711119.0640000000000000",
+        "sum_taker_long_short_vol_ratio": "0.53802900",
+        "sum_toptrader_long_short_ratio": "1.24494800",
+        "symbol": "BTCUSDT"
+      },
+      "measurement_time_zone_certified": false,
+      "naive_label_grid_gaps": [],
+      "original_rows": 288,
+      "raw_duplicates_never_deleted": true,
+      "symbol": "BTCUSDT",
+      "unique_declared_labels": 288,
+      "zip_sha256": "c06c1de4e3ab250acff83e71feb56344ae5b3cf31cd420f3ea9cfcf492976b0c"
+    },
+    {
+      "authenticated_first_public_receipt": null,
+      "checksum_sha256": "04dc341f2fe3b8c5d3a893908d6687312b7c79ee3b9e1b5aeeb7fc3d14d0c0e5",
+      "conflicting_within_file_labels": [],
+      "current_capture": "2026-10-04T14:33:38.936560+00:00",
+      "current_http_last_modified_label": "Wed, 29 Jul 2026 06:12:21 GMT",
+      "declared_first_label": "2026-06-24T00:00:00",
+      "declared_last_label": "2026-06-24T23:55:00",
+      "duplicate_multiplicity_histogram": {
+        "1": 288
+      },
+      "file_day": "2026-06-24",
+      "first_native_row": {
+        "count_long_short_ratio": "2.57575093",
+        "count_toptrader_long_short_ratio": "3.37061917",
+        "create_time": "2026-06-24 00:00:00",
+        "sum_open_interest": "2300331.4660000000000000",
+        "sum_open_interest_value": "3834364263.4468310000000000",
+        "sum_taker_long_short_vol_ratio": "0.85188000",
+        "sum_toptrader_long_short_ratio": "1.48568200",
+        "symbol": "ETHUSDT"
+      },
+      "label_start_or_end_semantics_certified": false,
+      "last_native_row": {
+        "count_long_short_ratio": "2.61480333",
+        "count_toptrader_long_short_ratio": "3.78442409",
+        "create_time": "2026-06-24 23:55:00",
+        "sum_open_interest": "2268488.3200000000000000",
+        "sum_open_interest_value": "3678444550.4128000000000000",
+        "sum_taker_long_short_vol_ratio": "1.61380600",
+        "sum_toptrader_long_short_ratio": "1.35035000",
+        "symbol": "ETHUSDT"
+      },
+      "measurement_time_zone_certified": false,
+      "naive_label_grid_gaps": [],
+      "original_rows": 288,
+      "raw_duplicates_never_deleted": true,
+      "symbol": "ETHUSDT",
+      "unique_declared_labels": 288,
+      "zip_sha256": "1a6a493c12b7baf8274ea4acd79e8cb7ef655e0dc1d8ceed93626e2d93bdd688"
+    },
+    {
+      "authenticated_first_public_receipt": null,
+      "checksum_sha256": "ea152987b003caafca7fd5d3a3511679c1e0e6f41f9c125e03b72c266a73638b",
+      "conflicting_within_file_labels": [],
+      "current_capture": "2026-10-04T14:33:39.477466+00:00",
+      "current_http_last_modified_label": "Tue, 28 Jul 2026 04:26:21 GMT",
+      "declared_first_label": "2026-06-25T00:00:00",
+      "declared_last_label": "2026-06-25T23:55:00",
+      "duplicate_multiplicity_histogram": {
+        "1": 288
+      },
+      "file_day": "2026-06-25",
+      "first_native_row": {
+        "count_long_short_ratio": "2.60206862",
+        "count_toptrader_long_short_ratio": "3.77130754",
+        "create_time": "2026-06-25 00:00:00",
+        "sum_open_interest": "2267829.6720000000000000",
+        "sum_open_interest_value": "3682683247.7673600000000000",
+        "sum_taker_long_short_vol_ratio": "1.88360000",
+        "sum_toptrader_long_short_ratio": "1.35198700",
+        "symbol": "ETHUSDT"
+      },
+      "label_start_or_end_semantics_certified": false,
+      "last_native_row": {
+        "count_long_short_ratio": "2.64730757",
+        "count_toptrader_long_short_ratio": "3.81528071",
+        "create_time": "2026-06-25 23:55:00",
+        "sum_open_interest": "2306425.1090000000000000",
+        "sum_open_interest_value": "3613314768.5126700000000000",
+        "sum_taker_long_short_vol_ratio": "0.76686600",
+        "sum_toptrader_long_short_ratio": "1.34277900",
+        "symbol": "ETHUSDT"
+      },
+      "measurement_time_zone_certified": false,
+      "naive_label_grid_gaps": [],
+      "original_rows": 288,
+      "raw_duplicates_never_deleted": true,
+      "symbol": "ETHUSDT",
+      "unique_declared_labels": 288,
+      "zip_sha256": "babb083bc28652856a247965e07b8faa3d05b69daa41ef9892f3ed6fbc7a8ba5"
+    },
+    {
+      "authenticated_first_public_receipt": null,
+      "checksum_sha256": "795f7d2db38c345c4470cef52c7c23a46308de6065ba4252dc951e59b710e22e",
+      "conflicting_within_file_labels": [],
+      "current_capture": "2026-10-04T14:33:40.210065+00:00",
+      "current_http_last_modified_label": "Mon, 27 Jul 2026 07:09:30 GMT",
+      "declared_first_label": "2026-06-26T00:00:00",
+      "declared_last_label": "2026-06-26T23:55:00",
+      "duplicate_multiplicity_histogram": {
+        "1": 288
+      },
+      "file_day": "2026-06-26",
+      "first_native_row": {
+        "count_long_short_ratio": "2.64501290",
+        "count_toptrader_long_short_ratio": "3.82558319",
+        "create_time": "2026-06-26 00:00:00",
+        "sum_open_interest": "2307665.4530000000000000",
+        "sum_open_interest_value": "3620980813.7429028000000000",
+        "sum_taker_long_short_vol_ratio": "2.23830800",
+        "sum_toptrader_long_short_ratio": "1.34922900",
+        "symbol": "ETHUSDT"
+      },
+      "label_start_or_end_semantics_certified": false,
+      "last_native_row": {
+        "count_long_short_ratio": "2.09315024",
+        "count_toptrader_long_short_ratio": "2.82954183",
+        "create_time": "2026-06-26 23:55:00",
+        "sum_open_interest": "2296108.7300000000000000",
+        "sum_open_interest_value": "3622938120.7178000000000000",
+        "sum_taker_long_short_vol_ratio": "1.40045900",
+        "sum_toptrader_long_short_ratio": "1.44950100",
+        "symbol": "ETHUSDT"
+      },
+      "measurement_time_zone_certified": false,
+      "naive_label_grid_gaps": [],
+      "original_rows": 288,
+      "raw_duplicates_never_deleted": true,
+      "symbol": "ETHUSDT",
+      "unique_declared_labels": 288,
+      "zip_sha256": "15a6083fd5b8ac84c8f120689a9c942c54015fe5e69459d48fc55495d16b48a0"
+    }
+  ],
+  "original_request_roles": 18,
+  "plan_commit": "9163efa",
+  "retained_body_sha256": {
+    "BTCUSDT_2026-06-24": "6bb5ab473189fa7c935b4d9a58d34b2c96cc329cd74fd6f9f17f8abc48ece649",
+    "BTCUSDT_2026-06-24_checksum": "3219fb9bd0b0ebfc50f930b5cde915a10930a3ec3af72832ebc984c3e30c9c0f",
+    "BTCUSDT_2026-06-25": "56e0751dabd8108d61d1f9de86931ac68e901dad202d4dbac03173e2768be68e",
+    "BTCUSDT_2026-06-25_checksum": "4d56c033651a245dd3cd05a0b77f17546d402415663cac4ddacd135246e85d7f",
+    "BTCUSDT_2026-06-26": "c06c1de4e3ab250acff83e71feb56344ae5b3cf31cd420f3ea9cfcf492976b0c",
+    "BTCUSDT_2026-06-26_checksum": "edc58e4e9297a6169b1e9155b0cc11cfff1ee44f2854c9bbbe4ca83a5a58acf9",
+    "ETHUSDT_2021-01-01": "e17ca438640f03afdd84a05bc0f7f9729ef6c7bda473e70a683e375d298cedd5",
+    "ETHUSDT_2021-01-01_checksum": "10e606ef21e9cddb17c8de49ff3b88a8804e916a7821afd8be3bd7c331ae0757",
+    "ETHUSDT_2026-06-24": "1a6a493c12b7baf8274ea4acd79e8cb7ef655e0dc1d8ceed93626e2d93bdd688",
+    "ETHUSDT_2026-06-24_checksum": "04dc341f2fe3b8c5d3a893908d6687312b7c79ee3b9e1b5aeeb7fc3d14d0c0e5",
+    "ETHUSDT_2026-06-25": "babb083bc28652856a247965e07b8faa3d05b69daa41ef9892f3ed6fbc7a8ba5",
+    "ETHUSDT_2026-06-25_checksum": "ea152987b003caafca7fd5d3a3511679c1e0e6f41f9c125e03b72c266a73638b",
+    "ETHUSDT_2026-06-26": "15a6083fd5b8ac84c8f120689a9c942c54015fe5e69459d48fc55495d16b48a0",
+    "ETHUSDT_2026-06-26_checksum": "795f7d2db38c345c4470cef52c7c23a46308de6065ba4252dc951e59b710e22e",
+    "inventory_measurement_paper": "a0faa0752036f5640c03faf935719845eb21895ccf1c0b1a0dbe3caf86aa143a",
+    "official_rest": "b9ab5b26a0eb5ef92a66889a85c2de9a230c9dc2fb66e41bbd54ee4551bc3c6f",
+    "publisher_readme": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad",
+    "source_clock_issue": "5984d0d43ba44ca51dca0c4e7054dc9c03ec0efb62e4ef1f92777ed621cc49d7"
+  },
+  "source_failures": [
+    {
+      "body_sha256": "e17ca438640f03afdd84a05bc0f7f9729ef6c7bda473e70a683e375d298cedd5",
+      "error_code": "NoSuchKey",
+      "no_retry_or_date_substitution": true,
+      "request": "ETHUSDT_2021-01-01",
+      "status": 404,
+      "unknown_inventory_not_zero": true
+    },
+    {
+      "body_sha256": "10e606ef21e9cddb17c8de49ff3b88a8804e916a7821afd8be3bd7c331ae0757",
+      "error_code": "NoSuchKey",
+      "no_retry_or_date_substitution": true,
+      "request": "ETHUSDT_2021-01-01_checksum",
+      "status": 404,
+      "unknown_inventory_not_zero": true
+    }
+  ],
+  "source_only": true,
+  "status_counts": {
+    "200": 16,
+    "404": 2
+  },
+  "third_party_clock_report": {
+    "claim_earlier_day_starts_0005": true,
+    "claimed_change_not_reproduced_in_current_originals": true,
+    "comments_at_capture": 0,
+    "created_at_label": "2026-08-24T06:24:47Z",
+    "current_boundary_duplicate_found": false,
+    "current_six_archives_all_start_0000": true,
+    "http_last_modified_not_first_public_version_proof": true,
+    "issue_state_at_capture": "open",
+    "no_authenticated_older_raw_version_or_cause": true,
+    "no_timestamp_shift_or_first_last_deduplication_applied": true,
+    "publisher_confirmation_found": false,
+    "updated_at_label": "2026-09-09T12:31:59Z",
+    "url": "https://github.com/binance/binance-public-data/issues/491"
+  },
+  "verdict": "Bounded source observations cannot certify full-history inventory/clock/publication fidelity. Early ETH original and checksum are genuine404, not zero. Reported label boundary is not reproduced by current bodies; no authenticated revision explanation. No OI alpha rule/cohort/backtest or runtime change."
+}
