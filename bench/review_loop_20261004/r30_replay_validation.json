@@ -1,0 +1,17 @@
+{
+  "artifact_sha256": {
+    "r30_native_source_audit.json": "f63e21cc928a71fdf46a43bbe5747f59fdb9707ae23fc10c8afa5b0f174ae595"
+  },
+  "http_disabled": true,
+  "native_input_hashes_checked": 20,
+  "no_current_history_substitution": true,
+  "original_failure_state_retained": true,
+  "original_native_source_audit_byte_identical": true,
+  "source_code_sha256": {
+    "R30_SOURCE_PLAN.md": "827fabf078a262031731498d970fbb75078e6912aa2e50a910e224ce083759bd",
+    "r30_native.py": "058c478a614abb88e747b3ee61aae409f948b12c1424ec3bf807ff2fa4a655c1",
+    "r30_replay.py": "7f395043b7fb82bbea95fa4a425b2c6051adb30e8240924695a7880625fd705a",
+    "r30_sources.py": "522db38e360ca8b3a497fb3a24b39979bee64e665de686e24439e6d8f7a8bc43",
+    "test_r30_native.py": "d819d77f131cfc365d4d7cbf41e314a062ed2320c58ea11661f297999f578115"
+  }
+}

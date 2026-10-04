@@ -1,0 +1,27 @@
+{
+  "adopted": false,
+  "current_strategy_bot_image_forward_changes": false,
+  "focused_source_tests_passed": 23,
+  "focused_warning_types": [
+    "existing pytest asyncio_mode option",
+    "existing pytest asyncio_default_fixture_loop_scope option"
+  ],
+  "historical_reserve_source_gate": false,
+  "http200": 17,
+  "http200_pruned_history_errors": 1,
+  "http403": 2,
+  "http_disabled_native_replay": true,
+  "native_bodies": 19,
+  "native_replay_inputs_checked": 20,
+  "no_alpha_rule_cohort_weights_or_performance": true,
+  "original_requests": 19,
+  "prior_integrity_file": "r30_prior_integrity.json",
+  "prior_selection_objects_retained": 159,
+  "retries": 0,
+  "runtime_health_verified": false,
+  "source_audit_byte_identical": true,
+  "source_only_selection_records_added": 1,
+  "source_plan_before_native_requests": "a84e75d",
+  "transport_failures": 0,
+  "usable_rpc_results": 16
+}
