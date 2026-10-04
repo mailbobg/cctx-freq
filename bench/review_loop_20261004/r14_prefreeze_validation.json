@@ -1,0 +1,28 @@
+{
+  "phase": "before aggregate candidate outcomes",
+  "protocol_commit": "26fe42f",
+  "initial_engine_commit": "26b4064",
+  "source_rounding_repair_commit": "b981c9c",
+  "synthetic_dtype_repair_commit": "10b160a",
+  "new_tests_passed": 32,
+  "new_test_warnings": [
+    "Unknown asyncio_default_fixture_loop_scope",
+    "Unknown asyncio_mode"
+  ],
+  "source_offline_replay_pass": true,
+  "six_control_curves_and_causal_held_orders_pass": true,
+  "data_validation_issue": {
+    "initial_assertion": "Original decimal parsing disagrees with frozen daily prices/activity",
+    "cause": "Old pandas C CSV parser versus original-string float conversion in quote volume only; zero OHLC/base volume/trade count gap. Max2ULP BTC/1ULP ETH.",
+    "resolution": "Replay unchanged R7 numeric parser from identical checksummed bodies to frozen output with exact equality; preserve literal decimal volume strings and use exact sums for signal sign. No numerical tolerance in feature boundary.",
+    "strategy_or_window_change": false,
+    "candidate_return_before_repair": false
+  },
+  "dependency_sha256": {
+    "r7_data.py": "19d3740cc9c258b4b51af6675b5fec2dc5823882da077707688d761e598f9a88",
+    "r6_data.py": "97a03f210bfc6ddb0322ad2f69d7e3c5e73fe762e945b33558f6143df065de62",
+    "../../strategies/RiskHoldR2b.py": "0691d6aa4a6bcec2e902e6642c52bf4e8b554f95dacb486e18202f7a4c15bd08",
+    "../../strategies/RiskHoldC.py": "b9b12549b20e06a1c3d6726ff7685344e4d3233fcc42b2a14e2ee8bd3cf4ca98",
+    "../../strategies/portfolio_risk.py": "c29d0f44d4af1ad6f5f0193258c6030904fd3103c61a6c6dce16b463af5912f7"
+  }
+}

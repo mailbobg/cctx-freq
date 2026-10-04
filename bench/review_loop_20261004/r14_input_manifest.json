@@ -1,0 +1,39 @@
+{
+  "source_inputs_sha256": {
+    "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+    "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+    "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+    "r14_data/BTCUSDT_flow.parquet": "320975c7587d6b0d9c25f8500f6309f8edea209618839c9755f8b45c5a260160",
+    "r13_data/BTCUSDT_1m.parquet": "00893ee218647d945b636dcf4915eaadc03a3d5b6c2790512a187f02907371b3",
+    "r14_data/ETHUSDT_flow.parquet": "e459fc9351ff907548f1f202be2c1c705a8760d4ac66a433ea341b805a24959c",
+    "r13_data/ETHUSDT_1m.parquet": "be3f4d46629d0e4daa9e6156e36e7071bdf75d37c4528831fc5d3704168d53a6"
+  },
+  "source_code_sha256": {
+    "R14_PROTOCOL.md": "8df85bf3fa5110d5ed3e77f03ab611fab904961106ef67b3e0090ad0f4b833f4",
+    "r14_data.py": "84a32a115a6fdac1224e651d6c4e7bff3516fcbfd29fde0fdf6f656fa339856c",
+    "test_r14_data.py": "7dcbfb809624ba4df57077cba5e9e994d76943ce96b1144a442ba39d9e07c387",
+    "r14_flow.py": "f57641eacee1c4ac3ebddfbb56f8e9b96c447522d36d2a0002b3fac15ee90655",
+    "test_r14_flow.py": "53bff894b130c2c1e58a289c298a5699eb5f4f46f9d1221738d3f74b400f8caf",
+    "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+    "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91",
+    "r10_gold.py": "d83c4c2a115b7129ee762d20c91c5a68d117e60044836811bf9f27c3bcc33064",
+    "r13_atr.py": "38a3f6157fb9d461ba7c582bcb82e6f4d0787d11b6c0e655aee38f558a31c763",
+    "r8_crowding.py": "5d66cc5b5a9237375409c71e1a6c6c36a2172de591f49bb02bc286147e7d0f59"
+  },
+  "flow_manifest_sha256": "d48c634d0632405f18bdc0d4ad3cd660fb854c7010922653f33801ec0d85cf3d",
+  "minute_manifest_sha256": "19d7b24c950c8a40b9f6c4ebd3b4423713d9849f0d1a3960e727a80362d2cc32",
+  "baseline_max_abs_gap": {
+    "early_reused_daily_cost0.0012": 2.220446049250313e-16,
+    "early_reused_daily_cost0.0024": 2.220446049250313e-16,
+    "recent_reused_daily_cost0.0012": 2.220446049250313e-16,
+    "recent_reused_minute_cost0.0012": 2.220446049250313e-16,
+    "recent_reused_daily_cost0.0024": 2.220446049250313e-16,
+    "recent_reused_minute_cost0.0024": 2.220446049250313e-16
+  },
+  "candidate_daily_minute_prefix_gap": 0.0,
+  "exact_feature_weight_prefix_equal": true,
+  "real_held_execution_order_prefix_equal": true,
+  "current_bar_excluded": true,
+  "companion_not_rescaled": true,
+  "ATR_disabled": true
+}
