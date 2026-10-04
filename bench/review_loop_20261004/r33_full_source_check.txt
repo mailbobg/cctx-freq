@@ -1,0 +1,1 @@
+{'native_decisions': 292, 'native_inputs': 330, 'full_native_source_contract_gate': True}
