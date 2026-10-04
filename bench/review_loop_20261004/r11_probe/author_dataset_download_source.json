@@ -1,0 +1,14 @@
+{
+  "url": "https://drive.usercontent.google.com/uc?id=1g9p2Kq8op40y4ZFQQ9AJw8a9CaDThOY8&export=download",
+  "status": 200,
+  "final_url": "https://drive.usercontent.google.com/download?id=1g9p2Kq8op40y4ZFQQ9AJw8a9CaDThOY8&export=download",
+  "headers": {
+    "Content-Type": "application/octet-stream",
+    "Content-Disposition": "attachment; filename=\"btc_option_data_toshare.parquet\"",
+    "Content-Length": "57453783"
+  },
+  "fetched_at": "2026-10-04T10:34:13.431904+00:00",
+  "path": "btc_option_data_toshare.parquet",
+  "bytes": 57453783,
+  "sha256": "6ed2162288d177d3c3a5443456c3fb78ed2c175249f0a0ff1665a5dd9c89800b"
+}

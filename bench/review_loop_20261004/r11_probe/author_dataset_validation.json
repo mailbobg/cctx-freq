@@ -1,0 +1,35 @@
+{
+  "source_sha256": "6ed2162288d177d3c3a5443456c3fb78ed2c175249f0a0ff1665a5dd9c89800b",
+  "catalog_sha256": "a5afb44efcdd187fc498bdfb9ff61f4407f6c9d100d3a4e953262adddb66824d",
+  "rows": 4498832,
+  "instrument_count": 14332,
+  "first_source_snapshot": "2024-01-13 19:00:14",
+  "last_source_snapshot": "2024-07-27 20:00:10",
+  "timestamp_zone": "None",
+  "hours_with_any_rows": 4704,
+  "hour_label_span": 4706,
+  "absent_whole_hour_labels": [
+    "2024-01-16 09:00:00",
+    "2024-03-09 09:00:00"
+  ],
+  "contracts_per_present_hour_min_median_max": [
+    796,
+    942.0,
+    1198
+  ],
+  "repeated_identity_snapshot_rows": 0,
+  "at_or_after_expiry_rows": 13388,
+  "missing_nonpositive_nonfinite_bidask_rows": 705150,
+  "locked_or_crossed_positive_bidask_rows": 0,
+  "positive_uncrossed_bidask_rows": 3793682,
+  "missing_nonpositive_nonfinite_mark_rows": 53051,
+  "known_marks_outside_valid_bidask_rows": 48032,
+  "official_catalog_expiry_labels_match": true,
+  "missing_execution_fields": [
+    "bid_amount",
+    "ask_amount",
+    "exchange_timestamp",
+    "local_arrival_timestamp"
+  ],
+  "scope": "Third-party author-captured BTC-only partial-2024 hourly snapshots linked by a Deribit education article. No execution latency/depth proof, no ETH or full historical windows, no forward-filled prices and no performance trial. Hour coverage is whole-source coverage, not coverage for every held contract."
+}

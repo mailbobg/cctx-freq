@@ -1,0 +1,32 @@
+{
+  "samples": [
+    {
+      "date": "2021-02-01",
+      "equity_USDT_10000_start": 9998.999320441513,
+      "gross_ceil_coverage_premium_USDT_proxy": 449.36836100000005,
+      "gross_premium_pct_equity": 4.4941333287355185,
+      "immediate_bidask_spread_USDT_proxy": 18.144789499999952,
+      "immediate_bidask_spread_pct_equity": 0.18146605393707294,
+      "all_displayed_top_asks_sufficient": true
+    },
+    {
+      "date": "2024-01-01",
+      "equity_USDT_10000_start": 9997.254944884853,
+      "gross_ceil_coverage_premium_USDT_proxy": 243.327997,
+      "gross_premium_pct_equity": 2.4339481021687863,
+      "immediate_bidask_spread_USDT_proxy": 4.396049000000004,
+      "immediate_bidask_spread_pct_equity": 0.04397256071027042,
+      "all_displayed_top_asks_sufficient": true
+    },
+    {
+      "date": "2026-08-01",
+      "equity_USDT_10000_start": 12888.851909287063,
+      "gross_ceil_coverage_premium_USDT_proxy": 168.84587199999999,
+      "gross_premium_pct_equity": 1.3100148344348506,
+      "immediate_bidask_spread_USDT_proxy": 8.151388000000008,
+      "immediate_bidask_spread_pct_equity": 0.06324370903917768,
+      "all_displayed_top_asks_sufficient": true
+    }
+  ],
+  "scope": "Fixed three-date gross premium/rounding feasibility only; neither premium outlay nor three-date average is PnL, annual cost, risk guarantee or adoption evidence."
+}

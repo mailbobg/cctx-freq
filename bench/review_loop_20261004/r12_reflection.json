@@ -1,0 +1,91 @@
+{
+  "results": {
+    "early_reused": {
+      "versions": {
+        "Cov10_baseline": {
+          "peak": "2022-11-04 00:00:00+00:00",
+          "trough": "2022-11-09 00:00:00+00:00",
+          "daily_MTM_DD_pct": -6.9902620719863195,
+          "episode_asset_pnl_USDT_at_10000_start": {
+            "BTC": -352.3813357747062,
+            "ETH": -474.0597635445698,
+            "fees": 0.0
+          },
+          "episode_net_equity_change_USDT": -826.4410993192772,
+          "whole_window_asset_pnl_USDT_at_10000_start": {
+            "BTC": 1553.051648314856,
+            "ETH": 2196.008590491378,
+            "fees": -111.61835542197306
+          },
+          "all_days_attribution_max_abs_gap": 1.1813466871402056e-14
+        },
+        "daily_off": {
+          "peak": "2022-10-29 00:00:00+00:00",
+          "trough": "2022-12-28 00:00:00+00:00",
+          "daily_MTM_DD_pct": -7.246776817586998,
+          "episode_asset_pnl_USDT_at_10000_start": {
+            "BTC": -342.72938477549087,
+            "ETH": -507.28470169265836,
+            "fees": -24.000270417125
+          },
+          "episode_net_equity_change_USDT": -874.0143568853065,
+          "whole_window_asset_pnl_USDT_at_10000_start": {
+            "BTC": 1725.4822972963145,
+            "ETH": 1995.4881887114193,
+            "fees": -155.306548723959
+          },
+          "all_days_attribution_max_abs_gap": 1.0193235144839718e-14
+        }
+      },
+      "daily_off_minus_control_attribution_USDT": {
+        "BTC": 172.4306489814585,
+        "ETH": -200.52040177995877,
+        "fees": -43.68819330198593
+      }
+    },
+    "recent_reused": {
+      "versions": {
+        "Cov10_baseline": {
+          "peak": "2025-10-06 00:00:00+00:00",
+          "trough": "2026-03-29 00:00:00+00:00",
+          "daily_MTM_DD_pct": -7.5565427275781865,
+          "episode_asset_pnl_USDT_at_10000_start": {
+            "BTC": -380.91736597393475,
+            "ETH": -616.9752495257128,
+            "fees": -29.448774413349003
+          },
+          "episode_net_equity_change_USDT": -1027.3413899130035,
+          "whole_window_asset_pnl_USDT_at_10000_start": {
+            "BTC": 1787.4776631817856,
+            "ETH": 2285.6783185350737,
+            "fees": -168.02624967797885
+          },
+          "all_days_attribution_max_abs_gap": 2.1649348980190553e-15
+        },
+        "daily_off": {
+          "peak": "2025-10-06 00:00:00+00:00",
+          "trough": "2026-03-28 00:00:00+00:00",
+          "daily_MTM_DD_pct": -8.924707881361371,
+          "episode_asset_pnl_USDT_at_10000_start": {
+            "BTC": -374.88582901268455,
+            "ETH": -760.0903835357581,
+            "fees": -44.715771955347996
+          },
+          "episode_net_equity_change_USDT": -1179.6919845038012,
+          "whole_window_asset_pnl_USDT_at_10000_start": {
+            "BTC": 1515.4271803473273,
+            "ETH": 1818.8040324327364,
+            "fees": -220.40301379486777
+          },
+          "all_days_attribution_max_abs_gap": 7.903400156550333e-15
+        }
+      },
+      "daily_off_minus_control_attribution_USDT": {
+        "BTC": -272.0504828344583,
+        "ETH": -466.87428610233724,
+        "fees": -52.37676411688892
+      }
+    }
+  },
+  "scope": "Attribution of two already-frozen policies with their actual modeled unit/cash paths. Price-PnL difference is not a zero-fee counterfactual or the isolated causal effect of one exit; no new policy, threshold or profit selection."
+}

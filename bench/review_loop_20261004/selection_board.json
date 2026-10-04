@@ -382,7 +382,7 @@
     "historical_profitability_lead": "RiskHoldR2bCov10",
     "strict_default_gate_winner": null,
     "adopted_new_strategy": false,
-    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR. R8 crowding veto does not improve worst loss paths; R9 rotation fails returns and risk. Reused history is not fresh OOS. R10 fixed PAXG sleeve preregistered before its prices/outcomes. No adopted winner. R10 raises gold downside risk:8.84%/21.38% CAGR and14.12%/11.68% daily DD; rejected. Contractual insurance source availability investigation follows; no candidate/price result yet.",
+    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR and not exact-mark/execution certified. R8 crowding veto, R9 rotation and R10 fixed gold failed frozen screens. R12 daily original-off exits also fail return/risk, no tuning. R11 six real fixed quote samples and partial author source improve source feasibility only; continuous BTC/ETH execution/valuation history unresolved. Reused history is not fresh OOS; no adopted winner or activation.",
     "low_return_price_screen_lead": "R7 equal-allocation dated carry: costed CAGR2.20%/3.73%, double cost1.45%/2.84%; not exact mark/execution certified"
   },
   {
@@ -617,6 +617,70 @@
     "trial": "R11 contractual insurance source feasibility",
     "performance_trial": false,
     "adoption_gate": false,
-    "disposition": "Historical identities/trades available; continuous historical bid/ask/marks and minimum-lot economics unresolved. No premium/P&L selection or profitability result. Fixed tape errors/sparsity retained."
+    "disposition": "Six frozen actual first-minute quotes obtained; ceil-coverage gross premium/account4.49%/2.43%/1.31% at three dates, no annualization/P&L. Author partial-2024 BTC-only file lacks quote sizes/arrival times and has gaps/post-expiry rows. Continuous frozen-window quote/mark and execution coverage unresolved; no alpha rejection or adoption."
+  },
+  {
+    "trial": "R12 matched control",
+    "window": "early_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 11.229367408484547,
+    "daily_MTM_DD_pct": -6.9902620719863195,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R12 daily original-off exits",
+    "window": "early_reused_daily_off_cost0.0012",
+    "CAGR_pct": 11.028189079178464,
+    "daily_MTM_DD_pct": -7.246776817586998,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R12 matched control",
+    "window": "early_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 10.86464299766494,
+    "daily_MTM_DD_pct": -6.991267639401788,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R12 daily original-off exits",
+    "window": "early_reused_daily_off_cost0.0024",
+    "CAGR_pct": 10.525561886079092,
+    "daily_MTM_DD_pct": -7.443582437586338,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R12 matched control",
+    "window": "recent_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 13.149826581062207,
+    "daily_MTM_DD_pct": -7.5565427275781865,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R12 daily original-off exits",
+    "window": "recent_reused_daily_off_cost0.0012",
+    "CAGR_pct": 10.69253682763045,
+    "daily_MTM_DD_pct": -8.924707881361371,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R12 matched control",
+    "window": "recent_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 12.552807184389646,
+    "daily_MTM_DD_pct": -7.768151264532685,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
+  },
+  {
+    "trial": "R12 daily original-off exits",
+    "window": "recent_reused_daily_off_cost0.0024",
+    "CAGR_pct": 9.909975412074257,
+    "daily_MTM_DD_pct": -9.253771020631053,
+    "adoption_gate": false,
+    "disposition": "Rejected fixed candidate: both base return/risk gates fail. No threshold, timing, recovery, risk or cost tuning; no activation."
   }
 ]

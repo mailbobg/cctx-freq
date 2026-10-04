@@ -1,0 +1,50 @@
+{
+  "https://datasets.tardis.dev/v1/deribit/quotes/2021/02/01/ETH-26MAR21-1120-P.csv.gz": {
+    "url": "https://datasets.tardis.dev/v1/deribit/quotes/2021/02/01/ETH-26MAR21-1120-P.csv.gz",
+    "path": "raw/ffbc6d5f80a34d7fd67daf9fce0df69ab5604971bfe0ace236bbdb66f37bb962",
+    "status": 200,
+    "bytes": 288268,
+    "sha256": "60960364aa6e3f453f69c0ea13745b43d998bfcf62a383b634f2bbd43317d2ac",
+    "retrieved_utc": "2026-10-04T10:30:58.341005+00:00"
+  },
+  "https://datasets.tardis.dev/v1/deribit/quotes/2024/01/01/BTC-23FEB24-38000-P.csv.gz": {
+    "url": "https://datasets.tardis.dev/v1/deribit/quotes/2024/01/01/BTC-23FEB24-38000-P.csv.gz",
+    "path": "raw/520e8ca03df3ad01fa0e5f664b6bf61d10d9537682d5e5563cba9aae7c7c7ff6",
+    "status": 200,
+    "bytes": 98893,
+    "sha256": "c794023a172cfa432a350d7ffa98a9643b2471b4e4246504bd0716bda000debc",
+    "retrieved_utc": "2026-10-04T10:30:58.351936+00:00"
+  },
+  "https://datasets.tardis.dev/v1/deribit/quotes/2021/02/01/BTC-26MAR21-28000-P.csv.gz": {
+    "url": "https://datasets.tardis.dev/v1/deribit/quotes/2021/02/01/BTC-26MAR21-28000-P.csv.gz",
+    "path": "raw/0ccd14d7d7da99bc87d5ed365e87e556c796df4e765d6ff004d89e860307e9c5",
+    "status": 200,
+    "bytes": 268681,
+    "sha256": "0a9faf4a2a1c755a84344841b114cbe2e0edbb3afe1a4999199ca888005a2549",
+    "retrieved_utc": "2026-10-04T10:30:58.603032+00:00"
+  },
+  "https://datasets.tardis.dev/v1/deribit/quotes/2026/08/01/BTC-25SEP26-56000-P.csv.gz": {
+    "url": "https://datasets.tardis.dev/v1/deribit/quotes/2026/08/01/BTC-25SEP26-56000-P.csv.gz",
+    "path": "raw/75b359b361382b203742b3eec3b0e478cdd64d65e09b596b4a8ab785f571a0db",
+    "status": 200,
+    "bytes": 66717,
+    "sha256": "9f088dfcd92c9bd544fec0f8953b30b999780dfaac764a5f98b49965f5038497",
+    "retrieved_utc": "2026-10-04T10:30:58.950747+00:00"
+  },
+  "https://datasets.tardis.dev/v1/deribit/quotes/2026/08/01/ETH-25SEP26-1600-P.csv.gz": {
+    "url": "https://datasets.tardis.dev/v1/deribit/quotes/2026/08/01/ETH-25SEP26-1600-P.csv.gz",
+    "path": "raw/112f00e3d931be2d5d4bdae247d151b6caebad8dfff2dd7c18662c6bddb3a47d",
+    "status": 200,
+    "bytes": 56192,
+    "sha256": "eda661ad0bbd6dd830fdc0b357edabede9abe79f58de46037476cc39166ea4ce",
+    "retrieved_utc": "2026-10-04T10:30:59.349714+00:00"
+  },
+  "https://datasets.tardis.dev/v1/deribit/quotes/2024/01/01/ETH-23FEB24-2000-P.csv.gz": {
+    "url": "https://datasets.tardis.dev/v1/deribit/quotes/2024/01/01/ETH-23FEB24-2000-P.csv.gz",
+    "path": "raw/0fb16a0342d42d5d8122a317ef6bce1f96f349cf02c57cc55a206fbe6e7e00f2",
+    "status": 200,
+    "bytes": 107896,
+    "sha256": "86f1e5e57f7c0c42d10b1013ed7e4adfbdf3066dfb73691b611649400554249b",
+    "retrieved_utc": "2026-10-04T10:31:00.497590+00:00"
+  }
+}
