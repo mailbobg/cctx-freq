@@ -1359,5 +1359,18 @@
     "retained_attempts": 11,
     "native_comparisons": 1152,
     "disposition": "All576OI quantities and576values exactly corroborate tested current API T+5m; taker maps differently and retains precision/window discrepancies. Both archives unordered: strict failures retained, forensic comparison grants no feature eligibility. Current mapping is not historical first-version/unit/measurement certification. No alpha/P&L/runtime/forward change."
+  },
+  {
+    "trial": "R26 native outstanding inventory confirmation",
+    "registered_alpha_hypothesis": true,
+    "alpha_cohort_or_outcomes_evaluated": false,
+    "new_performance": false,
+    "adoption_gate": false,
+    "original_request_roles": 1168,
+    "inherited_original_records": 8,
+    "new_http_observations": 1160,
+    "source_days": 584,
+    "source_gate_failure_days": 130,
+    "disposition": "Exact rule frozen but source gate fails: full calendar/native fields unavailable; two exact23:55endpoints absent. No full feature/trading cohort/P&L, no losing-alpha or zero-return verdict. Preserve blanks/known stock fields and raw duplicates/order; no sign/day/source/completeness/missingness rescue. No runtime/forward change."
   }
 ]

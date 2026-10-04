@@ -1,0 +1,517 @@
+{
+  "complete_pairs_validated": 251,
+  "new_performance": false,
+  "scope": "Intermediate snapshot of available complete original pairs, not full feature or decision cohort",
+  "snapshot_records": 757,
+  "source_failures": [
+    {
+      "day": "2021-01-20",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-02-05",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-02-10",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-02-19",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-02-24",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-03-05",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-03-10",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-03-12",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-03-24",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-05-07",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2021-05-19",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-05-21",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-05-28",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-06-23",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-08-25",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2021-09-10",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-09-22",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-09-24",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-10-01",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-10-22",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-10-27",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-11-10",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-11-19",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-11-26",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-12-15",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-12-24",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-12-29",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2021-12-31",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-05",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-07",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-12",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-14",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-19",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-21",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-26",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-01-28",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-02",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-04",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-09",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-11",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-16",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-18",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-23",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-02-25",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-02",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-04",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-09",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-11",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-16",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-18",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-23",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-25",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-03-30",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-01",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-06",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-08",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-13",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-15",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-20",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-22",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-27",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-04-29",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-04",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-06",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-11",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-13",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-18",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-20",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-25",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-05-27",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-06-24",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-06-29",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-01",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-06",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-08",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-13",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-15",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-20",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-22",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-27",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-07-29",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-03",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-05",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-10",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-12",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-17",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-19",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-24",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-26",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-08-31",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-02",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-07",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-09",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-14",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-16",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-21",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-23",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-28",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-09-30",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-05",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-07",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-12",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-14",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-19",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-21",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-26",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-10-28",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-02",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-04",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-09",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-11",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-16",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-18",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-23",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-25",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-11-30",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-12-02",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-12-07",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-12-09",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2022-12-14",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2023-02-01",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2023-08-09",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2024-02-16",
+      "error": "ValueError: Missing/extra required native daily label"
+    },
+    {
+      "day": "2024-06-12",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2024-06-21",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2024-07-10",
+      "error": "ValueError: Unreviewed native decimal"
+    },
+    {
+      "day": "2024-07-12",
+      "error": "ValueError: Unreviewed native decimal"
+    }
+  ],
+  "source_stage_only": true
+}
