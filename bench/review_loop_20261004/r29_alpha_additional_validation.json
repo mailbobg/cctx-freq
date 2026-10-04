@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": {
+    "r29_alpha_configured_scope.json": "c18f08eaa10ea670b94fba3f45d238ab8de848ae084bb20be94b7dda45cb3ce5",
+    "r29_freeze.py": "2ade5341c0cc1acf2eb57e9b4a3422a656c326e51ca7ceef313db0869fdb3b43",
+    "r29_run.py": "f2c3ef9bded5bc543034df73b4b9a8c0a44711a877493760b18f63bbbadbe772",
+    "test_r29_freeze.py": "188d8ef93fa4e9dd87e14163e4bbd6898e87c5364b25f750d1154566de1e09c9"
+  },
+  "current_configured_bots": 16,
+  "economic_rule_changed": false,
+  "focused_rate_native_view_and_freeze_tests_passed": 43,
+  "guard_fix": "Verify transitive native input and engine digests before preparation; recheck regenerated source/cohort before outcomes",
+  "included_other_configs": 13,
+  "included_reviewed_configs_and_source_hashes_equal": true,
+  "new_freeze_guard_tests_passed": 8,
+  "no_broad_rerun_after_unchanged_checks": true,
+  "no_strategy_bot_image_or_forward_change": true,
+  "prior_stable_tests_unchanged": 575,
+  "stable_subtests": 16,
+  "stage": "Before complete native cohort or any full R29 outcomes",
+  "unique_complementary_verified_tests": 583
+}

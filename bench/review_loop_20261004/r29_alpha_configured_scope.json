@@ -1,0 +1,136 @@
+{
+  "configured_bots": 16,
+  "included_other_configurations": 13,
+  "included_sources_and_configs_unchanged": true,
+  "new_performance": false,
+  "no_process_api_port_or_health_verification_claimed": true,
+  "no_strategy_bot_image_or_existing_forward_change": true,
+  "rows": [
+    {
+      "bot": "c-hold-sma",
+      "config_sha256": "783e6b6a4f43b3b5eac7e350ac8e18661ff54d74c18bbadc25865f3094e969da",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "RiskHoldR2b"
+    },
+    {
+      "bot": "c-hold",
+      "config_sha256": "db62f11e17b253793392ea6da5e6dda6d13de03fef636380c204b62c78804b9c",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "RiskHoldC"
+    },
+    {
+      "bot": "funding-spread",
+      "config_sha256": "6989d313eec0dad4e651470b4ffaf8e0f7d10700de772cc4fecfbd37c8834c51",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "CrossVenueFundingV1"
+    },
+    {
+      "bot": "l2-listings",
+      "config_sha256": "77582392ea5a604f9ce0642dee035faba05d7be90672742e117c78a1af370396",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "ShortNewListingsL2"
+    },
+    {
+      "bot": "l2p-listings",
+      "config_sha256": "b3f9bbfa8ca4c84ce69a45be3f9899ca0683c3a639beb650352914fcad9e4a5b",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "ShortNewListingsL2P"
+    },
+    {
+      "bot": "unlock-short",
+      "config_sha256": "cdd7665b0ec102191c71c03fe1fb7b9fe2de653564f76042cce2b7af76325cb5",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "UnlockPressureShortV1"
+    },
+    {
+      "bot": "unlock-xs",
+      "config_sha256": "bbc9f0221ae58d4d69db07950872b23c1cd5e1ac7aa4a72d76b6b8e49af6da12",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "UnlockXS"
+    },
+    {
+      "bot": "x12",
+      "config_sha256": "46c245cb9cd500e6b54145fbb3e01eda55754bad876deb10cc3a358518ed9505",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "E0V1ENX12"
+    },
+    {
+      "bot": "x14-bitget",
+      "config_sha256": "21f95c0fafe53a8a2182f33260c5ce7b557d763d78ee9c181f53b18ae9a86343",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "HedgedFlushX14"
+    },
+    {
+      "bot": "x14-bybit",
+      "config_sha256": "2730e36b7f064c473f846cef490210107680d6b400676ca7f5e6c866f197eff7",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "HedgedFlushX14"
+    },
+    {
+      "bot": "x14",
+      "config_sha256": "7125991004eb8b8d4e412564b0e57a43aa45205aa7443767646f8e5eb82cf4ab",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "HedgedFlushX14"
+    },
+    {
+      "bot": "x7",
+      "config_sha256": "03693e5d9faf77d4e3fb386a78c1ee482cd8a7c39fda7f3b4c3ee585af35c3c1",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "NostalgiaForInfinityX7"
+    },
+    {
+      "bot": "x8",
+      "config_sha256": "5877aa2176d03479bf57c8b1eb9e7dc3ad8803958c51cf5940576e41390495fb",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": true,
+      "reviewed_source_hashes_equal": true,
+      "strategy": "NostalgiaForInfinityX8"
+    },
+    {
+      "bot": "e0v1en-live",
+      "config_sha256": "39cec3b40d8c7eccc0db8be5324f52447d103fd23948ae829acd579a51b332a0",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": false,
+      "strategy": "E0V1EN"
+    },
+    {
+      "bot": "e0v1en",
+      "config_sha256": "f601651c6dc53c3216930ddee5cb660b8604fcd738429f8cb1727e738ad6f49a",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": false,
+      "strategy": "E0V1ENWait3"
+    },
+    {
+      "bot": "wta",
+      "config_sha256": "ba5dafb59f90092f053bf26896603ce549feb80b38c844167c6656397a3c33e3",
+      "exact_prior_config_sha256": true,
+      "included_other_strategy": false,
+      "strategy": "E0V1ENWTA"
+    }
+  ],
+  "source_scope_only": true
+}

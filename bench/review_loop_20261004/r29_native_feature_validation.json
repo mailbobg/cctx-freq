@@ -1,0 +1,13 @@
+{
+  "decision_mondays": 292,
+  "eligible_native_rate_cells": 2306,
+  "eligible_rows": 1153,
+  "eligible_unknown_cells": 89,
+  "exact_original_rate_text_row_version_and_unknown_states": true,
+  "historical_first_public_receipt_and_actual_execution_certified": false,
+  "independent_most_recent_common_known_mon_thu_and_strict_native_decimal_sign": true,
+  "new_performance": false,
+  "original_rows": 1780163,
+  "selected_native_rate_cells": 584,
+  "source_stage_only": true
+}

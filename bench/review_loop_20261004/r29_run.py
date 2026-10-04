@@ -10,6 +10,7 @@ import pandas as pd
 from r29_cohort_sources import DATA, decision_pairs, selected, targets
 from r29_view import parse_native, interval_view
 from r29_funding import ASSETS, feature, overlay
+from r29_freeze import assert_frozen_inputs
 from r20_audit import retained
 from r1_r2b_risk import signals, risk_weights, RiskHoldR2b
 from r9_selection import load_prices
@@ -133,9 +134,10 @@ def prepare():
         raise AssertionError('Prefix must exercise actual held units')
     daily = simulate_spot(px, target, '2024-01-01', '2024-07-05', .0012, terminal=False)
     gap = max_gap(daily, full, list(daily))
-    names = ['R29_PROTOCOL.md', 'R29_NATIVE_AVAILABILITY_CLARIFICATION.md', 'r29_cohort_sources.py',
+    names = ['R29_PROTOCOL.md', 'R29_NATIVE_AVAILABILITY_CLARIFICATION.md', 'R29_FREEZE_GUARD_CLARIFICATION.md', 'r29_cohort_sources.py',
         'r29_sources.py', 'r29_view.py', 'r29_funding.py', 'test_r29_funding.py', 'test_r29_native.py', 'test_r29_view.py',
         'r29_range_sources.py', 'r29_range_audit.py', 'r29_run.py', 'r29_reflection.py', 'r29_plot.py',
+        'r29_freeze.py', 'test_r29_freeze.py',
         'r1_r2b_risk.py', 'r9_selection.py', 'r10_gold.py', 'r13_atr.py', 'r8_crowding.py',
         'r20_audit.py', 'r21_basis.py', 'r19_run.py', 'r19_reflection.py',
         'r29_range_audit.json', 'r29_strict_view_contract_failure.json',
@@ -157,20 +159,15 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--verify-only', action='store_true')
     args = parser.parse_args()
+    fixed = None
     if not args.verify_only:
-        freeze = HERE/'r29_prefreeze_manifest.json'
-        if not freeze.exists():
-            raise ValueError('Explicit source/code/cohort prefreeze required before any full outcome')
-        fixed = json.loads(freeze.read_text())
-        if fixed['protocol_commit'] != '58d4344' or fixed['new_full_performance'] is not False:
-            raise ValueError('Unreviewed preregistered alpha freeze')
-        for name, sha in fixed['source_and_cohort_sha256'].items():
-            if hashlib.sha256((HERE/name).read_bytes()).hexdigest() != sha:
-                raise ValueError('Frozen source/code/cohort changed '+name)
+        fixed = assert_frozen_inputs(HERE)
     px, base, target, disabled, minutes, verification = prepare()
     if args.verify_only:
         print('Native same-date official rates, six frozen controls and actual held/order prefixes PASS')
         return
+    # Check again after regeneration, before any full alpha outcome is produced.
+    assert_frozen_inputs(HERE, fixed)
     results = {}
     for label, start, end in WINDOWS:
         for cost in (.0012, .0024):
