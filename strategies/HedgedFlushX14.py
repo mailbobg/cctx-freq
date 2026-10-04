@@ -37,7 +37,7 @@ class HedgedFlushX14(IStrategy):
     can_short = True
     stoploss = -0.99                      # exits are decided in custom_exit
     minimal_roi = {"0": 100}
-    use_exit_signal = False
+    use_exit_signal = True               # Freqtrade also gates custom_exit with this flag
     process_only_new_candles = True
     startup_candle_count = 20
     order_types = {"entry": "market", "exit": "market", "stoploss": "market", "stoploss_on_exchange": False}

@@ -12,7 +12,7 @@
   "dry_run_wallet": 10000,
   "dataformat_ohlcv": "feather",
   "dataformat_trades": "feather",
-  "use_exit_signal": false,
+  "use_exit_signal": true,
   "exit_profit_only": false,
   "unfilledtimeout": {
     "entry": 5,
