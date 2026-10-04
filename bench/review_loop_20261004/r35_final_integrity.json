@@ -1,0 +1,18 @@
+{
+  "R33_original_native_341_and_imported_code_177_prefreeze_unchanged": true,
+  "R35_original_and_corrected_guarded_failure_native_account_artifacts_preserved": true,
+  "R35_research_selection_artifact_matches_actual_eight_account_risk": true,
+  "adopted_for_real_capital": false,
+  "all_current_registered_hashes_passed_before_this_proof": {
+    "output_sha256": 5081,
+    "root_source_sha256": 1,
+    "source_sha256": 257
+  },
+  "new_bot_registered_or_started": false,
+  "original_13_other_bot_config_digests_passed": true,
+  "original_full_source_coverage_failure_not_promoted": true,
+  "previous_source_output_root_hashes_and172_old_selection_rows_preserved": true,
+  "research_candidate_selected": "RiskHoldR2bCov10",
+  "unconfirmed_numeric_defaults_not_relaxed": true,
+  "versioned_selection_rows": 180
+}
