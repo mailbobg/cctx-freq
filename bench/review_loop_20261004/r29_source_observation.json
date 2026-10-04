@@ -1,0 +1,222 @@
+{
+  "adopted": false,
+  "alpha_rule_threshold_staleness_feature_cohort_weights_or_outcomes_defined": false,
+  "code_sha256": {
+    "R29_SOURCE_PLAN.md": "b41f504a155d58061a05ba7604dd4769531e72bf46e25754ca5a061c0838b927",
+    "r29_observation.py": "dbae681dab07e4aa64e41ebede0da0beb5544f75225ffaf0d66cd6f5e80c9f24",
+    "r29_sources.py": "65423db47abbf3bd0425fb9ffa96ead6e4e9529998801a4c4fab3c5043a9537b",
+    "test_r29_observation.py": "d579fb7168182ea12a65a3343bc5a0a7c9be9be47789502b40211a060ddcf146"
+  },
+  "eligible_native_feature_view_defined": false,
+  "historical_first_public_receipts_certified": false,
+  "interpretation": "Original two-series responses ignore the bounded start query and include older rows. Preserve every row and this failed scope assumption. Latest same-value-date rate comparisons are descriptive source/clock facts only, not an eligible full feature cohort or alpha. Assess a separately documented bounded native view/source-contract correction before any economic protocol; do not silently drop rows, replace versions, backdate Friday publication or infer profitability.",
+  "native_forensic_samples": [
+    {
+      "body_sha256": "c7685048c5373eba026a0c7f62dc9c2f053fbd9ed9cb5c10de16d102746718c4",
+      "capture_or_last_modified_is_not_first_public_receipt": true,
+      "capture_received_utc": "2026-10-04T16:04:25.668307+00:00",
+      "capture_requested_utc": "2026-10-04T16:04:13.090009+00:00",
+      "descriptive_difference_is_not_a_return_or_crypto_funding_payout": true,
+      "first_original_observation": "2000-07-03",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:25 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "last_original_observation": "2019-09-19",
+      "latest_common_difference_basis_points": "5.00",
+      "latest_common_difference_percentage_points": "0.05",
+      "latest_common_effr_native": "1.90",
+      "latest_common_known_observation": "2019-09-19",
+      "latest_common_sofr_native": "1.95",
+      "latest_known_date_by_series": {
+        "EFFR": "2019-09-19",
+        "SOFR": "2019-09-19"
+      },
+      "monday": "2019-09-23",
+      "native_observation_label_is_not_a_publication_date": true,
+      "native_unknown_cells": {
+        "EFFR": 188,
+        "SOFR": 5005
+      },
+      "no_native_row_deletion_sort_rounding_zero_fill_or_eligible_feature_view": true,
+      "original_header": [
+        "observation_date",
+        "SOFR_20190921",
+        "EFFR_20190921"
+      ],
+      "original_requested_range_contract_pass": false,
+      "original_rows": 5014,
+      "original_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2019-09-21%2C2019-09-21&cosd=2019-09-08&coed=2019-09-21",
+      "outside_requested_range_rows": 5005,
+      "registered_alpha_or_performance": false,
+      "requested_observation_end": "2019-09-21",
+      "requested_observation_start": "2019-09-08",
+      "source_record": "archive_2019-09-21",
+      "vintage": "2019-09-21"
+    },
+    {
+      "body_sha256": "14130ee45b1a74cf0842418af60fc3b0c81a6bb50225e902b0c8547b70a8a850",
+      "capture_or_last_modified_is_not_first_public_receipt": true,
+      "capture_received_utc": "2026-10-04T16:04:59.002120+00:00",
+      "capture_requested_utc": "2026-10-04T16:04:44.353460+00:00",
+      "descriptive_difference_is_not_a_return_or_crypto_funding_payout": true,
+      "first_original_observation": "2000-07-03",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:57 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "last_original_observation": "2021-01-28",
+      "latest_common_difference_basis_points": "-3.00",
+      "latest_common_difference_percentage_points": "-0.03",
+      "latest_common_effr_native": "0.07",
+      "latest_common_known_observation": "2021-01-28",
+      "latest_common_sofr_native": "0.04",
+      "latest_known_date_by_series": {
+        "EFFR": "2021-01-28",
+        "SOFR": "2021-01-28"
+      },
+      "monday": "2021-02-01",
+      "native_observation_label_is_not_a_publication_date": true,
+      "native_unknown_cells": {
+        "EFFR": 203,
+        "SOFR": 5361
+      },
+      "no_native_row_deletion_sort_rounding_zero_fill_or_eligible_feature_view": true,
+      "original_header": [
+        "observation_date",
+        "SOFR_20210130",
+        "EFFR_20210130"
+      ],
+      "original_requested_range_contract_pass": false,
+      "original_rows": 5369,
+      "original_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2021-01-30%2C2021-01-30&cosd=2021-01-17&coed=2021-01-30",
+      "outside_requested_range_rows": 5360,
+      "registered_alpha_or_performance": false,
+      "requested_observation_end": "2021-01-30",
+      "requested_observation_start": "2021-01-17",
+      "source_record": "archive_2021-01-30_retry_1",
+      "vintage": "2021-01-30"
+    },
+    {
+      "body_sha256": "d362f60cdd6df384ef9db2859938dc76642400ecba673fd47897773f81b57c82",
+      "capture_or_last_modified_is_not_first_public_receipt": true,
+      "capture_received_utc": "2026-10-04T16:04:31.054484+00:00",
+      "capture_requested_utc": "2026-10-04T16:04:18.471407+00:00",
+      "descriptive_difference_is_not_a_return_or_crypto_funding_payout": true,
+      "first_original_observation": "2000-07-03",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:29 GMT",
+        "Last-Modified": "Fri, 29 Dec 2023 14:01:01 GMT"
+      },
+      "last_original_observation": "2023-12-28",
+      "latest_common_difference_basis_points": "7.00",
+      "latest_common_difference_percentage_points": "0.07",
+      "latest_common_effr_native": "5.33",
+      "latest_common_known_observation": "2023-12-28",
+      "latest_common_sofr_native": "5.40",
+      "latest_known_date_by_series": {
+        "EFFR": "2023-12-28",
+        "SOFR": "2023-12-28"
+      },
+      "monday": "2024-01-01",
+      "native_observation_label_is_not_a_publication_date": true,
+      "native_unknown_cells": {
+        "EFFR": 230,
+        "SOFR": 6121
+      },
+      "no_native_row_deletion_sort_rounding_zero_fill_or_eligible_feature_view": true,
+      "original_header": [
+        "observation_date",
+        "SOFR_20231230",
+        "EFFR_20231230"
+      ],
+      "original_requested_range_contract_pass": false,
+      "original_rows": 6129,
+      "original_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2023-12-30%2C2023-12-30&cosd=2023-12-17&coed=2023-12-30",
+      "outside_requested_range_rows": 6120,
+      "registered_alpha_or_performance": false,
+      "requested_observation_end": "2023-12-30",
+      "requested_observation_start": "2023-12-17",
+      "source_record": "archive_2023-12-30",
+      "vintage": "2023-12-30"
+    },
+    {
+      "body_sha256": "5195f2de2ea9ee50ea49b9465ff003133f7db82304f94328001dc6cd2f7fb9b3",
+      "capture_or_last_modified_is_not_first_public_receipt": true,
+      "capture_received_utc": "2026-10-04T16:04:27.265825+00:00",
+      "capture_requested_utc": "2026-10-04T16:04:25.668833+00:00",
+      "descriptive_difference_is_not_a_return_or_crypto_funding_payout": true,
+      "first_original_observation": "2000-07-03",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:26 GMT",
+        "Last-Modified": "Fri, 28 Aug 2026 13:02:30 GMT"
+      },
+      "last_original_observation": "2026-08-27",
+      "latest_common_difference_basis_points": "1.00",
+      "latest_common_difference_percentage_points": "0.01",
+      "latest_common_effr_native": "3.63",
+      "latest_common_known_observation": "2026-08-27",
+      "latest_common_sofr_native": "3.64",
+      "latest_known_date_by_series": {
+        "EFFR": "2026-08-27",
+        "SOFR": "2026-08-27"
+      },
+      "monday": "2026-08-31",
+      "native_observation_label_is_not_a_publication_date": true,
+      "native_unknown_cells": {
+        "EFFR": 257,
+        "SOFR": 6815
+      },
+      "no_native_row_deletion_sort_rounding_zero_fill_or_eligible_feature_view": true,
+      "original_header": [
+        "observation_date",
+        "SOFR_20260829",
+        "EFFR_20260829"
+      ],
+      "original_requested_range_contract_pass": false,
+      "original_rows": 6824,
+      "original_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2026-08-29%2C2026-08-29&cosd=2026-08-16&coed=2026-08-29",
+      "outside_requested_range_rows": 6815,
+      "registered_alpha_or_performance": false,
+      "requested_observation_end": "2026-08-29",
+      "requested_observation_start": "2026-08-16",
+      "source_record": "archive_2026-08-29",
+      "vintage": "2026-08-29"
+    }
+  ],
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "no_friday_backdating_blank_zero_cash_current_history_or_indicative_series_substitution": true,
+  "no_strategy_bot_image_or_independent_forward_change": true,
+  "original_request_range_mismatch_resolved": false,
+  "original_request_roles": 12,
+  "primary_definition_publication_and_indicative_history_warning_bodies_retained": true,
+  "publication_effective_dates_methodology_and_as_of_versions_are_distinct": true,
+  "requested_range_contract_pass_samples": 0,
+  "retained_attempts": 13,
+  "retained_inputs_sha256": {
+    "r29_sources/manifest.json": "b7add2c23ab5b9e9e6daaeff02ba232a6c5da4290182355aea44d66944d69ce1",
+    "r29_sources/raw/0e635af1e5656b65701408dd35909d8856233b0b9b71335f6f83ee335f466fe4": "080800565692337792888704a93270babb663e2f6360c2281a8a1f4c0aae705f",
+    "r29_sources/raw/125fbced2cffd97079e6a12f9b573727bcc7124b8d59ce39b0208000068cac0d": "14130ee45b1a74cf0842418af60fc3b0c81a6bb50225e902b0c8547b70a8a850",
+    "r29_sources/raw/2056638ff2c23a6aaf12988a74deeb61750a44bf2bc1350ad8d35ed3f6645685": "6c41c67d9d9917fbab9887133e54e32cdd34f8b76c17c8cea8b286abdc570747",
+    "r29_sources/raw/2117df3b569dc9933e3118ae4ba65ffed2fff1a975c9c57057d24d2607bbfb16": "8bdcd36d23fc9639043e5626a371d9a768e21c6a5be84552d68112de30755532",
+    "r29_sources/raw/4ca2602dd6219ca7d463fb46ad4a1d5a074b8dd22dc73ad18ffab8f21c30b561": "8523a97ff184328cb9a890b5ac820be42c4b831788633f972270297a635dc92d",
+    "r29_sources/raw/8c908507eac3c41e52f774cad79f3ede853d7b139abe815ca1b0c1ced695795d": "c7685048c5373eba026a0c7f62dc9c2f053fbd9ed9cb5c10de16d102746718c4",
+    "r29_sources/raw/9e57588b50ae4d27b12820d6c141abdb8e744a229424c3c1f02fa32859f39d60": "d362f60cdd6df384ef9db2859938dc76642400ecba673fd47897773f81b57c82",
+    "r29_sources/raw/c2515a8a7acffcfab51d9b6948cadd51103f5c1d27f8f203f01d7b80174e95b2": "acc73a2c97d898f7f693cf6af87e8ce1e2222ed7163c40dccd87639f41fbda6b",
+    "r29_sources/raw/d197855b6fcc1fbb450d9ea0a2da5ec0ab39fd3bce2bb23e3170cdeccceafd1e": "6014354e31f823f09cdda5a62ddf81959837f7998357fefa0d8bef19be738c56",
+    "r29_sources/raw/dc6b52afe28fcb36623fb5962273a0bde0f90b35162f1dde038dfd30f470dd0c": "5195f2de2ea9ee50ea49b9465ff003133f7db82304f94328001dc6cd2f7fb9b3",
+    "r29_sources/raw/eddcf75fc0e4e7d6dcfbe620c679d365dd11cffe9eea9714bd6f857c1d04311a": "fb002118d73c2f2e264a08441ef8606350517a4dcf90a9c95073b7632208bbb4",
+    "r29_sources/raw/f7cbced4c03341af831e9956e073a93fd1df7e22b934b46cf2a1a241c9c004bd": "f12e5b66ef1c7fa71d64dbfe5a5fe28021f4febf4301f93854adb21096e4f5c7"
+  },
+  "source_plan_commit": "591d66a",
+  "source_stage_only": true,
+  "status_counts": {
+    "200": 12,
+    "None": 1
+  }
+}

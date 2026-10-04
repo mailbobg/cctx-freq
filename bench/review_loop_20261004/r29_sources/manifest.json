@@ -1,0 +1,188 @@
+{
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "source_only": true,
+  "sources": {
+    "alfred_effr_identity": {
+      "bytes": 70594,
+      "final_url": "https://alfred.stlouisfed.org/series?seid=EFFR",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 16:04:28 GMT"
+      },
+      "path": "raw/f7cbced4c03341af831e9956e073a93fd1df7e22b934b46cf2a1a241c9c004bd",
+      "requested_utc": "2026-10-04T16:04:28.230958+00:00",
+      "retrieved_utc": "2026-10-04T16:04:29.306930+00:00",
+      "sha256": "f12e5b66ef1c7fa71d64dbfe5a5fe28021f4febf4301f93854adb21096e4f5c7",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/series?seid=EFFR"
+    },
+    "alfred_help": {
+      "bytes": 32108,
+      "final_url": "https://alfred.stlouisfed.org/help/downloaddata",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 16:04:27 GMT"
+      },
+      "path": "raw/2117df3b569dc9933e3118ae4ba65ffed2fff1a975c9c57057d24d2607bbfb16",
+      "requested_utc": "2026-10-04T16:04:27.268028+00:00",
+      "retrieved_utc": "2026-10-04T16:04:27.567945+00:00",
+      "sha256": "8bdcd36d23fc9639043e5626a371d9a768e21c6a5be84552d68112de30755532",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/help/downloaddata"
+    },
+    "alfred_sofr_identity": {
+      "bytes": 64532,
+      "final_url": "https://alfred.stlouisfed.org/series?seid=SOFR",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 16:04:27 GMT"
+      },
+      "path": "raw/eddcf75fc0e4e7d6dcfbe620c679d365dd11cffe9eea9714bd6f857c1d04311a",
+      "requested_utc": "2026-10-04T16:04:27.571244+00:00",
+      "retrieved_utc": "2026-10-04T16:04:28.229857+00:00",
+      "sha256": "fb002118d73c2f2e264a08441ef8606350517a4dcf90a9c95073b7632208bbb4",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/series?seid=SOFR"
+    },
+    "archive_2019-09-21": {
+      "bytes": 84567,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2019-09-21%2C2019-09-21&cosd=2019-09-08&coed=2019-09-21",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:25 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "path": "raw/8c908507eac3c41e52f774cad79f3ede853d7b139abe815ca1b0c1ced695795d",
+      "requested_utc": "2026-10-04T16:04:13.090009+00:00",
+      "retrieved_utc": "2026-10-04T16:04:25.668307+00:00",
+      "sha256": "c7685048c5373eba026a0c7f62dc9c2f053fbd9ed9cb5c10de16d102746718c4",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2019-09-21%2C2019-09-21&cosd=2019-09-08&coed=2019-09-21"
+    },
+    "archive_2021-01-30": {
+      "failed_utc": "2026-10-04T16:04:18.471335+00:00",
+      "path": null,
+      "requested_utc": "2026-10-04T16:04:13.090370+00:00",
+      "source_error": "SSLError: HTTPSConnectionPool(host='alfred.stlouisfed.org', port=443): Max retries exceeded with url: /graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2021-01-30%2C2021-01-30&cosd=2021-01-17&coed=2021-01-30 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))",
+      "status": null,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2021-01-30%2C2021-01-30&cosd=2021-01-17&coed=2021-01-30"
+    },
+    "archive_2021-01-30_retry_1": {
+      "bytes": 90538,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2021-01-30%2C2021-01-30&cosd=2021-01-17&coed=2021-01-30",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:57 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "path": "raw/125fbced2cffd97079e6a12f9b573727bcc7124b8d59ce39b0208000068cac0d",
+      "requested_utc": "2026-10-04T16:04:44.353460+00:00",
+      "retrieved_utc": "2026-10-04T16:04:59.002120+00:00",
+      "sha256": "14130ee45b1a74cf0842418af60fc3b0c81a6bb50225e902b0c8547b70a8a850",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2021-01-30%2C2021-01-30&cosd=2021-01-17&coed=2021-01-30"
+    },
+    "archive_2023-12-30": {
+      "bytes": 103350,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2023-12-30%2C2023-12-30&cosd=2023-12-17&coed=2023-12-30",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:29 GMT",
+        "Last-Modified": "Fri, 29 Dec 2023 14:01:01 GMT"
+      },
+      "path": "raw/9e57588b50ae4d27b12820d6c141abdb8e744a229424c3c1f02fa32859f39d60",
+      "requested_utc": "2026-10-04T16:04:18.471407+00:00",
+      "retrieved_utc": "2026-10-04T16:04:31.054484+00:00",
+      "sha256": "d362f60cdd6df384ef9db2859938dc76642400ecba673fd47897773f81b57c82",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2023-12-30%2C2023-12-30&cosd=2023-12-17&coed=2023-12-30"
+    },
+    "archive_2026-08-29": {
+      "bytes": 115061,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2026-08-29%2C2026-08-29&cosd=2026-08-16&coed=2026-08-29",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:04:26 GMT",
+        "Last-Modified": "Fri, 28 Aug 2026 13:02:30 GMT"
+      },
+      "path": "raw/dc6b52afe28fcb36623fb5962273a0bde0f90b35162f1dde038dfd30f470dd0c",
+      "requested_utc": "2026-10-04T16:04:25.668833+00:00",
+      "retrieved_utc": "2026-10-04T16:04:27.265825+00:00",
+      "sha256": "5195f2de2ea9ee50ea49b9465ff003133f7db82304f94328001dc6cd2f7fb9b3",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR%2CEFFR&vintage_date=2026-08-29%2C2026-08-29&cosd=2026-08-16&coed=2026-08-29"
+    },
+    "publisher_effr": {
+      "bytes": 100746,
+      "final_url": "https://www.newyorkfed.org/markets/reference-rates/effr",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 16:04:31 GMT"
+      },
+      "path": "raw/2056638ff2c23a6aaf12988a74deeb61750a44bf2bc1350ad8d35ed3f6645685",
+      "requested_utc": "2026-10-04T16:04:31.006299+00:00",
+      "retrieved_utc": "2026-10-04T16:04:32.056275+00:00",
+      "sha256": "6c41c67d9d9917fbab9887133e54e32cdd34f8b76c17c8cea8b286abdc570747",
+      "status": 200,
+      "url": "https://www.newyorkfed.org/markets/reference-rates/effr"
+    },
+    "publisher_indicative_warning": {
+      "bytes": 98836,
+      "final_url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_241126",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 16:04:32 GMT"
+      },
+      "path": "raw/0e635af1e5656b65701408dd35909d8856233b0b9b71335f6f83ee335f466fe4",
+      "requested_utc": "2026-10-04T16:04:32.056978+00:00",
+      "retrieved_utc": "2026-10-04T16:04:32.949730+00:00",
+      "sha256": "080800565692337792888704a93270babb663e2f6360c2281a8a1f4c0aae705f",
+      "status": 200,
+      "url": "https://www.newyorkfed.org/markets/opolicy/operating_policy_241126"
+    },
+    "publisher_methodology": {
+      "bytes": 142179,
+      "final_url": "https://www.newyorkfed.org/markets/reference-rates/additional-information-about-reference-rates",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 16:04:33 GMT"
+      },
+      "path": "raw/c2515a8a7acffcfab51d9b6948cadd51103f5c1d27f8f203f01d7b80174e95b2",
+      "requested_utc": "2026-10-04T16:04:31.054910+00:00",
+      "retrieved_utc": "2026-10-04T16:04:35.450982+00:00",
+      "sha256": "acc73a2c97d898f7f693cf6af87e8ce1e2222ed7163c40dccd87639f41fbda6b",
+      "status": 200,
+      "url": "https://www.newyorkfed.org/markets/reference-rates/additional-information-about-reference-rates"
+    },
+    "publisher_repo_study": {
+      "bytes": 107329,
+      "final_url": "https://www.federalreserve.gov/econres/notes/feds-notes/what-happened-in-money-markets-in-september-2019-20200227.html",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 16:04:35 GMT",
+        "Last-Modified": "Thu, 26 Feb 2026 22:44:43 GMT"
+      },
+      "path": "raw/d197855b6fcc1fbb450d9ea0a2da5ec0ab39fd3bce2bb23e3170cdeccceafd1e",
+      "requested_utc": "2026-10-04T16:04:32.951825+00:00",
+      "retrieved_utc": "2026-10-04T16:04:35.451307+00:00",
+      "sha256": "6014354e31f823f09cdda5a62ddf81959837f7998357fefa0d8bef19be738c56",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/what-happened-in-money-markets-in-september-2019-20200227.html"
+    },
+    "publisher_sofr": {
+      "bytes": 101296,
+      "final_url": "https://www.newyorkfed.org/markets/reference-rates/sofr",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 16:04:30 GMT"
+      },
+      "path": "raw/4ca2602dd6219ca7d463fb46ad4a1d5a074b8dd22dc73ad18ffab8f21c30b561",
+      "requested_utc": "2026-10-04T16:04:29.308022+00:00",
+      "retrieved_utc": "2026-10-04T16:04:31.004657+00:00",
+      "sha256": "8523a97ff184328cb9a890b5ac820be42c4b831788633f972270297a635dc92d",
+      "status": 200,
+      "url": "https://www.newyorkfed.org/markets/reference-rates/sofr"
+    }
+  }
+}

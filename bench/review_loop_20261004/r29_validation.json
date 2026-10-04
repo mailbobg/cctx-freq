@@ -1,0 +1,39 @@
+{
+  "adopted": false,
+  "all_prior_registered_hashes_unchanged_before_ledger_updates": true,
+  "eligible_feature_cohort_or_policy_outcomes_defined": false,
+  "exact_original_native_rows_retained_and_not_silently_bounded": true,
+  "focused_source_clock_scope_precision_identity_unknown_tests_passed": 10,
+  "http_disabled": true,
+  "missing_module_red_check_then_focused_green": true,
+  "new_performance": false,
+  "no_strategy_bot_image_or_independent_forward_change": true,
+  "original_range_contract_unresolved": true,
+  "original_request_roles": 12,
+  "prior_registered_outputs": 3542,
+  "prior_registered_sources": 172,
+  "prior_root_sources": 1,
+  "prior_selection_rows": 149,
+  "prior_selection_sha256": "22a7d31805c539a42a25674fb62e54285811d86cc4c6abfcc1b411478f88fad5",
+  "registered_alpha_hypothesis": false,
+  "retained_attempts": 13,
+  "retained_inputs_verified": 13,
+  "source_plan_commit": "591d66a",
+  "source_stage_only": true,
+  "stable_scope": {
+    "aggregate_tests_checked": 540,
+    "broad_current_tree_pass_claimed": false,
+    "distinct_warning_types": 4,
+    "new_independent_source_tests_passed": 10,
+    "prior_unchanged_tests_passed": 530,
+    "separate_nonoverlapping_invocations": true,
+    "subtests_passed": 16
+  },
+  "status_counts": {
+    "200": 12,
+    "None": 1
+  },
+  "unchanged_artifact_sha256": {
+    "r29_source_observation.json": "000d870b7e75466b6811a5cefd804347edf8568935c587d0c148eec088a970d3"
+  }
+}

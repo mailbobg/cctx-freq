@@ -1498,5 +1498,22 @@
     "adoption_gate": false,
     "historical_first_public_receipts_certified": false,
     "disposition": "Source-ineligible fixed hypothesis; two2023required weeks missing in three native counterparts. No P&L, zero-return or losing-alpha claim, old-week/current-history/precision/cash repair, sign/threshold/latency/window/risk/fee rescue or activation."
+  },
+  {
+    "trial": "R29 direct overnight USD funding source",
+    "window": "four_fixed_native_source_probes",
+    "source_only": true,
+    "registered_alpha_hypothesis": false,
+    "new_performance": false,
+    "source_only_no_rule_cohort_or_outcomes": true,
+    "original_request_roles": 12,
+    "retained_attempts": 13,
+    "successful_bodies": 12,
+    "original_transport_failures": 1,
+    "original_range_contract_pass_samples": 0,
+    "eligible_native_feature_view_defined": false,
+    "adoption_gate": false,
+    "historical_first_public_receipts_certified": false,
+    "disposition": "Direct funding source entrance only. Four dual-series replies exceed requested range; keep native rows and failed scope assumption. Publication/value dates and official/indicative history distinct. Assess source contract before any alpha rule; no P&L, Friday backdating, cash/sign/threshold/fee/risk rescue or activation."
   }
 ]
