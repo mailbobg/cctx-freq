@@ -1,0 +1,40 @@
+{
+  "clarification": "R24 preflight wording about period-end fields must not be applied to the taker endpoint: its retained current native description is period start, while OI statistics says period end. Neither authenticates the CSV create_time or earlier API versions. No original field, interval, error tolerance, observation or comparison changed.",
+  "current_capture": "2026-10-04T14:33:47.216970+00:00",
+  "documented_endpoints": {
+    "/futures/data/openInterestHist": {
+      "native_description": "End time of the period",
+      "retained_occurrences": [
+        {
+          "description_offset": 24173,
+          "endpoint_start_offset": 774204
+        },
+        {
+          "description_offset": 3602,
+          "endpoint_start_offset": 1477895
+        }
+      ]
+    },
+    "/futures/data/takerlongshortRatio": {
+      "native_description": "Start time of the period",
+      "retained_occurrences": [
+        {
+          "description_offset": 22488,
+          "endpoint_start_offset": 1133267
+        },
+        {
+          "description_offset": 3262,
+          "endpoint_start_offset": 1516745
+        }
+      ]
+    }
+  },
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "no_measurement_publication_clock_certification": true,
+  "no_original_protocol_or_source_audit_overwrite": true,
+  "original_body_sha256": "b9ab5b26a0eb5ef92a66889a85c2de9a230c9dc2fb66e41bbd54ee4551bc3c6f",
+  "original_manifest": "r23_sources/manifest.json",
+  "original_record": "official_rest",
+  "source_only": true
+}

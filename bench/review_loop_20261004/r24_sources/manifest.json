@@ -1,0 +1,447 @@
+{
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "source_only": true,
+  "sources": {
+    "eth_metrics_listing": {
+      "bytes": 1080,
+      "final_url": "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision/?prefix=data%2Ffutures%2Fum%2Fdaily%2Fmetrics%2FETHUSDT%2F&max-keys=3",
+      "headers": {
+        "Content-Type": "application/xml",
+        "Date": "Sun, 04 Oct 2026 14:43:13 GMT"
+      },
+      "path": "raw/9f6734f0db04b17b106c8ff9456ca3e6b84912b0d9f48e54171dd615356b7365",
+      "requested_utc": "2026-10-04T14:43:11.432932+00:00",
+      "retrieved_utc": "2026-10-04T14:43:12.725938+00:00",
+      "sha256": "228bf3216c12301ec0fe01469410162a79ccce037f06d25ad568a9c4a6f3002b",
+      "status": 200,
+      "url": "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision/?prefix=data%2Ffutures%2Fum%2Fdaily%2Fmetrics%2FETHUSDT%2F&max-keys=3"
+    },
+    "klines_BTCUSDT_2021-01-01": {
+      "bytes": 14253,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-01-01.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:05 GMT",
+        "ETag": "\"c7c64e05c85bf8e34a61c0352de6537e\"",
+        "Last-Modified": "Fri, 19 May 2023 04:35:55 GMT"
+      },
+      "path": "raw/a19408a2935e603bf896ed6e16862d06f9a3f9cb8a79606d7c198ebde6a553dd",
+      "requested_utc": "2026-10-04T14:43:03.886376+00:00",
+      "retrieved_utc": "2026-10-04T14:43:06.198311+00:00",
+      "sha256": "232f7347fae4923bc2236511086f0e72dc848edab2ffe2800f4bb4c184e68768",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-01-01.zip"
+    },
+    "klines_BTCUSDT_2021-01-01_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-01-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:07 GMT",
+        "ETag": "\"8b72049e8fad6b3af43bda5e2d65bb93\"",
+        "Last-Modified": "Fri, 19 May 2023 04:35:55 GMT"
+      },
+      "path": "raw/d8343e0574617aa6430d942c145e2a2e6e8d7186dbd75e92ba526c202b1aeea2",
+      "requested_utc": "2026-10-04T14:43:05.742920+00:00",
+      "retrieved_utc": "2026-10-04T14:43:06.437885+00:00",
+      "sha256": "fd0ab81112a95f2f3535b9eba7d60b1424fc431e92e05c98f4829e77768568c5",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2021-01-01.zip.CHECKSUM"
+    },
+    "klines_BTCUSDT_2026-06-23": {
+      "bytes": 13773,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-23.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:01 GMT",
+        "ETag": "\"8c2af7bf5a0eea59d0acb71712deabe1\"",
+        "Last-Modified": "Wed, 24 Jun 2026 10:12:27 GMT"
+      },
+      "path": "raw/1f4d1d6477b670a56eb44e8c188b05a60906a23edefe13390f4f2c472cd1060b",
+      "requested_utc": "2026-10-04T14:42:58.537396+00:00",
+      "retrieved_utc": "2026-10-04T14:43:01.218037+00:00",
+      "sha256": "641bbad5d2ff48d55cc10899d1005fe2a142c0e875d83f2ce4e178b71c838b2c",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-23.zip"
+    },
+    "klines_BTCUSDT_2026-06-23_checksum": {
+      "failed_utc": "2026-10-04T14:43:03.886311+00:00",
+      "path": null,
+      "requested_utc": "2026-10-04T14:42:58.537767+00:00",
+      "source_error": "SSLError: HTTPSConnectionPool(host='data.binance.vision', port=443): Max retries exceeded with url: /data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-23.zip.CHECKSUM (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))",
+      "status": null,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-23.zip.CHECKSUM"
+    },
+    "klines_BTCUSDT_2026-06-23_checksum_retry_20261004T144436Z": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-23.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:44:37 GMT",
+        "ETag": "\"cb18aceab65abc02fc34b0fd6f842698\"",
+        "Last-Modified": "Wed, 24 Jun 2026 10:12:27 GMT"
+      },
+      "path": "raw/4b9852c3b4b6dc9728a916941c123ca7f2a7e41c0e6d23b75e76492dad612091",
+      "requested_utc": "2026-10-04T14:44:36.538619+00:00",
+      "retrieved_utc": "2026-10-04T14:44:37.310534+00:00",
+      "sha256": "2afe95b9ffa3eee33897040eaae4159558316bf6400086b3241e2c2adbd1abf7",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-23.zip.CHECKSUM"
+    },
+    "klines_BTCUSDT_2026-06-24": {
+      "bytes": 13958,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-24.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:02 GMT",
+        "ETag": "\"15ad1676116642feb1daf5e8ade360e7\"",
+        "Last-Modified": "Thu, 25 Jun 2026 09:34:20 GMT"
+      },
+      "path": "raw/f7207a5c73778b8f98c7b8c58569f38dcdc00faea4739b732f9dca9217319be5",
+      "requested_utc": "2026-10-04T14:43:01.219201+00:00",
+      "retrieved_utc": "2026-10-04T14:43:01.723931+00:00",
+      "sha256": "9651ac1b307459ed1f570c144af5bec3d8c12c550d2a17027cff25a5c0989fcf",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-24.zip"
+    },
+    "klines_BTCUSDT_2026-06-24_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-24.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:01 GMT",
+        "ETag": "\"e1ded2bcc0bf6cc62f090fdd32dd4cd1\"",
+        "Last-Modified": "Thu, 25 Jun 2026 09:34:20 GMT"
+      },
+      "path": "raw/263e696e5d4045435b7f2c0dec6010661acef86cb3024d6a4d2b27d40ba3043f",
+      "requested_utc": "2026-10-04T14:43:01.725640+00:00",
+      "retrieved_utc": "2026-10-04T14:43:01.895807+00:00",
+      "sha256": "3bede25d5ed1421bc880662cf102a571b42caeb1ec67d8f2e020052d66253286",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-24.zip.CHECKSUM"
+    },
+    "klines_BTCUSDT_2026-06-25": {
+      "bytes": 14024,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-25.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:01 GMT",
+        "ETag": "\"eff483164ddfa8e23fb77501b7f2e6e5\"",
+        "Last-Modified": "Fri, 26 Jun 2026 09:14:47 GMT"
+      },
+      "path": "raw/2f4c5a387357395ec1cd8990196b439e3592b765864092f3fb22d3b58054a43b",
+      "requested_utc": "2026-10-04T14:43:01.896624+00:00",
+      "retrieved_utc": "2026-10-04T14:43:02.395307+00:00",
+      "sha256": "cb37bcf943fa5a0fe2d142e84064e9b9211ab073fff62c364e3f2ad806e65a69",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-25.zip"
+    },
+    "klines_BTCUSDT_2026-06-25_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-25.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:03 GMT",
+        "ETag": "\"501b0776280d6da5b7c59f2eb48e96cf\"",
+        "Last-Modified": "Fri, 26 Jun 2026 09:14:47 GMT"
+      },
+      "path": "raw/5d0da3d6f7e7f7dedfaf84b7e7056e1d95dc6165e5dd5127201ad4f102d5d0e7",
+      "requested_utc": "2026-10-04T14:43:02.396124+00:00",
+      "retrieved_utc": "2026-10-04T14:43:03.018806+00:00",
+      "sha256": "04d12186484ca38f7fe383d9d16e931f1d99acccce83437be85289d71fc6621f",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-25.zip.CHECKSUM"
+    },
+    "klines_BTCUSDT_2026-06-26": {
+      "bytes": 14086,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-26.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:03 GMT",
+        "ETag": "\"978df661a0fc98d42c2aacac059811f2\"",
+        "Last-Modified": "Sat, 27 Jun 2026 08:58:41 GMT"
+      },
+      "path": "raw/2f5bdc62e598fd01b6b20c3cd460798c9e83c0d9e9a92ab6bfce2fcd35e768f2",
+      "requested_utc": "2026-10-04T14:43:03.019828+00:00",
+      "retrieved_utc": "2026-10-04T14:43:03.848292+00:00",
+      "sha256": "1fe05a63c64dd9cee2e47388040bfcd7b3d970a84e14e6514bef4033062067b4",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-26.zip"
+    },
+    "klines_BTCUSDT_2026-06-26_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-26.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:05 GMT",
+        "ETag": "\"effba6ffe6ea0d3a5d967857961da4fb\"",
+        "Last-Modified": "Sat, 27 Jun 2026 08:58:41 GMT"
+      },
+      "path": "raw/fcd7776a2476a4cc59275c77d5e85bf3270b31c72ed624ec0f8580a92163f2bf",
+      "requested_utc": "2026-10-04T14:43:03.849217+00:00",
+      "retrieved_utc": "2026-10-04T14:43:05.742290+00:00",
+      "sha256": "4dc6a9a07acbc4619a008efbd8cca74d9a74129da8df9b823f7c186f10423762",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/BTCUSDT/5m/BTCUSDT-5m-2026-06-26.zip.CHECKSUM"
+    },
+    "klines_ETHUSDT_2026-06-23": {
+      "bytes": 14007,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-23.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:07 GMT",
+        "ETag": "\"281563b9301a7980d3fb0e7a2ec0b4b8\"",
+        "Last-Modified": "Wed, 24 Jun 2026 10:12:44 GMT"
+      },
+      "path": "raw/c8a1fb028abc262554d548f5cf332dcd2044d64f79d8128b37dea1d36a4c6c49",
+      "requested_utc": "2026-10-04T14:43:06.198917+00:00",
+      "retrieved_utc": "2026-10-04T14:43:07.129379+00:00",
+      "sha256": "a6e25a0d1923aefdc31ba3cb6be8dc1a80dc34af5fac1dcecb57a3d5062bc022",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-23.zip"
+    },
+    "klines_ETHUSDT_2026-06-23_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-23.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:07 GMT",
+        "ETag": "\"f644962ebf662ae92526610b9e123e52\"",
+        "Last-Modified": "Wed, 24 Jun 2026 10:12:44 GMT"
+      },
+      "path": "raw/3b38a711f7559a5004fc667a3fae30a1c00f90c74abfede30eb3e3613d3fa3e0",
+      "requested_utc": "2026-10-04T14:43:06.438814+00:00",
+      "retrieved_utc": "2026-10-04T14:43:07.533488+00:00",
+      "sha256": "29338f6b5972aa020ae09e8ee8fdea09feeb789b72c6b4c35cf50db7b6d7d9b6",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-23.zip.CHECKSUM"
+    },
+    "klines_ETHUSDT_2026-06-24": {
+      "bytes": 14306,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-24.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:07 GMT",
+        "ETag": "\"d8f4f6e48d04e1799400994b8f1abdfa\"",
+        "Last-Modified": "Thu, 25 Jun 2026 09:34:38 GMT"
+      },
+      "path": "raw/cf8987c26f1b69d30cd6362690846d584d6667115627403b2c8be9e03f173fd8",
+      "requested_utc": "2026-10-04T14:43:07.130154+00:00",
+      "retrieved_utc": "2026-10-04T14:43:08.656836+00:00",
+      "sha256": "03380b92f5259f9899c173c00d42c2ae6fd1c472fb6247c35cd8be25c9c0f9de",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-24.zip"
+    },
+    "klines_ETHUSDT_2026-06-24_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-24.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:09 GMT",
+        "ETag": "\"43f5ec83439e24c4249c8810ce76ba91\"",
+        "Last-Modified": "Thu, 25 Jun 2026 09:34:38 GMT"
+      },
+      "path": "raw/8aa5d0da44e92d4a53f23a0b51eb0162d1a1bd4f1b76dca8fa1744c1eb8fec1b",
+      "requested_utc": "2026-10-04T14:43:07.535110+00:00",
+      "retrieved_utc": "2026-10-04T14:43:08.178082+00:00",
+      "sha256": "b28495ac16899984f3d00a0e292a0d71cad41e62fc08b3dd15e289bbfc470705",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-24.zip.CHECKSUM"
+    },
+    "klines_ETHUSDT_2026-06-25": {
+      "bytes": 14236,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-25.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:09 GMT",
+        "ETag": "\"094c90f4bffb11e3b149c4098355531c\"",
+        "Last-Modified": "Fri, 26 Jun 2026 09:15:04 GMT"
+      },
+      "path": "raw/e2343198f42ba70dc7f85070a5dd58c46c7ce8237381a4ff6a642ecc427b3ff4",
+      "requested_utc": "2026-10-04T14:43:08.178806+00:00",
+      "retrieved_utc": "2026-10-04T14:43:08.925070+00:00",
+      "sha256": "10cba323dac90491f7d5f3d50602fcf31b1d567f218fcd7144ed96d8c59d3ad2",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-25.zip"
+    },
+    "klines_ETHUSDT_2026-06-25_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-25.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:08 GMT",
+        "ETag": "\"1d264490f3f2954a3c99a1b236e825bf\"",
+        "Last-Modified": "Fri, 26 Jun 2026 09:15:04 GMT"
+      },
+      "path": "raw/39183e08cfd881683c9a57df38a7597a3e3c510a228221475206dae777736b47",
+      "requested_utc": "2026-10-04T14:43:08.658434+00:00",
+      "retrieved_utc": "2026-10-04T14:43:08.922267+00:00",
+      "sha256": "5aed2b714f8aa4766d1c3f8c08407e617e8d5ad7052fc5aa474e5f6a40850341",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-25.zip.CHECKSUM"
+    },
+    "klines_ETHUSDT_2026-06-26": {
+      "bytes": 14308,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-26.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:09 GMT",
+        "ETag": "\"a28b462b766f429af0d1039d55aba65e\"",
+        "Last-Modified": "Sat, 27 Jun 2026 08:58:59 GMT"
+      },
+      "path": "raw/f225be19fbb115cdfaaa3ced1f8cc4e0412a4137db1a773f4a4b4ea8f9c0e3df",
+      "requested_utc": "2026-10-04T14:43:08.923564+00:00",
+      "retrieved_utc": "2026-10-04T14:43:09.877222+00:00",
+      "sha256": "318a8fa4402c14a260bc5f4255016b1936bf724a1b9fb9418a7dbaf9335e7aa3",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-26.zip"
+    },
+    "klines_ETHUSDT_2026-06-26_checksum": {
+      "bytes": 92,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-26.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:09 GMT",
+        "ETag": "\"123e839285105c42f80f7f7a247dbb4b\"",
+        "Last-Modified": "Sat, 27 Jun 2026 08:58:59 GMT"
+      },
+      "path": "raw/62459af5253ba0587b3cb21a2c80953b1c72edbf569650e00de8ff5d5cd747d2",
+      "requested_utc": "2026-10-04T14:43:08.925948+00:00",
+      "retrieved_utc": "2026-10-04T14:43:09.578476+00:00",
+      "sha256": "1600308fec78a3cfc3f38bb1f618d790bc92d40ccf3545cceb52b170ccadbc36",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/klines/ETHUSDT/5m/ETHUSDT-5m-2026-06-26.zip.CHECKSUM"
+    },
+    "metrics_BTCUSDT_2020-12-30": {
+      "bytes": 12396,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-12-30.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:09 GMT",
+        "ETag": "\"0c71242120f35477990cd7d42910ee06\"",
+        "Last-Modified": "Wed, 18 Mar 2026 13:36:18 GMT"
+      },
+      "path": "raw/9387df44b1de15cc69972b44cc04c45e27a269b4f613d15a151b550354d74597",
+      "requested_utc": "2026-10-04T14:43:09.579175+00:00",
+      "retrieved_utc": "2026-10-04T14:43:10.660758+00:00",
+      "sha256": "a81b34bb15d7c1cd70ad8364813a7638d82334566187fa761de0d7aa68eec9bd",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-12-30.zip"
+    },
+    "metrics_BTCUSDT_2020-12-30_checksum": {
+      "bytes": 97,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-12-30.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:10 GMT",
+        "ETag": "\"46692fc0bcc106c1079e833b79c827e9\"",
+        "Last-Modified": "Wed, 18 Mar 2026 13:36:18 GMT"
+      },
+      "path": "raw/bb8afdccc9ac9cfeb63bad6e7269dac0082a48408d43c9f2d2ecc7e743227b7c",
+      "requested_utc": "2026-10-04T14:43:09.878121+00:00",
+      "retrieved_utc": "2026-10-04T14:43:10.149636+00:00",
+      "sha256": "4e9616f4e13503f23fb5465f127a9642d108619ef9c0fdae1c114dde884f544a",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-12-30.zip.CHECKSUM"
+    },
+    "metrics_BTCUSDT_2021-01-29": {
+      "bytes": 12567,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-29.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:10 GMT",
+        "ETag": "\"2dc802acf3cd357d2ddb6dcc43e1d1fe\"",
+        "Last-Modified": "Wed, 18 Mar 2026 11:40:50 GMT"
+      },
+      "path": "raw/db85d97d9d24495c3c8bfd30b15b07d60be339574f5bc5298b22de2878e6187c",
+      "requested_utc": "2026-10-04T14:43:10.151097+00:00",
+      "retrieved_utc": "2026-10-04T14:43:11.181602+00:00",
+      "sha256": "4ef8ee59b93b26c9b81f9af7ec5f7e6b80f18e8b895e667c7e3508d692667493",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-29.zip"
+    },
+    "metrics_BTCUSDT_2021-01-29_checksum": {
+      "bytes": 97,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-29.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:43:10 GMT",
+        "ETag": "\"43280ac1592a1a4382768c37a5c1a696\"",
+        "Last-Modified": "Wed, 18 Mar 2026 11:40:50 GMT"
+      },
+      "path": "raw/6264b81bff9f93f2c6c7cd86e96dc700e21c07eaa96aa8849e426891b28aa16d",
+      "requested_utc": "2026-10-04T14:43:10.661175+00:00",
+      "retrieved_utc": "2026-10-04T14:43:10.847461+00:00",
+      "sha256": "79533b503b19e4fc06bbc6b28ac68771db115d36597804c9ada09c2a7efb2a53",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-29.zip.CHECKSUM"
+    },
+    "metrics_ETHUSDT_2021-01-29": {
+      "bytes": 339,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2021-01-29.zip",
+      "headers": {
+        "Content-Type": "application/xml",
+        "Date": "Sun, 04 Oct 2026 14:43:11 GMT"
+      },
+      "path": "raw/2ff3186c3614fcaf032096b1ffc2cc3f96aa69b9d42580f90bd4889fc67414eb",
+      "requested_utc": "2026-10-04T14:43:10.847784+00:00",
+      "retrieved_utc": "2026-10-04T14:43:11.921294+00:00",
+      "sha256": "d2c133d87a58d52ebc82de3a570dd3588f4beeec6805464a4d29a22d7243e3a9",
+      "status": 404,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2021-01-29.zip"
+    },
+    "metrics_ETHUSDT_2021-01-29_checksum": {
+      "bytes": 368,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2021-01-29.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "application/xml",
+        "Date": "Sun, 04 Oct 2026 14:43:11 GMT"
+      },
+      "path": "raw/3ea3c65233d5d69b1610a64a4e7546d882f634acb517df5159bcaaa101d6d15a",
+      "requested_utc": "2026-10-04T14:43:11.182812+00:00",
+      "retrieved_utc": "2026-10-04T14:43:11.431259+00:00",
+      "sha256": "5ea0e49aa11211a745fe1ac89cc714ab4b4acf4943374ec2d81450cbd621313d",
+      "status": 404,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2021-01-29.zip.CHECKSUM"
+    },
+    "native_inventory_blog": {
+      "failed_utc": "2026-10-04T14:43:17.738502+00:00",
+      "path": null,
+      "requested_utc": "2026-10-04T14:43:11.921642+00:00",
+      "source_error": "SSLError: HTTPSConnectionPool(host='www.binance.com', port=443): Max retries exceeded with url: /en-IN/blog/futures/421499824684900398 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))",
+      "status": null,
+      "url": "https://www.binance.com/en-IN/blog/futures/421499824684900398"
+    },
+    "native_inventory_blog_retry_20261004T144436Z": {
+      "bytes": 0,
+      "final_url": "https://www.binance.com/en-IN/blog/futures/421499824684900398",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 14:44:38 GMT"
+      },
+      "path": "raw/3fbf26ba531f1c479888e6750eee56c58d5e6a69325ffff016b185d0c19324b3",
+      "requested_utc": "2026-10-04T14:44:36.538776+00:00",
+      "retrieved_utc": "2026-10-04T14:44:38.206188+00:00",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": 202,
+      "url": "https://www.binance.com/en-IN/blog/futures/421499824684900398"
+    },
+    "native_inventory_paper": {
+      "bytes": 237482,
+      "final_url": "https://arxiv.org/html/2310.14973v2",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 14:43:16 GMT",
+        "ETag": "\"CPXix7KPupYDEAE=\"",
+        "Last-Modified": "Mon, 24 Aug 2026 20:38:01 GMT"
+      },
+      "path": "raw/357d92577166138b205029a08ce1e9773bab171b46888cbaf7be7a7415253c87",
+      "requested_utc": "2026-10-04T14:43:12.727016+00:00",
+      "retrieved_utc": "2026-10-04T14:43:18.708317+00:00",
+      "sha256": "8c3055d7bc59c26f5b1783a71ec7ba4e1020dd4ca7ff5f3bbf1ca7286472a03d",
+      "status": 200,
+      "url": "https://arxiv.org/html/2310.14973v2"
+    }
+  }
+}

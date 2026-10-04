@@ -1,0 +1,166 @@
+{
+  "all_included_previously_reviewed": true,
+  "configured_bots": 16,
+  "excluded_authorized_e0_family_experiments": [
+    {
+      "bot": "e0v1en-live",
+      "config_sha256": "39cec3b40d8c7eccc0db8be5324f52447d103fd23948ae829acd579a51b332a0",
+      "source_config_not_runtime_state": true,
+      "strategy": "E0V1EN"
+    },
+    {
+      "bot": "e0v1en",
+      "config_sha256": "f601651c6dc53c3216930ddee5cb660b8604fcd738429f8cb1727e738ad6f49a",
+      "source_config_not_runtime_state": true,
+      "strategy": "E0V1ENWait3"
+    },
+    {
+      "bot": "wta",
+      "config_sha256": "ba5dafb59f90092f053bf26896603ce549feb80b38c844167c6656397a3c33e3",
+      "source_config_not_runtime_state": true,
+      "strategy": "E0V1ENWTA"
+    }
+  ],
+  "exclusion_basis": "Goal excludes newly started e0v1en experiment; its existing live counterpart and concurrently added WTA remain that E0 experimental scope. Historical x12 remains included and reviewed.",
+  "included": [
+    {
+      "bot": "c-hold-sma",
+      "catalog_source_sha256": "0691d6aa4a6bcec2e902e6642c52bf4e8b554f95dacb486e18202f7a4c15bd08",
+      "config_sha256": "783e6b6a4f43b3b5eac7e350ac8e18661ff54d74c18bbadc25865f3094e969da",
+      "current_source_sha256": "0691d6aa4a6bcec2e902e6642c52bf4e8b554f95dacb486e18202f7a4c15bd08",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/RiskHoldR2b.py",
+      "strategy": "RiskHoldR2b"
+    },
+    {
+      "bot": "c-hold",
+      "catalog_source_sha256": "b9b12549b20e06a1c3d6726ff7685344e4d3233fcc42b2a14e2ee8bd3cf4ca98",
+      "config_sha256": "db62f11e17b253793392ea6da5e6dda6d13de03fef636380c204b62c78804b9c",
+      "current_source_sha256": "b9b12549b20e06a1c3d6726ff7685344e4d3233fcc42b2a14e2ee8bd3cf4ca98",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/RiskHoldC.py",
+      "strategy": "RiskHoldC"
+    },
+    {
+      "bot": "funding-spread",
+      "config_sha256": "6989d313eec0dad4e651470b4ffaf8e0f7d10700de772cc4fecfbd37c8834c51",
+      "same_source_as_previous_validated_checkpoint": true,
+      "separate_two_venue_service": true,
+      "source_config_not_runtime_state": true,
+      "source_files": {
+        "user_data/cross_venue/engine.py": "67509faa348f644f6d16ea9d506f9a04d0ea70da6a7d637bba0e7472e0e3edec",
+        "user_data/cross_venue/frequi.py": "598845302cde4499c3469dd5ec57a26da780e47c00760b8db7112937126c71e8",
+        "user_data/cross_venue/provider.py": "e4ea9d0d4983ad8b4f938ad1b7184d45717a2e7ae9cb8374083510119eab3013",
+        "user_data/cross_venue/service.py": "1da90a216aef22185e048267c59754d3063f4e3307e58760cb8a740c6d9effc6"
+      },
+      "strategy": "CrossVenueFundingV1"
+    },
+    {
+      "bot": "l2-listings",
+      "catalog_source_sha256": "10f6d3c158079d0b4bb3f679a9c808950b222609c55b2c9cd269b352a47c0a5a",
+      "config_sha256": "77582392ea5a604f9ce0642dee035faba05d7be90672742e117c78a1af370396",
+      "current_source_sha256": "10f6d3c158079d0b4bb3f679a9c808950b222609c55b2c9cd269b352a47c0a5a",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/ShortNewListingsL2.py",
+      "strategy": "ShortNewListingsL2"
+    },
+    {
+      "bot": "l2p-listings",
+      "catalog_source_sha256": "10fae423f2ef26407498f90a2475598fa73ab4c75019d4a413ad37ce96414b2a",
+      "config_sha256": "b3f9bbfa8ca4c84ce69a45be3f9899ca0683c3a639beb650352914fcad9e4a5b",
+      "current_source_sha256": "10fae423f2ef26407498f90a2475598fa73ab4c75019d4a413ad37ce96414b2a",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/ShortNewListingsL2P.py",
+      "strategy": "ShortNewListingsL2P"
+    },
+    {
+      "bot": "unlock-short",
+      "catalog_source_sha256": "c2744fdedd9a9912bd9149b671fb0ecef107787d4e447b6f6a58c7a63786010c",
+      "config_sha256": "cdd7665b0ec102191c71c03fe1fb7b9fe2de653564f76042cce2b7af76325cb5",
+      "current_source_sha256": "c2744fdedd9a9912bd9149b671fb0ecef107787d4e447b6f6a58c7a63786010c",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/UnlockPressure.py",
+      "strategy": "UnlockPressureShortV1"
+    },
+    {
+      "bot": "unlock-xs",
+      "catalog_source_sha256": "c9eb2343362eb4087b5b75e6708dd890c174e6067fdfa3aa0b991f166bfc1906",
+      "config_sha256": "bbc9f0221ae58d4d69db07950872b23c1cd5e1ac7aa4a72d76b6b8e49af6da12",
+      "current_source_sha256": "c9eb2343362eb4087b5b75e6708dd890c174e6067fdfa3aa0b991f166bfc1906",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/UnlockXS.py",
+      "strategy": "UnlockXS"
+    },
+    {
+      "bot": "x12",
+      "catalog_source_sha256": "9a3733492d85dec6b223b084e68b3bc2091397798037ad67d1ae724dad922fa6",
+      "config_sha256": "46c245cb9cd500e6b54145fbb3e01eda55754bad876deb10cc3a358518ed9505",
+      "current_source_sha256": "9a3733492d85dec6b223b084e68b3bc2091397798037ad67d1ae724dad922fa6",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/E0V1ENX12.py",
+      "strategy": "E0V1ENX12"
+    },
+    {
+      "bot": "x14-bitget",
+      "catalog_source_sha256": "452aace9e03237149ec7e93304792900859b73f519ad5a64dbf8c2bde1ef3f2a",
+      "config_sha256": "21f95c0fafe53a8a2182f33260c5ce7b557d763d78ee9c181f53b18ae9a86343",
+      "current_source_sha256": "452aace9e03237149ec7e93304792900859b73f519ad5a64dbf8c2bde1ef3f2a",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/HedgedFlushX14.py",
+      "strategy": "HedgedFlushX14"
+    },
+    {
+      "bot": "x14-bybit",
+      "catalog_source_sha256": "452aace9e03237149ec7e93304792900859b73f519ad5a64dbf8c2bde1ef3f2a",
+      "config_sha256": "2730e36b7f064c473f846cef490210107680d6b400676ca7f5e6c866f197eff7",
+      "current_source_sha256": "452aace9e03237149ec7e93304792900859b73f519ad5a64dbf8c2bde1ef3f2a",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/HedgedFlushX14.py",
+      "strategy": "HedgedFlushX14"
+    },
+    {
+      "bot": "x14",
+      "catalog_source_sha256": "452aace9e03237149ec7e93304792900859b73f519ad5a64dbf8c2bde1ef3f2a",
+      "config_sha256": "7125991004eb8b8d4e412564b0e57a43aa45205aa7443767646f8e5eb82cf4ab",
+      "current_source_sha256": "452aace9e03237149ec7e93304792900859b73f519ad5a64dbf8c2bde1ef3f2a",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/HedgedFlushX14.py",
+      "strategy": "HedgedFlushX14"
+    },
+    {
+      "bot": "x7",
+      "catalog_source_sha256": "a6a0f21bbe072d952de23b7c1ac4a517f6351b8af5df6f7510fe6d48fb6a1e49",
+      "config_sha256": "03693e5d9faf77d4e3fb386a78c1ee482cd8a7c39fda7f3b4c3ee585af35c3c1",
+      "current_source_sha256": "a6a0f21bbe072d952de23b7c1ac4a517f6351b8af5df6f7510fe6d48fb6a1e49",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/NostalgiaForInfinityX7.py",
+      "strategy": "NostalgiaForInfinityX7"
+    },
+    {
+      "bot": "x8",
+      "catalog_source_sha256": "9b13df0335fafc93c5bbb8418c06f8903c6d1d06195a1721a9265644eb0585db",
+      "config_sha256": "5877aa2176d03479bf57c8b1eb9e7dc3ad8803958c51cf5940576e41390495fb",
+      "current_source_sha256": "9b13df0335fafc93c5bbb8418c06f8903c6d1d06195a1721a9265644eb0585db",
+      "same_source_as_reviewed_catalog": true,
+      "source_config_not_runtime_state": true,
+      "source_file": "user_data/strategies/NostalgiaForInfinityX8.py",
+      "strategy": "NostalgiaForInfinityX8"
+    }
+  ],
+  "included_other_configurations": 13,
+  "new_performance": false,
+  "no_process_api_port_or_health_verification_claimed": true,
+  "no_source_runtime_config_or_bot_change": true,
+  "source_scope_only": true
+}
