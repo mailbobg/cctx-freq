@@ -1,0 +1,20 @@
+{
+  "mark_zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip",
+    "status": 200,
+    "sha256": "86b8cc6577833ee09fa55a4a8db8ae2a81db98bc29141b00ff01a73919a1f9b4",
+    "retrieved_utc": "2026-10-04T09:03:40.050681+00:00"
+  },
+  "mark_checksum": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip.CHECKSUM",
+    "status": 200,
+    "sha256": "2ca7bed18bef159b51022af5758f5c8053bd507b09a84a07b69119e1f0237ac9",
+    "retrieved_utc": "2026-10-04T09:03:40.500913+00:00"
+  },
+  "funding_json": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1609459200000&limit=1",
+    "status": 200,
+    "sha256": "f649d252a4655420820b41471fae7cacc2b4ac107a9c38f6721d6b18858353dd",
+    "retrieved_utc": "2026-10-04T09:03:40.897865+00:00"
+  }
+}

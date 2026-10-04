@@ -1,0 +1,26 @@
+{
+  "captured_utc": "2026-10-04T09:20:14.525558+00:00",
+  "coverage": {
+    "BTCUSDT": {
+      "daily_rows": 2435,
+      "mark_rows": 50400,
+      "funding_rows": 6300,
+      "missing_associated_mark": 3193
+    },
+    "ETHUSDT": {
+      "daily_rows": 2435,
+      "mark_rows": 50400,
+      "funding_rows": 6300,
+      "missing_associated_mark": 3193
+    }
+  },
+  "output_sha256": {
+    "BTCUSDT_mark.parquet": "2c916396785d0df68e82667351acc8b2d2fb7029551d8812fd81cbf140f2a567",
+    "ETHUSDT_funding.parquet": "a73c211834cfe9581729be067acbcbc6d3bd313bcb96dbc34e091b0e0fc56a3d",
+    "BTCUSDT_trade.parquet": "7bcb0e0435ae657ec4e781796e141e778ef1452e3a4edc798bc1185ad388f55c",
+    "ETHUSDT_mark.parquet": "4c5c5670b0f2eb5750f93daa92e14e00eb3440a8d516ae056c1e3e2101377fd8",
+    "BTCUSDT_funding.parquet": "ba8d65ba3c1f3aac64110047d488779792f6e933a389fa527e7ef3e739029d30",
+    "ETHUSDT_trade.parquet": "d7be30f252cabeec6d2f2a6b9e4735cf95b6d771983e26e7b5f562549e6b5926"
+  },
+  "limitation": "Missing API-associated marks remain missing. Hourly mark opens can be a documented settlement-price approximation; hourly extremes provide per-payment sensitivity inputs. Neither is labeled an exact associated mark."
+}

@@ -1,0 +1,2200 @@
+{
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip",
+    "path": "raw/4617722c3d308c0ed4047f29e103d16e80de20ceeef5ed32e6d87a6806a88b63",
+    "sha256": "86b8cc6577833ee09fa55a4a8db8ae2a81db98bc29141b00ff01a73919a1f9b4",
+    "bytes": 23986,
+    "retrieved_utc": "2026-10-04T09:06:30.067937+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2020-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2020-12.zip",
+    "path": "raw/fef271728337a4dcda07b74627b0a8654252d6bea7d88bde54d19a58d682440c",
+    "sha256": "ad4c3a63d21e4c055faa7c33f1da2f0ce4a0270b0406300c88c9b8feddb5fa03",
+    "bytes": 21037,
+    "retrieved_utc": "2026-10-04T09:06:30.078569+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2020-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2020-12.zip.CHECKSUM",
+    "path": "raw/b9d3ce7b0190bfd151d87a68d6c83f0406d86adad2a5c937fbd993f88bbf0108",
+    "sha256": "0c3c2204087fa538cf43a6cb0fb6ab6ac6bdbc4afda44f043a2660e60590dc24",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:30.398683+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2020-12.zip.CHECKSUM",
+    "path": "raw/590f4b581c76ae8cd4b1d6d01646baaacdff9c657a3b621d75861515afdb2d91",
+    "sha256": "2ca7bed18bef159b51022af5758f5c8053bd507b09a84a07b69119e1f0237ac9",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:30.399767+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip",
+    "path": "raw/08ba33d2332047117f95d3356d73d1afba4d5d3f5293c1b7d31606200432e237",
+    "sha256": "df709e82ca000cb568a0fc854d76762ebcf5186db68a4c18e38a5162f32fea18",
+    "bytes": 24258,
+    "retrieved_utc": "2026-10-04T09:06:30.764024+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-01.zip",
+    "path": "raw/05eb516dda18e08c5b2f96840b3a2ec583c98dd5f06beae9e8890fa739f6ab1d",
+    "sha256": "28112bf60b5cec120406b92a235ee107cdafbec89c22ed9b90bfe69d3e8a6d51",
+    "bytes": 22221,
+    "retrieved_utc": "2026-10-04T09:06:30.764183+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-01.zip.CHECKSUM",
+    "path": "raw/a6a0c9114216e4baf345ec2941b4787448bfd8fb72d00bfe09b342239d0a919c",
+    "sha256": "027fbee36fb7f8455463d4aaef8961664844d5893e85ab6b534412e773d73d0b",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:31.020365+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-01.zip.CHECKSUM",
+    "path": "raw/93ce2ecbd95075a951f662cd6ff4cb6e44d2d509e495ccbefa5de8f1018a5cf7",
+    "sha256": "29db7831e691e8495cb6d5a4344f5516f371b09ee7095716059aa77a59acb5af",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:31.152574+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-02.zip",
+    "path": "raw/af430c166b92cd2ad4a1f1184c3da26a87abb6ddbac9e9300b2c48fa3ac7b0e9",
+    "sha256": "521e74c84cda16cb189d02c83ee4b7c9ae74430721f0020fc65a312a8134b8ba",
+    "bytes": 19688,
+    "retrieved_utc": "2026-10-04T09:06:31.322749+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip",
+    "path": "raw/d57a422ac251fd5e079d484dd83b99d422e8fa3567fb3305bd5edeb856b36cb4",
+    "sha256": "bbea9b6b55a831436a8828150b1581367969a5e8e86d0677c1a5c65ed6bc5870",
+    "bytes": 21383,
+    "retrieved_utc": "2026-10-04T09:06:31.484490+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-02.zip.CHECKSUM",
+    "path": "raw/d127292c6707ba0ba4136f24ca3faf569832f69720220b9df8655b137d91947e",
+    "sha256": "ec13692899a61925d73a44160db15aad50bdf4afc4a2ab1c203da5584b52ee62",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:31.580337+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-02.zip.CHECKSUM",
+    "path": "raw/be6dbc3b2be477534ce97e81e690004f486782606db3cd8b71bd26e4cce0f25e",
+    "sha256": "e24ef38e5be116eb81dd5deef5020a8ffd520ee9946d55dea3cf712095171c15",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:31.812810+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-03.zip",
+    "path": "raw/a943df45ec93e4e8a4853a861f7486c81236b9333b3a0322b317d7c8f7b04fe4",
+    "sha256": "5b0b6acb24c77a35d8f4459cbaa5c1b45fde7e9b062e6054d2c9277baf2fcaf2",
+    "bytes": 21526,
+    "retrieved_utc": "2026-10-04T09:06:31.912397+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip",
+    "path": "raw/f5f4ca18d5d7fd8395d05dc3058a4944a33f78ebb13a6ad50fe4adeb0168b67a",
+    "sha256": "c728b7686c6e671ea473b71c5e6b7d77150f72bde6358c4e9b432f6928a6df42",
+    "bytes": 23936,
+    "retrieved_utc": "2026-10-04T09:06:32.120353+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-03.zip.CHECKSUM",
+    "path": "raw/c9b637c881ea02bbcc2a407ec79a7a85be8794d019a4ec4722c8c348586af223",
+    "sha256": "4d2bfb2b550b1a5dd42f8f21d7a74461449bbd4aefece2c1d49c293f0663833a",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:32.181080+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-03.zip.CHECKSUM",
+    "path": "raw/2219f2dbd4a7b3f854e054c7deda70dcb51b66820f2d28dc831de1c6fa46747f",
+    "sha256": "198ccf1caa41ce5b909912ca361fa7fe3aaedbf21b50c20ff08bb6ee83bf791e",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:32.374574+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-04.zip",
+    "path": "raw/7d6c9fb400dd8a02a6647bcfe86055b84ab62107a7afbdcaf53f3420a8bf40a5",
+    "sha256": "eb0b77c2f3f483a1b311ea54f9f9200ea0745dbbc44f601a14d015a69a10b3eb",
+    "bytes": 21042,
+    "retrieved_utc": "2026-10-04T09:06:32.574494+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-04.zip.CHECKSUM",
+    "path": "raw/d04498dc19c4d0bc5116eefd6dee8da6cbca114ece29f105ba487ba12575fca2",
+    "sha256": "437e5a2ff5066478f99726e68b065b416bf6418a7b23677a88d43a6672d56dc3",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:32.863956+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip",
+    "path": "raw/6184112037659e4f6b45c0f796cbbf89a39d72ecc932f1e984bce033746041eb",
+    "sha256": "dc5c906151d629706cffe85ff793cb0a91c1d43695fc8587241cd4563720c1b9",
+    "bytes": 23280,
+    "retrieved_utc": "2026-10-04T09:06:32.884408+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-04.zip.CHECKSUM",
+    "path": "raw/4a533964a8e96c5dacfce9eeb69936afedc01390976da065d95655f0d3079432",
+    "sha256": "5a4c26f9f62bf688a1eadbc3aa8687a959f8e015e91c9154c0f5f31547687871",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:33.272039+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-05.zip",
+    "path": "raw/7c390b65b08d89364a593c6fdaff6bf121b5acd6a78673c28217987f0460e1a9",
+    "sha256": "74c0131b01e5bb2d9df34995f06c12b201504f9da7b1906986fc153369cfcb37",
+    "bytes": 23357,
+    "retrieved_utc": "2026-10-04T09:06:33.399631+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip",
+    "path": "raw/48e6df0fa37af3c8cfda35bc72d136872039bdf395cdd58a6d713bde71cd7e43",
+    "sha256": "d4ffc2a08c947f972f49e868831edc5d83a3aed2c2845dd0175c786a58648676",
+    "bytes": 24670,
+    "retrieved_utc": "2026-10-04T09:06:33.768845+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-05.zip.CHECKSUM",
+    "path": "raw/e4d32a237d2c82cfbb82136e661ac3a63a1bd2dedf2c748a3ae11b43f0245bc5",
+    "sha256": "d89da79f04e6c676530da49746842ec6e55856924ade231d3458074317f8adbc",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:33.804393+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-05.zip.CHECKSUM",
+    "path": "raw/c52969f0303e2c6c608c4a39cdc6a359c5e6e7516a40d854bf2c88c558100849",
+    "sha256": "0b44b99993d6d63d96b5d5e9e9d2d2cbeae8e97eba5722914ea9f57e6993f0e1",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:34.216357+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-06.zip",
+    "path": "raw/304b29ba242d2e0b5c2e09ee543a3a9bd1698238dd516b24aec9156db68a3695",
+    "sha256": "01f470842a7ff6d48f9ef2fdfa5b6b1d080f4abfc36f1df9b1c29cbc0fa4aef3",
+    "bytes": 22680,
+    "retrieved_utc": "2026-10-04T09:06:34.313666+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip",
+    "path": "raw/a88a2cf648ce665e9cf86f0af1a8340b939b66613b303f82e33ea78c0fc09bbd",
+    "sha256": "582c1e1c0928949e7b916a1685894b90f3b1afd8db8861f062fdb55456ceac4e",
+    "bytes": 23995,
+    "retrieved_utc": "2026-10-04T09:06:34.523535+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-06.zip.CHECKSUM",
+    "path": "raw/2373a69be9cf676addffc675822b7799f113ae97a52c46bb0b6696c8a93b0908",
+    "sha256": "786ea09e098e33eb04f62d546a4abb6272ff9385df7249b56bdca87d723cfec8",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:34.593683+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-06.zip.CHECKSUM",
+    "path": "raw/5771bee6be552caf82bd2ae9bbe031a00865714acf81723e6244fada03319b68",
+    "sha256": "81f5fb7def2739c60d42890731257c48a98bdd4736d226ac36266ee7361607f9",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:35.017496+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-07.zip",
+    "path": "raw/d9a3357e8db431654a9e26644cb7d1e4592c990bfe80621563bb9975830fa24a",
+    "sha256": "f151ba5903a4697f559cc711d554688cdd2891251d586492f441b02cf50791fa",
+    "bytes": 22728,
+    "retrieved_utc": "2026-10-04T09:06:35.064884+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-07.zip.CHECKSUM",
+    "path": "raw/f72265c594537231446e66cb989b36fb02dd37dcbabc922106a547e8923fe81b",
+    "sha256": "98e6040b64a276065a066d7bf4650ff937c05691f1c007ce7a13ba2848923203",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:35.486661+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip",
+    "path": "raw/3c431e1790a097f8e176f0912e33a71ab07c73af9e09362ba28c042670f6a9f8",
+    "sha256": "569b41a00797933a3e2dd9ceaed3e2d4f7bc0526ce2dd06d1190835732958ca7",
+    "bytes": 19625,
+    "retrieved_utc": "2026-10-04T09:06:35.504435+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07.zip.CHECKSUM",
+    "path": "raw/2e39030d515668b6f01907b37db2ca4ca7b68ad8d87c9e971a65e30ff6b958db",
+    "sha256": "766db5a9843e9c94af4dcf276e3a608cbcdd3b43d87fada531ecdf985c0b4159",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:35.907118+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-08.zip",
+    "path": "raw/caec82075b789947a76524296f822731fc5d65078cdc6738020dcafc9432a2a1",
+    "sha256": "5082896f63283d0555203db4bdd044c219bf2120bc01eee6494424f8c10dc922",
+    "bytes": 22796,
+    "retrieved_utc": "2026-10-04T09:06:36.026689+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-08.zip.CHECKSUM",
+    "path": "raw/95a0b737c84d145cc75f62a5499aedcbc89e4d900ef3904aae87ad3ca70757aa",
+    "sha256": "87d6a5f12a55c8efdfb040678c57b76405845852b310b60e6e1e1a835af47ce4",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:36.280359+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-09.zip",
+    "path": "raw/f38484af1994270c4deb1b7e1d716cb38aa01ae07f0498c9cf67ed3f6ab9e656",
+    "sha256": "797a255197404d82ef73b8c6151b67db8e6356d394f0cdcf8a319984d480f06b",
+    "bytes": 22478,
+    "retrieved_utc": "2026-10-04T09:06:36.594740+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-09.zip.CHECKSUM",
+    "path": "raw/68079fc38c06691e8d4c2b1a9fe3c3f342e0677e7adef4fff28362a62df207b2",
+    "sha256": "27a2ba722783840ebf015e378f9fea7775540b50508882dd09d5c5e2e4e1e72a",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:37.055989+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-10.zip",
+    "path": "raw/3b70d65883646c1ac88c87996ac1416f3a5cba644ae0ae1c751151c18f9324f4",
+    "sha256": "ad209b848a25b07ac18b0eac05ea69933f8d1f06c302a860623cf34e26a36fbb",
+    "bytes": 22130,
+    "retrieved_utc": "2026-10-04T09:06:37.595956+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-10.zip.CHECKSUM",
+    "path": "raw/2ebbf31186e6ebd2a6e23d9f5d9e9b31d7ef774222db60770d30c26d9272e89d",
+    "sha256": "f01551ffe912b8ab8873bb6451545c413deee0336bf80509a604df7017a2ea5a",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:37.853642+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-11.zip",
+    "path": "raw/0801fb98f7a7569c8fb797486d4775b3f484ee63db2b01d921f324f716e4d9ae",
+    "sha256": "4c98669c386bfb0ceb90056005ded404a7d2bc68df89ebfa2caaeefffad4160f",
+    "bytes": 22116,
+    "retrieved_utc": "2026-10-04T09:06:38.326331+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-11.zip.CHECKSUM",
+    "path": "raw/38ddf803363024b0d53b82b334d7d78a91d2c29233163fc8b0471b6ded536c37",
+    "sha256": "d16219a362663b5feed22166b79ccc40071ab4ba7650c9729e24eabda4180aba",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:38.656312+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-12.zip",
+    "path": "raw/e3ef91483449a6e2d0c1082ad7efd143b775b5969b75d0aebf5103474c65faa0",
+    "sha256": "7c15a005c4dd21a0b41d767b1c0e881f7687ffe9fe580d37632965b2c797b52e",
+    "bytes": 22764,
+    "retrieved_utc": "2026-10-04T09:06:38.958390+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2021-12.zip.CHECKSUM",
+    "path": "raw/066b3d6383fa11b4c941c7c546d35e3b629570b1f376b9a906b6f00043b30374",
+    "sha256": "5ed4c6ae98639ac6697e6e399e8c55a6824a874904a0fca34fd4f04575790a2d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:39.345431+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-01.zip",
+    "path": "raw/fba508b98e66ef6f3cd181d682684723da5de8927d4a61b1b8a4a4b9c8dcaea2",
+    "sha256": "da76759ea210e7e9d33bd6be1576dd6fdd32f7a47b37b7c439c3fcceb025c5d9",
+    "bytes": 22570,
+    "retrieved_utc": "2026-10-04T09:06:39.787316+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-01.zip.CHECKSUM",
+    "path": "raw/edfcc3ade9d002c0499e72fc8de5d92f0d3a5ff357d6edb8ba6e5dbadbcd1b13",
+    "sha256": "9616818fbd7944b77debe1b6f94e86a27b9b1f76e0dcc79503c5aaac2d38facc",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:40.200708+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-02.zip",
+    "path": "raw/c98af74f99b0f54aa0b68fd3317a1de8cb6e5618d670dc4e50178ebcc0546f6a",
+    "sha256": "c37f3bba2c61f63f78ba60aeed23067694fe64d7c2ef67e99201932560a7e1f7",
+    "bytes": 20642,
+    "retrieved_utc": "2026-10-04T09:06:40.727014+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-02.zip.CHECKSUM",
+    "path": "raw/eddb22834bbef4098738e4605b949bbc35d4f2d6f4404308b9b5b01097fc6095",
+    "sha256": "c00f94b944ffe932c9e47f3dd041e1dc4356c3b51361a90415a170df26623b1c",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:41.111909+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-03.zip",
+    "path": "raw/103fabd9fe58dc6aae5b9a418da52beed16df50be0ceef290595eb977181b41c",
+    "sha256": "9f85c7467b29c35f71e8d55c39e00e042d511cedb4270799a06f94bd706fe5e1",
+    "bytes": 22439,
+    "retrieved_utc": "2026-10-04T09:06:41.641413+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-03.zip.CHECKSUM",
+    "path": "raw/7b191e93c5186b3b357b4ade046475dfbf41c0cfb7dca8c80a398d5135498ce1",
+    "sha256": "30b0e602298e02504bf7ac68626e65dd3a53b256c86b10970830b2c6f9a86ce0",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:42.080469+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-04.zip",
+    "path": "raw/6aeac9b814a7700edb0715d7b845c00157241dd57136306898da4165b0ca2385",
+    "sha256": "b3004ffea66d1e27160d8355ab8692254d272d2fb9a0f6969f5afa4ab033cba3",
+    "bytes": 21127,
+    "retrieved_utc": "2026-10-04T09:06:42.563920+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-04.zip.CHECKSUM",
+    "path": "raw/60af313689752a5e45a1a2d4597c96684f66eec51c6fc774f20c50e21f05e3b7",
+    "sha256": "2d6fd45d2ed7b95953363fec37cb056a5aa156784388020f2fcbf5def633b09a",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:42.825299+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-05.zip",
+    "path": "raw/eb57b14816e47c271a0528797bc2306e3c9d3e7a18dc0231c416b2d1aa4b8119",
+    "sha256": "713dd69910c2d39209e1e3be00c415044c0df017126cb2e0df914dbeb62fbae2",
+    "bytes": 22194,
+    "retrieved_utc": "2026-10-04T09:06:43.371627+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-05.zip.CHECKSUM",
+    "path": "raw/ef2c2d51c736061ad9ca4480d830e662806afcfe0d70605b448a7987ab9b76f1",
+    "sha256": "b5863654958316e23c7ee526b17ccec6879fa018ce6d402d222852513e6eae70",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:43.764812+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-06.zip",
+    "path": "raw/fe04ff263970443aff192d05f4df2433b13edca99bd17111e0fa54c32a2a160d",
+    "sha256": "7baa832f63d629692d6f57c7840ff4c77649c2f717ca1a8fe485a17f67e1d33f",
+    "bytes": 21624,
+    "retrieved_utc": "2026-10-04T09:06:44.251892+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-06.zip.CHECKSUM",
+    "path": "raw/1eaef790e49eeb120e48b2afb98652bf1c85da94a554b28babd05ac27ce79532",
+    "sha256": "8b9269013345203971876817ccacc469ab783ce5f23f809fa0419b7c0a2ab475",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:44.694725+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-07.zip",
+    "path": "raw/b2a281a29b94034369774e35f67876fa1c7ff8db44fa8895be35adf6e5dbb8a1",
+    "sha256": "dcd76948acedd02c2745c7a449ae09579f918cdf60102ccb3e2cb1743ce42729",
+    "bytes": 22341,
+    "retrieved_utc": "2026-10-04T09:06:45.042409+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-07.zip.CHECKSUM",
+    "path": "raw/449d5440f6e0c16beea991dbc48bc64fc6ab3d5aca0aea30493c8f6118e60be5",
+    "sha256": "72875bc3c5bd09d906b05d97b5ab2e34769e711919f7cfc9ac1f7af8189d0171",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:45.303764+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-08.zip",
+    "path": "raw/32dfe1bb7e384cd8160d1e83059f21ef86332ee3ebf767fe863bd7b613c3a961",
+    "sha256": "31394dcf1a84655a3e003200d228f70dfe35487e22cba54de7cda9245b72b950",
+    "bytes": 22213,
+    "retrieved_utc": "2026-10-04T09:06:45.651157+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-08.zip.CHECKSUM",
+    "path": "raw/605112ae145874e809812593894f0eede7d4a2d1373d8195d85126d37b7ca00a",
+    "sha256": "bbb01818a94ba9bc49623f4ef7961d4503d4502ba503eea8eaa00592d2537a0d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:46.049353+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-09.zip",
+    "path": "raw/9a33c359e4bcfba5c125cbbda7113edaa0a85808a1f598764a5713c16f96510b",
+    "sha256": "51f5ada75af692d6e95abdcc2d84dd521d03c52d187d0b870057c430b14e10d9",
+    "bytes": 21324,
+    "retrieved_utc": "2026-10-04T09:06:46.515818+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-09.zip.CHECKSUM",
+    "path": "raw/a41f6af53b60edb4db460413d464bbfb02b80e16c08485a7c483b9aa5c674df2",
+    "sha256": "15001b4fc153439e541f1edbbb6fb1fd165e9124f3b077a819b15aa08cbd52c6",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:46.775346+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10.zip",
+    "path": "raw/578c22ecb2332d9c083aca1b7841290280b2d31d48eb4e9f075888b340af8744",
+    "sha256": "95311f377e0ec8ef14e2c8c81599760b03a5f97dee3d1128c8d5077d29d2c2b1",
+    "bytes": 21121,
+    "retrieved_utc": "2026-10-04T09:06:47.215932+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10.zip.CHECKSUM",
+    "path": "raw/eac0f3c05be71138b9bcb9a39d304e0b9ea00259464f7034e7bd3ab5325205f1",
+    "sha256": "d372272c47df0dc3c4bcac16d124dc5f47fa07859d9ffae6e84502e97fb3cb85",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:06:47.544029+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-01.zip",
+    "path": "raw/ff54ec13679a9710ea23fe725c14de330a31b1460eab3a6d33149279897a671c",
+    "sha256": "231ed215935a1fc3a6da4d070403a25db75338ed61c45ef082343aac2b214aef",
+    "bytes": 955,
+    "retrieved_utc": "2026-10-04T09:11:42.604915+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10-02.zip",
+    "path": "raw/f55c9056c39a03ec1c2e22436f307e7d209616c2da1c04c93d7e0b1e7c0ecd43",
+    "sha256": "94d0e57c728f658c7f14d3cae57184037b6229faa76325c9ae38c79cba25c3de",
+    "bytes": 959,
+    "retrieved_utc": "2026-10-04T09:11:42.732485+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-01.zip.CHECKSUM",
+    "path": "raw/3666d4f7a72517dee0eeb4b6f35165ed06e29a83717f1fe3dfaec26dd701783e",
+    "sha256": "0c143f5f423d925d50b7963eb5915a424d7ca321389a010662fd02e460212c1e",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:42.823781+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-10-02.zip.CHECKSUM",
+    "path": "raw/91709ba429b1bf8f281fe03b5f843ed81f1b595c5556916ecc27e50cd971f30d",
+    "sha256": "be996ecbbc7d92c416839c635dea24ae73171a5c48a4123b1da9aaa7a91b46ab",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:42.941759+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-24.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-24.zip",
+    "path": "raw/5eeeab80094138ddca909659f12ff2e39f74ee881e7884b8a08faa900dd01de3",
+    "sha256": "920e7592ea11fe2bd5d2fba9fc76cb955a40eccdf74c25e25ee8f92b3eedcfc7",
+    "bytes": 956,
+    "retrieved_utc": "2026-10-04T09:11:43.101608+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-11.zip",
+    "path": "raw/f3cb8035fbb61da4bff01c24099e5f8362ec5945714d39e8bcfcb84c87640dfe",
+    "sha256": "38b21c96b1b365f5130178dbbc601f3d45edec573678fbef9cf5c119868bb975",
+    "bytes": 21183,
+    "retrieved_utc": "2026-10-04T09:11:43.266273+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-24.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-24.zip.CHECKSUM",
+    "path": "raw/562b99ff3c49c9634c5ea9718679975ddf43deba19ac0db6075fba418d9b30b0",
+    "sha256": "c55c252d2b4fdd96f112663c81270066c73a05665d87f3a01ebea52dc0fbbe6d",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:43.411955+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-11.zip.CHECKSUM",
+    "path": "raw/1a0b590cbd3fa1455bee0f64023c618c29309e78eab21a9e5738e85de12a17c8",
+    "sha256": "a7ded28854dfa97e8eca7cdc0f415b88861939a1bce329b3bb454b0b3e295bd8",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:43.534031+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-25.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-25.zip",
+    "path": "raw/1acba218ff199185340618051b696092ca6e637e8b8d4d97724d8abd2515e9f9",
+    "sha256": "a0bc1410fd38b9e75b98647de17787ee089baa5786d0fd6be79752356c5991fc",
+    "bytes": 945,
+    "retrieved_utc": "2026-10-04T09:11:43.764100+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-12.zip",
+    "path": "raw/a7c82cde12fa909abbcb98183bd0a2fef2c632712d552f9c456058b23ada9beb",
+    "sha256": "417a07e86f134f8cc99a0a412653651c577a805af0577282c1af03498ea6b820",
+    "bytes": 20665,
+    "retrieved_utc": "2026-10-04T09:11:43.844595+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-25.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-25.zip.CHECKSUM",
+    "path": "raw/70775a3f14b820c859ede85e1ddfc236adfa0c8e04e483d41f54d863cd9b19e9",
+    "sha256": "9f4fa5737de14f89e36a5b47ba567b31857e42483d4fe971b754cee736745cca",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:44.019544+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2022-12.zip.CHECKSUM",
+    "path": "raw/a683efc600e394f584437b9e4548fe37bfea104b55f11eb12c4aa86d74e5354a",
+    "sha256": "515016eb5eba0f49d16a701f4cad4d73192802d1c25b0677cda740ba45eb88ba",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:44.117118+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-26.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-26.zip",
+    "path": "raw/2d1314d88a7a30eb5b53423c29b4f1b1e865e6bf438a164aa37a50ccdfa48b8b",
+    "sha256": "b4e9e023889d89b63824774f8589e5139872341e05a0e6dc81f35f4d5688de94",
+    "bytes": 1051,
+    "retrieved_utc": "2026-10-04T09:11:44.297351+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-01.zip",
+    "path": "raw/4df11e60e889415b4457b5d953a6376e06227542cb06b278116bdd7befea5a86",
+    "sha256": "6f3b17e6b2e1c7148dbb5bf81cd7f58252da87f7d0831edba38a4f81a8ae0c46",
+    "bytes": 21954,
+    "retrieved_utc": "2026-10-04T09:11:44.431423+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-26.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-26.zip.CHECKSUM",
+    "path": "raw/dd11b902ce0df589061a0c98e5b166b80be5eb336d5e7354b2943ae595721b3b",
+    "sha256": "9710dbdbbb578a620e4627c90896532511687830b099a376129fd363d92c189b",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:44.560451+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-01.zip.CHECKSUM",
+    "path": "raw/f9886e119a3d8f0a2ea94e292f123d376632e4cc629d1dbd90c85ada1a93d8b3",
+    "sha256": "80f579e4bf710aaf364862d3bb7b5274f463d96d551b3c806831aed1a94cda86",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:44.701707+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-27.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-27.zip",
+    "path": "raw/bfccb31dc7dcb4df2fd6bcbbdb97f4ccdbd367eb62712ec478bbbe3857e57de5",
+    "sha256": "b95041bc59b91bcb82ca3b3c70d3b8ffea99d3aae5ced415876dc20e1695d4ce",
+    "bytes": 1002,
+    "retrieved_utc": "2026-10-04T09:11:44.834081+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02.zip",
+    "path": "raw/ca5e33e226b6e2a544c3b451dc91d21402a699c5acbc182889bdfcaa11efc82a",
+    "sha256": "47b99057e2ea8bda8a6d266a34066b8c23954c4b1fb2a21d29f3697b2f69358d",
+    "bytes": 19402,
+    "retrieved_utc": "2026-10-04T09:11:45.023844+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-27.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-07-27.zip.CHECKSUM",
+    "path": "raw/1e9da0d950ef4cd8e9abcfbb7124078822f374d259909c1dc6819e39e6174501",
+    "sha256": "3abce950e2cc1850b8e63329a736fad23f199c2e01afcdd6b2ddc7a714fbb9f0",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:45.032195+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02.zip.CHECKSUM",
+    "path": "raw/e75068d76b61e3e204c9ee03dd714a1019789713cd59f82ac021fa81de6305de",
+    "sha256": "58035b116781dd82bb137c361bc11f5b4345333479af1f150ebb8ad8908cbc7b",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:45.339674+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip",
+    "path": "raw/faa9f9d71b0fe0aae2406793371001ca6ee5f5891eb02ac6caec1c1863d899f1",
+    "sha256": "305ee21ca167ead156efdb0380a81644b46273e1bdbe13dfa5f5256737f19f52",
+    "bytes": 24524,
+    "retrieved_utc": "2026-10-04T09:11:45.367630+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02-24.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02-24.zip",
+    "path": "raw/ee23f4c91c3aa9cbf40d0a0b180b8c6be486b3145eb1dd20c4c0f1af2e11f6fe",
+    "sha256": "4a48e5821dd7d2926286de92fa98103840cdd71179632cfd0130b3102c40cc3f",
+    "bytes": 958,
+    "retrieved_utc": "2026-10-04T09:11:45.622299+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-08.zip.CHECKSUM",
+    "path": "raw/6c15a4dd03b444dc8c980d6898d9ef4ffc13ba6ed1d8eeb34acba94ec018d2c9",
+    "sha256": "a77871738f9d84d3a8d8ae3b5652b08cdf1f610cbb5694ec611950b0831214c0",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:45.632865+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02-24.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-02-24.zip.CHECKSUM",
+    "path": "raw/2ac7f3634d29ef3ee87596b35acc640e8677a36506686790ee70b8642527825f",
+    "sha256": "ba6c8f859c70178db5c485a3d7ba17697be7b46ccb7ab5cb485d535276181e3a",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:45.888791+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip",
+    "path": "raw/93911b5672877ab5ebc4b4054ae8a2d7017fdc021ce4f7c1e6f43b2ee6fb979d",
+    "sha256": "601ddd081139f3c5f256a823c7965130c7aeb2a2ac39dbdef059efdbc8669218",
+    "bytes": 23452,
+    "retrieved_utc": "2026-10-04T09:11:45.956610+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-03.zip",
+    "path": "raw/990aeaa518a138a60854a6ce97f964bd618d90931ac9f4ab9fc015f968e9db9f",
+    "sha256": "05dc0ee541110207cf24ff95b062fc084bb000708000caca25531898f5795a8f",
+    "bytes": 21447,
+    "retrieved_utc": "2026-10-04T09:11:46.182538+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-09.zip.CHECKSUM",
+    "path": "raw/bdceaab60f26d00ff480cd21de9a39119cc9cabc3a1fdf2a8e0e68d33c829a46",
+    "sha256": "0712e2e467d0cece467f8ad0e3e0af3d0dbce06143b92bd8623e3613d0e3f518",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:46.219222+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-03.zip.CHECKSUM",
+    "path": "raw/0b2e5add0fc5273c90407574f01f5a2ef13e54ef6eb7892e8bba6118bd12f769",
+    "sha256": "f0b9347a84039f511a6bead61c3956b224a27d6710483ca6b8ac0a9f496c39c3",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:46.441830+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-10.zip",
+    "path": "raw/203cc0e85d9481889884378f3963967fe56fe4fc008746fa1b0f250ad21dd22b",
+    "sha256": "d1b1800f086a78ce21282d4363a4fccb817b210bde9f6773c08d94c50c7336b2",
+    "bytes": 23755,
+    "retrieved_utc": "2026-10-04T09:11:46.599610+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-04.zip",
+    "path": "raw/4a1ebb5e2a268f062cbff7b854595a3b96035e738f74bb781755a1d82661bb6e",
+    "sha256": "7627d0f3176e6819455c8ba6a963178bc93f512dbd63cd396d1ecf5699bf76e0",
+    "bytes": 19844,
+    "retrieved_utc": "2026-10-04T09:11:46.747762+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-10.zip.CHECKSUM",
+    "path": "raw/fef2daa2812b036ab739d509a537f7442bdafea3b516d0505f80a520534f45e5",
+    "sha256": "8a5dc2fb9069c361e1ddc30a93860a6cd0eaefbeb13bf25486aea43bedf1a518",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:46.911438+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-04.zip.CHECKSUM",
+    "path": "raw/7c54fcf6e74ce8aa63e9a10b24b3b931cc00519635f1d38fedb6a5e910828b54",
+    "sha256": "2f9a3df05a343f5a8e8247796073daa6aef8fd5da25eb805252f291d6aabf152",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:47.085144+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-11.zip",
+    "path": "raw/c021e208cc7469e2b64037f3e65c1d691f2c3a069a690290757b3e050fbb820e",
+    "sha256": "0a1e1b534300846caaa2e5abaf91f1ad349cd5d269aa6814b4d70c69456c8d1e",
+    "bytes": 22803,
+    "retrieved_utc": "2026-10-04T09:11:47.204450+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-05.zip",
+    "path": "raw/55ff402829e81e9f2f15d270b99e7b58c23386f940c508a77bb02af62cc4312f",
+    "sha256": "fb2130fb406eb670b51104a8d216b0e43fc83181bb0f0f4c9f4ca99f7037bee9",
+    "bytes": 19839,
+    "retrieved_utc": "2026-10-04T09:11:47.453894+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-11.zip.CHECKSUM",
+    "path": "raw/84c3ed8347a3fa8446371dad7837f54522f960bf69046d2c448be1a28fac825b",
+    "sha256": "7f045280ad6f75884f166786204b83dd0788637309288854b6462a8378320035",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:47.466187+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-05.zip.CHECKSUM",
+    "path": "raw/fa2a99b78112657249bffbacfe6d68fd455266082e9cb2fb5f89f909fc75099d",
+    "sha256": "63c671880db06f60e4df96d818c9b1008e1f6759ba1f466c0b1ac79fbae2b5b7",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:47.724604+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-12.zip",
+    "path": "raw/682d6904ecc308791a1d5065b644c6172621c6c0689e1835f796558b153181f8",
+    "sha256": "6f48453d80e4222086ecae9ddddf701402b0ca591171e9ae4ca5ce98813612e7",
+    "bytes": 24344,
+    "retrieved_utc": "2026-10-04T09:11:47.803668+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-06.zip",
+    "path": "raw/375728f0d257c42adbb4c1f54467268f01f61deb228335ca54880a6ea7abaf6c",
+    "sha256": "b8576b817b4a585346d64c79d7c0793c9c937bd4b9fc58723d4d0ba6ed1925af",
+    "bytes": 19510,
+    "retrieved_utc": "2026-10-04T09:11:48.026987+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2021-12.zip.CHECKSUM",
+    "path": "raw/d6132fe3fdbf57c88aaeac4306a2dbc3438c9e604aad6ab22d82774b075d84d8",
+    "sha256": "d7dfc7f4930f09c42ada4f6de15ec62e1966976351512ecaa651eeb1545ad4bd",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:48.123946+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-06.zip.CHECKSUM",
+    "path": "raw/762df776b4f29e51b48ccf503f6b5cd0f64a6df0e8a735834ed968725439f322",
+    "sha256": "927b20f2de1435e0bc8a7b5e6542e873c358c95813f9d2b504f0b02f1dde0989",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:48.288615+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-01.zip",
+    "path": "raw/7c1eac4067ca289c8ade18f295625ee17a6cadeacd1fb40f1fddc37d5036de32",
+    "sha256": "b03860574c80a3d7c58fce3afd24bd9e7d72d29ad8538adf00d9fdef78a8e0d5",
+    "bytes": 24228,
+    "retrieved_utc": "2026-10-04T09:11:48.501732+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-07.zip",
+    "path": "raw/85caab2b15e86ae4303c4657cd0710d008afe52548b2e78ff76e38254f50c3bc",
+    "sha256": "978c33e4a464eef0cf89152012af0bfdb7486a0eed391596beae33afe7af0e6c",
+    "bytes": 19573,
+    "retrieved_utc": "2026-10-04T09:11:48.613197+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-01.zip.CHECKSUM",
+    "path": "raw/2be0f3a2506c3df8166fa68c5306dac4ad96d64317fcb6782c02bb8bfd5d7012",
+    "sha256": "454c5479052aef15fc958dd1a09276c24bd6ad074f25b52ce5b68f1aa6e255be",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:48.758415+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-07.zip.CHECKSUM",
+    "path": "raw/d6c07affb720fa7e0e84a5519d0d5a36dd0d46e86e8bf9c981ba0cf6a1877f0f",
+    "sha256": "5d9429a508a747546597971fdcdb515fc5d0f975e013e7d24407d8f1b4a4a00e",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:48.878638+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-02.zip",
+    "path": "raw/5d368c64a4d0c1ee6a9df9aad3e73c8b679635224b9dcda99de3b2dec5872554",
+    "sha256": "fc03caff19988fb80d5b1dbaaf18839a25d28454925e5f5aee0a919f750623c3",
+    "bytes": 21406,
+    "retrieved_utc": "2026-10-04T09:11:49.071517+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-08.zip",
+    "path": "raw/837526dff6c616949c5cc246194db58f3a9396365f3e0a071205c01c12fa4e7b",
+    "sha256": "4010228173913d4aeca143c34aedb3bec99741e4d0548ff94f0d2fa113aedd1f",
+    "bytes": 19463,
+    "retrieved_utc": "2026-10-04T09:11:49.226617+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-02.zip.CHECKSUM",
+    "path": "raw/ba977da45118495ef4a8dfe20a3e3af470c2ca3ac7be734e8d75f1ac55f304d3",
+    "sha256": "0209ab055f81c171e48abfd97f6cd353939273e5adb310cc5c00348aa213fc24",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:49.323464+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-08.zip.CHECKSUM",
+    "path": "raw/76869d348b8e850b39f54dd876d8c86f507207e913ccc2ee02253e134d057ad5",
+    "sha256": "65b17ed5f09e2081993bb41924bab668705834417cafeb8489788d8dc45ae096",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:49.529114+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-03.zip",
+    "path": "raw/d03d4ab6c1a1b55f5179449d02ff8b2259257b97b84ecf1f0ba8b21d7abd6d8d",
+    "sha256": "7f9d6033c1726a5afa377bcb5c514caa5a83be96f812fb11371d5fe06311d628",
+    "bytes": 23133,
+    "retrieved_utc": "2026-10-04T09:11:49.633352+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-09.zip",
+    "path": "raw/330565a21b8d63857ec5d901524a9c61cb0109cb6a2e5dad06fb4e7be87fb189",
+    "sha256": "94f99da71e69e202b0c854d827e8665175471779376efe5bb2735e5659da19f4",
+    "bytes": 18520,
+    "retrieved_utc": "2026-10-04T09:11:49.838258+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-03.zip.CHECKSUM",
+    "path": "raw/5fd12a25c1a92e63f48ffff0b363da80f02f689a2316e4220d6eac9b4f81338b",
+    "sha256": "e30f740f04cdd1afda75e8d8b0bd91dc0aef50fcd35314eadfe741487d2280de",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:49.923448+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-09.zip.CHECKSUM",
+    "path": "raw/fa756172052e0777b4ebb7f1d4817f8d95759184abef1258eb67829978a42af0",
+    "sha256": "03507dea6c484a89c968b9bf95613c32933ea78fadc125a01a27f9519689dbe2",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:50.110338+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-04.zip",
+    "path": "raw/ad484156e6879bb140565d8e1369f975bffa1e0d41c845587c7fff5c0099620c",
+    "sha256": "6673291c1e33cf5981f73da458c266a75761d6a20b5eeee870b3c7bff925f910",
+    "bytes": 22050,
+    "retrieved_utc": "2026-10-04T09:11:50.248756+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-04.zip.CHECKSUM",
+    "path": "raw/5906563192092c065e86d4beaf269e513ca87a8592bcb85068868e4692a45346",
+    "sha256": "a7c338cdc3d2dadf41e3fd4b906c4702fc36e41c765eede07b700ed2005526b3",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:50.436533+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-10.zip",
+    "path": "raw/da9153966fa3aa93c0903261caba36b6f628a018f2023fe87339388060e66a33",
+    "sha256": "77c49c7e7a5aff5b9af8f79fac90d60dc34efb83a03dc5cdf21e6ce935169ba5",
+    "bytes": 19996,
+    "retrieved_utc": "2026-10-04T09:11:50.469111+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-10.zip.CHECKSUM",
+    "path": "raw/cfd937e253da7fddd36c33903bed7105fcf97fd37aaec1416b1e8f8138e33993",
+    "sha256": "217e81f6c7672d43e32d68086902715d4f24284abd62a5cdd1449968b0f97e11",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:50.759490+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-05.zip",
+    "path": "raw/d1e97d1690ea3bfaf3a235fdaf5db1489c40032bc9df35805a69435434b0005f",
+    "sha256": "23e180c67ba5f89cfd02416561efb35a14481a5dc984ebf061f1534b31d5baa8",
+    "bytes": 23282,
+    "retrieved_utc": "2026-10-04T09:11:50.778764+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-05.zip.CHECKSUM",
+    "path": "raw/981c0029bec8ece006256b427f6d9ea4b54bd63f2a59f233f081e35e4df64145",
+    "sha256": "e4029d3eedb94872c58949357feecada4200614ac27c276f5228954a814a5837",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:51.106377+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-11.zip",
+    "path": "raw/0cc59d6f39f179758716783e1143f3eb659b56411232bb7bef6c7416ad9aa7db",
+    "sha256": "540e1cfc450555f4b4bf66597d2f53d3ef2aeca259628c2e3679a0328cd8cf62",
+    "bytes": 20826,
+    "retrieved_utc": "2026-10-04T09:11:51.125854+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-11.zip.CHECKSUM",
+    "path": "raw/d42ddae85268bced3b0e806c27168a63fb1a4636a6c41328f7889c0b769a2cca",
+    "sha256": "7ebb32041e5cfff4e3a8e74b551a5e22cfb8e6181c1f0f9b3f7269b759ec3dba",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:51.393929+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-06.zip",
+    "path": "raw/075b824f485f9a81c35cb220da4ebebe01cf83199ee73084ab5764c30ced7cc8",
+    "sha256": "10ea39d94c31e514023010078383f22a0eb98628897a9f2a6a7a1b1941da435a",
+    "bytes": 22344,
+    "retrieved_utc": "2026-10-04T09:11:51.420632+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-06.zip.CHECKSUM",
+    "path": "raw/d7bd2e0b17e634974f3be255ebc66db1dcf695ca7b47ca2915f9efc06e9f0f65",
+    "sha256": "25c444be6f3f4a583d9e83e13ff2d359d936b85d5b651c90cc19ed5b29af893b",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:51.686158+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-12.zip",
+    "path": "raw/8a9e1f4b972d0fb1b852b321aee2ef3f640de55a0a4dcfa65475c65a839394a3",
+    "sha256": "15f8b317ce9a72b95c2f7b814cf354a3be7899c716b1da4bea5f9741f1a4bc72",
+    "bytes": 20527,
+    "retrieved_utc": "2026-10-04T09:11:51.692073+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2023-12.zip.CHECKSUM",
+    "path": "raw/7978c02a50afd7fb070403f501fed6082e61fa185601d88c895447567cca7d30",
+    "sha256": "58edb3806e7d580abe13d7ab78a7d773912474ef1da028212d2745f19b14cd27",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:51.970788+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07.zip",
+    "path": "raw/d1fb9dc27123e3f790aa4af6170de13f3317bcf6f269c08e7ecaf96fb606e05b",
+    "sha256": "baafc36bfebd44d4356b8c5cae3a92dba09e03a841e7ef13a358ebe6960e4903",
+    "bytes": 22560,
+    "retrieved_utc": "2026-10-04T09:11:51.999259+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07.zip.CHECKSUM",
+    "path": "raw/58d07d33eec7275c25546ef2f2e8edb2517407f55f457fdde7eef45be823f321",
+    "sha256": "e63c11b8444fb7335365851411a4d2afb93d97522bf11466b2a82ec2eb1cf25d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:52.334964+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip",
+    "path": "raw/ac495848343881b88b64e7519c0bf67769c9d0ee72ef2fb0435ab7078d6368ed",
+    "sha256": "69cbd7f53ebf1ce8f7a10181830a931e08e843d7ce0060e9f173f932f3b7510a",
+    "bytes": 21653,
+    "retrieved_utc": "2026-10-04T09:11:52.353012+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07-31.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07-31.zip",
+    "path": "raw/31c1ac839f7e3feaed8ed2723635a8a5cc39b4cb4b449d3bb5363ef60dd5403c",
+    "sha256": "584162b049132f77de5e27af98e48c36d5df159cea10bba8aac4925d5a715d52",
+    "bytes": 920,
+    "retrieved_utc": "2026-10-04T09:11:52.678102+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip.CHECKSUM",
+    "path": "raw/6e738c767f112c0b59c839407ed12127f509b1ce4d0f23e98d428cda3abdfe31",
+    "sha256": "6748bcdea4cff5cce0b4b607b178159dd95d3435f2b720adccd882f6c9fda306",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:52.678863+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07-31.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-07-31.zip.CHECKSUM",
+    "path": "raw/c8465e4346c00517b2aa1ecc3bc78c9a67b972233f1105c01d578f2b10e5876a",
+    "sha256": "b83bf96d2947f553093be3466da580ef9e8086fa8c06551854671115815f7f86",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:52.946574+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip",
+    "path": "raw/bcb9742f2892b661be3eccf9114402caddbb416a1b6341c458f2a3b90bf29477",
+    "sha256": "365bf9687593496872696454674a4a73183112bddcd1c894b000f6a66943a9db",
+    "bytes": 19174,
+    "retrieved_utc": "2026-10-04T09:11:53.006612+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-08.zip",
+    "path": "raw/2e8bd042038fd0326dee582b0ee09939982302824a9230dc3656a9f830def1a1",
+    "sha256": "1925c38ceee17ea2142ce019f360db7c8549bc39998bb1bd63fc2027df5712bb",
+    "bytes": 22359,
+    "retrieved_utc": "2026-10-04T09:11:53.259042+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip.CHECKSUM",
+    "path": "raw/e0e8906fbc6146af4b8d6eae09d8889faddbb15aeb12f500add9fedadf515506",
+    "sha256": "bb87e8959b1cdd3cbbf81a90a363d3419afec2b2b33cd87f7ab359863fb5b39c",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:53.280236+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-08.zip.CHECKSUM",
+    "path": "raw/4858967ba0f4db41f9cf20e8f56f00121d55bdccb247984cf161d9040684e3c5",
+    "sha256": "0f81050b468d9d669a40c3295af41ad62d07d2723555cd056c75ee4218576483",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:53.525669+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip",
+    "path": "raw/87842e3acc4c8beb43232d1b27285babf2479fef7e69d222cab48ae904544f6f",
+    "sha256": "2e04fe5bc9bfba00ae5d5bf74cccd2cc74c86a64923600715f309a1f20ff316c",
+    "bytes": 20502,
+    "retrieved_utc": "2026-10-04T09:11:53.581638+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip.CHECKSUM",
+    "path": "raw/fdfbd8e51e177028d2b726ee115b7b5c3cc92d700d8b5d9b8ba189192409cdc0",
+    "sha256": "afdb6353797db70ef3a5510e35e69c967a35e926cd45cafcf419e4a1dfb3633f",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:53.893448+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-09.zip",
+    "path": "raw/bdced38fbf8f77aa1cd962ca1b5dd174139e015dd812987252e913629608399a",
+    "sha256": "9483f95974442901ee8a277d1eae52af4dd70010c6fb4409d616990685a96158",
+    "bytes": 21449,
+    "retrieved_utc": "2026-10-04T09:11:53.922591+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-09.zip.CHECKSUM",
+    "path": "raw/d362c28ce5108159515e08b38ea83953339ae8fbd9f6d94aeb3adb2bae05655e",
+    "sha256": "12c604bc8963b22fd7b7c05f51bea49ef2c2b987caaff4d7b23918b2e77dd423",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:54.251523+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip",
+    "path": "raw/b7e19cb2019e8618f84000980d8c8ce8d8fb687700bbd1bf95b7f23529cc413c",
+    "sha256": "ebbab0cd75059cd87171febce99b34bd9cb78d7d1ae0db76f50a8dcba4726eb7",
+    "bytes": 19666,
+    "retrieved_utc": "2026-10-04T09:11:54.276962+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip.CHECKSUM",
+    "path": "raw/a5288772ec1a0bbc7d87c03bb6bd3a3088df7a0d8237005ee0d4f07a957efe5a",
+    "sha256": "d6f74fc65748841f31ad96528c51e0483aaabeb1f0f18ba1fcec1479adf557ad",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:54.546162+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10.zip",
+    "path": "raw/f6b355a48a33c8796f7efe0d32a9417b96382b4694e215be76af137df5e9313d",
+    "sha256": "9804dbd86adbd447d60edf955fd668de3e426fa3c6596a13d69ae539a2549864",
+    "bytes": 21128,
+    "retrieved_utc": "2026-10-04T09:11:54.555724+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10.zip.CHECKSUM",
+    "path": "raw/429c3c00177dd33c37461f67a91f48a0b370dc20951723448c40c287a6071347",
+    "sha256": "d635b80f0dddc5402f0a662db8d943c909d6bb7c4b36e281b77d08eb4652f71f",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:54.838501+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-05.zip",
+    "path": "raw/80af963b798b0100f52fbd7df65be8301fcbcac0b53e8ee7b02a9836b8fb8b83",
+    "sha256": "51739079dcec6b65dfc3b108f1f6d009a8e92a3ee60425dd8384e7604974a7be",
+    "bytes": 20000,
+    "retrieved_utc": "2026-10-04T09:11:54.858899+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10-02.zip",
+    "path": "raw/de16328d613c310f09bd41cfd8a1ee772ddf255c4620553e1fea5192d95c2c38",
+    "sha256": "e7126ba8c0cf0be7fac7072aeb7bfdade421d69ebb92ab966aa69b61be1350c8",
+    "bytes": 1040,
+    "retrieved_utc": "2026-10-04T09:11:55.050899+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-05.zip.CHECKSUM",
+    "path": "raw/e7cc58bb556640ca234f2c00c44469cebb2987ac682ee6a185eb395ac1401916",
+    "sha256": "66c21ada76fcbc8005c6866e355e38795f810195ca62b3648bc1f9053361a585",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:55.125680+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-10-02.zip.CHECKSUM",
+    "path": "raw/699dedd1643d5b919defa02820672a26922490778f8352b0224e7f56d8a3f9e7",
+    "sha256": "69f9393f8e2819f6de91a5ff6a3ebebc1b33bb9b079c1641611bcdf82305e848",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:55.298028+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-06.zip",
+    "path": "raw/f74a60a1d1601abe3ad49ac44fa5734055e1509de29f8ac2970bd17e1f82ca9f",
+    "sha256": "e16d550e6995d44bb5820218e1a817012be1495790c1f5074e31d681f13c2cf0",
+    "bytes": 19421,
+    "retrieved_utc": "2026-10-04T09:11:55.508223+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-11.zip",
+    "path": "raw/610950de1a014cb4b301d4ae9d1817963374bbe7ed480f09174500ec8926d1ac",
+    "sha256": "9ff271bbd7bf9a1cb1fc271776a086f66ae38d489a5210ecd3a15d453732273b",
+    "bytes": 21496,
+    "retrieved_utc": "2026-10-04T09:11:55.610726+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-06.zip.CHECKSUM",
+    "path": "raw/c0bbb9650c97615d3eee21bf3ee40bce99886cd876ca26931890fd3a84560f0f",
+    "sha256": "975bd818c89cd05931c58102046b432d7a9e72fef35a953d8818e989facef1fb",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:55.826842+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-11.zip.CHECKSUM",
+    "path": "raw/f0a5c271b29cb00b8ee51f40bb3ecb940614a27c489ae38c91fa50483177a063",
+    "sha256": "2dbcf2c59e1d9966a15360f38705af349921a5ce6684a51e0e7fa16f7d7c5ba4",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:55.872013+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip",
+    "path": "raw/19b61e450b27ae2aeddeda51de943b36cbb3d41aeb72c0e8c6b8c9c5c3adbcb8",
+    "sha256": "7f296e401087e50f3156779ad25a67e29b138cf35aa8afc89971e0862b42011e",
+    "bytes": 20084,
+    "retrieved_utc": "2026-10-04T09:11:56.144027+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-12.zip",
+    "path": "raw/022cba5f11c493ab590dc2011b925683cbc2946a6c099f214c6d916eacdf5904",
+    "sha256": "321ea021c1d07ec31f5f029aa3e55c94f56d4595360b20027a004b7dc3083630",
+    "bytes": 21341,
+    "retrieved_utc": "2026-10-04T09:11:56.225388+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-07.zip.CHECKSUM",
+    "path": "raw/78517fa6206bab26efaccae3ee564ea70576b9a10fda6629ca859dd1c5c51856",
+    "sha256": "656c5df218a6847ee5cc2fbfcca58f336f0e3b6cea5ea44df1ab6d60c94470df",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:56.421208+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2022-12.zip.CHECKSUM",
+    "path": "raw/68fc9058ae6f64d378da133f014fb3b675a4276229676cbd50fd601b2a16c0c2",
+    "sha256": "0d317d7d45e150c19265b3e8f3a7581f78a0d17311ae9b7b20456487d89681c9",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:56.526038+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip",
+    "path": "raw/e2d3d1d23a18c94a66a32ee640f7114c3df501c2324a276cd999418ca0c7f1c3",
+    "sha256": "81050d8e794a6c82a728a2ef1aeeea825ded69960aa905742796c5244eb7febe",
+    "bytes": 20089,
+    "retrieved_utc": "2026-10-04T09:11:56.732504+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-01.zip",
+    "path": "raw/de606d850c4c522db6f7dc9d649597f2959db637fe2194318d736fef726b5055",
+    "sha256": "74e6f880fbc39d87fd27a248c79f761572f2ecb67560e2346d28460d8aac8228",
+    "bytes": 22590,
+    "retrieved_utc": "2026-10-04T09:11:56.899362+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-08.zip.CHECKSUM",
+    "path": "raw/b53c54e9179f92e3cbf4ba2be6d18f93be24dc460f4d1c2a96ed098566b7f0cf",
+    "sha256": "4244c63947da99f131fa0618589933dbb27ebf0ed5cb6d25ac0c3ae391163b56",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:57.045640+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-01.zip.CHECKSUM",
+    "path": "raw/80ec88ecfbdec9283830042f8bfa2be406fff75187bc9d0328015c5cbcc9ac1b",
+    "sha256": "afb1cca774b291207796c259f5297ff252d0cba982858a4734b41357b8e25af8",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:57.172866+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip",
+    "path": "raw/057cd6b217d332dd281eb1a9fe1b4f7f2f72dae964b846e1d3def5ceb004b0e7",
+    "sha256": "5c98619433ccccb9484dbe9e278dac80b40944f63440941ca60142f4efa415b2",
+    "bytes": 19003,
+    "retrieved_utc": "2026-10-04T09:11:57.413754+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02.zip",
+    "path": "raw/0b66947955fc6b42bb3273c1be5679474dde230466f8f3982d351158c842b1a0",
+    "sha256": "f15d23370f252082d8741819800b82f62ac8bbc9001b53ab6abb5d65ccb3ed3d",
+    "bytes": 20177,
+    "retrieved_utc": "2026-10-04T09:11:57.479121+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-09.zip.CHECKSUM",
+    "path": "raw/c3514c2b9cbf51288392f936db2e932730bc7e907905ac8ac31d9af244578f84",
+    "sha256": "17e289af843af84ff66e22a6fdc8e97439d3237d4fde32de97e692d1a597db68",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:57.675081+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02.zip.CHECKSUM",
+    "path": "raw/c92af12ce82f96415baab1a9e721380c3c256084b50911d9bd61be877ac4d635",
+    "sha256": "a9278800de5d496737b8bb96b1a944100489c7010fa90612fab1f3ca95a0c6a1",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:57.737269+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip",
+    "path": "raw/8146e349bd9d016e483f721690b268d9e110a11045e45777beeada6c62c80b70",
+    "sha256": "b9a714d6dfbf51f58b0fd8d0124929b05c59a57fb607b04ea383b6262650e85d",
+    "bytes": 20003,
+    "retrieved_utc": "2026-10-04T09:11:57.987093+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02-24.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02-24.zip",
+    "path": "raw/f3f520051d78f303a768a21cf6808d644f626373eda4b6138e3e85dd61e4572c",
+    "sha256": "63c0acc05aa90e702975a9a3b3f23612267c2ad5d9328a11c5e96f222d9b541c",
+    "bytes": 1030,
+    "retrieved_utc": "2026-10-04T09:11:58.080964+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-10.zip.CHECKSUM",
+    "path": "raw/3ee4aa54dead23044719647bb19354116c948e271faccec8c4a168ccb8a5a02f",
+    "sha256": "e6f4d5b86be232db762c6d12c459d45a24c34dac9b91b2c21633cc192ad17744",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:58.247255+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02-24.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-02-24.zip.CHECKSUM",
+    "path": "raw/2cb8c0d8feb6e625e772698a0424be7f15cf8ff1ce6b58978555be74eb6dbe8d",
+    "sha256": "e216a180e490b96b228a3aecee94a99c9b3a6acbcd5b1cce2f36293206a04f7d",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:11:58.351514+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip",
+    "path": "raw/a28dd2984e0e2470f0b87c178c13650fb8a73a98ac8095ad58d52e3ef26fb822",
+    "sha256": "3c0cf3885dce26b780090fdf7d6b7573648ba3c33fc17ad6bd20df7226e4ebf3",
+    "bytes": 20165,
+    "retrieved_utc": "2026-10-04T09:11:58.537987+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-03.zip",
+    "path": "raw/99004c4018b2349b7f06434f34fa48d898408e9b2b702a9e0c87276a4767bf5b",
+    "sha256": "6c7ccf6e60ccf5b06905b3c7b82d6d53009105208f93621154de621f2642f251",
+    "bytes": 22725,
+    "retrieved_utc": "2026-10-04T09:11:58.650851+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-11.zip.CHECKSUM",
+    "path": "raw/9016c7027fdcb1df5597eea1d17dcd96e5e33870781c53d525a323b93896c8b0",
+    "sha256": "bc35e9dfc78a16426234681b6412aa819ea0bd80f78486bbb70e96da0424d24d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:58.809782+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-03.zip.CHECKSUM",
+    "path": "raw/482ebb0fe333b51cc5828fb141352609e54ea8bd17d5d8445b79b4e9417415a3",
+    "sha256": "1e33508a3ec8d7b688508a8c4f963ac7ab39569be58e4ea43b42aef209e39f41",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:58.965669+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip",
+    "path": "raw/61451e065c34ae0308a4fbbb8738e5c25edcd4fad4b0303a92d0cbb11714e0bc",
+    "sha256": "513d90cb75666a93355d4c6f32928285df9be1c90b34233994e3a66c8c082074",
+    "bytes": 20404,
+    "retrieved_utc": "2026-10-04T09:11:59.161238+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-04.zip",
+    "path": "raw/4122a5cb9f062001f26571d18f553954b8a2e7dcfa8d95331654f671e7cd1bc8",
+    "sha256": "c12b3fc18d15bb91005493e6afedb49a6c776ff821e7fe607c87f41f7747d70e",
+    "bytes": 20385,
+    "retrieved_utc": "2026-10-04T09:11:59.217846+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM",
+    "path": "raw/1d22da727ce1fd403ad41317d10bb5f2c8564984dab7f9ea9e35330ba823b1b8",
+    "sha256": "5b77bfad23c2a686649ce45ff0d5e443cf1bf7afea918550f382e7632078a565",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:59.491006+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-04.zip.CHECKSUM",
+    "path": "raw/afe38e01529af5dc1d5e6b3aa7f3038a76d947754ecbdea62023970ba3d94c1f",
+    "sha256": "98c2bb41b03558d23abf3dbe99c60203697787181f4517b05017c53a138e79fe",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:11:59.491667+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-05.zip",
+    "path": "raw/efeee7a186f4749ddd9cff9c35ddae5d3cf9098ed8f541ab58d7e49387a394af",
+    "sha256": "ca28c2dfcdadb7b7e4b7e82e12e8adfff0892447594235a04f8df1952124ffcf",
+    "bytes": 21365,
+    "retrieved_utc": "2026-10-04T09:11:59.808556+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip",
+    "path": "raw/1219acebfaaab184a695eed654d87a1b576c4e2ec9a6dc1370d947214c3c9a72",
+    "sha256": "37e4e6a5f4333609e3cc790daf51433be168e9a87339c0428318de823f00b118",
+    "bytes": 20798,
+    "retrieved_utc": "2026-10-04T09:11:59.811417+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-05.zip.CHECKSUM",
+    "path": "raw/459c1668418a5f9498cad1f60134003b78f401e538e8fbea7dc899b96b2b0d0d",
+    "sha256": "adac1054be76bccbbfe4e2e2d121ee0fae7568a500aaf4c60fb98277945c5f7f",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:00.020977+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-01.zip.CHECKSUM",
+    "path": "raw/e0f7bd7eefe5cae0e30a7daf4ab85f6a142672f6938060e72b29520ced0e9a57",
+    "sha256": "ecdef1f3933eb16008670a62459032af96dd1cf2be47da81d1366ab36bd8db43",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:00.080635+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-06.zip",
+    "path": "raw/5e1ea28809123d7d8f174cfed14c6e0b9a6d77f4083d2df4108557be16aeeb38",
+    "sha256": "a4d224d8558feb10d7d9e08ca7d970cf8879659257e876861dd398d52ae5da46",
+    "bytes": 20722,
+    "retrieved_utc": "2026-10-04T09:12:00.338212+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip",
+    "path": "raw/33275d97a212a6bde296dcf268266ae7977d123123f5e777ebd3cc33506bdcfe",
+    "sha256": "d965ccd306e4749e5e1a0469b0ed1d80d4197b9cd9f4c2b2669555cf081ac8a1",
+    "bytes": 18408,
+    "retrieved_utc": "2026-10-04T09:12:00.387244+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-06.zip.CHECKSUM",
+    "path": "raw/a950f45bde8c92cc5128a4c442bf8bc170533c0998174f1339f5a3ba010dc69c",
+    "sha256": "0f18aef96daee5c15454b02f81d231bdd12eb8cb3d50a6cff0b127d57eda67cd",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:00.538486+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-02.zip.CHECKSUM",
+    "path": "raw/218848d4238030288de62eeb52126609f72b9729620c17e895369345041af1da",
+    "sha256": "7669ddba0b00858b8ecd950397f66a8d734171fa3976b147bc8b4e9a3a7ad715",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:00.707658+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-07.zip",
+    "path": "raw/91af35ad2c142067c9105fc4847b7d2947ef39a65bd7bae9ccfad70f504ad9b3",
+    "sha256": "0ce8be53516729ebfb7fe4b7f4d0c45c118247d41484baa29e5b770f6a7daa96",
+    "bytes": 20691,
+    "retrieved_utc": "2026-10-04T09:12:00.755148+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-07.zip.CHECKSUM",
+    "path": "raw/83798643d2337d473589240c4f9995fd99e9709f5810cce3466984b48bbecb88",
+    "sha256": "ef23b652d4e7fd606b1a7bd34041b63add6788b282745e7ff41ee46815932ca3",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:01.066708+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip",
+    "path": "raw/79a8523f32a401f11012c9595542e364b7393f764d175f3e94d44f906eb4952b",
+    "sha256": "756e8bb44e3e36ed0073e92427676c6a0399998a4d5c691a8b1ab1eb87f5b47c",
+    "bytes": 20422,
+    "retrieved_utc": "2026-10-04T09:12:01.086655+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-03.zip.CHECKSUM",
+    "path": "raw/cd7e0dd967ce609c421c943d93b43f23e630db70f262b6b3339efa617906788e",
+    "sha256": "e122a0f6acd233ae23ab54fe4bc6b285dfa931d169c34dba6b85fb9421e85d26",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:01.382982+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-08.zip",
+    "path": "raw/2765815cfa7526ff47d672395529a48ce83aa600e4cc9d7c92850805fa75defe",
+    "sha256": "fb077979ed1b31ed6532728c9ba2c0eb1f66a9d16c9ccadc69c64461d63fc25a",
+    "bytes": 20794,
+    "retrieved_utc": "2026-10-04T09:12:01.405089+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-08.zip.CHECKSUM",
+    "path": "raw/ce06f10469b4a18bb9c4343baffaa56fb63f529d5d119161c9857726a1951951",
+    "sha256": "531d17c1405cdb7fb6ba2b69a32821bdf979a41bb04fc6c20d268595ea1b1aab",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:01.608701+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-04.zip",
+    "path": "raw/6a1cedf2a65376c3294260358140e48695c43b04332574ef5939b1e0e098894b",
+    "sha256": "8ea8ebfabd20d3cad48ba79c50c9c7de64fe4a366d0b27e8bb447dc6e017357a",
+    "bytes": 19725,
+    "retrieved_utc": "2026-10-04T09:12:01.695492+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-09.zip",
+    "path": "raw/f04a440014aaf9040c523b6512366b90a5d56f4b37a4913ffde0e2704c883e59",
+    "sha256": "273e01ef7c664bdbe750fad4ed92716ab18bb298b26dee86b1fbf4a8bb09a29f",
+    "bytes": 19786,
+    "retrieved_utc": "2026-10-04T09:12:01.907544+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-04.zip.CHECKSUM",
+    "path": "raw/84869feddcf20b59f989274651dd102d5208bbe56b2b0080871806b26060864f",
+    "sha256": "44ba6b8682b8216c5ef184e6034c22d4fb1fd80cc6284cbc2702180e06f393f4",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:01.969727+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-09.zip.CHECKSUM",
+    "path": "raw/2e62509bc57d3d9fa6ce7d6fd15f36ea08cf33b81b96d7ce859321a2781eb021",
+    "sha256": "5ddbb8e2a73b4eff86e11f83a87743d20c6fb675773fc943f84f8c6a70b8e781",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:02.164020+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-05.zip",
+    "path": "raw/e9283d86996edbed0b1fd4fb3fb4d1f1b1f39ef4303cbf2c95d660788b3f79a6",
+    "sha256": "f04157e9024c129f0ed90ff9ca7b8c50efd84277397625be01ab8677e3ff9bb6",
+    "bytes": 20680,
+    "retrieved_utc": "2026-10-04T09:12:02.304161+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-10.zip",
+    "path": "raw/aa9cbd1d9448ef0223fc1f6a832bac94c0245113f29e6c4d2a398049f7426c6a",
+    "sha256": "507040896ca3cfec2a70aa7206e592f3597447f5e24d3cf0e56bafd586f6249d",
+    "bytes": 21566,
+    "retrieved_utc": "2026-10-04T09:12:02.485326+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-05.zip.CHECKSUM",
+    "path": "raw/c1d927f1228af85753e8d1aba3b990c5f5028e935fda3c1bfb4f11f37e29f892",
+    "sha256": "6eecb43fab881fee2c6869cef7f4019c5234bded926bc4fb23630db5d1da3687",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:02.637222+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-10.zip.CHECKSUM",
+    "path": "raw/19045ca517c71dfd4dc8161021d6d18c9ea387a338127b015cf8fde6aaaaf2a1",
+    "sha256": "7925159879ac3685fc8f20f913616524ba9e4539c5bb7fbce7cb256d8be1fbf4",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:02.816032+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-06.zip",
+    "path": "raw/a45fc3b3c8b55cbbf4bad5cb9d5f1629b47c6552cab799a697102c97776f656e",
+    "sha256": "0dc2039c33c37922816c55d0a7865895b0fd44a6e12a95e2632508a5d136b84c",
+    "bytes": 19758,
+    "retrieved_utc": "2026-10-04T09:12:02.960275+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-11.zip",
+    "path": "raw/a710dd675fe0dada59ba8a699b0d2eaa59fddb999f272594c4c7fa09401fc3a0",
+    "sha256": "079a2b1817b8a94aa2f8187a2fbcc77cf61e8a92615459fceae667c8f69fccd3",
+    "bytes": 21542,
+    "retrieved_utc": "2026-10-04T09:12:03.185401+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-06.zip.CHECKSUM",
+    "path": "raw/f2cb8104dabc8c0fbbe987a9a8e2fcd2243dbd0023704e4ff9f209f9264a35eb",
+    "sha256": "57f0d8882d014bae4d37c94b8ccfad65d82c90ba1a1e9555ebbc6b7861495560",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:03.235845+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-11.zip.CHECKSUM",
+    "path": "raw/591a3ba58589cdc72a462698a59ce55ad6cdfabeb999e843296285eb50ea21bb",
+    "sha256": "7386c514b5ff4f2a81597b270cc224202689359248948fae4b5b0813569781c4",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:03.457494+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-07.zip",
+    "path": "raw/bb3df593231099e37ad444719c3efe0bca64386caff175e8778c4da9252b23a4",
+    "sha256": "8f07b4c0665b73e60d25ef331edd350e28cf63c5bd4be6d157a56bfa2a5a11a8",
+    "bytes": 21228,
+    "retrieved_utc": "2026-10-04T09:12:03.470807+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-07.zip.CHECKSUM",
+    "path": "raw/88f6676deb18c9755aa5883c28c621d4dd0402456a43b1b8eb47ac2318c9d7a5",
+    "sha256": "16a397c178725871388732587feea6d6eb690de524ec566055f9d76d8366ca82",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:03.746057+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-12.zip",
+    "path": "raw/4726fca9846f0a63db991842e027ae8cde12cdbaf78e87213af5a732e8b310da",
+    "sha256": "908aeb683f82c557a4f032cdaa9d472b2821282803f62fe7a8603c82660b9bda",
+    "bytes": 21631,
+    "retrieved_utc": "2026-10-04T09:12:03.775308+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2023-12.zip.CHECKSUM",
+    "path": "raw/84272506f15e08fa4bb150951502a2fab13bde956e6aad5a431c615e08ac3471",
+    "sha256": "c05014b46ca5b7c8216d7cd0d56331a1c9e2237c7d1c60257418321e61ce32f7",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:04.032928+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-08.zip",
+    "path": "raw/914454af4e823c4b0f582ddac09400920447dc33f5e95760e30496bd9456ca21",
+    "sha256": "bb82a5887e9540f03c1698a6d25e1959fa3d64110ed348bf5b1331a9f7015264",
+    "bytes": 21197,
+    "retrieved_utc": "2026-10-04T09:12:04.052348+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-08.zip.CHECKSUM",
+    "path": "raw/16d8ad92a4fa03bd66a6b3edafc2f1c9a1215ce2e9326816137bcb405aa86bbb",
+    "sha256": "c21e0f66e6425d32ca0daeb8c1f4150ca1831ccb78f4583a62b528bf54413f15",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:04.383098+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip",
+    "path": "raw/203aa9d226fc7fd8ed84bddfce3272756a36ecca4ce1271365e694c966e60255",
+    "sha256": "759f86a22dadb455c87a3f90f6a9134c73d24a55a7596f0b96e193b5d45cdb49",
+    "bytes": 23278,
+    "retrieved_utc": "2026-10-04T09:12:04.416516+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip.CHECKSUM",
+    "path": "raw/cdc7f615135176e4c9f8cecc9c46c7929715e82d83400f9c6f3383ddcea1c485",
+    "sha256": "3d2abfc58096b7bd7049298454f2cdf326e446c14906b52141c8521fc416f617",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:04.742174+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-09.zip",
+    "path": "raw/7024a1b325ccf19ffe6ce1aba806be84270ac9f13fa1e3050a2835b20a85d1de",
+    "sha256": "d0ada9d948691985825094ba218b995bed68df8ead9fc6b599c24fa556941381",
+    "bytes": 19547,
+    "retrieved_utc": "2026-10-04T09:12:04.754674+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-09.zip.CHECKSUM",
+    "path": "raw/76c30cb61b28e6feceaeda2879bd0ba8a87adfec3daa82af3d990ff88e32b5e6",
+    "sha256": "61ddba8d2258ad624cbe23b387e259e971b56af8955911d40eb5d61eda0c4ba0",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:04.964515+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip",
+    "path": "raw/7f6a5e4e7e67ed36dd2a4f65e0a0a0ea15ecd266b5cca332aba5f0847a69ba3d",
+    "sha256": "edb8b7e0174e386accbdf09a022192ddadf3cc0cb874fc079ff38bf808b3be88",
+    "bytes": 20187,
+    "retrieved_utc": "2026-10-04T09:12:04.979274+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip.CHECKSUM",
+    "path": "raw/e8b162523dcc39358340a993ffb9d2da0e944a330d3a69b979ee3f505202115c",
+    "sha256": "aa557a2955d3fdfea52677b65180e010b8d9e905d500397e6127f0908e426bee",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:05.258046+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-10.zip",
+    "path": "raw/7529d564a7d33c626f28b9db813faf3a3af15078a71b2afb1cc9449840bdfa45",
+    "sha256": "b66da24edc2aed8e5e53c81d866ca463e3374774f380c2cc83b0b01874ff9255",
+    "bytes": 20520,
+    "retrieved_utc": "2026-10-04T09:12:05.284626+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip",
+    "path": "raw/1c40178b7e72edb630c742cfd8631860117671140ae6f15e4e73fa90e6e6094b",
+    "sha256": "dd72fa2fa1cafeef6f0b4f937b8388ef7f88b84e95ca13e15ce9d4ea3fcec86c",
+    "bytes": 22090,
+    "retrieved_utc": "2026-10-04T09:12:05.507653+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-10.zip.CHECKSUM",
+    "path": "raw/a39634c2a98cfc86688740909b9eec8e452f619c9082511c0d5e30f34549bb70",
+    "sha256": "c69d4f3cecfa832f969f7991adba7ba7be9a64e2e7f3e8c79f9febc162768acc",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:05.549635+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip.CHECKSUM",
+    "path": "raw/ff92596b7e394fd7bbc13d57ddf35610a473fa9cca3dd38761e8ffa7d5e909f8",
+    "sha256": "ff7337856e6c4ce05f21c96ef1f71552a0038824a10c3839437cb6a004af791f",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:05.783666+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-11.zip",
+    "path": "raw/a3d4d66930473a3bbbe421053df80830bbb13e837b10a7e2d96390e7431c0d2e",
+    "sha256": "ef9cdd5db37a158eb19726ae2242d904546d0bdf1e64b95080b4dcf3a569eaa7",
+    "bytes": 20009,
+    "retrieved_utc": "2026-10-04T09:12:05.868945+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip",
+    "path": "raw/240cbe0aa72a82e8a5099aeae31eb783675e3139b6bb840d2d51cade1937ffec",
+    "sha256": "98d2e92206505233959a467018ff1d094f234ee875a4ef3306c86f3a81bba793",
+    "bytes": 21261,
+    "retrieved_utc": "2026-10-04T09:12:06.027088+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-11.zip.CHECKSUM",
+    "path": "raw/dc60f8255daa75da80639ca39479b0e0efe19130efebcd5a008181e633539e5b",
+    "sha256": "a9d84f850b73199879498c04ef6082304123b09043e59604dc1e676b9f5d0ec7",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:06.146932+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip.CHECKSUM",
+    "path": "raw/0096d597091f1481a8479c17479e6283b8bdbf1350fffa2bd7ed8994041c1de0",
+    "sha256": "fa23506264f9a08a046a51819e60e9b94ee35b77415c917144f56c7bdfe5beb9",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:06.305958+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-12.zip",
+    "path": "raw/fdc7d790a673cb9693069123fc8eb4a5939c2c5aaa4a468cae96bdbdb29c0f53",
+    "sha256": "f6799bcb0fb888365c9b2598e376451dc2299dfd81e55b674d53c26332f78b3e",
+    "bytes": 20240,
+    "retrieved_utc": "2026-10-04T09:12:06.506451+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-05.zip",
+    "path": "raw/a244860088cb3c77524a5e3b0a40b60bc1df32b716a173efa3496bede276afcc",
+    "sha256": "4cd99fc326ea26513e995e09018a6303ca51581503dd01b7c79188f8fea100fe",
+    "bytes": 21264,
+    "retrieved_utc": "2026-10-04T09:12:06.600571+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2025-12.zip.CHECKSUM",
+    "path": "raw/acbd5be3ad98771600cf0fa732d458f0cb6c1dad5c18d8c37ecb0255efe9fefd",
+    "sha256": "74199195116b2af32df4d56df740ea1700cbb18345c4d9d372a82cf1234a70b0",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:06.831518+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-05.zip.CHECKSUM",
+    "path": "raw/a4290da18ac66fff49febaf8db375f2396a5f2e0792ebdd6879b185deeac3ee2",
+    "sha256": "9eae8a05ebd089b2a1ab90074a5002d17a4c2d95ef4fd6936d54a004300c9a09",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:06.906771+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-01.zip",
+    "path": "raw/008587756c19f47e2a85782909153c684161b47cb316fc4edac246c416df767a",
+    "sha256": "115ca21a41c9ab03d82143bbe7a74c0293859466d05f26efa7eb023a58f15671",
+    "bytes": 20254,
+    "retrieved_utc": "2026-10-04T09:12:07.149088+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-06.zip",
+    "path": "raw/b98e47f0954525a7f9f2c112672aee5c37865dc8fb6a401366afeacbffb0a365",
+    "sha256": "f725086a0492f3a8be3234413fc6902d8191a4ed074c5a15d4bf0e53d8f37efb",
+    "bytes": 20704,
+    "retrieved_utc": "2026-10-04T09:12:07.197692+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-01.zip.CHECKSUM",
+    "path": "raw/f592b22d3d93e4516437114b6f66aa835da0e92aa5bcbf96b6ddd4066f31d228",
+    "sha256": "01291a211d8f0a5e701b08fdb4bfbed069ba722d7870021d26bc663f7642d29c",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:07.414758+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-06.zip.CHECKSUM",
+    "path": "raw/78ed852011f5930a54453ea015b6b56d43f409bf85f1658c4672dd86a2293862",
+    "sha256": "0e0af9f48e0856e2e701b0a34896dd3afe33fcfbce2e80a2d6b5a5cd5ebb84b3",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:07.527238+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-02.zip",
+    "path": "raw/3632f64ee68514cc6981dc290c49a9e5e96e49bb8c885185139be073275efb53",
+    "sha256": "65ca765f089e3a1a23f4cbb3a0fc604cd8aef113587ed4983b0f4e50b480f987",
+    "bytes": 18705,
+    "retrieved_utc": "2026-10-04T09:12:07.719147+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-07.zip",
+    "path": "raw/9596b59887b7ada7f05ef7bfeda36cf9513ccc2c0543f338dea8db6cd29a0642",
+    "sha256": "1841595033d00f777e1fa1229a30d121e8953deee29c1150d9ae7f0c650604f3",
+    "bytes": 21640,
+    "retrieved_utc": "2026-10-04T09:12:07.901555+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-02.zip.CHECKSUM",
+    "path": "raw/53a735aa181fc5b131a8fa2ff8a6ff7ec3083fd20e7388cc6a01a943aa70f217",
+    "sha256": "08a27412639323c7bee7b16fcc0caf53f5f1944c76873b3fd02873da178276c8",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:08.056867+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-07.zip.CHECKSUM",
+    "path": "raw/a123bd5bbcb0610a38d3a2dccb77340e019cecf1410c25914aac9954643e97ba",
+    "sha256": "35fe1283d30873343886d8bc7d2675137bcee0dc972d90edfd07e33cc2c1819d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:08.174533+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-03.zip",
+    "path": "raw/c07230b40c8a26de7ea6452be9120fb5ecb903a22c7d8f326485de1febceb7e4",
+    "sha256": "88cdda38aa47458e37af93b7c3117cb38ba2b4eaa1e14bd36a05573894b28531",
+    "bytes": 20784,
+    "retrieved_utc": "2026-10-04T09:12:08.424568+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-08.zip",
+    "path": "raw/732a6a819bfea2ac83b4975ed30956f0db258fe0daa45c36b4ab0b9f43bb3741",
+    "sha256": "445f615d788151be98e4d021ba11ebb29ebc26ae2fe2ae6aeedc3e1ac0c7afab",
+    "bytes": 21529,
+    "retrieved_utc": "2026-10-04T09:12:08.477710+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-03.zip.CHECKSUM",
+    "path": "raw/a847e935d87714c8f9a6e6ddaf364ae33e02d96474dff9e980fe53a9fa4ac23e",
+    "sha256": "a28496cfa4c381dd2cd110ececdc8b3725401e752d39fab48243751c38da395d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:08.694580+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-08.zip.CHECKSUM",
+    "path": "raw/1e3f4b09a84fd78ba8812f1cb2093046fce0acf2484070682769a940d1826445",
+    "sha256": "fadd4c6a2c8db218f6a2283db34cf665108bf67b887f328485102988d822bf05",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:08.744763+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-04.zip",
+    "path": "raw/ab8a4ccb5c2a3196a1474d619b3c6baf9966d34d9a2a845f1a19a6180bc565cc",
+    "sha256": "022c39660a5b6d3a10c77a4f11566e5c2e65792e9b8bfca61231e316c0e967e5",
+    "bytes": 19371,
+    "retrieved_utc": "2026-10-04T09:12:09.009436+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-09.zip",
+    "path": "raw/c493320937e81453a621c746d55ff67d08ff445d6630ebd2de8a858dee278f49",
+    "sha256": "cea573092cc212d76601450db3abe4dda8a801ae8cb770df771352ff4779e2af",
+    "bytes": 20357,
+    "retrieved_utc": "2026-10-04T09:12:09.158177+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-04.zip.CHECKSUM",
+    "path": "raw/b0adeffffad626d9655db73c93e7d68e38205c33a1a0b45e17c6724fbf3a9976",
+    "sha256": "0338a40e341b14be548e81055998a9cda59f7a0d30d24ac10c4afafbf7b029f0",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:09.277089+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-09.zip.CHECKSUM",
+    "path": "raw/880f60eef35f6fab0357c4d4dc1c59b4ae201965bd3d24e31ebff996fcc376a9",
+    "sha256": "596d4f19ec1c285883b7a2c8f2b305c1cbc15f7aac788d35db9873bb4e9b5092",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:09.451735+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-05.zip",
+    "path": "raw/5de0480a58d67d2661eece6e3c1d87779ad109c482208844ddb44e5e66b30185",
+    "sha256": "8c8eb74b687d1b89f5d50e61970510c528dcb6096e0c63f0c12e011379a721c0",
+    "bytes": 19804,
+    "retrieved_utc": "2026-10-04T09:12:09.644506+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-10.zip",
+    "path": "raw/99bdf3b5d3e666b61a4076e247dc72d35f47bba76b131e9fcc3a767da9941064",
+    "sha256": "d9e8037e4548658b9e6827e92d358188c645de1f52c9f74287c9e711a71a201e",
+    "bytes": 21370,
+    "retrieved_utc": "2026-10-04T09:12:09.748114+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-05.zip.CHECKSUM",
+    "path": "raw/5963ecb9a5162c08d69b2b2bef836f1aee36918b2413907006f0879b5c1ded28",
+    "sha256": "0eb0ccd0688d98c8f66d328f9731613cee4bd73e8dfa0789895dd0a7c1068d93",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:09.978948+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-10.zip.CHECKSUM",
+    "path": "raw/5d6b4d837faf3976e280b2b639513d3ffe018af1939c311bc7cfeca9b90cfa5f",
+    "sha256": "09b311e8cbfe50ff66ca62e1eb2e6ed0e51773e794c471dca09cf84b8ec7a35c",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:10.010776+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06.zip",
+    "path": "raw/90af3dba867273a71118976d038fc081729441036f1c16bc3dc0effa418e6cea",
+    "sha256": "f3321778da750ed4a24ce9907af8956dadd6bf022832b1d54594159ef923100b",
+    "bytes": 18773,
+    "retrieved_utc": "2026-10-04T09:12:10.289300+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-11.zip",
+    "path": "raw/036df00eea533a442e7ea74896bcc34a2e8e0a06add10e8cb982273ffc25b72a",
+    "sha256": "528ecd74cc4a5eeaf9cce05a93c80a4c54f988270d0e9ef0b67d6f0e2e005c0d",
+    "bytes": 21554,
+    "retrieved_utc": "2026-10-04T09:12:10.353737+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06.zip.CHECKSUM",
+    "path": "raw/abf1308e2265ec245daaac044c9ca3f6fb73bdc16989d4827f2b18b4c4a0edc9",
+    "sha256": "54c7805e1915ecd378b59f213921ffc5acc0e50186d08ecea535b85cf2fddf34",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:10.557696+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-11.zip.CHECKSUM",
+    "path": "raw/164b1b96c1d8de8e699feb3dc1ea466b51878400a5e57a084d0c41234c156735",
+    "sha256": "16388df9864f3881f70bc7a17b5053975ce1eabf8e19d94588d7b0a9b3ce1a60",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:10.680906+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06-29.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06-29.zip",
+    "path": "raw/3a33ada46d5dd8815347e6b17205ff5acf783ae072f60cefb19649d331b83768",
+    "sha256": "29ef5b9ab185b18c7bcb73fd7ba12d14ebcef404367c886ad13705592ef99c20",
+    "bytes": 944,
+    "retrieved_utc": "2026-10-04T09:12:10.846829+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip",
+    "path": "raw/c65097b528c869fda5051dc7457e4490461522c6c0ccd1a8ce42eeb7fc4174bb",
+    "sha256": "8ad10135afb8ace28b881ac893c1ae2ee2b9ba3c6ca2b613d057b0608909de01",
+    "bytes": 21972,
+    "retrieved_utc": "2026-10-04T09:12:11.046619+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06-29.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-06-29.zip.CHECKSUM",
+    "path": "raw/0ad95f54f9b1d5829c788344c059496cc5f769921b4c5513fe1547830b182a05",
+    "sha256": "ae84cb90781544c1f962e5bf3a3bbfc9bb0687a8d99553497d6a1070c8b15272",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:12:11.202592+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip.CHECKSUM",
+    "path": "raw/5f8017ab2e7a9169e2e0bc1075c76e0c20ebc4db7671d21b804fba961efaad9e",
+    "sha256": "ebeaf3bcd6b1a05bb44ea7a30d6193411597823c26174371352c5be5ef6910a2",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:11.318470+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-07.zip",
+    "path": "raw/561d6d27692129bdfc1da10c16f80485774022c90056408ee03da6d8d85f5a8d",
+    "sha256": "d1d9f24465a6723c4fb59995aa2bfd9d1a768d5c12f2b00278e4bf2128321a52",
+    "bytes": 19760,
+    "retrieved_utc": "2026-10-04T09:12:11.570396+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-01.zip",
+    "path": "raw/e1a339f982e767e964957fffdf6344d18c1caf491b3679bea7a6874b6b18faaa",
+    "sha256": "1b4f5ae462ecf75233c4be7aa5fad3b983d2ab218bf5a1b33d042195635401ff",
+    "bytes": 21795,
+    "retrieved_utc": "2026-10-04T09:12:11.628236+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-07.zip.CHECKSUM",
+    "path": "raw/30ee7b9539f3a5a821b3c1f2301d04bb72b4bbcdf305ca7d3162d2584171737e",
+    "sha256": "19fb79362e8c001dadf6144c2ae19636697a1a3a1e934620d1313b5d76757dc4",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:11.838741+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-01.zip.CHECKSUM",
+    "path": "raw/ad786e5e8b6ccaea0fe316e65d5fd808ba9072f57975cd613c45d98e39ce7ea5",
+    "sha256": "5264ac4833d517a9c2efb0dc7bf68811ea2d1c8e6539db8abf021cd2b3b6663c",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:11.909089+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-08.zip",
+    "path": "raw/db02efcb71c3796253e17a81a693dfbf09dab636cdfb37dd4c108e5c7fc0f036",
+    "sha256": "3bb644e423b6e2d022f671c18a46c7120f064df05ac3b5bf296031afdce2a178",
+    "bytes": 19393,
+    "retrieved_utc": "2026-10-04T09:12:12.146888+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-02.zip",
+    "path": "raw/7238fbc7185bf0346f8e34fdad190c77a853f99feb08a23a6e7efa3fc565e315",
+    "sha256": "990b7c1a559e383c0e9c13860036e16452189069ef853be9047bccf199b83e07",
+    "bytes": 18944,
+    "retrieved_utc": "2026-10-04T09:12:12.266070+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ETHUSDT/1h/ETHUSDT-1h-2026-08.zip.CHECKSUM",
+    "path": "raw/8b8d8b6bdd5fb5c59d2782fbcf6b5306b335d7f36530f930d07512e887bca6e2",
+    "sha256": "77efcefe52607f5e600ffbce9489b25662f7bd33dba014f5450193ed15ecdc2c",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:12.421261+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-02.zip.CHECKSUM",
+    "path": "raw/d10080513dc515c1eaf75af6b90053623eccf0a817d64f0b15076071892e8eb1",
+    "sha256": "2603e8ecf7e64b86d2ee0b751df8ebc0d769fd8f040e9bc36455db2ed7c9231c",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:12.596373+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1606780800000&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1606780800000&endTime=1788220799999&limit=1000",
+    "path": "raw/f569e29bdf08b1b5c39d8fb2ddf35d0d792d52ebe7cdd25087ec0b4022b487c0",
+    "sha256": "78922fc60b821ae3ed34f0fdf9969aa8bf24b827789270ecb5409ff015157d75",
+    "bytes": 112042,
+    "retrieved_utc": "2026-10-04T09:12:12.839020+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-03.zip",
+    "path": "raw/d7b8e014f6d9b94c7c4ac07172a5a9a0c1c8498e21edd0553d82dc1f95b3f2e6",
+    "sha256": "e5e33e15e23a039dc6b17aedf2d1ad75bcec563e78bdebf19cef51461d5eecb6",
+    "bytes": 21236,
+    "retrieved_utc": "2026-10-04T09:12:12.912888+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-03.zip.CHECKSUM",
+    "path": "raw/0b45a3ac40884d9f113ddb93767ec1fec6754bdc61af351e73b21ce2d888d5d7",
+    "sha256": "c51e54ea6ec432edcbae073eb65014e4311cb1f217819bbfc315ee27516a0888",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:13.123429+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1635552000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1635552000001&endTime=1788220799999&limit=1000",
+    "path": "raw/668469c38ac3929abea280e8d077b28aeec0ccdc29c523243f6efc41bbeb4e24",
+    "sha256": "ba5e29cac6146a5c647539c11e6eccd4aee6c833b21c8f921a4d864932c28103",
+    "bytes": 112295,
+    "retrieved_utc": "2026-10-04T09:12:13.141417+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1664352000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1664352000001&endTime=1788220799999&limit=1000",
+    "path": "raw/f48cac9f207e00d7b648b4b7ea1dbda50fcb53a69056e0661985d7e94215ab5c",
+    "sha256": "cddd323296eaacc1bf3abcabdba37537caf0ba7490f57a16e52fe87a10b96769",
+    "bytes": 112159,
+    "retrieved_utc": "2026-10-04T09:12:13.340389+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-04.zip",
+    "path": "raw/a356dd787f6fb9a1b1d865a89ffb994ed0404a9792f9b9eaf31362951521b8fa",
+    "sha256": "68e58503283af83c7a03b7724d5aec0c8a1c92413c59b86421d1c8c75e54f2b0",
+    "bytes": 20634,
+    "retrieved_utc": "2026-10-04T09:12:13.375285+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1693152000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1693152000001&endTime=1788220799999&limit=1000",
+    "path": "raw/dbbd0ca872ef3340f05251d0a24999b82bdfea5bc672abb1f419e0bdca7b0ef7",
+    "sha256": "304e18483ebbf38a361fbc60fc29a819bf177644574670e275876c06f45b754e",
+    "bytes": 122521,
+    "retrieved_utc": "2026-10-04T09:12:13.543804+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-04.zip.CHECKSUM",
+    "path": "raw/9ff2fe45bdb85eedaf12a9c6bc5311b4251fedce9b643eb20746f53770189cd8",
+    "sha256": "5be7ff177775bca07e94a0c1ac6457473fcb479e1c0223408a23120829379041",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:13.646137+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1721952000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1721952000001&endTime=1788220799999&limit=1000",
+    "path": "raw/02c3e0043e7734139c97007b56ad8b19dabbb81351b9095e7dd394c9d768bf77",
+    "sha256": "b022531b15352eab9eec4f4a49c6e7bb8c777210caf20a71fecc5620834db6a9",
+    "bytes": 125146,
+    "retrieved_utc": "2026-10-04T09:12:13.782882+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-05.zip",
+    "path": "raw/fc63ea099346068a246ef5ba9b1a16fa85e4c8dfdbd9b205b849f0a9a0dea16c",
+    "sha256": "eb0f3a60274e2ed18c724f295846d787ead5f5f084d6b776ad2cd095e32ba9cd",
+    "bytes": 21368,
+    "retrieved_utc": "2026-10-04T09:12:13.954083+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1750752000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1750752000001&endTime=1788220799999&limit=1000",
+    "path": "raw/42e3f8b525fd91e3558ba763a6a891afe647a344a330a7af9f5c83b964fb2e9b",
+    "sha256": "fca976a98835611d572747b5859193979a61ad9ecca5bd8ec011da0150600831",
+    "bytes": 125265,
+    "retrieved_utc": "2026-10-04T09:12:14.007295+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-05.zip.CHECKSUM",
+    "path": "raw/f9d563af68fb39d5484ba5501de30ea0ffe6e782465e27d270136d1687e6ca49",
+    "sha256": "ae4c33ef29a3f1df1bcaa958c8e0affebe4233f332ddd109b44283be07c4e8db",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:14.169879+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1779552000004&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1779552000004&endTime=1788220799999&limit=1000",
+    "path": "raw/361103f5b6ce05efa6670145af0a62608ef3c2b7b48aa22e074c2667ddeaa904",
+    "sha256": "a8c9d681b3b99ce9fc071877ffb01c87e8fc6a9efa39c222cb97397a29550272",
+    "bytes": 37551,
+    "retrieved_utc": "2026-10-04T09:12:14.271311+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-06.zip",
+    "path": "raw/8e067a55d2776ac10a658e217ce9f2a7f6e9feb0210b283291908981a9716b5a",
+    "sha256": "af4ef4580eef01d1c2347e1278510e45ba88117c16d47c8bf3fe4b6bd6855a56",
+    "bytes": 20653,
+    "retrieved_utc": "2026-10-04T09:12:14.482932+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-06.zip.CHECKSUM",
+    "path": "raw/de03ee31a69a1ffbde1962b66124df6c4ca4ff890f685c34e621a0b862793f78",
+    "sha256": "9af478c70702aa0b38ce4dbf660c073a4d5bbac1c6012d33c2487059bad09fa1",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:14.696588+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-07.zip",
+    "path": "raw/ba5d03e32a1372ccfaa51a8cc91e18f9288a9e3e0a36ab9caa68a5a9fdd77035",
+    "sha256": "588be1d9cfe5eeebb669d68641bf6191261dc094064862d212ac0038300bb3a2",
+    "bytes": 21725,
+    "retrieved_utc": "2026-10-04T09:12:15.012694+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-07.zip.CHECKSUM",
+    "path": "raw/3d7eaa7aa38b3edc175c99f65247bd6adf2847310704aae5b58cc8904881fbaf",
+    "sha256": "dac635ef5abf42626a05628124deecc9be53940e8f37d01265e575d7d5216d24",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:15.273588+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-08.zip",
+    "path": "raw/01f483aaf60801f791c3a49accf729b513915b207afb84d367a1f5608528e18a",
+    "sha256": "d2dfb094239345d21becd886ae48f951b0b2c5ed7ac8205a51cb79468848ecd7",
+    "bytes": 21807,
+    "retrieved_utc": "2026-10-04T09:12:15.581464+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-08.zip.CHECKSUM",
+    "path": "raw/d4224bee974808acab526a439cf2ffad90ebd827525f96f915da400a1f9ed94c",
+    "sha256": "f63bf8809b2e38d83c81f41614e3ec3fd11e40b2982686af7fc1e0a2a332266d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:15.853654+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-09.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-09.zip",
+    "path": "raw/6e187e24c2e471716ffc9d7b27fd221529bb97b6e3d122363114ad6042f045fe",
+    "sha256": "f9a0fefe071a465d2652a327c4409910f9da9e4376c0fa3f592272f6725fbcbf",
+    "bytes": 20590,
+    "retrieved_utc": "2026-10-04T09:12:16.183015+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-09.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-09.zip.CHECKSUM",
+    "path": "raw/71d6b7e97565ea141b0d67861b9e117940b76e457f21b38b7a411d680b968814",
+    "sha256": "285ef5b11ba721c05b0340fa44949ffd731cc23d1d2caa1ffc459390c0ba272e",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:16.451430+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip",
+    "path": "raw/38c9ba32b78455c52963dc7496547a5a90b937be3eaf69b4c1840f8ad3da7bb3",
+    "sha256": "ace54498f3731143c4a7dd334c808c311c08557521625156c090c3690c4ef8ba",
+    "bytes": 21702,
+    "retrieved_utc": "2026-10-04T09:12:16.792713+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-10.zip.CHECKSUM",
+    "path": "raw/26da631e55865cf7d10dafbe259d16ae90c9f1ff5e29f43dc4a81af22e05b881",
+    "sha256": "8ca393f253995fb487d006b7f1e2e3f995b96480a8b9400f5047ccd676cbb8a1",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:17.066147+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip",
+    "path": "raw/0a279101401cecdef039bbb4e06aa2c9f38884a6a1bcbf1a60b6d510ab89570a",
+    "sha256": "d67edc34a7bc7169b65027ad7846d4d7c108681aa84b31d8ddba2d27f28d86ea",
+    "bytes": 21070,
+    "retrieved_utc": "2026-10-04T09:12:17.375655+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-11.zip.CHECKSUM",
+    "path": "raw/f0fd0b75f6941b10d2c5a2b2713a515180300fb94f73dd345dede0a1da1106f7",
+    "sha256": "1bf7fbb595453172247311f5dff5e5cdb5eb7d255ef31edadafbac2c5a40f675",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:17.641779+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip",
+    "path": "raw/8df32aca79fba586b4f76bf343d10806bf2f114f4170c3594d9e2c127e4aeedf",
+    "sha256": "15b9d96a269cbcc35ec444d092f7317d4b940fc9e135ed17a682ebfad602bc29",
+    "bytes": 21053,
+    "retrieved_utc": "2026-10-04T09:12:17.958994+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2025-12.zip.CHECKSUM",
+    "path": "raw/1f785b63fe85e18cc46c4aa13ae186468659d1adf212ef60925c77c73ab5dbb0",
+    "sha256": "1ff9643bd91e307e8cb7a6efd1c2212fb8ee5cc736f4e6d84cdf8d2feb7a329e",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:18.234097+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip",
+    "path": "raw/49a7487bc6a1316360eec9696c34a9f18123caff2a34b5e0787f5066fea8a093",
+    "sha256": "996a9448726db911eac8db4fcddd6412c3c81ad1dad1f8b1dee7e7f5e1e1eb58",
+    "bytes": 21215,
+    "retrieved_utc": "2026-10-04T09:12:18.568223+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-01.zip.CHECKSUM",
+    "path": "raw/c7827c9c577603525081dc02f8aecb2c94efa2f23f8d267bcc034d2e6c7f38e6",
+    "sha256": "733808ecc894f39eb221ba7bf03ba9e08deff0e5acd68d30588d39f883a9626f",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:18.889399+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip",
+    "path": "raw/5e24ae10d391132b4e9b63f0d5a34490f479198d47c0ea6047047345e4f233a8",
+    "sha256": "a8a6bad5c733f23da93166abec33a19a226b90c47078828d89b414e18bd2092e",
+    "bytes": 19770,
+    "retrieved_utc": "2026-10-04T09:12:19.204417+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-02.zip.CHECKSUM",
+    "path": "raw/750f88151430448f633de8fa3c5cfc9d43d5616c6ce9e6b9ab7ced7f998db46e",
+    "sha256": "20c845b9892440980b751214e391116bbcf7f3226127263d6bc4840777e34d3d",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:19.473274+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip",
+    "path": "raw/4d00939449910877d702bad8271287324fa452abbc4115f54a6a91ef74edcd46",
+    "sha256": "f5f15aedeece7ff54412e83def94c9788fbb184ad9b707af0f89bc9a50df918f",
+    "bytes": 22245,
+    "retrieved_utc": "2026-10-04T09:12:19.795215+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-03.zip.CHECKSUM",
+    "path": "raw/e549b0afbf5ef67db9ed78970ebc6ccee81f1ec983f1e69dbf9b927a1951e8f5",
+    "sha256": "de7eb810b5ae7dc20b9e74bedb6194bc5daaf9485c24f6dd34f532ba2949871a",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:20.112353+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip",
+    "path": "raw/3ba466b2cb5e27483330fa32ded92611ac5c5cacd1f17aa902a94230f30540f2",
+    "sha256": "bf1abad992eb1107ee5f3a05003e3a806ed06e22385ea3e594857fe7c9a40716",
+    "bytes": 20641,
+    "retrieved_utc": "2026-10-04T09:12:20.485693+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-04.zip.CHECKSUM",
+    "path": "raw/51364a26b2267c889d6d6b2732b011d0f274bc5a1d74d127521bf91a2849361d",
+    "sha256": "06ecdd385f96a918b964fdb49e86cbf24d38abadab8c80988f49c5ba451a0bd0",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:20.756601+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip",
+    "path": "raw/f30e9e24a3dd1f468d7e794337c849c504fd73b76cbc86af58a069a0c0be95b1",
+    "sha256": "4930e4401f6d663cf9fe2fb082738b011e619e77972bfe764b2600f05fc91b72",
+    "bytes": 21149,
+    "retrieved_utc": "2026-10-04T09:12:21.065281+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-05.zip.CHECKSUM",
+    "path": "raw/6ad7d9962e9801a0b5643a0b9505095b8d5eea11de4ccbd1cdfe58574868810a",
+    "sha256": "c1d411052194b94aae751d63a4e53187670acb7fef023f53b7849b6d4f222886",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:21.328090+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip",
+    "path": "raw/49d8f1515f8ef9b6d05ee045fce8db0634fb5dc2ab22f745f9aaf4cf7c227c6b",
+    "sha256": "7d1d36168726c482372301b51ac2b035a974a82b6ece309c3dbcd196b872edba",
+    "bytes": 20367,
+    "retrieved_utc": "2026-10-04T09:12:21.715858+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06.zip.CHECKSUM",
+    "path": "raw/f003d033f9bdfff5f0a13d901f8aebd54307b0aaaabb85d03abaedfa6a4afb3a",
+    "sha256": "f80e9d391d6707e1e4f6145446f4b72ab0611bd1825fdd3311336a3445801b4a",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:22.035594+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06-29.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06-29.zip",
+    "path": "raw/cadb0e096e548042cc76cc7f67ace1e44c6957c5b16d5243217ad3d10d8bf8ef",
+    "sha256": "122fd96f8693a9794e2dbdb4491858078676045170acce68046e32f32f7b4068",
+    "bytes": 997,
+    "retrieved_utc": "2026-10-04T09:12:22.333349+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06-29.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-06-29.zip.CHECKSUM",
+    "path": "raw/dbd41177333f00986cf08aee141417c7323158f672418e9ce8181778fb8fc877",
+    "sha256": "d6f2e3a4b0c70dea7fb4b8b23ae79eba12b24127aa3e2558847659cff2898e05",
+    "bytes": 92,
+    "retrieved_utc": "2026-10-04T09:12:22.593647+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip",
+    "path": "raw/27c972b7a04df5791aee6b389cc04678bb8ea852d601205c931e4158530a9be1",
+    "sha256": "1b9a914bf005f439cc83d953ab65cd098703aba1436914bddd0ffd5638e17212",
+    "bytes": 21070,
+    "retrieved_utc": "2026-10-04T09:12:22.903226+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-07.zip.CHECKSUM",
+    "path": "raw/044603be3b29c5e02919fadeb1190a6fc7b4eb688aeb88725a58a4a29499e65d",
+    "sha256": "8a3d2b97d3b021cf8c7ffe3a1c9f8910e1ede3574094871ac785169263cb3454",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:23.256096+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip",
+    "path": "raw/fe69afd30906d71fa2ad6afb60043656d45167108fda8910f385676a57451424",
+    "sha256": "b51fcdc17ed10a3f91a0711944eae97978c0b9c57999a0dfce65ce64e1259540",
+    "bytes": 21194,
+    "retrieved_utc": "2026-10-04T09:12:23.636042+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BTCUSDT/1h/BTCUSDT-1h-2026-08.zip.CHECKSUM",
+    "path": "raw/12107f9f5a7e04ffeeb0a7a7439f99f2a7344bf3c843abd8f26aa761cb4a05c9",
+    "sha256": "5d4f9e9eb88e2e35ca86c449d9682db45db7341ab8142ebcacdceddbfbb1c7d4",
+    "bytes": 89,
+    "retrieved_utc": "2026-10-04T09:12:23.915189+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1606780800000&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1606780800000&endTime=1788220799999&limit=1000",
+    "path": "raw/ac580652caaa2aa705244217ede093202a9af293397c779e00ecd4f846f1fdc0",
+    "sha256": "c102b4d444cc10cf5ff58f82595c498fb7bdee21f928dd02c93ff8024d4059e1",
+    "bytes": 112080,
+    "retrieved_utc": "2026-10-04T09:12:24.381610+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1635552000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1635552000001&endTime=1788220799999&limit=1000",
+    "path": "raw/a724639c7346bc4d13e1976dc961b8d52a17fe419b3b97e2de2c73e2cb696b1b",
+    "sha256": "a7b7af9324689c3586b12c6f505207d7f50a754ea3660bcb3f7f2cb487ea3596",
+    "bytes": 112194,
+    "retrieved_utc": "2026-10-04T09:12:24.658718+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1664352000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1664352000001&endTime=1788220799999&limit=1000",
+    "path": "raw/ed2eb7b63fdc534b3bdee0e0e7af7c81c25021c54940ce264a027b86561fa78b",
+    "sha256": "cb5139514bf9d7b8d75d4fa9698e6cdca7f8bae694f9516e850c6c5a79644995",
+    "bytes": 112110,
+    "retrieved_utc": "2026-10-04T09:12:24.859751+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1693152000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1693152000001&endTime=1788220799999&limit=1000",
+    "path": "raw/38f488f4ccd605ff818507c27c63a685bbaae45d40690bdafcaa66bc7b0e0345",
+    "sha256": "fff0d2e102a7d1d444f607288b78b827b1b172dc4e338bddccf4a1836e630315",
+    "bytes": 123371,
+    "retrieved_utc": "2026-10-04T09:12:25.061105+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1721952000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1721952000001&endTime=1788220799999&limit=1000",
+    "path": "raw/044f0ab4c3603537443ecdfa49c290997a5d36c75fcb30782d6427c783e257a0",
+    "sha256": "27ef8ded5825d9be03eb27409010f213f26058f33584b59fd8e07f65001693b7",
+    "bytes": 126376,
+    "retrieved_utc": "2026-10-04T09:12:25.310700+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1750752000001&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1750752000001&endTime=1788220799999&limit=1000",
+    "path": "raw/6160bf2c74d9fcf1c3dae4e23add1ece23d065bc215651d1bce6f85a68ea367a",
+    "sha256": "aef3e0b70831cb463e206937f047e453f06f5c9d777d0097f18fc17a0f2a1eb8",
+    "bytes": 126671,
+    "retrieved_utc": "2026-10-04T09:12:25.528383+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1779552000004&endTime=1788220799999&limit=1000": {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1779552000004&endTime=1788220799999&limit=1000",
+    "path": "raw/8064497c7cf3e8d1ed3c7259d2deab62284a71e6b1bb61b89a2087b492fd4bee",
+    "sha256": "ae565a68801acfc90e1a3df52797fbb317f7d5244446b958bbe2b0ab4f39245b",
+    "bytes": 37823,
+    "retrieved_utc": "2026-10-04T09:12:25.804957+00:00"
+  }
+}

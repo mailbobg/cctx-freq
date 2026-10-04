@@ -9,8 +9,9 @@ def cap_weights(weights, covariance, vol_target=.40, gross_cap=.80):
     if not np.isfinite(weights).all() or not np.isfinite(covariance).all():
         return np.zeros_like(weights)
     vol = np.sqrt(max(0., weights @ covariance @ weights))
+    gross = np.abs(weights).sum()
     scale = min(1., vol_target / vol if vol > 0 else 1.,
-                gross_cap / weights.sum() if weights.sum() > 0 else 1.)
+                gross_cap / gross if gross > 0 else 1.)
     return weights * scale
 
 

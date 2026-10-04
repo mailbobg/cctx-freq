@@ -1,0 +1,482 @@
+[
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-01.csv",
+    "sha256": "04b339d77b84fb3ed7cef946d79d56813483ca91d08ad5b17b7a733761a3e986",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-02.csv",
+    "sha256": "d19fc7aa8411fda93ea5cef16825e564b360bb59a3a6bc46ebba7ff0017eb1a3",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-03.csv",
+    "sha256": "3fbd2812bc912c4239f60df844b588ab255d64e5f086334a20df9e7f64cc7fe2",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-04.csv",
+    "sha256": "d6445d99b363fc8484af059700b54e8ee694ca0167885a1f6dc8b4b50cee4647",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-05.csv",
+    "sha256": "5057bfd2b04d73741e4bd2095a756ee3261fca06a0c0cca9e3a9fc5decd48f3a",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-06.csv",
+    "sha256": "4e7d8518e2dbfe3feaf6a1bd32b33bc0a65ce5295572833c7660fe57e57b136b",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-07.csv",
+    "sha256": "abbe1cc6cf349c09104035311489886e84e3173ce8825b1f8a36182516ac6e6f",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-08.csv",
+    "sha256": "f4b279e8febe0b4e997815a0cf536dc9d11526dc2708f3dc04b5fbc29de09a47",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-09.csv",
+    "sha256": "e0afdda2af4562355084a55caa1b64e78f169955481ee1233d22e1a418a76c82",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-10.csv",
+    "sha256": "5bb825410646510103d79a686f568c34b4953e1c9cb771a1ab99f9ff6b91cf72",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-11.csv",
+    "sha256": "a23981ba36dae63e89d4c932fa50a71e5088bd92fd5feceffeca4cbd63c1f044",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2020-12.csv",
+    "sha256": "f533dfbeb8414ab3bef1cac3e1728f814fe2547c2d6970c6a0a4f0e14f1aef42",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2020-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-01.csv",
+    "sha256": "0ba2cdfbb8efe662e539537ae5c1ce97d06d191b3a4e35283c1194590b4c5d8e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-02.csv",
+    "sha256": "2436515d4892cf0909f98d76e418b6b19a021975760468272d694157c030b5a5",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-03.csv",
+    "sha256": "250bcd55e63b76f0822fcdbbb28cecac21deaca16f087605d7dc21da96b76ec4",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-04.csv",
+    "sha256": "18441fb4e0bdd922b2f34ff00ca7db8859617afb1a8b1f2b954b7d1b8f038570",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-05.csv",
+    "sha256": "4f14fa28f323817807849cef5fea12ca42879bc937acf1e08e4f425ccfcf8c39",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-06.csv",
+    "sha256": "32cc168fb60e97fc97452fa67c0dddc82db593fda0e0e6cf8de26344557e4eb6",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-07.csv",
+    "sha256": "99d7dd854dcb02c9ab28fe1e3b3614d257b53ff37d37a6dd0f46f8410d2a8f47",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-08.csv",
+    "sha256": "0e9096dd0940e0a1828e87c919aafc5bc6f16bab283a89768e963c400775f8a2",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-09.csv",
+    "sha256": "409d863e12cb30eabe82d770667f99cc05f6bfe63dc4511a9364bf7bf023b4b2",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-10.csv",
+    "sha256": "0291b25a82a2f04b53f8784c3130252c9de274853d3088aca2e53cf177bf7fb6",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-11.csv",
+    "sha256": "8785c73492bf828d141dbd49a8c462d1709428a290c4a5e80a6314b9db89be30",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2021-12.csv",
+    "sha256": "2e238733c239e47d65d69ccd475c1ee29370f5a056722eccb50dc529f1b49835",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2021-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-01.csv",
+    "sha256": "ffa83be19308d4f2a29b16c064db9b3785c542af14b9d816e5f6f3a60ed2eaf7",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-02.csv",
+    "sha256": "8819631932cb357a85cffbe69bc47503ab108512770dc24feb1520e11ae845f4",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-03.csv",
+    "sha256": "95cdbaf85e0447dc1f98416862759418508aa0bdc8de2941aba3fa9e1086b6a8",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-04.csv",
+    "sha256": "e4c73950f2fce6de342e201a252b20186d8c30159ced7578d8347a6aa1bee806",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-05.csv",
+    "sha256": "09fb616ed8ee49a84ca97094b411c7fc32eb996a791ac4aca52f0460a84e84cc",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-06.csv",
+    "sha256": "e63ed967376a13a132c5bb85a74022d30711ff7b38c1418979ee4730956a6dc4",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-07.csv",
+    "sha256": "4d549d648c22db2c230c471b806a734e6ea11ac1fc3290433af022bbf241a4a8",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-08.csv",
+    "sha256": "a62450e0caa526cc87eb6e3a4972870e9737964af2852161f592edc28c9cf65b",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-09.csv",
+    "sha256": "1ba8ad126fd8207190ec40652bad1ca0ded1a7943b87495f51b85f0fcf5b8744",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-10.csv",
+    "sha256": "baeb779f09c6feceb6d101c34b6c95392d558cf261e05b3969c40c3216c1c08c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-11.csv",
+    "sha256": "114276944fe13d1fb79a8ac92a482af936c12e49e8356f76c9c91f10133cf0cc",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2022-12.csv",
+    "sha256": "50fdf41f4e24992d50df93a8da1af7c1187206e26d17b9773939a7a3c51a2cc7",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2022-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-01.csv",
+    "sha256": "96db387519e81f2a71a6cab2a6e9280b72410ba50e1c2c18de707215b5836689",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-02.csv",
+    "sha256": "80092c0e6bd82c51586dc4114c28ea441e58e8570986e68fd2b49893110bda9e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-03.csv",
+    "sha256": "4c81ebb35df9123cc9b7cec6dbb96fae4af5627782ff78459636f1b3ace8e79d",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-04.csv",
+    "sha256": "c7ec712046cb256b7acd07c2509f906d5fc160443aa78f12bf508a1470bbf97e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-05.csv",
+    "sha256": "5a5c7cda7736474cd717b45032442efe90604693af30ce1581d2a7c050e34606",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-06.csv",
+    "sha256": "c17b2a7d3a0ab529a1e227100ddca0c935c4fcda6d1c18c2b284197505cac3b1",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-07.csv",
+    "sha256": "a5ce922b4e81ccf51e6a4e6875339cbd28574e3c8f6b3cc6c552c9c8e5cf35be",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-08.csv",
+    "sha256": "a6c02633b5dc08188e143b128b4ae407ea414b1671f2563177d06405b5d96e35",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-09.csv",
+    "sha256": "f9e00531bb8531443fd65742f6f6d3b23e745eeb50a26cafc2d4f06d9802b73d",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-10.csv",
+    "sha256": "be935dd97e524c9e8f1d1f45165a9b6518a8dc16804e57ecb08b2ded299d0001",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-11.csv",
+    "sha256": "822e585563bb77491b8706da26e2e910ff71e787a4bc9fea7ec308e8c6e1597d",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2023-12.csv",
+    "sha256": "49ba49585ffb015c2b05aa0d8cd5c6d5ecc789957fa4692ff2f597aa333c5031",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2023-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-01.csv",
+    "sha256": "a9ae3e07a9b88756d6d55d5d9f586caa85afcafb26c3d009a70b6ee066eb4524",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-02.csv",
+    "sha256": "babbaab62fd0e381f5ffac1bc20139eec0e984d74b5b69a8364b64c918901caf",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-03.csv",
+    "sha256": "62d1234f431e340d9f520bc1190e3aac6d1d50638afd6b706eb3e063721542c0",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-04.csv",
+    "sha256": "4a5760b19e793436a0fc30cf7f8133ca4f3eba4e6f69458918b55320cef346d8",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-05.csv",
+    "sha256": "5030fc6bc09419082145b5b955e84ef11c58a330b31fc359b135d2786600ce87",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-06.csv",
+    "sha256": "369492e1c9ca1c02913da17a779797b2808d40a81a7a59aeaddc30e3914fec55",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-07.csv",
+    "sha256": "feb8b4a2f61361a72f74354105de108cf9aabbb4c01b27995009746a1057b949",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-08.csv",
+    "sha256": "8225ddac9a658c504ad7f4676dfa8e38f8d5d28c5e768ee3a6fcda64e287f29c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-09.csv",
+    "sha256": "81307c54205e33bbd70df66b5b32d04211214675d5b3dc2547b37e199a2417ea",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-10.csv",
+    "sha256": "9b5f0bd41fc450d953642c8a266796904d25056fd3418cd70bc6554eca420b4e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-11.csv",
+    "sha256": "e3b8ce70f5b1220227704d2f03c0e6fffa8fbc8be60a1120280ccac172426136",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2024-12.csv",
+    "sha256": "2c26dc4750aea5d23451dbce758127f765a5b6cf8a4de0b0cc89acf3885e1c66",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2024-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-01.csv",
+    "sha256": "0606b88c9b804a82bb6dd49bbc6450c8eba9e35c6bfc723fd79794598c9952d5",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-02.csv",
+    "sha256": "67254aed88fc8d02ce0bd9403e814d6714bacde9bbdcaf4e041e0d9dcba17ee1",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-03.csv",
+    "sha256": "d4fd63b84ee6d995eb596ca0cfe089dd4b3475db27aabc1a116d3b8436f2e958",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-04.csv",
+    "sha256": "44f869ac75b14aa19cdba96a558c77cb508b811bfabe235d5a2bb20a4c00769c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-05.csv",
+    "sha256": "85fa4da168ce91ee998bd55e1af37815b5f3015583400338352634ac446a49b9",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-06.csv",
+    "sha256": "1bbe134f122941eece56ed7052d9925ed0849f6890ac0eb6a0b5b076bab00a31",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-07.csv",
+    "sha256": "3847883d928b846a81a002535cf929218c110283a872d24f3776b88b87561a45",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-08.csv",
+    "sha256": "5de8b4b65cfe0d3f772b402fe8139b52d0178420496f3fa1b0c323006278d4c8",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-09.csv",
+    "sha256": "f0621a17b182f5f208bb07e8778136e75f24a085411ce079c12aaabc8a4cae0a",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-10.csv",
+    "sha256": "01877f0a54776bc0050c9623982ed9ae9aef0ae8f117f1970653622dd4976929",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-11.csv",
+    "sha256": "b7e8dd5d331d9bafe14f546097ee8fc01e5b6da5b5916423b49758ebaf6c8b5e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2025-12.csv",
+    "sha256": "718b71bc0458ed9173837af686a96c8990f000be701a33f87695b163f649cc6b",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2025-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-01.csv",
+    "sha256": "6697d9e19f575a3495ff43d931667cb74eeede99bb50735bcf7bb0605293b254",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-02.csv",
+    "sha256": "6f7186f55269c910acf70a1740c9e5096d6abeca01eee7ba646e495e83f9aec6",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-03.csv",
+    "sha256": "87175a36bc84caf12ae763de0d013b327a3fa9442b0a8f70fa1cc21fcc62d565",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-04.csv",
+    "sha256": "28e03e4fb6aed3e4ed5cd2a48018c89f2a65d3af8fba9e6fc901d45b3c813570",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-05.csv",
+    "sha256": "188ee9e3b294791b512a152fd9cb695859d7e94e990bbf35dbb8467cd0aafff7",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-06.csv",
+    "sha256": "6bae43e3e8221115e3b0fd93d459a9a0f1c0b6cf7a13662990d818bd6fec7dd7",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-07.csv",
+    "sha256": "2b58ed8bc7de91df300173d0aa6463fee5ff6ebe923b15adb32091ad08ae721e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/BTCUSDT/BTCUSDT-1d-2026-08.csv",
+    "sha256": "99851edd6c8652df535de487648347955af3165533d717fa5f5f4bbe7e3c2223",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1d/BTCUSDT-1d-2026-08.zip"
+  }
+]

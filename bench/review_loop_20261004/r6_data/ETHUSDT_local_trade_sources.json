@@ -1,0 +1,482 @@
+[
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-01.csv",
+    "sha256": "20d86320e6daf772cd4974ec24fda0a01757d1484cf2670c04464f4728902253",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-02.csv",
+    "sha256": "14459b98fea224b30681d6eaaa81e57833d11267331911ce0e002ed71ce174f0",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-03.csv",
+    "sha256": "8fe001f84c27a6bb61e0f8401e67ad1e75cf99d00a42fee149f30c12cb867d95",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-04.csv",
+    "sha256": "1a606f2ef88bd8ed31707ae39cc081fa22b4b6f8fe1077bcb8d890eb5a48b319",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-05.csv",
+    "sha256": "c6bd7ec4abe9d2e0928e196adf0cc8892263bbc84483942192a581608b16b2fb",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-06.csv",
+    "sha256": "24d1c534353e0b05b14f7fdc92e3cd52d6ef4d9c5278e03042d7ae03c3499ca1",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-07.csv",
+    "sha256": "30e78102fa06848a93301c1fe24714ed734d1d0b3afafec6c4471fdd9afa2cfd",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-08.csv",
+    "sha256": "e6966f06dd548eca0e8a605f34fc47abb15e0f2de1a6e852e9f11c35f869e65a",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-09.csv",
+    "sha256": "ff4436cbdcf3fd21e8c3dea6eb71e6ed8f5431e35051d52f7441312f19fa9b50",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-10.csv",
+    "sha256": "7185e9b917e0ea1c97fb23d946d32cf1d7a2fa4e3692cc4649de77ea6b8383a1",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-11.csv",
+    "sha256": "26caf802ca44f0f45e3368d101737549796d5b1535f8fc9b55ee96575a062494",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2020-12.csv",
+    "sha256": "f3588df351babb21bc891f8db7d8e6bb8f6149cb41fa537d35e440b16abc2cfe",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2020-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-01.csv",
+    "sha256": "6010f288e8b04e8be26f88e04f14a4d076d58029bc69e0bc24cc7dce190ec82b",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-02.csv",
+    "sha256": "202f85faf37d00efbf065af5fccee15c8864643a4558e140fa722ab0d7c3b835",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-03.csv",
+    "sha256": "8946cb4e1a050084c55a4fd9583b2ce9e8fa0208c9482edc9088adb72670d1c9",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-04.csv",
+    "sha256": "4f3bf312565f06bde494412428bd8f792ae1b46a4a779c8a529563c522a0712b",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-05.csv",
+    "sha256": "245343d7dc5a0a68b3e7db40b669c2ba9793a555507f45054b9d8cd7437b9080",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-06.csv",
+    "sha256": "bb0e31c3fa41d83c7c61d71b33c18138967abde572d02d435e2ef15cdb76e1e7",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-07.csv",
+    "sha256": "4b3edd7b81bc818b7887bb28e1b9a282740ee511e7373f3c9328c3aa2806322c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-08.csv",
+    "sha256": "04e87313aba08f876d035f7348b37af0e3d79d053413089276e89fe19182c215",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-09.csv",
+    "sha256": "be5eb854da7fb0ab7752a63fbd38b1823626dcdb50deecca470119829e29f5e0",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-10.csv",
+    "sha256": "21cd4149a8d50921ace3e7730b6233e3f3d63d09be6a4b019310d0a715bf72e6",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-11.csv",
+    "sha256": "a72d36a05e9e9d043abe850fc62c129e81570c8fec7f039a1237487548467c73",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2021-12.csv",
+    "sha256": "7c31481e06cb677df3d65c679d194860ae7fd6746d9e57202f39792d8058e8ab",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2021-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-01.csv",
+    "sha256": "91a7ec5641ccddeac483594ec20c9ec5d9a2d17976667b846406fc1407738199",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-02.csv",
+    "sha256": "c14e7742b8c9cb0b31e0290d1390cdb849bd0d3708c9ec648653d6c216062c73",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-03.csv",
+    "sha256": "3b095a41100aba2abdd2c3878afb6fe0ca3bfc6e679b82a3d610ed1323f77b7f",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-04.csv",
+    "sha256": "5aa671aa308c82c4c1f603e007178989095813bb764805d32ece69a5890da948",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-05.csv",
+    "sha256": "1187ebcbf01394c1585d150b6f41a2164834553a2e81b6585158b9e50b0af048",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-06.csv",
+    "sha256": "4db013698cf0bdc8c53f2444245074d1d10c24c3f503edef6931da18ef5941cf",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-07.csv",
+    "sha256": "a2b83a95f85d794e1f5c9e2ee59c3657426473b852f44cf1518eb84eb8aa963c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-08.csv",
+    "sha256": "37b05f1508de88562ba8e214452b77d1f21aaf38076b3071da0c60e542f53ea6",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-09.csv",
+    "sha256": "7bba48f9688620fa16b85317d241ed20348410747641a8e3207effd4e91ef51e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-10.csv",
+    "sha256": "cbd65bb69a1b966cdcf09f4cb5251932d0addd591815ff845ad83cc5cbb4b461",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-11.csv",
+    "sha256": "94169cc5f8cd03397db36873b704783d7b2b58c8d1eae3c3a3eb13b7b92835ea",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2022-12.csv",
+    "sha256": "0bfc050ee2c4bf357751fda1a36ba9c97ba5ccf09c9853e5b535d310423b545f",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2022-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-01.csv",
+    "sha256": "49fd665eac8819cf268f869dfcb269913b5b3b8978ac4b3eb803180c11c12e3d",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-02.csv",
+    "sha256": "17ce5d5c4ba2594003052595376423819fec26648d1d75c82f49c45d2630f3b8",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-03.csv",
+    "sha256": "ef8dc08c3bac396aecee03dd65b38edee393901f7a04882f7e6be34dcaf9e164",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-04.csv",
+    "sha256": "daf94b8428cb466d9f9be33a694e5332a4a2308d66e624a4677f5ca8a309cc16",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-05.csv",
+    "sha256": "e9ea307f4997ffbb387236e7187a3daa4854bdf732064c34f29fc02365f95dbe",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-06.csv",
+    "sha256": "799ea2bc0d1ebc0a304c7129f49710dbac210e879c2770372e62f6f11692b589",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-07.csv",
+    "sha256": "029bb2592f059bc688a5d745c2d855ffa9deb45aa7a75ff58942b285af4b2bd0",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-08.csv",
+    "sha256": "ef9116ea4722f9f45666d816c211a7567e38e796455d7dd8e72fa9b9824c6cfc",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-09.csv",
+    "sha256": "410d6e596ee02a675dc9b70f9c7f6171145aa6d09f8e3358f5423dd4b5326b40",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-10.csv",
+    "sha256": "a036a8c3a94ae9ba53c1bd61420066bbfe42587808ce59b709fc61bd88626cfb",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-11.csv",
+    "sha256": "4fb382c6192850fed3207a8c49e0e58aba279b564fbe035427179e496d0ff66c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2023-12.csv",
+    "sha256": "187edbbc0886e59e452f5d329f68e08e75613487812145bb9d8572789a79796b",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2023-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-01.csv",
+    "sha256": "78181944d6e169ec2891a421c27a35871442a5c0ec9d4bdbb2cebb39d90151e0",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-02.csv",
+    "sha256": "84eae8685167a01e85fe1cfd8b5f12ad7f410815cb578f3e111642cda6400810",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-03.csv",
+    "sha256": "48f897b1f0d50e7ea74cc39d0049103e2ed8e543cca86c7b5422689811751d1f",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-04.csv",
+    "sha256": "0f29d016fdc365a1366f5e38de12202243d269067fd7cdcc145593cd892bf111",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-05.csv",
+    "sha256": "9ffe36e0b1140a308fb866d0041d596183b96d959784e72c22435112df3d3b03",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-06.csv",
+    "sha256": "1866da097cfcdf0ae9908fbfba99c37674bf43fb0a065d5cf20a0c28992b30e3",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-07.csv",
+    "sha256": "0a430380bc4c73541850a02a94fd54f3604602f2bdd4cda2186c0a1206bc05db",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-08.csv",
+    "sha256": "2266bd9d6859fe22f44f7d38e163aa6fb6750e081243afde69150bcb77378a59",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-09.csv",
+    "sha256": "22f4dc5806532415d6e9705c0e9c9ef0eb1d01789364581cb9ca032bcfcd0663",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-10.csv",
+    "sha256": "ae4a294643556e37de6e4cba051d9251e6b35ddaedeebe833ea19aa2392b8aa6",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-11.csv",
+    "sha256": "c2b2ec463b159d2bcce38abe81bc63ed6537971384f2d1a837c11afc7cd3d98e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2024-12.csv",
+    "sha256": "c5933a98b3d57610f4c48323647f62eb658305d27aced6aaf2e5da115de15fe7",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2024-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-01.csv",
+    "sha256": "d0e5d6f8ebfdbfbf05c3a52cf95eba75b5f87eff3286304f3c5f4f6423c35b8c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-02.csv",
+    "sha256": "a032170e38e388dd2022e5836e864930e8e4f9c1d527707cd8bebb30ddb0ffa7",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-03.csv",
+    "sha256": "79f1bf3ec38a524d1f7761ce6588d96e5922e415598aa4c6f939baf7a43993e0",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-04.csv",
+    "sha256": "6e185fc1f05425d92548a1b330be7ca536f34dd2c33e702d14f3e6bd6fc2019d",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-05.csv",
+    "sha256": "754d801b2d70612ebad4d8ef195f2e2140dae800c696b8c00e3c78c4b8253ba9",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-06.csv",
+    "sha256": "8ce1777290baedc32c0ef923d0e5fe261f077a6f9b006d8cc65c73a8595bac3b",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-07.csv",
+    "sha256": "bd0a26c862d82feb1da7723eebd1ca3329e3052154e582b7e8355482762c0597",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-08.csv",
+    "sha256": "e726ddb11821e2f8f5b4864995e36e53a68d3bbf993459debf3dcd05508e8684",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-08.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-09.csv",
+    "sha256": "e6ae43de67401bd28a4afaa37b49f7391ae0e041282163149d84e69788581ad6",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-09.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-10.csv",
+    "sha256": "06dc5d334a39f370ede5387c5b8968c35aa87123ee338f6ea7513de9e6364e3f",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-10.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-11.csv",
+    "sha256": "92de0101a1b0e9877d19b8f7ba39d15726601279cf0ec2b5d4d5f8b01f2ff142",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-11.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2025-12.csv",
+    "sha256": "cb81dda29c4fab550a8881a968a3423e2c70276d27377eb1ee95be1f70ad52c8",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2025-12.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-01.csv",
+    "sha256": "afa8a00a2c29a535e0a1c2d3edf552d3c22dee77823959257eb99e92d8facdb5",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-01.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-02.csv",
+    "sha256": "f45f4527be8e877e1a7b9f851f7407212244cff01708507b0756d5b057ee65e5",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-02.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-03.csv",
+    "sha256": "7ed1ed61364c9f30a80f7fff7c3dc04b7e9061c99467f78c48bf8447745203bd",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-03.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-04.csv",
+    "sha256": "4b25d7c7144e7a37ba6e87d394599969f4f6c54099f43cf4b23c94d45376492c",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-04.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-05.csv",
+    "sha256": "ce422fb9eeb113b85092d4c193b65bd87650d54c09a9234b4fa6fe9469a293da",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-05.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-06.csv",
+    "sha256": "d1d83d39365007a3756c27724e984c72d7b923e63f0c0918429541cb3cbc1521",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-06.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-07.csv",
+    "sha256": "b8f800597fb5f9f89adfd39b7fae58c6740bb286aa62fbbe430fb8d850f63caa",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-07.zip"
+  },
+  {
+    "path": "user_data/data_f1/raw/1d_all/ETHUSDT/ETHUSDT-1d-2026-08.csv",
+    "sha256": "11f00b242f62b4a317871ae5117aa8f6c1f8a324ee627ff53e79b677d1ecf36e",
+    "origin": "Existing archived CSV; standard Binance monthly futures klines URL is inferred, not fetched now",
+    "inferred_url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1d/ETHUSDT-1d-2026-08.zip"
+  }
+]
