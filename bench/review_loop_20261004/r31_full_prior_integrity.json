@@ -1,0 +1,14 @@
+{
+  "all_other_prior_hashes_unchanged_before_ledger_updates": true,
+  "all_prior_registered_hashes_verified_with_explicit_shared_review_exception": true,
+  "original_shared_review_git_commit": "c1ae33b",
+  "original_shared_review_git_version_sha256_verified": true,
+  "prior_registered_outputs": 3962,
+  "prior_registered_sources": 214,
+  "prior_registry_sha256": "05e64b6f50e14aff08de3c9b541e1653dbfee3c17b631f6beff0877e7d41e65c",
+  "prior_review_sha256": "48ae3514d71c66c2d57288093510652cb8d6f40109e711aae1899cc13edddc85",
+  "prior_root_sources": 1,
+  "prior_selection_rows": 161,
+  "prior_selection_sha256": "072b9cd11056272aab8537ffc8a00652113277f8c9303b880a4c87ac6ed1a2a0",
+  "review_only_shared_file_changed_before_this_audit": true
+}

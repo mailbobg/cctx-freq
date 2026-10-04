@@ -1,0 +1,29 @@
+{
+  "first_actual_error": "ValueError: Required native quantity unavailable, never zero",
+  "missing_examples": [
+    {
+      "monday": "2025-04-07",
+      "native_row_present": false,
+      "native_text": null,
+      "original_rows": {
+        "2025-02-26": "3327.249",
+        "2025-03-05": "3312.625",
+        "2025-03-12": "3400.235",
+        "2025-03-19": "3467.789",
+        "2025-03-26": "3450.933"
+      },
+      "required_observation": "2025-04-02",
+      "required_role": "current",
+      "source_path": "raw/97d06bd5b30a4a9ff2e554dc7a56ea7bd557de94a3b310970f346a553856c724",
+      "source_record": "archive_2025-04-05",
+      "source_sha256": "57a7b2c3e60080d27aa507bbc1058ee335e9f8954a8ac063d92ad58aa5ee4291",
+      "vintage": "2025-04-05",
+      "window": "recent_reused"
+    }
+  ],
+  "no_missing_state_or_date_or_source_rescue": true,
+  "original_protocol_commit": "c1ae33b",
+  "retained_records_at_diagnosis": 292,
+  "snapshot_manifest_sha256": "472dcfa75e3a4cc62b11244c5b303e4f12456c4e60d587d53aaca54c84e0a38f",
+  "source_contract_halts_before_any_alpha": true
+}

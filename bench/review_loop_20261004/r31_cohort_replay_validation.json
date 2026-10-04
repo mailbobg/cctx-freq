@@ -1,0 +1,21 @@
+{
+  "full_required_source_gate": false,
+  "full_source_audit_byte_identical": true,
+  "http_disabled": true,
+  "independent_full_native_rows": 1751,
+  "independent_known_exact_native_cells": 583,
+  "independent_unavailable_required_cells": 1,
+  "native_input_hashes_checked": 296,
+  "no_policy_weights_or_performance": true,
+  "original_audit_snapshot_clock_preserved_not_new_public_receipt": true,
+  "replayed_utc": "2026-10-04T17:45:50.087517+00:00",
+  "source_audit_sha256": "c24399e074e509962099a856ef92ef6ddee6e17a182ca7c5765cf7296a4efc10",
+  "unavailable_native_examples": [
+    {
+      "monday": "2025-04-07",
+      "native_text": null,
+      "observation_date": "2025-04-02",
+      "vintage": "2025-04-05"
+    }
+  ]
+}
