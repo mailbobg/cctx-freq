@@ -1,0 +1,203 @@
+{
+  "captured_utc": "2026-10-04T11:18:25.818738+00:00",
+  "input_manifest": {
+    "source_inputs_sha256": {
+      "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+      "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+      "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+      "r14_data/BTCUSDT_flow.parquet": "320975c7587d6b0d9c25f8500f6309f8edea209618839c9755f8b45c5a260160",
+      "r13_data/BTCUSDT_1m.parquet": "00893ee218647d945b636dcf4915eaadc03a3d5b6c2790512a187f02907371b3",
+      "r14_data/ETHUSDT_flow.parquet": "e459fc9351ff907548f1f202be2c1c705a8760d4ac66a433ea341b805a24959c",
+      "r13_data/ETHUSDT_1m.parquet": "be3f4d46629d0e4daa9e6156e36e7071bdf75d37c4528831fc5d3704168d53a6"
+    },
+    "source_code_sha256": {
+      "R14_PROTOCOL.md": "8df85bf3fa5110d5ed3e77f03ab611fab904961106ef67b3e0090ad0f4b833f4",
+      "r14_data.py": "84a32a115a6fdac1224e651d6c4e7bff3516fcbfd29fde0fdf6f656fa339856c",
+      "test_r14_data.py": "7dcbfb809624ba4df57077cba5e9e994d76943ce96b1144a442ba39d9e07c387",
+      "r14_flow.py": "f57641eacee1c4ac3ebddfbb56f8e9b96c447522d36d2a0002b3fac15ee90655",
+      "test_r14_flow.py": "53bff894b130c2c1e58a289c298a5699eb5f4f46f9d1221738d3f74b400f8caf",
+      "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+      "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91",
+      "r10_gold.py": "d83c4c2a115b7129ee762d20c91c5a68d117e60044836811bf9f27c3bcc33064",
+      "r13_atr.py": "38a3f6157fb9d461ba7c582bcb82e6f4d0787d11b6c0e655aee38f558a31c763",
+      "r8_crowding.py": "5d66cc5b5a9237375409c71e1a6c6c36a2172de591f49bb02bc286147e7d0f59"
+    },
+    "flow_manifest_sha256": "d48c634d0632405f18bdc0d4ad3cd660fb854c7010922653f33801ec0d85cf3d",
+    "minute_manifest_sha256": "19d7b24c950c8a40b9f6c4ebd3b4423713d9849f0d1a3960e727a80362d2cc32",
+    "baseline_max_abs_gap": {
+      "early_reused_daily_cost0.0012": 2.220446049250313e-16,
+      "early_reused_daily_cost0.0024": 2.220446049250313e-16,
+      "recent_reused_daily_cost0.0012": 2.220446049250313e-16,
+      "recent_reused_minute_cost0.0012": 2.220446049250313e-16,
+      "recent_reused_daily_cost0.0024": 2.220446049250313e-16,
+      "recent_reused_minute_cost0.0024": 2.220446049250313e-16
+    },
+    "candidate_daily_minute_prefix_gap": 0.0,
+    "exact_feature_weight_prefix_equal": true,
+    "real_held_execution_order_prefix_equal": true,
+    "current_bar_excluded": true,
+    "companion_not_rescaled": true,
+    "ATR_disabled": true
+  },
+  "results": {
+    "early_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 36.374418833844466,
+      "CAGR_pct": 11.229367408484547,
+      "daily_MTM_DD_pct": -6.9902620719863195,
+      "year_return_pct": {
+        "2021": 13.280589957514,
+        "2022": -2.609186830643029,
+        "2023": 23.61165431381118
+      },
+      "fees_USDT_10000_start": 111.61835542199329,
+      "turnover_times_starting_equity": 9.30152961849944,
+      "min_cash": 0.7546049773442272,
+      "max_exposure_pct": 40.08856510570543,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 1.1102230246251565e-15,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    },
+    "early_reused_buy_confirmation_cost0.0012": {
+      "return_pct": -0.45028645207376705,
+      "CAGR_pct": -0.15469760948000344,
+      "daily_MTM_DD_pct": -6.608145944097421,
+      "year_return_pct": {
+        "2021": 3.495305741620802,
+        "2022": -4.055123871950384,
+        "2023": 0.2530459174016064
+      },
+      "fees_USDT_10000_start": 42.287109466659196,
+      "turnover_times_starting_equity": 3.523925788888266,
+      "min_cash": 0.8384035009065003,
+      "max_exposure_pct": 18.30509246093093,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 4.440892098500626e-16,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    },
+    "early_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 35.074959559919414,
+      "CAGR_pct": 10.86464299766494,
+      "daily_MTM_DD_pct": -6.991267639401788,
+      "year_return_pct": {
+        "2021": 13.050915288711117,
+        "2022": -2.9260073155683686,
+        "2023": 23.08294262729005
+      },
+      "fees_USDT_10000_start": 222.20001176424628,
+      "turnover_times_starting_equity": 9.258333823510263,
+      "min_cash": 0.7512000624231663,
+      "max_exposure_pct": 40.10124204514624,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 4.440892098500626e-16,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    },
+    "early_reused_buy_confirmation_cost0.0024": {
+      "return_pct": -0.8638717707226906,
+      "CAGR_pct": -0.2971919457938843,
+      "daily_MTM_DD_pct": -6.6478970914372715,
+      "year_return_pct": {
+        "2021": 3.3268660701304853,
+        "2022": -4.198773607221574,
+        "2023": 0.1492329743419729
+      },
+      "fees_USDT_10000_start": 84.41007576306225,
+      "turnover_times_starting_equity": 3.5170864901275936,
+      "min_cash": 0.8353051109127912,
+      "max_exposure_pct": 18.307933645547912,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 4.440892098500626e-16,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    },
+    "recent_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 39.05129732038881,
+      "CAGR_pct": 13.149826581062207,
+      "daily_MTM_DD_pct": -7.5565427275781865,
+      "year_return_pct": {
+        "2024": 16.216072620353096,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483695
+      },
+      "fees_USDT_10000_start": 168.0262496780076,
+      "turnover_times_starting_equity": 14.0021874731673,
+      "min_cash": 0.7390518110831137,
+      "max_exposure_pct": 44.03206260520997,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 1.3322676295501878e-15,
+      "daily_minute_core_max_gap": 2.220446049250313e-16,
+      "sampled_minute_account_DD_pct": -8.670291985752165,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    },
+    "recent_reused_buy_confirmation_cost0.0012": {
+      "return_pct": 12.531138020474542,
+      "CAGR_pct": 4.523539099669138,
+      "daily_MTM_DD_pct": -2.6764941360506,
+      "year_return_pct": {
+        "2024": 10.878293319511778,
+        "2025": -0.9256128221365456,
+        "2026": 2.4388710756831022
+      },
+      "fees_USDT_10000_start": 52.82998880102289,
+      "turnover_times_starting_equity": 4.402499066751909,
+      "min_cash": 0.7242050837848131,
+      "max_exposure_pct": 31.671021155370426,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 4.440892098500626e-16,
+      "daily_minute_core_max_gap": 0.0,
+      "sampled_minute_account_DD_pct": -4.244395646747301,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    },
+    "recent_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 37.102071959543295,
+      "CAGR_pct": 12.552807184389646,
+      "daily_MTM_DD_pct": -7.768151264532685,
+      "year_return_pct": {
+        "2024": 15.533131827406233,
+        "2025": 12.05867236516287,
+        "2026": 5.8990341516533595
+      },
+      "fees_USDT_10000_start": 333.66890052461997,
+      "turnover_times_starting_equity": 13.9028708551925,
+      "min_cash": 0.7376655793339459,
+      "max_exposure_pct": 44.05320608111078,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 6.661338147750939e-16,
+      "daily_minute_core_max_gap": 0.0,
+      "sampled_minute_account_DD_pct": -8.839367774741913,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    },
+    "recent_reused_buy_confirmation_cost0.0024": {
+      "return_pct": 11.984514287018078,
+      "CAGR_pct": 4.332982258081763,
+      "daily_MTM_DD_pct": -2.688600132702501,
+      "year_return_pct": {
+        "2024": 10.572012389268703,
+        "2025": -0.965248766589033,
+        "2026": 2.2645571280662136
+      },
+      "fees_USDT_10000_start": 105.41893549946481,
+      "turnover_times_starting_equity": 4.392455645811035,
+      "min_cash": 0.7234232672535591,
+      "max_exposure_pct": 31.680739506935456,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "max_accounting_gap": 6.661338147750939e-16,
+      "daily_minute_core_max_gap": 0.0,
+      "sampled_minute_account_DD_pct": -4.245701680085256,
+      "risk_limitation": "Daily account CLOSE risk; recent synchronized minute OPEN before/after orders and CLOSE are observed. No early intraday risk, tick quote/depth, actual Freqtrade or independent forward certification."
+    }
+  },
+  "verdict": {
+    "all_base_windows_pass": false,
+    "all_doubled_cost_terminal_profits_positive": false,
+    "adopted": false,
+    "no_parameter_sign_or_execution_rescue": true
+  },
+  "scope": "Single preregistered positive30-day aggressive-buy veto applied after Cov10. Two reused windows, fixed costs, no rule tuning, class, bot or activation."
+}
