@@ -167,6 +167,11 @@ def marked_account(index, prices, orders, starting_balance=10000):
 
 
 def run(verify=False,observed_only=False):
+    freeze=json.loads((HERE/'r35_risk_prefreeze.json').read_text())
+    for name,sha in freeze['code_and_native_input_sha256'].items():
+        if digest(HERE/name)!=sha:raise ValueError('Prefrozen risk audit code/input changed: '+name)
+    if not freeze['no_new_account_risk_outcomes'] or not freeze['observed_only_diagnostic']:
+        raise ValueError('Original audit-stage freeze differs')
     source_name='r35_observed_source_audit.json' if observed_only else 'r35_source_audit.json'
     plan=assert_inputs();source=json.loads((HERE/source_name).read_text())
     for name,sha in source['native_input_sha256'].items():

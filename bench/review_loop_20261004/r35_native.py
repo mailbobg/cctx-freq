@@ -99,7 +99,18 @@ def assert_inputs():
     # Shared registries may be appended only AFTER final prior-integrity validation.
     for name, sha in plan['original_input_sha256'].items():
         if digest(HERE / name) != sha:
-            raise ValueError('Frozen input changed: ' + name)
+            if name not in ('selection_board.json','experiment_versions.json'):
+                raise ValueError('Frozen input changed: ' + name)
+            snapshot=HERE/'r35_prior_snapshot'/name
+            if digest(snapshot)!=sha:raise ValueError('Original shared registry snapshot changed')
+            old=json.loads(snapshot.read_text());current=json.loads((HERE/name).read_text())
+            if name=='selection_board.json':
+                if current[:len(old)]!=old:raise ValueError('Earlier selection rows changed')
+            else:
+                for key,parent in (('source_sha256',HERE),('output_sha256',HERE),('root_source_sha256',HERE.parents[2])):
+                    for previous,old_sha in old[key].items():
+                        if current[key].get(previous)!=old_sha or digest(parent/previous)!=old_sha:
+                            raise ValueError('Earlier registered file changed: '+previous)
     return plan
 
 
