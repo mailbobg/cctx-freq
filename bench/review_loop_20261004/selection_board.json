@@ -989,5 +989,17 @@
     "adoption_gate": false,
     "necessary_recent_screen_only": true,
     "disposition": "Reject first recent screen: sparse same-native carry has insufficient full-calendar CAGR and negative doubled-cost net profit. No hurdle, fees, holding, inventory, collateral or leverage rescue; no earlier favorable-window substitution or activation."
+  },
+  {
+    "trial": "R18 delisting source and frequency-boundary feasibility",
+    "new_alpha_trial": false,
+    "new_performance": false,
+    "current_catalog_returned_rows": 439,
+    "historical_complete_vintage_certified": false,
+    "retained_public_responses": 22,
+    "original_funding_transition_records": 28,
+    "focused_tests_passed": 10,
+    "adoption_gate": false,
+    "disposition": "Source-only: instrument/identity/revision boundaries verified; real2h-to1h first-new funding boundary now source-receipt validated, with no missing-event imputation or backdating. Original R17 unchanged. Historical delisting coverage/publication/native execution incomplete; one genuine prospective information observation, no orders/bot/cohort change."
   }
 ]

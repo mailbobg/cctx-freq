@@ -1,0 +1,199 @@
+{
+  "after_paging_local_capture": "2026-10-04T12:45:43.931870+00:00",
+  "catalog_current_snapshot_stable": true,
+  "catalog_returned_total": 439,
+  "first_last_metadata_labels": [
+    "2022-02-17 03:47:56.026000+00:00",
+    "2026-10-01 02:45:13.435000+00:00"
+  ],
+  "first_local_capture": "2026-10-04T12:45:42.878526+00:00",
+  "limitations": "Current category inventory and current article body captures, not historically complete unchanged publication-vintage evidence. No prices, profitability, strategy rule or order activation.",
+  "new_performance": false,
+  "not_complete_historical_event_vintage": true,
+  "output_sha256": {
+    "current_catalog.csv": "5d58ace1c1fc3dafa77c439f467d3a0703a1019caae7a36d642963be153ce7e3",
+    "detail_index.json": "84cfc5e943d73658fdb71883dddf0eca8802b3cc4ad8e50cf578af342b7ffb77",
+    "funding_context_attempts.json": "2f99632c31d65014b9fb24282ba838ca9d29d524cbafac5d8393f43ffec996ec",
+    "local_capture_observations.json": "60a4e871b98ebf49f3a188cf0d60f9ae0a355a08520379562f349b336b005e65"
+  },
+  "pages": 9,
+  "source_only": true,
+  "sources": {
+    "alpaca_funding_api_transition": {
+      "bytes": 3528,
+      "path": "raw/ff1cfc31c71df9bdb018609b42f9460e87ea112e2f46284985ace3c5193f9414",
+      "retrieved_utc": "2026-10-04T12:50:08.660255+00:00",
+      "sha256": "49abfec3daf166d06b04e35133a3257f8a6c73bc933ab08504de53b7d4ce9b27",
+      "status": 200,
+      "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ALPACAUSDT&startTime=1745452800000&endTime=1745625599999&limit=1000"
+    },
+    "alpaca_funding_month": {
+      "bytes": 2082,
+      "path": "raw/2c64d2fa25c84c0310c64e166f5e2a7f8c0817546589ebed9d6e7e46f5258078",
+      "retrieved_utc": "2026-10-04T12:50:07.663731+00:00",
+      "sha256": "37468bc60d986cef032bc7a48394e8bc62064a215d67eed8bf5022b1e9163ad9",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ALPACAUSDT/ALPACAUSDT-fundingRate-2025-04.zip"
+    },
+    "alpaca_funding_month_checksum": {
+      "bytes": 101,
+      "path": "raw/ea43af31e454d3932f751ef0fc118250c80fc88004ab391512a4770e244da718",
+      "retrieved_utc": "2026-10-04T12:50:07.990298+00:00",
+      "sha256": "7eb4d44d0a9c8e4c9129798760c6f68683a2463932f0bbb9cbdd404a44adf07c",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ALPACAUSDT/ALPACAUSDT-fundingRate-2025-04.zip.CHECKSUM"
+    },
+    "catalog_page_1": {
+      "bytes": 8602,
+      "path": "raw/84b7f304a00e5d500c9436d29fea56755cfc4ab19bba89b4174b9451240d0b93",
+      "retrieved_utc": "2026-10-04T12:45:42.878526+00:00",
+      "sha256": "8e72d746e6629c7db7db406a8963db938c13ffd8846335b0279d562d7d974df9",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=1&pageSize=50&catalogId=161"
+    },
+    "catalog_page_1_after_paging": {
+      "bytes": 8602,
+      "path": "raw/5c72490e440aa4cc9fade6ba711dabd5f95e0eced97654f3975b283d9d0abb80",
+      "retrieved_utc": "2026-10-04T12:45:43.931870+00:00",
+      "sha256": "8e72d746e6629c7db7db406a8963db938c13ffd8846335b0279d562d7d974df9",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=1&pageSize=50&catalogId=161"
+    },
+    "catalog_page_2": {
+      "bytes": 8970,
+      "path": "raw/07ae54e7f2d9a8fbcc4f45dc5374aa430ea72b56fa1f17cecc9dd8654be6db80",
+      "retrieved_utc": "2026-10-04T12:45:43.003624+00:00",
+      "sha256": "378f6ba7fa27b527c53bf285f3a9b3d55350387c5ff96cd499b6bbc9235a0ade",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=2&pageSize=50&catalogId=161"
+    },
+    "catalog_page_3": {
+      "bytes": 8566,
+      "path": "raw/be94d2bdc3f478900abc3e7952344570b7105da2601b1637d8c026f38833d0f6",
+      "retrieved_utc": "2026-10-04T12:45:43.119501+00:00",
+      "sha256": "50f08cdedbec3b86b4b9cb17bc7e9b07a8034ef0e843d0b34de18164c9e8754d",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=3&pageSize=50&catalogId=161"
+    },
+    "catalog_page_4": {
+      "bytes": 8539,
+      "path": "raw/97c2139506afd9ef7f476a9b7f31383bc03b6c09b3f8e3da3b9adccd42ca518d",
+      "retrieved_utc": "2026-10-04T12:45:43.236005+00:00",
+      "sha256": "ff3fc100ac6b09e067b166ddf77d9909f916a943b9a1793cac7d2e8ca223c4b8",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=4&pageSize=50&catalogId=161"
+    },
+    "catalog_page_5": {
+      "bytes": 8477,
+      "path": "raw/81bfcf2c4e4c97ec0a55b0218a311e13f374eb8950174b06a9a704c0ace291d9",
+      "retrieved_utc": "2026-10-04T12:45:43.348807+00:00",
+      "sha256": "2ddd778b3f757cecaf7985bab227b55b4d2005c8bce8f18602b5695773553202",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=5&pageSize=50&catalogId=161"
+    },
+    "catalog_page_6": {
+      "bytes": 8625,
+      "path": "raw/cd217fb98b69a2a1d69cb9bd49bea29b9ef6d536fa868669a84a0aa01b34be98",
+      "retrieved_utc": "2026-10-04T12:45:43.475092+00:00",
+      "sha256": "f3572e577affe83908ff47966f1aa3ccb7b3360fdeae95eea19280fe341ae7ad",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=6&pageSize=50&catalogId=161"
+    },
+    "catalog_page_7": {
+      "bytes": 9848,
+      "path": "raw/5a1f31dc8b825e4e1ebc59a4b7de7aa582200cbd222e62db5765f997832b4130",
+      "retrieved_utc": "2026-10-04T12:45:43.640835+00:00",
+      "sha256": "043bf0b49304e2ef92bc7af8142ae048fa26333c8735ad34b80f39d074e49af3",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=7&pageSize=50&catalogId=161"
+    },
+    "catalog_page_8": {
+      "bytes": 9508,
+      "path": "raw/31381d142528d71acc5e28280794cb504af77cae8eb5705565c2b5a1eeb496db",
+      "retrieved_utc": "2026-10-04T12:45:43.758250+00:00",
+      "sha256": "1a0b8ed52d594ab184068f7d32b9733ffc9405c9f059bafe4ba9c4eabd282b32",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=8&pageSize=50&catalogId=161"
+    },
+    "catalog_page_9": {
+      "bytes": 6660,
+      "path": "raw/d950bf9d89fcb5fc93ee68be06973ecec2800fde64821a5db013d2480574b8f3",
+      "retrieved_utc": "2026-10-04T12:45:43.865424+00:00",
+      "sha256": "781e72d0f7756d68918597c2cd94807c2f5bbf300fb6555fb4ae3e91d6289810",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/list/query?type=1&pageNo=9&pageSize=50&catalogId=161"
+    },
+    "detail_0274f9d47da1437990bc13eb17b0ec99": {
+      "bytes": 115723,
+      "path": "raw/5832aa7297f8fb03d847b2ee40b80a892e0b2d703cc3d26a52b16c6e7520f8eb",
+      "retrieved_utc": "2026-10-04T12:45:45.072383+00:00",
+      "sha256": "020be18f02740fab6bceb816dae666c48867fb85e0f41b71d76f98c88d116e17",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=0274f9d47da1437990bc13eb17b0ec99"
+    },
+    "detail_192a7ab5b39b42d2a24330f7d15ef3e8": {
+      "bytes": 41957,
+      "path": "raw/bfb04b3fd10258488783ea2a4a7b92a7d2ef41638812a98eed3a995dbf581072",
+      "retrieved_utc": "2026-10-04T12:45:44.289303+00:00",
+      "sha256": "4c870e7d2843f471e2af1aaddf4de78bfb8d27d545111c82c739f27bd5b11e4f",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=192a7ab5b39b42d2a24330f7d15ef3e8"
+    },
+    "detail_209e18f8600f41c09f064d2909e17474": {
+      "bytes": 59750,
+      "path": "raw/17058df4f82921fbe12df5201ce7344a83ba2404ab6deda19bffa872c0ea2004",
+      "retrieved_utc": "2026-10-04T12:45:44.689050+00:00",
+      "sha256": "263f52d96b7de2be567ce759fa92b750ab038e0da5103d008ac38d318f230fe6",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=209e18f8600f41c09f064d2909e17474"
+    },
+    "detail_2f1a743334f044abbd82e34093c7b771": {
+      "bytes": 52549,
+      "path": "raw/b44a47a9cfb4f22da88f0bcba1a1b365f9b2aab6427bbc9c53516e87e8c9f447",
+      "retrieved_utc": "2026-10-04T12:45:44.885008+00:00",
+      "sha256": "b82877aa56dca05fda8760d75c0a03cc4668c2861e87311b2b6e0cc9399cfe3c",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=2f1a743334f044abbd82e34093c7b771"
+    },
+    "detail_3880a020618b4652a6ed8cb6edbb6385": {
+      "bytes": 48250,
+      "path": "raw/1549c38ff18be06f4d1e4531154f0988c52ee09ac26f06a861fb94ea3540e465",
+      "retrieved_utc": "2026-10-04T12:45:44.547059+00:00",
+      "sha256": "8f8b268130c2b3e0bee10600b3e5f9da09fa188371a70f76c810224528d407fa",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=3880a020618b4652a6ed8cb6edbb6385"
+    },
+    "detail_64e983b9aebb48998e7ba789aabe3de2": {
+      "bytes": 29658,
+      "path": "raw/9a5042877147bf8a74de74cdf9c0ee01334722b174131aa7326c661faf6321ac",
+      "retrieved_utc": "2026-10-04T12:45:45.211872+00:00",
+      "sha256": "bb33864365cb4b3faf35255b65ae190424ffab6f5111c6c41e26919b39ccce8b",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=64e983b9aebb48998e7ba789aabe3de2"
+    },
+    "detail_6a6de383727f4659a3050f7982e1620f": {
+      "bytes": 148784,
+      "path": "raw/bb3e51a45fb48dc9771ac22f8fe68e7ba959fa08f6807f87b40c248aa4829fd1",
+      "retrieved_utc": "2026-10-04T12:45:44.425253+00:00",
+      "sha256": "299f323144f880a43f9eb424b98eb45608cd61570444fe0ea129f19aa02d8f59",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=6a6de383727f4659a3050f7982e1620f"
+    },
+    "detail_dd60dfbf654d4055aa6b217ea6d5ddba": {
+      "bytes": 12926,
+      "path": "raw/37702f88c9ef0e7b4d0b9d80a04462c4b82b44b49d116515a3a7912f68ed3c75",
+      "retrieved_utc": "2026-10-04T12:45:44.814142+00:00",
+      "sha256": "662dc6368efd28a1088daea38e45a2f6d989cf3aa7471974b135f459e8305722",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=dd60dfbf654d4055aa6b217ea6d5ddba"
+    },
+    "detail_f73b083ba6834771b07dbe5319917ae5": {
+      "bytes": 77239,
+      "path": "raw/ecc21a915fcb77ff05fb1d296d1e0fadb7f12f3d5395c19354a2fa11499246aa",
+      "retrieved_utc": "2026-10-04T12:45:44.163704+00:00",
+      "sha256": "aa21946b7272b60285d10bc66dd770bee25d96b6b5c3696ca3e8273489146c98",
+      "status": 200,
+      "url": "https://www.binance.com/bapi/composite/v1/public/cms/article/detail/query?articleCode=f73b083ba6834771b07dbe5319917ae5"
+    }
+  }
+}

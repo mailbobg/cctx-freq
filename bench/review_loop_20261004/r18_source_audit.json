@@ -1,0 +1,138 @@
+{
+  "source_only": true,
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "adopted": false,
+  "catalog_returned_rows": 439,
+  "current_snapshot_stable": true,
+  "source_response_count": 22,
+  "current_catalog_label_year_counts": {
+    "2022": 62,
+    "2023": 98,
+    "2024": 72,
+    "2025": 93,
+    "2026": 114
+  },
+  "title_family_counts_not_event_eligibility": {
+    "futures_contract_title": 35,
+    "spot_pair_removal_title": 136,
+    "margin_or_loans_title": 148,
+    "other_or_unclassified_title": 80,
+    "full_token_spot_candidate_title_only": 40
+  },
+  "historical_catalog_coverage_complete": false,
+  "original_full_body_publication_vintages_certified": false,
+  "fixed_forensic_roles": [
+    {
+      "role": "XMR_ANT",
+      "article_code": "f73b083ba6834771b07dbe5319917ae5",
+      "title": "Binance Will Delist ANT, MULTI, VAI, XMR on 2024-02-20",
+      "raw_sha256": "aa21946b7272b60285d10bc66dd770bee25d96b6b5c3696ca3e8273489146c98",
+      "provider_publishDate_ms": 1707202812575,
+      "provider_lastUpdateTime_ms": 0,
+      "explicit_body_revision_dates": [
+        "2024-02-07"
+      ],
+      "current_capture_known_after": "2026-10-04T12:45:44.163704+00:00",
+      "historical_publication_of_current_full_body_certified": false,
+      "finding": "Spot tokens removed; one COIN-M contract closes earlier; USD-M XMRUSDT/ANTUSDT explicitly survive. Product identity differs; current body disclosed later clarification."
+    },
+    {
+      "role": "ALPACA_spot_actual_catalog",
+      "article_code": "0274f9d47da1437990bc13eb17b0ec99",
+      "title": "Binance Will Delist ALPACA, PDA, VIB, WING on 2025-05-02",
+      "raw_sha256": "020be18f02740fab6bceb816dae666c48867fb85e0f41b71d76f98c88d116e17",
+      "provider_publishDate_ms": 1745467205257,
+      "provider_lastUpdateTime_ms": 0,
+      "explicit_body_revision_dates": [
+        "2025-04-24"
+      ],
+      "current_capture_known_after": "2026-10-04T12:45:45.072383+00:00",
+      "historical_publication_of_current_full_body_certified": false,
+      "finding": "Actual full-token spot notice located in catalog, not the wrong initial URL. Current body has earlier futures close/new-entry cutoff as well as later spot close, and a disclosed same-day amendment; current full body is not original vintage proof."
+    },
+    {
+      "role": "MATIC_migration",
+      "article_code": "6a6de383727f4659a3050f7982e1620f",
+      "title": "Binance Will Support the Polygon (MATIC) Token Swap to Polygon (POL)",
+      "raw_sha256": "299f323144f880a43f9eb424b98eb45608cd61570444fe0ea129f19aa02d8f59",
+      "provider_publishDate_ms": 1724835607402,
+      "provider_lastUpdateTime_ms": 0,
+      "explicit_body_revision_dates": [
+        "2024-09-06",
+        "2024-09-05"
+      ],
+      "current_capture_known_after": "2026-10-04T12:45:44.425253+00:00",
+      "historical_publication_of_current_full_body_certified": false,
+      "finding": "One-to-one migration; earlier USDT/USDC futures and separate COIN-M closure times versus spot migration. Cannot classify as permanent loss of the native underlying."
+    },
+    {
+      "role": "ALPACA_frequency_revision",
+      "article_code": "209e18f8600f41c09f064d2909e17474",
+      "title": "Updates on Funding Rate Settlement Frequency of USD\u24c8-M ALPACAUSDT and FLMUSDT Perpetual Contracts (2025-04-25)",
+      "raw_sha256": "263f52d96b7de2be567ce759fa92b750ab038e0da5103d008ac38d318f230fe6",
+      "provider_publishDate_ms": 1745565451626,
+      "provider_lastUpdateTime_ms": 0,
+      "explicit_body_revision_dates": [
+        "2025-04-29"
+      ],
+      "current_capture_known_after": "2026-10-04T12:45:44.689050+00:00",
+      "historical_publication_of_current_full_body_certified": false,
+      "finding": "Current final-funding detail was added after provider original publish label. lastUpdateTime0 is contradicted by explicit body amendment; unknown update sentinel cannot establish vintage."
+    },
+    {
+      "role": "Upcoming_current_capture",
+      "article_code": "2f1a743334f044abbd82e34093c7b771",
+      "title": "Binance Futures Will Delist Multiple USD\u24c8-M Perpetual Contracts (2026-10-05)",
+      "raw_sha256": "b82877aa56dca05fda8760d75c0a03cc4668c2861e87311b2b6e0cc9399cfe3c",
+      "provider_publishDate_ms": 1790822713435,
+      "provider_lastUpdateTime_ms": 1790825940000,
+      "explicit_body_revision_dates": [],
+      "current_capture_known_after": "2026-10-04T12:45:44.885008+00:00",
+      "historical_publication_of_current_full_body_certified": false,
+      "finding": "Genuine pre-event local body capture; preserve exact native contract symbols, including numeric multiplier-looking name without stripping it. Futures-only notice is not full-token spot removal. No orders or historical backdating."
+    }
+  ],
+  "initial_wrong_lead": {
+    "code": "192a7ab5b39b42d2a24330f7d15ef3e8",
+    "observed_title": "Binance Launches Portfolio Accounts: Industry-First Technological Solution for Trading Teams",
+    "raw_sha256": "4c870e7d2843f471e2af1aaddf4de78bfb8d27d545111c82c739f27bd5b11e4f",
+    "disposition": "Reject ALPACA delisting attribution; correct role independently found in retained current catalog. Original failed lead kept."
+  },
+  "calendar_context": {
+    "actual_api_and_native_csv_rates_slots_match": true,
+    "actual_events": 28,
+    "changes": [
+      {
+        "previous_slot": "2025-04-24T16:00:00+00:00",
+        "first_new_slot": "2025-04-24T18:00:00+00:00",
+        "old_declared_hours": 4,
+        "new_declared_hours": 2,
+        "preceding_gap_hours": 2.0
+      },
+      {
+        "previous_slot": "2025-04-25T06:00:00+00:00",
+        "first_new_slot": "2025-04-25T08:00:00+00:00",
+        "old_declared_hours": 2,
+        "new_declared_hours": 1,
+        "preceding_gap_hours": 2.0
+      }
+    ],
+    "old_frozen_R17_validator_rejects_real_transition": "Funding calendar gap conflicts with declared settlement interval",
+    "reviewed_boundary_preserves_all_actual_rates_and_events": true,
+    "ordinary_missing_event_still_rejected": true,
+    "receipt_local_capture_not_backdated": true,
+    "original_R17_history_engine_and_rejection_unchanged": true,
+    "current_sample_is_not_a_profitability_trial": true
+  },
+  "next_action": "Do not build a past delisting return trial from this partial/current vintage. Historical original-content/coverage and native executable lifecycle remain unproven. A source-feasible subsequent mechanism or genuinely captured prospective inventory is required; no known-after clock, event omission or trading rule is fabricated.",
+  "source_sha256": {
+    "R18_SOURCE_PLAN.md": "f945e449774c0dc218c99c9bc55b6d1da569e942b31a7990d27de4ff52608094",
+    "r18_catalog.py": "30355fb758b928ebded993df22ff0c4d6ff7f11ee4a578098cd0c55d14afb5f3",
+    "test_r18_catalog.py": "9e015d09ac53bfe4d11bc99c7659b55c80c03583a75313e382e1d5aed890c923",
+    "r18_sources.py": "e8801a21a881e1e2ae36c3d67004be62328b69c4369cb2327085110e9eebd95c",
+    "r18_calendar.py": "b41937c84ff1485ea65faf2af96609b15c553241ef10503cb7451b4a4df61768",
+    "test_r18_calendar.py": "e9f1b86b8244f7c2b68837d9317ad0a9361a4daf41ffc35884c19875394b75ae",
+    "r18_audit.py": "9d82cfe2796b6996b8a852f7931caec4955ac9e8518a4f949c0b1b7ab458e113"
+  }
+}

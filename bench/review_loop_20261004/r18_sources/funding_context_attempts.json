@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ALPACAUSDT/ALPACAUSDT-fundingRate-2025-04.zip",
+    "status": null,
+    "error": "First normal retrieval failed during TLS handshake/read timeout=5 seconds; no HTTP body returned. See calling turn diagnostic; exact failure time not captured.",
+    "body_available": false
+  },
+  {
+    "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ALPACAUSDT/ALPACAUSDT-fundingRate-2025-04.zip",
+    "status": 200,
+    "source_key": "alpaca_funding_month",
+    "retrieved_utc": "2026-10-04T12:50:07.663731+00:00"
+  },
+  {
+    "url": "https://data.binance.vision/data/futures/um/monthly/fundingRate/ALPACAUSDT/ALPACAUSDT-fundingRate-2025-04.zip.CHECKSUM",
+    "status": 200,
+    "source_key": "alpaca_funding_month_checksum",
+    "retrieved_utc": "2026-10-04T12:50:07.990298+00:00"
+  },
+  {
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ALPACAUSDT&startTime=1745452800000&endTime=1745625599999&limit=1000",
+    "status": 200,
+    "source_key": "alpaca_funding_api_transition",
+    "retrieved_utc": "2026-10-04T12:50:08.660255+00:00"
+  }
+]
