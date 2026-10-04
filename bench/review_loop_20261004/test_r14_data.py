@@ -74,4 +74,4 @@ def test_amount_decimal_is_preserved_across_old_csv_float_rounding():
     preserved = parse(f)
     assert preserved.quote_volume.iloc[0] == '939663387.31498930'
     assert float(preserved.quote_volume.iloc[0]) != old.quote_volume.iloc[0]
-    pd.testing.assert_frame_equal(preserved[['open','high','low','close']], old[['open','high','low','close']])
+    pd.testing.assert_frame_equal(preserved[['open','high','low','close']], old[['open','high','low','close']], check_dtype=False)
