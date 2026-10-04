@@ -1,0 +1,334 @@
+..FFFF.....F......                                                       [100%]
+=================================== FAILURES ===================================
+_ test_original_ascii_and_modern_table_do_not_confuse_average_with_stock[2023-12-28-3446459-3434213] _
+
+release = '2023-12-28', average = 3446459, wednesday = 3434213
+
+    @pytest.mark.parametrize('release,average,wednesday', [
+        ('2019-09-19',1394122,1385426),('2021-01-28',3163008,3228751),
+        ('2023-12-28',3446459,3434213),('2024-11-29',3227674,3234035),
+        ('2026-08-27',2924936,2916824)])
+    def test_original_ascii_and_modern_table_do_not_confuse_average_with_stock(release,average,wednesday):
+>       parsed = parse_publisher(body('publisher_'+release),release)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_native.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\r\n<html lang="en" class="no-js">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta http-equi...(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n'
+release = '2023-12-28'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+            raise ValueError('Original publisher release identity differs')
+        expected = day-timedelta(days=day.weekday()-2)
+        if parser.pres:
+            if len(parser.pres) != 1:
+                raise ValueError('Unreviewed multiple original preformatted reports')
+            text = parser.pres[0]
+            rows = [line for line in text.splitlines() if line.lstrip().startswith(LABEL)]
+            if len(rows) != 1:
+                raise ValueError('Original reserve label scope differs')
+            line = rows[0]
+            row_start = text.index(line)
+            beginning = text.rfind('1. Factors Affecting Reserve Balances',0,row_start)
+            header = text[beginning:row_start]
+            if beginning < 0 or 'Millions of dollars' not in header or 'Averages of daily figures' not in header:
+                raise ValueError('Original units/average header differs')
+            dates = re.findall(r'Federal Reserve Banks\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')',header)
+            if len(dates) != 1:
+                raise ValueError('Original average/change column dates ambiguous')
+            observation, previous, prior_year = map(short_date,dates[0])
+            fields = re.fullmatch(r'\s*(\d[\d,]*)\s+([+-]\s*[\d,]+|0)\s+([+-]\s*[\d,]+|0)\s+(\d[\d,]*)\s*',line.lstrip()[len(LABEL):])
+            if fields is None:
+                raise ValueError('Original reserve row has foreign/unknown columns')
+            native = list(fields.groups())
+            average, change_week, change_year, wednesday = map(integer,native)
+            original_columns = dict(layout='preformatted_ascii', full_native_line=line, native_columns=native)
+        else:
+            matches = [key for key,value in parser.cells.items() if compact(value['text']) == compact(LABEL)]
+            if len(matches) != 1 or not re.fullmatch(r't2r\d+c1',matches[0]):
+                raise ValueError('Original table1continued reserve scope differs')
+            prefix = matches[0][:-2]
+            c = parser.cells
+            if (compact(c['t2r1c1']['text']) != compact('Millions of dollars') or
+                compact(c['t2h1c2']['text']) != compact('Averages of daily figures') or
+                compact(c['t2h2c2']['text']) != compact('Change from week ended')):
+>               raise ValueError('Original units/average/change table header differs')
+E               ValueError: Original units/average/change table header differs
+
+user_data/bench/review_loop_20261004/r31_native.py:110: ValueError
+_ test_original_ascii_and_modern_table_do_not_confuse_average_with_stock[2024-11-29-3227674-3234035] _
+
+release = '2024-11-29', average = 3227674, wednesday = 3234035
+
+    @pytest.mark.parametrize('release,average,wednesday', [
+        ('2019-09-19',1394122,1385426),('2021-01-28',3163008,3228751),
+        ('2023-12-28',3446459,3434213),('2024-11-29',3227674,3234035),
+        ('2026-08-27',2924936,2916824)])
+    def test_original_ascii_and_modern_table_do_not_confuse_average_with_stock(release,average,wednesday):
+>       parsed = parse_publisher(body('publisher_'+release),release)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_native.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\r\n<!DOCTYPE html>\r\n<html lang="en" class="no-js">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta http-...(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n'
+release = '2024-11-29'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+            raise ValueError('Original publisher release identity differs')
+        expected = day-timedelta(days=day.weekday()-2)
+        if parser.pres:
+            if len(parser.pres) != 1:
+                raise ValueError('Unreviewed multiple original preformatted reports')
+            text = parser.pres[0]
+            rows = [line for line in text.splitlines() if line.lstrip().startswith(LABEL)]
+            if len(rows) != 1:
+                raise ValueError('Original reserve label scope differs')
+            line = rows[0]
+            row_start = text.index(line)
+            beginning = text.rfind('1. Factors Affecting Reserve Balances',0,row_start)
+            header = text[beginning:row_start]
+            if beginning < 0 or 'Millions of dollars' not in header or 'Averages of daily figures' not in header:
+                raise ValueError('Original units/average header differs')
+            dates = re.findall(r'Federal Reserve Banks\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')',header)
+            if len(dates) != 1:
+                raise ValueError('Original average/change column dates ambiguous')
+            observation, previous, prior_year = map(short_date,dates[0])
+            fields = re.fullmatch(r'\s*(\d[\d,]*)\s+([+-]\s*[\d,]+|0)\s+([+-]\s*[\d,]+|0)\s+(\d[\d,]*)\s*',line.lstrip()[len(LABEL):])
+            if fields is None:
+                raise ValueError('Original reserve row has foreign/unknown columns')
+            native = list(fields.groups())
+            average, change_week, change_year, wednesday = map(integer,native)
+            original_columns = dict(layout='preformatted_ascii', full_native_line=line, native_columns=native)
+        else:
+            matches = [key for key,value in parser.cells.items() if compact(value['text']) == compact(LABEL)]
+            if len(matches) != 1 or not re.fullmatch(r't2r\d+c1',matches[0]):
+                raise ValueError('Original table1continued reserve scope differs')
+            prefix = matches[0][:-2]
+            c = parser.cells
+            if (compact(c['t2r1c1']['text']) != compact('Millions of dollars') or
+                compact(c['t2h1c2']['text']) != compact('Averages of daily figures') or
+                compact(c['t2h2c2']['text']) != compact('Change from week ended')):
+>               raise ValueError('Original units/average/change table header differs')
+E               ValueError: Original units/average/change table header differs
+
+user_data/bench/review_loop_20261004/r31_native.py:110: ValueError
+_ test_original_ascii_and_modern_table_do_not_confuse_average_with_stock[2026-08-27-2924936-2916824] _
+
+release = '2026-08-27', average = 2924936, wednesday = 2916824
+
+    @pytest.mark.parametrize('release,average,wednesday', [
+        ('2019-09-19',1394122,1385426),('2021-01-28',3163008,3228751),
+        ('2023-12-28',3446459,3434213),('2024-11-29',3227674,3234035),
+        ('2026-08-27',2924936,2916824)])
+    def test_original_ascii_and_modern_table_do_not_confuse_average_with_stock(release,average,wednesday):
+>       parsed = parse_publisher(body('publisher_'+release),release)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_native.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\n<!DOCTYPE html>\n<html lang="en" class="no-js">\n  <head>\n    <meta charset="utf-8" />\n    <meta http-equiv="X-U...tion(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>\n'
+release = '2026-08-27'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+            raise ValueError('Original publisher release identity differs')
+        expected = day-timedelta(days=day.weekday()-2)
+        if parser.pres:
+            if len(parser.pres) != 1:
+                raise ValueError('Unreviewed multiple original preformatted reports')
+            text = parser.pres[0]
+            rows = [line for line in text.splitlines() if line.lstrip().startswith(LABEL)]
+            if len(rows) != 1:
+                raise ValueError('Original reserve label scope differs')
+            line = rows[0]
+            row_start = text.index(line)
+            beginning = text.rfind('1. Factors Affecting Reserve Balances',0,row_start)
+            header = text[beginning:row_start]
+            if beginning < 0 or 'Millions of dollars' not in header or 'Averages of daily figures' not in header:
+                raise ValueError('Original units/average header differs')
+            dates = re.findall(r'Federal Reserve Banks\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')',header)
+            if len(dates) != 1:
+                raise ValueError('Original average/change column dates ambiguous')
+            observation, previous, prior_year = map(short_date,dates[0])
+            fields = re.fullmatch(r'\s*(\d[\d,]*)\s+([+-]\s*[\d,]+|0)\s+([+-]\s*[\d,]+|0)\s+(\d[\d,]*)\s*',line.lstrip()[len(LABEL):])
+            if fields is None:
+                raise ValueError('Original reserve row has foreign/unknown columns')
+            native = list(fields.groups())
+            average, change_week, change_year, wednesday = map(integer,native)
+            original_columns = dict(layout='preformatted_ascii', full_native_line=line, native_columns=native)
+        else:
+            matches = [key for key,value in parser.cells.items() if compact(value['text']) == compact(LABEL)]
+            if len(matches) != 1 or not re.fullmatch(r't2r\d+c1',matches[0]):
+                raise ValueError('Original table1continued reserve scope differs')
+            prefix = matches[0][:-2]
+            c = parser.cells
+            if (compact(c['t2r1c1']['text']) != compact('Millions of dollars') or
+                compact(c['t2h1c2']['text']) != compact('Averages of daily figures') or
+                compact(c['t2h2c2']['text']) != compact('Change from week ended')):
+>               raise ValueError('Original units/average/change table header differs')
+E               ValueError: Original units/average/change table header differs
+
+user_data/bench/review_loop_20261004/r31_native.py:110: ValueError
+__ test_friday_holiday_publication_is_not_backdated_to_thursday_or_wednesday ___
+
+    def test_friday_holiday_publication_is_not_backdated_to_thursday_or_wednesday():
+>       parsed = parse_publisher(body('publisher_2024-11-29'),'2024-11-29')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_native.py:28: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\r\n<!DOCTYPE html>\r\n<html lang="en" class="no-js">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta http-...(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n'
+release = '2024-11-29'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+            raise ValueError('Original publisher release identity differs')
+        expected = day-timedelta(days=day.weekday()-2)
+        if parser.pres:
+            if len(parser.pres) != 1:
+                raise ValueError('Unreviewed multiple original preformatted reports')
+            text = parser.pres[0]
+            rows = [line for line in text.splitlines() if line.lstrip().startswith(LABEL)]
+            if len(rows) != 1:
+                raise ValueError('Original reserve label scope differs')
+            line = rows[0]
+            row_start = text.index(line)
+            beginning = text.rfind('1. Factors Affecting Reserve Balances',0,row_start)
+            header = text[beginning:row_start]
+            if beginning < 0 or 'Millions of dollars' not in header or 'Averages of daily figures' not in header:
+                raise ValueError('Original units/average header differs')
+            dates = re.findall(r'Federal Reserve Banks\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')',header)
+            if len(dates) != 1:
+                raise ValueError('Original average/change column dates ambiguous')
+            observation, previous, prior_year = map(short_date,dates[0])
+            fields = re.fullmatch(r'\s*(\d[\d,]*)\s+([+-]\s*[\d,]+|0)\s+([+-]\s*[\d,]+|0)\s+(\d[\d,]*)\s*',line.lstrip()[len(LABEL):])
+            if fields is None:
+                raise ValueError('Original reserve row has foreign/unknown columns')
+            native = list(fields.groups())
+            average, change_week, change_year, wednesday = map(integer,native)
+            original_columns = dict(layout='preformatted_ascii', full_native_line=line, native_columns=native)
+        else:
+            matches = [key for key,value in parser.cells.items() if compact(value['text']) == compact(LABEL)]
+            if len(matches) != 1 or not re.fullmatch(r't2r\d+c1',matches[0]):
+                raise ValueError('Original table1continued reserve scope differs')
+            prefix = matches[0][:-2]
+            c = parser.cells
+            if (compact(c['t2r1c1']['text']) != compact('Millions of dollars') or
+                compact(c['t2h1c2']['text']) != compact('Averages of daily figures') or
+                compact(c['t2h2c2']['text']) != compact('Change from week ended')):
+>               raise ValueError('Original units/average/change table header differs')
+E               ValueError: Original units/average/change table header differs
+
+user_data/bench/review_loop_20261004/r31_native.py:110: ValueError
+_________ test_actual_new_native_archive_same_unit_counterpart_matches _________
+
+    def test_actual_new_native_archive_same_unit_counterpart_matches():
+>       publisher = parse_publisher(body('publisher_2026-08-27'),'2026-08-27')
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_native.py:52: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\n<!DOCTYPE html>\n<html lang="en" class="no-js">\n  <head>\n    <meta charset="utf-8" />\n    <meta http-equiv="X-U...tion(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\n</html>\n'
+release = '2026-08-27'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+            raise ValueError('Original publisher release identity differs')
+        expected = day-timedelta(days=day.weekday()-2)
+        if parser.pres:
+            if len(parser.pres) != 1:
+                raise ValueError('Unreviewed multiple original preformatted reports')
+            text = parser.pres[0]
+            rows = [line for line in text.splitlines() if line.lstrip().startswith(LABEL)]
+            if len(rows) != 1:
+                raise ValueError('Original reserve label scope differs')
+            line = rows[0]
+            row_start = text.index(line)
+            beginning = text.rfind('1. Factors Affecting Reserve Balances',0,row_start)
+            header = text[beginning:row_start]
+            if beginning < 0 or 'Millions of dollars' not in header or 'Averages of daily figures' not in header:
+                raise ValueError('Original units/average header differs')
+            dates = re.findall(r'Federal Reserve Banks\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')\s+('+SHORT_DATE+r')',header)
+            if len(dates) != 1:
+                raise ValueError('Original average/change column dates ambiguous')
+            observation, previous, prior_year = map(short_date,dates[0])
+            fields = re.fullmatch(r'\s*(\d[\d,]*)\s+([+-]\s*[\d,]+|0)\s+([+-]\s*[\d,]+|0)\s+(\d[\d,]*)\s*',line.lstrip()[len(LABEL):])
+            if fields is None:
+                raise ValueError('Original reserve row has foreign/unknown columns')
+            native = list(fields.groups())
+            average, change_week, change_year, wednesday = map(integer,native)
+            original_columns = dict(layout='preformatted_ascii', full_native_line=line, native_columns=native)
+        else:
+            matches = [key for key,value in parser.cells.items() if compact(value['text']) == compact(LABEL)]
+            if len(matches) != 1 or not re.fullmatch(r't2r\d+c1',matches[0]):
+                raise ValueError('Original table1continued reserve scope differs')
+            prefix = matches[0][:-2]
+            c = parser.cells
+            if (compact(c['t2r1c1']['text']) != compact('Millions of dollars') or
+                compact(c['t2h1c2']['text']) != compact('Averages of daily figures') or
+                compact(c['t2h2c2']['text']) != compact('Change from week ended')):
+>               raise ValueError('Original units/average/change table header differs')
+E               ValueError: Original units/average/change table header differs
+
+user_data/bench/review_loop_20261004/r31_native.py:110: ValueError
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED user_data/bench/review_loop_20261004/test_r31_native.py::test_original_ascii_and_modern_table_do_not_confuse_average_with_stock[2023-12-28-3446459-3434213]
+FAILED user_data/bench/review_loop_20261004/test_r31_native.py::test_original_ascii_and_modern_table_do_not_confuse_average_with_stock[2024-11-29-3227674-3234035]
+FAILED user_data/bench/review_loop_20261004/test_r31_native.py::test_original_ascii_and_modern_table_do_not_confuse_average_with_stock[2026-08-27-2924936-2916824]
+FAILED user_data/bench/review_loop_20261004/test_r31_native.py::test_friday_holiday_publication_is_not_backdated_to_thursday_or_wednesday
+FAILED user_data/bench/review_loop_20261004/test_r31_native.py::test_actual_new_native_archive_same_unit_counterpart_matches
+5 failed, 13 passed, 2 warnings in 0.49s

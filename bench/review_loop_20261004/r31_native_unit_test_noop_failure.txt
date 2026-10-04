@@ -1,0 +1,33 @@
+......F...........                                                       [100%]
+=================================== FAILURES ===================================
+_ test_tampered_table_units_header_dates_or_column_identity_fail[wrong_units] __
+
+change = 'wrong_units'
+
+    @pytest.mark.parametrize('change', ['wrong_units','wrong_average_header','wrong_date','swapped_column_semantics'])
+    def test_tampered_table_units_header_dates_or_column_identity_fail(change):
+        source = body('publisher_2026-08-27')
+        if change == 'wrong_units': source = source.replace(b'Millions of dollars',b'Billions of dollars')
+        elif change == 'wrong_average_header': source = source.replace(b'Averages of daily figures',b'Wednesday end-of-day stocks')
+        elif change == 'wrong_date': source = source.replace(b'Aug 26, 2026',b'Aug 25, 2026')
+        else: source = source.replace(b't2r1c1 t2h1c2 t2h2c1 ',b't2r1c1 t2h1c3 ')
+>       with pytest.raises(ValueError): parse_publisher(source,'2026-08-27')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       Failed: DID NOT RAISE ValueError
+
+user_data/bench/review_loop_20261004/test_r31_native.py:41: Failed
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED user_data/bench/review_loop_20261004/test_r31_native.py::test_tampered_table_units_header_dates_or_column_identity_fail[wrong_units]
+1 failed, 17 passed, 2 warnings in 0.47s
