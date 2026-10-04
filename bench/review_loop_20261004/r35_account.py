@@ -166,14 +166,16 @@ def marked_account(index, prices, orders, starting_balance=10000):
     return result,daily
 
 
-def run(verify=False):
-    plan=assert_inputs();source=json.loads((HERE/'r35_source_audit.json').read_text())
+def run(verify=False,observed_only=False):
+    source_name='r35_observed_source_audit.json' if observed_only else 'r35_source_audit.json'
+    plan=assert_inputs();source=json.loads((HERE/source_name).read_text())
     for name,sha in source['native_input_sha256'].items():
         if digest(HERE/name)!=sha:raise ValueError('Native input changed')
     for name,sha in source['output_sha256'].items():
         if digest(HERE/name)!=sha:raise ValueError('Native derived minutes changed')
     if len(source['output_sha256'])!=2:raise ValueError('Incomplete native archive set; no full account audit')
-    prices={a:pd.read_parquet(DATA/f'{a}USDT_1m.parquet') for a in ASSETS}
+    native_dir=HERE/'r35_observed_data' if observed_only else DATA
+    prices={a:pd.read_parquet(native_dir/f'{a}USDT_1m.parquet') for a in ASSETS}
     r1=json.loads((HERE/'r1_freq_results.json').read_text());results={};outputs={}
     for label,cost in (('early',.0012),('recent',.0012),('early_cost2',.0024),('recent_cost2',.0024)):
         p=Path(r1[label+'_RiskHoldR2bCov10']['source'])
@@ -207,7 +209,8 @@ def run(verify=False):
                 frozen_5pct_default_pass=False,adopted=False,unchanged_strategy=True)
             risk['complete_held_intraday_price_and_fill_coverage'] &= daily_parity
             results[key]=risk
-            csv=HERE/f'r35_{key}_daily.csv';ocsv=HERE/f'r35_{key}_orders.csv'
+            prefix='r35_observed' if observed_only else 'r35'
+            csv=HERE/f'{prefix}_{key}_daily.csv';ocsv=HERE/f'{prefix}_{key}_orders.csv'
             text=daily.to_csv();otext=orders.drop(columns='side_rank').to_csv(index=False)
             if verify:
                 if csv.read_text()!=text or ocsv.read_text()!=otext:raise ValueError('Native account output bytes changed')
@@ -215,10 +218,12 @@ def run(verify=False):
             outputs[csv.name]=digest(csv);outputs[ocsv.name]=digest(ocsv)
             print(key,{k:risk[k] for k in ('sampled_OPEN_CLOSE_and_fill_DD_pct','conservative_OHLC_envelope_DD_pct','complete_held_intraday_price_and_fill_coverage','max_daily_cash_equity_gap_USDT')},flush=True)
     out=dict(protocol_commit=plan['protocol_commit'],source_plan_sha256=digest(HERE/'r35_source_plan.json'),
-        native_source_audit_sha256=digest(HERE/'r35_source_audit.json'),results=results,
+        native_source_audit_sha256=digest(HERE/source_name),results=results,
+        observed_only_diagnostic=observed_only,original_full_source_contract_pass=False if observed_only else source['source_contract_complete'],
+        envelope_bounds_observed_intervals_only=observed_only,
         original_defaults_not_user_confirmed=True,previous_gates_and_strategy_rules_unchanged=True,
         no_new_predictor_sweep_or_independent_forward_cohort=True,adopted=False,output_sha256=outputs)
-    dest=HERE/'r35_account_risk.json';text=json.dumps(out,indent=2,sort_keys=True,allow_nan=False)+'\n'
+    dest=HERE/('r35_observed_account_risk.json' if observed_only else 'r35_account_risk.json');text=json.dumps(out,indent=2,sort_keys=True,allow_nan=False)+'\n'
     if verify:
         if dest.read_text()!=text:raise ValueError('Account risk audit is not byte-identical')
     else:dest.write_text(text)
@@ -226,4 +231,4 @@ def run(verify=False):
 
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--verify',action='store_true');args=p.parse_args();run(args.verify)
+    p=argparse.ArgumentParser();p.add_argument('--verify',action='store_true');p.add_argument('--observed-only',action='store_true');args=p.parse_args();run(args.verify,args.observed_only)

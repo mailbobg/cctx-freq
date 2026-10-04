@@ -1,0 +1,427 @@
+{
+  "initial_source_audit_sha256": "489a629ecf7f30a58d2ccec2362646d7add6c5eb403e5a16a86a8ca9f09c14ac",
+  "original_price_account_outcomes_not_evaluated": true,
+  "original_strict_contract_failed": true,
+  "source_anomalies": [
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2018-07.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 25.552,
+          "native_close": 6481.69,
+          "native_close_utc": "2018-07-04 00:22:25.551000+00:00",
+          "native_high": 6490.0,
+          "native_low": 6477.67,
+          "native_open": 6485.97,
+          "native_open_utc": "2018-07-04 00:22:00+00:00",
+          "next_native_open_utc": "2018-07-04 08:00:00+00:00",
+          "original_csv_zero_based_row": 4342
+        }
+      ],
+      "span_seconds_counts": {
+        "25.552": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2019-06.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 13.525,
+          "native_close": 7930.85,
+          "native_close_utc": "2019-06-07 21:13:13.524000+00:00",
+          "native_high": 7930.85,
+          "native_low": 7930.85,
+          "native_open": 7930.85,
+          "native_open_utc": "2019-06-07 21:13:00+00:00",
+          "next_native_open_utc": "2019-06-07 22:15:00+00:00",
+          "original_csv_zero_based_row": 9913
+        }
+      ],
+      "span_seconds_counts": {
+        "13.525": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2020-02.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 32.287,
+          "native_close": 10148.93,
+          "native_close_utc": "2020-02-19 11:35:32.286000+00:00",
+          "native_high": 10150.0,
+          "native_low": 10147.51,
+          "native_open": 10150.0,
+          "native_open_utc": "2020-02-19 11:35:00+00:00",
+          "next_native_open_utc": "2020-02-19 17:30:00+00:00",
+          "original_csv_zero_based_row": 26555
+        }
+      ],
+      "span_seconds_counts": {
+        "32.287": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2020-03.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 46.695,
+          "native_close": 8795.06,
+          "native_close_utc": "2020-03-04 09:21:46.694000+00:00",
+          "native_high": 8806.78,
+          "native_low": 8795.06,
+          "native_open": 8805.72,
+          "native_open_utc": "2020-03-04 09:21:00+00:00",
+          "next_native_open_utc": "2020-03-04 11:30:00+00:00",
+          "original_csv_zero_based_row": 4881
+        }
+      ],
+      "span_seconds_counts": {
+        "46.695": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2020-12.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": -1299.478,
+          "native_close": 22646.53,
+          "native_close_utc": "2020-12-21 13:47:20.521000+00:00",
+          "native_high": 22646.53,
+          "native_low": 22646.53,
+          "native_open": 22646.53,
+          "native_open_utc": "2020-12-21 14:09:00+00:00",
+          "next_native_open_utc": "2020-12-21 18:00:00+00:00",
+          "original_csv_zero_based_row": 29649
+        }
+      ],
+      "span_seconds_counts": {
+        "-1299.478": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2021-02.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 54.774,
+          "native_close": 44582.07,
+          "native_close_utc": "2021-02-11 03:40:54.773000+00:00",
+          "native_high": 44582.07,
+          "native_low": 44582.07,
+          "native_open": 44582.07,
+          "native_open_utc": "2021-02-11 03:40:00+00:00",
+          "next_native_open_utc": "2021-02-11 05:00:00+00:00",
+          "original_csv_zero_based_row": 14620
+        }
+      ],
+      "span_seconds_counts": {
+        "54.774": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2021-04.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 58.147,
+          "native_close": 49683.94,
+          "native_close_utc": "2021-04-25 04:00:58.146000+00:00",
+          "native_high": 49705.04,
+          "native_low": 49600.24,
+          "native_open": 49626.76,
+          "native_open_utc": "2021-04-25 04:00:00+00:00",
+          "next_native_open_utc": "2021-04-25 08:45:00+00:00",
+          "original_csv_zero_based_row": 34650
+        }
+      ],
+      "span_seconds_counts": {
+        "58.147": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2021-08.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 59.001,
+          "native_close": 44847.26,
+          "native_close_utc": "2021-08-13 01:59:59+00:00",
+          "native_high": 44847.27,
+          "native_low": 44814.36,
+          "native_open": 44815.87,
+          "native_open_utc": "2021-08-13 01:59:00+00:00",
+          "next_native_open_utc": "2021-08-13 06:30:00+00:00",
+          "original_csv_zero_based_row": 17399
+        }
+      ],
+      "span_seconds_counts": {
+        "59.001": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2021-12.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 54.363,
+          "native_close": 50951.47,
+          "native_close_utc": "2021-12-24 04:59:54.362000+00:00",
+          "native_high": 50951.62,
+          "native_low": 50926.58,
+          "native_open": 50951.62,
+          "native_open_utc": "2021-12-24 04:59:00+00:00",
+          "next_native_open_utc": "2021-12-24 05:00:00+00:00",
+          "original_csv_zero_based_row": 33419
+        }
+      ],
+      "span_seconds_counts": {
+        "54.363": 1
+      }
+    },
+    {
+      "asset": "BTC",
+      "filename": "BTCUSDT-1m-2023-03.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 41.647,
+          "native_close": 28080.0,
+          "native_close_utc": "2023-03-24 12:39:41.646000+00:00",
+          "native_high": 28080.0,
+          "native_low": 28080.0,
+          "native_open": 28080.0,
+          "native_open_utc": "2023-03-24 12:39:00+00:00",
+          "next_native_open_utc": "2023-03-24 14:00:00+00:00",
+          "original_csv_zero_based_row": 33879
+        }
+      ],
+      "span_seconds_counts": {
+        "41.647": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2018-07.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 25.563,
+          "native_close": 460.63,
+          "native_close_utc": "2018-07-04 00:22:25.562000+00:00",
+          "native_high": 460.83,
+          "native_low": 460.37,
+          "native_open": 460.53,
+          "native_open_utc": "2018-07-04 00:22:00+00:00",
+          "next_native_open_utc": "2018-07-04 08:00:00+00:00",
+          "original_csv_zero_based_row": 4342
+        }
+      ],
+      "span_seconds_counts": {
+        "25.563": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2019-06.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 13.541,
+          "native_close": 247.7,
+          "native_close_utc": "2019-06-07 21:13:13.540000+00:00",
+          "native_high": 247.7,
+          "native_low": 247.7,
+          "native_open": 247.7,
+          "native_open_utc": "2019-06-07 21:13:00+00:00",
+          "next_native_open_utc": "2019-06-07 22:15:00+00:00",
+          "original_csv_zero_based_row": 9913
+        }
+      ],
+      "span_seconds_counts": {
+        "13.541": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2020-02.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 32.299,
+          "native_close": 281.5,
+          "native_close_utc": "2020-02-19 11:35:32.298000+00:00",
+          "native_high": 281.5,
+          "native_low": 281.18,
+          "native_open": 281.35,
+          "native_open_utc": "2020-02-19 11:35:00+00:00",
+          "next_native_open_utc": "2020-02-19 17:30:00+00:00",
+          "original_csv_zero_based_row": 26555
+        }
+      ],
+      "span_seconds_counts": {
+        "32.299": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2020-03.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 46.701,
+          "native_close": 225.46,
+          "native_close_utc": "2020-03-04 09:21:46.700000+00:00",
+          "native_high": 225.81,
+          "native_low": 225.46,
+          "native_open": 225.81,
+          "native_open_utc": "2020-03-04 09:21:00+00:00",
+          "next_native_open_utc": "2020-03-04 11:30:00+00:00",
+          "original_csv_zero_based_row": 4881
+        }
+      ],
+      "span_seconds_counts": {
+        "46.701": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2020-12.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": -1239.471,
+          "native_close": 608.31,
+          "native_close_utc": "2020-12-21 13:47:20.528000+00:00",
+          "native_high": 608.31,
+          "native_low": 608.31,
+          "native_open": 608.31,
+          "native_open_utc": "2020-12-21 14:08:00+00:00",
+          "next_native_open_utc": "2020-12-21 18:00:00+00:00",
+          "original_csv_zero_based_row": 29648
+        }
+      ],
+      "span_seconds_counts": {
+        "-1239.471": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2021-02.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 55.83,
+          "native_close": 1721.86,
+          "native_close_utc": "2021-02-11 03:40:55.829000+00:00",
+          "native_high": 1721.86,
+          "native_low": 1721.86,
+          "native_open": 1721.86,
+          "native_open_utc": "2021-02-11 03:40:00+00:00",
+          "next_native_open_utc": "2021-02-11 05:00:00+00:00",
+          "original_csv_zero_based_row": 14620
+        }
+      ],
+      "span_seconds_counts": {
+        "55.83": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2021-04.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 59.272,
+          "native_close": 2193.43,
+          "native_close_utc": "2021-04-25 04:00:59.271000+00:00",
+          "native_high": 2193.45,
+          "native_low": 2184.02,
+          "native_open": 2186.89,
+          "native_open_utc": "2021-04-25 04:00:00+00:00",
+          "next_native_open_utc": "2021-04-25 08:45:00+00:00",
+          "original_csv_zero_based_row": 34650
+        }
+      ],
+      "span_seconds_counts": {
+        "59.272": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2021-08.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 59.001,
+          "native_close": 3088.22,
+          "native_close_utc": "2021-08-13 01:59:59+00:00",
+          "native_high": 3088.22,
+          "native_low": 3086.28,
+          "native_open": 3087.56,
+          "native_open_utc": "2021-08-13 01:59:00+00:00",
+          "next_native_open_utc": "2021-08-13 06:30:00+00:00",
+          "original_csv_zero_based_row": 17399
+        }
+      ],
+      "span_seconds_counts": {
+        "59.001": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2021-12.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 56.159,
+          "native_close": 4090.37,
+          "native_close_utc": "2021-12-24 04:59:56.158000+00:00",
+          "native_high": 4092.48,
+          "native_low": 4088.76,
+          "native_open": 4091.21,
+          "native_open_utc": "2021-12-24 04:59:00+00:00",
+          "next_native_open_utc": "2021-12-24 05:00:00+00:00",
+          "original_csv_zero_based_row": 33419
+        }
+      ],
+      "span_seconds_counts": {
+        "56.159": 1
+      }
+    },
+    {
+      "asset": "ETH",
+      "filename": "ETHUSDT-1m-2023-03.zip",
+      "nonstandard_rows": 1,
+      "samples": [
+        {
+          "actual_span_seconds": 43.062,
+          "native_close": 1789.52,
+          "native_close_utc": "2023-03-24 12:39:43.061000+00:00",
+          "native_high": 1789.52,
+          "native_low": 1789.52,
+          "native_open": 1789.52,
+          "native_open_utc": "2023-03-24 12:39:00+00:00",
+          "next_native_open_utc": "2023-03-24 14:00:00+00:00",
+          "original_csv_zero_based_row": 33879
+        }
+      ],
+      "span_seconds_counts": {
+        "43.062": 1
+      }
+    }
+  ]
+}

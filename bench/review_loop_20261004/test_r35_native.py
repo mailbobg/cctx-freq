@@ -64,3 +64,18 @@ def test_checksum_and_member_literal_identity():
     assert checked_csv(body,(sha+' BTCUSDT-1m-2018-04.zip').encode(),'BTCUSDT-1m-2018-04.zip')==b'native'
     with pytest.raises(ValueError):checked_csv(body,('0'*64+' BTCUSDT-1m-2018-04.zip').encode(),'BTCUSDT-1m-2018-04.zip')
     with pytest.raises(ValueError):checked_csv(body,(sha+' ETHUSDT-1m-2018-04.zip').encode(),'BTCUSDT-1m-2018-04.zip')
+
+
+def test_observed_diagnostic_keeps_source_failure_and_never_repairs_corrupt_bar():
+    from r35_observed import observed_rows
+    x=native();x.loc[1,6]=x.loc[1,0]-1239472
+    body=x.to_csv(header=False,index=False).encode()
+    frame,info=observed_rows(body,pd.Timestamp('2018-04-01',tz='UTC'),pd.Timestamp('2018-04-01 00:03',tz='UTC'))
+    assert len(frame)==2 and info['missing_minutes']==1
+    assert info['original_strict_contract_failed'] is True
+    assert len(info['excluded_nonstandard_span_rows'])==1
+    assert info['excluded_nonstandard_span_rows'][0]['original_csv_zero_based_row']==1
+    with pytest.raises(ValueError,match='span'):parse(x)
+    x.loc[0,2]=8
+    with pytest.raises(ValueError,match='OHLC'):observed_rows(x.to_csv(header=False,index=False).encode(),
+        pd.Timestamp('2018-04-01',tz='UTC'),pd.Timestamp('2018-04-01 00:03',tz='UTC'))
