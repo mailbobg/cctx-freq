@@ -1,0 +1,1818 @@
+{
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip": {
+    "path": "raw/1090fe4cd7146228bcc1a1c766e1f2493383b75138cd7c74f0c81924a01ac258",
+    "sha256": "bf673f3d10804a951e8bac56dd2473486f113025971d43ebe5258ec40f9bfeb3",
+    "bytes": 38890,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.008626+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip": {
+    "path": "raw/e2f52699cc0ea7799bf515bc2355fd625933772cee0a9b5a6b4e49dd584e6d59",
+    "sha256": "2fb358d1f7fc162236cadb344f21dca8b270e5ef6e88964c9f49a9c3f28b714c",
+    "bytes": 34943,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.008757+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip": {
+    "path": "raw/4632058bc5c2eb1348d19e5c91a831c9d81a32e39c68f418c409302a2a07ff1a",
+    "sha256": "2f3d1a6d9292f13b1d6cf86716cbda5b3f6119a310daed1dde5ee3d0d71e2fab",
+    "bytes": 38917,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.050468+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip": {
+    "path": "raw/2b32546c9ccf1629f72ad2e0e3a27f12d219bce746c678c16d04d17ed71ff7fa",
+    "sha256": "8f58815f558f51def4455ad31e5afe0b43548e54c8905541bee72b5058504a6a",
+    "bytes": 33940,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.050705+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/c1bde54ded17bbebbad311c36dc0c361d25352e770cefbe117182cb983632fdc",
+    "sha256": "ee1d42fdcdb8dea97af0f4e33a583691a89b3e1c8dd6085724e84ac7607dce8d",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.127492+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/836ae9cbfd602faa44e17e90a846dabfce6445bf4db36d364b69f051d12d6e1c",
+    "sha256": "a2418d5aead464940c65e384b7364e7c288753d7b99fe54c0f2814a07475e716",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.161507+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/ea187d9a710fe55e768ac7edd3e2574e23c4bb5580cfd3170c0b629561c31b92",
+    "sha256": "684e3bc514334fd6ab4e011358ebbae4c50f99e45a759285e4ef411b7b791a0a",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.173772+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/35fa186c9e70a2b777571a8faedd2ed3bc8fd0b7becd527e5606661537561578",
+    "sha256": "8812172a0165e13fd5cf4571b3833a302e8a1db95322bd028c0190b957857c56",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.194200+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip": {
+    "path": "raw/70fa97973a8bfab409909849d3b9cdb1e43467e73ced43bb0027e9d1ff85ef94",
+    "sha256": "655ff5ac0fc570956756944c7afef4895c9bd149342f1e437de97292cbd1fe22",
+    "bytes": 36374,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.368975+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip": {
+    "path": "raw/bf21dc9e39f2c60ccac4742b5ca04d044a8bc0794afbe9839be952bb5647ceee",
+    "sha256": "bde9a1b0824b212ef6cea97065543fda0fc57c33479709d34e5db995fc79af01",
+    "bytes": 36577,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.384804+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip": {
+    "path": "raw/b398a2748caf2a2f81898f14548ae1d85d184320564631f79e0ae050f2ca53ea",
+    "sha256": "77159b42f03dfbe6cd42a05d3491081d34a37293f97b0972b3391757d3c3dcbc",
+    "bytes": 34572,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.407824+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip": {
+    "path": "raw/52ca761dc0b4f64b765deefac44e3132d4842a79c75b1694a80f384cfdd6003f",
+    "sha256": "f2a90d8c6ed9f666b95e85e048ac4f6ba424c7fe143a982f671ad0b7f0c8cbdc",
+    "bytes": 36429,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.408967+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/f86215c4e5080a440deedf7dbed578c24108dcde1e323b3c415dbf9d72bce41d",
+    "sha256": "ea04db4f96b37f6dcbaa5f83d3f153096fd75ddfe8f881b20dd2eabaec411ef1",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.500990+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/4f1c3f3552557155118bd6a69e32be39734cb1b28c5509aaa87686a675a0d202",
+    "sha256": "d9201ea4f664efe6ff3999d819589def0b690510d9e6cc1c23c9a2fe4711a16c",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.545086+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/3ba4e88ce07d991fe7887a51a0c11141143ec7f9eb3e14a31e54a2df26a4b39c",
+    "sha256": "4bee37871236773732f8969338ee92d90b0afc413dfca66943eeca1427fd03f7",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.587244+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/d2a65ad8ea59a65fc8ccb7256c0c4073d19c50013e9fabc83a3fe416380be0bd",
+    "sha256": "0a7a7e6b91be8c3cf18d61f73e9ec50559b2695b97af276c54d19c071117afe1",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.596233+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip": {
+    "path": "raw/d245337efc6bca21e8624d397cf95dc38924a421d270999e894f130d5b2b1617",
+    "sha256": "24af0ecf9db1953e8c83e94823f4aae368ff70ba54106ef121c204cb046f9e41",
+    "bytes": 39568,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.734033+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip": {
+    "path": "raw/cac27416ffed2458801f7feb420c053b5f4ec5c7a0d8bfc6dba485916c5e6967",
+    "sha256": "8138642b757ddf5a42207130277be4569afb4c581a0a1817be9f5f35a4415498",
+    "bytes": 39301,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.866288+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip": {
+    "path": "raw/9c8b805e6929b822508b81b178cea7c27762686b938a1dbc59ad7c2fd07cbbd2",
+    "sha256": "fd194ff79e56690fa5bb463b6c280f5c521fb39087c6f4d5fa9c683eb92ca0d8",
+    "bytes": 33893,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.869479+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip": {
+    "path": "raw/e4258546db785285715a04701c953f6f1eeafbeb8e0b5a7179b4b2ab05be6419",
+    "sha256": "4491e38698b5d787da8616136e0c2090e2b6c5efd3e937657245410274e9544c",
+    "bytes": 32404,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.889120+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/3cbb308bb655de358ef4334d735f5d609767d6377a71149c426ce639c46f95b6",
+    "sha256": "9b0154d853503b46bd7e34379b04b412f2817496396bc6b0eab0cb3c6d0f0537",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.909336+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/33dc26880cadbb8e9ca0a2ecc7459127260261bd6d8309e539e755a7c9e4c381",
+    "sha256": "31f1d3b79023c1e0321086346bfd7583fa3c68de8a1890733bc54e289ed3594e",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:51.997991+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/5414c453c71ede229c23a34b47b28d12a60420eff4f0136c1c45b2d6c0fe7621",
+    "sha256": "4e52c38dca1995e50692d49eaf1fd2751cd0649da711cb7fae6973a3e18498b8",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.046092+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/7efaa8daf8bf3d5318611613bf981497f940898aa89dd8645ea42e57878d5f0b",
+    "sha256": "db4ca96167334ed86e2521add4b2ead40acbd26532937a81fa80f5c739694cda",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.066802+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip": {
+    "path": "raw/d0542cad123de2ddd1e01305496986f35aad8ac766f0cc0a4bce8e7be958f9d9",
+    "sha256": "290b594fa46ef95ab9c1486e2640ce2d1894eecd4d71b79bcd30d6632ca75b9f",
+    "bytes": 38134,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.146710+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip": {
+    "path": "raw/32dac5dfa2298a6cfa4383510c70167d38610830151dbb5e510a7dfe5df711b5",
+    "sha256": "b24ea98ce4ffebb0bc831acd1de8558f49c371ff4774fa31667daa11ffc0dd6c",
+    "bytes": 37162,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.199398+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip": {
+    "path": "raw/6508b5ff3834571b0dea978ba1f4ce39d49d9b1f2cc4435d2c4fe3d5c7b5ed3c",
+    "sha256": "4bf3ca3574e0075c1b79f5b22c4253e26f6260f3621943205e3a8016c4c12318",
+    "bytes": 37804,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.229069+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip": {
+    "path": "raw/118e76cd880ca6e3aa9ecf2b9fa9fc2ea0f3ee2ccf272674038ce1055d52a4b0",
+    "sha256": "b2cb09642dfc521ca15e203e2c6d2d96e67c81467005fa9d43aa5ea74f316918",
+    "bytes": 35732,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.301793+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/3d8be4ccd4c1fabb87a8181b1fb89ca3a9c2a116489ba5d347d7a264c067b4a8",
+    "sha256": "994cddf8d5a955d83abcfd9725c0f0aeae9c8264f27479b05d119e671ae36a89",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.392131+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/8e74a1b2a7c533f4f8b6a0e54d98f5b9e16c41c67f14a168357738786d0acb23",
+    "sha256": "66a292e1760b3b668213fadc3bd82dc34d805c055cf88c71ae37b0a2f45d29df",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.392338+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/0c503726bae40e3c402c8efd46ce8e92e953e6e09ddbdf95203dda5558ba3bef",
+    "sha256": "967589cb3003eb55bfa9e8ec5e93fa5703807d4b25aa20853ef62619ee5b7b48",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.392506+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/419ffeca2aad854244b48634a21207dde3f13d12149c2fbff76c90533c420d65",
+    "sha256": "58ee21afb69f758fc9cded82fcdb7ba864413bd21e05a80273ea9c8d4c8114d6",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.576355+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip": {
+    "path": "raw/041843b456785a4fa1f0b9af8c5d03110e00c2b58b5adc6fb35a8be2b7bfaf83",
+    "sha256": "b072f3147b3e390c81dcbf35830a12ff7d53a73236aa44a9eea78199502529cb",
+    "bytes": 38950,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.625248+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip": {
+    "path": "raw/889fa87d841d8b2520c5e464712121adfde71ad86235a8090fd3927dbad0b5da",
+    "sha256": "ab98165d2c785e871a4614bcb853edbd49b0701a2b3fed1f9d0bf602d128a4fc",
+    "bytes": 35891,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.638925+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip": {
+    "path": "raw/d145ed40e21bb3f2a95f39156809f29ee6fb92b2ab348a710156f7fb8ff030e1",
+    "sha256": "330397f0cfd0dc62253ce6cf61ec142714fe65592a9f8447e4b88ca428bb4c9c",
+    "bytes": 39614,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.640785+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/5237fbc66aef84ce29658347baa314d5fcfd5c26cf7a49db04f0deffec101270",
+    "sha256": "4e49e73e4a69a332ca001b47dc9b3a0a68180d3d75a29e8e683e38f89943ae93",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.808898+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT/1h/BTCUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/5464adb6900e79947eb90c2c3112044b59be88a1a81b25020c8740479abe24be",
+    "sha256": "aac32ec7fc7769968a4e96033edde51fcd3ca0cb74d4e3ec60f876ea834fc27a",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.809144+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ETHUSDT/1h/ETHUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/fc124b40cfb2269cf4b8b7fe82c6f8b8d80ea47e1efb256b858fbecccbd8195a",
+    "sha256": "ed01e7aa8707aaa10f5c87aeb3832fafc1f5a19492fce8948b5099ce3c36d472",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.827186+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip": {
+    "path": "raw/b77e7cef03295f75d011c0f4d2cf7a72bda5da57f27a2db7e5ef10cf3012e14a",
+    "sha256": "60ac7130e31cd5dee55c5107adbcf52b4b38874e9757a2c5599c6c4ae262bcf9",
+    "bytes": 34007,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:52.827735+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/6625291247102767ca4e5a219921e1f9b72b38d9c128f553d05431d6aa160640",
+    "sha256": "896e7a3c159971401c0bb7e05a9f0ed905c091d77accce3674cdc6918c23c0d5",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.092184+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip": {
+    "path": "raw/4e8459aa4c490bb040447fb9e706f1fa68df3eb2a5b0320cba61c0b21fb5b38f",
+    "sha256": "af4ab37dbb738e3ee0c168fe9b55366111e4ad112a905f4740a6efbd810e752d",
+    "bytes": 38845,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.119036+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/95012587c8cb5f8a00f24b6ae8f612c6f476ce6fc899729dc4ac501fca8e3eb6",
+    "sha256": "57113494f5be832638cc4425d09a9218172b70db1978e1fe367d8273f5ec8ad0",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.300099+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip": {
+    "path": "raw/8f22ea8fae0edd56828ea75568b89c3d761719654127a71026ef8d89ca1efc12",
+    "sha256": "31f6d94510b7db48db22109cdcfed960112bda90a8ff5c670ae528cbf3b05db4",
+    "bytes": 37436,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.318712+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip": {
+    "path": "raw/83a0ef670df22679f0c71c1c3fbaff93c7de034087916e6623b521f4ffc57e6c",
+    "sha256": "210cce38bb71bb61e2cd7d79843bcb5dd85257a90933d3308f799302bf1f7202",
+    "bytes": 34448,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.443110+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip": {
+    "path": "raw/b30ede789927f9379b604e08783be43860513f10ba2ec1b8a6bfbf411e07c4e7",
+    "sha256": "486035abf6083f90e53e0c49e0fa829d0380d174a65ea6e8bb9066f76b139554",
+    "bytes": 33769,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.443339+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/69ec717edbee28302c97312cb0ab1ba2b4bf28930ffe94cee11638611cc1df34",
+    "sha256": "6a3af2e834b339b8472b025e7e0977a6fd581d3e9cc22d1d8f977c4cf0c31f05",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.495091+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip": {
+    "path": "raw/1bd163087a9143109f8ada379646bb1992f005170338711d76918172b138bccb",
+    "sha256": "96c7b5324c80818622477b6d3fa71b82f62ae2266ec42f763433a11eef7494bb",
+    "bytes": 33524,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.525247+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/8d5a76b0448571653930afcd8b3fcac49a246abb31737ced31edc2b2e9377901",
+    "sha256": "b1184e780db9c03eb4df58c695d49ae50bdec3667540343ccb28647c94eba67a",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.570897+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/5f18385974adb3079b3c736ea9d70f90384713a0a9aa82f785d4f5b5b977cc95",
+    "sha256": "2a214a35148c2c28989ea52ef1375140554e37139c9aab9c45e03d69bc3b59ea",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.583233+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/c65dc94b955dd2cb14fb559ae98db882680440ee0edc94df7d775347e5ee070e",
+    "sha256": "72dfb715079a5f4ce655e93e1932e9da5dcc7f8c66ede452ddabcf77954e9edb",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.704237+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip": {
+    "path": "raw/31e15c6f17ad8d95f93b210998ec398b8fda37ead91a15d9bdc5ea2795f32181",
+    "sha256": "ff700c7afb987faa6d59ac6c2c19e843ea07d957c3fb6a51c41f3938441d550d",
+    "bytes": 36113,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.728320+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip": {
+    "path": "raw/93d44ac2f3834601154ae33a152f2b7c6032505074b77bc5d3b4065abf77896c",
+    "sha256": "e06554367764c662b9690e28359193fb9c8b9d5d44cd09f4b23d6d022fe9552a",
+    "bytes": 35215,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.737309+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip": {
+    "path": "raw/8e3c2266be39132a6c2fab936a3c8935bf1a45ea29e565f271f5565d952db589",
+    "sha256": "29b7a4a3b9360f7b3be131af6b1fd619f18e7344eea99b5c964e955e667027a7",
+    "bytes": 34561,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.740291+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip": {
+    "path": "raw/406517edbb7007b74334873237d28ef341a4c0c8307b49a1641c5fa4ee4b7fc6",
+    "sha256": "eb8a8dc7685761609f19b403db0eb6655d757f720f71da9b8c1ab638ddfc85b9",
+    "bytes": 34837,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.836980+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/fa900428c7a36dea3a6e40d440f7b27f65aa4ba3fc8b4d087e6372118d950f76",
+    "sha256": "6efd181013ec428dd286e60c302ec35d28f83b728e5592e09aa94cdcdd82c2ff",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.875312+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/a53674b49376cca2a07f70e5427eae49fb63da8d4a3a3efa9df67d28a8cfce1c",
+    "sha256": "d865c33a83fd1d3b991b86ece4005cac60f1076f5f30465a14b1c78b81bf64e3",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.875578+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/51932b0bee9428177e9a0267003bdfe8be6798fc65d1dc8a8ad52d19bfb1fd05",
+    "sha256": "7558cb7e3e91a3e6bbaa33e8977b17f2be80af3ebf636db1c8f3b98d7c798b11",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:53.964970+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/a2f91950b13ea66f71ce0f93c3d4070e316302fb0c746b745763287cc9be0c94",
+    "sha256": "0c44f9412569eb674a73231056edde54a5dcf200ed85e2664c70e1fb372854cd",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.010836+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip": {
+    "path": "raw/3c961b90164157f2cbf57172753b1959b37e82e97534a0d0f0a77e3b04ce7520",
+    "sha256": "44fc7a7e7ce73e4813e3b82acba2ef6bb0cdc3ba274284f07dd22fd18165cba2",
+    "bytes": 33978,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.111993+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip": {
+    "path": "raw/73ffbd5dac92cc46e2b8d36b92b23ec9b829007a7b68604dfdb9483b54f021c1",
+    "sha256": "c79637210a9b67dcd198cdff3d75c8f275bbb0be13ff0a7703378e16fe051d52",
+    "bytes": 32997,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.112296+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip": {
+    "path": "raw/2d2f9cce992da42f4b4181a3dd92e7efcf48a8acad6bac4e1567ee23688750d2",
+    "sha256": "7d87e385b8befd2c3fd6090475904fb6d28ec65d1afb1f1892570178bfba54ac",
+    "bytes": 32441,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.263698+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/53d8e81bf924e723885b368cc3015923a7107a091dba805052c207a78d66a26b",
+    "sha256": "8b3c755e1995a67fb6d7e08f6a146cb565fff7c1ec21cd6195ec76555155a289",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.263990+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/1b0e16bae14cd784a028f959195a0e56ee5830e3c764f5ed58d4d86be36801cf",
+    "sha256": "1aecde850071b84a2db9c59c6182eba7160b9cb653a23bd8544abcadcf3f054c",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.264114+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip": {
+    "path": "raw/f34dd5f3dd53e79208a23f01d956188fe6f5d06b0657121eadf60a72772c44ad",
+    "sha256": "41a0d21b18e6e68fb19ecbcd7a59247b01549f7c6ec87814d8bcea4a6695342a",
+    "bytes": 35496,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.573021+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/c570569df7d9943c286800407e68efab43084d749a1f7dab96ad83b7a26c94ea",
+    "sha256": "3b4d652d592a7dc43a95a5281889d4ad66e274b3d1acdb5a0891c1b396310430",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.676009+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/3d28b5faf2eda1b007bc60e8f288480b36725463ca03ec66b5c5dafad5b5986f",
+    "sha256": "1f30548c40704c27042ad828ce4190daab27ebf5e2ef94b9a58de009a3a565f6",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.700331+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip": {
+    "path": "raw/97d254007116481397f0560cf639175fdf3c7d08a45c63be58e61a7902ed2e0d",
+    "sha256": "1da0f6d2e9d9b0b2250a6b98e69754c75cf97dd723142abda9fe130f06f2186c",
+    "bytes": 36813,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.717613+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip": {
+    "path": "raw/4ab45b4d1b5417c98155693770a2c10d82837723c39f81c9569798eddc7cfad0",
+    "sha256": "06e124d8cdeda60dd327ad23d9f61470f874e14e6fe495cb1739b50961af48dc",
+    "bytes": 36669,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.718633+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/2308bf68a2df654497598c58c66c97894814cfd3615fdb7eabe4f84617912042",
+    "sha256": "cb08cd826a4845586c5374417c7822d95ea5bc5ac462fc1710224a9257a215c0",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.853223+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/c0338a3a7f24fdbad429135a50115a804593470d5cfddb8081f507813fe8e507",
+    "sha256": "2aa17e207cdb772eb88a022b7e67903850dbf2499f1a6d00e004812f4b02a408",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.853447+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip": {
+    "path": "raw/bea1a6f48e2ee7a774a8bbb16c1a4ca26276a4149e66a24042047ad09537791d",
+    "sha256": "e78fe79bde16446bf807f238a23370e152350918a54245ccac693d7b60954f30",
+    "bytes": 35950,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:54.925206+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip": {
+    "path": "raw/cb606952440ef27d489cb5c139f852da87757999cbbf37e985b8c65d9160f6cd",
+    "sha256": "b679c264fc7d70ccf70d9fb25481bfed485a01c2cd439b8b698933b9398119c1",
+    "bytes": 35540,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.011635+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip": {
+    "path": "raw/eb1da46f20277be52b36067d3cc8c1dc6a770a69c5b65c5b186b96115168db1b",
+    "sha256": "623fae707bcafc75e01281565626f1ea0fac03d010d630dad7f67fc76ff31e72",
+    "bytes": 34882,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.013875+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip": {
+    "path": "raw/8db596b77e849dc74be1a9078189a070f490b161dcc74481809b089b39431bdd",
+    "sha256": "dc262d865b848979709110575d46a9fa43b1d10ae9bf404d0127b3b1abf233a0",
+    "bytes": 34981,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.019082+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/7913c89f2a0a44eccc6dfe26ef40fdd0416fe7d3d812dd547fe7a2af1e8ab703",
+    "sha256": "5efcaaed5d4d998c1bd1b167379e6810c5fa9b0ab20b73d53a059a6fa22d1ce3",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.127137+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/2c7f4fa33f227d1272ae25ef1a94e71f8cef3d152f1ebfaee04657458a576bea",
+    "sha256": "249f053ef5ef55ef95897790ef6520c7e728cd3cf53464eeb0ac3ac093d88890",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.148505+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/b0b0eacb33a31aaba4bfe544e561915f58eefb36526034dfd53a671eea6c0934",
+    "sha256": "8db3e369e7c7399b0d36914c0396829f1ba99d86dbe34d4795ecff4554e13aa8",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.148855+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/ed2c0db142f7f7511f4fe495a5bcdaaa1bc241963d0b825a5ab69f19b89025ff",
+    "sha256": "3cfb66b72c135e4d3b0c7f568012a58d658930335e9eca82b82f5dc1a8467d00",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.188102+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip": {
+    "path": "raw/6ba1758c2b60ea6fb3fa2b96ec93a5c865bae8e28e1fc396c72f45e42760ff55",
+    "sha256": "170a2625ba3f9dda464064f8541cf5d6fc6ff89b7c4c5f6b6cb1d851f1bfff4b",
+    "bytes": 33513,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.305880+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip": {
+    "path": "raw/4af702ace849afa04058c158c71951ae9f68eb55d0719f902b04c474d7c4500b",
+    "sha256": "9ffb3beebc21b20ac140d985050a49fa1e11b475aa9dff3f9b75e55a9b832165",
+    "bytes": 38661,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.321372+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip": {
+    "path": "raw/42d4f6e4d29e6d55af62f1254b8de773df76005c9d0c5e3c751014e9eaabb524",
+    "sha256": "ac18b5553b66a5059471d164ea3256cf0d2510c750a8db96846ebe541bd6b24c",
+    "bytes": 37794,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.323728+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip": {
+    "path": "raw/97fc0aba20b8b1bfd950e96c5910c8dcb3547be13751f59797ed03042a9f2b2b",
+    "sha256": "02fdeb42d8293094fab995cca7b33ef6fb18714d173e6da9e894119c734557e9",
+    "bytes": 34176,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.403593+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/f48fe873ad33fc09ca2a39fe10eb8a05b4a527384b607d52959a32a51bf7d192",
+    "sha256": "2804d739dc08f5d82a4426fc99e83fb77f34a9762f32fde026ff6ce48f69aa5c",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.436752+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/4d7d967f6f6a920bacd0c90a0d9adfcafdc8be4aa0154e891fedc15bd7c2fc6d",
+    "sha256": "682fb7dd4f16931e9b37a2ed725ef955a9a1cd26321bf85566157632660c6d63",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.445392+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/2e78b3fbff0f99f7a9526fabb3ebfa22b9c03f25f534d4c1b6b8c0e1ebeb963f",
+    "sha256": "38adadf8f4374a852b2e56890f356a923b77007787b491f05ec3585e0298c04d",
+    "bytes": 88,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.535340+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/20e5e49698cc5f177840e4da4b0637bc716368866f6e1bf9d42aebc2b94eca19",
+    "sha256": "54554c0ebca2a9af33924088ba4a53ce50a3556036739f5e7edd1c5cbab593af",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.535648+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip": {
+    "path": "raw/2544ba735b17fc98f4aac94167b6b34f698c58b54b873e53e211408477ddf744",
+    "sha256": "bfdc66685849cd63f220bef0c941f7621c4110a3c433066542197d0d108a4fab",
+    "bytes": 33363,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.703049+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip": {
+    "path": "raw/1178dd41822b94af921668855b26974ae0dacbd49f1bbfb934cd497c908472f2",
+    "sha256": "b25a9f502f08ca5299b97f7b67dd4a826b77fd89c13a68885cbdb7c5ae037ab5",
+    "bytes": 32455,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.715298+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip": {
+    "path": "raw/a732e25ec6d4578a9bf7daf4ecfd6bb188052d658cb018dacbd630028955731a",
+    "sha256": "a5a9d991a50eeee0e308e7ff501b1147503c910ffa8d355b03bb64edea504b81",
+    "bytes": 38975,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.727185+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip": {
+    "path": "raw/a04ef445fd64bb39156a9ffca50ac31a530f7fdac8b9878ddc3142ba23d1da6c",
+    "sha256": "bdb5c900670da54eac3653f7be69529dbfeb13574aa6072049ff1c419d7f5567",
+    "bytes": 33906,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.760861+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/d75676a11056c6632ecc585063182b371dbb54abeec7c5336b97672b7180d4ed",
+    "sha256": "909d35cef8fe349cf142cae95d036706da704c7b6b1bec1b9a6a4f3ce47526bb",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.846592+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/e11dfc769e1fb9728f897ccff6f51fa86690dd0815f73e4354a45cd7a5067f7b",
+    "sha256": "e34d37d37c8ee958e1a1d1fcafc2665facab3bfac6e9ad3e721d8ff1d1cd1231",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.847308+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/c0163329c33ad34a621cc15cfcd1994b79e1c5de19a7fbe801e12c91039d2eda",
+    "sha256": "b27deaf97718b8e5f0117fb1c13eba81fb8f220d6ffe68bdd4b3f9f1d84dd4db",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.863434+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/ce765409cc19434f240d00977e8171970298c6c59da882cf6e9dd33eac781e0e",
+    "sha256": "bdb968f1ce375fea1e422d7eb227cf339b0a9df737afaae87f28c87d06e3d538",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:55.942476+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip": {
+    "path": "raw/b74ecc6b7f4526ea0e600a36a37b8b57067278b2bf5d05311975da4c12f6937f",
+    "sha256": "d71ac8948df0b3d778b0b0738d6c4b91ac6b778fb20e0258214c1c23ea1b228b",
+    "bytes": 33842,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.061234+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip": {
+    "path": "raw/7c68ffa18ff595c38e4238052c4b256c0bad9f3a3dfee5c0733f123ffc7c6125",
+    "sha256": "c988b4cb56850cdf3f053ba96b58b7eee279e63032e9bce1c452910d0f17b1e0",
+    "bytes": 20978,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.071857+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip": {
+    "path": "raw/3cb75a2eb393500e47aa12939eff1bb82d5f5f48e7b43d585ff4de774f58a28c",
+    "sha256": "3687f21e9cf02f4483e39aa10d4d4bc712730460d766e0f95d9776d9e5912a91",
+    "bytes": 36904,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.160473+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/203bf5f89dec38cc6c65ecfafb898cc8c46b2905e0547108f87b2ca0713f6b91",
+    "sha256": "043735b2ae7a2bc243ae6d005a97aeca8c9775c02b077e67cae0e1669bf7e72c",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.191698+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/26da53732a8f689534d6eff4313aa4b0778ba3ca1832bb539a2c234fc9a2bad2",
+    "sha256": "5611897e2a8b5597a33a2edb4e4dd89a89d740dca6bbce5dee3495429fcc46ae",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.256135+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip": {
+    "path": "raw/e25f9f5780f35879316c95f6b3a786631e4e8c96dae6e1586ef2831b25b9ee5d",
+    "sha256": "2d8e259334148bc3d3b84987b06fcb807f50f62c131d9893145ace60168b3ef4",
+    "bytes": 34680,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.264259+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/91b18c003d1251787c4ca5ede9a67e1e96000042121e0107b017efdef3ff8c31",
+    "sha256": "f953a457e148075adc8d0dccb42422541a87ae37fe65da7ac8fa97737e4135c0",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.292630+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip": {
+    "path": "raw/dd469bbe5f6e250ac9975f65bf178999612c38f29723bad943e795a789220196",
+    "sha256": "3d6b6ae941d4ee02efda78c4ad0fa360a13d5df316528f7e99f28ced2090bb68",
+    "bytes": 31872,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.351918+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/b808575cc351c9e4cca46d1b602c9b5a507d9def913a8218a1e085a91a5d5aa1",
+    "sha256": "34620bf016764b126c97d0859f5c591222c3acdc529b968e88ee5087316a9be2",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.389930+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/908bee54a420f3eb56a8aed22becf2195d1e1670f81dac6b0c017e8a684408dd",
+    "sha256": "3c1bb74843d58f54cd40df79489ffd5d68da797e01c7ae5dbd324b1ca5eaeae2",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.484347+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip": {
+    "path": "raw/03e3f1483a4d913954124e10de64ef1a89f582d994fe3b2987951aada4f7136c",
+    "sha256": "514fc731748481f1835d417231c71ef7282e01d1e75393da75923b1ffe9d4cd4",
+    "bytes": 18480,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.492360+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip": {
+    "path": "raw/2698f21ff00e15a0746b9899127947cd88ff71bc2dbed460a72c0816e26e2453",
+    "sha256": "de8180d361a49ce9b2906a106823f61f199638dbaa0f02ca1ed1c3916ea2c02b",
+    "bytes": 39122,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.601388+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip": {
+    "path": "raw/95677fa7398f3cd3b964ade8d0e959487ce456fe5e09870a09abdbff622b5218",
+    "sha256": "22d29ab791b77e2a3c65843900bbeb9ef3e109c882ea2db92924f14180acf824",
+    "bytes": 32509,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.608516+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/5c783d2ab94574f02dda0abdbdefd641b4eb4f56fbb7a40ace888d5c43364018",
+    "sha256": "9aecccaf4d433d4217de43ce0e9e263868cd5f3d89438bc0ecb5a0c4bcd08a42",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.721834+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/59c200456f1233de6583cca87b6c13417970a1fe198b678586c8f67f4b23863e",
+    "sha256": "6c8b591eadad69534c937cb78c9fdb32769a24d0769252edbb0d13b0d1890d57",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.741736+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip": {
+    "path": "raw/66b2efc4ea83e2de8c4ea0f0875d5f8ad72e7faa9012f900701816db33f9344e",
+    "sha256": "183287d015b5ba3b6577c347d7cc3bf9a7ee1f39015b67577a4177a0782a555f",
+    "bytes": 34388,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.742403+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/d59af61a52fc8f69bedaf95d8479ccdac3ab3dd10a73671f14a05bd47750ad6a",
+    "sha256": "5ab800323058f96c788a8b5ccd574d65ce28a25e7ab359cd2d970264a5685e96",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.756466+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/41f162f392d9b5bfa5d8501c893bf944ca223379ce7244c7a64344254902ea50",
+    "sha256": "d4c4627a44930c391f06b73ee49dcda72d5d5e1def542bf3863182497d3cfc65",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.874987+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip": {
+    "path": "raw/77e08d32f294d9e1a1210422f8f986d84dcc55a7af2e55e20da3677a8c1ef16d",
+    "sha256": "c8f9340cba065bf5e956f66ff46aaddf7755cbd5ed2d407c5720f37402b5f564",
+    "bytes": 36177,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:56.899554+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/2f0ef8fcda59b0d01d872e1c83db8ac54b5cabdf4fb6dfbef080d82c98f9c25d",
+    "sha256": "b8362ca59046097a9981b7e9e891073be16985cd56687e756e610e045b109076",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.110656+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip": {
+    "path": "raw/4a58d83292d950eb92d7e0636956521129163bcbc32cc178d4c00b834ae7b170",
+    "sha256": "20366872da87ab960bbfc7109b919caad3593654473734310b93437dbd5a6e65",
+    "bytes": 20325,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.111038+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip": {
+    "path": "raw/48ea8e00491da5fc23b12df29575054d9cce57a122c8f705cf2af157eabc9f96",
+    "sha256": "b9032b0a7a00f8ee356ac7172360b0d48e12e3242320bfe1775b7ade43a7738f",
+    "bytes": 32854,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.111201+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip": {
+    "path": "raw/c0dbdb0bc1734909f63527150b5e17b9bdebffcfb2672294f694d50361a5f8d0",
+    "sha256": "c4d5144663da92a1fcb281ed40fc716cb691276b2cd7586f951d3ef3b329035f",
+    "bytes": 35227,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.128749+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/21259695d2fb9d748e72db3733099d5d47568636fe4bcc67a7d4a089dcf9f21d",
+    "sha256": "6f1902b431fd0be8a0e106114e77bbe36b710cac375a53964b2cd10fe09b1aa6",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.262408+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/b63d13206fe5b93bb9d849477c93bfb196b938571022e01f1d501836184b1f0b",
+    "sha256": "e4c1fa51e65826545af550677344998626252d5312fac4a4eb7218d989cbc137",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.263227+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip": {
+    "path": "raw/8085a6a284f792a01fc5280d5e7f063bb7e8231c09ec4e63390cccc2e4e2bfda",
+    "sha256": "2c6b904e0dc5b241ef71fef53a7ae79028f6d24bc1529f80507c06763876b4d0",
+    "bytes": 34505,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.285218+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/27681d32972f7711349e7024ee980a20c062401e494cd3a596788a1ef2e061d3",
+    "sha256": "6208f2bd203dc59e3794ace7bd7fcf7c386c6c54322e09da82904b3992ecc10b",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.297958+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/9ec63f1274115d5bbd295351c9e5aafb7a139d7054f2e3630606bb11ba33ec7c",
+    "sha256": "106c211c17fba4861d3fd0ebc10706f9c111b919a1c35eaf95ab8c100f541102",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.417952+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip": {
+    "path": "raw/8db69d8405c1d5c3a57b1654f5c77f868f9ec3e56073e8d57b2f2d31bab2c451",
+    "sha256": "989a91a71dd93b5511c5ce7c2374acd215c0a51a2d0ddf477d35a8261fae90f5",
+    "bytes": 35226,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.435317+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip": {
+    "path": "raw/a9def3b6e6efbe641d06ec842152c95e4a7bdb55441111b9e8728e04a89c3078",
+    "sha256": "43f150e5618030b6de9889891ff23d87a34829c13f2783962dc04a490888b111",
+    "bytes": 19607,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.488406+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/e1ee614be3cd64218705939d7f38bf00114169ff2fa8a64c4b8780428f4cc330",
+    "sha256": "8742e4e2f91bf98ee5c2e039eae689e12ad42cd416187da573eb8d8318147f77",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.638437+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip": {
+    "path": "raw/09a61e26202a55cb40d6a95ef95fa8cc1265226556494ec50b39c7df1736497b",
+    "sha256": "324c97541d0395d7c5d882f5fecb0e85b74e0569265f70319b3afd3860f3a466",
+    "bytes": 35897,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.657851+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/b7dcdd6cf7c7b727d7f42a989b5cfbbb6bbc336944410424ee7326117f7c46a5",
+    "sha256": "e55a22e00fea2937d26679628201e5ad86a25fe376f5ae5b118ff9c70b916c6b",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.667573+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip": {
+    "path": "raw/0a8f590b1484d993149b7db194fedc9b4b1dd92f9caedf8b08c71ccbc77093e9",
+    "sha256": "8bd80cc22d069646651ce212c5e2f10e83950cc2b82a5d9a8e9a360e48361a56",
+    "bytes": 35795,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.754600+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/63292fe9a1460709d3ae16e7ee8ae79db8d85b0bfb656f9a2a0cd1dda44bc713",
+    "sha256": "0d2fc61f180e250f614939e9de88272185249d92ea5e5e4ae909c5e99eda8425",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.785743+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip": {
+    "path": "raw/a387a757982d39655d07b16fa7e5f9596cbc6d3cbb4eebc509096b111566a1dd",
+    "sha256": "8ee81c2f817256a5154d6eb32681a257540a66a16d9f01c2fcd5a480baf22e6f",
+    "bytes": 17805,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.797194+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip": {
+    "path": "raw/b6fe3f037f42aa4b6aacd5fc2a7e9e441ef8976954255acd0e231c46741cc889",
+    "sha256": "f22d4b9647f12da49380515ef3fe1112e705f1d795027ab8a02f238c2221b119",
+    "bytes": 19304,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.877160+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/2003a3cfe0227311699dbb5275623ec7a92303904dd32884d3cbcea15eda92b4",
+    "sha256": "dc0f527f705588cf77cf715d9b9a26d50307dfdaf22fc82251f1889c9b8c1da0",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.883204+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/6fc45139be8fdbbdf24c7bd4c4e407554226683231dd6bd4b5c73feb237576f1",
+    "sha256": "f5892f35be3eb1aa1b2e0c58736ba3eb54350ae2655eeea83485caedca7d734c",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.925517+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip": {
+    "path": "raw/bc8c24998515c2aa786cc03489d8e52a67546b19f779f2f5984832e67ff46c20",
+    "sha256": "5b1134d0922f9c2f52256221b687b477d619765fd2de08108d63dad0f2ec11fd",
+    "bytes": 19739,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:57.944939+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/8573784dc5466ac2a35df5fad2f85b7a51dfc0ba39b26943bcc8a990670e4416",
+    "sha256": "0e043ad3b7d88abf496d7dc6a49dadcb4e0eb88ee04ba9e089cbc31f8e60dd78",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.052543+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/SOLUSDT/1h/SOLUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/5e695fd949227c9159e0594a9899c3a0afcbcdbafc812d6445ad0cf35509facc",
+    "sha256": "a37a95bc04f80406747631c3119506f9db4d76a22490f9f594c81ea6923c47d8",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.158484+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip": {
+    "path": "raw/ad8eaae6645abf275822e12a97665eced30bc70c79a228f3f0426d606112786e",
+    "sha256": "b7f748565fe8fb3981b615a9b260dce2789fced22361f57b6d12b0180b20e152",
+    "bytes": 15572,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.159027+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip": {
+    "path": "raw/e4e93598b7f0660381f55e2e59953912e2fe14b5452e79236abd3de2c451bf4c",
+    "sha256": "d60a999ffbda06d4adb044a45f77b088124c2e5ec6cbf4abfb9e4ddfa65fc355",
+    "bytes": 33344,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.195740+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/bf8135841c0bf493d41273a4a9f0d6332e8a4262d4c6da1eb3d9c8da3d8a770e",
+    "sha256": "3424bb684376d9dd2a010e8b6052859aaad5555fc1581b0d6a9250905c5a1a9a",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.291385+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/26c87c24acf06971915920d2870b43c950248129ebb22b9ae69d035daa6ab867",
+    "sha256": "6ebb0610b49bd5980c5923fd5103bd6d6d50caf088adb7036a0ee70272ba111b",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.314238+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip": {
+    "path": "raw/3a6c5cb00b053a28774640ba4a3670d451789fd34b0bda60e5249ced65182801",
+    "sha256": "3764311b6cb189ec2c60c2d73626420f0337bd305bfb3faa538ddced9be92d65",
+    "bytes": 18293,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.322038+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/71552a406fcb8d0e4c739e2301a265cd5d059883161a062e05acafe6562b4dfd",
+    "sha256": "2649bfe6deed9d2c1a3aca3239a409141eebd4aa9568884975ea58e9c89a5f1c",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.443068+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip": {
+    "path": "raw/386380fd53874ff5b70240c0b12f1494bdd449ebbbd2ba8465b0eab0efad17bf",
+    "sha256": "635bddbcb5d1a45f0a0ab04132e6559f6cb69315ef3f6525cc45a8c451345cbf",
+    "bytes": 16705,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.472055+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip": {
+    "path": "raw/c046db8e2b7eea2bf7e8b8d4898d21e4c6b7537ca6f28864efb9edaa3834a87f",
+    "sha256": "dd6ed8ea3c2ef5240075ecbf41b11ee265ac7bf6bb8962eecd8c51daf4f1b0f9",
+    "bytes": 38372,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.568559+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/1e8aeb8c5fbf619ca1c3b6484cdfd60759858e229b0d424ea6acac9b41cf76dd",
+    "sha256": "896dfdb038dc3238f79c0b312b81dce46127b5873d67ceda84cfac713afbea65",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.684179+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip": {
+    "path": "raw/47acaad005f890c84ec496f0380838b5f816cdd75f60d55675c834ab70acbc7a",
+    "sha256": "9054fb6a50ebebb2503bbd54ce599ad37232a5cde930456ea4467138cb827d92",
+    "bytes": 20218,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.684910+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip": {
+    "path": "raw/c928f9ce48da4ee8da0aacf310e5b93266082e5471c7d0010a4f98e3ad478ceb",
+    "sha256": "5edfabd104c86109208cc69993da27a4ae2e60154827523d917bd2fe9573d2d6",
+    "bytes": 33245,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.685150+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/0e8636fff089d6a9e496814bdb49a6b06a8ebf538cdbeef94a043ac281309d94",
+    "sha256": "595ec92dde87b9d0e1b807e75e05766881c493f632670ebef93881ffa89c0f85",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.698500+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/e6c74373d551ce95f65cac78cffa3501174bbfe6a0c100e80dbed51488283cde",
+    "sha256": "0d39a403da70a46e6da6a62b6d0d5c81c0f949c3b7a34d7eadc9191d59fd72f3",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.828269+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/3993a9cbbcea0f41ca95e5b2b1079ef07411ad6ce5db50c72c4063e6297b1d5e",
+    "sha256": "14fded0a285bfcaa9a0078a1be76cb5af5395dab22b07fd466f4c43aef8b2333",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.851286+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip": {
+    "path": "raw/707df5a292b15adfc0f32ebda427ec5376e6b81b93a82447c8cb7d24aeec79a7",
+    "sha256": "ac7df9a375af8adb82b0cc5153960ff291c10c95f5b3d3bf3d6e642f4f3594cb",
+    "bytes": 15873,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.858257+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip": {
+    "path": "raw/74b22478925f30faf7b1a7ab6a7166ffa9cf6d4b959e52eb21b4d7d665eafae4",
+    "sha256": "fabca76879e2dbd1b41b768d6aff3265108bc95f0879d5029b73e07f19888b74",
+    "bytes": 36484,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.981277+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/f3e8f2aef7b0e935ea5c75f3599db9bce6bc4a2eb02863263204c068f4c427bd",
+    "sha256": "0f27334ba1c88a8631f263531413c7aa4079dc736b312c6208d8e1501e06197c",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.993485+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip": {
+    "path": "raw/b6f2aec55c97b98be3cc0cf749a868325f0ec3f5babe523a3c3c88f93cb95b12",
+    "sha256": "6ed35e2b38d39eb2290064d284c21f9cea0a153ef45c8846993ab77bdbfb6ff6",
+    "bytes": 34502,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:58.999896+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip": {
+    "path": "raw/0e248ead8cc82cd4d9c1ba281995ce6bec1c02e0ecaa703e27afb53eeec4fc83",
+    "sha256": "609af7d69cd0ea724e2454a56beb7d6cae3ffe4e5ad83efe8860706c5a609e05",
+    "bytes": 19161,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.000150+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/bbe8465db491efc934e9ed5416e3522248fd3ce9d3357a54456ee64c26769468",
+    "sha256": "b64920c817a996710b5c7a6e948fe6dc85821e13393b45ae84b101a717de9876",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.119241+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/65baad285eb860ac0808f63d5283d2ccc4151802079085dfc691a1e19e41b5f2",
+    "sha256": "02d51c30bff0b4dfac13b21cd4cfb03f2e0b99bed5748197aa5857a24fabfaac",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.207442+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/c15343093bd34d69b968e4af79a118ac66b3b9f17ba71996cb392d1b5ceb5ecc",
+    "sha256": "c0868511dc7a47a47eb6e7ee35dfba4975efbcc8305e0d942512dba64a92cc39",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.207799+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip": {
+    "path": "raw/3eef0d296d57017ca524a4a3371380d3560c8bfba857d2c4f4b30c0cc7af2bd1",
+    "sha256": "5254dd812d20e4d366c2287afe1a5906a4b6560461e4fa126c4f87891a56a26b",
+    "bytes": 17553,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.207948+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/5b191507fa2564a9789a1ebd2695cce166e241fb11f7a25fb654de694a0c00b1",
+    "sha256": "5c4aba8a2d937d8bc49c2b8a0fcd536dad0b594bbbb155396945d93bada65210",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.351197+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/ADAUSDT/1h/ADAUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip": {
+    "path": "raw/65505967766fbdb3be47ce9782eb458d811f7b7025dcd62362033ae5b0e818ff",
+    "sha256": "a37f404d063dbdb4b25d04e8debbce678230027d50b91c458a06e46eb80791d8",
+    "bytes": 32176,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.379354+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip": {
+    "path": "raw/63501bc60456483358d24bec5e34af0c56ad71ef4272adee673c98011832424a",
+    "sha256": "699790dd14e1e79001639b603764fcb9228de901381bbded17b257159867810b",
+    "bytes": 20030,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.399351+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip": {
+    "path": "raw/cec22d336b0b634e220edbd1ab33336bd38c8c5de6ebdee633b1f32be1a867b4",
+    "sha256": "8d1c5b6c642ab19b5d5427b54fb72f3794aa548640c2c6b92afb371ddb4c812a",
+    "bytes": 38426,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.413159+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/0cbf8bac91fb661afaa02d007300e3c9590ab27e7be5d7e5586d97b333e21cec",
+    "sha256": "02e850d2177d080377060c606e10709671cd047df7ebc38fe1af9178537508d6",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.512450+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/52de67d4f8726410938972fa26a42ebb1403e19233deb0f40e6274eaba9b8e0c",
+    "sha256": "8ba1229bf0213bce7422a992ff25f78e7e1eea06fb0a7485bf930f79e4f79006",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.523249+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/BNBUSDT/1h/BNBUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/73e6ca2d751abf63e2dcb3e776a2a8739a9c204cf25d8aa2719ae14073141c5c",
+    "sha256": "f7dd003621c0294b661d36b032bc2c4efc405b945a6f1cf20bfae3305ff3d3b2",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.582738+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip": {
+    "path": "raw/58fe5f6535a042268c9f74441f9545fc7ed725f5531e0a3776641347be4728cf",
+    "sha256": "d2123e08eaa40f0bce8e15904afc2d5ea953669c9a6cff8929bd4b2f4c1acade",
+    "bytes": 35283,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.731766+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip": {
+    "path": "raw/d5dc8faa9e4c96e59e38a58df868f2577d61920db0b27cf1deef898e60371ace",
+    "sha256": "6f6a756dcc076e0c402b2e24eab67a0393b480237f1f3ff0b4f7f87f1234231e",
+    "bytes": 16588,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.755100+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/e6cadb35b05bc80392542643c46bdbe04fa927e721dee688d7f857153b1ca512",
+    "sha256": "7e9c9819afb174885a34c0991fb70e02d8c833f5e7db85a92786e55e42667982",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.882719+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/8dff37ca1570e1cbccafa3744d5d6cd45f45bd4cc54de0a4e45490e372e71d67",
+    "sha256": "b295f4af393a7d0b220feea1fa3d0d834b9a279b574406b6cc5dffc4b1260b74",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:23:59.886092+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip": {
+    "path": "raw/96f292d5f3c8bd911ed35f8cf5423da54f954bce04fdd246290b9b0a278a118b",
+    "sha256": "4d2397ea31aeb8e7d551da91cedad0a8ec9cbbec1b2a56f7bb8d3c505bf73f77",
+    "bytes": 33428,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.054078+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip": {
+    "path": "raw/0a3d0cd5bd43034ca805b9bff6ca734642b075296edf9485bb968ef8c0ade7f9",
+    "sha256": "164c191b724db582561a0d4b57e434862978d74fa7bff2ce0120b93b4f1a730d",
+    "bytes": 15086,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.160197+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/2cb83ff55c0ceb95741f4a069c3ada74915b3d3d9048be79a5f2f4d913fbef4f",
+    "sha256": "a331cdce2bec0716690a60eb06738e11b965528a24a931b452de10995a13be94",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.254512+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/e9a1686fe8eebdd229ab3f841f1dd05d8a93c9156b51ebfd6894dae44e3e6efe",
+    "sha256": "8da0932a48314daada88ea995c210f4bf1a86a32cc3900fabc1faaf6dcc5a34f",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.381206+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip": {
+    "path": "raw/dedfb6d14a1ce166cc43ed49553547a18dde7b3b986d4ecaf3f0a0bb4ad1e89b",
+    "sha256": "3e0943a0d7d049d2cd6a2ea3012d73888e95ac93ee87a03908fb8269e50a5832",
+    "bytes": 35177,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.443285+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip": {
+    "path": "raw/6049f7cbd992c860cb2a018b8aa38e5061abe8aad9ea3a25f8c1daa28da53b64",
+    "sha256": "254263cc53da3c7e1b4e5f893af291c9cddbbaac9b22d5df4d8bf3f20f4c042b",
+    "bytes": 17316,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.559705+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/e34581dd48a0a98e35919662adf0bb439c59056c8ea0a1d4c0e9dfe9a5a1ea91",
+    "sha256": "2d3e19aa7f92585eebd9c2a6bf74beaed8338d9e7a88bb8e968fed60bf4185d2",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.570889+00:00",
+    "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/c074f2ab8c2acebc31eb39eb9141bfbbb2b7bd7926c7e4b160ca72c95b5c826f",
+    "sha256": "47fa8e6735a7b6a8e9af475c48c52f564675d2442680f650759067468537f532",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.691548+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip": {
+    "path": "raw/311c770e72275b78d56bf617baab06225a4891ceff1c3b8062584f835cd28482",
+    "sha256": "eacfb37596b54836f55e0f0e73c4e7d31fe43b05de0a4ae19090dac23c56792f",
+    "bytes": 31981,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.779175+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip.CHECKSUM": {
+    "path": "raw/05c961078d6fb3ce3c43fae23fddf569cf1943da9371764215fc0e01529f97f7",
+    "sha256": "91a34ca4d10f3c281306131e18a57e5170a634fe1fa3e675c2dd6b73a4329db1",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.906962+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2023-11.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip": {
+    "path": "raw/4ef8cbef564f2d569252142fe8bef81ed894887360e0116cbd669f4ab8eafa30",
+    "sha256": "9ab364737cf5d86e03f9ee09bb7f2376c0674f1d84851ed5de9e9dbb5edef654",
+    "bytes": 16424,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:00.945868+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/4b52b96b719a27efa35df09de446cf068d3677b1609607e902d022423bcf31ba",
+    "sha256": "6b7ac1e84c0df53ba311b82ab21914e645d0151c897f6c4bc5541959d3e77994",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.068231+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip": {
+    "path": "raw/9b23cd5ab4d8d4260147d3e005ecfe31b6fbd38b6e6d16dc5037a1ab23a7fde3",
+    "sha256": "4ce9201113b148b1aa786c08503066de74bb1b83d4b8c3f3d71f2f5878494aa7",
+    "bytes": 33072,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.080323+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/6b97cdd168f4bfd39ca5354555f85786498a86a751d772c4037a8ca09d71b543",
+    "sha256": "6c4462ea534e4f765e22934e194b280e8b7a1515a3db47a48bd8a18af4338d19",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.214718+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip": {
+    "path": "raw/5fc8304bc7754a1f17dbd2cacc0db6e8105c354009720771ba9d27334cef02d4",
+    "sha256": "0792975ab655270efa9430b1e436aeecdfe637ae8a30614418691cd2cd9df6dc",
+    "bytes": 17489,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.365185+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip": {
+    "path": "raw/793d8c06bc39cbfc1b73c2a2d53c4c72ce9dc62f6256002082d2810f69cc377e",
+    "sha256": "fd15a880083ac32e78af8879a66bce0b64fd624c6ed97f9a13877b76dfa4e723",
+    "bytes": 30661,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.449290+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/11cb692190d594b1fe6136223c085a281c01f8a92e7b996f0cb1c39af2b5f1d9",
+    "sha256": "cf22568e5cb99c67711752e4868e7372e2b69bef7ae259aa04f35a2aad5489fa",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.524854+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/DOGEUSDT/1h/DOGEUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/07082a12a5a745bdd134e22964c55caeb6e8501c6e33967727839e7ba1e6ce40",
+    "sha256": "05cf60e4b118f434aa8911d6105008dd67fd4b39fc59c02817779189db8aef50",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.584672+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip": {
+    "path": "raw/f563f008bc041c85ab2f012c3636c316a160311d6a09dc2df261e191aded40d3",
+    "sha256": "5a02732eba2cfcf8279efc853a7e3c24a089149dc2b018d612af1a4a4e9799d5",
+    "bytes": 33544,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.829549+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/76a31d7a6e3d1ef90707774202f879a776edfde9df09c71fa48f24e89cf72c70",
+    "sha256": "17d9a636e3b4987e7df209867faf93a78bc64716d8d64fdc41afe624972aac38",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:01.994034+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip": {
+    "path": "raw/ad3d6d02d7d9561170a2377a4908c921448e354ddf02eb42ecc2ca39672fd747",
+    "sha256": "0b4f111fc4732dc3e47f7cfc04a2547fcac7ba38e5ccde0da5ab51593b47ea9b",
+    "bytes": 31913,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:02.158640+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/fae0f50c93527edcf4f2743dba11192046c223058154c5d749796835ac17dd76",
+    "sha256": "cfddb624086d5ce481a36336d2dcb75289ed9f2651717c6499071b8bcecdad6e",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:02.351920+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip": {
+    "path": "raw/746c661ed75544b899b3b85e1017f76202817a06dc65e4a93e0b061c0ed8f4f4",
+    "sha256": "9de45a59308307109b1a0356fab9a317685861e9e4012e33d2cb703d094ded51",
+    "bytes": 33425,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:02.516132+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/4bc14456028a5d39462f1d042ecf13db919c7501eca80c95ed0c1e669bd6040f",
+    "sha256": "878938a2dee274d564e2f030d9aea343a376dd893f692bfc7943cf7d9690b499",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:02.648710+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip": {
+    "path": "raw/4ef32bd031cc26a07c121f56ad25375ead89ecf7c29fb378cab9db05588318c3",
+    "sha256": "4ace90799c1c12439e8400b1915cb30e9cdd9953fb1fcccd03400de04f5eeb91",
+    "bytes": 20078,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:02.878034+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/85829d6d9ade2eef616917b957825e65dcf1a79c32490f95efb801b59bd90fb1",
+    "sha256": "50a4b8e636f73c55457e568f3f399681c0492e9c0b4aaf85e060c9acd6d1deeb",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:03.017197+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip": {
+    "path": "raw/8c7c9c779fff2841e61ee55e6bf6c116ad28fd27ebd4724c7a4e6973b6e093cf",
+    "sha256": "9f47d1ecb654beb9997d3474034c87a8ff5df1143987c8fda18793961357bf86",
+    "bytes": 17810,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:03.172174+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/5931a41c1049911907f655f81621d348562b4e537066213c486718f959ae8e11",
+    "sha256": "c4515d892b169bbe5ccec0b8142cf030def5e314dd4354a34df69622ee738f26",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:03.314999+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip": {
+    "path": "raw/789cf95067e018326960ce7931a12450b586ef2799f78560dd8ea1f7b9efb8a7",
+    "sha256": "ce8a6c978f963be1a6ff99904b710a7d6386d254a75e625966e294856b795c5c",
+    "bytes": 18883,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:03.533122+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/5d4ec0317ed7514bddfb6de8b6737416ae1234d93d841487f96d509c7b7c1d42",
+    "sha256": "dbe51b737aba5fbdb71425c1c036b4f55f057e329d66474486f13e0cc48040c5",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:03.666914+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip": {
+    "path": "raw/e21a371f66e0c4e29dbdba9ffc75a0d9945c2342f3b3e97034208abf6e5a0a3a",
+    "sha256": "a2e389fc5e3b88f9e336b84238246bf61b27065c183e59ede3ef88449c9a0258",
+    "bytes": 17986,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:03.837341+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/c3602779b918ca8787e0b71ccd99212d787e462024effa500830cd20897bf9d0",
+    "sha256": "bd2d28019d141db469b7daa18e61deef9e4220d8cd36daf1c62c18eed18e5681",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:04.047612+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip": {
+    "path": "raw/2d9ee16225cf4a9df1d422640ec9d6aacdbc0ff6fda9ec770cb1bd05ebca713a",
+    "sha256": "c1a5398a05617679d8d69d166a24376caa1eb32e711480f969cf46d8dabd9069",
+    "bytes": 19442,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:04.204076+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/758f5f9202e54ffddeb6dce8da7f1b45c65f6fa996d47e6b31824fc7a23d8e05",
+    "sha256": "98c13bc354a327014453718c72a6a15412dd6c9a961a0e6e48d308d96bfee97d",
+    "bytes": 90,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:24:04.342782+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/AVAXUSDT/1h/AVAXUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11-14.zip": {
+    "url": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11-14.zip",
+    "path": "raw/bf8a81ed9ba18055712973f240fc4cb6e5234368de767a224a4ebcd331abf8a2",
+    "sha256": "5b379ac616446a65bf1137fe32ab1bc328fbd52fa155d3cd230c0e5d343d0e2f",
+    "bytes": 1491,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:25:31.125392+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11-14.zip.CHECKSUM": {
+    "url": "https://data.binance.vision/data/futures/um/daily/klines/XRPUSDT/1h/XRPUSDT-1h-2023-11-14.zip.CHECKSUM",
+    "path": "raw/4b7332af2e2a5f8bcdf1bfe60cefe1dc2e8223c4c5a396f89b7377003d82433f",
+    "sha256": "8406085a09886bd321e8e04452ea01381b1641c81b2130aed196d94cff8c45b7",
+    "bytes": 92,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:25:31.257829+00:00"
+  },
+  "https://fapi.binance.com/fapi/v1/klines?symbol=XRPUSDT&interval=1h&startTime=1699959600000&endTime=1699963199999&limit=1": {
+    "url": "https://fapi.binance.com/fapi/v1/klines?symbol=XRPUSDT&interval=1h&startTime=1699959600000&endTime=1699963199999&limit=1",
+    "path": "raw/1b8b901ac1b594d5523feb413a4982556bcde0b73c0fdde8e5400c911a42a5bb",
+    "sha256": "4433b78e1a87e0859ec9053d5c8e8f34d4a9cba024bd8c23af4b550eeda6a49a",
+    "bytes": 135,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:25:31.748958+00:00"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip": {
+    "path": "raw/bcb77d1822229d81fdf502396a9b3c83bd99b58a2f78b1cb602bcc4bf5385fe6",
+    "sha256": "c049a552965aff83541ab07a965f7f42e00a7b681ca330cd186934e68a892751",
+    "bytes": 35268,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:05.500712+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/28bdacbb2c7f4db61d7087b75abea4ba11e6a3b29ea1f3ff27bef1f30a817579",
+    "sha256": "cb63b7dda56ee4725d57ef6e45f6f5e49e40db8d2d5fc1f24a2826da1103efc3",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:05.704672+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip": {
+    "path": "raw/3133a6e0c9230a15ce0860e18af32a1cab86adee0bb065dda8f2d2f5f3b3a9bb",
+    "sha256": "5d9c866e89460894c4273114e5c6aa43655e927d6ad83e7f0ffbf22c327a52ac",
+    "bytes": 33060,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:06.147185+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/03cbde67c9f42d076473be2904585336a95c63ce88a4bfebef8b162791a17669",
+    "sha256": "98c8db579b60ef24bd252ddc606cb87206018fd544ec27d631b51495e85443c7",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:06.456577+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip": {
+    "path": "raw/59b5b9064e32edcdd73bfe7716f8bf7d29b6bfe4899a7dfc9b5a139160b3187f",
+    "sha256": "2da416a11a2bed17be44fde0a734364e03d82c93d83046cfa6ab2623c88488a8",
+    "bytes": 36309,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:06.876808+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/e641bca1ca068549b7ccb3dd2015481aa91650902cf98bb43d1028d1cfae78c0",
+    "sha256": "cd05cd4ffd6c1a0fc36023c55c12894733c829ca7abbb339c0647c9bd6bd0a53",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:07.194496+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip": {
+    "path": "raw/2f91f1d79c5e48a49a2ef348bf64f3be75f09ef9d46a3bae3f6b143ff6c6491a",
+    "sha256": "88c968c463a4059c859e4e3873afdba07b2cfd06c3f035f24dd7c7166bf66b36",
+    "bytes": 34769,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:07.601529+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/640a95c7a1bd442c5b9aebaca58c9f2b794259a7884594620ff350d578213f18",
+    "sha256": "b5c3d57db210c6647b9cb206ba1b5197dc12318f86341ced38151c70a3a31241",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:07.909977+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip": {
+    "path": "raw/6bf9e3d29d090b485a5e703b7de7bfd61a1d71d7eef890b64108ffa3dd8872dd",
+    "sha256": "08f0de25e68d8f913f16abbdc13f49047d8b6f624cb748c89900231f75b2bba5",
+    "bytes": 38230,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:08.298933+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/d548e93480bccb2f40e6acba4cc236966162f3d36de69c6470d9336d71e83888",
+    "sha256": "4811a114bd16704e5268b59be118a7f7ef5f8ac2c3f9b1de8137a8b1f9c3a142",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:08.469322+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip": {
+    "path": "raw/708cd7242ab62914767b858df9bf39f1a7c86f8169367aba83b44bcc6bfbb748",
+    "sha256": "24714c9b333e50b29c05247dca5c736fbe5cb1b220c0cd023e517fe7d0647afc",
+    "bytes": 16969,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:08.861081+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip.CHECKSUM": {
+    "path": "raw/459068d748e947f11da1f41cfb1462f421aab923b6cf3c7cf592858cdbe3b130",
+    "sha256": "1fc2f6701b21db52fa9a3988e20d73ba3cfa61cf1cafbfec0e0f98835cee4baf",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:09.187106+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-01.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip": {
+    "path": "raw/2435517b86928ba68ad72c3a6f8e708abae8f4a42ecaf69e725c7ca9c1183ade",
+    "sha256": "978bc6a299a19042917839482381eb41e585e0fda44e5e47a6dec27f83db29dc",
+    "bytes": 15021,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:09.382683+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip.CHECKSUM": {
+    "path": "raw/9885adfe2ce99b0c3c5bc49d4248159dd16fd0ff763c36d3c9d729637eeea5e5",
+    "sha256": "d19bea21e027ec6cce08154b82e025c8d94b801ae56e0a878b37e4eeddab2442",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:09.548795+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-02.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip": {
+    "path": "raw/0dbc224db6210f523fbbbb9fb46fc2696d3aa0cb156e101123726adbea4bb242",
+    "sha256": "bcb24491b75d1146f7894502464430f510279dc8504fc27f6094e3eb34c55d54",
+    "bytes": 16137,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:09.821302+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip.CHECKSUM": {
+    "path": "raw/5f62cfcefd43a0ee6b30eace58b3c9f1612363064ec6dae2f4cdd5edf211fa7d",
+    "sha256": "b0f3f188a12cc7f0042413c9efcfd1d92da697b7fbd274d432855f568521a96f",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:10.131011+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-03.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip": {
+    "path": "raw/208ea2d880dbc5f275033ac4fea3779b0276ccee6cd30dccfa8a3c8dda13aa66",
+    "sha256": "c079107464ab8bc035f0df4fd8a8171a529c1adcfe86471327c77a7b8a7c24d9",
+    "bytes": 15561,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:10.476660+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip.CHECKSUM": {
+    "path": "raw/e77ff286404f168c28b714cc74d096ea9afbcad2f9d30fa19c2aa50bf000ca74",
+    "sha256": "afb5720975e20df0c9de143fef4a6d05238f88dd5dbea5d4af2db5e1f789eb85",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:10.865691+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-04.zip.CHECKSUM"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip": {
+    "path": "raw/03f99222fc7b63c5e68c10c66cac0ff685fe4f52ba1b851ec4f02d2f5359ef65",
+    "sha256": "a3a2e530bdf37eb31902072664073c62a3bd015ab90524cc0d16acbbe34b74a4",
+    "bytes": 17967,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:11.223790+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip"
+  },
+  "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip.CHECKSUM": {
+    "path": "raw/5cdcf7e71de16b8e73d77ffcac662a534252af9ae1005add035437b854edf868",
+    "sha256": "2d3f8fd7faf0d46b0908328adc494a198eb4c4e2e326e4e35e30761497ec604a",
+    "bytes": 89,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:28:11.535288+00:00",
+    "url": "https://data.binance.vision/data/futures/um/monthly/markPriceKlines/XRPUSDT/1h/XRPUSDT-1h-2024-12.zip.CHECKSUM"
+  }
+}

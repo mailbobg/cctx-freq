@@ -225,7 +225,7 @@ def main(fetch=False):
                   source_reconciliation='r17_price_reconciliation.json',
                   reused_dependency_sha256=dependencies,output_sha256=outputs,
                   limitations='All eight pairs cover every actually held/order hour and control. Other full-window hours are flat cash without invented prices. Reused inputs keep original provenance. Hourly candle prices are not executable quotes or intrahour ticks; no profitability screen here.')
-    (DATA/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+    (DATA/'manifest.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
     print('Price source collection complete; no P&L.',flush=True)
 
 

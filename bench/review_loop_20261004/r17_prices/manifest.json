@@ -1,0 +1,164 @@
+{
+  "coverage": {
+    "ADAUSDT": {
+      "proven_trade_before": {
+        "spot": "2023-11-01T00:00:00+00:00",
+        "trade": "2023-11-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    },
+    "AVAXUSDT": {
+      "proven_trade_before": {
+        "spot": "2023-11-01T00:00:00+00:00",
+        "trade": "2023-11-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    },
+    "BNBUSDT": {
+      "proven_trade_before": {
+        "spot": "2023-11-01T00:00:00+00:00",
+        "trade": "2023-11-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    },
+    "BTCUSDT": {
+      "proven_trade_before": {
+        "spot": "2021-01-01T00:00:00+00:00",
+        "trade": "2020-01-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    },
+    "DOGEUSDT": {
+      "proven_trade_before": {
+        "spot": "2023-11-01T00:00:00+00:00",
+        "trade": "2023-11-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    },
+    "ETHUSDT": {
+      "proven_trade_before": {
+        "spot": "2021-01-01T00:00:00+00:00",
+        "trade": "2020-01-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    },
+    "SOLUSDT": {
+      "proven_trade_before": {
+        "spot": "2023-11-01T00:00:00+00:00",
+        "trade": "2023-11-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    },
+    "XRPUSDT": {
+      "proven_trade_before": {
+        "spot": "2023-11-01T00:00:00+00:00",
+        "trade": "2023-11-01T00:00:00+00:00"
+      },
+      "required_hours": 1180,
+      "rows": {
+        "mark": 1180,
+        "spot": 1180,
+        "trade": 1180
+      }
+    }
+  },
+  "decision_hashes": {
+    "r17_decision_audit.csv": "769968115ff273ec34bc8e89bbab2bdfc38a65ffaffc94b41afe1b04c974f318",
+    "r17_decisions.json": "2fdd6a1fc16b6bd8cee6f44b2a7c8d95200318fb050f78f4719fe3f754df9917"
+  },
+  "limitations": "All eight pairs cover every actually held/order hour and control. Other full-window hours are flat cash without invented prices. Reused inputs keep original provenance. Hourly candle prices are not executable quotes or intrahour ticks; no profitability screen here.",
+  "months_retrieved": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-12"
+  ],
+  "new_http_records": 227,
+  "new_performance": false,
+  "output_sha256": {
+    "ADAUSDT_mark.parquet": "112bd03398af78fa40a78e3c1f0a709a7a53bb41096eb4faa7cd38ec6cdba01e",
+    "ADAUSDT_spot.parquet": "24711aab531a86e7ba1e85a174628e87e6c5fc870d9224dd6db7db1982d86035",
+    "ADAUSDT_trade.parquet": "2abd0e6d33fb45b896cb0a54fd630128ede6fae4668d87bc2c132f08be290032",
+    "AVAXUSDT_mark.parquet": "94f98431dc818e2318e5faf232ccc1bc79a0fed30377f1d7bc56e094c08c6447",
+    "AVAXUSDT_spot.parquet": "f7c7430925666abeda5452057ca0ecb61fa7c517bc8710e2ee0ca862bd0a80f8",
+    "AVAXUSDT_trade.parquet": "0065a1eab30eb3e9d2d7b624c6dcc984c2eafd45ff1dcd8b76aed4d2b5c80fe0",
+    "BNBUSDT_mark.parquet": "da0adeed1c1ff9014ee09cdf0fcc9a5239199deae9b9f98c67c0a288f7e4f38f",
+    "BNBUSDT_spot.parquet": "78c683edc1569b1ef1b3f46771abc1b7f65db05cc2e9cc236aabc6a26f6b808d",
+    "BNBUSDT_trade.parquet": "6f69c39406862208a03d55216915ec1f10d094e8b1b858318407013c2b99090c",
+    "BTCUSDT_mark.parquet": "ca98e18c5bdcd5b471d471e975e9fa5244312e94a3d071088114640c3a8b1679",
+    "BTCUSDT_spot.parquet": "a0b9b2c49685181c8266ddbd82e1e6bc5a13cd1bd48e93b156cb7851f0a2666a",
+    "BTCUSDT_trade.parquet": "ceb3ba926b7c80daff5f09f24b18511619a103f9b3403748315581ad4d1148b1",
+    "DOGEUSDT_mark.parquet": "753a5ae4fd08135c0f1b2a79434ad6e10162a8db918656ddefbcca2091c2e899",
+    "DOGEUSDT_spot.parquet": "c43f7b6c05d92bc706cc7e3fac6b640ab425ed7c84425c6fe03445cfede53359",
+    "DOGEUSDT_trade.parquet": "39ed1c503beeaabc49e7a9ab5ff2d86f7f17a4f0e8aed21d8db08e42ed1fe60e",
+    "ETHUSDT_mark.parquet": "b37002762c121f366e9b1e3ae7b3471b961fa16e02c7470bc27f303e65127c4e",
+    "ETHUSDT_spot.parquet": "763835810ce5c674615fa3491a02e6859d1dd7f837b5470729c106b89a6af554",
+    "ETHUSDT_trade.parquet": "1d3083ba2ebd9d731067f368e2449042a7928f708150ae3045868581130d4788",
+    "SOLUSDT_mark.parquet": "c3c360cfb45e6f4c0bdb7bfe9ee74c41d4aa4429fea02c0a56c48153032c42c4",
+    "SOLUSDT_spot.parquet": "ca6f3d87db6b436afcb5a2d960ead4a1d85ee4fa880c59bc0610f899403e61ee",
+    "SOLUSDT_trade.parquet": "8486ed037a13da899dadc248bbcb420013b43e118bd6f1bedadc1dbe284cf60f",
+    "XRPUSDT_mark.parquet": "fc86435cf696b64908cda3b2cbf81e5d2a67f6ab7718e85bb51d23e44fa74ce3",
+    "XRPUSDT_spot.parquet": "58ce2cd0a3b30b07aa2af401c469beea312eb3c6e51c52f0738709fa0f1d779e",
+    "XRPUSDT_trade.parquet": "6d1f7367d89bbc4427bd7a7e9be2b2de53b174e664a0b663886f1e89635e7e2e"
+  },
+  "required_hour_count": 1180,
+  "reused_dependency_sha256": {
+    "r13_data/BTCUSDT_1m.parquet": "00893ee218647d945b636dcf4915eaadc03a3d5b6c2790512a187f02907371b3",
+    "r13_data/ETHUSDT_1m.parquet": "be3f4d46629d0e4daa9e6156e36e7071bdf75d37c4528831fc5d3704168d53a6",
+    "r13_data/manifest.json": "19d7b24c950c8a40b9f6c4ebd3b4423713d9849f0d1a3960e727a80362d2cc32",
+    "r13_data/sources.json": "71fec3eae75d8e010a064d4160c3382455bdbbc1ae40c93e99edd37e4525fc98",
+    "r6_data/BTCUSDT_mark.parquet": "2c916396785d0df68e82667351acc8b2d2fb7029551d8812fd81cbf140f2a567",
+    "r6_data/BTCUSDT_trade.parquet": "7bcb0e0435ae657ec4e781796e141e778ef1452e3a4edc798bc1185ad388f55c",
+    "r6_data/ETHUSDT_mark.parquet": "4c5c5670b0f2eb5750f93daa92e14e00eb3440a8d516ae056c1e3e2101377fd8",
+    "r6_data/ETHUSDT_trade.parquet": "d7be30f252cabeec6d2f2a6b9e4735cf95b6d771983e26e7b5f562549e6b5926",
+    "r6_data/manifest.json": "491c3921d4ceed7567a635cf18e5d7595d143a28e8600aed4c0af08665373314",
+    "r6_data/sources.json": "94d0351e8b58fb142f76ce76d0addfdf31634c941bdfaf2de80a2b8a8654d888",
+    "r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+    "r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+    "r7_data/manifest.json": "2fe6a0846618dcde00b981fdcc81d11f751c945557cf4d4a290bac5e9bccaa5a",
+    "r7_data/sources.json": "4b0016c4ec0c43fab51e091323e7e8b490a54f95aa2ed81c72eb1b113bc6f6ee"
+  },
+  "reused_raw_bodies_verified": {
+    "r13_data": 128,
+    "r6_data": 314,
+    "r7_data": 836
+  },
+  "source_only": true,
+  "source_reconciliation": "r17_price_reconciliation.json"
+}

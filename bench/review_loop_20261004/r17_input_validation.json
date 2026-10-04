@@ -1,0 +1,99 @@
+{
+  "aggregate_performance_not_run": true,
+  "execution_outputs_contain_equity_and_Pnl": true,
+  "source_sha256": {
+    "R17_PROTOCOL.md": "8f5dc592a16ef8811a77ca6b9c443f5c5448fddf37e6c7479db9fd6fd906c6b6",
+    "R17_DATA_PLAN.md": "da82a2b2c3885d3d2bacadbf9f00f69b9236cc08c8bd36d83a9f33be31727990",
+    "r17_carry.py": "177204e03fa0f1fde57c71ea49d810c3c5737f1faf8c05d7651a82eea3a469a8",
+    "test_r17_carry.py": "833e064f4808e0d74ed536da896c23b25a761e0f2afff80447b6bb124de4f09b",
+    "r17_data.py": "56dcb2c12abd6745e91058e8e8c8f4ecfad7bc66b73b3cadeed1988324b472e6",
+    "test_r17_data.py": "763987c339a90f18328409e7bb2ffece8a34fd42d5ff004c47bb454814fafaad",
+    "r17_forecasts.py": "857855ce770ac4e3e7a750e4bb82e9194f7d4dd7093ed56eea332cd7198b43db",
+    "r17_prices.py": "49a529029d4e89fd322091b8bec50e8d8a8371f584afe7eb0accb5807f3af868",
+    "test_r17_prices.py": "32d7027132371273b95dc335a0a23dd961b5671ad46deb7a36279749bc8d144e",
+    "r17_price_reconciliation.json": "c5541da2c473c8c3ccb56392a8cfe4b4b86c53bd06fbb68e7f98e3da1a8c8280",
+    "r17_engine.py": "081757527199bc019ce6ce1a3ec4055884e5548bb45a904289dc51950371c20f",
+    "test_r17_engine.py": "b62d8a302dcc34c7f18059151b60fe4dc9922db404570912483cd3498efc445b",
+    "r17_inputs.py": "6fbc5f01f0dff57c6c18ba37872aa0fa6d309f6e5ce29f58cccf1f5af5e8f9a6",
+    "r17_screen.py": "c9f1b5d60af0aa00c7a65567425a7334f0782e8ca9b40b9e6bb55d8b203d146f",
+    "test_r17_screen.py": "2ef389028228167cf9f948520c4f139d0897d2c7f6f9bf5756ae4db38db6fa7c",
+    "r6_relative.py": "7f1ced29f16a84cf831345b10b2e0dbdc7835b23fa8d60616664045da63a62f0",
+    "r16_knowledge.py": "70c12c900b51da7670f5fb9d4d45ff6a1b02b6d6d5695c1757dd841565adff49"
+  },
+  "input_manifests_sha256": {
+    "r17_data/funding_manifest.json": "ef9f1c9c6e5eb8c50dbe40797c85058111e91b264eaff8b6e88484bffb108735",
+    "r17_data/api_sources.json": "ab3399d65097cf8b562b8d5da11283be9da2e845be4e689f3a264d89c14e3f25",
+    "r17_data/legacy_sources.json": "9578710eec078743a5ff548fdac3d4c9b4aea49657d9b6493b140281fae4bfe1",
+    "r17_prices/manifest.json": "59fc16a32b77b1bc4fc9f4741349102a3458879d8fd82aa84f4808f594f4781f",
+    "r17_prices/sources.json": "a9d898f16abd042923e4aa04b75ea6ecfc59b2e254459703001394926e00bc26",
+    "r17_forecast_validation.json": "9c856c23193dc082844cb6f4c2dd886841476d970a765527562845f8ec8310de",
+    "r17_decisions.json": "2fdd6a1fc16b6bd8cee6f44b2a7c8d95200318fb050f78f4719fe3f754df9917",
+    "r17_decision_audit.csv": "769968115ff273ec34bc8e89bbab2bdfc38a65ffaffc94b41afe1b04c974f318"
+  },
+  "execution_output_sha256": {
+    "r17_recent_ranked_cost0.0012_daily.csv": "66e1944594edb98a551777dd98816f280468fef9df3eac747c7fab6b291aa3eb",
+    "r17_recent_ranked_cost0.0012_hourly.parquet": "fabc3023ef668613e1c0cd282ae3658f4f02b1a20239fc27968996c809df21cc",
+    "r17_recent_ranked_cost0.0012_orders.csv": "7c7b2290fd4d9c30f902a35864adbd7b5c5909ab0df60f1c138427a2320b34e1",
+    "r17_recent_ranked_cost0.0024_daily.csv": "a59c4298a6cc58e502b2ed4f0a5f494c7abe5424047fb75ee61aa206636a40ce",
+    "r17_recent_ranked_cost0.0024_hourly.parquet": "54e57b5829c77f9eab8330d7f99a62fb6ae8b6b4615fe550aebe69fdca8786a2",
+    "r17_recent_ranked_cost0.0024_orders.csv": "bc37bab0e2741d53966ea83b413cbbf0d7e3fc44146f2100df34938e34e89afd",
+    "r17_recent_equal_pairs_cost0.0012_daily.csv": "51b43d080d07fda0647efe6b255f792438a1bc934d6c4884a134fa9c202bf275",
+    "r17_recent_equal_pairs_cost0.0012_hourly.parquet": "7c58d26e35cbad7d582f57420477bf466a4c16a864f6f1feb517926f2f2a4283",
+    "r17_recent_equal_pairs_cost0.0012_orders.csv": "af0c7d3aba4e65e2c7fa1871c24f25931f01a8c55ceae9615135946fc34da225",
+    "r17_recent_equal_pairs_cost0.0024_daily.csv": "753c4296dcd67f2e2cc548460a651bf536b310045bab3d39a755f07498d45a12",
+    "r17_recent_equal_pairs_cost0.0024_hourly.parquet": "8d622498b4c23c41b5d364bf273da7043470380d39ebe2577aadeaf2a627cb6d",
+    "r17_recent_equal_pairs_cost0.0024_orders.csv": "ea2d3533f155d17f2b0c62d4b7f864917b5bfa70a48ec07ead6fd6b2da2d4927",
+    "r17_cash_control.csv": "8c50f4cfdbd020d7f4d747b7c9450e72593195bf32d603906a892e2783047fa4"
+  },
+  "cases": {
+    "recent_ranked_cost0.0012": {
+      "real_invested_prefix_endpoints": [
+        "2024-01-04",
+        "2024-03-13",
+        "2024-12-12"
+      ],
+      "hourly_and_orders_exact_prefix": true,
+      "terminal_cash_identity_abs_error_USDT": 5.4569682106375694e-12,
+      "order_cost_identity_abs_error_USDT": 2.842170943040401e-14
+    },
+    "recent_ranked_cost0.0024": {
+      "real_invested_prefix_endpoints": [
+        "2024-01-04",
+        "2024-03-13",
+        "2024-12-12"
+      ],
+      "hourly_and_orders_exact_prefix": true,
+      "terminal_cash_identity_abs_error_USDT": 0.0,
+      "order_cost_identity_abs_error_USDT": 1.1368683772161603e-13
+    },
+    "recent_equal_pairs_cost0.0012": {
+      "real_invested_prefix_endpoints": [
+        "2024-01-04",
+        "2024-03-13",
+        "2024-12-12"
+      ],
+      "hourly_and_orders_exact_prefix": true,
+      "terminal_cash_identity_abs_error_USDT": 0.0,
+      "order_cost_identity_abs_error_USDT": 0.0
+    },
+    "recent_equal_pairs_cost0.0024": {
+      "real_invested_prefix_endpoints": [
+        "2024-01-04",
+        "2024-03-13",
+        "2024-12-12"
+      ],
+      "hourly_and_orders_exact_prefix": true,
+      "terminal_cash_identity_abs_error_USDT": 9.094947017729282e-12,
+      "order_cost_identity_abs_error_USDT": 1.1368683772161603e-13
+    }
+  },
+  "cash_independent_constant_control": true,
+  "source_replay": "Original funding pages/CSVs, price raw bodies and reused dependencies checked before ledger replay. Quote/tick, actual lots/tiers and independent forward remain unverified.",
+  "preregistered_before_outcomes": {
+    "protocol": "344953e",
+    "forecast_ledger": "c5bb2a9",
+    "funding_source_parser": "8b38432",
+    "rate_decisions_price_plan": "a6a1299",
+    "hourly_execution_oracles_and_source_reconciliation": "096c0c2"
+  }
+}
