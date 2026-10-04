@@ -1348,5 +1348,16 @@
     "ratio_comparisons": 2016,
     "inventory_volume_comparisons": 2009,
     "disposition": "Early preceding/base and recent following/quote flow correspondence differ, with material recent mismatches; a passing volume bound does not certify inventory clocks. Current taker START/OI END description clarification retained. Full early per-asset OI source scope unverified; no rule/cohort/P&L or activation. All prior verdicts unchanged."
+  },
+  {
+    "trial": "R25 current REST/archive native counterparts",
+    "source_only": true,
+    "new_alpha_trial": false,
+    "new_performance": false,
+    "adoption_gate": false,
+    "original_request_roles": 9,
+    "retained_attempts": 11,
+    "native_comparisons": 1152,
+    "disposition": "All576OI quantities and576values exactly corroborate tested current API T+5m; taker maps differently and retains precision/window discrepancies. Both archives unordered: strict failures retained, forensic comparison grants no feature eligibility. Current mapping is not historical first-version/unit/measurement certification. No alpha/P&L/runtime/forward change."
   }
 ]

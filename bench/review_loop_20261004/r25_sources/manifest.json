@@ -1,0 +1,158 @@
+{
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "source_only": true,
+  "sources": {
+    "metrics_BTCUSDT": {
+      "bytes": 11278,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-05.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 15:01:40 GMT",
+        "ETag": "\"da4859c19843bcc8340069dcc7cde5dc\"",
+        "Last-Modified": "Sun, 06 Sep 2026 06:43:31 GMT"
+      },
+      "path": "raw/60ae535e0dcb6c8f6a86852777cf17bb7ba115005f1401b2acd047fbd443252a",
+      "requested_utc": "2026-10-04T15:01:35.576887+00:00",
+      "retrieved_utc": "2026-10-04T15:01:40.562410+00:00",
+      "sha256": "119bfa27775f96d8feb131a9999b89d4f1f5ac9505915a728fe5bb3a5acd9cc2",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-05.zip"
+    },
+    "metrics_BTCUSDT_checksum": {
+      "failed_utc": "2026-10-04T15:01:41.499534+00:00",
+      "path": null,
+      "requested_utc": "2026-10-04T15:01:35.577206+00:00",
+      "source_error": "SSLError: HTTPSConnectionPool(host='data.binance.vision', port=443): Max retries exceeded with url: /data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-05.zip.CHECKSUM (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))",
+      "status": null,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-05.zip.CHECKSUM"
+    },
+    "metrics_BTCUSDT_checksum_retry_20261004T150311Z": {
+      "bytes": 97,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-05.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 15:03:14 GMT",
+        "ETag": "\"caea09b0c496f01fb0d213c2800c9e2e\"",
+        "Last-Modified": "Sun, 06 Sep 2026 06:43:31 GMT"
+      },
+      "path": "raw/d15529ddec198e1b46789f3f80c63c889edd3ca099991e68b51af30ba0b2eec2",
+      "requested_utc": "2026-10-04T15:03:11.616427+00:00",
+      "retrieved_utc": "2026-10-04T15:03:15.027024+00:00",
+      "sha256": "0b3c9cf304b06df9d69e1d9895d561f44e5f457b64f12972888d36bd6ad50e47",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2026-09-05.zip.CHECKSUM"
+    },
+    "metrics_ETHUSDT": {
+      "bytes": 11606,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2026-09-05.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 15:01:43 GMT",
+        "ETag": "\"aaa58e33accade42746183b130cfe32d\"",
+        "Last-Modified": "Sun, 06 Sep 2026 06:43:33 GMT"
+      },
+      "path": "raw/6f94eb68b37d254b84a4305b22278511aa8d4f4e248848e9faffb420080b9a97",
+      "requested_utc": "2026-10-04T15:01:42.174963+00:00",
+      "retrieved_utc": "2026-10-04T15:01:43.231295+00:00",
+      "sha256": "f4bb92e4f86752a5f82a637d86c8f97fda8a1719209307d14b83847e8ca3ace3",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2026-09-05.zip"
+    },
+    "metrics_ETHUSDT_checksum": {
+      "bytes": 97,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2026-09-05.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 15:01:44 GMT",
+        "ETag": "\"53cfdb9f08aeebd66d3a2dc30ea62e2a\"",
+        "Last-Modified": "Sun, 06 Sep 2026 06:43:33 GMT"
+      },
+      "path": "raw/19a5950127f7463ab5691e5e336b86b6456416ed05903648cc26b79fe13aaac4",
+      "requested_utc": "2026-10-04T15:01:43.231900+00:00",
+      "retrieved_utc": "2026-10-04T15:01:43.877597+00:00",
+      "sha256": "fe6e66cc118ecff70db88290b4d7fc02d0a33823b8a4a03b1ed02274f822ad6a",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/ETHUSDT/ETHUSDT-metrics-2026-09-05.zip.CHECKSUM"
+    },
+    "official_rest": {
+      "bytes": 1557062,
+      "final_url": "https://developers.binance.info/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/market-data",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 15:01:46 GMT",
+        "Last-Modified": "Fri, 02 Oct 2026 09:58:45 GMT"
+      },
+      "path": "raw/871b6ff4642aca58a239e4285502e272f5a32f7ada959a4bda70280b71096180",
+      "requested_utc": "2026-10-04T15:01:44.904279+00:00",
+      "retrieved_utc": "2026-10-04T15:01:47.551017+00:00",
+      "sha256": "b9ab5b26a0eb5ef92a66889a85c2de9a230c9dc2fb66e41bbd54ee4551bc3c6f",
+      "status": 200,
+      "url": "https://developers.binance.info/en/docs/catalog/core-trading-derivatives-trading-usd-s-m-futures/api/rest-api/market-data"
+    },
+    "oi_BTCUSDT": {
+      "bytes": 49420,
+      "final_url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=BTCUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 15:01:41 GMT"
+      },
+      "path": "raw/098ff6355ffb8c6d137311851a3720405c65ee7819b85134c6a68fb5466c9bb1",
+      "requested_utc": "2026-10-04T15:01:40.563517+00:00",
+      "retrieved_utc": "2026-10-04T15:01:42.173252+00:00",
+      "sha256": "ccb15c50700bcf8dac6aca341599eb0e99b23ce1a12dc7d8eb9d7e5aab9b586a",
+      "status": 200,
+      "url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=BTCUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500"
+    },
+    "oi_ETHUSDT": {
+      "bytes": 49998,
+      "final_url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=ETHUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 15:01:43 GMT"
+      },
+      "path": "raw/907bd1cfe171a7e8421fa627b4b1f3f67cf5cf1976d0730355dcb3b48e23a509",
+      "requested_utc": "2026-10-04T15:01:43.879161+00:00",
+      "retrieved_utc": "2026-10-04T15:01:44.563656+00:00",
+      "sha256": "5860fb48e623879c80950f2644829ff32e57839ba2d8af2eb3c6cf3922257359",
+      "status": 200,
+      "url": "https://fapi.binance.com/futures/data/openInterestHist?symbol=ETHUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500"
+    },
+    "taker_BTCUSDT": {
+      "failed_utc": "2026-10-04T15:01:46.830320+00:00",
+      "path": null,
+      "requested_utc": "2026-10-04T15:01:41.499599+00:00",
+      "source_error": "SSLError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Max retries exceeded with url: /futures/data/takerlongshortRatio?symbol=BTCUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1028)')))",
+      "status": null,
+      "url": "https://fapi.binance.com/futures/data/takerlongshortRatio?symbol=BTCUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500"
+    },
+    "taker_BTCUSDT_retry_20261004T150311Z": {
+      "bytes": 26441,
+      "final_url": "https://fapi.binance.com/futures/data/takerlongshortRatio?symbol=BTCUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 15:03:12 GMT"
+      },
+      "path": "raw/3dac5776f6774056a6b10b5325174d170cbe64428c9d1dc0de5d24d743120068",
+      "requested_utc": "2026-10-04T15:03:11.616559+00:00",
+      "retrieved_utc": "2026-10-04T15:03:12.570633+00:00",
+      "sha256": "8300d1dde3d454dacd1d87c76bc479c6f36f968e327d3a5de5a1552b1bd98183",
+      "status": 200,
+      "url": "https://fapi.binance.com/futures/data/takerlongshortRatio?symbol=BTCUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500"
+    },
+    "taker_ETHUSDT": {
+      "bytes": 27284,
+      "final_url": "https://fapi.binance.com/futures/data/takerlongshortRatio?symbol=ETHUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500",
+      "headers": {
+        "Content-Type": "application/json;charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 15:01:44 GMT"
+      },
+      "path": "raw/70b9400c87543c53d9c65c1cd78a0ed7d56d3581928864aadf83234205bcf339",
+      "requested_utc": "2026-10-04T15:01:44.564224+00:00",
+      "retrieved_utc": "2026-10-04T15:01:44.902526+00:00",
+      "sha256": "04ccdc9346a96c28671526d63203a2a5fa4123e1f9a1cea923fc5365e6833a35",
+      "status": 200,
+      "url": "https://fapi.binance.com/futures/data/takerlongshortRatio?symbol=ETHUSDT&period=5m&startTime=1788566400000&endTime=1788652800000&limit=500"
+    }
+  }
+}

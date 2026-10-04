@@ -1,0 +1,41 @@
+{
+  "adopted": false,
+  "artifact_sha256": {
+    "r25_archive_order_observation.json": "b32bddc401305cdee63ae2c5095ecfc7c2d6540af4208503424a92ede581bcba",
+    "r25_source_audit.json": "6f7bd243127d4358b3ac488304c13b4d680ecf527a93456b285e82bfe4784cd0",
+    "r25_sources/manifest.json": "8f27c25c22eb1a0c800d818c3895b4578a40c27c6c5f119f1ea7d410cf8b84fc",
+    "r25_sources/raw/098ff6355ffb8c6d137311851a3720405c65ee7819b85134c6a68fb5466c9bb1": "ccb15c50700bcf8dac6aca341599eb0e99b23ce1a12dc7d8eb9d7e5aab9b586a",
+    "r25_sources/raw/19a5950127f7463ab5691e5e336b86b6456416ed05903648cc26b79fe13aaac4": "fe6e66cc118ecff70db88290b4d7fc02d0a33823b8a4a03b1ed02274f822ad6a",
+    "r25_sources/raw/3dac5776f6774056a6b10b5325174d170cbe64428c9d1dc0de5d24d743120068": "8300d1dde3d454dacd1d87c76bc479c6f36f968e327d3a5de5a1552b1bd98183",
+    "r25_sources/raw/60ae535e0dcb6c8f6a86852777cf17bb7ba115005f1401b2acd047fbd443252a": "119bfa27775f96d8feb131a9999b89d4f1f5ac9505915a728fe5bb3a5acd9cc2",
+    "r25_sources/raw/6f94eb68b37d254b84a4305b22278511aa8d4f4e248848e9faffb420080b9a97": "f4bb92e4f86752a5f82a637d86c8f97fda8a1719209307d14b83847e8ca3ace3",
+    "r25_sources/raw/70b9400c87543c53d9c65c1cd78a0ed7d56d3581928864aadf83234205bcf339": "04ccdc9346a96c28671526d63203a2a5fa4123e1f9a1cea923fc5365e6833a35",
+    "r25_sources/raw/871b6ff4642aca58a239e4285502e272f5a32f7ada959a4bda70280b71096180": "b9ab5b26a0eb5ef92a66889a85c2de9a230c9dc2fb66e41bbd54ee4551bc3c6f",
+    "r25_sources/raw/907bd1cfe171a7e8421fa627b4b1f3f67cf5cf1976d0730355dcb3b48e23a509": "5860fb48e623879c80950f2644829ff32e57839ba2d8af2eb3c6cf3922257359",
+    "r25_sources/raw/d15529ddec198e1b46789f3f80c63c889edd3ca099991e68b51af30ba0b2eec2": "0b3c9cf304b06df9d69e1d9895d561f44e5f457b64f12972888d36bd6ad50e47"
+  },
+  "focused_tests_passed": 15,
+  "http_disabled": true,
+  "implementation_failures_before_audit": [
+    "Initial pytest invocation inherited unavailable --dist; rerun disables configured addopts. Missing source module test fails before implementation. Derived-error scientific-format discrepancy fixed without changing originals. Native strict archive parser rejects actual unsorted rows; strict API parser rejects actual early taker boundary. Dedicated forensic comparisons retain both failures and do not grant feature eligibility."
+  ],
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "no_strategy_bot_image_or_forward_cohort_change": true,
+  "plan_commit": "9bcfd84",
+  "prior_registered_outputs": 2020,
+  "prior_registered_source_output_and_root_hashes_unchanged_before_ledger_updates": true,
+  "prior_registered_sources": 141,
+  "prior_selection_rows_unchanged": 138,
+  "source_only": true,
+  "source_order_and_returned_window_deviations_retained_not_repaired": true,
+  "stable_suite": {
+    "broad_all_current_tree_pass_claimed": false,
+    "new_owned_files": 1,
+    "subtests_passed": 16,
+    "tests_passed": 478,
+    "tracked_files": 52,
+    "warnings": 4
+  },
+  "unchanged_artifact_count": 12
+}
