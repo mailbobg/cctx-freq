@@ -1,0 +1,335 @@
+{
+  "adopted": false,
+  "code_sha256": {
+    "R20_SOURCE_PLAN.md": "2bf365837b50eb366bc5f17a26c8291e8498ac299a9da88927fd338f6890dd30",
+    "r20_audit.py": "e83289d3c70e694e64fa585d52b08f3682eb700de82e5a34e46f6827ce784817",
+    "r20_sources.py": "5ea41d22863e125aa3f3614debe229efd82c7a4ef5dad02022d3b4f31fee0e16",
+    "test_r20_audit.py": "6b8ff0815f7b308dc7591b0759d43ffaeebd8f5f732faa5d32fcf942a714eda2"
+  },
+  "csv": {
+    "blank_counts": {
+      "AssetCompletionTime": 1,
+      "AssetEODCompletionTime": 1,
+      "CapMVRVCur": 562,
+      "FeeTotNtv": 1,
+      "SplyCur": 1
+    },
+    "calendar_gaps": [],
+    "covers_recent_full_window": false,
+    "first_day": "2009-01-03",
+    "last_day": "2026-05-24",
+    "rows": 6351,
+    "schema": [
+      "time",
+      "AdrActCnt",
+      "AdrBalCnt",
+      "AssetCompletionTime",
+      "AssetEODCompletionTime",
+      "BlkCnt",
+      "CapMVRVCur",
+      "CapMrktCurUSD",
+      "CapMrktEstUSD",
+      "FeeTotNtv",
+      "FlowInExNtv",
+      "FlowInExUSD",
+      "FlowOutExNtv",
+      "FlowOutExUSD",
+      "HashRate",
+      "IssTotNtv",
+      "IssTotUSD",
+      "PriceBTC",
+      "PriceUSD",
+      "ROI1yr",
+      "ROI30d",
+      "ReferenceRate",
+      "ReferenceRateETH",
+      "ReferenceRateEUR",
+      "ReferenceRateUSD",
+      "SplyCur",
+      "SplyExNtv",
+      "SplyExUSD",
+      "SplyExpFut10yr",
+      "TxCnt",
+      "TxTfrCnt",
+      "volume_reported_spot_usd_1d"
+    ]
+  },
+  "current_repository": {
+    "author_committer_labels_are_not_first_public_timestamps": true,
+    "blob_identities_verified": true,
+    "created_at_label": "2018-06-15T09:46:38Z",
+    "id": 137470543,
+    "latest_committer_date_label": "2026-05-24T13:37:39Z",
+    "native_git_tree_sha": "f951e8393ca3dac94fcfe1c300a2625e0a446275",
+    "public_now": true,
+    "publisher_script_inspected_not_executed": true,
+    "resolved_revision_sha": "f1a36afb962731c387bb03982758ab0103063da5",
+    "tree_api_returned_ref_sha": "f1a36afb962731c387bb03982758ab0103063da5"
+  },
+  "definitions_and_limits": [
+    "MVRV is the ratio of market cap to last-on-chain-movement realized capitalization, not an actual purchase-cost ledger.",
+    "The native supply metric describes ledger-visible units; an exact100BTC discrepancy in three samples has no authenticated revision explanation here.",
+    "Completion time indicates calculation completion, not authenticated first publication or a version identifier.",
+    "Current values/compatible clocks do not authenticate historical knowledge; no clock is backdated from Git commit labels.",
+    "Repository-wide/path history queries at all three fixed cutoffs return empty. This does not prove the project never published older data or that history was rewritten.",
+    "CSV current-snapshot endMay2026 and missing historical content/publication versions prevent this full-window PIT screen.",
+    "Matching MVRV/fee values at three dates do not prove all historical values were immutable.",
+    "Native-chain stablecoin names are not an authenticated complete historical monetary aggregate; no series is summed."
+  ],
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "next_action": "Use a distinct source-feasible information mechanism; retain this failed source entrance and exact original responses.",
+  "plan_commit": "d62991d",
+  "probes": [
+    {
+      "api_capture_utc": "2026-10-04T13:32:22.832906+00:00",
+      "csv_values": {
+        "AssetCompletionTime": "1614337924",
+        "AssetEODCompletionTime": "1614337924",
+        "CapMVRVCur": "2.87127647",
+        "FeeTotNtv": "169.10207572",
+        "SplyCur": "18614015.19153712"
+      },
+      "day": "2021-01-29",
+      "differences": {
+        "SplyCur": {
+          "api": "18614115.19153712",
+          "api_minus_csv": "100.00000000",
+          "csv": "18614015.19153712"
+        }
+      },
+      "historical_commits_returned": {
+        "history_": [],
+        "history_repo_": []
+      },
+      "realized_cap_access": {
+        "first_public_available_utc": null,
+        "historical_value_version_certified": false,
+        "response_state": "forbidden",
+        "source_error": {
+          "message": "Requested metric 'CapRealUSD' with frequency '1d' for asset 'btc' is not available with supplied credentials.",
+          "type": "forbidden"
+        },
+        "values": null
+      },
+      "sample": {
+        "completion_utc": "2021-02-26T11:12:04+00:00",
+        "first_public_available_utc": null,
+        "historical_value_version_certified": false,
+        "observation_label": "2021-01-29T00:00:00.000000000Z",
+        "response_state": "sample",
+        "states": {
+          "AssetCompletionTime": "value",
+          "AssetEODCompletionTime": "value",
+          "CapMVRVCur": "value",
+          "FeeTotNtv": "value",
+          "SplyCur": "value"
+        },
+        "values": {
+          "AssetCompletionTime": "1614337924",
+          "AssetEODCompletionTime": "1614337924",
+          "CapMVRVCur": "2.87127647",
+          "FeeTotNtv": "169.10207572",
+          "SplyCur": "18614115.19153712"
+        }
+      },
+      "usable_at_past_decision_certified": false
+    },
+    {
+      "api_capture_utc": "2026-10-04T13:32:23.220145+00:00",
+      "csv_values": {
+        "AssetCompletionTime": "1667627537",
+        "AssetEODCompletionTime": "1667627537",
+        "CapMVRVCur": "1.000981821699",
+        "FeeTotNtv": "19.49888769",
+        "SplyCur": "19198260.91751142"
+      },
+      "day": "2022-11-04",
+      "differences": {
+        "SplyCur": {
+          "api": "19198360.91751142",
+          "api_minus_csv": "100.00000000",
+          "csv": "19198260.91751142"
+        }
+      },
+      "historical_commits_returned": {
+        "history_": [],
+        "history_repo_": []
+      },
+      "realized_cap_access": {
+        "first_public_available_utc": null,
+        "historical_value_version_certified": false,
+        "response_state": "forbidden",
+        "source_error": {
+          "message": "Requested metric 'CapRealUSD' with frequency '1d' for asset 'btc' is not available with supplied credentials.",
+          "type": "forbidden"
+        },
+        "values": null
+      },
+      "sample": {
+        "completion_utc": "2022-11-05T05:52:17+00:00",
+        "first_public_available_utc": null,
+        "historical_value_version_certified": false,
+        "observation_label": "2022-11-04T00:00:00.000000000Z",
+        "response_state": "sample",
+        "states": {
+          "AssetCompletionTime": "value",
+          "AssetEODCompletionTime": "value",
+          "CapMVRVCur": "value",
+          "FeeTotNtv": "value",
+          "SplyCur": "value"
+        },
+        "values": {
+          "AssetCompletionTime": "1667627537",
+          "AssetEODCompletionTime": "1667627537",
+          "CapMVRVCur": "1.000981821699",
+          "FeeTotNtv": "19.49888769",
+          "SplyCur": "19198360.91751142"
+        }
+      },
+      "usable_at_past_decision_certified": false
+    },
+    {
+      "api_capture_utc": "2026-10-04T13:32:23.246663+00:00",
+      "csv_values": {
+        "AssetCompletionTime": "1704516041",
+        "AssetEODCompletionTime": "1704516041",
+        "CapMVRVCur": "1.983754393826",
+        "FeeTotNtv": "117.05381845",
+        "SplyCur": "19590674.24589445"
+      },
+      "day": "2024-01-05",
+      "differences": {
+        "SplyCur": {
+          "api": "19590774.24589445",
+          "api_minus_csv": "100.00000000",
+          "csv": "19590674.24589445"
+        }
+      },
+      "historical_commits_returned": {
+        "history_": [],
+        "history_repo_": []
+      },
+      "realized_cap_access": {
+        "first_public_available_utc": null,
+        "historical_value_version_certified": false,
+        "response_state": "forbidden",
+        "source_error": {
+          "message": "Requested metric 'CapRealUSD' with frequency '1d' for asset 'btc' is not available with supplied credentials.",
+          "type": "forbidden"
+        },
+        "values": null
+      },
+      "sample": {
+        "completion_utc": "2024-01-06T04:40:41+00:00",
+        "first_public_available_utc": null,
+        "historical_value_version_certified": false,
+        "observation_label": "2024-01-05T00:00:00.000000000Z",
+        "response_state": "sample",
+        "states": {
+          "AssetCompletionTime": "value",
+          "AssetEODCompletionTime": "value",
+          "CapMVRVCur": "value",
+          "FeeTotNtv": "value",
+          "SplyCur": "value"
+        },
+        "values": {
+          "AssetCompletionTime": "1704516041",
+          "AssetEODCompletionTime": "1704516041",
+          "CapMVRVCur": "1.983754393826",
+          "FeeTotNtv": "117.05381845",
+          "SplyCur": "19590774.24589445"
+        }
+      },
+      "usable_at_past_decision_certified": false
+    }
+  ],
+  "public_metric_scope": {
+    "AssetCompletionTime": {
+      "btc_daily_supported": true,
+      "reviewable_field": null,
+      "reviewable_field_present": false,
+      "unit": "Seconds"
+    },
+    "AssetEODCompletionTime": {
+      "btc_daily_supported": true,
+      "reviewable_field": null,
+      "reviewable_field_present": false,
+      "unit": "Seconds"
+    },
+    "CapMVRVCur": {
+      "btc_daily_supported": true,
+      "reviewable_field": null,
+      "reviewable_field_present": false,
+      "unit": "Dimensionless"
+    },
+    "FeeTotNtv": {
+      "btc_daily_supported": true,
+      "reviewable_field": null,
+      "reviewable_field_present": false,
+      "unit": "Native units"
+    },
+    "SplyCur": {
+      "btc_daily_supported": true,
+      "reviewable_field": null,
+      "reviewable_field_present": false,
+      "unit": "Native units"
+    }
+  },
+  "retained_body_sha256": {
+    "api_btc_2021-01-29": "79bcb4a2c52a377337662b4e657df79b767d5cb9987e4e9ac8cb9855fb560489",
+    "api_btc_2022-11-04": "79bcb4a2c52a377337662b4e657df79b767d5cb9987e4e9ac8cb9855fb560489",
+    "api_btc_2024-01-05": "79bcb4a2c52a377337662b4e657df79b767d5cb9987e4e9ac8cb9855fb560489",
+    "api_free_2021-01-29": "f935b9367a6c92a8ea4321262953fff9ae6aa06b05d79555d95de1dbf92ee208",
+    "api_free_2022-11-04": "868a81b12156eb32a7345c635c68db2e16593af442e8cdd6fff668bc6a6b4abb",
+    "api_free_2024-01-05": "5720412fb041b5ebd1afd534e5e8cfd4e02981459bb201b099cab365b576bcbe",
+    "community_definition": "be0eafc313cad728f912820b5e050c3f7c7254377b18018b0678426ece3d8043",
+    "completion_definition": "b26d96d938750752e31cea79096b6b0c262e42a8fccd35d4637a322b692b5f0d",
+    "current_btc_csv": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+    "current_readme": "9c9d798a88a688f4d25791a953d1f01acda99b9ef5cb5d2481ec577b28af84ae",
+    "current_tree": "06990a40cfade17a49cdb08c462b8bb40eae5548d9639849a8bea6310560b23f",
+    "daily_definition": "65ad2d5112e06497ef9cb9a0aa3eace37ad9bd0d7d874b13e996d0c8a494669f",
+    "gharchive_collection": "566652fbedd9b3bb651be34291f37d7543c41694d65a405921ece5e43170bc06",
+    "history_2021-01-29": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "history_2022-11-04": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "history_2024-01-05": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "history_repo_2021-01-29": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "history_repo_2022-11-04": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "history_repo_2024-01-05": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "latest_commits": "07a7d23ee2cac5e510280cee483a60f2fba00d8297fa4e9b5deff8c02eb29af8",
+    "mvrv_definition": "6122fd958a87e39e56ddd247378c276eac3a021c69b8508e21de5191f41d6cff",
+    "public_metric_catalog": "5cd84dbc6daf55deddcd9cea16e80d617fde751daa5a8c7fee98f55da919ea57",
+    "public_metric_catalog_all": "86d52bcb95d583cf5470680a5a7fd414125053c9a156ae6cd3656e70b0e1d07e",
+    "publisher_script_0": "cccb508611a8dce916783faa877814b8ece6e19f82a2b2dcd452e061cce5fcc8",
+    "realized_definition": "4070cea15001ea3eddc66153f1bfb1722af1796770851e6949ff453dc29f6e8c",
+    "repo_identity": "578224a1e677c4e97be05ae887d69063f824056da4254cc8338514b9b4fa39d2",
+    "supply_definition": "e4cbe210fba78c123a96512489482d0e848ecb41d477e18f32fca6774e3743d9"
+  },
+  "source_only": true,
+  "source_responses": 27,
+  "stablecoin_paths_only": [
+    "csv/usdc.csv",
+    "csv/usdc_avaxc.csv",
+    "csv/usdc_eth.csv",
+    "csv/usdc_trx.csv",
+    "csv/usdt.csv",
+    "csv/usdt_avaxc.csv",
+    "csv/usdt_eth.csv",
+    "csv/usdt_omni.csv",
+    "csv/usdt_trx.csv"
+  ],
+  "status_counts": {
+    "200": 23,
+    "400": 1,
+    "403": 3
+  },
+  "unsupported_catalog_request": {
+    "correction": "Retain invalid page_size request; ordinary documented unfiltered catalog requested separately, not a permission bypass.",
+    "error": {
+      "message": "Unsupported parameter 'page_size'.",
+      "type": "unsupported_parameter"
+    },
+    "status": 400
+  },
+  "verdict": "Source probe cannot support source-faithful full-window historical strategy selection. No alpha hypothesis, rule, backtest or runtime change."
+}

@@ -1,0 +1,410 @@
+{
+  "new_performance": false,
+  "source_only": true,
+  "sources": {
+    "api_btc_2021-01-29": {
+      "bytes": 152,
+      "final_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapRealUSD%2CSplyCur%2CFeeTotNtv&frequency=1d&start_time=2021-01-29&end_time=2021-01-29&page_size=100",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": "5999",
+        "X-RateLimit-Reset": "20"
+      },
+      "path": "raw/1baf20875937d9b8b742c7f66fffd634db90b827b710d9fef3876847f9fdd42c",
+      "requested_utc": "2026-10-04T13:28:41.455589+00:00",
+      "retrieved_utc": "2026-10-04T13:28:41.961290+00:00",
+      "sha256": "79bcb4a2c52a377337662b4e657df79b767d5cb9987e4e9ac8cb9855fb560489",
+      "status": 403,
+      "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapRealUSD%2CSplyCur%2CFeeTotNtv&frequency=1d&start_time=2021-01-29&end_time=2021-01-29&page_size=100"
+    },
+    "api_btc_2022-11-04": {
+      "bytes": 152,
+      "final_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapRealUSD%2CSplyCur%2CFeeTotNtv&frequency=1d&start_time=2022-11-04&end_time=2022-11-04&page_size=100",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": "5998",
+        "X-RateLimit-Reset": "20"
+      },
+      "path": "raw/a6b73c30aaa939f4196bb0288503da29c23ce409890a3ab87ca4e0aa81425ab7",
+      "requested_utc": "2026-10-04T13:28:41.963254+00:00",
+      "retrieved_utc": "2026-10-04T13:28:42.397987+00:00",
+      "sha256": "79bcb4a2c52a377337662b4e657df79b767d5cb9987e4e9ac8cb9855fb560489",
+      "status": 403,
+      "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapRealUSD%2CSplyCur%2CFeeTotNtv&frequency=1d&start_time=2022-11-04&end_time=2022-11-04&page_size=100"
+    },
+    "api_btc_2024-01-05": {
+      "bytes": 152,
+      "final_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapRealUSD%2CSplyCur%2CFeeTotNtv&frequency=1d&start_time=2024-01-05&end_time=2024-01-05&page_size=100",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": "5997",
+        "X-RateLimit-Reset": "20"
+      },
+      "path": "raw/5b180d4c4bc84b0697bf65d6dd02a94ad6f798546362ca4391a0a34602ba91ad",
+      "requested_utc": "2026-10-04T13:28:42.398788+00:00",
+      "retrieved_utc": "2026-10-04T13:28:42.789451+00:00",
+      "sha256": "79bcb4a2c52a377337662b4e657df79b767d5cb9987e4e9ac8cb9855fb560489",
+      "status": 403,
+      "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapRealUSD%2CSplyCur%2CFeeTotNtv&frequency=1d&start_time=2024-01-05&end_time=2024-01-05&page_size=100"
+    },
+    "api_free_2021-01-29": {
+      "bytes": 222,
+      "final_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&frequency=1d&start_time=2021-01-29&end_time=2021-01-29&page_size=100",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": "5999",
+        "X-RateLimit-Reset": "20"
+      },
+      "path": "raw/f0fb03cc2c6836ce8ae8f4fcd5fd0bc0ae4d1260965fa3f275aeb38a622402f3",
+      "requested_utc": "2026-10-04T13:32:22.057376+00:00",
+      "retrieved_utc": "2026-10-04T13:32:22.832906+00:00",
+      "sha256": "f935b9367a6c92a8ea4321262953fff9ae6aa06b05d79555d95de1dbf92ee208",
+      "status": 200,
+      "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&frequency=1d&start_time=2021-01-29&end_time=2021-01-29&page_size=100"
+    },
+    "api_free_2022-11-04": {
+      "bytes": 225,
+      "final_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&frequency=1d&start_time=2022-11-04&end_time=2022-11-04&page_size=100",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": "5999",
+        "X-RateLimit-Reset": "20"
+      },
+      "path": "raw/c6827af305dc9715f159d87ce4617c51b870542ccd0d1ba67579a5a48feb5684",
+      "requested_utc": "2026-10-04T13:32:22.434630+00:00",
+      "retrieved_utc": "2026-10-04T13:32:23.220145+00:00",
+      "sha256": "868a81b12156eb32a7345c635c68db2e16593af442e8cdd6fff668bc6a6b4abb",
+      "status": 200,
+      "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&frequency=1d&start_time=2022-11-04&end_time=2022-11-04&page_size=100"
+    },
+    "api_free_2024-01-05": {
+      "bytes": 226,
+      "final_url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&frequency=1d&start_time=2024-01-05&end_time=2024-01-05&page_size=100",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": "5998",
+        "X-RateLimit-Reset": "20"
+      },
+      "path": "raw/e44ecba13a72b7e25168f04a1b16f9b2c5a1ce087f2822797d85b63d64f4a682",
+      "requested_utc": "2026-10-04T13:32:22.834640+00:00",
+      "retrieved_utc": "2026-10-04T13:32:23.246663+00:00",
+      "sha256": "5720412fb041b5ebd1afd534e5e8cfd4e02981459bb201b099cab365b576bcbe",
+      "status": 200,
+      "url": "https://community-api.coinmetrics.io/v4/timeseries/asset-metrics?assets=btc&metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&frequency=1d&start_time=2024-01-05&end_time=2024-01-05&page_size=100"
+    },
+    "community_definition": {
+      "bytes": 1514,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/product-docs/master/docs/packages/coin-metrics-community-data.md",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"27fa014b3a16aad766bed6d314640d9d5f44ac4ab400d9c75bb1772cca2a5507\""
+      },
+      "path": "raw/392c71a07ba8bfd9200b667e3679e324f4e6fb8568cd8cb4fa62eadcf358a211",
+      "requested_utc": "2026-10-04T13:28:41.040155+00:00",
+      "retrieved_utc": "2026-10-04T13:28:41.453881+00:00",
+      "sha256": "be0eafc313cad728f912820b5e050c3f7c7254377b18018b0678426ece3d8043",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/product-docs/master/docs/packages/coin-metrics-community-data.md"
+    },
+    "completion_definition": {
+      "bytes": 2558,
+      "final_url": "https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/availability/asseteodcompletiontime.md",
+      "headers": {
+        "Content-Type": "text/markdown; charset=utf-8"
+      },
+      "path": "raw/6c3737e7917ab7953699e6335ca88f4895c369b6ff8b3f694232bdbb79f36681",
+      "requested_utc": "2026-10-04T13:37:13.426499+00:00",
+      "retrieved_utc": "2026-10-04T13:37:14.320251+00:00",
+      "sha256": "b26d96d938750752e31cea79096b6b0c262e42a8fccd35d4637a322b692b5f0d",
+      "status": 200,
+      "url": "https://gitbook-docs.coinmetrics.io/network-data/network-data-overview/availability/asseteodcompletiontime.md"
+    },
+    "current_btc_csv": {
+      "bytes": 2482497,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/btc.csv",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"2693b12090cea49ba68e7e355b0243b652c88a162a8e8ca6336e960f312a8079\""
+      },
+      "path": "raw/711fbe1bce62b35386cff98bea87209fd5212a7b1aac613d88fce313c22040d3",
+      "requested_utc": "2026-10-04T13:29:01.642680+00:00",
+      "retrieved_utc": "2026-10-04T13:29:03.402533+00:00",
+      "sha256": "06495ff8e643432e6948b7b4686ce44fc106217287dabdc1b38351d9ddec46c3",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/csv/btc.csv"
+    },
+    "current_readme": {
+      "bytes": 1496,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/README.md",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"32c1eca70eedced51cd50522d13328e07dc7fc1536e32881dc8d09247b71dab8\""
+      },
+      "path": "raw/ec3f11e68d5df80daf40149df8b50f7fa34d56b6b0ba6bb0e53e3da6ebb6344a",
+      "requested_utc": "2026-10-04T13:29:01.642995+00:00",
+      "retrieved_utc": "2026-10-04T13:29:02.111489+00:00",
+      "sha256": "9c9d798a88a688f4d25791a953d1f01acda99b9ef5cb5d2481ec577b28af84ae",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/README.md"
+    },
+    "current_tree": {
+      "bytes": 503393,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/git/trees/master?recursive=1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"0033126225b491fb1390a21df7f21445a0cb8bb22e18fae3b60b2bb85faff7c7\"",
+        "Last-Modified": "Fri, 25 Sep 2026 20:52:50 GMT",
+        "X-RateLimit-Remaining": "48",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/d0a73772309f4d4fcca84d5d923d805f28965ee223714b520d679ad2847d9b43",
+      "requested_utc": "2026-10-04T13:28:39.973469+00:00",
+      "retrieved_utc": "2026-10-04T13:28:40.657035+00:00",
+      "sha256": "06990a40cfade17a49cdb08c462b8bb40eae5548d9639849a8bea6310560b23f",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/git/trees/master?recursive=1"
+    },
+    "daily_definition": {
+      "bytes": 2268,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/asset-metrics-overview.md",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"402d80a56a9c7992fdd771a3c665f20c45c2f72cc7052a674b01046770bc884d\""
+      },
+      "path": "raw/01c000b43f81b54b0dd8900e15a883591398a1d1370a0c796ed146758c7ece81",
+      "requested_utc": "2026-10-04T13:28:40.659345+00:00",
+      "retrieved_utc": "2026-10-04T13:28:41.117555+00:00",
+      "sha256": "65ad2d5112e06497ef9cb9a0aa3eace37ad9bd0d7d874b13e996d0c8a494669f",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/asset-metrics-overview.md"
+    },
+    "gharchive_collection": {
+      "bytes": 19366,
+      "final_url": "https://www.gharchive.org/",
+      "headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Last-Modified": "Mon, 17 Jun 2024 19:25:55 GMT"
+      },
+      "path": "raw/9cce11949ad0d914ed5788e6e97207c1f4afaf2c188fd20f08bad4488ffe5df0",
+      "requested_utc": "2026-10-04T13:28:41.118290+00:00",
+      "retrieved_utc": "2026-10-04T13:28:42.622095+00:00",
+      "sha256": "566652fbedd9b3bb651be34291f37d7543c41694d65a405921ece5e43170bc06",
+      "status": 200,
+      "url": "https://www.gharchive.org/"
+    },
+    "history_2021-01-29": {
+      "bytes": 2,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/commits?path=csv%2Fbtc.csv&until=2021-01-29T23%3A59%3A59Z&per_page=1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"992aaf92b487506974e4305db4a64326866f3ed48b2ba424cef8fbe4e28f72b0\"",
+        "X-RateLimit-Remaining": "47",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/956ffb0c4adc15fbda467ad9e34e70bcfb36c871bfe8339faa0e445460591a35",
+      "requested_utc": "2026-10-04T13:29:02.114394+00:00",
+      "retrieved_utc": "2026-10-04T13:29:02.750865+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?path=csv%2Fbtc.csv&until=2021-01-29T23%3A59%3A59Z&per_page=1"
+    },
+    "history_2022-11-04": {
+      "bytes": 2,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/commits?path=csv%2Fbtc.csv&until=2022-11-04T23%3A59%3A59Z&per_page=1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"992aaf92b487506974e4305db4a64326866f3ed48b2ba424cef8fbe4e28f72b0\"",
+        "X-RateLimit-Remaining": "46",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/50fd36dbb99464b36bc1f83fab017370fbb736067703e539a8ec9668a9537933",
+      "requested_utc": "2026-10-04T13:29:02.751706+00:00",
+      "retrieved_utc": "2026-10-04T13:29:03.248001+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?path=csv%2Fbtc.csv&until=2022-11-04T23%3A59%3A59Z&per_page=1"
+    },
+    "history_2024-01-05": {
+      "bytes": 2,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/commits?path=csv%2Fbtc.csv&until=2024-01-05T23%3A59%3A59Z&per_page=1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"992aaf92b487506974e4305db4a64326866f3ed48b2ba424cef8fbe4e28f72b0\"",
+        "X-RateLimit-Remaining": "45",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/a39ce3875894c390c1ef9c446270c52ec0868103672d8d6c8c94242c595fa640",
+      "requested_utc": "2026-10-04T13:29:03.248824+00:00",
+      "retrieved_utc": "2026-10-04T13:29:03.734634+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?path=csv%2Fbtc.csv&until=2024-01-05T23%3A59%3A59Z&per_page=1"
+    },
+    "history_repo_2021-01-29": {
+      "bytes": 2,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/commits?until=2021-01-29T23%3A59%3A59Z&per_page=1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"992aaf92b487506974e4305db4a64326866f3ed48b2ba424cef8fbe4e28f72b0\"",
+        "X-RateLimit-Remaining": "41",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/c1d43a3a19dc0ca4244aa3f7e5f4b3cdfd1ae7a30034ec66caab031b74689bee",
+      "requested_utc": "2026-10-04T13:32:21.392032+00:00",
+      "retrieved_utc": "2026-10-04T13:32:21.971469+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?until=2021-01-29T23%3A59%3A59Z&per_page=1"
+    },
+    "history_repo_2022-11-04": {
+      "bytes": 2,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/commits?until=2022-11-04T23%3A59%3A59Z&per_page=1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"992aaf92b487506974e4305db4a64326866f3ed48b2ba424cef8fbe4e28f72b0\"",
+        "X-RateLimit-Remaining": "40",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/8bec50df32f0d4c63f8cc198a68975c994fef4004957872c91d31e58cd71b66d",
+      "requested_utc": "2026-10-04T13:32:21.392336+00:00",
+      "retrieved_utc": "2026-10-04T13:32:22.056128+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?until=2022-11-04T23%3A59%3A59Z&per_page=1"
+    },
+    "history_repo_2024-01-05": {
+      "bytes": 2,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/commits?until=2024-01-05T23%3A59%3A59Z&per_page=1",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "\"992aaf92b487506974e4305db4a64326866f3ed48b2ba424cef8fbe4e28f72b0\"",
+        "X-RateLimit-Remaining": "39",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/05048be68de2d3b41517d3ce03e2bcf5e1f685b900aa27ccaa51f2a76f65df13",
+      "requested_utc": "2026-10-04T13:32:21.974524+00:00",
+      "retrieved_utc": "2026-10-04T13:32:22.432525+00:00",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?until=2024-01-05T23%3A59%3A59Z&per_page=1"
+    },
+    "latest_commits": {
+      "bytes": 10162,
+      "final_url": "https://api.github.com/repos/coinmetrics/data/commits?per_page=3",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"0f7434a35faaeded7f44143f0a4123d7d6f30d827b643d5da8222a4e59eff460\"",
+        "Last-Modified": "Sun, 24 May 2026 13:37:39 GMT",
+        "X-RateLimit-Remaining": "44",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/68759fc345369c683073cda6e870db8f11d3c2f204dcecd0add50ba4c1909463",
+      "requested_utc": "2026-10-04T13:31:30.798886+00:00",
+      "retrieved_utc": "2026-10-04T13:31:31.439488+00:00",
+      "sha256": "07a7d23ee2cac5e510280cee483a60f2fba00d8297fa4e9b5deff8c02eb29af8",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data/commits?per_page=3"
+    },
+    "mvrv_definition": {
+      "bytes": 2529,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/market/capmvrvcur.md",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"4db9e74f14975a5ff496abeef1a762a54366dc3df761d158e1d9025c54d04055\""
+      },
+      "path": "raw/4ecd390b376275ec0e0c26ab62295b1d1f2ad4bde4e13ff43a1bf1c884d58dd5",
+      "requested_utc": "2026-10-04T13:37:12.661976+00:00",
+      "retrieved_utc": "2026-10-04T13:37:13.424124+00:00",
+      "sha256": "6122fd958a87e39e56ddd247378c276eac3a021c69b8508e21de5191f41d6cff",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/market/capmvrvcur.md"
+    },
+    "public_metric_catalog": {
+      "bytes": 89,
+      "final_url": "https://community-api.coinmetrics.io/v4/catalog/metrics?metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&page_size=100",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "path": "raw/1948fd63a15b29ce08a9781a855b191be248f7725e48c6e15a4772dbca04f414",
+      "requested_utc": "2026-10-04T13:37:13.492538+00:00",
+      "retrieved_utc": "2026-10-04T13:37:13.983826+00:00",
+      "sha256": "5cd84dbc6daf55deddcd9cea16e80d617fde751daa5a8c7fee98f55da919ea57",
+      "status": 400,
+      "url": "https://community-api.coinmetrics.io/v4/catalog/metrics?metrics=CapMVRVCur%2CSplyCur%2CFeeTotNtv%2CAssetCompletionTime%2CAssetEODCompletionTime&page_size=100"
+    },
+    "public_metric_catalog_all": {
+      "bytes": 453606,
+      "final_url": "https://community-api.coinmetrics.io/v4/catalog/metrics",
+      "headers": {
+        "Content-Type": "application/json",
+        "X-RateLimit-Remaining": "5999",
+        "X-RateLimit-Reset": "20"
+      },
+      "path": "raw/70ef7d9e91706ba095916822a3e8e7bb680e62828e7dcea9223ef30a5164ec18",
+      "requested_utc": "2026-10-04T13:37:39.491455+00:00",
+      "retrieved_utc": "2026-10-04T13:37:40.684303+00:00",
+      "sha256": "86d52bcb95d583cf5470680a5a7fd414125053c9a156ae6cd3656e70b0e1d07e",
+      "status": 200,
+      "url": "https://community-api.coinmetrics.io/v4/catalog/metrics"
+    },
+    "publisher_script_0": {
+      "bytes": 4061,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/scripts/generate.js",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"c4f7374f887975f7f72cb9442f6dd783653295fbf14a9ff3e165ba781b98c17e\""
+      },
+      "path": "raw/59ad7dc769b013302d66ed97733c4f7d4a7fb5f6b67f0edff303577ee66c7ca1",
+      "requested_utc": "2026-10-04T13:31:30.799214+00:00",
+      "retrieved_utc": "2026-10-04T13:31:31.438221+00:00",
+      "sha256": "cccb508611a8dce916783faa877814b8ece6e19f82a2b2dcd452e061cce5fcc8",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/data/f1a36afb962731c387bb03982758ab0103063da5/scripts/generate.js"
+    },
+    "realized_definition": {
+      "bytes": 4271,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/market/caprealusd.md",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"9272ba3bbc10437f2f7e9cd8033b1e437f7e4ca3e74f285f41aa45225102559b\""
+      },
+      "path": "raw/f05cbf98902e3294b3c8b92299015fdfd0440515606ba39bdc96c73f35ad88f3",
+      "requested_utc": "2026-10-04T13:28:40.519981+00:00",
+      "retrieved_utc": "2026-10-04T13:28:41.039290+00:00",
+      "sha256": "4070cea15001ea3eddc66153f1bfb1722af1796770851e6949ff453dc29f6e8c",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/market/caprealusd.md"
+    },
+    "repo_identity": {
+      "bytes": 6186,
+      "final_url": "https://api.github.com/repos/coinmetrics/data",
+      "headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"8d948507b725424200165f402349033194cb836ce5e030a6d4e97a82d40b72d4\"",
+        "Last-Modified": "Fri, 25 Sep 2026 20:52:50 GMT",
+        "X-RateLimit-Remaining": "49",
+        "X-RateLimit-Reset": "1791122707"
+      },
+      "path": "raw/1389405c00e8ca056e4d78c9880f43069e25dc38f8974555f48aa19096d70c5b",
+      "requested_utc": "2026-10-04T13:28:39.973198+00:00",
+      "retrieved_utc": "2026-10-04T13:28:40.517430+00:00",
+      "sha256": "578224a1e677c4e97be05ae887d69063f824056da4254cc8338514b9b4fa39d2",
+      "status": 200,
+      "url": "https://api.github.com/repos/coinmetrics/data"
+    },
+    "supply_definition": {
+      "bytes": 1557,
+      "final_url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/supply/splycur.md",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "W/\"a9021b11c4ebc3a2e7573b95657d3c9cea35ca98874bda040858a75a2b6b5a15\""
+      },
+      "path": "raw/f886c9678fb7a76f5c1f5e4c1df8383f8038e5cd96db331d7fe18f117c96f33d",
+      "requested_utc": "2026-10-04T13:37:12.662273+00:00",
+      "retrieved_utc": "2026-10-04T13:37:13.490655+00:00",
+      "sha256": "e4cbe210fba78c123a96512489482d0e848ecb41d477e18f32fca6774e3743d9",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/coinmetrics/docs-website/master/asset-metrics/supply/splycur.md"
+    }
+  }
+}

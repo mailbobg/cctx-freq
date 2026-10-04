@@ -1101,5 +1101,14 @@
     "adoption_gate": false,
     "disposition": "Positive modeled net profits but both base return/risk gates fail; early change is missing-Friday handling, not active term inversion. No sign/level/holiday/latency/sizing/universe rescue or activation.",
     "sampled_minute_account_DD_pct": -7.928301520402359
+  },
+  {
+    "trial": "R20 crypto-native metric source feasibility",
+    "source_only": true,
+    "new_alpha_trial": false,
+    "new_performance": false,
+    "adoption_gate": false,
+    "source_responses": 27,
+    "disposition": "Historical content/publication versions unavailable; current CSV stale and three supply counterparts differ100BTC. No historical alpha rule, outcome or activation. Prior verdicts unchanged."
   }
 ]
