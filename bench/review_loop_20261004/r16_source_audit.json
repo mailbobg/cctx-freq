@@ -1,0 +1,309 @@
+{
+  "source_only": true,
+  "no_new_performance": true,
+  "no_strategy_or_bot_change": true,
+  "frozen_input_files_verified": {
+    "r16_input_manifest.json": 11,
+    "r16_cohort_manifest.json": 2
+  },
+  "retained_http_attempts": 25,
+  "statuses": {
+    "200": 23,
+    "404": 1,
+    "429": 1
+  },
+  "all_retained_bodies_replayed": true,
+  "panel": {
+    "APT": {
+      "protocol": "aptos",
+      "all_rows": 312,
+      "included_rows": 72,
+      "all_category_counts": {
+        "insiders": 36,
+        "noncirculating": 240,
+        "privateSale": 36
+      },
+      "included_categories": {
+        "insiders": {
+          "rows": 36,
+          "unique_timestamps": 36,
+          "first_event_utc": "2023-11-11T16:17:39+00:00",
+          "last_event_utc": "2026-10-11T23:14:24+00:00",
+          "legacy_float_sum_tokens": 190000000.00000006,
+          "legacy_first_float_amount": "11875000.0",
+          "interval_seconds_counts": {
+            "2629743.0": 35
+          }
+        },
+        "privateSale": {
+          "rows": 36,
+          "unique_timestamps": 36,
+          "first_event_utc": "2023-11-11T16:17:39+00:00",
+          "last_event_utc": "2026-10-11T23:14:24+00:00",
+          "legacy_float_sum_tokens": 134782640.233,
+          "legacy_first_float_amount": "8423915.0145625",
+          "interval_seconds_counts": {
+            "2629743.0": 35
+          }
+        }
+      },
+      "legacy_historical_known_after_present": false,
+      "legacy_raw_body_source_identity_present": false,
+      "unproven_coverage_example": {
+        "known": false,
+        "tokens": null,
+        "reason": "No known complete window coverage"
+      }
+    },
+    "TIA": {
+      "protocol": "celestia",
+      "all_rows": 1828,
+      "included_rows": 732,
+      "all_category_counts": {
+        "airdrop": 1,
+        "ecosystem": 1096,
+        "insiders": 1,
+        "privateSale": 730
+      },
+      "included_categories": {
+        "airdrop": {
+          "rows": 1,
+          "unique_timestamps": 1,
+          "first_event_utc": "2023-10-31T14:00:00+00:00",
+          "last_event_utc": "2023-10-31T14:00:00+00:00",
+          "legacy_float_sum_tokens": 200000000.0,
+          "legacy_first_float_amount": "200000000.0",
+          "interval_seconds_counts": {}
+        },
+        "insiders": {
+          "rows": 1,
+          "unique_timestamps": 1,
+          "first_event_utc": "2024-10-30T19:48:46+00:00",
+          "last_event_utc": "2024-10-30T19:48:46+00:00",
+          "legacy_float_sum_tokens": 58080000.0,
+          "legacy_first_float_amount": "58080000.0",
+          "interval_seconds_counts": {}
+        },
+        "privateSale": {
+          "rows": 730,
+          "unique_timestamps": 365,
+          "first_event_utc": "2024-10-30T19:48:46+00:00",
+          "last_event_utc": "2025-10-29T19:48:46+00:00",
+          "legacy_float_sum_tokens": 356000000.0,
+          "legacy_first_float_amount": "52761863.01369863",
+          "interval_seconds_counts": {
+            "0.0": 365,
+            "86400.0": 364
+          }
+        }
+      },
+      "legacy_historical_known_after_present": false,
+      "legacy_raw_body_source_identity_present": false,
+      "unproven_coverage_example": {
+        "known": false,
+        "tokens": null,
+        "reason": "No known complete window coverage"
+      }
+    },
+    "ARB": {
+      "protocol": "arbitrum-foundation",
+      "all_rows": 110,
+      "included_rows": 73,
+      "all_category_counts": {
+        "Uncategorized": 1,
+        "airdrop": 1,
+        "insiders": 36,
+        "noncirculating": 36,
+        "privateSale": 36
+      },
+      "included_categories": {
+        "airdrop": {
+          "rows": 1,
+          "unique_timestamps": 1,
+          "first_event_utc": "2023-03-23T01:01:11+00:00",
+          "last_event_utc": "2023-03-23T01:01:11+00:00",
+          "legacy_float_sum_tokens": 1162000000.0,
+          "legacy_first_float_amount": "1162000000.0",
+          "interval_seconds_counts": {}
+        },
+        "insiders": {
+          "rows": 36,
+          "unique_timestamps": 36,
+          "first_event_utc": "2024-03-16T01:00:00+00:00",
+          "last_event_utc": "2027-02-14T07:56:45+00:00",
+          "legacy_float_sum_tokens": 2694000000.0,
+          "legacy_first_float_amount": "729625000.0",
+          "interval_seconds_counts": {
+            "2629743.0": 35
+          }
+        },
+        "privateSale": {
+          "rows": 36,
+          "unique_timestamps": 36,
+          "first_event_utc": "2024-03-16T01:00:00+00:00",
+          "last_event_utc": "2027-02-14T07:56:45+00:00",
+          "legacy_float_sum_tokens": 1753000000.0,
+          "legacy_first_float_amount": "474770833.3333333",
+          "interval_seconds_counts": {
+            "2629743.0": 35
+          }
+        }
+      },
+      "legacy_historical_known_after_present": false,
+      "legacy_raw_body_source_identity_present": false,
+      "unproven_coverage_example": {
+        "known": false,
+        "tokens": null,
+        "reason": "No known complete window coverage"
+      }
+    },
+    "SUI": {
+      "protocol": "sui-foundation",
+      "all_rows": 365,
+      "included_rows": 123,
+      "all_category_counts": {
+        "insiders": 74,
+        "noncirculating": 157,
+        "privateSale": 36,
+        "publicSale": 13,
+        "staking": 85
+      },
+      "included_categories": {
+        "insiders": {
+          "rows": 74,
+          "unique_timestamps": 74,
+          "first_event_utc": "2024-05-01T00:00:00+00:00",
+          "last_event_utc": "2030-05-01T06:56:45+00:00",
+          "legacy_float_sum_tokens": 613374653.0,
+          "legacy_first_float_amount": "10338360.0",
+          "interval_seconds_counts": {
+            "2629743.0": 64,
+            "2517426.0": 2,
+            "107326.0": 1,
+            "2522417.0": 1,
+            "48657.0": 1,
+            "2581086.0": 1,
+            "5276313.0": 1,
+            "5340885.0": 1,
+            "112317.0": 1
+          }
+        },
+        "privateSale": {
+          "rows": 36,
+          "unique_timestamps": 24,
+          "first_event_utc": "2024-05-02T05:48:46+00:00",
+          "last_event_utc": "2026-04-02T06:56:55+00:00",
+          "legacy_float_sum_tokens": 1409999999.9999995,
+          "legacy_first_float_amount": "386750000.0",
+          "interval_seconds_counts": {
+            "2629743.0": 23,
+            "0.0": 12
+          }
+        },
+        "publicSale": {
+          "rows": 13,
+          "unique_timestamps": 13,
+          "first_event_utc": "2023-05-03T00:00:00+00:00",
+          "last_event_utc": "2024-05-02T05:48:36+00:00",
+          "legacy_float_sum_tokens": 582000000.0,
+          "legacy_first_float_amount": "198417230.76923078",
+          "interval_seconds_counts": {
+            "2629743.0": 12
+          }
+        }
+      },
+      "legacy_historical_known_after_present": false,
+      "legacy_raw_body_source_identity_present": false,
+      "unproven_coverage_example": {
+        "known": false,
+        "tokens": null,
+        "reason": "No known complete window coverage"
+      }
+    }
+  },
+  "tia": {
+    "old_content_sha256": "65174c182dc578efa5eb38f2d851cd8a42fe0f0df9cb6eea36fed885be1c7f61",
+    "older_introduction_identical_content": true,
+    "introduction_pr_file_count": 250,
+    "old_rounded_allocation_percent": {
+      "Public Allocation": "20%",
+      "R&D & Ecosystem": "26.8%",
+      "Early Backers: Series A&B": "19.7%",
+      "Early Backers: Seed": "15.9%",
+      "Initial Core Contributors": "17.6%"
+    },
+    "current_allocation_percent": {
+      "Public Allocation": "20.00%",
+      "R&D & Ecosystem": "26.79%",
+      "Early Backers: Series A&B": "19.67%",
+      "Early Backers: Seed": "15.90%",
+      "Initial Core Contributors": "17.64%"
+    },
+    "old_core_vesting_rule": "33% unlocked at year 1.<br/>Remaining 67% unlocks continuously from year 1 to year 3.",
+    "current_core_vesting_rule": "33.33% unlocked at year 1. Remaining 66.67% unlocks continuously from year 1 to year 3.",
+    "old_rounded_core_pool_tokens": "176000000.0",
+    "old_rounded_continuous_core_remainder_tokens": "117920000.000",
+    "observed_legacy_core_rows": 1,
+    "limitation": "Remainder is a forecast derived from rounded published percentages, not exact chain-verified sale or release. Legacy collector keeps cliff metadata only; some backer streams are daily pseudo-cliffs, while core continuous vesting is absent."
+  },
+  "sui": {
+    "months": 85,
+    "first_month": "2023-05-01T00:00:00+00:00",
+    "last_month": "2030-05-01T00:00:00+00:00",
+    "fields": [
+      "circulatingSupplyPercentage",
+      "circulatingSupplyValue",
+      "month",
+      "year"
+    ],
+    "explicit_event_provenance_fields": [],
+    "api_source_captured_after": "2026-10-04T11:49:50.029657+00:00",
+    "limitation": "Current end-month aggregate circulation estimate, explicitly adjustable; not holder-category event times or point-in-time revision history."
+  },
+  "server_clocks": [
+    {
+      "url": "https://api.github.com/repos/celestiaorg/docs/pulls/1169",
+      "created_at": "2023-10-23T19:14:39Z",
+      "merged_at": "2023-10-23T20:05:00Z",
+      "merge_commit_sha": "da016459d28a016c07e8d573e9c196d4d9390e07",
+      "changed_files": 250,
+      "evidence_type": "github_server_event",
+      "automatic_historical_admission": false
+    },
+    {
+      "url": "https://api.github.com/repos/celestiaorg/docs/pulls/1227",
+      "created_at": "2023-10-31T16:05:12Z",
+      "merged_at": "2023-10-31T18:30:11Z",
+      "merge_commit_sha": "89e75ea2b6c82c08822cf59a02467e583692e251",
+      "changed_files": 1,
+      "evidence_type": "github_server_event",
+      "automatic_historical_admission": false
+    },
+    {
+      "url": "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/410",
+      "created_at": "2023-04-27T17:35:23Z",
+      "merged_at": "2023-05-01T20:50:49Z",
+      "merge_commit_sha": "58a5f6f234ae4978c25e9184478bf64338445c91",
+      "changed_files": 1,
+      "evidence_type": "github_server_event",
+      "automatic_historical_admission": false
+    },
+    {
+      "url": "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/776",
+      "created_at": "2024-03-12T10:51:51Z",
+      "merged_at": "2024-03-12T16:16:05Z",
+      "merge_commit_sha": "4f551317361e0880aab2cac1724da5834444f81c",
+      "changed_files": 3,
+      "evidence_type": "github_server_event",
+      "automatic_historical_admission": false
+    }
+  ],
+  "limitations": [
+    "SHA identifies retained content, not publication or historical completeness.",
+    "GitHub server PR events corroborate historical content and clocks; historic public access and the complete broad schedule remain unproven. These are not automatically admitted as verified_publication.",
+    "Old float token amounts cannot be retroactively recovered as exact source decimals.",
+    "APT normal public HTTP request returned 429; this body is retained as an error, not schedule data.",
+    "The guessed public emissions-adapters repository returned 404; no gated/paid endpoint was called.",
+    "No new signal selection, P&L, parameter search, schedule export, or running-cohort modification."
+  ]
+}

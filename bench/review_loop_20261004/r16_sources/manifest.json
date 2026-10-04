@@ -1,0 +1,377 @@
+{
+  "https://aptosnetwork.com/currents/aptos-tokenomics-overview": {
+    "path": "raw/03d205fa1d2f9798434909390c00d886932fe319914e71e42bc2436a4405825e",
+    "sha256": "ffd8e6e8051ef85840cf3c87989aa0c2ede563aeec3fde5638f131276678e33a",
+    "bytes": 33944,
+    "attempted_at_utc": "2026-10-04T11:49:44.894073+00:00",
+    "retrieved_utc": "2026-10-04T11:49:45.623460+00:00",
+    "status": 429,
+    "final_url": "https://aptosnetwork.com/currents/aptos-tokenomics-overview",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:45 GMT",
+      "ETag": null,
+      "Last-Modified": null
+    }
+  },
+  "https://docs.celestia.org/learn/TIA/staking-governance-supply/": {
+    "path": "raw/f7439cdb83497cc5cc62ae9c5c5936a2df5ec70d5f30d581d976de5ecca44925",
+    "sha256": "d374db2a51231468416c4810e7f28d94a3e4d3d2937c1553617aaeedcb3830cc",
+    "bytes": 224045,
+    "attempted_at_utc": "2026-10-04T11:49:45.626206+00:00",
+    "retrieved_utc": "2026-10-04T11:49:46.466564+00:00",
+    "status": 200,
+    "final_url": "https://docs.celestia.org/learn/TIA/staking-governance-supply/",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:46 GMT",
+      "ETag": null,
+      "Last-Modified": "Thu, 01 Oct 2026 12:18:39 GMT"
+    }
+  },
+  "https://raw.githubusercontent.com/celestiaorg/docs/89e75ea2b6c82c08822cf59a02467e583692e251/learn/staking-governance-supply.md": {
+    "path": "raw/76c7951f06acd35b977b85692f9bcc37df3ddfbdfef47619dba6ca24889ed2e8",
+    "sha256": "65174c182dc578efa5eb38f2d851cd8a42fe0f0df9cb6eea36fed885be1c7f61",
+    "bytes": 6604,
+    "attempted_at_utc": "2026-10-04T11:49:46.466975+00:00",
+    "retrieved_utc": "2026-10-04T11:49:46.881063+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/celestiaorg/docs/89e75ea2b6c82c08822cf59a02467e583692e251/learn/staking-governance-supply.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:46 GMT",
+      "ETag": "W/\"ae9c152aaed64fd0f130fd8da49ba75838af2464b3bb8f557a57ebab8c4fd1c7\"",
+      "Last-Modified": null
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/commits/89e75ea2b6c82c08822cf59a02467e583692e251": {
+    "path": "raw/83e5449b2e13cc6d54a8c83f36cbbac83175f7cb76c46b78d6f6ca5ba5ebb15b",
+    "sha256": "2f180844ddb2ce7c8028b003e8dba0f40b40da80e9e7b22524cfd0ac05d2d000",
+    "bytes": 5074,
+    "attempted_at_utc": "2026-10-04T11:49:46.881463+00:00",
+    "retrieved_utc": "2026-10-04T11:49:47.465679+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/commits/89e75ea2b6c82c08822cf59a02467e583692e251",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:47 GMT",
+      "ETag": "W/\"1cfdde3336cc2df6af1ea2ba45fc5e8881914b5fa00a39ef3cf49ce756a1cc69\"",
+      "Last-Modified": "Tue, 31 Oct 2023 18:30:10 GMT"
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/commits/89e75ea2b6c82c08822cf59a02467e583692e251/pulls": {
+    "path": "raw/d9aec832723b4caca95be414305c95067f13d4befc3f25afc4e1847f764bb35a",
+    "sha256": "2db1f9a72c36f1d350ca78bea335538197aa20732b094368158318bc35d5d359",
+    "bytes": 18869,
+    "attempted_at_utc": "2026-10-04T11:49:47.466117+00:00",
+    "retrieved_utc": "2026-10-04T11:49:48.082364+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/commits/89e75ea2b6c82c08822cf59a02467e583692e251/pulls",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:47 GMT",
+      "ETag": "W/\"5a35cfe44efac62f033c87eaedb83c93d498eddba72627ceb71a702ab9b4d3cd\"",
+      "Last-Modified": null
+    }
+  },
+  "https://www.sui.io/token-schedule": {
+    "path": "raw/f15647f44b9eaeb4262536d649abdcc48fbb983f14531482bb7d46839c9c7c84",
+    "sha256": "79cff3b296feb674c87bde775ce396fa07062b4d95ce2670e24adad1d71e089c",
+    "bytes": 278743,
+    "attempted_at_utc": "2026-10-04T11:49:48.082818+00:00",
+    "retrieved_utc": "2026-10-04T11:49:48.588458+00:00",
+    "status": 200,
+    "final_url": "https://www.sui.io/token-schedule",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:48 GMT",
+      "ETag": null,
+      "Last-Modified": "Sat, 03 Oct 2026 00:29:45 GMT"
+    }
+  },
+  "https://www.sui.io/blog/token-release-schedule": {
+    "path": "raw/8c67d7da88df1224b0141817ff7002e680129223d823fe555c3b72bb9162cfb3",
+    "sha256": "7a34dcb13ee8185ffc5dea7fa0fd2556b61df9908d061a2bd7a83106434fae5e",
+    "bytes": 294630,
+    "attempted_at_utc": "2026-10-04T11:49:48.589024+00:00",
+    "retrieved_utc": "2026-10-04T11:49:49.343748+00:00",
+    "status": 200,
+    "final_url": "https://www.sui.io/blog/token-release-schedule",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:49 GMT",
+      "ETag": null,
+      "Last-Modified": "Sun, 04 Oct 2026 11:49:48 GMT"
+    }
+  },
+  "https://sui-circulation.suiexplorer.com/api/sui_circulation": {
+    "path": "raw/0587c7b3d918ba9b65d6060ced9d31c39c030f766a6a76fd09f489879e09eaea",
+    "sha256": "21dbd351e1891c463f7bc119812bda79ac05b431fc9884282330df0d6fd90c49",
+    "bytes": 9945,
+    "attempted_at_utc": "2026-10-04T11:49:49.344660+00:00",
+    "retrieved_utc": "2026-10-04T11:49:50.029657+00:00",
+    "status": 200,
+    "final_url": "https://sui-circulation.suiexplorer.com/api/sui_circulation",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:49 GMT",
+      "ETag": "W/\"oqhx445l677o9\"",
+      "Last-Modified": null
+    }
+  },
+  "https://raw.githubusercontent.com/ArbitrumFoundation/docs/main/docs/airdrop-eligibility-distribution.md": {
+    "path": "raw/d986080727b7ca8e6da112c22dcc8906c52362498382ad894cede78c80c9fc45",
+    "sha256": "918e8886d3021bb42d2af17f7e6acbcc1c4510f865d04deecd3e0a6c91e63e83",
+    "bytes": 10459,
+    "attempted_at_utc": "2026-10-04T11:49:50.030288+00:00",
+    "retrieved_utc": "2026-10-04T11:49:50.528433+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/ArbitrumFoundation/docs/main/docs/airdrop-eligibility-distribution.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:50 GMT",
+      "ETag": "W/\"215353b64876bf75f4544b818845000f32fd985ca0b37f8d2a799db10370b3e6\"",
+      "Last-Modified": null
+    }
+  },
+  "https://github.com/DefiLlama/emissions-adapters": {
+    "path": "raw/55bcface7d6b51c28db0819556c2f92462b9dca610c00b06beb0c710e5c2958f",
+    "sha256": "8f7b91b265716b93e6b085ee3b033d266a663b3e3ecc5c185058417d44b45e68",
+    "bytes": 268662,
+    "attempted_at_utc": "2026-10-04T11:49:50.529093+00:00",
+    "retrieved_utc": "2026-10-04T11:49:51.122714+00:00",
+    "status": 404,
+    "final_url": "https://github.com/DefiLlama/emissions-adapters",
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:49:50 GMT",
+      "ETag": null,
+      "Last-Modified": null
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/pulls/1227": {
+    "path": "raw/209325edcaecd2670546a9ef09e6eb025bd0f686f9d00ae264e686cb83737ada",
+    "sha256": "d81bf02684b6d28938371cca64530828c81b2c3bc795c23ee10ec604c3a85b91",
+    "bytes": 19999,
+    "attempted_at_utc": "2026-10-04T11:50:44.071577+00:00",
+    "retrieved_utc": "2026-10-04T11:50:44.668113+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/pulls/1227",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:50:44 GMT",
+      "ETag": "\"01862cf8eed42ce6ee60e18d972ed890e26052fa4d076a08c786d4302a269f70\"",
+      "Last-Modified": "Sat, 05 Sep 2026 15:23:55 GMT"
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/pulls/1227/files": {
+    "path": "raw/97690f65a2eaa254e60f986f72bcd4ed490f8926677af8e703dab8fbeb02fde7",
+    "sha256": "65fc88e67bce253a1d0d6e8e18ce0894c25b7662dede052b4f935a015b9dfa8a",
+    "bytes": 1012,
+    "attempted_at_utc": "2026-10-04T11:50:44.669075+00:00",
+    "retrieved_utc": "2026-10-04T11:50:45.424277+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/pulls/1227/files",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:50:45 GMT",
+      "ETag": "W/\"f0de6039d60ec738444306149896edc721741b449083a364e444071b53318a13\"",
+      "Last-Modified": "Sat, 05 Sep 2026 15:23:55 GMT"
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/commits?path=learn%2Fstaking-governance-supply.md&until=2023-10-31T18%3A30%3A11Z&per_page=100": {
+    "path": "raw/8b2c68366d7e526b85c41ecff5411e159c5c5ef2d45465a80c6f0e7bdeadbd5c",
+    "sha256": "32424912e62cd007b7160ab40ec120768dce104cd9159d0ec72212c77c515990",
+    "bytes": 4201,
+    "attempted_at_utc": "2026-10-04T11:50:45.424849+00:00",
+    "retrieved_utc": "2026-10-04T11:50:45.947072+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/commits?path=learn%2Fstaking-governance-supply.md&until=2023-10-31T18%3A30%3A11Z&per_page=100",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:50:45 GMT",
+      "ETag": "W/\"631b7c44cf2d6aa14527f2fa22b14b5fb134e0c4b16e842535c7d3582c85dacf\"",
+      "Last-Modified": "Mon, 23 Oct 2023 20:05:00 GMT"
+    }
+  },
+  "https://api.github.com/repos/ArbitrumFoundation/docs/commits?path=docs%2Fairdrop-eligibility-distribution.md&per_page=100": {
+    "path": "raw/0b255118f4cdd94c4269811f882c91258de24cf84dd966e542dc92863f7ec175",
+    "sha256": "588f09745a02ecaf7b0cf4a2a7af15538ba8f48297fa276412add070a8986213",
+    "bytes": 164383,
+    "attempted_at_utc": "2026-10-04T11:50:45.948004+00:00",
+    "retrieved_utc": "2026-10-04T11:50:46.948785+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/ArbitrumFoundation/docs/commits?path=docs%2Fairdrop-eligibility-distribution.md&per_page=100",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:50:46 GMT",
+      "ETag": "W/\"dfc3610ff8c260aa273e7071c4e4385178e67a85833043a87735c547f53db39a\"",
+      "Last-Modified": "Fri, 04 Sep 2026 18:48:55 GMT"
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/pulls/1169": {
+    "path": "raw/8c8398e0d7f3076009315b24dbf8382bcf6a35d41d8cdc76d53f772b8d3b6e7c",
+    "sha256": "f1e3dd6b05bc5575726a772272fa5be706f840babee5fc643efa128a363a1a1b",
+    "bytes": 19988,
+    "attempted_at_utc": "2026-10-04T11:52:23.280015+00:00",
+    "retrieved_utc": "2026-10-04T11:52:24.523302+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/pulls/1169",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:52:24 GMT",
+      "ETag": "\"b46dba0ffde29a15a35060e7d6c5c0483402b824867d916fad0553cf487c3059\"",
+      "Last-Modified": "Sat, 05 Sep 2026 15:23:55 GMT"
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/pulls/1169/files?per_page=100&page=1": {
+    "path": "raw/4dddd86bfd796302d41b81e1cba7539dcbd4a279958e29e7aebee34f61ba1378",
+    "sha256": "f8374082dae5739e494afe67a8ebed2448c5ee5aaf06c44dd91d0d246bf2fe41",
+    "bytes": 387473,
+    "attempted_at_utc": "2026-10-04T11:52:24.523734+00:00",
+    "retrieved_utc": "2026-10-04T11:52:25.705400+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/pulls/1169/files?per_page=100&page=1",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:52:25 GMT",
+      "ETag": "W/\"16017e1821fd9285bcc1b2e1b9dc8f0856c0c76f077be2c20e58cf75e7475899\"",
+      "Last-Modified": "Sat, 05 Sep 2026 15:23:55 GMT"
+    }
+  },
+  "https://raw.githubusercontent.com/celestiaorg/docs/da016459d28a016c07e8d573e9c196d4d9390e07/learn/staking-governance-supply.md": {
+    "path": "raw/f9f4872c833a20afbd78db3c2b58ce69ca45d8b8a34e6cfd26a8ee6831430745",
+    "sha256": "65174c182dc578efa5eb38f2d851cd8a42fe0f0df9cb6eea36fed885be1c7f61",
+    "bytes": 6604,
+    "attempted_at_utc": "2026-10-04T11:52:25.705739+00:00",
+    "retrieved_utc": "2026-10-04T11:52:26.238332+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/celestiaorg/docs/da016459d28a016c07e8d573e9c196d4d9390e07/learn/staking-governance-supply.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:52:26 GMT",
+      "ETag": "W/\"ae9c152aaed64fd0f130fd8da49ba75838af2464b3bb8f557a57ebab8c4fd1c7\"",
+      "Last-Modified": null
+    }
+  },
+  "https://raw.githubusercontent.com/ArbitrumFoundation/docs/4f551317361e0880aab2cac1724da5834444f81c/docs/airdrop-eligibility-distribution.md": {
+    "path": "raw/f8526801f84ed632abf359f3e2c903ad92331dfc04eb6b75ba1b58b8412fb0fa",
+    "sha256": "86a914dacc4ebefed36053761cf9c0261e80cd179ca160fca2a287f58de90421",
+    "bytes": 10393,
+    "attempted_at_utc": "2026-10-04T11:52:26.239312+00:00",
+    "retrieved_utc": "2026-10-04T11:52:26.897694+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/ArbitrumFoundation/docs/4f551317361e0880aab2cac1724da5834444f81c/docs/airdrop-eligibility-distribution.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:52:26 GMT",
+      "ETag": "W/\"64a52a99e8d0a5fa98ab356b769b0c94132f229339a36d4693f98cc336d21153\"",
+      "Last-Modified": null
+    }
+  },
+  "https://raw.githubusercontent.com/ArbitrumFoundation/docs/58a5f6f234ae4978c25e9184478bf64338445c91/docs/airdrop-eligibility-distribution.md": {
+    "path": "raw/2c2205aa152383fde482dc0912b348955931e6acaa87c19aea47ed5ddf0005ed",
+    "sha256": "1fa00aa1bd4245bf0067f44fab08b918b3f7b67619c172fc1191c1d9e3215c73",
+    "bytes": 9594,
+    "attempted_at_utc": "2026-10-04T11:52:26.898026+00:00",
+    "retrieved_utc": "2026-10-04T11:52:27.478128+00:00",
+    "status": 200,
+    "final_url": "https://raw.githubusercontent.com/ArbitrumFoundation/docs/58a5f6f234ae4978c25e9184478bf64338445c91/docs/airdrop-eligibility-distribution.md",
+    "headers": {
+      "Content-Type": "text/plain; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:52:27 GMT",
+      "ETag": "W/\"aac18dbf520329cb6f7dc53b60a2e4d77a55e7f6c61ce8d3b5587716ee6a91d0\"",
+      "Last-Modified": null
+    }
+  },
+  "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/410": {
+    "path": "raw/071c43e7bb92cea921de3d5044e13a52ff5bf31a7595b5936bc0dcff46e4fdad",
+    "sha256": "e6fc8650dabc65ef1b29d2dfc137bbcbf8aeab8efd193b09c0943f0b58568ce3",
+    "bytes": 19416,
+    "attempted_at_utc": "2026-10-04T11:52:27.479171+00:00",
+    "retrieved_utc": "2026-10-04T11:52:28.200498+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/410",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:52:27 GMT",
+      "ETag": "\"663eed76046c5ccfd998cd1836e630b511b7729fbbf87e08478607d91e3a319f\"",
+      "Last-Modified": "Thu, 01 Oct 2026 12:24:13 GMT"
+    }
+  },
+  "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/776": {
+    "path": "raw/e8d4cb0f11ad2308e5bb1384c4955af018047e0bd89195efdfd40f1de87d15a2",
+    "sha256": "0b62f17c8c29013a848918513131cf4fe95897a63377291d9c28066e6e66a970",
+    "bytes": 17459,
+    "attempted_at_utc": "2026-10-04T11:52:28.201226+00:00",
+    "retrieved_utc": "2026-10-04T11:52:29.468127+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/776",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:52:28 GMT",
+      "ETag": "\"ee02960a776f447e3a374750d04cb9a63111c0bca7d08114882e39687b23d797\"",
+      "Last-Modified": "Wed, 29 Jul 2026 11:54:48 GMT"
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/pulls/1169/files?per_page=100&page=2": {
+    "path": "raw/0244479c65b7628a06c120343212e3f787f27bd78bdfab7f3051628aae4bdaff",
+    "sha256": "773a8d6ba593ee8fbc7bc372c338b0c0573d8cea7b6cc6a2b85158052fe70edf",
+    "bytes": 322566,
+    "attempted_at_utc": "2026-10-04T11:54:20.956498+00:00",
+    "retrieved_utc": "2026-10-04T11:54:21.960273+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/pulls/1169/files?per_page=100&page=2",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:54:21 GMT",
+      "ETag": "W/\"446fe3a21d88e819815e8c51adc84f5b359507e2d564ec747069df1a64f6c09d\"",
+      "Last-Modified": "Sat, 05 Sep 2026 15:23:55 GMT"
+    }
+  },
+  "https://api.github.com/repos/celestiaorg/docs/pulls/1169/files?per_page=100&page=3": {
+    "path": "raw/6805d465694c0abddd36436e51194862228d3efdd5868c448bbf4d3491175250",
+    "sha256": "e267fd19ce18b554b022accd9a55d4e52b43d7896a9f10398b20451fc3eedca2",
+    "bytes": 58673,
+    "attempted_at_utc": "2026-10-04T11:54:21.960999+00:00",
+    "retrieved_utc": "2026-10-04T11:54:22.501122+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/celestiaorg/docs/pulls/1169/files?per_page=100&page=3",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:54:22 GMT",
+      "ETag": "W/\"fcb90860d6e088f5751b22a562c416bcbd535322627f01e2dfd77167437265ff\"",
+      "Last-Modified": "Sat, 05 Sep 2026 15:23:55 GMT"
+    }
+  },
+  "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/410/files": {
+    "path": "raw/4fedf9d30d5feeb9be76089cf292bd048fe061a1d60895e776282effc2de9117",
+    "sha256": "e8979ccf7df95a434ba1594b3987b4f50bf22ddda15100bd6838ac9ca8fe9a83",
+    "bytes": 1429,
+    "attempted_at_utc": "2026-10-04T11:54:22.501680+00:00",
+    "retrieved_utc": "2026-10-04T11:54:23.080665+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/410/files",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:54:22 GMT",
+      "ETag": "W/\"59aee2cd626c76fda4346e2b789ffd88bf8e8f02ef569f4bbcd0c953af1707c2\"",
+      "Last-Modified": "Thu, 01 Oct 2026 12:24:13 GMT"
+    }
+  },
+  "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/776/files": {
+    "path": "raw/985649eeaa5283c6e355e8afc4d54eb88c201afce37e44771d139a46697b9016",
+    "sha256": "f12a082b02b53a9e9a5c43cceacfff247e8abdcd563461772156ebf5d853288f",
+    "bytes": 6943,
+    "attempted_at_utc": "2026-10-04T11:54:23.080939+00:00",
+    "retrieved_utc": "2026-10-04T11:54:23.654281+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/repos/ArbitrumFoundation/docs/pulls/776/files",
+    "headers": {
+      "Content-Type": "application/json; charset=utf-8",
+      "Date": "Sun, 04 Oct 2026 11:54:23 GMT",
+      "ETag": "W/\"f3749ef612450382a6e93de517e4ad40cb04d09d7dfa256b35b8df0c3e50881a\"",
+      "Last-Modified": "Wed, 29 Jul 2026 11:54:48 GMT"
+    }
+  }
+}

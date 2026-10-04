@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-10-04T11:54:22.048531+00:00",
+  "no_runtime_access_or_secrets": true,
+  "files": {
+    "bots/unlock-short.json": {
+      "sha256": "cdd7665b0ec102191c71c03fe1fb7b9fe2de653564f76042cce2b7af76325cb5",
+      "bytes": 1954
+    },
+    "bots/unlock-xs.json": {
+      "sha256": "bbc9f0221ae58d4d69db07950872b23c1cd5e1ac7aa4a72d76b6b8e49af6da12",
+      "bytes": 7293
+    }
+  }
+}

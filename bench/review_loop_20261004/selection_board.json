@@ -382,7 +382,7 @@
     "historical_profitability_lead": "RiskHoldR2bCov10",
     "strict_default_gate_winner": null,
     "adopted_new_strategy": false,
-    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR and not exact-mark/execution certified. R8/R9/R10/R12 failed fixed screens. R13 recent minute-executed ATR protection returns6.35% with daily/minute DD12.81%/13.86%, rejected without early-window or ATR/timing/risk tuning. Its matched common control has minute DD8.67%, distinct from R1 longer-window results. R11 real fixed quote samples and partial author source only improve feasibility; continuous quote/valuation history unresolved. Reused history is not fresh OOS. No adopted winner or activation.",
+    "reason": "R1 Freqtrade Cov10 is historically profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR and not exact-mark/execution certified. Frozen R8-R10/R12-R15 candidate screens rejected; no parameter rescue. R11 continuous historical option quote/valuation coverage incomplete. R16 is a source-integrity audit and research-only knowledge gate: unlock publication/coverage and heterogeneous cliff/linear definitions remain unverified for the broad historical schedule; no new P&L or changed U2 cohort. Reused history is not fresh OOS. No adopted winner or activation.",
     "low_return_price_screen_lead": "R7 equal-allocation dated carry: costed CAGR2.20%/3.73%, double cost1.45%/2.84%; not exact mark/execution certified"
   },
   {
@@ -930,5 +930,20 @@
     "sampled_hour_account_DD_pct": -13.85663632102252,
     "adoption_gate": false,
     "disposition": "Reject fixed candidate: early return passes but both base risk and recent return fail. Positive stress and favorable early sensitivity cannot substitute. No horizon/sign/universe/risk/funding/cost rescue or activation."
+  },
+  {
+    "trial": "R16 unlock information-vintage integrity investigation",
+    "fixed_forensic_panel": [
+      "APT",
+      "TIA",
+      "ARB",
+      "SUI"
+    ],
+    "new_alpha_trial": false,
+    "new_performance": false,
+    "adoption_gate": false,
+    "retained_http_attempts": 25,
+    "focused_tests_passed": 30,
+    "disposition": "Source integrity investigation completed; broad schedule historical publication/completeness not certified. Tested research-only gate distinguishes unknown coverage from known zero. U1 closed historical line, U2 frozen forward cohort and overall research gates unchanged. No activation."
   }
 ]
