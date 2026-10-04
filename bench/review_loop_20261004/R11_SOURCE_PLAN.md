@@ -1,0 +1,11 @@
+# R11 source feasibility only, before option return experiments
+
+R1/R8/R9 demonstrate profitable directional exposures with failed strict downside risk. R10 shows a fixed unrelated long sleeve can add a different losing path. A purchased option provides a contractual expiry payoff; that is distinct from another predictive filter. Its premium, expiry/basis, wallet denomination, size granularity, marks and execution may make protection uneconomic. Do not treat expiry payoff as an all-time account drawdown guarantee or write Black-Scholes prices in place of real quotes.
+
+Before specifying a performance trial, establish public primary-source option identity and historical trade/mark availability. Use Deribit's official institutional guide historical host and official current API schema. Trade history is not automatically historical bid/ask or a continuous mark series. Current `expired=true` metadata lists recently delivered contracts, not all old archived names; historical API or exact-name lookup is required.
+
+Source documents: https://statics.deribit.com/files/DeribitInstitutionalSetupGuide.pdf (section14 historical data), https://docs.deribit.com/specifications/deribit_openapi.json . Public requests only, no account authentication, wallet changes or orders.
+
+Fixed availability samples: BTC-26MAR21-30000-P,ETH-26MAR21-1000-P; BTC-29MAR24-40000-P,ETH-29MAR24-2000-P; BTC-26JUN26-50000-P,ETH-26JUN26-2000-P. These span the existing2021/2024/2026 windows and round strikes; they are not a strategy universe or premium/return-selected contracts. For each, retain exact metadata and up to100 public trades in a fixed seven-day pre-expiry window, with the documented historical include_old flag. Report schema, genuine timestamps, currency, contract size, mark/index field coverage and response errors. No P&L, signal/strike/expiry sweep or claim of profitable insurance from this probe.
+
+Only actual identity/availability evidence can support a subsequent preregistered trial. A missing route or sparse trade tape cannot be silently filled with theoretical premiums, last-price carry-forward, or another asset's option. Any future trial needs separate frozen rule/cost/window gates before inspecting performance. Existing bots stay unchanged.
