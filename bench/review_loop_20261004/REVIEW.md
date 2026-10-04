@@ -165,4 +165,22 @@ The Cov10 control here includes actual perpetual funding and different futures p
 
 Binance's local cross-margin calculation previously used `amount*(mark-open)` for every other trade, including shorts. Their losses were credited as collateral and their profits debited. Root commit `d52cfaa0a` applies each other position's direction. Nine focused cases cover own/other long/short in dry/live modes and an unchanged historical open-price fallback. The fix is local; the running server image has not been restarted or replaced. It does not alter historical alpha because that backtest fallback makes other unrealized P&L zero.
 
-The shared risk helper previously used net weight for its gross cap. Signed(+2,-2) escaped a0.8 gross cap despite4 gross risk; it now uses the sum of absolute weights. Existing long-only sizing is unchanged, proven by full-history/prefix Cov10 tests. Two regression cases cover offsetting and positive weights. Current-source bench, cross-venue and panel suite:165 tests plus16 subtests pass, with two existing dependency deprecation warnings. These are accounting/risk fixes, not profitability evidence; no running strategy rule or cohort was changed.
+The shared risk helper previously used net weight for its gross cap. Signed(+2,-2) escaped a0.8 gross cap despite4 gross risk; it now uses the sum of absolute weights. Existing long-only sizing is unchanged, proven by full-history/prefix Cov10 tests. Two regression cases cover offsetting and positive weights. At the R6 checkpoint, bench, cross-venue and panel suite:165 tests plus16 subtests passed, with two existing dependency deprecation warnings. These are accounting/risk fixes, not profitability evidence; no running strategy rule or cohort was changed.
+
+## R7 dated carry result and reflection
+
+The individual dated-contract inputs and separated-collateral ledger were frozen in `1973619` before outcomes. Two independent, checksummed spot histories supply2,069 days each and exactly match earlier frozen spot opens/closes. All46 needed expiry symbols are validated separately; archive calendars have3,157 BTC/3,156 ETH rows. Zero-trade flat post-expiry padding (105 rows per asset) is excluded only after identity/activity/price checks, with raw evidence retained. February1 remains cash under official first-listing evidence; no entry date is moved. Actual held-position execution prefix agrees throughJune1 2024 when the evaluation endpoint is extended toJuly5; every modeled entry/closing day has nonzero actual trading activity. This is not atomic-fill proof.
+
+| Equal-allocation spot/dated pair | 2021-02–2023-12 | 2024-01–2026-08 |
+|---|---|---|
+| Costed CAGR | +2.20% | +3.73% |
+| Daily **trade-price** drawdown | 3.37% | 1.10% |
+| Double-cost CAGR | +1.45% | +2.84% |
+| Entered asset cycles |18|19|
+| Adverse daily futures-price envelope concerns |0|0|
+
+Final realized total balances reconcile within6e-12USDT. Candidate calendar returns are2021+3.96%,2022+1.39%,2023+1.07%,2024+7.38%,2025+2.41%,2026 partial+0.26%; every observed candidate year remains positive at doubled costs. **Retain as a historically profitable, low-return research candidate; reject the default12% return gate.** This is a necessary last-price screen, not actual mark-based risk certification or a Freqtrade-compatible strategy. No extra mark/intraday implementation is justified solely to rescue its already failed return gate. Reduced price direction and low turnover leave only the contract premium; half the account must fund the other sleeve, with some cash idle when premium is too small. High annualized basis on one leg cannot be labeled total-account yield.
+
+The ETH-only control illustrates a separate defect in naive arbitrage reasoning: its daily total-equity DD is only3.96%, but the futures sleeve adverse envelope drops below zero and flags19 early-window margin-concern days. Price neutrality does not make spot wealth immediately usable futures collateral. That control's no-liquidation accounting return is an optimistic diagnostic, not a tradable result. The candidate has no such daily envelope concern in this sample, yet true marks, hourly risk and execution must still be checked before adoption. No leverage, threshold, holding-date or asset sweep follows this failure. Current-source suite now178 tests plus16 subtests pass (same two dependency deprecation warnings).
+
+R1's actual Freqtrade spot Cov10 remains the best validated return lead; R7 adds a lower-return price-screened carry lead. Neither satisfies all frozen default gates; no new strategy is adopted and no bot configuration or running image is changed.

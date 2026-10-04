@@ -1,0 +1,2501 @@
+{
+  "captured_utc": "2026-10-04T09:36:49.834409+00:00",
+  "source_sha256": {
+    "R7_PROTOCOL.md": "f929e73eace1221952a9eb6e6a3467949cacc9b047865e5eddd2c18315af4aa4",
+    "r7_data.py": "19d3740cc9c258b4b51af6675b5fec2dc5823882da077707688d761e598f9a88",
+    "r7_dated.py": "a82c5a3c852338c275299717c719e07052f6bbd0ffaba07d62ebab2bf3562bf2",
+    "test_r7_data.py": "e026fe2f17cda947f23dc3e53d45267dca49bf20e2c5b1293e3b13321eee008c",
+    "test_r7_engine.py": "93c3f181c7d7ec824acd5feb767102e0253ec4444e1e450a982c8d9c787c3bd5",
+    "r6_relative.py": "7f1ced29f16a84cf831345b10b2e0dbdc7835b23fa8d60616664045da63a62f0"
+  },
+  "input_manifest": {
+    "captured_utc": "2026-10-04T09:34:39.810786+00:00",
+    "coverage": {
+      "BTCUSDT": {
+        "spot_rows": 2069,
+        "contracts": {
+          "BTCUSDT_210326": {
+            "expiry": "2021-03-26T08:00:00+00:00",
+            "rows": 52,
+            "first_archived_day": "2021-02-03T00:00:00+00:00",
+            "last_archived_day": "2021-03-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_210625": {
+            "expiry": "2021-06-25T08:00:00+00:00",
+            "rows": 102,
+            "first_archived_day": "2021-03-16T00:00:00+00:00",
+            "last_archived_day": "2021-06-25T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_210924": {
+            "expiry": "2021-09-24T08:00:00+00:00",
+            "rows": 99,
+            "first_archived_day": "2021-06-18T00:00:00+00:00",
+            "last_archived_day": "2021-09-24T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_211231": {
+            "expiry": "2021-12-31T08:00:00+00:00",
+            "rows": 101,
+            "first_archived_day": "2021-09-22T00:00:00+00:00",
+            "last_archived_day": "2021-12-31T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_220325": {
+            "expiry": "2022-03-25T08:00:00+00:00",
+            "rows": 92,
+            "first_archived_day": "2021-12-24T00:00:00+00:00",
+            "last_archived_day": "2022-03-25T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_220624": {
+            "expiry": "2022-06-24T08:00:00+00:00",
+            "rows": 95,
+            "first_archived_day": "2022-03-22T00:00:00+00:00",
+            "last_archived_day": "2022-06-24T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_220930": {
+            "expiry": "2022-09-30T08:00:00+00:00",
+            "rows": 103,
+            "first_archived_day": "2022-06-20T00:00:00+00:00",
+            "last_archived_day": "2022-09-30T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_221230": {
+            "expiry": "2022-12-30T08:00:00+00:00",
+            "rows": 99,
+            "first_archived_day": "2022-09-23T00:00:00+00:00",
+            "last_archived_day": "2022-12-30T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_230331": {
+            "expiry": "2023-03-31T08:00:00+00:00",
+            "rows": 99,
+            "first_archived_day": "2022-12-23T00:00:00+00:00",
+            "last_archived_day": "2023-03-31T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_230630": {
+            "expiry": "2023-06-30T08:00:00+00:00",
+            "rows": 96,
+            "first_archived_day": "2023-03-27T00:00:00+00:00",
+            "last_archived_day": "2023-06-30T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_230929": {
+            "expiry": "2023-09-29T08:00:00+00:00",
+            "rows": 97,
+            "first_archived_day": "2023-06-25T00:00:00+00:00",
+            "last_archived_day": "2023-09-29T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 46,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_231229": {
+            "expiry": "2023-12-29T08:00:00+00:00",
+            "rows": 134,
+            "first_archived_day": "2023-08-18T00:00:00+00:00",
+            "last_archived_day": "2023-12-29T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 11,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_240329": {
+            "expiry": "2024-03-29T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2023-09-29T00:00:00+00:00",
+            "last_archived_day": "2024-03-29T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_240628": {
+            "expiry": "2024-06-28T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2023-12-29T00:00:00+00:00",
+            "last_archived_day": "2024-06-28T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 3,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_240927": {
+            "expiry": "2024-09-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-03-29T00:00:00+00:00",
+            "last_archived_day": "2024-09-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_241227": {
+            "expiry": "2024-12-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-06-28T00:00:00+00:00",
+            "last_archived_day": "2024-12-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_250328": {
+            "expiry": "2025-03-28T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-09-27T00:00:00+00:00",
+            "last_archived_day": "2025-03-28T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_250627": {
+            "expiry": "2025-06-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-12-27T00:00:00+00:00",
+            "last_archived_day": "2025-06-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_250926": {
+            "expiry": "2025-09-26T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-03-28T00:00:00+00:00",
+            "last_archived_day": "2025-09-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_251226": {
+            "expiry": "2025-12-26T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-06-27T00:00:00+00:00",
+            "last_archived_day": "2025-12-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 25,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_260327": {
+            "expiry": "2026-03-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-09-26T00:00:00+00:00",
+            "last_archived_day": "2026-03-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 20,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_260626": {
+            "expiry": "2026-06-26T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-12-26T00:00:00+00:00",
+            "last_archived_day": "2026-06-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "BTCUSDT_260925": {
+            "expiry": "2026-09-25T08:00:00+00:00",
+            "rows": 158,
+            "first_archived_day": "2026-03-27T00:00:00+00:00",
+            "last_archived_day": "2026-08-31T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          }
+        }
+      },
+      "ETHUSDT": {
+        "spot_rows": 2069,
+        "contracts": {
+          "ETHUSDT_210326": {
+            "expiry": "2021-03-26T08:00:00+00:00",
+            "rows": 51,
+            "first_archived_day": "2021-02-04T00:00:00+00:00",
+            "last_archived_day": "2021-03-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_210625": {
+            "expiry": "2021-06-25T08:00:00+00:00",
+            "rows": 102,
+            "first_archived_day": "2021-03-16T00:00:00+00:00",
+            "last_archived_day": "2021-06-25T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_210924": {
+            "expiry": "2021-09-24T08:00:00+00:00",
+            "rows": 99,
+            "first_archived_day": "2021-06-18T00:00:00+00:00",
+            "last_archived_day": "2021-09-24T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_211231": {
+            "expiry": "2021-12-31T08:00:00+00:00",
+            "rows": 101,
+            "first_archived_day": "2021-09-22T00:00:00+00:00",
+            "last_archived_day": "2021-12-31T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_220325": {
+            "expiry": "2022-03-25T08:00:00+00:00",
+            "rows": 92,
+            "first_archived_day": "2021-12-24T00:00:00+00:00",
+            "last_archived_day": "2022-03-25T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_220624": {
+            "expiry": "2022-06-24T08:00:00+00:00",
+            "rows": 95,
+            "first_archived_day": "2022-03-22T00:00:00+00:00",
+            "last_archived_day": "2022-06-24T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_220930": {
+            "expiry": "2022-09-30T08:00:00+00:00",
+            "rows": 103,
+            "first_archived_day": "2022-06-20T00:00:00+00:00",
+            "last_archived_day": "2022-09-30T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_221230": {
+            "expiry": "2022-12-30T08:00:00+00:00",
+            "rows": 99,
+            "first_archived_day": "2022-09-23T00:00:00+00:00",
+            "last_archived_day": "2022-12-30T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_230331": {
+            "expiry": "2023-03-31T08:00:00+00:00",
+            "rows": 99,
+            "first_archived_day": "2022-12-23T00:00:00+00:00",
+            "last_archived_day": "2023-03-31T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_230630": {
+            "expiry": "2023-06-30T08:00:00+00:00",
+            "rows": 96,
+            "first_archived_day": "2023-03-27T00:00:00+00:00",
+            "last_archived_day": "2023-06-30T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_230929": {
+            "expiry": "2023-09-29T08:00:00+00:00",
+            "rows": 97,
+            "first_archived_day": "2023-06-25T00:00:00+00:00",
+            "last_archived_day": "2023-09-29T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 46,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_231229": {
+            "expiry": "2023-12-29T08:00:00+00:00",
+            "rows": 134,
+            "first_archived_day": "2023-08-18T00:00:00+00:00",
+            "last_archived_day": "2023-12-29T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 11,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_240329": {
+            "expiry": "2024-03-29T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2023-09-29T00:00:00+00:00",
+            "last_archived_day": "2024-03-29T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_240628": {
+            "expiry": "2024-06-28T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2023-12-29T00:00:00+00:00",
+            "last_archived_day": "2024-06-28T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 3,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_240927": {
+            "expiry": "2024-09-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-03-29T00:00:00+00:00",
+            "last_archived_day": "2024-09-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_241227": {
+            "expiry": "2024-12-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-06-28T00:00:00+00:00",
+            "last_archived_day": "2024-12-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_250328": {
+            "expiry": "2025-03-28T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-09-27T00:00:00+00:00",
+            "last_archived_day": "2025-03-28T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_250627": {
+            "expiry": "2025-06-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2024-12-27T00:00:00+00:00",
+            "last_archived_day": "2025-06-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_250926": {
+            "expiry": "2025-09-26T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-03-28T00:00:00+00:00",
+            "last_archived_day": "2025-09-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_251226": {
+            "expiry": "2025-12-26T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-06-27T00:00:00+00:00",
+            "last_archived_day": "2025-12-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 25,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_260327": {
+            "expiry": "2026-03-27T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-09-26T00:00:00+00:00",
+            "last_archived_day": "2026-03-27T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 20,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_260626": {
+            "expiry": "2026-06-26T08:00:00+00:00",
+            "rows": 183,
+            "first_archived_day": "2025-12-26T00:00:00+00:00",
+            "last_archived_day": "2026-06-26T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          },
+          "ETHUSDT_260925": {
+            "expiry": "2026-09-25T08:00:00+00:00",
+            "rows": 158,
+            "first_archived_day": "2026-03-27T00:00:00+00:00",
+            "last_archived_day": "2026-08-31T00:00:00+00:00",
+            "zero_trade_expired_padding_removed": 0,
+            "first_day_is_not_listing_metadata": true
+          }
+        }
+      }
+    },
+    "output_sha256": {
+      "ETHUSDT_231229.parquet": "0a8ef357f7c1d26ce8468c41fe522ad579a236648e161b4e6a1ea79811b89e65",
+      "BTCUSDT_250627.parquet": "a3a1511079ddab09971243c1bd4d7c20609837207548d5c495d6ea89f45de7cc",
+      "BTCUSDT_240628.parquet": "091aee44812bd6a5f35b767e5ba5e6e238ea3670bb625dc38825fc41a260727d",
+      "BTCUSDT_230331.parquet": "14a2f5b20a1d1f2ac3ef9e4daee57b66b06c212e953ab22634bddad98c60d4b3",
+      "ETHUSDT_230630.parquet": "2ed726035b3a9ddd97ba7de7efb1d63f201894a6e3aa454257e9f8d9f827c5df",
+      "ETHUSDT_240329.parquet": "977ad748834c9e3fa85414b8b6708889ce1e5c5b4f7e5d30197826ac15afd7fa",
+      "ETHUSDT_210625.parquet": "9dc96fe2f000fdb56f070606c93f4323e06e5637f80056837fbde0aa781b32c3",
+      "BTCUSDT_251226.parquet": "c2f2f3c608dddd73ccd1fabdf46441a8cfa1f29753a7bcbfad227287cca5d710",
+      "BTCUSDT_240927.parquet": "da43d0ff9750ff43ad20cc4ff9236dcbc67b70eb8de2fa7fd5f2a1292e2577b2",
+      "BTCUSDT_211231.parquet": "ec1572ec455a7d93681ba08979f7fe7aabf8e54788179f1899be295bde6a407e",
+      "ETHUSDT_220930.parquet": "394dd808c0b95abdf5a502c1bca81e81c624ee65c7eccf31cc8eab3cb24621ca",
+      "BTCUSDT_210326.parquet": "42b7ed4465a5d0a11b2ed1699a11780156036acd63790b6b2b2e11f785ee29b0",
+      "BTCUSDT_230929.parquet": "1649592221c41abdbd62d9a00c69135c6e1a4b61236fc6af645d22083308d4fb",
+      "BTCUSDT_250328.parquet": "3f8800538e2dac5b06e098707b73cff86c5022d234536b0a9dd68bb3d2722fd2",
+      "ETHUSDT_260925.parquet": "c0c61030f757fae02013b1d4b57825f550146fd2cd450029006c2618989ce74e",
+      "ETHUSDT_260327.parquet": "b2bf261f082cc9f75a274ea08ea6f7c6d0514f680df63bd9a1137d8a00b3a073",
+      "BTCUSDT_260626.parquet": "32a48c016009bf786c909f183b5927776af3b800f49f9408158665b43fddceba",
+      "BTCUSDT_210924.parquet": "ac1251c0c38efb546810841028310fa1e2e20301f39f65e0e8e8faf076884c87",
+      "ETHUSDT_250926.parquet": "ebbb0d0af75e9bf5d3845b59283d036927321487ac45ee676d9ab5b9e5f402c0",
+      "BTCUSDT_220325.parquet": "413953b98942ea0fa0bf3b91a82d2aa51a05115ef92d93d719425321d6252bf8",
+      "ETHUSDT_220624.parquet": "42bae4107b2b6ce16f258dacffedf223b8596ef6c359b324b5d9b0cf2e17d61d",
+      "BTCUSDT_221230.parquet": "40c7e15ab1381ae9db4a56906fa4d1e24dd11aab5c999e0436acd336b10e070a",
+      "ETHUSDT_241227.parquet": "a0955b6108794ec9853281458d8abcc29a53ab871545d127ce3d9a8c90e7816e",
+      "BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+      "BTCUSDT_260327.parquet": "6a44039b6fdb813ceb6698a1be0870c2c8293a903e12d13341b64ac40e716c1e",
+      "ETHUSDT_260626.parquet": "d44a398b48841d0178df453dcb5a1eb7ea36dcd2a6c2af53a6761962c2610229",
+      "ETHUSDT_210924.parquet": "5ef4bda04556efd099dc15038f90bc5039192f7f99a941cf917761a37eb91bb3",
+      "ETHUSDT_230929.parquet": "10b47e4a6ac31dd194b9359e8ca421bd152d3bae3cd050176d817d6b93494ec0",
+      "ETHUSDT_210326.parquet": "4ab3957a2ae643f227d616b541664b929d72c506f9a91058b366876823f6901b",
+      "ETHUSDT_250328.parquet": "cf28bbd0e0c4f9c41a90fc5a8e21389ec604250757c2fd5b4d6647743622542c",
+      "BTCUSDT_260925.parquet": "2fffcb33a7aa0838e917f9915123835fb0447de14c578bd9f00fe90d2ff3c017",
+      "ETHUSDT_221230.parquet": "3b2848b378a7a64445e06f3010d0103f31ae784a2c7c3e805343b4606ea5730c",
+      "BTCUSDT_241227.parquet": "c46e39efc6da5cdbaa8fdb49dcfa44a028264fbeb012740cf55392b795e7a771",
+      "BTCUSDT_250926.parquet": "3cad118a5fa785540d4ff434604a2d592e83083b6e8a769a1be3511a37bae3cb",
+      "ETHUSDT_220325.parquet": "1c04978619f79e5462d72311834d2e3505f741dcc5d548c80755f9246c84a803",
+      "BTCUSDT_220624.parquet": "690dbb7637aef743516dd073731540e59194b06e4384c94c8e301e32b8132bf1",
+      "ETHUSDT_230331.parquet": "4e383c5202086dbe3c25e86c2e6ac03d7a6573b95b381bebe6331e7435d5dedc",
+      "ETHUSDT_250627.parquet": "f5bc9ff622c7466c24749367a9653162b9474c2ba4c873147555b2c43fc14da1",
+      "ETHUSDT_240628.parquet": "a9e695f845f97939fdcf1174461e7275ff70878112d0283fb4863822de14a392",
+      "BTCUSDT_240329.parquet": "c5484a9a9d56846028180818e20350dde4dfdb1838efdd64e6ca15599a83cb2f",
+      "BTCUSDT_230630.parquet": "31d3a24aeb18d0a5d0b5627acdaa937fce50705913554eb1888602945c3425a9",
+      "BTCUSDT_231229.parquet": "ed69a8598ed05cf632618d1d70b180a711c755d1ce2a66dffcd813d622c042ab",
+      "ETHUSDT_240927.parquet": "9f11324b28899e67b32a7dc94c19a21c688a60a5011d2b75718034cb96463743",
+      "BTCUSDT_220930.parquet": "e8947907e8a7270795bd3ad2c93ca0be1ef4710edfd470c9c36df3fbf13e712e",
+      "ETHUSDT_211231.parquet": "d8c1676b740358c71ac7f4039e11488ce1c0a619593bae27b4543266788d32d0",
+      "ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+      "BTCUSDT_210625.parquet": "140fa84f6361ce1b432f0e31cb8d491197030c720508f65d92522ece81f7806d",
+      "ETHUSDT_251226.parquet": "9cb2bfd46eb1841a540d5eeba233020393461231a925adee4401cb9167881d3a"
+    },
+    "first_contract_listing": {
+      "source": "https://www.binance.com/en/support/announcement/detail/ee59b5c8ddf84d6bbbde4ebff7bdfaa0",
+      "BTCUSDT_210326": "2021-02-03T07:00:00Z",
+      "ETHUSDT_210326": "2021-02-04T07:00:00Z"
+    },
+    "limitations": "Spot2025+ microsecond times normalized with strict precision/calendar checks; futures preserve individual expiry symbols. Trade prices are not mark prices. First archived date alone is not listing proof; missing decision data after initial confirmed listing requires repair/evidence."
+  },
+  "results": {
+    "early_reused_equal_pair_cost0.0012": {
+      "CAGR_pct": 2.195574517765575,
+      "return_pct": 6.535705674127845,
+      "daily_trade_price_DD_pct": -3.3735939811653015,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1230.0411770072833,
+      "max_gross_pct": 172.68376889790912,
+      "fees_USDT": 224.495428945933,
+      "realized_price_pnl_USDT": 878.0659963587186,
+      "ledger_reconciliation_USDT": -1.8189894035458565e-12,
+      "entered_asset_cycles": 18,
+      "calendar_year_return_pct": {
+        "2021": 3.9564000938495214,
+        "2022": 1.3946663646825508,
+        "2023": 1.0715310405063017
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "early_reused_BTC_control_cost0.0012": {
+      "CAGR_pct": 2.1921910249987464,
+      "return_pct": 6.525424011596059,
+      "daily_trade_price_DD_pct": -2.8315742952473744,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1367.6746011491896,
+      "max_gross_pct": 167.71520855375255,
+      "fees_USDT": 249.896092623237,
+      "realized_price_pnl_USDT": 902.4384937828481,
+      "ledger_reconciliation_USDT": -3.637978807091713e-12,
+      "entered_asset_cycles": 10,
+      "calendar_year_return_pct": {
+        "2021": 3.901781196830023,
+        "2022": 1.2926945626406505,
+        "2023": 1.2166955072953511
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "early_reused_ETH_control_cost0.0012": {
+      "CAGR_pct": 2.1988302557924166,
+      "return_pct": 6.5455997346155925,
+      "daily_trade_price_DD_pct": -3.964738457641326,
+      "unresolved_margin_days": 19,
+      "min_future_adverse_equity": -2461.6489983711062,
+      "max_gross_pct": 234.51635821060825,
+      "fees_USDT": 199.01288710519594,
+      "realized_price_pnl_USDT": 853.5728605667566,
+      "ledger_reconciliation_USDT": -1.8189894035458565e-12,
+      "entered_asset_cycles": 8,
+      "calendar_year_return_pct": {
+        "2021": 4.010851429133844,
+        "2022": 1.4967062122775765,
+        "2023": 0.9264315368117781
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "early_reused_equal_pair_cost0.0024": {
+      "CAGR_pct": 1.445699089163699,
+      "return_pct": 4.27290803319722,
+      "daily_trade_price_DD_pct": -3.484436997807383,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1228.6285179765468,
+      "max_gross_pct": 172.68049488751296,
+      "fees_USDT": 444.1395680616193,
+      "realized_price_pnl_USDT": 871.4303713813415,
+      "ledger_reconciliation_USDT": -1.8189894035458565e-12,
+      "entered_asset_cycles": 18,
+      "calendar_year_return_pct": {
+        "2021": 3.18034479765279,
+        "2022": 0.8965285793528288,
+        "2023": 0.16091574362415706
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "early_reused_BTC_control_cost0.0024": {
+      "CAGR_pct": 1.358148505869372,
+      "return_pct": 4.010796151875806,
+      "daily_trade_price_DD_pct": -2.943193612115569,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1348.3009409926499,
+      "max_gross_pct": 167.7126996301194,
+      "fees_USDT": 493.84297049843406,
+      "realized_price_pnl_USDT": 894.9225856860116,
+      "ledger_reconciliation_USDT": 1.8189894035458565e-12,
+      "entered_asset_cycles": 10,
+      "calendar_year_return_pct": {
+        "2021": 3.1820389051721465,
+        "2022": 0.6702755162697249,
+        "2023": 0.13203859898662795
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "early_reused_ETH_control_cost0.0024": {
+      "CAGR_pct": 1.5330268489722965,
+      "return_pct": 4.53478473014326,
+      "daily_trade_price_DD_pct": -4.074746365449222,
+      "unresolved_margin_days": 19,
+      "min_future_adverse_equity": -2458.642235803226,
+      "max_gross_pct": 234.50463153871596,
+      "fees_USDT": 394.2348764979738,
+      "realized_price_pnl_USDT": 847.713349512303,
+      "ledger_reconciliation_USDT": -3.637978807091713e-12,
+      "entered_asset_cycles": 8,
+      "calendar_year_return_pct": {
+        "2021": 3.1784669735368087,
+        "2022": 1.1230497708969445,
+        "2023": 0.1893593042130437
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "recent_reused_equal_pair_cost0.0012": {
+      "CAGR_pct": 3.729234090889033,
+      "return_pct": 10.26359968126176,
+      "daily_trade_price_DD_pct": -1.098510897040228,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1451.4196698489163,
+      "max_gross_pct": 165.22451740901988,
+      "fees_USDT": 245.37476917249083,
+      "realized_price_pnl_USDT": 1271.7347372986728,
+      "ledger_reconciliation_USDT": -5.4569682106375694e-12,
+      "entered_asset_cycles": 19,
+      "calendar_year_return_pct": {
+        "2024": 7.3826831404191,
+        "2025": 2.4129539706960967,
+        "2026": 0.2635372084266452
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "recent_reused_BTC_control_cost0.0012": {
+      "CAGR_pct": 3.832908987966066,
+      "return_pct": 10.557928474033274,
+      "daily_trade_price_DD_pct": -1.1500810639961556,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1583.1694572874685,
+      "max_gross_pct": 161.77069262196676,
+      "fees_USDT": 263.2119203348013,
+      "realized_price_pnl_USDT": 1319.0047677381312,
+      "ledger_reconciliation_USDT": -3.637978807091713e-12,
+      "entered_asset_cycles": 10,
+      "calendar_year_return_pct": {
+        "2024": 7.493355762675269,
+        "2025": 2.5742867075116527,
+        "2026": 0.2697116616647621
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "recent_reused_ETH_control_cost0.0012": {
+      "CAGR_pct": 3.6255817550264746,
+      "return_pct": 9.969825198117398,
+      "daily_trade_price_DD_pct": -1.1350913998571022,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 186.07372508130993,
+      "max_gross_pct": 190.22917871267273,
+      "fees_USDT": 227.62986775872574,
+      "realized_price_pnl_USDT": 1224.6123875704695,
+      "ledger_reconciliation_USDT": -3.637978807091713e-12,
+      "entered_asset_cycles": 9,
+      "calendar_year_return_pct": {
+        "2024": 7.272019449862355,
+        "2025": 2.251835761736154,
+        "2026": 0.25729073150861925
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "recent_reused_equal_pair_cost0.0024": {
+      "CAGR_pct": 2.843061589694673,
+      "return_pct": 7.767769901869248,
+      "daily_trade_price_DD_pct": -1.0984684339757633,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1449.741992670325,
+      "max_gross_pct": 165.2180597004968,
+      "fees_USDT": 485.0867195046749,
+      "realized_price_pnl_USDT": 1261.8637096915982,
+      "ledger_reconciliation_USDT": 0.0,
+      "entered_asset_cycles": 19,
+      "calendar_year_return_pct": {
+        "2024": 6.189668795480463,
+        "2025": 1.4458520102983874,
+        "2026": 0.039689616822258245
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "recent_reused_BTC_control_cost0.0024": {
+      "CAGR_pct": 2.884473667187404,
+      "return_pct": 7.883608392414065,
+      "daily_trade_price_DD_pct": -1.1500358052792037,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 1581.3340588948645,
+      "max_gross_pct": 161.7642968633638,
+      "fees_USDT": 519.9590125693933,
+      "realized_price_pnl_USDT": 1308.3198518107934,
+      "ledger_reconciliation_USDT": 7.275957614183426e-12,
+      "entered_asset_cycles": 10,
+      "calendar_year_return_pct": {
+        "2024": 6.2687742034212235,
+        "2025": 1.6170658020448592,
+        "2026": -0.09593896971884508
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    },
+    "recent_reused_ETH_control_cost0.0024": {
+      "CAGR_pct": 2.8014745301975674,
+      "return_pct": 7.651520243474086,
+      "daily_trade_price_DD_pct": -1.135048332021038,
+      "unresolved_margin_days": 0,
+      "min_future_adverse_equity": 183.2730154332512,
+      "max_gross_pct": 190.22567179712797,
+      "fees_USDT": 450.3844582392828,
+      "realized_price_pnl_USDT": 1215.5364825866875,
+      "ledger_reconciliation_USDT": 3.637978807091713e-12,
+      "entered_asset_cycles": 9,
+      "calendar_year_return_pct": {
+        "2024": 6.1105281269814515,
+        "2025": 1.274882047384307,
+        "2026": 0.17513702040563572
+      },
+      "necessary_screen_pass": false,
+      "not_risk_certified": true
+    }
+  },
+  "decisions": {
+    "early_reused_equal_pair_cost0.0012": [
+      {
+        "date": "2021-02-01T00:00:00+00:00",
+        "expiry": "2021-03-26T08:00:00+00:00",
+        "entered": [
+          "confirmed_not_listed_at_decision",
+          "confirmed_not_listed_at_decision"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2021-03-29T00:00:00+00:00",
+        "expiry": "2021-06-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.04169689132521322,
+          1.3722008535774577
+        ],
+        "entry_gross": 0.9595981355414669
+      },
+      {
+        "date": "2021-06-28T00:00:00+00:00",
+        "expiry": "2021-09-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.0723750679525438,
+          1.2672304569206387
+        ],
+        "entry_gross": 0.9842358362698701
+      },
+      {
+        "date": "2021-09-27T00:00:00+00:00",
+        "expiry": "2021-12-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.057836529785191944,
+          0.8148238851786226
+        ],
+        "entry_gross": 0.979447483648709
+      },
+      {
+        "date": "2022-01-03T00:00:00+00:00",
+        "expiry": "2022-03-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.05316347040459363,
+          0.656315740523147
+        ],
+        "entry_gross": 0.979060861107763
+      },
+      {
+        "date": "2022-03-28T00:00:00+00:00",
+        "expiry": "2022-06-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.05469651634094822,
+          0.7759272106634378
+        ],
+        "entry_gross": 0.9834628702420417
+      },
+      {
+        "date": "2022-06-27T00:00:00+00:00",
+        "expiry": "2022-09-30T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2022-10-03T00:00:00+00:00",
+        "expiry": "2022-12-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.13610972253903744,
+          0.0
+        ],
+        "entry_gross": 0.49350654767441254
+      },
+      {
+        "date": "2023-01-02T00:00:00+00:00",
+        "expiry": "2023-03-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.1560211338041073,
+          0.0
+        ],
+        "entry_gross": 0.49346086154699087
+      },
+      {
+        "date": "2023-04-03T00:00:00+00:00",
+        "expiry": "2023-06-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.09124676389885092,
+          1.4333061352331111
+        ],
+        "entry_gross": 0.983550767972607
+      },
+      {
+        "date": "2023-07-03T00:00:00+00:00",
+        "expiry": "2023-09-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.0839105503356748,
+          1.332537336837209
+        ],
+        "entry_gross": 0.9822541305977054
+      },
+      {
+        "date": "2023-10-02T00:00:00+00:00",
+        "expiry": "2023-12-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.09285068360036638,
+          1.5058474547567673
+        ],
+        "entry_gross": 0.9850032163857323
+      }
+    ],
+    "early_reused_BTC_control_cost0.0012": [
+      {
+        "date": "2021-02-01T00:00:00+00:00",
+        "expiry": "2021-03-26T08:00:00+00:00",
+        "entered": [
+          "confirmed_not_listed_at_decision",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2021-03-29T00:00:00+00:00",
+        "expiry": "2021-06-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.08339378265042643,
+          0.0
+        ],
+        "entry_gross": 0.9606638087805641
+      },
+      {
+        "date": "2021-06-28T00:00:00+00:00",
+        "expiry": "2021-09-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.1446368239848467,
+          0.0
+        ],
+        "entry_gross": 0.9841970444525633
+      },
+      {
+        "date": "2021-09-27T00:00:00+00:00",
+        "expiry": "2021-12-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.11568847545063729,
+          0.0
+        ],
+        "entry_gross": 0.9797816275919496
+      },
+      {
+        "date": "2022-01-03T00:00:00+00:00",
+        "expiry": "2022-03-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.10627107642541472,
+          0.0
+        ],
+        "entry_gross": 0.9792005338515518
+      },
+      {
+        "date": "2022-03-28T00:00:00+00:00",
+        "expiry": "2022-06-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.10930258503706712,
+          0.0
+        ],
+        "entry_gross": 0.9838575520958884
+      },
+      {
+        "date": "2022-06-27T00:00:00+00:00",
+        "expiry": "2022-09-30T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2022-10-03T00:00:00+00:00",
+        "expiry": "2022-12-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.27189013717819205,
+          0.0
+        ],
+        "entry_gross": 0.9875979586196834
+      },
+      {
+        "date": "2023-01-02T00:00:00+00:00",
+        "expiry": "2023-03-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.31156466646435876,
+          0.0
+        ],
+        "entry_gross": 0.9875064780509127
+      },
+      {
+        "date": "2023-04-03T00:00:00+00:00",
+        "expiry": "2023-06-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.18217920156139117,
+          0.0
+        ],
+        "entry_gross": 0.9834090279108908
+      },
+      {
+        "date": "2023-07-03T00:00:00+00:00",
+        "expiry": "2023-09-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.1675298967923303,
+          0.0
+        ],
+        "entry_gross": 0.9810525680927792
+      },
+      {
+        "date": "2023-10-02T00:00:00+00:00",
+        "expiry": "2023-12-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.18555604216299937,
+          0.0
+        ],
+        "entry_gross": 0.9839007340168956
+      }
+    ],
+    "early_reused_ETH_control_cost0.0012": [
+      {
+        "date": "2021-02-01T00:00:00+00:00",
+        "expiry": "2021-03-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "confirmed_not_listed_at_decision"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2021-03-29T00:00:00+00:00",
+        "expiry": "2021-06-25T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.7444017071549154
+        ],
+        "entry_gross": 0.9585324650248105
+      },
+      {
+        "date": "2021-06-28T00:00:00+00:00",
+        "expiry": "2021-09-24T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.5364449163510305
+        ],
+        "entry_gross": 0.9842746280907844
+      },
+      {
+        "date": "2021-09-27T00:00:00+00:00",
+        "expiry": "2021-12-31T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.6294282462133687
+        ],
+        "entry_gross": 0.9791133399731187
+      },
+      {
+        "date": "2022-01-03T00:00:00+00:00",
+        "expiry": "2022-03-25T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.313319024447323
+        ],
+        "entry_gross": 0.9789211884107397
+      },
+      {
+        "date": "2022-03-28T00:00:00+00:00",
+        "expiry": "2022-06-24T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.553135505298111
+        ],
+        "entry_gross": 0.9830681887616112
+      },
+      {
+        "date": "2022-06-27T00:00:00+00:00",
+        "expiry": "2022-09-30T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2022-10-03T00:00:00+00:00",
+        "expiry": "2022-12-30T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2023-01-02T00:00:00+00:00",
+        "expiry": "2023-03-31T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2023-04-03T00:00:00+00:00",
+        "expiry": "2023-06-30T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.871551728728709
+        ],
+        "entry_gross": 0.9836925080824827
+      },
+      {
+        "date": "2023-07-03T00:00:00+00:00",
+        "expiry": "2023-09-29T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.6697011135557487
+        ],
+        "entry_gross": 0.983455696563568
+      },
+      {
+        "date": "2023-10-02T00:00:00+00:00",
+        "expiry": "2023-12-29T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          3.0140440571636447
+        ],
+        "entry_gross": 0.9861057016682542
+      }
+    ],
+    "early_reused_equal_pair_cost0.0024": [
+      {
+        "date": "2021-02-01T00:00:00+00:00",
+        "expiry": "2021-03-26T08:00:00+00:00",
+        "entered": [
+          "confirmed_not_listed_at_decision",
+          "confirmed_not_listed_at_decision"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2021-03-29T00:00:00+00:00",
+        "expiry": "2021-06-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.04164697485515112,
+          1.3705581550296797
+        ],
+        "entry_gross": 0.9595516700881918
+      },
+      {
+        "date": "2021-06-28T00:00:00+00:00",
+        "expiry": "2021-09-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.0721348910854511,
+          1.2630251490758542
+        ],
+        "entry_gross": 0.9842172401511489
+      },
+      {
+        "date": "2021-09-27T00:00:00+00:00",
+        "expiry": "2021-12-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.05747962059132322,
+          0.8097956074260637
+        ],
+        "entry_gross": 0.9794233570631388
+      },
+      {
+        "date": "2022-01-03T00:00:00+00:00",
+        "expiry": "2022-03-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.05270342616704045,
+          0.6506363845265334
+        ],
+        "entry_gross": 0.9790362903803982
+      },
+      {
+        "date": "2022-03-28T00:00:00+00:00",
+        "expiry": "2022-06-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.054105396610493926,
+          0.7675415599071731
+        ],
+        "entry_gross": 0.9834433776362742
+      },
+      {
+        "date": "2022-06-27T00:00:00+00:00",
+        "expiry": "2022-09-30T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2022-10-03T00:00:00+00:00",
+        "expiry": "2022-12-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.13441771807188932,
+          0.0
+        ],
+        "entry_gross": 0.4932071395399932
+      },
+      {
+        "date": "2023-01-02T00:00:00+00:00",
+        "expiry": "2023-03-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.15391114504717227,
+          0.0
+        ],
+        "entry_gross": 0.4931614541421574
+      },
+      {
+        "date": "2023-04-03T00:00:00+00:00",
+        "expiry": "2023-06-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.08987005246939342,
+          1.4116807224077932
+        ],
+        "entry_gross": 0.9835313772384915
+      },
+      {
+        "date": "2023-07-03T00:00:00+00:00",
+        "expiry": "2023-09-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.08244553995315992,
+          1.3092723120489584
+        ],
+        "entry_gross": 0.9822332389683232
+      },
+      {
+        "date": "2023-10-02T00:00:00+00:00",
+        "expiry": "2023-12-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.09103049467315258,
+          1.4763277274167033
+        ],
+        "entry_gross": 0.9849855116938642
+      }
+    ],
+    "early_reused_BTC_control_cost0.0024": [
+      {
+        "date": "2021-02-01T00:00:00+00:00",
+        "expiry": "2021-03-26T08:00:00+00:00",
+        "entered": [
+          "confirmed_not_listed_at_decision",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2021-03-29T00:00:00+00:00",
+        "expiry": "2021-06-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.08329394971030224,
+          0.0
+        ],
+        "entry_gross": 0.9606185186402467
+      },
+      {
+        "date": "2021-06-28T00:00:00+00:00",
+        "expiry": "2021-09-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.14419986357012324,
+          0.0
+        ],
+        "entry_gross": 0.9841784033088657
+      },
+      {
+        "date": "2021-09-27T00:00:00+00:00",
+        "expiry": "2021-12-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.11502918436895737,
+          0.0
+        ],
+        "entry_gross": 0.9797578851511286
+      },
+      {
+        "date": "2022-01-03T00:00:00+00:00",
+        "expiry": "2022-03-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.10540858299839956,
+          0.0
+        ],
+        "entry_gross": 0.9791761235351696
+      },
+      {
+        "date": "2022-03-28T00:00:00+00:00",
+        "expiry": "2022-06-24T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.10817251197655112,
+          0.0
+        ],
+        "entry_gross": 0.9838385170635183
+      },
+      {
+        "date": "2022-06-27T00:00:00+00:00",
+        "expiry": "2022-09-30T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2022-10-03T00:00:00+00:00",
+        "expiry": "2022-12-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.26862089063705274,
+          0.0
+        ],
+        "entry_gross": 0.9875832785773093
+      },
+      {
+        "date": "2023-01-02T00:00:00+00:00",
+        "expiry": "2023-03-31T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.3071370639613531,
+          0.0
+        ],
+        "entry_gross": 0.9874916910963173
+      },
+      {
+        "date": "2023-04-03T00:00:00+00:00",
+        "expiry": "2023-06-30T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.17902069198400672,
+          0.0
+        ],
+        "entry_gross": 0.983389472912132
+      },
+      {
+        "date": "2023-07-03T00:00:00+00:00",
+        "expiry": "2023-09-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.1642243794963877,
+          0.0
+        ],
+        "entry_gross": 0.9810302892218997
+      },
+      {
+        "date": "2023-10-02T00:00:00+00:00",
+        "expiry": "2023-12-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.18149563565494636,
+          0.0
+        ],
+        "entry_gross": 0.9838817490700629
+      }
+    ],
+    "early_reused_ETH_control_cost0.0024": [
+      {
+        "date": "2021-02-01T00:00:00+00:00",
+        "expiry": "2021-03-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "confirmed_not_listed_at_decision"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2021-03-29T00:00:00+00:00",
+        "expiry": "2021-06-25T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.7411163100593594
+        ],
+        "entry_gross": 0.9584848269867526
+      },
+      {
+        "date": "2021-06-28T00:00:00+00:00",
+        "expiry": "2021-09-24T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.527274517802465
+        ],
+        "entry_gross": 0.9842560770006551
+      },
+      {
+        "date": "2021-09-27T00:00:00+00:00",
+        "expiry": "2021-12-31T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.6186041108627047
+        ],
+        "entry_gross": 0.9790888295110517
+      },
+      {
+        "date": "2022-01-03T00:00:00+00:00",
+        "expiry": "2022-03-25T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.3012490866221542
+        ],
+        "entry_gross": 0.9788964573192626
+      },
+      {
+        "date": "2022-03-28T00:00:00+00:00",
+        "expiry": "2022-06-24T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.53562342630162
+        ],
+        "entry_gross": 0.9830482389567127
+      },
+      {
+        "date": "2022-06-27T00:00:00+00:00",
+        "expiry": "2022-09-30T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2022-10-03T00:00:00+00:00",
+        "expiry": "2022-12-30T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2023-01-02T00:00:00+00:00",
+        "expiry": "2023-03-31T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2023-04-03T00:00:00+00:00",
+        "expiry": "2023-06-30T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.8346866394276407
+        ],
+        "entry_gross": 0.9836732816612799
+      },
+      {
+        "date": "2023-07-03T00:00:00+00:00",
+        "expiry": "2023-09-29T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.6291558385806884
+        ],
+        "entry_gross": 0.9834361956444735
+      },
+      {
+        "date": "2023-10-02T00:00:00+00:00",
+        "expiry": "2023-12-29T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.9618285560410573
+        ],
+        "entry_gross": 0.9860892801517059
+      }
+    ],
+    "recent_reused_equal_pair_cost0.0012": [
+      {
+        "date": "2024-01-01T00:00:00+00:00",
+        "expiry": "2024-03-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.0556997652108389,
+          1.0348432517282007
+        ],
+        "entry_gross": 0.9671842700228567
+      },
+      {
+        "date": "2024-04-01T00:00:00+00:00",
+        "expiry": "2024-06-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.0326610367664756,
+          0.6394162714502213
+        ],
+        "entry_gross": 0.9523926208728635
+      },
+      {
+        "date": "2024-07-01T00:00:00+00:00",
+        "expiry": "2024-09-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.04038073867574001,
+          0.7371592872695614
+        ],
+        "entry_gross": 0.9757075538706093
+      },
+      {
+        "date": "2024-09-30T00:00:00+00:00",
+        "expiry": "2024-12-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.03948177291738006,
+          0.9769788581295813
+        ],
+        "entry_gross": 0.9810375071860957
+      },
+      {
+        "date": "2024-12-30T00:00:00+00:00",
+        "expiry": "2025-03-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.027436383241830942,
+          0.7674721301700068
+        ],
+        "entry_gross": 0.9745362178701076
+      },
+      {
+        "date": "2025-03-31T00:00:00+00:00",
+        "expiry": "2025-06-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.03235294780352222,
+          1.476918493369929
+        ],
+        "entry_gross": 0.9855709747768759
+      },
+      {
+        "date": "2025-06-30T00:00:00+00:00",
+        "expiry": "2025-09-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.024619672057348944,
+          1.0668891478995517
+        ],
+        "entry_gross": 0.9846769980561085
+      },
+      {
+        "date": "2025-09-29T00:00:00+00:00",
+        "expiry": "2025-12-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.023731960296393784,
+          0.6432855288966629
+        ],
+        "entry_gross": 0.9825104997591504
+      },
+      {
+        "date": "2025-12-29T00:00:00+00:00",
+        "expiry": "2026-03-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.03052192897214264,
+          0.9128312332073819
+        ],
+        "entry_gross": 0.9846285363984688
+      },
+      {
+        "date": "2026-03-30T00:00:00+00:00",
+        "expiry": "2026-06-26T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2026-06-29T00:00:00+00:00",
+        "expiry": "2026-09-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.04542823264174255,
+          0.0
+        ],
+        "entry_gross": 0.4928493663523799
+      }
+    ],
+    "recent_reused_BTC_control_cost0.0012": [
+      {
+        "date": "2024-01-01T00:00:00+00:00",
+        "expiry": "2024-03-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.1113995304216778,
+          0.0
+        ],
+        "entry_gross": 0.9665636030146287
+      },
+      {
+        "date": "2024-04-01T00:00:00+00:00",
+        "expiry": "2024-06-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.06536518590982297,
+          0.0
+        ],
+        "entry_gross": 0.9521194591688213
+      },
+      {
+        "date": "2024-07-01T00:00:00+00:00",
+        "expiry": "2024-09-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.08083404389465589,
+          0.0
+        ],
+        "entry_gross": 0.9757368488707008
+      },
+      {
+        "date": "2024-09-30T00:00:00+00:00",
+        "expiry": "2024-12-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.07901859640504638,
+          0.0
+        ],
+        "entry_gross": 0.9804412654480686
+      },
+      {
+        "date": "2024-12-30T00:00:00+00:00",
+        "expiry": "2025-03-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.05494443861280855,
+          0.0
+        ],
+        "entry_gross": 0.9741474952478829
+      },
+      {
+        "date": "2025-03-31T00:00:00+00:00",
+        "expiry": "2025-06-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.06480543616977037,
+          0.0
+        ],
+        "entry_gross": 0.9851728080425485
+      },
+      {
+        "date": "2025-06-30T00:00:00+00:00",
+        "expiry": "2025-09-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.04933846795321502,
+          0.0
+        ],
+        "entry_gross": 0.9847131305837874
+      },
+      {
+        "date": "2025-09-29T00:00:00+00:00",
+        "expiry": "2025-12-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.04755957821672835,
+          0.0
+        ],
+        "entry_gross": 0.9822611636992236
+      },
+      {
+        "date": "2025-12-29T00:00:00+00:00",
+        "expiry": "2026-03-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.06118154502223778,
+          0.0
+        ],
+        "entry_gross": 0.9837902878321855
+      },
+      {
+        "date": "2026-03-30T00:00:00+00:00",
+        "expiry": "2026-06-26T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2026-06-29T00:00:00+00:00",
+        "expiry": "2026-09-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.09113634953558977,
+          0.0
+        ],
+        "entry_gross": 0.986282038878247
+      }
+    ],
+    "recent_reused_ETH_control_cost0.0012": [
+      {
+        "date": "2024-01-01T00:00:00+00:00",
+        "expiry": "2024-03-29T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.0696865034564014
+        ],
+        "entry_gross": 0.9678049379545602
+      },
+      {
+        "date": "2024-04-01T00:00:00+00:00",
+        "expiry": "2024-06-28T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.277988517174321
+        ],
+        "entry_gross": 0.9526657827557827
+      },
+      {
+        "date": "2024-07-01T00:00:00+00:00",
+        "expiry": "2024-09-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.472994320193912
+        ],
+        "entry_gross": 0.975678258872575
+      },
+      {
+        "date": "2024-09-30T00:00:00+00:00",
+        "expiry": "2024-12-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.952595395078919
+        ],
+        "entry_gross": 0.981633749776331
+      },
+      {
+        "date": "2024-12-30T00:00:00+00:00",
+        "expiry": "2025-03-28T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.5329406216995778
+        ],
+        "entry_gross": 0.974924940854561
+      },
+      {
+        "date": "2025-03-31T00:00:00+00:00",
+        "expiry": "2025-06-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.9492970973574137
+        ],
+        "entry_gross": 0.9859691418912426
+      },
+      {
+        "date": "2025-06-30T00:00:00+00:00",
+        "expiry": "2025-09-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.1294888952215776
+        ],
+        "entry_gross": 0.9846408655315595
+      },
+      {
+        "date": "2025-09-29T00:00:00+00:00",
+        "expiry": "2025-12-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.28398183186848
+        ],
+        "entry_gross": 0.982759835968106
+      },
+      {
+        "date": "2025-12-29T00:00:00+00:00",
+        "expiry": "2026-03-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.821551615179648
+        ],
+        "entry_gross": 0.985466786649151
+      },
+      {
+        "date": "2026-03-30T00:00:00+00:00",
+        "expiry": "2026-06-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2026-06-29T00:00:00+00:00",
+        "expiry": "2026-09-25T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      }
+    ],
+    "recent_reused_equal_pair_cost0.0024": [
+      {
+        "date": "2024-01-01T00:00:00+00:00",
+        "expiry": "2024-03-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.05563308552383472,
+          1.033604413038981
+        ],
+        "entry_gross": 0.967146230538778
+      },
+      {
+        "date": "2024-04-01T00:00:00+00:00",
+        "expiry": "2024-06-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.0325256463792208,
+          0.6367656875992663
+        ],
+        "entry_gross": 0.9523382800863384
+      },
+      {
+        "date": "2024-07-01T00:00:00+00:00",
+        "expiry": "2024-09-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.040128870943336656,
+          0.7325613862852437
+        ],
+        "entry_gross": 0.9756791460003411
+      },
+      {
+        "date": "2024-09-30T00:00:00+00:00",
+        "expiry": "2024-12-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.03914941174713472,
+          0.9687545608754434
+        ],
+        "entry_gross": 0.981015210948915
+      },
+      {
+        "date": "2024-12-30T00:00:00+00:00",
+        "expiry": "2025-03-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.027130739127129714,
+          0.7589224121654107
+        ],
+        "entry_gross": 0.9745064760156257
+      },
+      {
+        "date": "2025-03-31T00:00:00+00:00",
+        "expiry": "2025-06-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.03192749985136479,
+          1.457496709848884
+        ],
+        "entry_gross": 0.9855539305309441
+      },
+      {
+        "date": "2025-06-30T00:00:00+00:00",
+        "expiry": "2025-09-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.024229726939510966,
+          1.0499909449694456
+        ],
+        "entry_gross": 0.9846589142401394
+      },
+      {
+        "date": "2025-09-29T00:00:00+00:00",
+        "expiry": "2025-12-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.023293656067777047,
+          0.6314047249511833
+        ],
+        "entry_gross": 0.9824899045644772
+      },
+      {
+        "date": "2025-12-29T00:00:00+00:00",
+        "expiry": "2026-03-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "enter"
+        ],
+        "quantities": [
+          0.0298972609303055,
+          0.8941490424619717
+        ],
+        "entry_gross": 0.9846103962831655
+      },
+      {
+        "date": "2026-03-30T00:00:00+00:00",
+        "expiry": "2026-06-26T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2026-06-29T00:00:00+00:00",
+        "expiry": "2026-09-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0444075231937608,
+          0.0
+        ],
+        "entry_gross": 0.49254996919419386
+      }
+    ],
+    "recent_reused_BTC_control_cost0.0024": [
+      {
+        "date": "2024-01-01T00:00:00+00:00",
+        "expiry": "2024-03-29T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.11126617104766943,
+          0.0
+        ],
+        "entry_gross": 0.9665248689644312
+      },
+      {
+        "date": "2024-04-01T00:00:00+00:00",
+        "expiry": "2024-06-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.06509040242857063,
+          0.0
+        ],
+        "entry_gross": 0.9520648222787731
+      },
+      {
+        "date": "2024-07-01T00:00:00+00:00",
+        "expiry": "2024-09-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.08032866055565625,
+          0.0
+        ],
+        "entry_gross": 0.975708474405452
+      },
+      {
+        "date": "2024-09-30T00:00:00+00:00",
+        "expiry": "2024-12-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.07834004064814343,
+          0.0
+        ],
+        "entry_gross": 0.9804182821389231
+      },
+      {
+        "date": "2024-12-30T00:00:00+00:00",
+        "expiry": "2025-03-28T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.05431681979408156,
+          0.0
+        ],
+        "entry_gross": 0.9741173114215674
+      },
+      {
+        "date": "2025-03-31T00:00:00+00:00",
+        "expiry": "2025-06-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.06392292926824387,
+          0.0
+        ],
+        "entry_gross": 0.9851553005474435
+      },
+      {
+        "date": "2025-06-30T00:00:00+00:00",
+        "expiry": "2025-09-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.048535217955331084,
+          0.0
+        ],
+        "entry_gross": 0.9846950887477071
+      },
+      {
+        "date": "2025-09-29T00:00:00+00:00",
+        "expiry": "2025-12-26T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.04667510513427307,
+          0.0
+        ],
+        "entry_gross": 0.9822402801999764
+      },
+      {
+        "date": "2025-12-29T00:00:00+00:00",
+        "expiry": "2026-03-27T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.05991895225374472,
+          0.0
+        ],
+        "entry_gross": 0.9837711747907365
+      },
+      {
+        "date": "2026-03-30T00:00:00+00:00",
+        "expiry": "2026-06-26T08:00:00+00:00",
+        "entered": [
+          "below_fixed_four_fill_hurdle",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2026-06-29T00:00:00+00:00",
+        "expiry": "2026-09-25T08:00:00+00:00",
+        "entered": [
+          "enter",
+          "diagnostic_excluded"
+        ],
+        "quantities": [
+          0.08906902145007395,
+          0.0
+        ],
+        "entry_gross": 0.9862658228700001
+      }
+    ],
+    "recent_reused_ETH_control_cost0.0024": [
+      {
+        "date": "2024-01-01T00:00:00+00:00",
+        "expiry": "2024-03-29T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.067208826077962
+        ],
+        "entry_gross": 0.9677675939620713
+      },
+      {
+        "date": "2024-04-01T00:00:00+00:00",
+        "expiry": "2024-06-28T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.2727657118293518
+        ],
+        "entry_gross": 0.9526117382520259
+      },
+      {
+        "date": "2024-07-01T00:00:00+00:00",
+        "expiry": "2024-09-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.4638286338799311
+        ],
+        "entry_gross": 0.9756498175993493
+      },
+      {
+        "date": "2024-09-30T00:00:00+00:00",
+        "expiry": "2024-12-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.936488636483184
+        ],
+        "entry_gross": 0.9816121414652491
+      },
+      {
+        "date": "2024-12-30T00:00:00+00:00",
+        "expiry": "2025-03-28T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.516297113514875
+        ],
+        "entry_gross": 0.9748956413349444
+      },
+      {
+        "date": "2025-03-31T00:00:00+00:00",
+        "expiry": "2025-06-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.9118933474469406
+        ],
+        "entry_gross": 0.9859525612753948
+      },
+      {
+        "date": "2025-06-30T00:00:00+00:00",
+        "expiry": "2025-09-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          2.0967015637623736
+        ],
+        "entry_gross": 0.9846227397388382
+      },
+      {
+        "date": "2025-09-29T00:00:00+00:00",
+        "expiry": "2025-12-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.2604327139627527
+        ],
+        "entry_gross": 0.9827395292273736
+      },
+      {
+        "date": "2025-12-29T00:00:00+00:00",
+        "expiry": "2026-03-27T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "enter"
+        ],
+        "quantities": [
+          0.0,
+          1.7845822759400052
+        ],
+        "entry_gross": 0.9854496211482433
+      },
+      {
+        "date": "2026-03-30T00:00:00+00:00",
+        "expiry": "2026-06-26T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      },
+      {
+        "date": "2026-06-29T00:00:00+00:00",
+        "expiry": "2026-09-25T08:00:00+00:00",
+        "entered": [
+          "diagnostic_excluded",
+          "below_fixed_four_fill_hurdle"
+        ],
+        "quantities": [
+          0.0,
+          0.0
+        ],
+        "entry_gross": 0.0
+      }
+    ]
+  },
+  "limitations": "Necessary traded-price profitability/collateral screen only; separated wallets, no cash yield or perpetual funding, price envelopes are not exact mark liquidations. Reused history, no activation."
+}

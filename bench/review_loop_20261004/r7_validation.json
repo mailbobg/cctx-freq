@@ -1,0 +1,60 @@
+{
+  "real_input_held_prefix_equal": true,
+  "cutoff": "2024-06-01",
+  "entry_close_nonzero_trade_activity_violations": [],
+  "candidate_results": {
+    "early_reused_equal_pair_cost0.0012": {
+      "CAGR_pct": 2.195574517765575,
+      "daily_trade_price_DD_pct": -3.3735939811653015,
+      "calendar_year_return_pct": {
+        "2021": 3.9564000938495214,
+        "2022": 1.3946663646825508,
+        "2023": 1.0715310405063017
+      },
+      "entered_asset_cycles": 18,
+      "ledger_reconciliation_USDT": -1.8189894035458565e-12,
+      "unresolved_margin_days": 0
+    },
+    "early_reused_equal_pair_cost0.0024": {
+      "CAGR_pct": 1.445699089163699,
+      "daily_trade_price_DD_pct": -3.484436997807383,
+      "calendar_year_return_pct": {
+        "2021": 3.18034479765279,
+        "2022": 0.8965285793528288,
+        "2023": 0.16091574362415706
+      },
+      "entered_asset_cycles": 18,
+      "ledger_reconciliation_USDT": -1.8189894035458565e-12,
+      "unresolved_margin_days": 0
+    },
+    "recent_reused_equal_pair_cost0.0012": {
+      "CAGR_pct": 3.729234090889033,
+      "daily_trade_price_DD_pct": -1.098510897040228,
+      "calendar_year_return_pct": {
+        "2024": 7.3826831404191,
+        "2025": 2.4129539706960967,
+        "2026": 0.2635372084266452
+      },
+      "entered_asset_cycles": 19,
+      "ledger_reconciliation_USDT": -5.4569682106375694e-12,
+      "unresolved_margin_days": 0
+    },
+    "recent_reused_equal_pair_cost0.0024": {
+      "CAGR_pct": 2.843061589694673,
+      "daily_trade_price_DD_pct": -1.0984684339757633,
+      "calendar_year_return_pct": {
+        "2024": 6.189668795480463,
+        "2025": 1.4458520102983874,
+        "2026": 0.039689616822258245
+      },
+      "entered_asset_cycles": 19,
+      "ledger_reconciliation_USDT": 0.0,
+      "unresolved_margin_days": 0
+    }
+  },
+  "source_sha256": {
+    "r7_dated.py": "a82c5a3c852338c275299717c719e07052f6bbd0ffaba07d62ebab2bf3562bf2",
+    "r7_validate.py": "98c231ef521203a8b4607ff70222a13508a8f3f9d7694f19ff843893903c4f0d"
+  },
+  "limitations": "Nonzero daily OPEN/CLOSE activity is not proof of atomic fills or full mark-based margin solvency."
+}

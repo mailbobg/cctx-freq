@@ -258,10 +258,131 @@
     "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
   },
   {
+    "trial": "R7 dated carry equal pair",
+    "window": "early_reused_equal_pair_cost0.0012",
+    "CAGR_pct": 2.195574517765575,
+    "daily_trade_price_DD_pct": -3.3735939811653015,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "historically profitable necessary price screen, return target rejected; no leverage/threshold/schedule/asset tuning; no activation"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "early_reused_BTC_control_cost0.0012",
+    "CAGR_pct": 2.1921910249987464,
+    "daily_trade_price_DD_pct": -2.8315742952473744,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "early_reused_ETH_control_cost0.0012",
+    "CAGR_pct": 2.1988302557924166,
+    "daily_trade_price_DD_pct": -3.964738457641326,
+    "unresolved_margin_days": 19,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
+    "trial": "R7 dated carry equal pair",
+    "window": "early_reused_equal_pair_cost0.0024",
+    "CAGR_pct": 1.445699089163699,
+    "daily_trade_price_DD_pct": -3.484436997807383,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "historically profitable necessary price screen, return target rejected; no leverage/threshold/schedule/asset tuning; no activation"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "early_reused_BTC_control_cost0.0024",
+    "CAGR_pct": 1.358148505869372,
+    "daily_trade_price_DD_pct": -2.943193612115569,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "early_reused_ETH_control_cost0.0024",
+    "CAGR_pct": 1.5330268489722965,
+    "daily_trade_price_DD_pct": -4.074746365449222,
+    "unresolved_margin_days": 19,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
+    "trial": "R7 dated carry equal pair",
+    "window": "recent_reused_equal_pair_cost0.0012",
+    "CAGR_pct": 3.729234090889033,
+    "daily_trade_price_DD_pct": -1.098510897040228,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "historically profitable necessary price screen, return target rejected; no leverage/threshold/schedule/asset tuning; no activation"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "recent_reused_BTC_control_cost0.0012",
+    "CAGR_pct": 3.832908987966066,
+    "daily_trade_price_DD_pct": -1.1500810639961556,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "recent_reused_ETH_control_cost0.0012",
+    "CAGR_pct": 3.6255817550264746,
+    "daily_trade_price_DD_pct": -1.1350913998571022,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
+    "trial": "R7 dated carry equal pair",
+    "window": "recent_reused_equal_pair_cost0.0024",
+    "CAGR_pct": 2.843061589694673,
+    "daily_trade_price_DD_pct": -1.0984684339757633,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "historically profitable necessary price screen, return target rejected; no leverage/threshold/schedule/asset tuning; no activation"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "recent_reused_BTC_control_cost0.0024",
+    "CAGR_pct": 2.884473667187404,
+    "daily_trade_price_DD_pct": -1.1500358052792037,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
+    "trial": "R7 dated carry diagnostic control",
+    "window": "recent_reused_ETH_control_cost0.0024",
+    "CAGR_pct": 2.8014745301975674,
+    "daily_trade_price_DD_pct": -1.135048332021038,
+    "unresolved_margin_days": 0,
+    "risk_certified": false,
+    "adoption_gate": false,
+    "disposition": "diagnostic only; unresolved margin blocks ETH early control"
+  },
+  {
     "trial": "Selection checkpoint",
     "historical_profitability_lead": "RiskHoldR2bCov10",
     "strict_default_gate_winner": null,
     "adopted_new_strategy": false,
-    "reason": "R1 actual Freqtrade spot profit remains the lead but fails5% daily risk in both windows. R2/R3/R4/R5 fail frozen criteria; R6 relative trend loses after costs in both windows with24-29% daily drawdown. All dates are reused history."
+    "reason": "R1 actual Freqtrade spot profit remains the lead but fails5% daily risk in both windows. R2/R3/R4/R5 fail frozen criteria; R6 relative trend loses after costs in both windows with24-29% daily drawdown. All dates are reused history. R7 carry is positive but fails12% return; its trade-price risk is not mark/execution certification. R8 crowding veto is preregistered, no outcome yet.",
+    "low_return_price_screen_lead": "R7 equal-allocation dated carry: costed CAGR2.20%/3.73%, double cost1.45%/2.84%; not exact mark/execution certified"
   }
 ]
