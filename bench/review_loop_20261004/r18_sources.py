@@ -10,7 +10,7 @@ import re
 import pandas as pd
 import requests
 
-from r18_catalog import parse_page,stable_catalog
+from r18_catalog import parse_page,stable_catalog,parse_detail
 
 
 HERE=Path(__file__).resolve().parent
@@ -24,6 +24,9 @@ FIXED={
  'alpaca_frequency_two_to_one':'209e18f8600f41c09f064d2909e17474',
  'future_delisting_rule':'dd60dfbf654d4055aa6b217ea6d5ddba',
 }
+ROLE_PATTERNS={'xmr_ant_spot_vs_coinm':r'Delist.*ANT.*XMR','alpaca_spot_chain':r'Delist.*ALPACA',
+               'matic_migration':r'Support.*Polygon','alpaca_frequency_four_to_two':r'Funding.*ALPACA',
+               'alpaca_frequency_two_to_one':r'Funding.*ALPACA','future_delisting_rule':r'Delisting of Futures Contracts'}
 
 
 def main(fetch=False):
@@ -56,7 +59,7 @@ def main(fetch=False):
         rows=stable_catalog(pages,repeat)
         frame=pd.DataFrame(rows);frame['release_label_utc']=pd.to_datetime(frame.releaseDate,unit='ms',utc=True)
         frame.to_csv(DATA/'current_catalog.csv',index=False)
-        all_codes={r['code'] for r in rows};first_capture=pd.Timestamp(sources['catalog_page_1']['retrieved_utc'])
+        all_codes={r['code'] for r in rows};catalog_by_code={r['code']:r for r in rows};first_capture=pd.Timestamp(sources['catalog_page_1']['retrieved_utc'])
         print('Current catalog stable:',len(rows),'rows; oldest/latest provider labels',str(frame.release_label_utc.min()),str(frame.release_label_utc.max()),flush=True)
         # Current catalog metadata never becomes a historical publication clock.
         targets=dict(FIXED);relationships={}
@@ -74,10 +77,16 @@ def main(fetch=False):
                         retrieved_utc=record['retrieved_utc'],status=record['status'])
             try:
                 root=json.loads(raw)
-                if record['status']!=200 or root.get('code')!='000000' or root.get('success') is not True or not isinstance(root.get('data'),dict):
+                if record['status']!=200:
                     raise ValueError('Unsuccessful/unknown article source')
-                article=root['data'];result['current_metadata']={k:v for k,v in article.items() if k not in ('body','banner','image','icon')}
+                if isinstance(root.get('data'),dict):
+                    result['observed_metadata']={k:root['data'].get(k) for k in ('code','title','publishDate','lastUpdateTime','articleType')}
+                pattern=ROLE_PATTERNS.get(key)
+                if pattern is None and code in catalog_by_code:pattern='^'+re.escape(catalog_by_code[code]['title'])+'$'
+                article=parse_detail(raw,code,title_pattern=pattern)
+                result['current_metadata']={k:v for k,v in article.items() if k not in ('body','contentJson','banner','image','icon')}
                 result['body_type']=type(article.get('body')).__name__;result['body_available']=bool(article.get('body'))
+                result['identity_and_role_validated']=True
                 result['metadata_keys']=list(article)
                 # Valid capture time authenticates current local knowledge only.
                 if key.startswith('upcoming_'):
@@ -85,7 +94,8 @@ def main(fetch=False):
                                              evidence_type='local_capture',current_title=article.get('title'),
                                              body_present=result['body_available'],historical_backdating=False,
                                              no_order_or_strategy_activation=True))
-            except (json.JSONDecodeError,ValueError) as exc:result['source_error']=str(exc);result['body_available']=False
+            except (json.JSONDecodeError,ValueError) as exc:
+                result['source_error']=str(exc);result['body_available']=False;result['identity_and_role_validated']=False
             detail_index[key]=result
             print(key,'HTTP',record['status'],'body',result['body_available'],flush=True)
         (DATA/'detail_index.json').write_text(json.dumps(detail_index,indent=2,sort_keys=True)+'\n')

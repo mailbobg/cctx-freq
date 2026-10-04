@@ -4,7 +4,7 @@ import json
 
 import pytest
 
-from r18_catalog import parse_page,stable_catalog
+from r18_catalog import parse_page,stable_catalog,parse_detail,body_text
 
 
 def body(rows,total=2):
@@ -46,3 +46,35 @@ def test_conflicting_id_or_code_across_pages_and_partial_last_page_fail():
     other=row(3);other['id']=1
     with pytest.raises(ValueError):stable_catalog([(3,first),(3,[other])],(3,first),page_size=2)
     with pytest.raises(ValueError):stable_catalog([(4,first),(4,[row(3)])],(4,first),page_size=2)
+
+
+def detail(code='0'*32):
+    return {'code':'000000','success':True,'data':{'code':code,'title':'Binance Will Delist ALPACA',
+       'publishDate':1745472005257,'lastUpdateTime':0,'articleType':1,
+       'body':json.dumps({'node':'root','child':[{'node':'element','tag':'p','attr':{'style':'irrelevant'},'child':[{'node':'text','text':'Native article text'}]}]})}}
+
+
+def test_detail_identity_and_role_must_match_source_not_http_status():
+    raw=detail();parsed=parse_detail(json.dumps(raw).encode(),'0'*32)
+    assert parsed['title']=='Binance Will Delist ALPACA'
+    assert body_text(parsed['body'])=='Native article text'
+    with pytest.raises(ValueError,match='identity'):parse_detail(json.dumps(raw).encode(),'1'*32)
+    with pytest.raises(ValueError,match='role'):parse_detail(json.dumps(raw).encode(),'0'*32,title_pattern='Portfolio')
+    raw['data']['title']=''
+    with pytest.raises(ValueError):parse_detail(json.dumps(raw).encode(),'0'*32)
+
+
+def test_current_update_zero_is_unknown_not_historical_unrevised_proof():
+    parsed=parse_detail(json.dumps(detail()).encode(),'0'*32)
+    assert parsed['lastUpdateTime']==0
+    for field,value in [('lastUpdateTime',False),('lastUpdateTime',-1),('publishDate',1745472005)]:
+        raw=detail();raw['data'][field]=value
+        with pytest.raises(ValueError):parse_detail(json.dumps(raw).encode(),'0'*32)
+
+
+def test_structured_body_only_text_children_not_layout_or_executable_code():
+    raw=json.dumps({'node':'root','attr':{'text':'not body'},'child':[{'node':'text','text':'ALPACA'},
+                   {'node':'element','tag':'p','child':[{'node':'text','text':'USDT contract'}]}]})
+    assert body_text(raw)=='ALPACA USDT contract'
+    for value in ['<html>unknown body</html>',json.dumps({'child':[]}),json.dumps({'node':'root','child':'not a child list'})]:
+        with pytest.raises(ValueError):body_text(value)

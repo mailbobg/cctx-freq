@@ -33,3 +33,37 @@ def stable_catalog(pages,repeated_first,page_size=50):
     if len(rows)!=total or len({r['id'] for r in rows})!=total or len({r['code'] for r in rows})!=total:
         raise ValueError('Conflicting/repeated current catalog inventory')
     return rows
+
+
+def body_text(body):
+    try:tree=json.loads(body)
+    except (TypeError,json.JSONDecodeError) as exc:raise ValueError('Unknown structured article body') from exc
+    if not isinstance(tree,dict) or tree.get('node')!='root':raise ValueError('Unknown structured article body root')
+    text=[]
+    def walk(node):
+        if not isinstance(node,dict) or node.get('node') not in ('root','element','text'):raise ValueError('Unknown article node')
+        if node['node']=='text':
+            if not isinstance(node.get('text'),str):raise ValueError('Unknown source text')
+            text.append(node['text'])
+        children=node.get('child',[])
+        if not isinstance(children,list):raise ValueError('Unknown structured child list')
+        for child in children:walk(child)
+    walk(tree)
+    return ' '.join(text)
+
+
+def parse_detail(raw,code,title_pattern=None):
+    try:
+        root=json.loads(raw);data=root['data']
+        if root['code']!='000000' or root['success'] is not True or not isinstance(data,dict) or data['code']!=code:
+            raise ValueError('Article source identity differs')
+        if not isinstance(data['title'],str) or not data['title'].strip():raise ValueError('Article title missing')
+        if title_pattern is not None and re.search(title_pattern,data['title'],re.I) is None:raise ValueError('Source title does not match the forensic role')
+        if type(data['publishDate']) is not int or not 10**12<=data['publishDate']<10**14 or data['articleType'] not in (1,2):
+            raise ValueError('Original article publication label/schema differs')
+        updated=data['lastUpdateTime']
+        if type(updated) is not int or (updated!=0 and not 10**12<=updated<10**14):raise ValueError('Unknown last-update field schema')
+        if not isinstance(data['body'],str) or not body_text(data['body']).strip():raise ValueError('Source body unknown/empty')
+    except (KeyError,TypeError,json.JSONDecodeError) as exc:raise ValueError('Unknown article source schema') from exc
+    # lastUpdateTime=0 is only an unknown/sentinel, not proof of no past edits.
+    return data
