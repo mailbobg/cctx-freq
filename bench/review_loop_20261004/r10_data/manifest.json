@@ -1,0 +1,15 @@
+{
+  "captured_utc": "2026-10-04T10:05:52.349819+00:00",
+  "rows": 2191,
+  "start": "2020-09-01 00:00:00+00:00",
+  "last": "2026-08-31 00:00:00+00:00",
+  "zero_trade_days": 0,
+  "zero_quote_volume_days": 0,
+  "raw_sources": 144,
+  "output_sha256": {
+    "PAXGUSDT_spot.parquet": "253cf550a165f88e1df4b6c2c62cdfe498da5e0c943e14cf01d4aeacfd36fb43"
+  },
+  "listing_utc": "2020-08-28T12:00:00Z",
+  "listing_source": "https://www.binance.com/en/support/announcement/detail/a8971e79c00f4350b1ab27c449e1f049",
+  "limitations": "Official traded candles and activity, not atomic quotes/fills. Microsecond timestamps normalized by tested R7 parser. Actual complete post-listing calendar only; no interpolation."
+}
