@@ -5,6 +5,9 @@
   "e0v1en": {
     "description": "E0V1ENWait3：原信号延迟 3 根 5 分钟 K 线，118 币现货模拟盘 · 独立前向记录；历史对照未通过采用标准"
   },
+  "wta": {
+    "description": "E0V1ENWTA：E0V1EN + 双信号2倍仓 + buy_new出场放宽（fastk 91），118 币现货模拟盘 · 和 e0v1en 对照，回测三窗口均单全赢"
+  },
   "x7": {
     "description": "NFI X7，100 币动态选币"
   },
