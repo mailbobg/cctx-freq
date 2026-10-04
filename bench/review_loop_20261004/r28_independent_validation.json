@@ -1,0 +1,30 @@
+{
+  "adopted": false,
+  "exact_missing_pairs": [
+    {
+      "monday": "2023-01-02",
+      "observation_week": "2022-12-16",
+      "sides": [
+        "current",
+        "prior"
+      ]
+    },
+    {
+      "monday": "2023-01-09",
+      "observation_week": "2022-12-23",
+      "sides": [
+        "prior"
+      ]
+    }
+  ],
+  "exact_original_signed_text_differences_versions_dates_and_hashes_reconciled": true,
+  "historical_first_public_receipts_or_actual_execution_certified": false,
+  "known_native_pairs": 290,
+  "missing_required_cells": 3,
+  "native_same_week_counterparts_checked": 584,
+  "native_versions_directly_reparsed": 293,
+  "new_performance": false,
+  "no_old_week_zero_cash_precision_or_alpha_repair": true,
+  "precision_change_pairs": 9,
+  "source_stage_only": true
+}

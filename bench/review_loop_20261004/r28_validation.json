@@ -1,0 +1,51 @@
+{
+  "adopted": false,
+  "artifact_sha256": {
+    "r28_independent_validation.json": "c4b3e984cf698382b05212907d411a80dc3db83ee19013dbcf22ebabda93948f",
+    "r28_probe_audit.json": "0a7bee3c7be0424d791b6634f291050642201d06348b8582cb0d5556341ce278",
+    "r28_source_coverage.json": "66932dc45bc2cb3e5b392bcf380e12d519d6b586abd245bc654068d429f86e75"
+  },
+  "exact_replay_artifacts": 3,
+  "known_required_pairs": 290,
+  "missing_required_native_cells": 3,
+  "native_counterpart_values_independently_checked": 584,
+  "native_versions_independently_reparsed": 293,
+  "new_performance": false,
+  "no_alpha_weight_cohort_or_outcome_screen": true,
+  "no_sign_threshold_week_version_precision_latency_missingness_or_window_risk_fee_rescue": true,
+  "no_strategy_bot_image_or_independent_forward_change": true,
+  "offline_http_disabled": true,
+  "original_schema_contract_and_all_native_bodies_retained": true,
+  "pairs_with_native_reported_precision_change": 9,
+  "prior_integrity": {
+    "all_prior_hashes_unchanged_before_ledger_updates": true,
+    "initial_wrong_root_relative_path_check_rejected_without_modifying_registered_files": true,
+    "prior_output_hashes": 3228,
+    "prior_registry_sha256": "4b6e38fa6b3029f3ec6b32fd5145629a1ee773ad156034f78723fdbf7e51ef5d",
+    "prior_root_source_hashes": 1,
+    "prior_selection_rows": 148,
+    "prior_selection_sha256": "bd4718266b085862ed35896af1f9966b62b1d88d1ad0d3c1f4746d332153dafb",
+    "prior_source_hashes": 159,
+    "root_path_resolution": "Root source keys resolve relative to the project root; source/output keys to the review directory."
+  },
+  "protocol_commit": "24454f2",
+  "registered_alpha_hypothesis": true,
+  "retained_native_input_hashes_verified": 308,
+  "source_code_clock_signed_decimal_unknown_identity_and_policy_focused_tests_passed": 30,
+  "source_gate_failed": true,
+  "source_plan_commit": "d1437ea",
+  "source_stage_only": true,
+  "stable_suite": {
+    "broad_all_current_tree_pass_claimed": false,
+    "distinct_warning_types": 4,
+    "invocation_test_counts": [
+      446,
+      84
+    ],
+    "missing_service_directories_discovered_and_checked_separately": true,
+    "new_owned_files": 2,
+    "subtests_passed": 16,
+    "tests_passed": 530,
+    "tracked_files": 57
+  }
+}

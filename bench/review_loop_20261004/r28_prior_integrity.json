@@ -1,0 +1,11 @@
+{
+  "all_prior_hashes_unchanged_before_ledger_updates": true,
+  "initial_wrong_root_relative_path_check_rejected_without_modifying_registered_files": true,
+  "prior_output_hashes": 3228,
+  "prior_registry_sha256": "4b6e38fa6b3029f3ec6b32fd5145629a1ee773ad156034f78723fdbf7e51ef5d",
+  "prior_root_source_hashes": 1,
+  "prior_selection_rows": 148,
+  "prior_selection_sha256": "bd4718266b085862ed35896af1f9966b62b1d88d1ad0d3c1f4746d332153dafb",
+  "prior_source_hashes": 159,
+  "root_path_resolution": "Root source keys resolve relative to the project root; source/output keys to the review directory."
+}
