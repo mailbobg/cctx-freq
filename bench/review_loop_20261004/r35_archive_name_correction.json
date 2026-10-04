@@ -1,0 +1,7 @@
+{
+  "artifact_name": "r35_superseded_account_state/test_r35_account.py.txt",
+  "no_payload_code_or_economic_change": true,
+  "original_bytes_sha256": "f286edb79fdee0a87eaa6dabb90595b5b1d31a7a1c60df382a29ac58e2813a9d",
+  "original_name": "r35_superseded_account_state/test_r35_account.py",
+  "reason": "Retain historical test source as text artifact to avoid duplicate current pytest module collection"
+}

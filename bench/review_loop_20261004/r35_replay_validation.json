@@ -1,0 +1,18 @@
+{
+  "HTTP_disabled": true,
+  "actual_export_cash_units_fees_reconciled": true,
+  "adopted": false,
+  "derived_outputs_checked": 18,
+  "eight_account_risk_results_byte_identical": true,
+  "guarded_code_and_native_artifacts": 516,
+  "native_valid_minute_rows": {
+    "BTC": 4452349,
+    "ETH": 4452348
+  },
+  "no_strategy_bot_image_live_or_existing_forward_change": true,
+  "original_native_response_roles": 488,
+  "original_observed_source_byte_identical": true,
+  "original_strict_source_failure_byte_identical": true,
+  "sixteen_daily_order_CSV_outputs_byte_identical": true,
+  "source_contract_failure_not_promoted": true
+}

@@ -1,0 +1,6 @@
+{
+  "no_strategy_source_account_or_gate_change": true,
+  "original_failure": "ValueError: Do not rewrite registered historical ledger",
+  "original_registered_REVIEW_and_selection_board_not_written": true,
+  "resolution": "Preserve the old frozen ledger; write versioned R35 selection board and a new latest selection pointer"
+}

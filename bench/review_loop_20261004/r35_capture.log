@@ -1,0 +1,20 @@
+Native source capture 20/360 new roles
+Native source capture 40/360 new roles
+Native source capture 60/360 new roles
+Native source capture 80/360 new roles
+Native source capture 100/360 new roles
+Native source capture 120/360 new roles
+Native source capture 140/360 new roles
+Native source capture 160/360 new roles
+Native source capture 180/360 new roles
+Native source capture 200/360 new roles
+Native source capture 220/360 new roles
+Native source capture 240/360 new roles
+Native source capture 260/360 new roles
+Native source capture 280/360 new roles
+Native source capture 300/360 new roles
+Native source capture 320/360 new roles
+Native source capture 340/360 new roles
+Native source capture 360/360 new roles
+{'url_roles': 488, 'inherited_roles': 128, 'new_roles': 360, 'status_counts': {'200': 488}, 'source_contract_complete': False}
+{'BTC': {'rows': None, 'missing_minutes': None, 'zero_activity_minutes': None, 'daily_OHLC_max_gap': None}, 'ETH': {'rows': None, 'missing_minutes': None, 'zero_activity_minutes': None, 'daily_OHLC_max_gap': None}}

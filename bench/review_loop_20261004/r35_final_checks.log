@@ -1,0 +1,14 @@
+.............................                                            [100%]
+=============================== warnings summary ===============================
+../.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+../.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+29 passed, 2 warnings in 5.12s

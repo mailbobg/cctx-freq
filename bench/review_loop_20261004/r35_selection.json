@@ -1,0 +1,371 @@
+{
+  "account_audit_sha256": "a5b8bc5abf0df14f05fadf2982512cff90e2f69f793d66110b254d8b263a907c",
+  "automatically_started_or_registered_bot": false,
+  "basis": [
+    "Positive actual Freqtrade net returns in both broad reused windows at base and doubled side costs",
+    "Exact exported quantity/price/fees reconcile with account balances and original daily MTM",
+    "Fixed covariance sizing materially reduces observed intraday risk against matched original R2b",
+    "Low turnover, two liquid major spot assets, unleveraged execution and an existing tested Freqtrade subclass",
+    "Further outcome-driven filtering on reused history would not establish independent evidence"
+  ],
+  "candidate_results": {
+    "early_RiskHoldR2bCov10": {
+      "adopted": false,
+      "complete_held_intraday_price_and_fill_coverage": false,
+      "conservative_OHLC_envelope_DD_pct": -12.210573180985328,
+      "continuous_liquidity_or_tick_risk_or_future_profit_certified": false,
+      "cost_per_side": 0.0012,
+      "daily_cash_equity_parity": true,
+      "end": "2021-01-01 00:00:00+00:00",
+      "envelope_is_bound_not_synchronous_price_or_high_before_low_observation": true,
+      "envelope_peak": {
+        "equity_upper_bound_USDT": 12188.552267772118,
+        "minute_utc": "2019-06-26 20:22:00+00:00"
+      },
+      "envelope_trough": {
+        "equity_lower_bound_USDT": 10700.260173413157,
+        "minute_utc": "2019-12-27 11:56:00+00:00"
+      },
+      "extra_fill_boundary_marks": 150,
+      "final_balance_gap_USDT": 4.3655745685100555e-10,
+      "first_sampled_breaches": {
+        "0.05": {
+          "drawdown_pct": -5.013365089088095,
+          "equity_USDT": 9864.27863602532,
+          "minute_utc": "2018-08-06 22:33:00+00:00",
+          "order_identity": null,
+          "phase": "CLOSE"
+        },
+        "0.15": null
+      },
+      "frozen_5pct_default_pass": false,
+      "held_missing_asset_minutes": {
+        "BTC": 2711,
+        "ETH": 2841
+      },
+      "held_zero_activity_asset_minutes": {
+        "BTC": 124,
+        "ETH": 140
+      },
+      "known_sampled_marks": 2885988,
+      "max_daily_cash_equity_gap_USDT": 1.8189894035458565e-12,
+      "minimum_asset_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "minimum_cash_USDT": 6847.055372271478,
+      "missing_fill_boundary_marks": 0,
+      "missing_sampled_marks": 5682,
+      "orders": 88,
+      "original_CAGR_pct": 17.702103062269803,
+      "original_daily_MTM_DD_pct": -10.983068083922143,
+      "original_fill_OPEN_parity_failures": [],
+      "original_return_pct": 56.45088705290438,
+      "original_years_pct": {
+        "2018": -6.685526127190022,
+        "2019": 15.462714717448689,
+        "2020": 45.235997421552,
+        "2021": -0.02003457438989331
+      },
+      "required_account_minutes": 1445760,
+      "sampled_OPEN_CLOSE_and_fill_DD_pct": -12.150546718644971,
+      "sampled_peak": {
+        "equity_USDT": 12187.999121772118,
+        "minute_utc": "2019-06-26 20:21:00+00:00",
+        "order_identity": null,
+        "phase": "CLOSE"
+      },
+      "sampled_trough": {
+        "equity_USDT": 10707.090594413157,
+        "minute_utc": "2019-12-27 12:07:00+00:00",
+        "order_identity": null,
+        "phase": "CLOSE"
+      },
+      "start": "2018-04-04 00:00:00+00:00",
+      "sum_profit_gap_USDT": 4.3655745685100555e-10,
+      "terminal_cash_USDT": 15645.088705290436,
+      "terminal_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "total_explicit_fees_USDT": 119.39139700956,
+      "trades": 32,
+      "unchanged_strategy": true
+    },
+    "early_cost2_RiskHoldR2bCov10": {
+      "adopted": false,
+      "complete_held_intraday_price_and_fill_coverage": false,
+      "conservative_OHLC_envelope_DD_pct": -12.33669701171377,
+      "continuous_liquidity_or_tick_risk_or_future_profit_certified": false,
+      "cost_per_side": 0.0024,
+      "daily_cash_equity_parity": true,
+      "end": "2021-01-01 00:00:00+00:00",
+      "envelope_is_bound_not_synchronous_price_or_high_before_low_observation": true,
+      "envelope_peak": {
+        "equity_upper_bound_USDT": 12124.310119320482,
+        "minute_utc": "2019-06-26 20:22:00+00:00"
+      },
+      "envelope_trough": {
+        "equity_lower_bound_USDT": 10628.570715139362,
+        "minute_utc": "2019-12-27 11:56:00+00:00"
+      },
+      "extra_fill_boundary_marks": 150,
+      "final_balance_gap_USDT": -3.1517629395239055e-08,
+      "first_sampled_breaches": {
+        "0.05": {
+          "drawdown_pct": -5.0485133119565155,
+          "equity_USDT": 9856.511648982001,
+          "minute_utc": "2018-08-06 21:16:00+00:00",
+          "order_identity": null,
+          "phase": "CLOSE"
+        },
+        "0.15": null
+      },
+      "frozen_5pct_default_pass": false,
+      "held_missing_asset_minutes": {
+        "BTC": 2711,
+        "ETH": 2841
+      },
+      "held_zero_activity_asset_minutes": {
+        "BTC": 124,
+        "ETH": 140
+      },
+      "known_sampled_marks": 2885988,
+      "max_daily_cash_equity_gap_USDT": 3.637978807091713e-12,
+      "minimum_asset_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "minimum_cash_USDT": 6815.60357783912,
+      "missing_fill_boundary_marks": 0,
+      "missing_sampled_marks": 5682,
+      "orders": 88,
+      "original_CAGR_pct": 17.247738462929796,
+      "original_daily_MTM_DD_pct": -11.143176392404474,
+      "original_fill_OPEN_parity_failures": [],
+      "original_return_pct": 54.79799573278481,
+      "original_years_pct": {
+        "2018": -7.0070307865583885,
+        "2019": 15.062691811147522,
+        "2020": 44.72874377663598,
+        "2021": -0.04008083585215205
+      },
+      "required_account_minutes": 1445760,
+      "sampled_OPEN_CLOSE_and_fill_DD_pct": -12.276742381475337,
+      "sampled_peak": {
+        "equity_USDT": 12123.759723320483,
+        "minute_utc": "2019-06-26 20:21:00+00:00",
+        "order_identity": null,
+        "phase": "CLOSE"
+      },
+      "sampled_trough": {
+        "equity_USDT": 10635.35697513936,
+        "minute_utc": "2019-12-27 12:07:00+00:00",
+        "order_identity": null,
+        "phase": "CLOSE"
+      },
+      "start": "2018-04-04 00:00:00+00:00",
+      "sum_profit_gap_USDT": -3.1517629395239055e-08,
+      "terminal_cash_USDT": 15479.799573278482,
+      "terminal_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "total_explicit_fees_USDT": 237.49140502152,
+      "trades": 32,
+      "unchanged_strategy": true
+    },
+    "recent_RiskHoldR2bCov10": {
+      "adopted": false,
+      "complete_held_intraday_price_and_fill_coverage": false,
+      "conservative_OHLC_envelope_DD_pct": -8.797337297621976,
+      "continuous_liquidity_or_tick_risk_or_future_profit_certified": false,
+      "cost_per_side": 0.0012,
+      "daily_cash_equity_parity": true,
+      "end": "2026-09-21 00:00:00+00:00",
+      "envelope_is_bound_not_synchronous_price_or_high_before_low_observation": true,
+      "envelope_peak": {
+        "equity_upper_bound_USDT": 15923.742974884839,
+        "minute_utc": "2024-03-13 08:29:00+00:00"
+      },
+      "envelope_trough": {
+        "equity_lower_bound_USDT": 14522.877594977836,
+        "minute_utc": "2024-08-05 06:24:00+00:00"
+      },
+      "extra_fill_boundary_marks": 276,
+      "final_balance_gap_USDT": 1.399530447088182e-08,
+      "first_sampled_breaches": {
+        "0.05": {
+          "drawdown_pct": -5.019882637197415,
+          "equity_USDT": 11013.266108674961,
+          "minute_utc": "2021-05-23 16:09:00+00:00",
+          "order_identity": null,
+          "phase": "CLOSE"
+        },
+        "0.15": null
+      },
+      "frozen_5pct_default_pass": false,
+      "held_missing_asset_minutes": {
+        "BTC": 442,
+        "ETH": 957
+      },
+      "held_zero_activity_asset_minutes": {
+        "BTC": 79,
+        "ETH": 159
+      },
+      "known_sampled_marks": 6017562,
+      "max_daily_cash_equity_gap_USDT": 5.4569682106375694e-12,
+      "minimum_asset_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "minimum_cash_USDT": 7826.773529340759,
+      "missing_fill_boundary_marks": 0,
+      "missing_sampled_marks": 1914,
+      "orders": 167,
+      "original_CAGR_pct": 12.759045542671355,
+      "original_daily_MTM_DD_pct": -7.555794018035278,
+      "original_fill_OPEN_parity_failures": [],
+      "original_return_pct": 98.73443161013995,
+      "original_years_pct": {
+        "2021": 17.493932534816793,
+        "2022": -2.6200246353097367,
+        "2023": 23.65309454843809,
+        "2024": 16.305505684704634,
+        "2025": 12.61885037585988,
+        "2026": 7.243669023302357
+      },
+      "required_account_minutes": 3009600,
+      "sampled_OPEN_CLOSE_and_fill_DD_pct": -8.670397007167141,
+      "sampled_peak": {
+        "equity_USDT": 15919.51521788484,
+        "minute_utc": "2024-03-13 08:29:00+00:00",
+        "order_identity": null,
+        "phase": "post_fill_OPEN"
+      },
+      "sampled_trough": {
+        "equity_USDT": 14539.230046877836,
+        "minute_utc": "2024-08-05 06:24:00+00:00",
+        "order_identity": null,
+        "phase": "CLOSE"
+      },
+      "start": "2021-01-01 00:00:00+00:00",
+      "sum_profit_gap_USDT": 1.3991666492074728e-08,
+      "terminal_cash_USDT": 19873.44316101399,
+      "terminal_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "total_explicit_fees_USDT": 347.79305958599997,
+      "trades": 65,
+      "unchanged_strategy": true
+    },
+    "recent_cost2_RiskHoldR2bCov10": {
+      "adopted": false,
+      "complete_held_intraday_price_and_fill_coverage": false,
+      "conservative_OHLC_envelope_DD_pct": -8.967379359438166,
+      "continuous_liquidity_or_tick_risk_or_future_profit_certified": false,
+      "cost_per_side": 0.0024,
+      "daily_cash_equity_parity": true,
+      "end": "2026-09-21 00:00:00+00:00",
+      "envelope_is_bound_not_synchronous_price_or_high_before_low_observation": true,
+      "envelope_peak": {
+        "equity_upper_bound_USDT": 15745.408175984005,
+        "minute_utc": "2024-03-13 08:29:00+00:00"
+      },
+      "envelope_trough": {
+        "equity_lower_bound_USDT": 14333.457693151526,
+        "minute_utc": "2024-08-05 06:24:00+00:00"
+      },
+      "extra_fill_boundary_marks": 276,
+      "final_balance_gap_USDT": -4.2229657992720604e-08,
+      "first_sampled_breaches": {
+        "0.05": {
+          "drawdown_pct": -5.003191741849089,
+          "equity_USDT": 11005.20392629624,
+          "minute_utc": "2021-05-23 16:07:00+00:00",
+          "order_identity": null,
+          "phase": "CLOSE"
+        },
+        "0.15": null
+      },
+      "frozen_5pct_default_pass": false,
+      "held_missing_asset_minutes": {
+        "BTC": 442,
+        "ETH": 957
+      },
+      "held_zero_activity_asset_minutes": {
+        "BTC": 79,
+        "ETH": 159
+      },
+      "known_sampled_marks": 6017562,
+      "max_daily_cash_equity_gap_USDT": 3.637978807091713e-12,
+      "minimum_asset_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "minimum_cash_USDT": 7790.296797109201,
+      "missing_fill_boundary_marks": 0,
+      "missing_sampled_marks": 1914,
+      "orders": 167,
+      "original_CAGR_pct": 12.300646311341534,
+      "original_daily_MTM_DD_pct": -7.768070141196182,
+      "original_fill_OPEN_parity_failures": [],
+      "original_return_pct": 94.15777064217772,
+      "original_years_pct": {
+        "2021": 17.23674923847762,
+        "2022": -2.9389047224065767,
+        "2023": 23.171138884183318,
+        "2024": 15.647689509008323,
+        "2025": 12.05442705090951,
+        "2026": 6.89832105246122
+      },
+      "required_account_minutes": 3009600,
+      "sampled_OPEN_CLOSE_and_fill_DD_pct": -8.840626212306768,
+      "sampled_peak": {
+        "equity_USDT": 15741.226677984007,
+        "minute_utc": "2024-03-13 08:29:00+00:00",
+        "order_identity": null,
+        "phase": "post_fill_OPEN"
+      },
+      "sampled_trough": {
+        "equity_USDT": 14349.603666151526,
+        "minute_utc": "2024-08-05 06:24:00+00:00",
+        "order_identity": null,
+        "phase": "CLOSE"
+      },
+      "start": "2021-01-01 00:00:00+00:00",
+      "sum_profit_gap_USDT": -4.2229657992720604e-08,
+      "terminal_cash_USDT": 19415.77706421777,
+      "terminal_units": {
+        "BTC": 0.0,
+        "ETH": 0.0
+      },
+      "total_explicit_fees_USDT": 686.92129558224,
+      "trades": 65,
+      "unchanged_strategy": true
+    }
+  },
+  "historical_65_class_catalog_not_current_census": true,
+  "human_numeric_risk_or_return_mandate_not_confirmed": true,
+  "limitations": [
+    "Observed-minute gaps prevent a complete historical maximum-drawdown ceiling",
+    "Native minute OHLC is not bid/ask depth or guaranteed fills",
+    "2018 and 2022 contain losing calendar-year segments",
+    "All historic data was already inspected; this selection is not untouched OOS",
+    "The fixed 10% estimated volatility target is not a drawdown guarantee",
+    "Numeric risk preference remains optional and unanswered; no adoption by silence"
+  ],
+  "no_future_profit_guarantee": true,
+  "no_independent_new_forward_profitability_evidence": true,
+  "original_13_other_configured_strategy_review_complete": true,
+  "original_5pct_12pct_default_not_relaxed_or_retroactively_passed": true,
+  "real_capital_adopted": false,
+  "replay_validation_sha256": "5d4c9202c543bb493ce2d8261f65294f997509e869ede0d4afb970844c177fda",
+  "research_candidate_selected": true,
+  "selected_strategy": "RiskHoldR2bCov10",
+  "selected_strategy_path": "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/strategies/RiskHoldR2bCov10.py",
+  "selected_strategy_sha256": "7daf79337d8df1c08eb6d9a7d01029b72003bc9847bc0052a21c03aa58685f2c",
+  "selection_status": "research candidate for prospective paper validation",
+  "source_and_complete_continuous_risk_adoption_gate_passed": false
+}

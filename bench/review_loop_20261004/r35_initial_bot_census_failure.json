@@ -1,0 +1,8 @@
+{
+  "actual_strategy_file_census": 17,
+  "cause": "Initial metadata census misclassified shared family/panel/gateway/network/verdict JSON files as bots",
+  "corrected_by_exact_known_shared_file_exclusions_and_strategy_key_check": true,
+  "no_user_configs_secrets_strategies_or_economic_outcomes_changed": true,
+  "original_13_config_digests_already_matched": true,
+  "original_failure": "ValueError: Current config scope changed"
+}

@@ -1,0 +1,104 @@
+{
+  "configs": [
+    {
+      "bot": "c-hold-sma",
+      "current_config_sha256": "783e6b6a4f43b3b5eac7e350ac8e18661ff54d74c18bbadc25865f3094e969da",
+      "original_config_sha256": "783e6b6a4f43b3b5eac7e350ac8e18661ff54d74c18bbadc25865f3094e969da",
+      "original_unchanged": true
+    },
+    {
+      "bot": "c-hold",
+      "current_config_sha256": "db62f11e17b253793392ea6da5e6dda6d13de03fef636380c204b62c78804b9c",
+      "original_config_sha256": "db62f11e17b253793392ea6da5e6dda6d13de03fef636380c204b62c78804b9c",
+      "original_unchanged": true
+    },
+    {
+      "bot": "funding-spread",
+      "current_config_sha256": "6989d313eec0dad4e651470b4ffaf8e0f7d10700de772cc4fecfbd37c8834c51",
+      "original_config_sha256": "6989d313eec0dad4e651470b4ffaf8e0f7d10700de772cc4fecfbd37c8834c51",
+      "original_unchanged": true
+    },
+    {
+      "bot": "l2-listings",
+      "current_config_sha256": "77582392ea5a604f9ce0642dee035faba05d7be90672742e117c78a1af370396",
+      "original_config_sha256": "77582392ea5a604f9ce0642dee035faba05d7be90672742e117c78a1af370396",
+      "original_unchanged": true
+    },
+    {
+      "bot": "l2p-listings",
+      "current_config_sha256": "b3f9bbfa8ca4c84ce69a45be3f9899ca0683c3a639beb650352914fcad9e4a5b",
+      "original_config_sha256": "b3f9bbfa8ca4c84ce69a45be3f9899ca0683c3a639beb650352914fcad9e4a5b",
+      "original_unchanged": true
+    },
+    {
+      "bot": "unlock-short",
+      "current_config_sha256": "cdd7665b0ec102191c71c03fe1fb7b9fe2de653564f76042cce2b7af76325cb5",
+      "original_config_sha256": "cdd7665b0ec102191c71c03fe1fb7b9fe2de653564f76042cce2b7af76325cb5",
+      "original_unchanged": true
+    },
+    {
+      "bot": "unlock-xs",
+      "current_config_sha256": "bbc9f0221ae58d4d69db07950872b23c1cd5e1ac7aa4a72d76b6b8e49af6da12",
+      "original_config_sha256": "bbc9f0221ae58d4d69db07950872b23c1cd5e1ac7aa4a72d76b6b8e49af6da12",
+      "original_unchanged": true
+    },
+    {
+      "bot": "x12",
+      "current_config_sha256": "46c245cb9cd500e6b54145fbb3e01eda55754bad876deb10cc3a358518ed9505",
+      "original_config_sha256": "46c245cb9cd500e6b54145fbb3e01eda55754bad876deb10cc3a358518ed9505",
+      "original_unchanged": true
+    },
+    {
+      "bot": "x14-bitget",
+      "current_config_sha256": "21f95c0fafe53a8a2182f33260c5ce7b557d763d78ee9c181f53b18ae9a86343",
+      "original_config_sha256": "21f95c0fafe53a8a2182f33260c5ce7b557d763d78ee9c181f53b18ae9a86343",
+      "original_unchanged": true
+    },
+    {
+      "bot": "x14-bybit",
+      "current_config_sha256": "2730e36b7f064c473f846cef490210107680d6b400676ca7f5e6c866f197eff7",
+      "original_config_sha256": "2730e36b7f064c473f846cef490210107680d6b400676ca7f5e6c866f197eff7",
+      "original_unchanged": true
+    },
+    {
+      "bot": "x14",
+      "current_config_sha256": "7125991004eb8b8d4e412564b0e57a43aa45205aa7443767646f8e5eb82cf4ab",
+      "original_config_sha256": "7125991004eb8b8d4e412564b0e57a43aa45205aa7443767646f8e5eb82cf4ab",
+      "original_unchanged": true
+    },
+    {
+      "bot": "x7",
+      "current_config_sha256": "03693e5d9faf77d4e3fb386a78c1ee482cd8a7c39fda7f3b4c3ee585af35c3c1",
+      "original_config_sha256": "03693e5d9faf77d4e3fb386a78c1ee482cd8a7c39fda7f3b4c3ee585af35c3c1",
+      "original_unchanged": true
+    },
+    {
+      "bot": "x8",
+      "current_config_sha256": "5877aa2176d03479bf57c8b1eb9e7dc3ad8803958c51cf5940576e41390495fb",
+      "original_config_sha256": "5877aa2176d03479bf57c8b1eb9e7dc3ad8803958c51cf5940576e41390495fb",
+      "original_unchanged": true
+    }
+  ],
+  "current_strategy_configs": 17,
+  "excluded_separate_E0_experiments": [
+    "e0v1en",
+    "e0v1en-live",
+    "wta",
+    "wta2"
+  ],
+  "no_bot_start_or_config_write_performed": true,
+  "no_runtime_or_API_state_claim": true,
+  "no_secret_file_read": true,
+  "original_13_raw_config_hashes_unchanged": true,
+  "original_review_scope_configs": 13,
+  "shared_nonbot_files_excluded": [
+    "common",
+    "family-nfi",
+    "family-spot118",
+    "local-network",
+    "panel",
+    "secrets",
+    "shared-market-data",
+    "verdicts"
+  ]
+}

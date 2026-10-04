@@ -1,0 +1,9 @@
+{
+  "no_original_risk_or_fee_gate_rewrite": true,
+  "original_selection_rows_unchanged": 172,
+  "previous_registered_hashes_verified": {
+    "output_sha256": 4656,
+    "root_source_sha256": 1,
+    "source_sha256": 251
+  }
+}

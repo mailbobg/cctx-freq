@@ -1,4 +1,5 @@
 {
+  "archived_test_artifact_suffix_only_no_bytes_or_model_changes": true,
   "code_and_native_input_sha256": {
     "R35_ACCOUNTING_CORRECTION.md": "97ba28f7c2a9707987fff9c35603f40f9bb944e9fc426ff955f738f0d018e05b",
     "R35_OBSERVED_DIAGNOSTIC.md": "ca0551d29f82e5ad5c3481bec28f7751a2eda736dbb565a17adc6d61f2f27132",
@@ -512,7 +513,7 @@
     "r35_superseded_account_state/r35_observed_early_RiskHoldR2b_daily.csv": "e2ff1eece3bef55b4f7301b900c930087770e5f51fb130aff4c28c195683f7ed",
     "r35_superseded_account_state/r35_observed_early_RiskHoldR2b_orders.csv": "06cc7ba1f3833525aa994ea532cea6ee4dd36949a3530c484dd26c762847a289",
     "r35_superseded_account_state/r35_risk_prefreeze.json": "2254487534bffa8832e35618b114a48d8a8427abcf163a0a2da2cc31b91607b3",
-    "r35_superseded_account_state/test_r35_account.py": "f286edb79fdee0a87eaa6dabb90595b5b1d31a7a1c60df382a29ac58e2813a9d",
+    "r35_superseded_account_state/test_r35_account.py.txt": "f286edb79fdee0a87eaa6dabb90595b5b1d31a7a1c60df382a29ac58e2813a9d",
     "r35_terminal_order_red.log": "a17e9a69609f5bd31e2929b186004dbbd48d855f95a447ebabf94d8b82ad392f",
     "test_r35_account.py": "f7e96b2740d18b1e8b4ed33a03125b55a27ca999a51b7fa8d2e538259801a8ea",
     "test_r35_native.py": "fc989101a680d933382a59437470995a77b875dff65e31d0fa9e3742ce9f130b"
