@@ -1,0 +1,26 @@
+{
+  "adopted": false,
+  "focused_tests_passed": 11,
+  "native_feature_and_actual_held_order_prefix_equal": true,
+  "native_volume_cells_independently_reconciled": 105120,
+  "new_full_performance": false,
+  "no_rule_risk_fee_or_history_change": true,
+  "no_strategy_bot_image_or_forward_cohort_change": true,
+  "protocol_commit": "e9a7540",
+  "source_and_cohort_sha256": {
+    "R27_PROTOCOL.md": "664fc42596c8731a94d2f198609e980540627fd75656c9ec829bc0f5caa3e520",
+    "r27_activity.py": "dd648806bbed492ca150ac3bed8ae0679d5fa7ab0c9b334be320fbdb695c6a70",
+    "r27_decision_audit.csv": "bde6015f3d39fba73ab9ca6cc8dfae560c91f5fe919554eee641a0259e31f7d1",
+    "r27_input_manifest.json": "6641c34ac2890357df82e6ca43a76c0f8ce56d7f49a3961f45177044863ff485",
+    "r27_native_feature_validation.json": "d31eff451d543bbc15933f6ccd011de48ebd0aa2eae62c03990afe952971e9f9",
+    "r27_reflection.py": "1b3d04f210b6404afa221f1e26eec5cb57d47848683c06c934870743aea0fa7b",
+    "r27_run.py": "1265db5dfe29e952cb5363c2598831c48648912de97c8a4020684366271b3682",
+    "r27_source_audit.json": "1df4def25486e9ee7f3177e6fa2f0393d2cb1d4e771c484b5ce735fb8cff614d",
+    "r27_weight_audit.csv": "7cce287b643cda4579aae4fbc7592c871294fcecddff3bd2ba30061f4966ac0d",
+    "test_r27_activity.py": "d0e230c4b14186ca8dd0c49e3eb07022ea89c5159a91b2f9b28f76dbe3d44927"
+  },
+  "stable_subtests_passed": 16,
+  "stable_tests_passed": 500,
+  "stage": "Before first full fixed R27 screen",
+  "warnings": 4
+}

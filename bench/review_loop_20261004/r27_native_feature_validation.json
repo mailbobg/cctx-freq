@@ -1,0 +1,9 @@
+{
+  "exact_original_quantity_text_and_checksum_identities": true,
+  "historical_publication_and_actual_quote_depth_or_fills_certified": false,
+  "independent_equal_window_decimal_sums_and_strict_majority_equal": true,
+  "independent_native_volume_cells_checked": 105120,
+  "native_asset_votes_checked": 1752,
+  "new_performance": false,
+  "source_stage_only": true
+}
