@@ -1,0 +1,1096 @@
+{
+  "adopted": false,
+  "all_single_series_actual_http_ranges_honored": true,
+  "code_sha256": {
+    "R29_NATIVE_AVAILABILITY_CLARIFICATION.md": "36475405c70d2d13151fb88178a0c44655a75d257e3812b1e26c657b65ada3c6",
+    "R29_RANGE_PLAN.md": "7b5002688377ab7610ca20ce893f5a5a7f74d6d53e0bfaaa47043937395be45d",
+    "r29_range_audit.py": "95651a57ba1fafd31397b71ee5281f0752a3bf5515e73d8507455888edbe098b",
+    "r29_range_sources.py": "d61a14e49fca35eb199bdae1b061c208741640da851845ccfa032ed116d84f6c",
+    "r29_strict_view_contract_failure.json": "98c67b20a1d719bf0dda8374732b630b5a6248aadd7c814105072e12d0343e62",
+    "r29_view.py": "c11d3e6c6b975beef5a3291090fedf26c5f7292f3a768a6cb6b910ba1f892c3f",
+    "test_r29_view.py": "a47fef1bc86b63206844d7cf3b59c075ff14ab767418bb91804eeb15c7aa2963"
+  },
+  "economic_rule_threshold_staleness_or_full_alpha_cohort_outcomes_defined": false,
+  "explicit_native_view_source_contract_crosscheck_pass": true,
+  "forensic_mondays": 4,
+  "historical_first_public_receipts_constant_methodology_or_actual_execution_certified": false,
+  "independent_counterpart_roles": 8,
+  "interpretation": "Every known same-vintage/date native value matches an independently requested single-series original. All unavailable cells and presence/text encodings are separately retained; one original exact-calendar check still fails for an extra all-empty dual row. The unchanged dual-series response still violates the original HTTP range assumption. The separately documented analytical view and complete native availability contract do not rewrite raw data, waive missing required known values, or certify publication/execution/crypto predictability. Freeze a separate critic and one economic rule before full features/outcomes.",
+  "native_both_unavailable_cells": 4,
+  "native_counterpart_cells_checked": 72,
+  "native_in_range_dates": 36,
+  "native_known_exact_text_cells": 68,
+  "native_presence_difference_cells": 2,
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "new_status_counts": {
+    "200": 8
+  },
+  "no_original_raw_row_deletion_sort_fill_rounding_or_version_replacement": true,
+  "no_strategy_bot_image_or_independent_forward_change": true,
+  "original_dual_series_http_ranges_honored": false,
+  "original_exact_calendar_contract_pass_samples": 3,
+  "original_scope_failure_retained_in": "r29_source_observation.json",
+  "original_source_plan_commit": "591d66a",
+  "range_check_plan_commit": "ece778f",
+  "retained_inputs_sha256": {
+    "r29_range_sources/manifest.json": "33309aa5669619bc4307345335ff1c5394b0cfe04260b7bbd982a6368ff823b7",
+    "r29_range_sources/raw/0842be3059e3d2254e807f0b6bec804750d1e032c534eed124d1b8adeeee6b29": "86edb9752b3b1e9e2ba298defaeac96311d1f7a09e38899f911b668ca4104508",
+    "r29_range_sources/raw/0927b1574bda1a7c7c96f22b7b75accf5e43ff9fe5debd91094bf2764ba48469": "cdc76eaf178bb79e0a0459167f4c1e8d04cc22be1388a2c9a46611c79bcc0032",
+    "r29_range_sources/raw/420feb17250127535e4eb1a2cb3d8a82faf6afb1ee7436bb465524757985fa23": "81d1bed62efa4136c5eab32e5fada7d58c08a1670ac9e381001cfc0407a188d4",
+    "r29_range_sources/raw/7807e9cc6de9edb95396485b64416709dc971376c0d5bb7fe4a3efc4a49b4b33": "c2cacac1445d81e7ea7a7603b52d0f87297c31cfcda407e44407a766e5ef0ae7",
+    "r29_range_sources/raw/8c64bbaafadb8a0e44fc1713ff9a44a870f450d83e2cc46f961c99a05c599151": "ec633c739f91dda21c990d4cc6c665c0db382c8c90b80e2efee76b53aedf6acf",
+    "r29_range_sources/raw/9092df1eb064f3dbc66e427b3b1b29837afd9322937f493436cf661e8947fc9f": "e009901ee657f4395a6921903c2d854fac12ca9f68a56da5a54216831a7864ab",
+    "r29_range_sources/raw/ac8980b412dc34b68f8d5cc68779a85d445a27b19328529e508daf891093df4c": "3733a619cab6803b363d0c801788e3d5f8af78b10171d01c8e4c2388795122b9",
+    "r29_range_sources/raw/ecd31f8445169bb041d590e57c9a3b34641f983c081b124d9b2eb7d5d81e1d00": "18f01fb8d6a83df516f07bbf16282f97c46b35fa1a0ab5cafb241cab2c144965",
+    "r29_sources/manifest.json": "b7add2c23ab5b9e9e6daaeff02ba232a6c5da4290182355aea44d66944d69ce1",
+    "r29_sources/raw/0e635af1e5656b65701408dd35909d8856233b0b9b71335f6f83ee335f466fe4": "080800565692337792888704a93270babb663e2f6360c2281a8a1f4c0aae705f",
+    "r29_sources/raw/125fbced2cffd97079e6a12f9b573727bcc7124b8d59ce39b0208000068cac0d": "14130ee45b1a74cf0842418af60fc3b0c81a6bb50225e902b0c8547b70a8a850",
+    "r29_sources/raw/2056638ff2c23a6aaf12988a74deeb61750a44bf2bc1350ad8d35ed3f6645685": "6c41c67d9d9917fbab9887133e54e32cdd34f8b76c17c8cea8b286abdc570747",
+    "r29_sources/raw/2117df3b569dc9933e3118ae4ba65ffed2fff1a975c9c57057d24d2607bbfb16": "8bdcd36d23fc9639043e5626a371d9a768e21c6a5be84552d68112de30755532",
+    "r29_sources/raw/4ca2602dd6219ca7d463fb46ad4a1d5a074b8dd22dc73ad18ffab8f21c30b561": "8523a97ff184328cb9a890b5ac820be42c4b831788633f972270297a635dc92d",
+    "r29_sources/raw/8c908507eac3c41e52f774cad79f3ede853d7b139abe815ca1b0c1ced695795d": "c7685048c5373eba026a0c7f62dc9c2f053fbd9ed9cb5c10de16d102746718c4",
+    "r29_sources/raw/9e57588b50ae4d27b12820d6c141abdb8e744a229424c3c1f02fa32859f39d60": "d362f60cdd6df384ef9db2859938dc76642400ecba673fd47897773f81b57c82",
+    "r29_sources/raw/c2515a8a7acffcfab51d9b6948cadd51103f5c1d27f8f203f01d7b80174e95b2": "acc73a2c97d898f7f693cf6af87e8ce1e2222ed7163c40dccd87639f41fbda6b",
+    "r29_sources/raw/d197855b6fcc1fbb450d9ea0a2da5ec0ab39fd3bce2bb23e3170cdeccceafd1e": "6014354e31f823f09cdda5a62ddf81959837f7998357fefa0d8bef19be738c56",
+    "r29_sources/raw/dc6b52afe28fcb36623fb5962273a0bde0f90b35162f1dde038dfd30f470dd0c": "5195f2de2ea9ee50ea49b9465ff003133f7db82304f94328001dc6cd2f7fb9b3",
+    "r29_sources/raw/eddcf75fc0e4e7d6dcfbe620c679d365dd11cffe9eea9714bd6f857c1d04311a": "fb002118d73c2f2e264a08441ef8606350517a4dcf90a9c95073b7632208bbb4",
+    "r29_sources/raw/f7cbced4c03341af831e9956e073a93fd1df7e22b934b46cf2a1a241c9c004bd": "f12e5b66ef1c7fa71d64dbfe5a5fe28021f4febf4301f93854adb21096e4f5c7"
+  },
+  "retained_new_attempts": 8,
+  "samples": [
+    {
+      "direct_native_counterpart_check": {
+        "both_unavailable_cells": 0,
+        "complete_native_union_availability_and_known_value_check": true,
+        "historical_first_public_receipt_or_constant_methodology_certified": false,
+        "known_exact_text_cells": 18,
+        "native_cells_checked": 18,
+        "native_observation_dates_checked": 9,
+        "native_presence_difference_cells": 0,
+        "no_missing_zero_or_cash_substitution": true,
+        "raw_serialization_identity_not_claimed": true,
+        "unavailable_native_states": []
+      },
+      "explicit_native_interval_end": "2019-09-21",
+      "explicit_native_interval_start": "2019-09-08",
+      "monday": "2019-09-23",
+      "original_backed_native_view": [
+        {
+          "native_values": {
+            "EFFR": "2.13",
+            "SOFR": "2.12"
+          },
+          "observation_date": "2019-09-09",
+          "original_row_index": 5005
+        },
+        {
+          "native_values": {
+            "EFFR": "2.13",
+            "SOFR": "2.14"
+          },
+          "observation_date": "2019-09-10",
+          "original_row_index": 5006
+        },
+        {
+          "native_values": {
+            "EFFR": "2.13",
+            "SOFR": "2.15"
+          },
+          "observation_date": "2019-09-11",
+          "original_row_index": 5007
+        },
+        {
+          "native_values": {
+            "EFFR": "2.13",
+            "SOFR": "2.20"
+          },
+          "observation_date": "2019-09-12",
+          "original_row_index": 5008
+        },
+        {
+          "native_values": {
+            "EFFR": "2.14",
+            "SOFR": "2.20"
+          },
+          "observation_date": "2019-09-13",
+          "original_row_index": 5009
+        },
+        {
+          "native_values": {
+            "EFFR": "2.25",
+            "SOFR": "2.43"
+          },
+          "observation_date": "2019-09-16",
+          "original_row_index": 5010
+        },
+        {
+          "native_values": {
+            "EFFR": "2.30",
+            "SOFR": "5.25"
+          },
+          "observation_date": "2019-09-17",
+          "original_row_index": 5011
+        },
+        {
+          "native_values": {
+            "EFFR": "2.25",
+            "SOFR": "2.55"
+          },
+          "observation_date": "2019-09-18",
+          "original_row_index": 5012
+        },
+        {
+          "native_values": {
+            "EFFR": "1.90",
+            "SOFR": "1.95"
+          },
+          "observation_date": "2019-09-19",
+          "original_row_index": 5013
+        }
+      ],
+      "original_exact_calendar_check_error": null,
+      "original_exact_calendar_check_pass": true,
+      "original_extra_older_rows": 5005,
+      "original_full_rows": 5014,
+      "original_full_rows_and_bodies_retained": true,
+      "original_http_range_contract_pass": false,
+      "original_source_record": "archive_2019-09-21",
+      "original_source_sha256": "c7685048c5373eba026a0c7f62dc9c2f053fbd9ed9cb5c10de16d102746718c4",
+      "single_series_counterparts": {
+        "EFFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:04.428071+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "EFFR": "2.13"
+              },
+              "observation_date": "2019-09-09",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "EFFR": "2.13"
+              },
+              "observation_date": "2019-09-10",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "EFFR": "2.13"
+              },
+              "observation_date": "2019-09-11",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "EFFR": "2.13"
+              },
+              "observation_date": "2019-09-12",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "EFFR": "2.14"
+              },
+              "observation_date": "2019-09-13",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "EFFR": "2.25"
+              },
+              "observation_date": "2019-09-16",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "EFFR": "2.30"
+              },
+              "observation_date": "2019-09-17",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "EFFR": "2.25"
+              },
+              "observation_date": "2019-09-18",
+              "original_row_index": 7
+            },
+            {
+              "native_values": {
+                "EFFR": "1.90"
+              },
+              "observation_date": "2019-09-19",
+              "original_row_index": 8
+            }
+          ],
+          "original_native_rows": 9,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:03.064080+00:00",
+          "sha256": "81d1bed62efa4136c5eab32e5fada7d58c08a1670ac9e381001cfc0407a188d4",
+          "source_record": "EFFR_2019-09-21",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2019-09-21&cosd=2019-09-08&coed=2019-09-21"
+        },
+        "SOFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:15.440894+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "SOFR": "2.12"
+              },
+              "observation_date": "2019-09-09",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "SOFR": "2.14"
+              },
+              "observation_date": "2019-09-10",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "SOFR": "2.15"
+              },
+              "observation_date": "2019-09-11",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "SOFR": "2.20"
+              },
+              "observation_date": "2019-09-12",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "SOFR": "2.20"
+              },
+              "observation_date": "2019-09-13",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "SOFR": "2.43"
+              },
+              "observation_date": "2019-09-16",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "SOFR": "5.25"
+              },
+              "observation_date": "2019-09-17",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "SOFR": "2.55"
+              },
+              "observation_date": "2019-09-18",
+              "original_row_index": 7
+            },
+            {
+              "native_values": {
+                "SOFR": "1.95"
+              },
+              "observation_date": "2019-09-19",
+              "original_row_index": 8
+            }
+          ],
+          "original_native_rows": 9,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:03.063754+00:00",
+          "sha256": "cdc76eaf178bb79e0a0459167f4c1e8d04cc22be1388a2c9a46611c79bcc0032",
+          "source_record": "SOFR_2019-09-21",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2019-09-21&cosd=2019-09-08&coed=2019-09-21"
+        }
+      },
+      "vintage": "2019-09-21"
+    },
+    {
+      "direct_native_counterpart_check": {
+        "both_unavailable_cells": 2,
+        "complete_native_union_availability_and_known_value_check": true,
+        "historical_first_public_receipt_or_constant_methodology_certified": false,
+        "known_exact_text_cells": 16,
+        "native_cells_checked": 18,
+        "native_observation_dates_checked": 9,
+        "native_presence_difference_cells": 2,
+        "no_missing_zero_or_cash_substitution": true,
+        "raw_serialization_identity_not_claimed": true,
+        "unavailable_native_states": [
+          {
+            "dual_native_text": "",
+            "dual_row_present": true,
+            "observation_date": "2021-01-18",
+            "series": "SOFR",
+            "single_native_text": null,
+            "single_row_present": false,
+            "state": "both_unavailable"
+          },
+          {
+            "dual_native_text": "",
+            "dual_row_present": true,
+            "observation_date": "2021-01-18",
+            "series": "EFFR",
+            "single_native_text": null,
+            "single_row_present": false,
+            "state": "both_unavailable"
+          }
+        ]
+      },
+      "explicit_native_interval_end": "2021-01-30",
+      "explicit_native_interval_start": "2021-01-17",
+      "monday": "2021-02-01",
+      "original_backed_native_view": [
+        {
+          "native_values": {
+            "EFFR": "",
+            "SOFR": ""
+          },
+          "observation_date": "2021-01-18",
+          "original_row_index": 5360
+        },
+        {
+          "native_values": {
+            "EFFR": "0.09",
+            "SOFR": "0.07"
+          },
+          "observation_date": "2021-01-19",
+          "original_row_index": 5361
+        },
+        {
+          "native_values": {
+            "EFFR": "0.09",
+            "SOFR": "0.06"
+          },
+          "observation_date": "2021-01-20",
+          "original_row_index": 5362
+        },
+        {
+          "native_values": {
+            "EFFR": "0.08",
+            "SOFR": "0.04"
+          },
+          "observation_date": "2021-01-21",
+          "original_row_index": 5363
+        },
+        {
+          "native_values": {
+            "EFFR": "0.08",
+            "SOFR": "0.05"
+          },
+          "observation_date": "2021-01-22",
+          "original_row_index": 5364
+        },
+        {
+          "native_values": {
+            "EFFR": "0.08",
+            "SOFR": "0.06"
+          },
+          "observation_date": "2021-01-25",
+          "original_row_index": 5365
+        },
+        {
+          "native_values": {
+            "EFFR": "0.08",
+            "SOFR": "0.03"
+          },
+          "observation_date": "2021-01-26",
+          "original_row_index": 5366
+        },
+        {
+          "native_values": {
+            "EFFR": "0.08",
+            "SOFR": "0.03"
+          },
+          "observation_date": "2021-01-27",
+          "original_row_index": 5367
+        },
+        {
+          "native_values": {
+            "EFFR": "0.07",
+            "SOFR": "0.04"
+          },
+          "observation_date": "2021-01-28",
+          "original_row_index": 5368
+        }
+      ],
+      "original_exact_calendar_check_error": "Exact date/series/version/range counterpart differs",
+      "original_exact_calendar_check_pass": false,
+      "original_extra_older_rows": 5360,
+      "original_full_rows": 5369,
+      "original_full_rows_and_bodies_retained": true,
+      "original_http_range_contract_pass": false,
+      "original_source_record": "archive_2021-01-30_retry_1",
+      "original_source_sha256": "14130ee45b1a74cf0842418af60fc3b0c81a6bb50225e902b0c8547b70a8a850",
+      "single_series_counterparts": {
+        "EFFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:15.989256+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "EFFR": "0.09"
+              },
+              "observation_date": "2021-01-19",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "EFFR": "0.09"
+              },
+              "observation_date": "2021-01-20",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "EFFR": "0.08"
+              },
+              "observation_date": "2021-01-21",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "EFFR": "0.08"
+              },
+              "observation_date": "2021-01-22",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "EFFR": "0.08"
+              },
+              "observation_date": "2021-01-25",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "EFFR": "0.08"
+              },
+              "observation_date": "2021-01-26",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "EFFR": "0.08"
+              },
+              "observation_date": "2021-01-27",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "EFFR": "0.07"
+              },
+              "observation_date": "2021-01-28",
+              "original_row_index": 7
+            }
+          ],
+          "original_native_rows": 8,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:15.442549+00:00",
+          "sha256": "c2cacac1445d81e7ea7a7603b52d0f87297c31cfcda407e44407a766e5ef0ae7",
+          "source_record": "EFFR_2021-01-30",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2021-01-30&cosd=2021-01-17&coed=2021-01-30"
+        },
+        "SOFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:15.728223+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "SOFR": "0.07"
+              },
+              "observation_date": "2021-01-19",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "SOFR": "0.06"
+              },
+              "observation_date": "2021-01-20",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "SOFR": "0.04"
+              },
+              "observation_date": "2021-01-21",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "SOFR": "0.05"
+              },
+              "observation_date": "2021-01-22",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "SOFR": "0.06"
+              },
+              "observation_date": "2021-01-25",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "SOFR": "0.03"
+              },
+              "observation_date": "2021-01-26",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "SOFR": "0.03"
+              },
+              "observation_date": "2021-01-27",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "SOFR": "0.04"
+              },
+              "observation_date": "2021-01-28",
+              "original_row_index": 7
+            }
+          ],
+          "original_native_rows": 8,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:04.428394+00:00",
+          "sha256": "18f01fb8d6a83df516f07bbf16282f97c46b35fa1a0ab5cafb241cab2c144965",
+          "source_record": "SOFR_2021-01-30",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2021-01-30&cosd=2021-01-17&coed=2021-01-30"
+        }
+      },
+      "vintage": "2021-01-30"
+    },
+    {
+      "direct_native_counterpart_check": {
+        "both_unavailable_cells": 2,
+        "complete_native_union_availability_and_known_value_check": true,
+        "historical_first_public_receipt_or_constant_methodology_certified": false,
+        "known_exact_text_cells": 16,
+        "native_cells_checked": 18,
+        "native_observation_dates_checked": 9,
+        "native_presence_difference_cells": 0,
+        "no_missing_zero_or_cash_substitution": true,
+        "raw_serialization_identity_not_claimed": true,
+        "unavailable_native_states": [
+          {
+            "dual_native_text": "",
+            "dual_row_present": true,
+            "observation_date": "2023-12-25",
+            "series": "SOFR",
+            "single_native_text": "",
+            "single_row_present": true,
+            "state": "both_unavailable"
+          },
+          {
+            "dual_native_text": "",
+            "dual_row_present": true,
+            "observation_date": "2023-12-25",
+            "series": "EFFR",
+            "single_native_text": "",
+            "single_row_present": true,
+            "state": "both_unavailable"
+          }
+        ]
+      },
+      "explicit_native_interval_end": "2023-12-30",
+      "explicit_native_interval_start": "2023-12-17",
+      "monday": "2024-01-01",
+      "original_backed_native_view": [
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.32"
+          },
+          "observation_date": "2023-12-18",
+          "original_row_index": 6120
+        },
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.31"
+          },
+          "observation_date": "2023-12-19",
+          "original_row_index": 6121
+        },
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.31"
+          },
+          "observation_date": "2023-12-20",
+          "original_row_index": 6122
+        },
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.31"
+          },
+          "observation_date": "2023-12-21",
+          "original_row_index": 6123
+        },
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.32"
+          },
+          "observation_date": "2023-12-22",
+          "original_row_index": 6124
+        },
+        {
+          "native_values": {
+            "EFFR": "",
+            "SOFR": ""
+          },
+          "observation_date": "2023-12-25",
+          "original_row_index": 6125
+        },
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.35"
+          },
+          "observation_date": "2023-12-26",
+          "original_row_index": 6126
+        },
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.39"
+          },
+          "observation_date": "2023-12-27",
+          "original_row_index": 6127
+        },
+        {
+          "native_values": {
+            "EFFR": "5.33",
+            "SOFR": "5.40"
+          },
+          "observation_date": "2023-12-28",
+          "original_row_index": 6128
+        }
+      ],
+      "original_exact_calendar_check_error": null,
+      "original_exact_calendar_check_pass": true,
+      "original_extra_older_rows": 6120,
+      "original_full_rows": 6129,
+      "original_full_rows_and_bodies_retained": true,
+      "original_http_range_contract_pass": false,
+      "original_source_record": "archive_2023-12-30",
+      "original_source_sha256": "d362f60cdd6df384ef9db2859938dc76642400ecba673fd47897773f81b57c82",
+      "single_series_counterparts": {
+        "EFFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:16.605406+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-18",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-19",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-20",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-21",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-22",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "EFFR": ""
+              },
+              "observation_date": "2023-12-25",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-26",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-27",
+              "original_row_index": 7
+            },
+            {
+              "native_values": {
+                "EFFR": "5.33"
+              },
+              "observation_date": "2023-12-28",
+              "original_row_index": 8
+            }
+          ],
+          "original_native_rows": 9,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:15.990233+00:00",
+          "sha256": "3733a619cab6803b363d0c801788e3d5f8af78b10171d01c8e4c2388795122b9",
+          "source_record": "EFFR_2023-12-30",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2023-12-30&cosd=2023-12-17&coed=2023-12-30"
+        },
+        "SOFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:25.272449+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "SOFR": "5.32"
+              },
+              "observation_date": "2023-12-18",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "SOFR": "5.31"
+              },
+              "observation_date": "2023-12-19",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "SOFR": "5.31"
+              },
+              "observation_date": "2023-12-20",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "SOFR": "5.31"
+              },
+              "observation_date": "2023-12-21",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "SOFR": "5.32"
+              },
+              "observation_date": "2023-12-22",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "SOFR": ""
+              },
+              "observation_date": "2023-12-25",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "SOFR": "5.35"
+              },
+              "observation_date": "2023-12-26",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "SOFR": "5.39"
+              },
+              "observation_date": "2023-12-27",
+              "original_row_index": 7
+            },
+            {
+              "native_values": {
+                "SOFR": "5.40"
+              },
+              "observation_date": "2023-12-28",
+              "original_row_index": 8
+            }
+          ],
+          "original_native_rows": 9,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:15.729312+00:00",
+          "sha256": "86edb9752b3b1e9e2ba298defaeac96311d1f7a09e38899f911b668ca4104508",
+          "source_record": "SOFR_2023-12-30",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2023-12-30&cosd=2023-12-17&coed=2023-12-30"
+        }
+      },
+      "vintage": "2023-12-30"
+    },
+    {
+      "direct_native_counterpart_check": {
+        "both_unavailable_cells": 0,
+        "complete_native_union_availability_and_known_value_check": true,
+        "historical_first_public_receipt_or_constant_methodology_certified": false,
+        "known_exact_text_cells": 18,
+        "native_cells_checked": 18,
+        "native_observation_dates_checked": 9,
+        "native_presence_difference_cells": 0,
+        "no_missing_zero_or_cash_substitution": true,
+        "raw_serialization_identity_not_claimed": true,
+        "unavailable_native_states": []
+      },
+      "explicit_native_interval_end": "2026-08-29",
+      "explicit_native_interval_start": "2026-08-16",
+      "monday": "2026-08-31",
+      "original_backed_native_view": [
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.66"
+          },
+          "observation_date": "2026-08-17",
+          "original_row_index": 6815
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.65"
+          },
+          "observation_date": "2026-08-18",
+          "original_row_index": 6816
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.62"
+          },
+          "observation_date": "2026-08-19",
+          "original_row_index": 6817
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.63"
+          },
+          "observation_date": "2026-08-20",
+          "original_row_index": 6818
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.65"
+          },
+          "observation_date": "2026-08-21",
+          "original_row_index": 6819
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.65"
+          },
+          "observation_date": "2026-08-24",
+          "original_row_index": 6820
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.66"
+          },
+          "observation_date": "2026-08-25",
+          "original_row_index": 6821
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.64"
+          },
+          "observation_date": "2026-08-26",
+          "original_row_index": 6822
+        },
+        {
+          "native_values": {
+            "EFFR": "3.63",
+            "SOFR": "3.64"
+          },
+          "observation_date": "2026-08-27",
+          "original_row_index": 6823
+        }
+      ],
+      "original_exact_calendar_check_error": null,
+      "original_exact_calendar_check_pass": true,
+      "original_extra_older_rows": 6815,
+      "original_full_rows": 6824,
+      "original_full_rows_and_bodies_retained": true,
+      "original_http_range_contract_pass": false,
+      "original_source_record": "archive_2026-08-29",
+      "original_source_sha256": "5195f2de2ea9ee50ea49b9465ff003133f7db82304f94328001dc6cd2f7fb9b3",
+      "single_series_counterparts": {
+        "EFFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:17.880890+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-17",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-18",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-19",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-20",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-21",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-24",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-25",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-26",
+              "original_row_index": 7
+            },
+            {
+              "native_values": {
+                "EFFR": "3.63"
+              },
+              "observation_date": "2026-08-27",
+              "original_row_index": 8
+            }
+          ],
+          "original_native_rows": 9,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:17.152006+00:00",
+          "sha256": "e009901ee657f4395a6921903c2d854fac12ca9f68a56da5a54216831a7864ab",
+          "source_record": "EFFR_2026-08-29",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2026-08-29&cosd=2026-08-16&coed=2026-08-29"
+        },
+        "SOFR": {
+          "actual_http_range_honored": true,
+          "captured_utc": "2026-10-04T16:11:17.151152+00:00",
+          "native_view": [
+            {
+              "native_values": {
+                "SOFR": "3.66"
+              },
+              "observation_date": "2026-08-17",
+              "original_row_index": 0
+            },
+            {
+              "native_values": {
+                "SOFR": "3.65"
+              },
+              "observation_date": "2026-08-18",
+              "original_row_index": 1
+            },
+            {
+              "native_values": {
+                "SOFR": "3.62"
+              },
+              "observation_date": "2026-08-19",
+              "original_row_index": 2
+            },
+            {
+              "native_values": {
+                "SOFR": "3.63"
+              },
+              "observation_date": "2026-08-20",
+              "original_row_index": 3
+            },
+            {
+              "native_values": {
+                "SOFR": "3.65"
+              },
+              "observation_date": "2026-08-21",
+              "original_row_index": 4
+            },
+            {
+              "native_values": {
+                "SOFR": "3.65"
+              },
+              "observation_date": "2026-08-24",
+              "original_row_index": 5
+            },
+            {
+              "native_values": {
+                "SOFR": "3.66"
+              },
+              "observation_date": "2026-08-25",
+              "original_row_index": 6
+            },
+            {
+              "native_values": {
+                "SOFR": "3.64"
+              },
+              "observation_date": "2026-08-26",
+              "original_row_index": 7
+            },
+            {
+              "native_values": {
+                "SOFR": "3.64"
+              },
+              "observation_date": "2026-08-27",
+              "original_row_index": 8
+            }
+          ],
+          "original_native_rows": 9,
+          "outside_original_rows": 0,
+          "requested_utc": "2026-10-04T16:11:16.606196+00:00",
+          "sha256": "ec633c739f91dda21c990d4cc6c665c0db382c8c90b80e2efee76b53aedf6acf",
+          "source_record": "SOFR_2026-08-29",
+          "source_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2026-08-29&cosd=2026-08-16&coed=2026-08-29"
+        }
+      },
+      "vintage": "2026-08-29"
+    }
+  ],
+  "source_stage_only": true
+}

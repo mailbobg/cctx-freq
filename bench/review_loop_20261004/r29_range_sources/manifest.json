@@ -1,0 +1,127 @@
+{
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "source_only": true,
+  "sources": {
+    "EFFR_2019-09-21": {
+      "bytes": 175,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2019-09-21&cosd=2019-09-08&coed=2019-09-21",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:04 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "path": "raw/420feb17250127535e4eb1a2cb3d8a82faf6afb1ee7436bb465524757985fa23",
+      "requested_utc": "2026-10-04T16:11:03.064080+00:00",
+      "retrieved_utc": "2026-10-04T16:11:04.428071+00:00",
+      "sha256": "81d1bed62efa4136c5eab32e5fada7d58c08a1670ac9e381001cfc0407a188d4",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2019-09-21&cosd=2019-09-08&coed=2019-09-21"
+    },
+    "EFFR_2021-01-30": {
+      "bytes": 159,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2021-01-30&cosd=2021-01-17&coed=2021-01-30",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:15 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "path": "raw/7807e9cc6de9edb95396485b64416709dc971376c0d5bb7fe4a3efc4a49b4b33",
+      "requested_utc": "2026-10-04T16:11:15.442549+00:00",
+      "retrieved_utc": "2026-10-04T16:11:15.989256+00:00",
+      "sha256": "c2cacac1445d81e7ea7a7603b52d0f87297c31cfcda407e44407a766e5ef0ae7",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2021-01-30&cosd=2021-01-17&coed=2021-01-30"
+    },
+    "EFFR_2023-12-30": {
+      "bytes": 171,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2023-12-30&cosd=2023-12-17&coed=2023-12-30",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:16 GMT",
+        "Last-Modified": "Fri, 29 Dec 2023 14:01:01 GMT"
+      },
+      "path": "raw/ac8980b412dc34b68f8d5cc68779a85d445a27b19328529e508daf891093df4c",
+      "requested_utc": "2026-10-04T16:11:15.990233+00:00",
+      "retrieved_utc": "2026-10-04T16:11:16.605406+00:00",
+      "sha256": "3733a619cab6803b363d0c801788e3d5f8af78b10171d01c8e4c2388795122b9",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2023-12-30&cosd=2023-12-17&coed=2023-12-30"
+    },
+    "EFFR_2026-08-29": {
+      "bytes": 175,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2026-08-29&cosd=2026-08-16&coed=2026-08-29",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:17 GMT",
+        "Last-Modified": "Fri, 28 Aug 2026 13:02:30 GMT"
+      },
+      "path": "raw/9092df1eb064f3dbc66e427b3b1b29837afd9322937f493436cf661e8947fc9f",
+      "requested_utc": "2026-10-04T16:11:17.152006+00:00",
+      "retrieved_utc": "2026-10-04T16:11:17.880890+00:00",
+      "sha256": "e009901ee657f4395a6921903c2d854fac12ca9f68a56da5a54216831a7864ab",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=EFFR&vintage_date=2026-08-29&cosd=2026-08-16&coed=2026-08-29"
+    },
+    "SOFR_2019-09-21": {
+      "bytes": 175,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2019-09-21&cosd=2019-09-08&coed=2019-09-21",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:15 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "path": "raw/0927b1574bda1a7c7c96f22b7b75accf5e43ff9fe5debd91094bf2764ba48469",
+      "requested_utc": "2026-10-04T16:11:03.063754+00:00",
+      "retrieved_utc": "2026-10-04T16:11:15.440894+00:00",
+      "sha256": "cdc76eaf178bb79e0a0459167f4c1e8d04cc22be1388a2c9a46611c79bcc0032",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2019-09-21&cosd=2019-09-08&coed=2019-09-21"
+    },
+    "SOFR_2021-01-30": {
+      "bytes": 159,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2021-01-30&cosd=2021-01-17&coed=2021-01-30",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:15 GMT",
+        "Last-Modified": "Tue, 09 May 2023 18:37:20 GMT"
+      },
+      "path": "raw/ecd31f8445169bb041d590e57c9a3b34641f983c081b124d9b2eb7d5d81e1d00",
+      "requested_utc": "2026-10-04T16:11:04.428394+00:00",
+      "retrieved_utc": "2026-10-04T16:11:15.728223+00:00",
+      "sha256": "18f01fb8d6a83df516f07bbf16282f97c46b35fa1a0ab5cafb241cab2c144965",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2021-01-30&cosd=2021-01-17&coed=2021-01-30"
+    },
+    "SOFR_2023-12-30": {
+      "bytes": 171,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2023-12-30&cosd=2023-12-17&coed=2023-12-30",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:25 GMT",
+        "Last-Modified": "Fri, 29 Dec 2023 13:01:02 GMT"
+      },
+      "path": "raw/0842be3059e3d2254e807f0b6bec804750d1e032c534eed124d1b8adeeee6b29",
+      "requested_utc": "2026-10-04T16:11:15.729312+00:00",
+      "retrieved_utc": "2026-10-04T16:11:25.272449+00:00",
+      "sha256": "86edb9752b3b1e9e2ba298defaeac96311d1f7a09e38899f911b668ca4104508",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2023-12-30&cosd=2023-12-17&coed=2023-12-30"
+    },
+    "SOFR_2026-08-29": {
+      "bytes": 175,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2026-08-29&cosd=2026-08-16&coed=2026-08-29",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 16:11:16 GMT",
+        "Last-Modified": "Fri, 28 Aug 2026 12:02:30 GMT"
+      },
+      "path": "raw/8c64bbaafadb8a0e44fc1713ff9a44a870f450d83e2cc46f961c99a05c599151",
+      "requested_utc": "2026-10-04T16:11:16.606196+00:00",
+      "retrieved_utc": "2026-10-04T16:11:17.151152+00:00",
+      "sha256": "ec633c739f91dda21c990d4cc6c665c0db382c8c90b80e2efee76b53aedf6acf",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=SOFR&vintage_date=2026-08-29&cosd=2026-08-16&coed=2026-08-29"
+    }
+  }
+}
