@@ -12,6 +12,7 @@ Idea and the 10% figure: nateemma/strategies, us_spot_market_study.md.
 """
 
 from datetime import datetime
+import math
 
 from freqtrade.persistence import Trade
 
@@ -61,5 +62,13 @@ class PhantomFillMixin:
             cap = self._fillable(trade.pair, current_time)
             if cap < self.min_notional:
                 return None
-            stake = -min(-stake, cap)
+            # A negative callback stake is cost basis. Freqtrade sells
+            # abs(stake) * trade.amount / trade.stake_amount units, so first
+            # convert the executable quote-volume budget to those units.
+            rate = kwargs.get("current_rate") if "current_rate" in kwargs else (args[0] if args else None)
+            if (rate is None or not math.isfinite(rate) or rate <= 0
+                    or not trade.amount or trade.stake_amount <= 0):
+                return None
+            cost_cap = cap * trade.stake_amount / (trade.amount * rate)
+            stake = -min(-stake, cost_cap)
         return (stake, tag) if isinstance(result, tuple) else stake

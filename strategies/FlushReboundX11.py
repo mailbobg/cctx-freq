@@ -54,7 +54,7 @@ class FlushReboundX11(IStrategy):
     can_short = False
     stoploss = -0.25
     minimal_roi = {"0": 100}
-    use_exit_signal = False
+    use_exit_signal = True             # required for the custom 24h exit
     process_only_new_candles = True
     startup_candle_count = 20
 

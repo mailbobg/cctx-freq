@@ -19,7 +19,7 @@ class BBBreakoutBTC(IStrategy):
     can_short = True
     stoploss = -0.015
     minimal_roi = {"0": 0.03}
-    use_exit_signal = False
+    use_exit_signal = True             # also enables the documented custom holding deadline
     process_only_new_candles = True
     startup_candle_count = 50
 

@@ -31,7 +31,7 @@ class XSMomentumX10(IStrategy):
     can_short = True
     stoploss = -0.25
     minimal_roi = {"0": 100}
-    use_exit_signal = False
+    use_exit_signal = True             # required for the custom weekly exit
     process_only_new_candles = True
     startup_candle_count = 60
 
