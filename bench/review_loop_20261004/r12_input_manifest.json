@@ -1,0 +1,22 @@
+{
+  "source_inputs_sha256": {
+    "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+    "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+    "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313"
+  },
+  "source_code_sha256": {
+    "R12_PROTOCOL.md": "2f7767c3b9b5c739852ec2d7d5bd7d50c76753e02f75c469382d2cb89e3c7d87",
+    "r12_daily_off.py": "cc4e096472e80ca37d3eac9acf5c1dde3dad16c3d76814660be5f4ee09ea4df6",
+    "test_r12_daily_off.py": "b3e293fdea853206fa721946b1b8e86eea63a3168fb5a36989dc489eaedb7980",
+    "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+    "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91"
+  },
+  "baseline_max_abs_csv_gap": {
+    "early_reused_cost0.0012": 2.220446049250313e-16,
+    "early_reused_cost0.0024": 2.220446049250313e-16,
+    "recent_reused_cost0.0012": 2.220446049250313e-16,
+    "recent_reused_cost0.0024": 2.220446049250313e-16
+  },
+  "full_prefix_signals_equal": true,
+  "real_held_execution_prefix_equal": true
+}
