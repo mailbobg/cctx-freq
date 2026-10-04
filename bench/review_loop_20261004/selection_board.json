@@ -945,5 +945,49 @@
     "retained_http_attempts": 25,
     "focused_tests_passed": 30,
     "disposition": "Source integrity investigation completed; broad schedule historical publication/completeness not certified. Tested research-only gate distinguishes unknown coverage from known zero. U1 closed historical line, U2 frozen forward cohort and overall research gates unchanged. No activation."
+  },
+  {
+    "trial": "R17 same-native paired carry",
+    "window": "recent_ranked_cost0.0012",
+    "CAGR_pct": 0.30948445040897,
+    "daily_MTM_DD_pct": -0.40274828578578115,
+    "sampled_hour_account_DD_pct": -0.45189629665155495,
+    "net_profit_USDT": 82.79908565785809,
+    "adoption_gate": false,
+    "necessary_recent_screen_only": true,
+    "disposition": "Reject first recent screen: sparse same-native carry has insufficient full-calendar CAGR and negative doubled-cost net profit. No hurdle, fees, holding, inventory, collateral or leverage rescue; no earlier favorable-window substitution or activation."
+  },
+  {
+    "trial": "R17 same-native paired carry",
+    "window": "recent_ranked_cost0.0024",
+    "CAGR_pct": -0.27740119998033164,
+    "daily_MTM_DD_pct": -1.2277945369308485,
+    "sampled_hour_account_DD_pct": -1.2409855402828907,
+    "net_profit_USDT": -73.85311830694445,
+    "adoption_gate": false,
+    "necessary_recent_screen_only": true,
+    "disposition": "Reject first recent screen: sparse same-native carry has insufficient full-calendar CAGR and negative doubled-cost net profit. No hurdle, fees, holding, inventory, collateral or leverage rescue; no earlier favorable-window substitution or activation."
+  },
+  {
+    "trial": "R17 matched equal-pair control",
+    "window": "recent_equal_pairs_cost0.0012",
+    "CAGR_pct": 0.12503174742910517,
+    "daily_MTM_DD_pct": -0.4200773313908557,
+    "sampled_hour_account_DD_pct": -0.43936781829102545,
+    "net_profit_USDT": 33.399447611876894,
+    "adoption_gate": false,
+    "necessary_recent_screen_only": true,
+    "disposition": "Reject first recent screen: sparse same-native carry has insufficient full-calendar CAGR and negative doubled-cost net profit. No hurdle, fees, holding, inventory, collateral or leverage rescue; no earlier favorable-window substitution or activation."
+  },
+  {
+    "trial": "R17 matched equal-pair control",
+    "window": "recent_equal_pairs_cost0.0024",
+    "CAGR_pct": -0.45496668481119773,
+    "daily_MTM_DD_pct": -1.2493711251092554,
+    "sampled_hour_account_DD_pct": -1.2792674768164258,
+    "net_profit_USDT": -120.94720787767437,
+    "adoption_gate": false,
+    "necessary_recent_screen_only": true,
+    "disposition": "Reject first recent screen: sparse same-native carry has insufficient full-calendar CAGR and negative doubled-cost net profit. No hurdle, fees, holding, inventory, collateral or leverage rescue; no earlier favorable-window substitution or activation."
   }
 ]
