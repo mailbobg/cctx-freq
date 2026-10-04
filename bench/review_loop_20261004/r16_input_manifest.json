@@ -1,0 +1,83 @@
+{
+  "frozen_at_utc": "2026-10-04T11:46:39.853085+00:00",
+  "source_only": true,
+  "no_new_performance": true,
+  "fixed_forensic_panel": [
+    "APT",
+    "TIA",
+    "ARB",
+    "SUI"
+  ],
+  "files": {
+    "bench/specs/2026-10-01-u1-unlock-pressure-cross-section.md": {
+      "sha256": "4c8a53663a9ae5337e50797db08a4dd0647ab8fc38b15f54e35992ac4cd4733e",
+      "bytes": 10511
+    },
+    "bench/specs/2026-10-01-u2-unlock-forward.md": {
+      "sha256": "39987caf5d4036866387cd617986179dba78b52475e3886abb328f97e26fecbb",
+      "bytes": 5821
+    },
+    "bench/u1_unlock.py": {
+      "sha256": "fdc86d30b3152f5707ef91251c51de8aabbbf5f5763010bf91783d0c79d454ef",
+      "bytes": 15133
+    },
+    "bench/fetch_events.py": {
+      "sha256": "f3b510ccbc07cdba15e48011e0bfa2888f9a108df55c04080a542cef42d36b90",
+      "bytes": 6654
+    },
+    "bench/make_unlock_schedule.py": {
+      "sha256": "4d60b261bf925fb65ec799dc351386a39c2c1a1e3886a8c0aa36118323daf0ba",
+      "bytes": 1196
+    },
+    "strategies/unlock_xs_logic.py": {
+      "sha256": "6e7a9972ec02ab94969da557d15c1b9f1ddfafadb2a2504393662ad0c0e16e2f",
+      "bytes": 2996
+    },
+    "strategies/UnlockXS.py": {
+      "sha256": "c9eb2343362eb4087b5b75e6708dd890c174e6067fdfa3aa0b991f166bfc1906",
+      "bytes": 7898
+    },
+    "strategies/UnlockPressure.py": {
+      "sha256": "c2744fdedd9a9912bd9149b671fb0ecef107787d4e447b6f6a58c7a63786010c",
+      "bytes": 10609
+    },
+    "strategies/unlock_schedule.csv": {
+      "sha256": "025e136cc80545f24e836a708c84b7c3a03faefa89449a7532945bdb1df2369e",
+      "bytes": 362527,
+      "rows": 7237,
+      "columns": [
+        "pair",
+        "ts",
+        "tokens",
+        "category"
+      ]
+    },
+    "bench/events/unlocks.parquet": {
+      "sha256": "dd40ece62491b3c0b17d38134fabfb4908fba495a4ce9bdf0b30900086fddbe8",
+      "bytes": 1079301,
+      "rows": 41057,
+      "columns": {
+        "protocol": "str",
+        "name": "str",
+        "token": "str",
+        "gecko_id": "str",
+        "ts": "datetime64[us, UTC]",
+        "tokens": "float64",
+        "category": "str",
+        "unlocked_before": "float64",
+        "pct_of_unlocked": "float64"
+      }
+    },
+    "bench/events/unlock_symbol_map.parquet": {
+      "sha256": "5199b1b4d7e4a8d6130cab46b027210afe2a0b9a71239fe07c3c61881db803fe",
+      "bytes": 14126,
+      "rows": 344,
+      "columns": {
+        "protocol": "str",
+        "name": "str",
+        "perp": "str",
+        "cg_id": "str"
+      }
+    }
+  }
+}
