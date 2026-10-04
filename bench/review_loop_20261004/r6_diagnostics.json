@@ -1,0 +1,18 @@
+{
+  "early_reused": {
+    "max_absolute_daily_net_exposure_pct": 7.687356664522775,
+    "daily_annualized_equity_vol_pct": 10.682742408479745,
+    "realized_price_pnl_plus_funding_USDT_costed_run": 221.62754287571835,
+    "transaction_costs_USDT": 685.7503472556198,
+    "net_profit_USDT": -464.12280437989284,
+    "note": "Terminal-close quantities are zero. Net exposure excludes final pre-liquidation instant; hourly gross drift is reported separately. Income decomposition is of the costed run, not a zero-cost counterfactual."
+  },
+  "recent_reused": {
+    "max_absolute_daily_net_exposure_pct": 7.706833204997398,
+    "daily_annualized_equity_vol_pct": 11.862536651219182,
+    "realized_price_pnl_plus_funding_USDT_costed_run": 131.74070321600044,
+    "transaction_costs_USDT": 410.07663190396624,
+    "net_profit_USDT": -278.3359286879804,
+    "note": "Terminal-close quantities are zero. Net exposure excludes final pre-liquidation instant; hourly gross drift is reported separately. Income decomposition is of the costed run, not a zero-cost counterfactual."
+  }
+}

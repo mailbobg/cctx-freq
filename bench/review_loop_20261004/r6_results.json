@@ -1,0 +1,522 @@
+{
+  "captured_utc": "2026-10-04T09:23:25.487769+00:00",
+  "protocol": "R6_PROTOCOL.md",
+  "source_sha256": {
+    "R6_PROTOCOL.md": "6ba74b1e637a36a5791aa519f24142b03702ec031bd3768d4383ef25fbfea261",
+    "r6_data.py": "97a03f210bfc6ddb0322ad2f69d7e3c5e73fe762e945b33558f6143df065de62",
+    "r6_relative.py": "7f1ced29f16a84cf831345b10b2e0dbdc7835b23fa8d60616664045da63a62f0",
+    "test_r6_engine.py": "99e8e527464ddfaf6cf22bb6d4c095488db41642bd4a824825850e556cf53fdb",
+    "test_r6_data.py": "c2f38968a58af951456cfecce7309352963d96a2c2804b03c050dc9c3561274a",
+    "../../strategies/portfolio_risk.py": "c29d0f44d4af1ad6f5f0193258c6030904fd3103c61a6c6dce16b463af5912f7"
+  },
+  "input_manifest": {
+    "captured_utc": "2026-10-04T09:20:14.525558+00:00",
+    "coverage": {
+      "BTCUSDT": {
+        "daily_rows": 2435,
+        "mark_rows": 50400,
+        "funding_rows": 6300,
+        "missing_associated_mark": 3193
+      },
+      "ETHUSDT": {
+        "daily_rows": 2435,
+        "mark_rows": 50400,
+        "funding_rows": 6300,
+        "missing_associated_mark": 3193
+      }
+    },
+    "output_sha256": {
+      "BTCUSDT_mark.parquet": "2c916396785d0df68e82667351acc8b2d2fb7029551d8812fd81cbf140f2a567",
+      "ETHUSDT_funding.parquet": "a73c211834cfe9581729be067acbcbc6d3bd313bcb96dbc34e091b0e0fc56a3d",
+      "BTCUSDT_trade.parquet": "7bcb0e0435ae657ec4e781796e141e778ef1452e3a4edc798bc1185ad388f55c",
+      "ETHUSDT_mark.parquet": "4c5c5670b0f2eb5750f93daa92e14e00eb3440a8d516ae056c1e3e2101377fd8",
+      "BTCUSDT_funding.parquet": "ba8d65ba3c1f3aac64110047d488779792f6e933a389fa527e7ef3e739029d30",
+      "ETHUSDT_trade.parquet": "d7be30f252cabeec6d2f2a6b9e4735cf95b6d771983e26e7b5f562549e6b5926"
+    },
+    "limitation": "Missing API-associated marks remain missing. Hourly mark opens can be a documented settlement-price approximation; hourly extremes provide per-payment sensitivity inputs. Neither is labeled an exact associated mark."
+  },
+  "not_untouched_OOS": true,
+  "assumptions": "Cross perpetual ledger; exact actual rates; missing associated funding marks use documented hourly-open central estimate and extremes sensitivity; fixed0.5% maintenance screening; daily-open fills with all-in costs, final daily-close costs. No liquidations modeled as profitable exits.",
+  "results": {
+    "early_reused_relative30_cost0.0012_central": {
+      "return_pct": -4.641228043798906,
+      "CAGR_pct": -1.6170656294072216,
+      "daily_MTM_DD_pct": -23.942854086398103,
+      "hourly_close_DD_pct": -24.32642828766758,
+      "min_hourly_adverse_equity": 8826.107059243219,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 129.28164941158377,
+      "fees_USDT": 685.7503472556198,
+      "funding_USDT": 54.301302115756734,
+      "realized_price_pnl_USDT": 167.32624075996182,
+      "ledger_reconciliation_USDT": 1.0913936421275139e-11,
+      "calendar_year_return_pct": {
+        "2021": 14.436001657931152,
+        "2022": 1.3519898725093293,
+        "2023": -17.782229764366942
+      },
+      "screen_gate": false
+    },
+    "early_reused_relative30_cost0.0012_adverse": {
+      "return_pct": -4.761148981263719,
+      "CAGR_pct": -1.6595261057418487,
+      "daily_MTM_DD_pct": -23.958178244599782,
+      "hourly_close_DD_pct": -24.341676416778014,
+      "min_hourly_adverse_equity": 8815.22405432902,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 129.28396735586816,
+      "fees_USDT": 685.0457425314977,
+      "funding_USDT": 41.03217596532285,
+      "realized_price_pnl_USDT": 167.89866843979587,
+      "ledger_reconciliation_USDT": 7.275957614183426e-12,
+      "calendar_year_return_pct": {
+        "2021": 14.346624451525924,
+        "2022": 1.3222576080268,
+        "2023": -17.797326815355664
+      },
+      "screen_gate": false
+    },
+    "early_reused_relative30_cost0.0012_favorable": {
+      "return_pct": -4.528548295809909,
+      "CAGR_pct": -1.5772009996503744,
+      "daily_MTM_DD_pct": -23.927609983617305,
+      "hourly_close_DD_pct": -24.311260052061968,
+      "min_hourly_adverse_equity": 8836.31743141668,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 129.27942945747944,
+      "fees_USDT": 686.4098703777742,
+      "funding_USDT": 66.77624144450145,
+      "realized_price_pnl_USDT": 166.77879935226235,
+      "ledger_reconciliation_USDT": 2.1827872842550278e-11,
+      "calendar_year_return_pct": {
+        "2021": 14.519630305911058,
+        "2022": 1.3794306231919462,
+        "2023": -17.767453135352575
+      },
+      "screen_gate": false
+    },
+    "early_reused_fixed_pair_cost0.0012_central": {
+      "return_pct": -6.492439807032535,
+      "CAGR_pct": -2.2764777959761506,
+      "daily_MTM_DD_pct": -25.40112104749417,
+      "hourly_close_DD_pct": -25.624291985857784,
+      "min_hourly_adverse_equity": 7549.380175110854,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 119.8800903422937,
+      "fees_USDT": 124.25410571391114,
+      "funding_USDT": 32.7811778365016,
+      "realized_price_pnl_USDT": -557.7710528258864,
+      "ledger_reconciliation_USDT": 4.3655745685100555e-11,
+      "calendar_year_return_pct": {
+        "2021": -17.684023777223246,
+        "2022": -2.8264424256996823,
+        "2023": 16.899994217632354
+      },
+      "screen_gate": false
+    },
+    "early_reused_fixed_pair_cost0.0012_adverse": {
+      "return_pct": -6.60266150662745,
+      "CAGR_pct": -2.3160089013471885,
+      "daily_MTM_DD_pct": -25.458810661446275,
+      "hourly_close_DD_pct": -25.682226556194585,
+      "min_hourly_adverse_equity": 7541.736814140203,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 119.88066499997426,
+      "fees_USDT": 124.14629993266331,
+      "funding_USDT": 22.201086461333613,
+      "realized_price_pnl_USDT": -558.3209371914311,
+      "ledger_reconciliation_USDT": 1.6370904631912708e-11,
+      "calendar_year_return_pct": {
+        "2021": -17.74428771683022,
+        "2022": -2.85270730352154,
+        "2023": 16.879334709915916
+      },
+      "screen_gate": false
+    },
+    "early_reused_fixed_pair_cost0.0012_favorable": {
+      "return_pct": -6.374099803978428,
+      "CAGR_pct": -2.2340691167634374,
+      "daily_MTM_DD_pct": -25.339995283166584,
+      "hourly_close_DD_pct": -25.562809813649213,
+      "min_hourly_adverse_equity": 7557.673449018458,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 119.8794418413893,
+      "fees_USDT": 124.37059034581537,
+      "funding_USDT": 44.185043259344496,
+      "realized_price_pnl_USDT": -557.2244333113836,
+      "ledger_reconciliation_USDT": 1.2732925824820995e-11,
+      "calendar_year_return_pct": {
+        "2021": -17.618709243034314,
+        "2022": -2.7980709059881703,
+        "2023": 16.92100239511163
+      },
+      "screen_gate": false
+    },
+    "early_reused_cov10_long_cost0.0012_central": {
+      "return_pct": 31.51347077164153,
+      "CAGR_pct": 9.853060080607978,
+      "daily_MTM_DD_pct": -7.017180985323024,
+      "hourly_close_DD_pct": -7.334199859175172,
+      "min_hourly_adverse_equity": 9958.874803410497,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 40.384801203021816,
+      "fees_USDT": 106.07685178675379,
+      "funding_USDT": -555.8367527985693,
+      "realized_price_pnl_USDT": 3813.2606817494634,
+      "ledger_reconciliation_USDT": 1.2732925824820995e-11,
+      "calendar_year_return_pct": {
+        "2021": 9.92665083632891,
+        "2022": -2.862900470647034,
+        "2023": 23.163525384159534
+      },
+      "screen_gate": false
+    },
+    "early_reused_cov10_long_cost0.0012_adverse": {
+      "return_pct": 31.470133893115747,
+      "CAGR_pct": 9.84064076117399,
+      "daily_MTM_DD_pct": -7.017595976612878,
+      "hourly_close_DD_pct": -7.334593578345439,
+      "min_hourly_adverse_equity": 9958.183892610448,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 40.38493658666822,
+      "fees_USDT": 106.04828117226415,
+      "funding_USDT": -559.2924719742657,
+      "realized_price_pnl_USDT": 3812.354142458102,
+      "ledger_reconciliation_USDT": 3.637978807091713e-12,
+      "calendar_year_return_pct": {
+        "2021": 9.898135424620635,
+        "2022": -2.8658753726613417,
+        "2023": 23.158658717325274
+      },
+      "screen_gate": false
+    },
+    "early_reused_cov10_long_cost0.0012_favorable": {
+      "return_pct": 31.55115821207668,
+      "CAGR_pct": 9.863858219850652,
+      "daily_MTM_DD_pct": -7.016916807153795,
+      "hourly_close_DD_pct": -7.333943154030109,
+      "min_hourly_adverse_equity": 9959.323991089732,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 40.38471713107945,
+      "fees_USDT": 106.1010017547257,
+      "funding_USDT": -552.8154992600611,
+      "realized_price_pnl_USDT": 3814.0323222224774,
+      "ledger_reconciliation_USDT": -2.3646862246096134e-11,
+      "calendar_year_return_pct": {
+        "2021": 9.950140902180404,
+        "2022": -2.8595331973137017,
+        "2023": 23.168229805911356
+      },
+      "screen_gate": false
+    },
+    "early_reused_relative30_cost0.0024_central": {
+      "return_pct": -10.79783786849815,
+      "CAGR_pct": -3.8439716046049788,
+      "daily_MTM_DD_pct": -26.88344706753203,
+      "hourly_close_DD_pct": -27.28283965490127,
+      "min_hourly_adverse_equity": 8307.676806197991,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 129.28164941158374,
+      "fees_USDT": 1329.0131530696556,
+      "funding_USDT": 52.53855619171334,
+      "realized_price_pnl_USDT": 196.69081002815983,
+      "ledger_reconciliation_USDT": -3.2741809263825417e-11,
+      "calendar_year_return_pct": {
+        "2021": 13.573207859098503,
+        "2022": -0.33674400185685904,
+        "2023": -21.193068604441834
+      },
+      "screen_gate": false
+    },
+    "early_reused_relative30_cost0.0024_adverse": {
+      "return_pct": -10.910068248259108,
+      "CAGR_pct": -3.8854901735766556,
+      "daily_MTM_DD_pct": -26.91821757511964,
+      "hourly_close_DD_pct": -27.317083398076846,
+      "min_hourly_adverse_equity": 8297.364054327692,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 129.28396735586816,
+      "fees_USDT": 1327.6523892739528,
+      "funding_USDT": 39.418591544643135,
+      "realized_price_pnl_USDT": 197.22697290335464,
+      "ledger_reconciliation_USDT": 4.547473508864641e-11,
+      "calendar_year_return_pct": {
+        "2021": 13.484478451981662,
+        "2022": -0.3659957865347452,
+        "2023": -21.207555308621696
+      },
+      "screen_gate": false
+    },
+    "early_reused_relative30_cost0.0024_favorable": {
+      "return_pct": -10.692384469461992,
+      "CAGR_pct": -3.804991375548661,
+      "daily_MTM_DD_pct": -26.850558352072806,
+      "hourly_close_DD_pct": -27.250395798362348,
+      "min_hourly_adverse_equity": 8317.362374717426,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 129.27942945747935,
+      "fees_USDT": 1330.2867824999958,
+      "funding_USDT": 64.87114707863869,
+      "realized_price_pnl_USDT": 196.17718847515505,
+      "ledger_reconciliation_USDT": 3.637978807091713e-12,
+      "calendar_year_return_pct": {
+        "2021": 13.656229768604344,
+        "2022": -0.3097469394837571,
+        "2023": -21.178889334442598
+      },
+      "screen_gate": false
+    },
+    "early_reused_fixed_pair_cost0.0024_central": {
+      "return_pct": -7.829366490352352,
+      "CAGR_pct": -2.7580509306545764,
+      "daily_MTM_DD_pct": -25.983752876801848,
+      "hourly_close_DD_pct": -26.205196919310403,
+      "min_hourly_adverse_equity": 7485.780153409157,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 119.88009034229366,
+      "fees_USDT": 246.7410550837256,
+      "funding_USDT": 32.92005747943329,
+      "realized_price_pnl_USDT": -569.1156514309633,
+      "ledger_reconciliation_USDT": 2.000888343900442e-11,
+      "calendar_year_return_pct": {
+        "2021": -17.947963706331706,
+        "2022": -3.3135064980970186,
+        "2023": 16.18161227000412
+      },
+      "screen_gate": false
+    },
+    "early_reused_fixed_pair_cost0.0024_adverse": {
+      "return_pct": -7.938035972961011,
+      "CAGR_pct": -2.7973958072232796,
+      "daily_MTM_DD_pct": -26.041004741708583,
+      "hourly_close_DD_pct": -26.262691808633566,
+      "min_hourly_adverse_equity": 7478.1998185253515,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 119.88066499997427,
+      "fees_USDT": 246.5272292955373,
+      "funding_USDT": 22.374784927589022,
+      "realized_price_pnl_USDT": -569.6511529281782,
+      "ledger_reconciliation_USDT": 2.546585164964199e-11,
+      "calendar_year_return_pct": {
+        "2021": -18.008046339657923,
+        "2022": -3.3396437171927196,
+        "2023": 16.161071530163174
+      },
+      "screen_gate": false
+    },
+    "early_reused_fixed_pair_cost0.0024_favorable": {
+      "return_pct": -7.712689628977076,
+      "CAGR_pct": -2.715840813207049,
+      "daily_MTM_DD_pct": -25.923089007013168,
+      "hourly_close_DD_pct": -26.144179443061677,
+      "min_hourly_adverse_equity": 7494.005273180264,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 119.87944184138925,
+      "fees_USDT": 246.97210732810603,
+      "funding_USDT": 44.287569958479466,
+      "realized_price_pnl_USDT": -568.5844255280327,
+      "ledger_reconciliation_USDT": -4.9112713895738125e-11,
+      "calendar_year_return_pct": {
+        "2021": -17.882844144602238,
+        "2022": -3.285271729021655,
+        "2023": 16.20250063562827
+      },
+      "screen_gate": false
+    },
+    "early_reused_cov10_long_cost0.0024_central": {
+      "return_pct": 30.288811900399914,
+      "CAGR_pct": 9.501060996509914,
+      "daily_MTM_DD_pct": -7.018193650180593,
+      "hourly_close_DD_pct": -7.335255519257322,
+      "min_hourly_adverse_equity": 9956.569673620443,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 40.397478567360665,
+      "fees_USDT": 211.19235200882156,
+      "funding_USDT": -553.968890799093,
+      "realized_price_pnl_USDT": 3794.0424328479285,
+      "ledger_reconciliation_USDT": -2.000888343900442e-11,
+      "calendar_year_return_pct": {
+        "2021": 9.703438181924495,
+        "2022": -3.1789467124317627,
+        "2023": 22.66398851724347
+      },
+      "screen_gate": false
+    },
+    "early_reused_cov10_long_cost0.0024_adverse": {
+      "return_pct": 30.245865079054134,
+      "CAGR_pct": 9.48867757958649,
+      "daily_MTM_DD_pct": -7.0186087079183945,
+      "hourly_close_DD_pct": -7.335649302166791,
+      "min_hourly_adverse_equity": 9955.87881163983,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 40.39761403882844,
+      "fees_USDT": 211.1354840435128,
+      "funding_USDT": -557.4196285900662,
+      "realized_price_pnl_USDT": 3793.1416205389787,
+      "ledger_reconciliation_USDT": 1.0913936421275139e-11,
+      "calendar_year_return_pct": {
+        "2021": 9.674972966677785,
+        "2022": -3.1819130284886255,
+        "2023": 22.659138880703434
+      },
+      "screen_gate": false
+    },
+    "early_reused_cov10_long_cost0.0024_favorable": {
+      "return_pct": 30.32616012455609,
+      "CAGR_pct": 9.5118279170467,
+      "daily_MTM_DD_pct": -7.01792942799343,
+      "hourly_close_DD_pct": -7.334998770941059,
+      "min_hourly_adverse_equity": 9957.01882710319,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 40.39739444245755,
+      "fees_USDT": 211.2404170537657,
+      "funding_USDT": -550.9526785217108,
+      "realized_price_pnl_USDT": 3794.8091080310846,
+      "ledger_reconciliation_USDT": 3.637978807091713e-12,
+      "calendar_year_return_pct": {
+        "2021": 9.726886833320435,
+        "2022": -3.1755891890148824,
+        "2023": 22.668676347484684
+      },
+      "screen_gate": false
+    },
+    "recent_reused_relative30_cost0.0012_central": {
+      "return_pct": -2.783359286879805,
+      "CAGR_pct": -1.0522608594731198,
+      "daily_MTM_DD_pct": -28.6151383287115,
+      "hourly_close_DD_pct": -29.379880275800264,
+      "min_hourly_adverse_equity": 7275.4883695201415,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 124.29851782347615,
+      "fees_USDT": 410.07663190396624,
+      "funding_USDT": 18.274552935440667,
+      "realized_price_pnl_USDT": 113.46615028056021,
+      "ledger_reconciliation_USDT": -1.6370904631912708e-11,
+      "calendar_year_return_pct": {
+        "2024": -26.13110367040936,
+        "2025": 19.42958639045984,
+        "2026": 10.196314932623007
+      },
+      "screen_gate": false
+    },
+    "recent_reused_fixed_pair_cost0.0012_central": {
+      "return_pct": -0.1373081538969423,
+      "CAGR_pct": -0.051477418714962475,
+      "daily_MTM_DD_pct": -20.96845234211273,
+      "hourly_close_DD_pct": -21.518398840703746,
+      "min_hourly_adverse_equity": 9175.297320425754,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 134.93900943373708,
+      "fees_USDT": 151.7324086054905,
+      "funding_USDT": 1.3350905285856207,
+      "realized_price_pnl_USDT": 136.66650268716364,
+      "ledger_reconciliation_USDT": 4.729372449219227e-11,
+      "calendar_year_return_pct": {
+        "2024": 3.9210181501160513,
+        "2025": -4.630112193325619,
+        "2026": 0.7601032241694172
+      },
+      "screen_gate": false
+    },
+    "recent_reused_cov10_long_cost0.0012_central": {
+      "return_pct": 34.25963632915723,
+      "CAGR_pct": 11.67262110180527,
+      "daily_MTM_DD_pct": -7.686909687594989,
+      "hourly_close_DD_pct": -9.056678528919992,
+      "min_hourly_adverse_equity": 9788.525572642582,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 44.35697184572556,
+      "fees_USDT": 164.04507487729813,
+      "funding_USDT": -385.6240859666909,
+      "realized_price_pnl_USDT": 3975.632793759717,
+      "ledger_reconciliation_USDT": -3.637978807091713e-12,
+      "calendar_year_return_pct": {
+        "2024": 13.378107529386662,
+        "2025": 11.806644960242284,
+        "2026": 5.912848219710143
+      },
+      "screen_gate": false
+    },
+    "recent_reused_relative30_cost0.0024_central": {
+      "return_pct": -7.381086856645414,
+      "CAGR_pct": -2.8325227237720796,
+      "daily_MTM_DD_pct": -30.465127388327694,
+      "hourly_close_DD_pct": -31.209545363571234,
+      "min_hourly_adverse_equity": 7089.5819102638925,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 124.29851782347627,
+      "fees_USDT": 801.0462418910336,
+      "funding_USDT": 17.941293259602368,
+      "realized_price_pnl_USDT": 44.996262966855284,
+      "ledger_reconciliation_USDT": 3.456079866737127e-11,
+      "calendar_year_return_pct": {
+        "2024": -28.1047321989071,
+        "2025": 18.188806323251505,
+        "2026": 8.99912916512433
+      },
+      "screen_gate": false
+    },
+    "recent_reused_fixed_pair_cost0.0024_central": {
+      "return_pct": -1.618466456544465,
+      "CAGR_pct": -0.6096055080405116,
+      "daily_MTM_DD_pct": -21.079818795537754,
+      "hourly_close_DD_pct": -21.62899812183028,
+      "min_hourly_adverse_equity": 9145.05322752248,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 134.93900943373717,
+      "fees_USDT": 301.19876170220357,
+      "funding_USDT": 1.5183250421796117,
+      "realized_price_pnl_USDT": 137.83379100559978,
+      "ledger_reconciliation_USDT": -2.1827872842550278e-11,
+      "calendar_year_return_pct": {
+        "2024": 3.1697969973736972,
+        "2025": -4.948475513112626,
+        "2026": 0.32332679109641216
+      },
+      "screen_gate": false
+    },
+    "recent_reused_cov10_long_cost0.0024_central": {
+      "return_pct": 32.37712653094367,
+      "CAGR_pct": 11.083253181491104,
+      "daily_MTM_DD_pct": -7.898166095557658,
+      "hourly_close_DD_pct": -9.225033457245024,
+      "min_hourly_adverse_equity": 9781.18752883509,
+      "marked_margin_breach_hours": 0,
+      "envelope_margin_breach_hours": 0,
+      "max_gross_pct": 44.378134181226216,
+      "fees_USDT": 325.77509638392945,
+      "funding_USDT": -383.7101205058838,
+      "realized_price_pnl_USDT": 3947.197869984214,
+      "ledger_reconciliation_USDT": -3.456079866737127e-11,
+      "calendar_year_return_pct": {
+        "2024": 12.711338656302718,
+        "2025": 11.248694497133837,
+        "2026": 5.572405852845352
+      },
+      "screen_gate": false
+    }
+  }
+}

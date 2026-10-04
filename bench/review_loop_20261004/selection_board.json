@@ -126,10 +126,142 @@
     "disposition": "rejected; no remaining-year or cap/fee tuning after first screen failure"
   },
   {
+    "trial": "R6 Relative30",
+    "window": "early_reused_relative30_cost0.0012_central",
+    "CAGR_pct": -1.6170656294072216,
+    "daily_MTM_DD_pct": -23.942854086398103,
+    "hourly_close_DD_pct": -24.32642828766758,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "early_reused_fixed_pair_cost0.0012_central",
+    "CAGR_pct": -2.2764777959761506,
+    "daily_MTM_DD_pct": -25.40112104749417,
+    "hourly_close_DD_pct": -25.624291985857784,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "early_reused_cov10_long_cost0.0012_central",
+    "CAGR_pct": 9.853060080607978,
+    "daily_MTM_DD_pct": -7.017180985323024,
+    "hourly_close_DD_pct": -7.334199859175172,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 Relative30",
+    "window": "early_reused_relative30_cost0.0024_central",
+    "CAGR_pct": -3.8439716046049788,
+    "daily_MTM_DD_pct": -26.88344706753203,
+    "hourly_close_DD_pct": -27.28283965490127,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "early_reused_fixed_pair_cost0.0024_central",
+    "CAGR_pct": -2.7580509306545764,
+    "daily_MTM_DD_pct": -25.983752876801848,
+    "hourly_close_DD_pct": -26.205196919310403,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "early_reused_cov10_long_cost0.0024_central",
+    "CAGR_pct": 9.501060996509914,
+    "daily_MTM_DD_pct": -7.018193650180593,
+    "hourly_close_DD_pct": -7.335255519257322,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 Relative30",
+    "window": "recent_reused_relative30_cost0.0012_central",
+    "CAGR_pct": -1.0522608594731198,
+    "daily_MTM_DD_pct": -28.6151383287115,
+    "hourly_close_DD_pct": -29.379880275800264,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "recent_reused_fixed_pair_cost0.0012_central",
+    "CAGR_pct": -0.051477418714962475,
+    "daily_MTM_DD_pct": -20.96845234211273,
+    "hourly_close_DD_pct": -21.518398840703746,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "recent_reused_cov10_long_cost0.0012_central",
+    "CAGR_pct": 11.67262110180527,
+    "daily_MTM_DD_pct": -7.686909687594989,
+    "hourly_close_DD_pct": -9.056678528919992,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 Relative30",
+    "window": "recent_reused_relative30_cost0.0024_central",
+    "CAGR_pct": -2.8325227237720796,
+    "daily_MTM_DD_pct": -30.465127388327694,
+    "hourly_close_DD_pct": -31.209545363571234,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "recent_reused_fixed_pair_cost0.0024_central",
+    "CAGR_pct": -0.6096055080405116,
+    "daily_MTM_DD_pct": -21.079818795537754,
+    "hourly_close_DD_pct": -21.62899812183028,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
+    "trial": "R6 diagnostic control",
+    "window": "recent_reused_cov10_long_cost0.0024_central",
+    "CAGR_pct": 11.083253181491104,
+    "daily_MTM_DD_pct": -7.898166095557658,
+    "hourly_close_DD_pct": -9.225033457245024,
+    "marked_margin_breach_hours": 0,
+    "envelope_margin_breach_hours": 0,
+    "adoption_gate": false,
+    "disposition": "rejected; no signal/risk/holding/hedge tuning after first screen; no activation"
+  },
+  {
     "trial": "Selection checkpoint",
     "historical_profitability_lead": "RiskHoldR2bCov10",
     "strict_default_gate_winner": null,
     "adopted_new_strategy": false,
-    "reason": "R1 has cross-window, double-cost actual Freqtrade profit, but fails5% daily risk in both windows; R2/R3/R4/R5 also fail frozen criteria. No untouched historical OOS remains in these inputs."
+    "reason": "R1 actual Freqtrade spot profit remains the lead but fails5% daily risk in both windows. R2/R3/R4/R5 fail frozen criteria; R6 relative trend loses after costs in both windows with24-29% daily drawdown. All dates are reused history."
   }
 ]

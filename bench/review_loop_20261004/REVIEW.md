@@ -146,3 +146,23 @@ The primary5m-open capture supplements daily risk; it is not every1m fill or int
 ## Selection checkpoint
 
 All13 other bot configs and source families have been reviewed. R1/Cov10 remains the strongest reproducible historical profitability lead: actual Freqtrade profit over two multi-year windows and at doubled costs, with materially lower risk than its original R2b baseline. It fails the frozen5% default risk threshold in both periods; no strategy is selected as an adopted mandate-compliant winner. R2, R3, R4 and R5 are retained failures. The research candidates have no running bot configuration. The runtime checkpoint confirms existing frozen cohorts remain intact and the live account stays stopped. Fresh forward records are necessary before claiming a deployable edge; repeated selection on these same historical dates cannot provide them.
+
+## R6 signed relative-trend result and reflection
+
+The protocol and tested engine were committed as `b8931e0` before the first performance screen. Official checksummed hourly mark archives contain real missing days; the corresponding checksummed daily archives repair them with matching overlaps, never interpolation. Both assets now have50,400 hourly mark candles and6,300 actual funding events. All6,386 absent API-associated funding prices are explicit; central settlement uses the hour's mark OPEN and early-window adverse/favorable sensitivity uses that hour's high/low. Cached trade OHLC warmup starts2020-01-01; its high/low/close match the prior frozen dataset exactly. Input URLs, raw bodies, checksums, hashes and coverage are retained under `r6_data/`.
+
+| Frozen mechanism | 2021-02–2023-12 CAGR /daily MTM DD | 2024-01–2026-08 CAGR /daily MTM DD | Double-cost CAGR early /recent |
+|---|---|---|---|
+| Relative30 BTC/ETH pair | -1.62% /23.94% | -1.05% /28.62% | -3.84% /-2.83% |
+| Fixed long BTC /short ETH control | -2.28% /25.40% | -0.05% /20.97% | -2.76% /-0.61% |
+| Cov10 long-exposure **perpetual** control | +9.85% /7.02% | +11.67% /7.69% | +9.50% /+11.08% |
+
+The Cov10 control here includes actual perpetual funding and different futures prices/windows; it is not a revision of R1's validated spot results. All controls use the same signed perpetual ledger, post-fee joint budget and final closing fees. Final balances reconcile to realized price P&L plus funding minus fees within5e-11USDT. No hourly marked or adverse-envelope maintenance breach occurs at the assumed0.5% maintenance rate; this does not cure the failed return/drawdown screens or establish exact historical exchange-tier liquidation proof.
+
+**Reject R6 without tuning.** The price-plus-funding income of the costed Relative30 run is only221.63/131.74USDT against685.75/410.08USDT costs (10,000 initial balance). Those decompositions are not a zero-cost counterfactual. Early-window settlement sensitivities span CAGR-1.66% to-1.58% and cannot change the verdict. Directional results also alternate:2021+14.44%,2023-17.78%,2024-26.13%,2025+19.43%,2026 partial+10.20%; a favorable year is not durable cross-period edge. Estimated10% annual risk is a volatility target, not a5% drawdown constraint: realized account volatility is10.68%/11.86%, yet prolonged loss sequences produce far larger drawdowns. Rebalance gross cap99% drifts to129.28%/124.30% between Mondays as prices and collateral move; maximum absolute daily net-dollar drift is7.69%/7.71%. Equal entry dollars do not make the pair continuously neutral. Preserve `r6_results.json`, `r6_diagnostics.json` and central daily/hourly curves; no actual Freqtrade run or new bot is warranted by this rejection.
+
+## Execution defects found while checking R6
+
+Binance's local cross-margin calculation previously used `amount*(mark-open)` for every other trade, including shorts. Their losses were credited as collateral and their profits debited. Root commit `d52cfaa0a` applies each other position's direction. Nine focused cases cover own/other long/short in dry/live modes and an unchanged historical open-price fallback. The fix is local; the running server image has not been restarted or replaced. It does not alter historical alpha because that backtest fallback makes other unrealized P&L zero.
+
+The shared risk helper previously used net weight for its gross cap. Signed(+2,-2) escaped a0.8 gross cap despite4 gross risk; it now uses the sum of absolute weights. Existing long-only sizing is unchanged, proven by full-history/prefix Cov10 tests. Two regression cases cover offsetting and positive weights. Current-source bench, cross-venue and panel suite:165 tests plus16 subtests pass, with two existing dependency deprecation warnings. These are accounting/risk fixes, not profitability evidence; no running strategy rule or cohort was changed.
