@@ -1,0 +1,68 @@
+...F..........F                                                          [100%]
+=================================== FAILURES ===================================
+_ test_same_old_observation_in_two_vintages_does_not_create_thousandfold_gain __
+
+    def test_same_old_observation_in_two_vintages_does_not_create_thousandfold_gain():
+>       publisher=parse_publisher(body(DATA,'publisher_2025-11-06'),'2025-11-06')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\r\n<!DOCTYPE html>\r\n<html lang="en" class="no-js">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta http-...(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n'
+release = '2025-11-06'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+>           raise ValueError('Original publisher release identity differs')
+E           ValueError: Original publisher release identity differs
+
+user_data/bench/review_loop_20261004/r31_native.py:86: ValueError
+_____ test_unit_evidence_does_not_hide_actual_value_difference_or_missing ______
+
+    def test_unit_evidence_does_not_hide_actual_value_difference_or_missing():
+>       publisher=parse_publisher(body(DATA,'publisher_2025-11-06'),'2025-11-06')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\r\n<!DOCTYPE html>\r\n<html lang="en" class="no-js">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta http-...(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n'
+release = '2025-11-06'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+>           raise ValueError('Original publisher release identity differs')
+E           ValueError: Original publisher release identity differs
+
+user_data/bench/review_loop_20261004/r31_native.py:86: ValueError
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_same_old_observation_in_two_vintages_does_not_create_thousandfold_gain
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_unit_evidence_does_not_hide_actual_value_difference_or_missing
+2 failed, 13 passed, 2 warnings in 0.41s

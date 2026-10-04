@@ -1,0 +1,412 @@
+{
+  "additional_unit_responses": 7,
+  "adopted": false,
+  "all_original_http200": true,
+  "boundary_overlap_observations": [
+    {
+      "exact_same_quantity": true,
+      "normalized_million_usd": "2998471.000",
+      "observation_date": "2025-10-08",
+      "post_native_text": "2998471",
+      "pre_native_text": "2998.471"
+    },
+    {
+      "exact_same_quantity": true,
+      "normalized_million_usd": "3019028.000",
+      "observation_date": "2025-10-15",
+      "post_native_text": "3019028",
+      "pre_native_text": "3019.028"
+    },
+    {
+      "exact_same_quantity": true,
+      "normalized_million_usd": "2933037.000",
+      "observation_date": "2025-10-22",
+      "post_native_text": "2933037",
+      "pre_native_text": "2933.037"
+    },
+    {
+      "exact_same_quantity": true,
+      "normalized_million_usd": "2848021.000",
+      "observation_date": "2025-10-29",
+      "post_native_text": "2848021",
+      "pre_native_text": "2848.021"
+    },
+    {
+      "exact_same_quantity": true,
+      "normalized_million_usd": "2862569.000",
+      "observation_date": "2025-11-05",
+      "post_native_text": "2862569",
+      "pre_native_text": "2862.569"
+    }
+  ],
+  "full_quantity_cohort_or_alpha_defined": false,
+  "native_dated_boundary_metadata": [
+    {
+      "last_native_value": "2862.569",
+      "last_observation_date": "2025-11-05",
+      "new_or_revised_observations": 1,
+      "release": "2025-11-06",
+      "units": "Billions of U.S. Dollars"
+    },
+    {
+      "last_native_value": "2855030.0",
+      "last_observation_date": "2025-11-12",
+      "new_or_revised_observations": 2185,
+      "release": "2025-11-13",
+      "units": "Millions of U.S. Dollars"
+    }
+  ],
+  "native_input_sha256": {
+    "r31_initial_source_observation.json": "d5b5fa4a089f9e582ff584538f1d9822890804b85567887b6f61376204c14a4a",
+    "r31_sources/manifest.json": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+    "r31_sources/raw/014cddc02bfb23b130137d7a2f6e5df716fd72dfd4f270053a994b40386393e3": "197637fe784dc570f71c856b7254ebb93d26ba4784e68ef43e7a7745ddae8b7d",
+    "r31_sources/raw/042e8eaf1d3b10ffbcc8c0c9569d1cb03e9e9aabc649700baeec801b866299e8": "ba642c2503c2ca71f81f70a99790b2373a10b986f5c25779dc301d9c888c54ff",
+    "r31_sources/raw/2117df3b569dc9933e3118ae4ba65ffed2fff1a975c9c57057d24d2607bbfb16": "8bdcd36d23fc9639043e5626a371d9a768e21c6a5be84552d68112de30755532",
+    "r31_sources/raw/2250f118ef06ef66d2084c267d8d3da90b262f2aaab6a741218e9945acfff472": "9d7341f9d28e7dcb863af37441917d3d43f5f40f9bc0ef91a70d94dfdb2d46bc",
+    "r31_sources/raw/3f620ad8467acf2f6baa82529a90d2a6f8ed4140bde5d94052ca98fa718d8cf5": "6c8185d9e2a8a8e3387bb4f6dbd826385b3e42921eeca04af788ca9554ccfd28",
+    "r31_sources/raw/42609955b0806f3876d1550ac074792771efc9fdeccf5454c249b612d7631e09": "e183460d3735fe5f9b59ea21a753e11f291233077776bb4878da3d81c84442fa",
+    "r31_sources/raw/53ab5960f0e0ffc87b35179581475228d15c04f76a93bd7ecb7372903980a8a3": "0aef6e75705b9c1f8fabd70c8dcd7006506457731f9d4a41dc61cb56a79099e1",
+    "r31_sources/raw/70ee1f4295dd7b1e9f419a0585916d0041ca1b456b4691ddd7ab78f4fa0df08e": "9da748c96814e3caee94bccd2e83c586074b8a2604a0b16854ca247609a7c2fe",
+    "r31_sources/raw/78e23603a55a509babce1b185b01174cc00772555e550d042e0d34cde2114723": "5cde38aa534716e068ceb2c39d2bd310ddcecec4efe943806f5fcda30402f0c6",
+    "r31_sources/raw/7a4e154d7ce13291296b42ff2d0e14917746f3944848dbe8d0bfda9a0cc0e8d6": "71a368d2da34e8bb9f34da334ffc18e5a43378a04e6342a325adb31c339eeee4",
+    "r31_sources/raw/7d0ded29f05d466b89bfd32b18b47751a94f92b3a61be63d6705df180afd08c1": "2d85dc1d07c42d948ed5526cbbe16ed4535c8f1bdc2722b9361b7f79253b59b4",
+    "r31_sources/raw/805dffd268d9409f2cc05652bb61f81a6f757db888522e0af6673d066b57dd66": "3285c3c4dd5b34b176fd1b085aec5c797d426592688d8ff602748d723ca2203c",
+    "r31_sources/raw/85d2787ba2d12ef76671cd487559c7f4a528a44219ba04742304bbc2ce487056": "70c932558dace0862f051aec065df3d66479fc0bf686a934d940959969c3ad31",
+    "r31_sources/raw/95fbc1cd4032c2e3db90873ab4ed5cc295b70a651bb2fec19ef12501bc6d7782": "0e170d835b1f1b1a8c919c0d2d416bbf40818fe1417590f4b196fb32f66d6ee1",
+    "r31_sources/raw/a8e5cc307726e7a059e879f6b6064eaede29c530baf08f9bfe4f2cddf0ddabfe": "7f4a1e867c255c6f5194d56cafb38a6e695aa24c0e54e8916dd37cb21685d0e6",
+    "r31_sources/raw/b4bf37a832f8a9f0ca5511e527ab54811c75eda9d5816e21f5ba809ad76704a3": "f4b267a1616f4355e37764c061e1bd02e27196cdd20608a694b010b5118b0237",
+    "r31_sources/raw/b7cb329fc2fb227579d3115326daa0c4b4a3fae000f8741a553193520c2188bc": "c2221d4c0d9ee46b331545c270333a15d0de5246bb3216b24c0f01999065152d",
+    "r31_sources/raw/bac4b3abe30e6d1b59dc0af9ef833f55f462f2b839cd90047721b78aa961fa21": "9152d194464d66dad1f4f1ffdf8bff66728bab040de3aa2682e516141add527a",
+    "r31_sources/raw/dbcc9a52e2e4f368d68d8c0c7e44b18eb0aab531c7687ae82c1924fa8fa4c527": "31441487cc7ee8b99150eeb9e1a2d0272e397d9f749916bba9217c301124bb3d",
+    "r31_sources/raw/dc5a3a2e8ee3ef81d2df11742280ad59bbff8cfd11580c8ea76e8c286e66873a": "6a4fb13920bf5ec46a25cf150a0fdbbdb70246db6b96ec4d103b9facba6d3b1d",
+    "r31_units_sources/manifest.json": "90565dfae01592152d10d390a926f78c4052b4083e64c6ff95f670145feab88a",
+    "r31_units_sources/raw/0a76bf571d0c63f4de0862c86abecfb0c9d3e862767341bba1eb0610eace762d": "f34cfae06882e675370f7f608d5f87f84dc8f6a97714870f467ea4c9467e422c",
+    "r31_units_sources/raw/25937e3ae0282ad52373513e934729ea6edbb3edc62dad2534dad4ac9fa57a1c": "cd8a52e1193c63eefb0a4a41710c164081c2f42150e97ab0ba389cce7a1847f3",
+    "r31_units_sources/raw/3d5ac1c3b4db318a50188ebad8426fd0e8ac1d28b8d9bedec49a0c6ffe0ec9ad": "46fc6125fc3b653c8ade74155a753b2bab350b2f2de3d34664849c29d779f49e",
+    "r31_units_sources/raw/4803d46f5002c51a38e17fd0cd3689ac7a5c629abaec43faa42c4d1931954381": "c9c5fbf1d06b233b3345c61f7e8ed9666398088c56b225c451f22ab1a919c6e1",
+    "r31_units_sources/raw/91bd5d9c07e853f6b8a1981e433d90b138b4b37817175472b356c91a19773a09": "eaf02712827ef31594a4bbe28e25d856a83299bab26129fcc63ad49cc9120e1a",
+    "r31_units_sources/raw/a91434d74d3c8db36172a6021f70c129cfa84eac386e38d4cb0c247bb520c3da": "9971b951b3e6c1855fb6189e569a141689292b6712de312f04c6f25686be0482",
+    "r31_units_sources/raw/f1de45158f06fd8966e5b517831c193e0b7de5eee07ec9a56f7fa8e9bcf68d3c": "c8a059f3f0bd47a40b91eba7149f838a2c1ef3f4e8dabab3112a43bca7243966"
+  },
+  "native_unit_versions": [
+    {
+      "native_observation_interval": "1984-01-04 to 2019-08-14",
+      "native_release_interval": "2004-09-02 to 2019-08-20",
+      "observation_end": "2019-08-14",
+      "observation_start": "1984-01-04",
+      "release_end": "2019-08-20",
+      "release_start": "2004-09-02",
+      "units": "Billions of Dollars"
+    },
+    {
+      "native_observation_interval": "1984-01-04 to 2020-06-03",
+      "native_release_interval": "2019-08-21 to 2020-06-10",
+      "observation_end": "2020-06-03",
+      "observation_start": "1984-01-04",
+      "release_end": "2020-06-10",
+      "release_start": "2019-08-21",
+      "units": "Billions of U.S. Dollars"
+    },
+    {
+      "native_observation_interval": "1984-01-04 to 2025-11-05",
+      "native_release_interval": "2020-06-11 to 2025-11-12",
+      "observation_end": "2025-11-05",
+      "observation_start": "1984-01-04",
+      "release_end": "2025-11-12",
+      "release_start": "2020-06-11",
+      "units": "Billions of U.S. Dollars"
+    },
+    {
+      "native_observation_interval": "2002-12-18 to 2026-09-30",
+      "native_release_interval": "2025-11-13 to 2026-10-01",
+      "observation_end": "2026-09-30",
+      "observation_start": "2002-12-18",
+      "release_end": "2026-10-01",
+      "release_start": "2025-11-13",
+      "units": "Millions of U.S. Dollars"
+    }
+  ],
+  "native_version_aware_counterparts": [
+    {
+      "archive_normalized_million_usd": "1394122.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "1394.122",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2020-06-03",
+        "native_release_interval": "2019-08-21 to 2020-06-10",
+        "observation_end": "2020-06-03",
+        "observation_start": "1984-01-04",
+        "release_end": "2020-06-10",
+        "release_start": "2019-08-21",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2019-09-18",
+      "publisher_native_million_usd": 1394122,
+      "release": "2019-09-19",
+      "vintage": "2019-09-21"
+    },
+    {
+      "archive_normalized_million_usd": "1516045.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "1516.045",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2020-06-03",
+        "native_release_interval": "2019-08-21 to 2020-06-10",
+        "observation_end": "2020-06-03",
+        "observation_start": "1984-01-04",
+        "release_end": "2020-06-10",
+        "release_start": "2019-08-21",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2019-08-21",
+      "publisher_native_million_usd": 1516045,
+      "release": "2019-08-22",
+      "vintage": "2019-09-21"
+    },
+    {
+      "archive_normalized_million_usd": "3163008.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "3163.008",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2025-11-05",
+        "native_release_interval": "2020-06-11 to 2025-11-12",
+        "observation_end": "2025-11-05",
+        "observation_start": "1984-01-04",
+        "release_end": "2025-11-12",
+        "release_start": "2020-06-11",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2021-01-27",
+      "publisher_native_million_usd": 3163008,
+      "release": "2021-01-28",
+      "vintage": "2021-01-30"
+    },
+    {
+      "archive_normalized_million_usd": "3122156.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "3122.156",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2025-11-05",
+        "native_release_interval": "2020-06-11 to 2025-11-12",
+        "observation_end": "2025-11-05",
+        "observation_start": "1984-01-04",
+        "release_end": "2025-11-12",
+        "release_start": "2020-06-11",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2020-12-30",
+      "publisher_native_million_usd": 3122156,
+      "release": "2020-12-31",
+      "vintage": "2021-01-30"
+    },
+    {
+      "archive_normalized_million_usd": "3446459.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "3446.459",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2025-11-05",
+        "native_release_interval": "2020-06-11 to 2025-11-12",
+        "observation_end": "2025-11-05",
+        "observation_start": "1984-01-04",
+        "release_end": "2025-11-12",
+        "release_start": "2020-06-11",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2023-12-27",
+      "publisher_native_million_usd": 3446459,
+      "release": "2023-12-28",
+      "vintage": "2023-12-30"
+    },
+    {
+      "archive_normalized_million_usd": "3441581.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "3441.581",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2025-11-05",
+        "native_release_interval": "2020-06-11 to 2025-11-12",
+        "observation_end": "2025-11-05",
+        "observation_start": "1984-01-04",
+        "release_end": "2025-11-12",
+        "release_start": "2020-06-11",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2023-11-29",
+      "publisher_native_million_usd": 3441581,
+      "release": "2023-11-30",
+      "vintage": "2023-12-30"
+    },
+    {
+      "archive_normalized_million_usd": "2924936",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "2924936",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1,
+        "native_observation_interval": "2002-12-18 to 2026-09-30",
+        "native_release_interval": "2025-11-13 to 2026-10-01",
+        "observation_end": "2026-09-30",
+        "observation_start": "2002-12-18",
+        "release_end": "2026-10-01",
+        "release_start": "2025-11-13",
+        "units": "Millions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2026-08-26",
+      "publisher_native_million_usd": 2924936,
+      "release": "2026-08-27",
+      "vintage": "2026-08-29"
+    },
+    {
+      "archive_normalized_million_usd": "2984570",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "2984570",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1,
+        "native_observation_interval": "2002-12-18 to 2026-09-30",
+        "native_release_interval": "2025-11-13 to 2026-10-01",
+        "observation_end": "2026-09-30",
+        "observation_start": "2002-12-18",
+        "release_end": "2026-10-01",
+        "release_start": "2025-11-13",
+        "units": "Millions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2026-07-29",
+      "publisher_native_million_usd": 2984570,
+      "release": "2026-07-30",
+      "vintage": "2026-08-29"
+    },
+    {
+      "archive_normalized_million_usd": "3227674.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "3227.674",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2025-11-05",
+        "native_release_interval": "2020-06-11 to 2025-11-12",
+        "observation_end": "2025-11-05",
+        "observation_start": "1984-01-04",
+        "release_end": "2025-11-12",
+        "release_start": "2020-06-11",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2024-11-27",
+      "publisher_native_million_usd": 3227674,
+      "release": "2024-11-29",
+      "vintage": "2024-11-30"
+    },
+    {
+      "archive_normalized_million_usd": "3236958.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "3236.958",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2025-11-05",
+        "native_release_interval": "2020-06-11 to 2025-11-12",
+        "observation_end": "2025-11-05",
+        "observation_start": "1984-01-04",
+        "release_end": "2025-11-12",
+        "release_start": "2020-06-11",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2024-10-30",
+      "publisher_native_million_usd": 3236958,
+      "release": "2024-10-31",
+      "vintage": "2024-11-30"
+    },
+    {
+      "archive_normalized_million_usd": "2862569.000",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "2862.569",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1000,
+        "native_observation_interval": "1984-01-04 to 2025-11-05",
+        "native_release_interval": "2020-06-11 to 2025-11-12",
+        "observation_end": "2025-11-05",
+        "observation_start": "1984-01-04",
+        "release_end": "2025-11-12",
+        "release_start": "2020-06-11",
+        "units": "Billions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2025-11-05",
+      "publisher_native_million_usd": 2862569,
+      "release": "2025-11-06",
+      "vintage": "2025-11-08"
+    },
+    {
+      "archive_normalized_million_usd": "2855030",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "2855030",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1,
+        "native_observation_interval": "2002-12-18 to 2026-09-30",
+        "native_release_interval": "2025-11-13 to 2026-10-01",
+        "observation_end": "2026-09-30",
+        "observation_start": "2002-12-18",
+        "release_end": "2026-10-01",
+        "release_start": "2025-11-13",
+        "units": "Millions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2025-11-12",
+      "publisher_native_million_usd": 2855030,
+      "release": "2025-11-13",
+      "vintage": "2025-11-15"
+    },
+    {
+      "archive_normalized_million_usd": "2862569",
+      "literal_native_value_unchanged": true,
+      "native_archive_text": "2862569",
+      "native_version_units": {
+        "exact_multiplier_to_million_usd": 1,
+        "native_observation_interval": "2002-12-18 to 2026-09-30",
+        "native_release_interval": "2025-11-13 to 2026-10-01",
+        "observation_end": "2026-09-30",
+        "observation_start": "2002-12-18",
+        "release_end": "2026-10-01",
+        "release_start": "2025-11-13",
+        "units": "Millions of U.S. Dollars"
+      },
+      "normalized_native_value_exact": true,
+      "not_raw_serialization_identity": true,
+      "observation_date": "2025-11-05",
+      "publisher_native_million_usd": 2862569,
+      "release": "2025-11-06",
+      "vintage": "2025-11-15"
+    }
+  ],
+  "no_alpha_rule_cohort_weights_or_performance": true,
+  "original_failed_same_unit_contract_retained": true,
+  "original_native_responses": 20,
+  "original_source_plan_commit": "f93dd94",
+  "publication_schedule_not_original_first_receipt_or_immutable_history_certificate": true,
+  "source_only": true,
+  "unit_plan_commit": "cc1af5b",
+  "version_aware_forensic_source_gate": true
+}

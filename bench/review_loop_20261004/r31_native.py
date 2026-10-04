@@ -82,7 +82,8 @@ def parse_publisher(body, release):
     parser.feed(body.decode('utf-8'))
     whole = ''.join(parser.text)
     long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
-    if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+    native_date_variants = (long_day,day.strftime('%B %d, %Y'))
+    if not any(compact(d) in compact(whole) for d in native_date_variants) or 'Factors Affecting Reserve Balances' not in whole:
         raise ValueError('Original publisher release identity differs')
     expected = day-timedelta(days=day.weekday()-2)
     if parser.pres:

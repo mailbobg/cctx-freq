@@ -1,0 +1,23 @@
+{
+  "all_original_payloads_bodies_versions_unchanged": true,
+  "artifact_sha256": {
+    "r31_initial_source_observation.json": "d5b5fa4a089f9e582ff584538f1d9822890804b85567887b6f61376204c14a4a",
+    "r31_version_aware_source_audit.json": "cb46550121edbb3813a18a38b3e4c83758e8182724392ff735357fe8117f96e4"
+  },
+  "artifacts_byte_identical": 2,
+  "http_disabled": true,
+  "native_input_hashes_checked": 30,
+  "no_alpha_rule_weights_cohort_or_performance": true,
+  "original_unverified_same_unit_failure_retained": true,
+  "source_code_sha256": {
+    "R31_SOURCE_PLAN.md": "0f1d00bb40441931d90d26f4ecd36066f9492ac1cbb7b2b1e825c40eeb21f7bb",
+    "R31_UNIT_PLAN.md": "24cb9ffe483d597ae6a2bc5797347661ea29ffa7c0270e57f49343d37c96f83c",
+    "r31_native.py": "6256601e4720b1c2f0fb1a1d3399d95189ecbe6fc0a4bed7f35f352c77c0b880",
+    "r31_replay.py": "29875bfcd4e0556815de1d8447595a2f09fd55b0e79ea45892d581e562f709b4",
+    "r31_sources.py": "c9fefa189ce8e705fda8b34640fd7ccabd3ffa7d443c2f1499a638c51ba05bad",
+    "r31_units.py": "edbb4ad295bdf27363a9393965bc7c5652ff51976c28fc86caa576a467b7704c",
+    "r31_units_sources.py": "8027d5d18896a692a258f81a957057f3c87f8ad4c215b7bd52194aa483d3ec51",
+    "test_r31_native.py": "27be2b3b6826e4b09bf11b6187058ad77b15e12624f2e85ed2b577920b63f0ca",
+    "test_r31_units.py": "d730362da1de116b3daef473e9921250ecd487977bb297858f99749044ecd544"
+  }
+}

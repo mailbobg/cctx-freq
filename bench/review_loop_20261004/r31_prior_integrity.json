@@ -1,0 +1,9 @@
+{
+  "all_prior_hashes_unchanged_before_ledger_updates": true,
+  "prior_registered_outputs": 3919,
+  "prior_registered_sources": 203,
+  "prior_registry_sha256": "784e31938b2cc320db6f781d09d9857a7f6447618b8e1bb0e7789d2b8a0c10b7",
+  "prior_root_sources": 1,
+  "prior_selection_rows": 160,
+  "prior_selection_sha256": "b945981a02f65018fd3009931a548c705b70249304fd41855c49a95a99145801"
+}

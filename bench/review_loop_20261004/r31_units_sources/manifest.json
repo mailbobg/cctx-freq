@@ -1,0 +1,109 @@
+{
+  "no_alpha_rule_cohort_weights_or_performance": true,
+  "source_only": true,
+  "sources": {
+    "archive_2025-11-08": {
+      "bytes": 154,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=WRESBAL&vintage_date=2025-11-08&cosd=2025-09-28&coed=2025-11-08",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 17:31:06 GMT",
+        "Last-Modified": "Thu, 06 Nov 2025 21:34:56 GMT"
+      },
+      "path": "raw/a91434d74d3c8db36172a6021f70c129cfa84eac386e38d4cb0c247bb520c3da",
+      "requested_utc": "2026-10-04T17:31:05.515394+00:00",
+      "retrieved_utc": "2026-10-04T17:31:06.247937+00:00",
+      "sha256": "9971b951b3e6c1855fb6189e569a141689292b6712de312f04c6f25686be0482",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=WRESBAL&vintage_date=2025-11-08&cosd=2025-09-28&coed=2025-11-08"
+    },
+    "archive_2025-11-15": {
+      "bytes": 148,
+      "final_url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=WRESBAL&vintage_date=2025-11-15&cosd=2025-10-05&coed=2025-11-15",
+      "headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 17:31:07 GMT",
+        "Last-Modified": "Thu, 20 Nov 2025 20:23:54 GMT"
+      },
+      "path": "raw/0a76bf571d0c63f4de0862c86abecfb0c9d3e862767341bba1eb0610eace762d",
+      "requested_utc": "2026-10-04T17:31:07.184169+00:00",
+      "retrieved_utc": "2026-10-04T17:31:07.777680+00:00",
+      "sha256": "f34cfae06882e675370f7f608d5f87f84dc8f6a97714870f467ea4c9467e422c",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=WRESBAL&vintage_date=2025-11-15&cosd=2025-10-05&coed=2025-11-15"
+    },
+    "publisher_2025-11-06": {
+      "bytes": 706666,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20251106/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:31:06 GMT",
+        "Last-Modified": "Thu, 06 Nov 2025 21:30:09 GMT"
+      },
+      "path": "raw/f1de45158f06fd8966e5b517831c193e0b7de5eee07ec9a56f7fa8e9bcf68d3c",
+      "requested_utc": "2026-10-04T17:31:04.787265+00:00",
+      "retrieved_utc": "2026-10-04T17:31:06.865451+00:00",
+      "sha256": "c8a059f3f0bd47a40b91eba7149f838a2c1ef3f4e8dabab3112a43bca7243966",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20251106/"
+    },
+    "publisher_2025-11-13": {
+      "bytes": 706371,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20251113/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:31:07 GMT",
+        "Last-Modified": "Thu, 13 Nov 2025 21:30:03 GMT"
+      },
+      "path": "raw/25937e3ae0282ad52373513e934729ea6edbb3edc62dad2534dad4ac9fa57a1c",
+      "requested_utc": "2026-10-04T17:31:06.865992+00:00",
+      "retrieved_utc": "2026-10-04T17:31:07.702404+00:00",
+      "sha256": "cd8a52e1193c63eefb0a4a41710c164081c2f42150e97ab0ba389cce7a1847f3",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20251113/"
+    },
+    "release_metadata_2025-11-06": {
+      "bytes": 272877,
+      "final_url": "https://alfred.stlouisfed.org/release?rid=20&rd=2025-11-06&ob=pv&od=desc&t=balance",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 17:31:05 GMT"
+      },
+      "path": "raw/3d5ac1c3b4db318a50188ebad8426fd0e8ac1d28b8d9bedec49a0c6ffe0ec9ad",
+      "requested_utc": "2026-10-04T17:31:02.976917+00:00",
+      "retrieved_utc": "2026-10-04T17:31:05.515059+00:00",
+      "sha256": "46fc6125fc3b653c8ade74155a753b2bab350b2f2de3d34664849c29d779f49e",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/release?rid=20&rd=2025-11-06&ob=pv&od=desc&t=balance"
+    },
+    "release_metadata_2025-11-13": {
+      "bytes": 272804,
+      "final_url": "https://alfred.stlouisfed.org/release?rid=20&rd=2025-11-13&ob=pv&od=desc&t=balance",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 17:31:07 GMT"
+      },
+      "path": "raw/91bd5d9c07e853f6b8a1981e433d90b138b4b37817175472b356c91a19773a09",
+      "requested_utc": "2026-10-04T17:31:06.248042+00:00",
+      "retrieved_utc": "2026-10-04T17:31:07.183992+00:00",
+      "sha256": "eaf02712827ef31594a4bbe28e25d856a83299bab26129fcc63ad49cc9120e1a",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/release?rid=20&rd=2025-11-13&ob=pv&od=desc&t=balance"
+    },
+    "unit_versions": {
+      "bytes": 67406,
+      "final_url": "https://alfred.stlouisfed.org/category?cid=123&ob=pv&od=desc&t=balance",
+      "headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 17:31:04 GMT"
+      },
+      "path": "raw/4803d46f5002c51a38e17fd0cd3689ac7a5c629abaec43faa42c4d1931954381",
+      "requested_utc": "2026-10-04T17:31:02.976537+00:00",
+      "retrieved_utc": "2026-10-04T17:31:04.787195+00:00",
+      "sha256": "c9c5fbf1d06b233b3345c61f7e8ed9666398088c56b225c451f22ab1a919c6e1",
+      "status": 200,
+      "url": "https://alfred.stlouisfed.org/category?cid=123&ob=pv&od=desc&t=balance"
+    }
+  },
+  "unit_plan_commit": "cc1af5b"
+}

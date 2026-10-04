@@ -1,0 +1,504 @@
+FFFFFFFFFFFFF.F                                                          [100%]
+=================================== FAILURES ===================================
+__________ test_publisher_unit_versions_are_native_release_intervals ___________
+
+    def test_publisher_unit_versions_are_native_release_intervals():
+>       rows=versions()
+             ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_dated_metadata_independently_confirms_units_and_last_native_value[2025-11-06-Billions of U.S. Dollars-2862.569] _
+
+release = '2025-11-06', units = 'Billions of U.S. Dollars', last = '2862.569'
+
+    @pytest.mark.parametrize('release,units,last', [('2025-11-06','Billions of U.S. Dollars','2862.569'),
+                                                 ('2025-11-13','Millions of U.S. Dollars','2855030.0')])
+    def test_dated_metadata_independently_confirms_units_and_last_native_value(release,units,last):
+>       parsed=parse_release_meta(body(DATA,'release_metadata_'+release),release)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/r31_units.py:73: in parse_release_meta
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_dated_metadata_independently_confirms_units_and_last_native_value[2025-11-13-Millions of U.S. Dollars-2855030.0] _
+
+release = '2025-11-13', units = 'Millions of U.S. Dollars', last = '2855030.0'
+
+    @pytest.mark.parametrize('release,units,last', [('2025-11-06','Billions of U.S. Dollars','2862.569'),
+                                                 ('2025-11-13','Millions of U.S. Dollars','2855030.0')])
+    def test_dated_metadata_independently_confirms_units_and_last_native_value(release,units,last):
+>       parsed=parse_release_meta(body(DATA,'release_metadata_'+release),release)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/r31_units.py:73: in parse_release_meta
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_same_old_observation_in_two_vintages_does_not_create_thousandfold_gain __
+
+    def test_same_old_observation_in_two_vintages_does_not_create_thousandfold_gain():
+>       publisher=parse_publisher(body(DATA,'publisher_2025-11-06'),'2025-11-06')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\r\n<!DOCTYPE html>\r\n<html lang="en" class="no-js">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta http-...(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n'
+release = '2025-11-06'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+>           raise ValueError('Original publisher release identity differs')
+E           ValueError: Original publisher release identity differs
+
+user_data/bench/review_loop_20261004/r31_native.py:86: ValueError
+_ test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2019-09-23-2019-09-19-2019-08-22] _
+
+monday = '2019-09-23', current = '2019-09-19', prior = '2019-08-22'
+
+    @pytest.mark.parametrize('monday,current,prior', [
+        ('2019-09-23','2019-09-19','2019-08-22'),('2021-02-01','2021-01-28','2020-12-31'),
+        ('2024-01-01','2023-12-28','2023-11-30'),('2026-08-31','2026-08-27','2026-07-30'),
+        ('2024-12-02','2024-11-29','2024-10-31')])
+    def test_all_original_forensic_counterparts_match_only_with_native_vintage_units(monday,current,prior):
+        from datetime import date,timedelta
+        vintage=(date.fromisoformat(monday)-timedelta(days=2)).isoformat()
+        archive=parse_archive(body(ORIGINAL,'archive_'+vintage),vintage)
+        for release in (current,prior):
+>           result=reconcile_native(parse_publisher(body(ORIGINAL,'publisher_'+release),release),archive,versions())
+                                                                                                         ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2021-02-01-2021-01-28-2020-12-31] _
+
+monday = '2021-02-01', current = '2021-01-28', prior = '2020-12-31'
+
+    @pytest.mark.parametrize('monday,current,prior', [
+        ('2019-09-23','2019-09-19','2019-08-22'),('2021-02-01','2021-01-28','2020-12-31'),
+        ('2024-01-01','2023-12-28','2023-11-30'),('2026-08-31','2026-08-27','2026-07-30'),
+        ('2024-12-02','2024-11-29','2024-10-31')])
+    def test_all_original_forensic_counterparts_match_only_with_native_vintage_units(monday,current,prior):
+        from datetime import date,timedelta
+        vintage=(date.fromisoformat(monday)-timedelta(days=2)).isoformat()
+        archive=parse_archive(body(ORIGINAL,'archive_'+vintage),vintage)
+        for release in (current,prior):
+>           result=reconcile_native(parse_publisher(body(ORIGINAL,'publisher_'+release),release),archive,versions())
+                                                                                                         ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2024-01-01-2023-12-28-2023-11-30] _
+
+monday = '2024-01-01', current = '2023-12-28', prior = '2023-11-30'
+
+    @pytest.mark.parametrize('monday,current,prior', [
+        ('2019-09-23','2019-09-19','2019-08-22'),('2021-02-01','2021-01-28','2020-12-31'),
+        ('2024-01-01','2023-12-28','2023-11-30'),('2026-08-31','2026-08-27','2026-07-30'),
+        ('2024-12-02','2024-11-29','2024-10-31')])
+    def test_all_original_forensic_counterparts_match_only_with_native_vintage_units(monday,current,prior):
+        from datetime import date,timedelta
+        vintage=(date.fromisoformat(monday)-timedelta(days=2)).isoformat()
+        archive=parse_archive(body(ORIGINAL,'archive_'+vintage),vintage)
+        for release in (current,prior):
+>           result=reconcile_native(parse_publisher(body(ORIGINAL,'publisher_'+release),release),archive,versions())
+                                                                                                         ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2026-08-31-2026-08-27-2026-07-30] _
+
+monday = '2026-08-31', current = '2026-08-27', prior = '2026-07-30'
+
+    @pytest.mark.parametrize('monday,current,prior', [
+        ('2019-09-23','2019-09-19','2019-08-22'),('2021-02-01','2021-01-28','2020-12-31'),
+        ('2024-01-01','2023-12-28','2023-11-30'),('2026-08-31','2026-08-27','2026-07-30'),
+        ('2024-12-02','2024-11-29','2024-10-31')])
+    def test_all_original_forensic_counterparts_match_only_with_native_vintage_units(monday,current,prior):
+        from datetime import date,timedelta
+        vintage=(date.fromisoformat(monday)-timedelta(days=2)).isoformat()
+        archive=parse_archive(body(ORIGINAL,'archive_'+vintage),vintage)
+        for release in (current,prior):
+>           result=reconcile_native(parse_publisher(body(ORIGINAL,'publisher_'+release),release),archive,versions())
+                                                                                                         ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2024-12-02-2024-11-29-2024-10-31] _
+
+monday = '2024-12-02', current = '2024-11-29', prior = '2024-10-31'
+
+    @pytest.mark.parametrize('monday,current,prior', [
+        ('2019-09-23','2019-09-19','2019-08-22'),('2021-02-01','2021-01-28','2020-12-31'),
+        ('2024-01-01','2023-12-28','2023-11-30'),('2026-08-31','2026-08-27','2026-07-30'),
+        ('2024-12-02','2024-11-29','2024-10-31')])
+    def test_all_original_forensic_counterparts_match_only_with_native_vintage_units(monday,current,prior):
+        from datetime import date,timedelta
+        vintage=(date.fromisoformat(monday)-timedelta(days=2)).isoformat()
+        archive=parse_archive(body(ORIGINAL,'archive_'+vintage),vintage)
+        for release in (current,prior):
+>           result=reconcile_native(parse_publisher(body(ORIGINAL,'publisher_'+release),release),archive,versions())
+                                                                                                         ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:53: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+______ test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[overlap] ______
+
+change = 'overlap'
+
+    @pytest.mark.parametrize('change',['overlap','unknown_unit','gap','outside_current_metadata'])
+    def test_unverified_or_ambiguous_unit_scope_cannot_be_guessed(change):
+>       rows=copy.deepcopy(versions()); vintage='2025-11-08'
+                           ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+___ test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[unknown_unit] ____
+
+change = 'unknown_unit'
+
+    @pytest.mark.parametrize('change',['overlap','unknown_unit','gap','outside_current_metadata'])
+    def test_unverified_or_ambiguous_unit_scope_cannot_be_guessed(change):
+>       rows=copy.deepcopy(versions()); vintage='2025-11-08'
+                           ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+________ test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[gap] ________
+
+change = 'gap'
+
+    @pytest.mark.parametrize('change',['overlap','unknown_unit','gap','outside_current_metadata'])
+    def test_unverified_or_ambiguous_unit_scope_cannot_be_guessed(change):
+>       rows=copy.deepcopy(versions()); vintage='2025-11-08'
+                           ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_ test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[outside_current_metadata] _
+
+change = 'outside_current_metadata'
+
+    @pytest.mark.parametrize('change',['overlap','unknown_unit','gap','outside_current_metadata'])
+    def test_unverified_or_ambiguous_unit_scope_cannot_be_guessed(change):
+>       rows=copy.deepcopy(versions()); vintage='2025-11-08'
+                           ^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+user_data/bench/review_loop_20261004/test_r31_units.py:18: in versions
+    def versions():return parse_versions(body(DATA,'unit_versions'))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+user_data/bench/review_loop_20261004/r31_units.py:48: in parse_versions
+    whole,f=isolate(body)
+            ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta char...e="text/javascript"  src="/B8qmsiIHJm4rv/8A/ljhukHmjI7jg/3rX7wXzmzfhDwL/Q3xo/fBxsX/EZ1ZGk"></script></body>\n</html>\n'
+
+    def isolate(body):
+        whole=body.decode('utf-8')
+        blocks=re.split(r'<tr\s+class="series-pager-title">\s*',whole)
+        selected=[b for b in blocks if 'href="/series?seid=WRESBAL"' in b]
+        if len(selected)!=1:raise ValueError('Native WRESBAL metadata identity/scope differs')
+        block=selected[0]
+        anchor=re.findall(r'<a href="/series\?seid=WRESBAL">(.*?)</a>',block,re.S)
+        if len(anchor)!=1 or compact(text(anchor[0]))!=compact('Liabilities and Capital: Other Factors Draining Reserve Balances: '+LABEL+': Week Average'):
+>           raise ValueError('Native reserve average series label differs')
+E           ValueError: Native reserve average series label differs
+
+user_data/bench/review_loop_20261004/r31_units.py:33: ValueError
+_____ test_unit_evidence_does_not_hide_actual_value_difference_or_missing ______
+
+    def test_unit_evidence_does_not_hide_actual_value_difference_or_missing():
+>       publisher=parse_publisher(body(DATA,'publisher_2025-11-06'),'2025-11-06')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+user_data/bench/review_loop_20261004/test_r31_units.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+body = b'\r\n<!DOCTYPE html>\r\n<html lang="en" class="no-js">\r\n  <head>\r\n    <meta charset="utf-8" />\r\n    <meta http-...(b){e(b);\'loading\'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>\r\n</html>\r\n'
+release = '2025-11-06'
+
+    def parse_publisher(body, release):
+        day = date.fromisoformat(release)
+        if day.isoformat() != release or day.weekday() not in (3,4):
+            raise ValueError('Unreviewed publisher release calendar identity')
+        parser = NativeHTML()
+        parser.feed(body.decode('utf-8'))
+        whole = ''.join(parser.text)
+        long_day = day.strftime('%B')+' '+str(day.day)+', '+str(day.year)
+        if compact(long_day) not in compact(whole) or 'Factors Affecting Reserve Balances' not in whole:
+>           raise ValueError('Original publisher release identity differs')
+E           ValueError: Original publisher release identity differs
+
+user_data/bench/review_loop_20261004/r31_native.py:86: ValueError
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_publisher_unit_versions_are_native_release_intervals
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_dated_metadata_independently_confirms_units_and_last_native_value[2025-11-06-Billions of U.S. Dollars-2862.569]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_dated_metadata_independently_confirms_units_and_last_native_value[2025-11-13-Millions of U.S. Dollars-2855030.0]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_same_old_observation_in_two_vintages_does_not_create_thousandfold_gain
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2019-09-23-2019-09-19-2019-08-22]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2021-02-01-2021-01-28-2020-12-31]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2024-01-01-2023-12-28-2023-11-30]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2026-08-31-2026-08-27-2026-07-30]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_all_original_forensic_counterparts_match_only_with_native_vintage_units[2024-12-02-2024-11-29-2024-10-31]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[overlap]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[unknown_unit]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[gap]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_unverified_or_ambiguous_unit_scope_cannot_be_guessed[outside_current_metadata]
+FAILED user_data/bench/review_loop_20261004/test_r31_units.py::test_unit_evidence_does_not_hide_actual_value_difference_or_missing
+14 failed, 1 passed, 2 warnings in 0.36s

@@ -1637,5 +1637,20 @@
     "source_plan_commit": "a84e75d",
     "trial": "R30 native AMM reserve-state source",
     "window": "fixed_three_native_heights_source_only"
+  },
+  {
+    "adopted": false,
+    "adoption_gate": false,
+    "disposition": "Retain failed same-unit contract; native vintage metadata resolves units before economic protocol; no alpha outcome",
+    "fresh_OOS": false,
+    "initial_same_unit_contract_gate": false,
+    "initial_same_unit_counterparts_passed": 2,
+    "native_publisher_counterparts": 13,
+    "required_original_counterparts": 10,
+    "source_stage_only": true,
+    "trial": "R31 native reserve-quantity unit/source contract",
+    "unit_boundary_overlap_observations": 5,
+    "version_aware_forensic_source_gate": true,
+    "window": "five_forensic_versions_plus_native_unit_boundary_source_only"
   }
 ]
