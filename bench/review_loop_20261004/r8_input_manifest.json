@@ -1,0 +1,13 @@
+{
+  "source_inputs_sha256": {
+    "user_data/bench/review_loop_20261004/r6_data/BTCUSDT_funding.parquet": "ba8d65ba3c1f3aac64110047d488779792f6e933a389fa527e7ef3e739029d30",
+    "user_data/bench/review_loop_20261004/r6_data/ETHUSDT_funding.parquet": "a73c211834cfe9581729be067acbcbc6d3bd313bcb96dbc34e091b0e0fc56a3d",
+    "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+    "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+    "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4"
+  },
+  "price_rows": 2435,
+  "warmup": "Frozen prior cached2020 spot opens/closes;2021+ independently checksummed R7 archives",
+  "causal_price_funding_weight_prefixes": true,
+  "causal_real_held_execution_prefix": true
+}
