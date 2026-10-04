@@ -99,3 +99,17 @@ def test_negative_inventory_is_not_a_hedge_or_infinite_cash():
     px=prices(idx,dict(BTC=[100]*2,ETH=[10]*2))
     with pytest.raises(ValueError,match='negative spot'):
         marked_account(idx,px,orders(idx,[(0,'BTC','sell',1,100,0)]))
+
+
+def test_native_same_timestamp_adjustment_must_precede_its_force_exit():
+    at=int(pd.Timestamp('2024-01-01',tz='UTC').timestamp()*1000)
+    def fill(ts,side,q):return dict(order_filled_timestamp=ts,ft_order_side=side,amount=q,
+        safe_price=100,ft_is_entry=side=='buy',cost=q*100,ft_order_tag='force_exit' if side=='sell' else 'weekly_on')
+    t=dict(is_short=False,leverage=1,funding_fees=0,is_open=False,pair='BTC/USDT',fee_open=0,fee_close=0,
+        exit_reason='force_exit',orders=[fill(at,'buy',90),fill(at+86400000,'buy',10),fill(at+86400000,'sell',100)])
+    native=exported_orders(dict(starting_balance=10000,trades=[t]),0)
+    assert native.side.tolist()==['buy','buy','sell']
+    idx=pd.date_range('2024-01-01',periods=1441,freq='min',tz='UTC')
+    px=prices(idx,dict(BTC=[100]*len(idx),ETH=[10]*len(idx)))
+    risk,_=marked_account(idx,px,native)
+    assert risk['terminal_cash_USDT']==10000 and risk['terminal_units']['BTC']==0

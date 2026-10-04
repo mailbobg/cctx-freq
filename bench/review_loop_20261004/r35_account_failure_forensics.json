@@ -1,0 +1,42 @@
+{
+  "failure_evidence": [
+    {
+      "independent_sequential_state": [
+        68004.35712418577,
+        0.0,
+        -1.436
+      ],
+      "order": {
+        "asset": "ETH",
+        "cash_delta": 31825.434213258402,
+        "exit_reason": "force_exit",
+        "exported_cost_ignored": 31901.9070227416,
+        "fee_USDT": 38.2364047416,
+        "fee_rate": 0.0012,
+        "original_order": 3,
+        "original_trade": 64,
+        "price": 2645.21,
+        "quantity": 12.0458,
+        "quantity_delta": -12.0458,
+        "side": "sell",
+        "side_rank": 0,
+        "tag": "force_exit",
+        "timestamp": "2026-09-21 00:00:00+00:00"
+      },
+      "order_index": 171,
+      "projected_state": [
+        68004.35712418583,
+        0.0,
+        -1.436
+      ],
+      "timestamp": "2026-09-21 00:00:00+00:00"
+    }
+  ],
+  "independent_sequential_terminal": [
+    64201.27733831377,
+    0.0,
+    0.0
+  ],
+  "native_export_sha256": "5842c8e3e91d44574532445a31cf9cdb8feafce033579b894e518c56debdb60a",
+  "original_failure_log_sha256": "512d98bb3e42362348ffa4aed985a2d4569aeb3ea9aa11959f1c489e9e2cc182"
+}

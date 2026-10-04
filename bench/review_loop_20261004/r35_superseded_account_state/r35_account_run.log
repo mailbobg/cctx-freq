@@ -1,0 +1,13 @@
+early_RiskHoldR2b {'sampled_OPEN_CLOSE_and_fill_DD_pct': -42.50765239727742, 'conservative_OHLC_envelope_DD_pct': -42.536333561784105, 'complete_held_intraday_price_and_fill_coverage': False, 'max_daily_cash_equity_gap_USDT': 1.4551915228366852e-11}
+early_RiskHoldR2bCov10 {'sampled_OPEN_CLOSE_and_fill_DD_pct': -12.150546718644971, 'conservative_OHLC_envelope_DD_pct': -12.210573180985328, 'complete_held_intraday_price_and_fill_coverage': False, 'max_daily_cash_equity_gap_USDT': 1.8189894035458565e-12}
+Traceback (most recent call last):
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r35_account.py", line 239, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--verify',action='store_true');p.add_argument('--observed-only',action='store_true');args=p.parse_args();run(args.verify,args.observed_only)
+                                                                                                                                                         ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r35_account.py", line 198, in run
+    risk,daily=marked_account(index,window,orders,float(s['starting_balance']))
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r35_account.py", line 118, in marked_account
+    if c<-1e-6 or q.min()<-1e-10:raise ValueError('Intermediate fill borrows cash or inventory')
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Intermediate fill borrows cash or inventory

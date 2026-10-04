@@ -46,7 +46,25 @@ def exported_orders(stat, expected_fee):
     frame=pd.DataFrame(orders)
     if frame.empty:raise ValueError('No exported native fills')
     frame['side_rank']=frame.side.map({'sell':0,'buy':1})
-    return frame.sort_values(['timestamp','side_rank','original_trade','original_order'],kind='stable').reset_index(drop=True)
+    frame=frame.sort_values(['timestamp','original_trade','original_order'],kind='stable')
+    # An adjustment and force_exit can share the same daily timestamp. Its
+    # exported intra-trade buy precedes a sell that includes those new units.
+    # Prefer independent funded sells, while preserving that dependency.
+    cash=float(stat['starting_balance']);held={a:0.0 for a in ASSETS};sequence=[]
+    for at,group in frame.groupby('timestamp',sort=True):
+        queues={int(ti):list(g.index) for ti,g in group.groupby('original_trade',sort=True)}
+        while queues:
+            ready=[frame.loc[q[0]] for q in queues.values()]
+            backed_sells=[r for r in ready if r.side=='sell' and held[r.asset]+1e-10>=r.quantity]
+            funded_buys=[r for r in ready if r.side=='buy' and cash+r.cash_delta>=-1e-6]
+            candidates=backed_sells or funded_buys
+            if not candidates:raise ValueError('No inventory-backed/cash-funded order respecting native dependencies')
+            chosen=min(candidates,key=lambda r:(r.original_trade,r.original_order))
+            sequence.append(int(chosen.name));cash+=chosen.cash_delta;held[chosen.asset]+=chosen.quantity_delta
+            if abs(held[chosen.asset])<1e-10:held[chosen.asset]=0.0
+            queue=queues[int(chosen.original_trade)];queue.pop(0)
+            if not queue:del queues[int(chosen.original_trade)]
+    return frame.loc[sequence].reset_index(drop=True)
 
 
 def event_description(path_pos, minute_positions, kinds, events, index, equity):
@@ -224,6 +242,8 @@ def run(verify=False,observed_only=False):
             print(key,{k:risk[k] for k in ('sampled_OPEN_CLOSE_and_fill_DD_pct','conservative_OHLC_envelope_DD_pct','complete_held_intraday_price_and_fill_coverage','max_daily_cash_equity_gap_USDT')},flush=True)
     out=dict(protocol_commit=plan['protocol_commit'],source_plan_sha256=digest(HERE/'r35_source_plan.json'),
         native_source_audit_sha256=digest(HERE/source_name),results=results,
+        native_intra_trade_order_preserved_with_cash_and_inventory_dependencies=True,
+        cross_trade_same_timestamp_sequence_is_model_not_venue_receipt=True,
         observed_only_diagnostic=observed_only,original_full_source_contract_pass=False if observed_only else source['source_contract_complete'],
         envelope_bounds_observed_intervals_only=observed_only,
         original_defaults_not_user_confirmed=True,previous_gates_and_strategy_rules_unchanged=True,

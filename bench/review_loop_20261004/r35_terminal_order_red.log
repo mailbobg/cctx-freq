@@ -1,0 +1,33 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______ test_native_same_timestamp_adjustment_must_precede_its_force_exit _______
+
+    def test_native_same_timestamp_adjustment_must_precede_its_force_exit():
+        at=int(pd.Timestamp('2024-01-01',tz='UTC').timestamp()*1000)
+        def fill(ts,side,q):return dict(order_filled_timestamp=ts,ft_order_side=side,amount=q,
+            safe_price=100,ft_is_entry=side=='buy',cost=q*100,ft_order_tag='force_exit' if side=='sell' else 'weekly_on')
+        t=dict(is_short=False,leverage=1,funding_fees=0,is_open=False,pair='BTC/USDT',fee_open=0,fee_close=0,
+            exit_reason='force_exit',orders=[fill(at,'buy',90),fill(at+86400000,'buy',10),fill(at+86400000,'sell',100)])
+        native=exported_orders(dict(starting_balance=10000,trades=[t]),0)
+>       assert native.side.tolist()==['buy','buy','sell']
+E       AssertionError: assert ['buy', 'sell', 'buy'] == ['buy', 'buy', 'sell']
+E         
+E         At index 1 diff: 'sell' != 'buy'
+E         Use -v to get more diff
+
+bench/review_loop_20261004/test_r35_account.py:111: AssertionError
+=============================== warnings summary ===============================
+../.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+../.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED bench/review_loop_20261004/test_r35_account.py::test_native_same_timestamp_adjustment_must_precede_its_force_exit
+1 failed, 8 deselected, 2 warnings in 0.34s
