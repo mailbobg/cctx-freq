@@ -1,0 +1,258 @@
+{
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/e578aa4b16b31037a3390cd9a4bcc3b5bd1f6aa3abbac786f0435827a6b2fa20",
+    "sha256": "c16817fcf4cae27e351d7c04ed05f586fc38faedb2bb2568f0d669df80635952",
+    "bytes": 126092,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:26.772507+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/13a1dcb1a703b8a49646745ad55f294a150a9bce83573bc6c2b3b2e773f20b4d",
+    "sha256": "36d3364602d40a8592a5d99c5fcb6666d99fa719570f7e5c662e489a25802066",
+    "bytes": 122072,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:26.772567+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/338669bc61b91f8c34b5db3caea2df7aefdf53b46bead86d5902a6dd0204b820",
+    "sha256": "a355c86b67e630edfcc4710e00a5de3e35dc9184f3d1a36810c3d0590e66cff5",
+    "bytes": 125047,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:26.783257+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/210de7b6b7bdc1bc50c4ca278186861f83eb88c3c0d48c06b491256a671abf2d",
+    "sha256": "a2c5b5b28cb4de8fd2a1d926d8e26cc8c40e43b976397d3196934703e01ea446",
+    "bytes": 123933,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:26.798318+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/cbb5482101ec6513b69200d4847e2c93c7240023af636c4314f4562a31ef87b0",
+    "sha256": "4a98fb4fe6c0c0d5e19cae64ac74eeea908549959a84deda80bc59461048fa8a",
+    "bytes": 125136,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:26.916383+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/c080667be85df525bf38ce9cee808a46f31f0ef40d43edbd5e172f64ded69527",
+    "sha256": "98169fba9bcab8ccc889bd45895bae85c3f060677b84f3472b4d66b0eaf185e6",
+    "bytes": 126601,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:26.916455+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/5762e0d8f867501c29c62192f202be2e70817cfddea5c231fee9b4a780c7bb05",
+    "sha256": "eb3a6f8d36268d4c5e0019d31bdbb185425a2de6a48beef565e4fe389dabbefa",
+    "bytes": 126396,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.030014+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/6f990d2503b0cb822e32e0eb30c9a7776b9720c93ada349a37dd13867e510753",
+    "sha256": "c846f261988e3031b1fb03ecd624ef54482a7452d6b67352e71f681ea61def55",
+    "bytes": 125281,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.052847+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/f1dbf95dc866b6bdf44d75663caae644a31ed17674e49d7dbedd59fbe57f2b13",
+    "sha256": "e57b68f3f186fa9ce654fe2c5746c9e861717cfa5a40d626881b1ee4540bdd2d",
+    "bytes": 124330,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.068097+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/2471effe3515f11de86a8c24abf1fe59b5305e3be2c2a3598856c8cbfc13fbcf",
+    "sha256": "224a54099400b60c661d620055947b3b0ed799b6ba24abc4af386d0e58a0f508",
+    "bytes": 1891,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.130660+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BTCUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/d2e516309e8b5b7fa6df361f5f3c0b3812320238ca9dfb5ab56da2412dca261e",
+    "sha256": "c5c1a75e180c3fa7b16c933ac9237d58b0ac351b8aa554894631f70b308589bb",
+    "bytes": 1877,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.173230+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ETHUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/e1e4bdc14e8de39375bdb42d4907979511aad2a9752b45d42dc9183c40bf7cfc",
+    "sha256": "834d094d043401eb9c603a081fb6381fd4e277ee5b45a8af414a9d2ee44df758",
+    "bytes": 122218,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.190676+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/663e330247752cf1e78f56729d3fc3a09d1b5da13650a14dab172313383462a7",
+    "sha256": "f753e9e68201d7343fe1e6d656ebfd90ad61268d443b4437d889d2f1986b0a6c",
+    "bytes": 123873,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.191285+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/7a792839041ba237667464a9f029327bd4a1f1279457cda0f2916e2b33c01b24",
+    "sha256": "b64e950bd7589f31b300ce261f250b1e2fc611936aafaababe7d460596bcd4c7",
+    "bytes": 1870,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.297435+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=SOLUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/5dee795f14369d13fb89788e8f1aea116628a9f3b58c7cd519f03a41c170ed5b",
+    "sha256": "398eca17e53b618e812e7902766166bf2ba8aa49543be946eb0ad6633be49c19",
+    "bytes": 122480,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.457846+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/7b6e915df2bf22cff3ffeaa1ca0f38042753bf7a8dc864b25a4645f3f98797e4",
+    "sha256": "6002488a45cc40ce3cc1a78895e8cd1d63d955a30e93612982d5c8f4cb9359d3",
+    "bytes": 122089,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.548003+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/01f8f1806c1ec9f52dacf2e3db90a46ab491a683f5a2acb8e24d84caeda6ba1f",
+    "sha256": "af818f99752c59c073ec6c4ef73c76b0eabd97d8859882462a0beebdd37e6be3",
+    "bytes": 124274,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.562853+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/e2156dfb166ad7857144f63cdfc67f7862470f10f973d376680adda1debc3f64",
+    "sha256": "b89aedb6311998e347df883dae93458f9cd843fcb2d42a7ec04c11a716ae6668",
+    "bytes": 1836,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.564457+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=XRPUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/f77b916ccabfc89efcb2ee6cd828e228aa1614b171710f41977e1396d9f27897",
+    "sha256": "c8f1966d590c3996f95417c9c64ab61e3f55139c5487a194534f2747e59cafbf",
+    "bytes": 123097,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.607003+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/98378aad4683cd3e8043a0e104a9f7edc19796e570c11fe17f5d63cc4aafb661",
+    "sha256": "2efab5e603a525a7e77c4888e600abddfc21d678ec6c1236c573ca8c83114687",
+    "bytes": 122196,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.677925+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/ee0a80daaabdf20a6c122ed17702624b5ab3844b14ee70a7140011b6016dffe7",
+    "sha256": "d4a69eb8185f05a4a751f242a41068986511559fe75552272283c9e143e727e4",
+    "bytes": 124187,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.684521+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/b1701a18e5620d6073e86faccf2ed550551d1cec41ea8c4b845ad1ec76772ce5",
+    "sha256": "795de1eca66b0edb1a269b2635f12eabbe68d5ef32aefc248ca2c0ff49a9a0ac",
+    "bytes": 123187,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.728171+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/f75d3378edc9e26efdfa434f24de362c600008d31ae06e72b16510705f0c0ac5",
+    "sha256": "85358e297cf39fe5a14140f6b2eb88a3f42809b1bc4b19c47798dff3c0f720af",
+    "bytes": 122376,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.798904+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/b4ce9144891127ea90aa0715b16902ec80fd2ab134a1658cdfbb92e95824ca28",
+    "sha256": "bda0e8cede4bbbdeaace597d92d6c23edbc95dd5e07d60cf53cef9db7531ab39",
+    "bytes": 124150,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.822599+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/d40afa060d3ee828ac61a5fc7912ad4c56a236fd02beaecb02d95da36de5a2f0",
+    "sha256": "71165a4e86fd68441e0d5f51ef3f020436a685ef3652c662ed87530bcb8c6840",
+    "bytes": 123358,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.844453+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/268d008e666a222969ce91cac9deb5ddbf37e9c924709dd2120e9161d142f460",
+    "sha256": "cf080f6dbb7725873ab3bb73e1ed147387e0490fa11e2acba5b7d7e0ec601e3e",
+    "bytes": 1836,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.963226+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=ADAUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/d7a24a0dd1bbe83ddc8aa8a403a2cef56a572d2ccd81fae38cf5d2a1fb1a7788",
+    "sha256": "17c83f020df1f1e2d1cb19fd26d0cf980dec7abe7decdd38689c620ed70a4705",
+    "bytes": 1861,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.963529+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=BNBUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000": {
+    "path": "raw/2f41d34c95161f89d34d26ff6c17bd962fc5d7df557aefa12152e6b4bd2a9c55",
+    "sha256": "b3d1670324e6fc5efc5dd6272bad715167e2be6c623e01a11db554eace2585f6",
+    "bytes": 124230,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.963890+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1701388800000&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/d5401d64e79097ce04ae08c45f35fdf5e09fdd33e3f59fbd1c05a7b066608406",
+    "sha256": "245288b42477add64feccc4f161b617c616d670779d0e6d0931666d3c60876e5",
+    "bytes": 1846,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:27.979929+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=DOGEUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/a26cdb3de8f0b855aed18712539be97e98a05fc3c9edbcc1df1e96d93ccf6fb7",
+    "sha256": "0eb61cdb78ca2d3d89c70bbffb9d52e71964e859962199cb2907bcece3287033",
+    "bytes": 124281,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:28.174362+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1730160000001&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000": {
+    "path": "raw/fb469e92cb28c55045cb7bdf9dbf763d64eb6a3197f667d0c6b4c3a95b069727",
+    "sha256": "e02a6e97f60d6cb68d41be8375465518ed593c00f8df38e0651e2fcfd4dadebc",
+    "bytes": 123845,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:28.338418+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1758960000011&endTime=1788220799999&limit=1000"
+  },
+  "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000": {
+    "path": "raw/d828571420ac370701f959841e26dfcdeb034405227083560cca42a407cd16d8",
+    "sha256": "ec358f0a87cf78a9abe632f5ba903861bad90bd4b616d244cc807d56298c7d2c",
+    "bytes": 1850,
+    "status": 200,
+    "retrieved_utc": "2026-10-04T12:13:28.486497+00:00",
+    "url": "https://fapi.binance.com/fapi/v1/fundingRate?symbol=AVAXUSDT&startTime=1787760000001&endTime=1788220799999&limit=1000"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "source_only": true,
+  "legacy_csv_files": 264,
+  "retained_api_pages": 32,
+  "coverage": {
+    "BTCUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    },
+    "ETHUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    },
+    "SOLUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    },
+    "XRPUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    },
+    "BNBUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    },
+    "ADAUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    },
+    "DOGEUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    },
+    "AVAXUSDT": {
+      "rows": 3015,
+      "first_slot": "2023-12-01T00:00:00+00:00",
+      "last_slot": "2026-08-31T16:00:00+00:00",
+      "declared_interval_counts": {
+        "8": 3015
+      },
+      "missing_associated_marks": 0,
+      "max_exact_event_offset_ms": 26.0,
+      "native_decimal_rate_and_scheduled_calendar_match": true
+    }
+  },
+  "output_sha256": {
+    "ETHUSDT_funding.parquet": "2fe7a4196d6c86d30c301f32b380fad3ab2046ba54e6fa6178a184096c3c2d11",
+    "DOGEUSDT_funding.parquet": "eebb0e5c7d0cfd9e3ae5fb6114702cf74c359aa6123b1911cd5b6feb7d6cc8b0",
+    "ADAUSDT_funding.parquet": "90b043c0c6d14f1edb6c95bcc4606b90cddbbe5668d1768842f3254e113f702d",
+    "AVAXUSDT_funding.parquet": "dcb9ba8e25d08ee255deb58f91d1b80226455d39d5b47c172d2c7d121019749f",
+    "BTCUSDT_funding.parquet": "82655aa9b1197d26d794a81733bdd6ac0ef580cba5e081bfe20b5b4f7776bc30",
+    "BNBUSDT_funding.parquet": "887d673511744171c5bcb88a954b71c7e228dfc77dfa2dad552f36d9648b0097",
+    "SOLUSDT_funding.parquet": "51721a3015eeda50a50d7a05007fa0cd039830147eb4aebb58fb57a67bc707bb",
+    "XRPUSDT_funding.parquet": "5a0a44b70b32dce2d6167acfff6c1d31be986b75ff0b275ab570df4b44fef280"
+  },
+  "limitations": "Legacy CSV origin is inferred; actual native rates/hour slots independently match current historical API exactly. Original calc/event offsets are preserved. Missing associated marks remain unknown. One-hour signal publication lag is an explicit execution assumption, not raw publication evidence. No price, funding-profit or return screen here."
+}

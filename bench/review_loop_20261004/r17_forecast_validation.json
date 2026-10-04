@@ -1,0 +1,25 @@
+{
+  "source_only": true,
+  "new_performance": false,
+  "decision_weeks": 140,
+  "full_prefix_forecasts_equal": true,
+  "qualified_coin_weeks": 41,
+  "selected_coin_weeks": 13,
+  "active_weeks": 7,
+  "selected_asset_counts": {
+    "BTCUSDT": 0,
+    "ETHUSDT": 0,
+    "SOLUSDT": 5,
+    "XRPUSDT": 1,
+    "BNBUSDT": 0,
+    "ADAUSDT": 1,
+    "DOGEUSDT": 2,
+    "AVAXUSDT": 4
+  },
+  "no_position_on_unqualified_weeks": true,
+  "decision_outputs_sha256": {
+    "r17_decisions.json": "2fdd6a1fc16b6bd8cee6f44b2a7c8d95200318fb050f78f4719fe3f754df9917",
+    "r17_decision_audit.csv": "769968115ff273ec34bc8e89bbab2bdfc38a65ffaffc94b41afe1b04c974f318"
+  },
+  "limitations": "Forecast selection is not a mark-weighted cash payment, total return, profitability bound or risk result. Reused history, no parameter rescue or activation."
+}
