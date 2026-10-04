@@ -382,7 +382,139 @@
     "historical_profitability_lead": "RiskHoldR2bCov10",
     "strict_default_gate_winner": null,
     "adopted_new_strategy": false,
-    "reason": "R1 actual Freqtrade spot profit remains the lead but fails5% daily risk in both windows. R2/R3/R4/R5 fail frozen criteria; R6 relative trend loses after costs in both windows with24-29% daily drawdown. All dates are reused history. R7 carry is positive but fails12% return; its trade-price risk is not mark/execution certification. R8 crowding veto is preregistered, no outcome yet.",
+    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR. R8 crowding veto does not improve worst loss paths; R9 rotation fails returns and risk. Reused history is not fresh OOS. R10 fixed PAXG sleeve preregistered before its prices/outcomes. No adopted winner.",
     "low_return_price_screen_lead": "R7 equal-allocation dated carry: costed CAGR2.20%/3.73%, double cost1.45%/2.84%; not exact mark/execution certified"
+  },
+  {
+    "trial": "R8",
+    "window": "early_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 11.229367408484547,
+    "daily_MTM_DD_pct": -6.9902620719863195,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R8",
+    "window": "early_reused_Cov10_crowding_veto_cost0.0012",
+    "CAGR_pct": 13.630951201631847,
+    "daily_MTM_DD_pct": -6.9902620719863195,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R8",
+    "window": "early_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 10.86464299766494,
+    "daily_MTM_DD_pct": -6.991267639401788,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R8",
+    "window": "early_reused_Cov10_crowding_veto_cost0.0024",
+    "CAGR_pct": 13.247095075719795,
+    "daily_MTM_DD_pct": -6.9912676394018,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R8",
+    "window": "recent_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 13.149826581062207,
+    "daily_MTM_DD_pct": -7.5565427275781865,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R8",
+    "window": "recent_reused_Cov10_crowding_veto_cost0.0012",
+    "CAGR_pct": 12.451878553211548,
+    "daily_MTM_DD_pct": -7.556542727578153,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R8",
+    "window": "recent_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 12.552807184389646,
+    "daily_MTM_DD_pct": -7.768151264532685,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R8",
+    "window": "recent_reused_Cov10_crowding_veto_cost0.0024",
+    "CAGR_pct": 11.86129803549958,
+    "daily_MTM_DD_pct": -7.768151264532708,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R9",
+    "window": "early_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 11.229367408484547,
+    "daily_MTM_DD_pct": -6.9902620719863195,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R9",
+    "window": "early_reused_selected_major_cost0.0012",
+    "CAGR_pct": 9.812451301346869,
+    "daily_MTM_DD_pct": -6.303734557492957,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation",
+    "held_low_vs_prior_high_DD_pct": -7.196686799030793
+  },
+  {
+    "trial": "R9",
+    "window": "early_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 10.86464299766494,
+    "daily_MTM_DD_pct": -6.991267639401788,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R9",
+    "window": "early_reused_selected_major_cost0.0024",
+    "CAGR_pct": 9.371936162928552,
+    "daily_MTM_DD_pct": -6.578038207872694,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation",
+    "held_low_vs_prior_high_DD_pct": -7.207975031688363
+  },
+  {
+    "trial": "R9",
+    "window": "recent_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 13.149826581062207,
+    "daily_MTM_DD_pct": -7.5565427275781865,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R9",
+    "window": "recent_reused_selected_major_cost0.0012",
+    "CAGR_pct": 10.107830711397114,
+    "daily_MTM_DD_pct": -8.258216209289849,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation",
+    "held_low_vs_prior_high_DD_pct": -9.808633104071518
+  },
+  {
+    "trial": "R9",
+    "window": "recent_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 12.552807184389646,
+    "daily_MTM_DD_pct": -7.768151264532685,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation"
+  },
+  {
+    "trial": "R9",
+    "window": "recent_reused_selected_major_cost0.0024",
+    "CAGR_pct": 9.51467995806805,
+    "daily_MTM_DD_pct": -8.445845625709747,
+    "adoption_gate": false,
+    "disposition": "rejected frozen necessary screen; no tuning or activation",
+    "held_low_vs_prior_high_DD_pct": -9.993454282115245
   }
 ]

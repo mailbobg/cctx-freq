@@ -1,0 +1,189 @@
+{
+  "captured_utc": "2026-10-04T09:56:30.937440+00:00",
+  "source_sha256": {
+    "R9_PROTOCOL.md": "6f2a5431a43582a80019729a055bdfbcb46d04db7820ad1650b44b11ebdc7105",
+    "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91",
+    "test_r9_selection.py": "5469bfcfda383681fc0a57402f8741a275049964074b5736060d5e66ffd58ee9",
+    "r8_crowding.py": "5d66cc5b5a9237375409c71e1a6c6c36a2172de591f49bb02bc286147e7d0f59",
+    "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+    "../../strategies/portfolio_risk.py": "c29d0f44d4af1ad6f5f0193258c6030904fd3103c61a6c6dce16b463af5912f7"
+  },
+  "input_manifest": {
+    "source_inputs_sha256": {
+      "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+      "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+      "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313"
+    },
+    "baseline_max_abs_csv_serialization_gap": {
+      "early_reused_cost0.0012": 2.220446049250313e-16,
+      "early_reused_cost0.0024": 2.220446049250313e-16,
+      "recent_reused_cost0.0012": 2.220446049250313e-16,
+      "recent_reused_cost0.0024": 2.220446049250313e-16
+    },
+    "full_prefix_weights_equal": true,
+    "real_held_execution_prefix_equal": true
+  },
+  "allocation_frequency": {
+    "early_reused": {
+      "decision_weeks": 152,
+      "held_asset_weeks": {
+        "cash": 62,
+        "ETH": 46,
+        "BTC": 44
+      },
+      "non_cash_asset_switches": 12
+    },
+    "recent_reused": {
+      "decision_weeks": 140,
+      "held_asset_weeks": {
+        "cash": 54,
+        "ETH": 50,
+        "BTC": 36
+      },
+      "non_cash_asset_switches": 11
+    }
+  },
+  "results": {
+    "early_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 36.37441883384449,
+      "CAGR_pct": 11.229367408484547,
+      "daily_MTM_DD_pct": -6.9902620719863195,
+      "year_return_pct": {
+        "2021": 13.280589957514,
+        "2022": -2.609186830643029,
+        "2023": 23.611654313811204
+      },
+      "fees_USDT_10000_start": 111.61835542199327,
+      "turnover_times_starting_equity": 9.30152961849944,
+      "min_cash": 0.7546049773442272,
+      "max_exposure_pct": 40.08856510570543,
+      "terminal_cash_equity_gap": -2.220446049250313e-16,
+      "necessary_screen_gate": false
+    },
+    "early_reused_selected_major_cost0.0012": {
+      "return_pct": 31.37180235418626,
+      "CAGR_pct": 9.812451301346869,
+      "daily_MTM_DD_pct": -6.303734557492957,
+      "year_return_pct": {
+        "2021": 15.45584173614223,
+        "2022": -2.5992104536681215,
+        "2023": 16.821766490872324
+      },
+      "fees_USDT_10000_start": 138.90143004361752,
+      "turnover_times_starting_equity": 11.57511917030146,
+      "min_cash": 0.8112209513735742,
+      "max_exposure_pct": 36.146277814830306,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "observed_held_low_vs_prior_high_peak_DD_pct": -7.196686799030793,
+      "unknown_same_day_order_envelope_DD_pct": -7.196686799030793,
+      "risk_limitations": "Single held asset lows/highs after modeled Monday OPEN fills; same-day ordering and before-order gap/fee state unknown. Trade-price extremes are not real quote/fill proof."
+    },
+    "early_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 35.074959559919414,
+      "CAGR_pct": 10.86464299766494,
+      "daily_MTM_DD_pct": -6.991267639401788,
+      "year_return_pct": {
+        "2021": 13.050915288711117,
+        "2022": -2.9260073155683686,
+        "2023": 23.08294262729005
+      },
+      "fees_USDT_10000_start": 222.20001176424628,
+      "turnover_times_starting_equity": 9.258333823510263,
+      "min_cash": 0.7512000624231663,
+      "max_exposure_pct": 40.10124204514624,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false
+    },
+    "early_reused_selected_major_cost0.0024": {
+      "return_pct": 29.84145220152954,
+      "CAGR_pct": 9.371936162928552,
+      "daily_MTM_DD_pct": -6.578038207872694,
+      "year_return_pct": {
+        "2021": 15.230092103603642,
+        "2022": -2.894768095022915,
+        "2023": 16.039226552240994
+      },
+      "fees_USDT_10000_start": 276.23129776241035,
+      "turnover_times_starting_equity": 11.5096374067671,
+      "min_cash": 0.8028292848521782,
+      "max_exposure_pct": 36.14868792179309,
+      "terminal_cash_equity_gap": -2.220446049250313e-16,
+      "necessary_screen_gate": false,
+      "observed_held_low_vs_prior_high_peak_DD_pct": -7.207975031688363,
+      "unknown_same_day_order_envelope_DD_pct": -7.207975031688363,
+      "risk_limitations": "Single held asset lows/highs after modeled Monday OPEN fills; same-day ordering and before-order gap/fee state unknown. Trade-price extremes are not real quote/fill proof."
+    },
+    "recent_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 39.051297320388834,
+      "CAGR_pct": 13.149826581062207,
+      "daily_MTM_DD_pct": -7.5565427275781865,
+      "year_return_pct": {
+        "2024": 16.216072620353096,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483718
+      },
+      "fees_USDT_10000_start": 168.0262496780076,
+      "turnover_times_starting_equity": 14.0021874731673,
+      "min_cash": 0.7390518110831137,
+      "max_exposure_pct": 44.03206260520997,
+      "terminal_cash_equity_gap": -2.220446049250313e-16,
+      "necessary_screen_gate": false
+    },
+    "recent_reused_selected_major_cost0.0012": {
+      "return_pct": 29.297937580807766,
+      "CAGR_pct": 10.107830711397114,
+      "daily_MTM_DD_pct": -8.258216209289849,
+      "year_return_pct": {
+        "2024": 7.564569663840248,
+        "2025": 14.274949422391959,
+        "2026": 5.189239617447128
+      },
+      "fees_USDT_10000_start": 160.7420126467393,
+      "turnover_times_starting_equity": 13.395167720561613,
+      "min_cash": 0.713987870261106,
+      "max_exposure_pct": 44.03206260520997,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "observed_held_low_vs_prior_high_peak_DD_pct": -9.808633104071518,
+      "unknown_same_day_order_envelope_DD_pct": -9.808633104071518,
+      "risk_limitations": "Single held asset lows/highs after modeled Monday OPEN fills; same-day ordering and before-order gap/fee state unknown. Trade-price extremes are not real quote/fill proof."
+    },
+    "recent_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 37.102071959543295,
+      "CAGR_pct": 12.552807184389646,
+      "daily_MTM_DD_pct": -7.768151264532685,
+      "year_return_pct": {
+        "2024": 15.533131827406233,
+        "2025": 12.05867236516287,
+        "2026": 5.8990341516533595
+      },
+      "fees_USDT_10000_start": 333.66890052461997,
+      "turnover_times_starting_equity": 13.9028708551925,
+      "min_cash": 0.7376655793339459,
+      "max_exposure_pct": 44.05320608111078,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false
+    },
+    "recent_reused_selected_major_cost0.0024": {
+      "return_pct": 27.44760085448894,
+      "CAGR_pct": 9.51467995806805,
+      "daily_MTM_DD_pct": -8.445845625709747,
+      "year_return_pct": {
+        "2024": 6.840864631741828,
+        "2025": 13.628534142468629,
+        "2026": 4.980072019300685
+      },
+      "fees_USDT_10000_start": 319.197074975046,
+      "turnover_times_starting_equity": 13.299878123960251,
+      "min_cash": 0.7059077799057859,
+      "max_exposure_pct": 44.05320608111078,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "observed_held_low_vs_prior_high_peak_DD_pct": -9.993454282115245,
+      "unknown_same_day_order_envelope_DD_pct": -9.993454282115245,
+      "risk_limitations": "Single held asset lows/highs after modeled Monday OPEN fills; same-day ordering and before-order gap/fee state unknown. Trade-price extremes are not real quote/fill proof."
+    }
+  },
+  "limitations": "Fixed BTC/ETH long-only selection, no short/funding/threshold/horizon sweep. Reused history, research OPEN fills with cost allowance, common cash/band ledger and final CLOSE fees; no actual Freqtrade adoption."
+}

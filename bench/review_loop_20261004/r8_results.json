@@ -1,0 +1,196 @@
+{
+  "captured_utc": "2026-10-04T09:44:50.051243+00:00",
+  "source_sha256": {
+    "R8_PROTOCOL.md": "e22cb52751f74ffd7128855f410d98fd49a2f7769dbd3598b9ad999028456d19",
+    "r8_crowding.py": "5d66cc5b5a9237375409c71e1a6c6c36a2172de591f49bb02bc286147e7d0f59",
+    "test_r8_crowding.py": "045735ef2e74f63037cbb9b45fdf640a82de267e9e77f3a8dc6d6f2403bc4349",
+    "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+    "../../strategies/portfolio_risk.py": "c29d0f44d4af1ad6f5f0193258c6030904fd3103c61a6c6dce16b463af5912f7"
+  },
+  "input_manifest": {
+    "source_inputs_sha256": {
+      "user_data/bench/review_loop_20261004/r6_data/BTCUSDT_funding.parquet": "ba8d65ba3c1f3aac64110047d488779792f6e933a389fa527e7ef3e739029d30",
+      "user_data/bench/review_loop_20261004/r6_data/ETHUSDT_funding.parquet": "a73c211834cfe9581729be067acbcbc6d3bd313bcb96dbc34e091b0e0fc56a3d",
+      "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+      "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+      "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4"
+    },
+    "price_rows": 2435,
+    "warmup": "Frozen prior cached2020 spot opens/closes;2021+ independently checksummed R7 archives",
+    "causal_price_funding_weight_prefixes": true,
+    "causal_real_held_execution_prefix": true
+  },
+  "decision_frequencies": {
+    "early_reused": {
+      "BTC": {
+        "decision_weeks": 152,
+        "veto_weeks": 14,
+        "veto_while_baseline_on": 11
+      },
+      "ETH": {
+        "decision_weeks": 152,
+        "veto_weeks": 14,
+        "veto_while_baseline_on": 13
+      }
+    },
+    "recent_reused": {
+      "BTC": {
+        "decision_weeks": 140,
+        "veto_weeks": 4,
+        "veto_while_baseline_on": 4
+      },
+      "ETH": {
+        "decision_weeks": 140,
+        "veto_weeks": 5,
+        "veto_while_baseline_on": 5
+      }
+    }
+  },
+  "results": {
+    "early_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 36.37441883384449,
+      "CAGR_pct": 11.229367408484547,
+      "daily_MTM_DD_pct": -6.9902620719863195,
+      "year_return_pct": {
+        "2021": 13.280589957514,
+        "2022": -2.609186830643029,
+        "2023": 23.611654313811204
+      },
+      "fees_USDT_10000_start": 111.61835542199327,
+      "turnover_times_starting_equity": 9.30152961849944,
+      "min_cash": 0.7546049773442272,
+      "max_exposure_pct": 40.08856510570543,
+      "terminal_cash_equity_gap": -2.220446049250313e-16,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -7.805745449717216,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    },
+    "early_reused_Cov10_crowding_veto_cost0.0012": {
+      "return_pct": 45.13645564539832,
+      "CAGR_pct": 13.630951201631847,
+      "daily_MTM_DD_pct": -6.9902620719863195,
+      "year_return_pct": {
+        "2021": 20.558851582603666,
+        "2022": -2.609186830643029,
+        "2023": 23.611654313811204
+      },
+      "fees_USDT_10000_start": 121.5587061415547,
+      "turnover_times_starting_equity": 10.129892178462892,
+      "min_cash": 0.8030882386934666,
+      "max_exposure_pct": 40.08856510570544,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -7.805745449717206,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    },
+    "early_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 35.074959559919414,
+      "CAGR_pct": 10.86464299766494,
+      "daily_MTM_DD_pct": -6.991267639401788,
+      "year_return_pct": {
+        "2021": 13.050915288711117,
+        "2022": -2.9260073155683686,
+        "2023": 23.08294262729005
+      },
+      "fees_USDT_10000_start": 222.20001176424628,
+      "turnover_times_starting_equity": 9.258333823510263,
+      "min_cash": 0.7512000624231663,
+      "max_exposure_pct": 40.10124204514624,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -7.806868326541694,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    },
+    "early_reused_Cov10_crowding_veto_cost0.0024": {
+      "return_pct": 43.71186037334511,
+      "CAGR_pct": 13.247095075719795,
+      "daily_MTM_DD_pct": -6.9912676394018,
+      "year_return_pct": {
+        "2021": 20.27956481336599,
+        "2022": -2.9260073155683686,
+        "2023": 23.08294262729005
+      },
+      "fees_USDT_10000_start": 241.94617621658242,
+      "turnover_times_starting_equity": 10.081090675690936,
+      "min_cash": 0.7992329506159623,
+      "max_exposure_pct": 40.10124204514625,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -7.806868326541694,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    },
+    "recent_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 39.051297320388834,
+      "CAGR_pct": 13.149826581062207,
+      "daily_MTM_DD_pct": -7.5565427275781865,
+      "year_return_pct": {
+        "2024": 16.216072620353096,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483718
+      },
+      "fees_USDT_10000_start": 168.0262496780076,
+      "turnover_times_starting_equity": 14.0021874731673,
+      "min_cash": 0.7390518110831137,
+      "max_exposure_pct": 44.03206260520997,
+      "terminal_cash_equity_gap": -2.220446049250313e-16,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -9.107289484610936,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    },
+    "recent_reused_Cov10_crowding_veto_cost0.0012": {
+      "return_pct": 36.774246094668904,
+      "CAGR_pct": 12.451878553211548,
+      "daily_MTM_DD_pct": -7.556542727578153,
+      "year_return_pct": {
+        "2024": 14.312962360268266,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483762
+      },
+      "fees_USDT_10000_start": 165.21979706182347,
+      "turnover_times_starting_equity": 13.768316421818625,
+      "min_cash": 0.7384092752653646,
+      "max_exposure_pct": 44.03206260520997,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -9.102896154621853,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    },
+    "recent_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 37.102071959543295,
+      "CAGR_pct": 12.552807184389646,
+      "daily_MTM_DD_pct": -7.768151264532685,
+      "year_return_pct": {
+        "2024": 15.533131827406233,
+        "2025": 12.05867236516287,
+        "2026": 5.8990341516533595
+      },
+      "fees_USDT_10000_start": 333.66890052461997,
+      "turnover_times_starting_equity": 13.9028708551925,
+      "min_cash": 0.7376655793339459,
+      "max_exposure_pct": 44.05320608111078,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -9.275702996021383,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    },
+    "recent_reused_Cov10_crowding_veto_cost0.0024": {
+      "return_pct": 34.86580794709,
+      "CAGR_pct": 11.86129803549958,
+      "daily_MTM_DD_pct": -7.768151264532708,
+      "year_return_pct": {
+        "2024": 13.648677557248412,
+        "2025": 12.05867236516287,
+        "2026": 5.899034151653337
+      },
+      "fees_USDT_10000_start": 328.1132083162688,
+      "turnover_times_starting_equity": 13.671383679844537,
+      "min_cash": 0.7371383538652093,
+      "max_exposure_pct": 44.053206081110766,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_low_envelope_vs_prior_close_peak_pct": -9.182792126941731,
+      "envelope_limitation": "All invested value assigned the worst asset's daily low/close ratio; deliberately loose price-only envelope, not simultaneous prices or exact intraday drawdown."
+    }
+  },
+  "limitations": "Reused history; external funding signal is strictly pre-Monday, never charged to spot. Common research OPEN fills,5pp band, real cash constraint and final CLOSE fees. Price-low envelopes do not certify mark/intraday risk. No actual Freqtrade adoption."
+}

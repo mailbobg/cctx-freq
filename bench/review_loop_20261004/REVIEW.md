@@ -184,3 +184,29 @@ Final realized total balances reconcile within6e-12USDT. Candidate calendar retu
 The ETH-only control illustrates a separate defect in naive arbitrage reasoning: its daily total-equity DD is only3.96%, but the futures sleeve adverse envelope drops below zero and flags19 early-window margin-concern days. Price neutrality does not make spot wealth immediately usable futures collateral. That control's no-liquidation accounting return is an optimistic diagnostic, not a tradable result. The candidate has no such daily envelope concern in this sample, yet true marks, hourly risk and execution must still be checked before adoption. No leverage, threshold, holding-date or asset sweep follows this failure. Current-source suite now178 tests plus16 subtests pass (same two dependency deprecation warnings).
 
 R1's actual Freqtrade spot Cov10 remains the best validated return lead; R7 adds a lower-return price-screened carry lead. Neither satisfies all frozen default gates; no new strategy is adopted and no bot configuration or running image is changed.
+
+## R8 crowding veto result and reflection
+
+Code and input causality were frozen in `ad68f4d` before outcomes. The prior7-day mean uses exactly21 actual funding events before Monday00, including validated1ms timestamp delays, and compares the decimal threshold exactly. Current Monday funding is excluded. Unknown/repeated/nonfinite histories cannot create risk; the other asset is never rescaled. All experimental decisions have complete actual histories. Independent R7 spot archives and unchanged frozen2020 warmup feed the same price/cash/band ledger; final CLOSE fees are charged equally to both versions. This is spot, with no funding credited/charged as income.
+
+| Version | 2021-02–2023-12 CAGR /daily MTM DD | 2024-01–2026-08 CAGR /daily MTM DD | Double-cost CAGR early /recent |
+|---|---|---|---|
+| Matched Cov10 baseline | +11.23% /6.99% | +13.15% /7.56% | +10.86% /+12.55% |
+| Fixed crowding veto | +13.63% /6.99% | +12.45% /7.56% | +13.25% /+11.86% |
+
+**Reject R8's risk objective and do not tune the threshold.** Early window: BTC/ETH each veto14 of152 weeks (11/13 when the original target was positive), improving2021 return from13.28% to20.56%. Recent window: BTC veto4 and ETH5 of140 weeks, reducing2024 from16.22% to14.31%. The other calendar-year returns are unchanged up to floating precision. The feature affects selected earlier rallies/reversals, not the damaging credit/bear paths.
+
+Exact drawdown attribution: early peakNovember4 2022 to troughNovember9 remains6.9903%; recent peakOctober6 2025 to troughMarch29 2026 remains7.5565%. Candidate/base equity ratio is constant throughout those intervals (1.0642498563 early,0.9836243799 recent). A higher early capital level is not downside improvement. Keep `r8_drawdown_attribution.json`, decision audit and matched curves. The low-price envelope is deliberately loose (all invested value assigned the worst asset's daily low/close ratio); it does not certify simultaneous intraday prices or stop fills. No actual Freqtrade implementation or new bot follows this failed gate. R9 freezes a distinct portfolio-selection change with unchanged30-day signal and10% budget; no R8/R9 combination is authorized by this research checkpoint.
+
+## R9 selected-major result and reflection
+
+Protocol `5ad08c6` and tested engine/input manifest `5a5d328` preceded outcomes. Higher positive30-day BTC/ETH momentum retains that asset's unchanged original raw signal; ties favor BTC. Selection precedes the unchanged covariance budget. Unknown prices block the entire budget; the weaker asset does not replace an off winner. Every matched control curve reproduces R8 within1e-12 CSV precision. Full/truncated signal and genuinely invested execution prefixes agree.
+
+| Version | 2021-02–2023-12 CAGR /daily MTM DD | 2024-01–2026-08 CAGR /daily MTM DD | Double-cost CAGR early /recent |
+|---|---|---|---|
+| Matched Cov10 baseline | +11.23% /6.99% | +13.15% /7.56% | +10.86% /+12.55% |
+| Single selected major | +9.81% /6.30% | +10.11% /8.26% | +9.37% /+9.51% |
+
+**Reject R9 without signal, threshold, horizon or risk-target tuning.** It reduces early drawdown only modestly and worsens recent risk while reducing both windows' returns. Early allocation counts:62 cash,46 ETH,44 BTC weeks; recent54 cash,50 ETH,36 BTC. Non-cash switches12/11. Cost allowances are138.90/160.74USDT per10,000 starting account, against matched baseline111.62/168.03. The recent failure cannot be attributed simply to greater fees. Candidate years2021+15.46%,2022-2.60%,2023+16.82%,2024+7.56%,2025+14.27%,2026 partial+5.19%.
+
+Daily CLOSE also understates held-position risk: actual single-asset daily lows versus previously observed high peaks produce7.20%/9.81% drawdowns (7.21%/9.99% at doubled costs). This diagnostic uses actual held-asset highs/lows, ignores unheld-asset extremes and verifies peak precedence across days. It is not a quote/fill or before-Monday-order path; same-day high/low order remains unknown. Keep separate from daily MTM. No strategy class or bot follows this rejection. Current-source bench/cross-venue/panel suite:192 tests plus16 subtests pass, two existing dependency deprecation warnings. No running cohort changed.

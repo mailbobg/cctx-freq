@@ -26,7 +26,14 @@
     "r7_dated.py": "a82c5a3c852338c275299717c719e07052f6bbd0ffaba07d62ebab2bf3562bf2",
     "r7_validate.py": "98c231ef521203a8b4607ff70222a13508a8f3f9d7694f19ff843893903c4f0d",
     "test_r7_data.py": "e026fe2f17cda947f23dc3e53d45267dca49bf20e2c5b1293e3b13321eee008c",
-    "test_r7_engine.py": "93c3f181c7d7ec824acd5feb767102e0253ec4444e1e450a982c8d9c787c3bd5"
+    "test_r7_engine.py": "93c3f181c7d7ec824acd5feb767102e0253ec4444e1e450a982c8d9c787c3bd5",
+    "r8_crowding.py": "5d66cc5b5a9237375409c71e1a6c6c36a2172de591f49bb02bc286147e7d0f59",
+    "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91",
+    "r8_attribution.py": "b67f052cc83283fcc1e6361283fcc903a57dffe3240d46e8e13004148c0f7b41",
+    "R9_PROTOCOL.md": "6f2a5431a43582a80019729a055bdfbcb46d04db7820ad1650b44b11ebdc7105",
+    "test_r8_crowding.py": "045735ef2e74f63037cbb9b45fdf640a82de267e9e77f3a8dc6d6f2403bc4349",
+    "R10_PROTOCOL.md": "90afdb84016cac54f3d807b2a1c61da9166f4a75f42f47747f972a3c7942e527",
+    "test_r9_selection.py": "5469bfcfda383681fc0a57402f8741a275049964074b5736060d5e66ffd58ee9"
   },
   "output_sha256": {
     "r1_results.json": "3e6ea8516f1a07e3cf4d867eb13b0485157a64ec77f683340e8f7de00cad9fc4",
@@ -90,9 +97,32 @@
     "r7_recent_reused_BTC_control_cost0.0024_daily.csv": "c4ca21a2a9defe417590c7deac5bb0b695cc387f7a2a146e04686fe60692ccf0",
     "r7_early_reused_equal_pair_cost0.0012_daily.csv": "6613fef57197f75511f44c51f304f73079f840cc73ecb43b32eef5d4f57e7097",
     "r7_early_reused_ETH_control_cost0.0012_daily.csv": "5732e29d14361f99d672a0d16ff173c029807455ab1d8e89cf85cc79cfeec762",
-    "r7_early_reused_BTC_control_cost0.0012_daily.csv": "0c01fa0777465153eead036963efb7584ef2fa649ab9086ccc7605a382c9f8d1"
+    "r7_early_reused_BTC_control_cost0.0012_daily.csv": "0c01fa0777465153eead036963efb7584ef2fa649ab9086ccc7605a382c9f8d1",
+    "r8_early_reused_Cov10_baseline_cost0.0012_daily.csv": "a9db7b7aa78329460181d9efc14f97764569d40fab926cd27d493af967193e79",
+    "r8_early_reused_Cov10_crowding_veto_cost0.0012_daily.csv": "c23dccfa881db1c71fd969604096b846205eb5b5feccbe9fae1c850676b038f1",
+    "r9_recent_reused_Cov10_baseline_cost0.0012_daily.csv": "9e3a6a8e4e16ed02cc331abbcb9aa327673497896980426be6c63e6574aee036",
+    "r9_early_reused_selected_major_cost0.0024_daily.csv": "69f40703a947dcf24af8a5b60cc0c2fc7763fb2692a29b78fd7007f31a1faaa1",
+    "r9_recent_reused_selected_major_cost0.0012_daily.csv": "45073e71bfb0170062d51eb07aa85c4a87956bb791c19fda75d1d9a4d97fcf77",
+    "r9_early_reused_Cov10_baseline_cost0.0024_daily.csv": "22fd342a64d5c044bedb38481e428e43dacc4a0d5a1e7fa7e384ebbe2e6b960e",
+    "r8_recent_reused_Cov10_baseline_cost0.0012_daily.csv": "b63a32989f4a7b2ca78cd0389859123af8ae6632ae983abbd5f762e546cfab4b",
+    "r8_recent_reused_Cov10_crowding_veto_cost0.0024_daily.csv": "f05906501d5a5efff56fb84cb92ba950089fcf4cd770a3ad8396bdc453596af2",
+    "r9_recent_reused_Cov10_baseline_cost0.0024_daily.csv": "63b3345d9ac39a5e90a610d797b82313c5fcb77e47607649e4a4d5338c340ea0",
+    "r9_early_reused_selected_major_cost0.0012_daily.csv": "340a7728066a756aa9313523de2eec3187e6c576f921f6ab6268eb17db2df6a1",
+    "r9_input_manifest.json": "0c3455b35b4c31d18e0414c595e668d7aef6708e13301e3d7f8f43eb7deccb39",
+    "r8_input_manifest.json": "8475d00549fe82e0d7b2e25000b78778b743f4fe979790c81c8860b6cd2fd26f",
+    "r8_results.json": "32f161189c82c2bf86fe924e9e2224498f3312fc731ebcc0b3353f06e5da5a5d",
+    "r8_drawdown_attribution.json": "5384072aacaa2ce878aaa1bee183a0b30898acf8f391fdd0e6e0c79fde4baf03",
+    "r8_recent_reused_Cov10_baseline_cost0.0024_daily.csv": "2031fb8e07d72d95edb81b217c0df6be8ded129f707c86c7b727febe5410866e",
+    "r9_recent_reused_selected_major_cost0.0024_daily.csv": "663fcf4d9330c23543de31479cd8fe852340aad40b407cea9058c1749d89a942",
+    "r9_early_reused_Cov10_baseline_cost0.0012_daily.csv": "0b10cfa8e36d00a4e28b16c2aa6a0c475366474d19547c932eb0aba3a9964632",
+    "r8_recent_reused_Cov10_crowding_veto_cost0.0012_daily.csv": "65f5930761a4487f12cb69b87264905d6991187c48585e0099abe3460e47e2a2",
+    "r9_results.json": "f5b220377fd38c888b23e6eab8db0a35a4faccc204fa67560228e3cbd91ed484",
+    "r9_selection_audit.csv": "eac7d6f767110c6bd7ffce39c6b2e15115d449ccf0786cc5750d245b75304825",
+    "r8_decision_audit.csv": "d4b7c4f7e55d7a9025e2ee781629bc667754d87b259cb01f252153d90fef4ef5",
+    "r8_early_reused_Cov10_baseline_cost0.0024_daily.csv": "1f3df8dccd70453aa8ae849129e9a1ca4a2d1b108e1a69ff14467431a7b62a78",
+    "r8_early_reused_Cov10_crowding_veto_cost0.0024_daily.csv": "09d887a6435653312eeaf0cd76d5b0d6451245588ca1f7bcaeba48836480ce7f"
   },
-  "note": "R1 terminal-liquidation flag added only for Freqtrade matching; original screens use default False. Baseline pair processing and available-stake constraints differ from the simple common engine. No adoption threshold or running cohort changed. Cov10 missing-date guard added after historical outcomes; full/prefix tests prove unchanged original continuous-input weights. New gap tests pass. Funding upper bound and delayed-exit attribution are diagnostics, not new profit trials. Clean R2 completed: cap-only version rejects first2024 screen; no additional-year/cap/fee tuning. STRAX first actual trades only Dec28, so worst July/August loss was not a March swap position loss. Primary5m-open wallet risk separately reported. R6 data/engine/protocol frozen in b8931e0 before outcomes; reject central and sensitivity results, no tuning. Root d52cfaa0a fixes other-short UPnL direction locally, not deployed. Signed helper absolute-gross fix preserves long-only weights.165 current-source tests plus16 subtests pass. R7 individual dated inputs and separate-collateral engine frozen1973619 before results; candidate positive at doubled costs, default12% yield fails. ETH early diagnostic has19 margin-envelope concerns.178 tests plus16 subtests pass. R8 external crowding veto preregistered without outcomes or tuning.",
+  "note": "R1 terminal-liquidation flag added only for Freqtrade matching; original screens use default False. Baseline pair processing and available-stake constraints differ from the simple common engine. No adoption threshold or running cohort changed. Cov10 missing-date guard added after historical outcomes; full/prefix tests prove unchanged original continuous-input weights. New gap tests pass. Funding upper bound and delayed-exit attribution are diagnostics, not new profit trials. Clean R2 completed: cap-only version rejects first2024 screen; no additional-year/cap/fee tuning. STRAX first actual trades only Dec28, so worst July/August loss was not a March swap position loss. Primary5m-open wallet risk separately reported. R6 data/engine/protocol frozen in b8931e0 before outcomes; reject central and sensitivity results, no tuning. Root d52cfaa0a fixes other-short UPnL direction locally, not deployed. Signed helper absolute-gross fix preserves long-only weights.165 current-source tests plus16 subtests pass. R7 individual dated inputs and separate-collateral engine frozen1973619 before results; candidate positive at doubled costs, default12% yield fails. ETH early diagnostic has19 margin-envelope concerns.178 tests plus16 subtests pass. R8 external crowding veto preregistered without outcomes or tuning. R8 inputs/engine frozenad68f4d: risk objective rejected. R9 frozen5a5d328: return/risk rejected; actual held-high/low risk worse than daily close.192 tests plus16 subtests pass. R10 preregistered before gold prices/outcomes, no running cohort changed.",
   "root_source_sha256": {
     "freqtrade/exchange/binance.py": "837dd93b25517b5d73d4ea3aafe14a085e945fbd60edf93057ba474418e34a5b"
   }

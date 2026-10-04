@@ -1,0 +1,64 @@
+{
+  "early_reused": {
+    "Cov10_baseline": {
+      "peak": "2022-11-04 00:00:00+00:00",
+      "trough": "2022-11-09 00:00:00+00:00",
+      "DD_pct": -6.9902620719863195,
+      "equity_at_peak": 1.1822748429293712,
+      "equity_at_trough": 1.0996307329974435,
+      "annual_returns": {
+        "2021": 13.280589957514,
+        "2022": -2.609186830643029,
+        "2023": 23.611654313811204
+      }
+    },
+    "Cov10_crowding_veto": {
+      "peak": "2022-11-04 00:00:00+00:00",
+      "trough": "2022-11-09 00:00:00+00:00",
+      "DD_pct": -6.9902620719863195,
+      "equity_at_peak": 1.25823583168154,
+      "equity_at_trough": 1.1702818495633638,
+      "annual_returns": {
+        "2021": 20.558851582603666,
+        "2022": -2.609186830643029,
+        "2023": 23.611654313811204
+      }
+    },
+    "worst_baseline_drawdown_candidate_base_equity_ratio_min_max": [
+      1.0642498562888787,
+      1.064249856288879
+    ],
+    "reason_for_attribution": "An effectively constant relative equity ratio during the worst drawdown means the earlier veto changed capital level, not that loss path."
+  },
+  "recent_reused": {
+    "Cov10_baseline": {
+      "peak": "2025-10-06 00:00:00+00:00",
+      "trough": "2026-03-29 00:00:00+00:00",
+      "DD_pct": -7.5565427275781865,
+      "equity_at_peak": 1.3595389147521684,
+      "equity_at_trough": 1.256804775760868,
+      "annual_returns": {
+        "2024": 16.216072620353096,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483718
+      }
+    },
+    "Cov10_crowding_veto": {
+      "peak": "2025-10-06 00:00:00+00:00",
+      "trough": "2026-03-29 00:00:00+00:00",
+      "DD_pct": -7.556542727578153,
+      "equity_at_peak": 1.3372756219105524,
+      "equity_at_trough": 1.236223818155395,
+      "annual_returns": {
+        "2024": 14.312962360268266,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483762
+      }
+    },
+    "worst_baseline_drawdown_candidate_base_equity_ratio_min_max": [
+      0.9836243798540517,
+      0.9836243798540524
+    ],
+    "reason_for_attribution": "An effectively constant relative equity ratio during the worst drawdown means the earlier veto changed capital level, not that loss path."
+  }
+}
