@@ -1,0 +1,40 @@
+
+==================================== ERRORS ====================================
+_ ERROR collecting user_data/bench/shared_market_data_20260927/install_backup/panel/test_panel_runtime.py _
+user_data/bench/shared_market_data_20260927/install_backup/panel/test_panel_runtime.py:8: in <module>
+    panel=importlib.util.module_from_spec(spec);spec.loader.exec_module(panel)
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen importlib._bootstrap_external>:1026: in exec_module
+    ???
+<frozen importlib._bootstrap>:488: in _call_with_frames_removed
+    ???
+user_data/bench/shared_market_data_20260927/install_backup/panel/panel.py:337: in <module>
+    app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv/lib/python3.13/site-packages/starlette/staticfiles.py:56: in __init__
+    raise RuntimeError(f"Directory '{directory}' does not exist")
+E   RuntimeError: Directory '/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/shared_market_data_20260927/install_backup/panel/static' does not exist
+=============================== warnings summary ===============================
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_default_fixture_loop_scope
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/_pytest/config/__init__.py:1464: PytestConfigWarning: Unknown config option: asyncio_mode
+  
+    self._warn_or_fail_if_strict(f"Unknown config option: {key}\n")
+
+.venv/lib/python3.13/site-packages/fastapi/testclient.py:1
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv/lib/python3.13/site-packages/starlette/testclient.py:53
+  /Users/bobmax/Documents/07-Hero/CCXT-Fr/.venv/lib/python3.13/site-packages/starlette/testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+ERROR user_data/bench/shared_market_data_20260927/install_backup/panel/test_panel_runtime.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+4 warnings, 1 error in 2.71s
