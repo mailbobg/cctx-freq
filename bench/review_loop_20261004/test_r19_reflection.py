@@ -30,3 +30,12 @@ def test_wrong_source_price_quantity_cost_or_fill_time_is_rejected(column,value)
 def test_retained_equity_cannot_mask_wrong_native_cash():
     c,o,m=fixture();c.loc[c.index[0],'cash']+=.001
     with pytest.raises(ValueError,match='reconciliation'):native_reconcile(c,o,m,.001)
+
+
+def test_retained_csv_repr_roundtrips_before_source_identity_check(tmp_path):
+    from r19_reflection import read_frame
+    expected=pd.DataFrame({'price':[.12345678901234567], 'native_quantity':[.004000000000000001], 'cost':[.00040000000000000013]})
+    path=tmp_path/'fills.csv';expected.to_csv(path,index=False)
+    # Default pandas parsing can move a saved source price by an ULP.
+    assert pd.read_csv(path).price.iloc[0] != expected.price.iloc[0]
+    pd.testing.assert_frame_equal(read_frame(path),expected)

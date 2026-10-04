@@ -13,6 +13,12 @@ HERE=Path(__file__).resolve().parent
 ASSETS=['BTC','ETH']
 
 
+def read_frame(path, **kwargs):
+    # CSV contains repr of retained binary floats, not new exchange decimals.
+    # Round-trip parsing preserves them for exact source-price identity checks.
+    return pd.read_csv(path, float_precision='round_trip', **kwargs)
+
+
 def native_reconcile(curve, orders, minutes, cost):
     if not orders.time.is_monotonic_increasing: raise ValueError('Unordered native fills')
     cash,units=1.,np.zeros(2); max_gap=0.; prices=0
@@ -60,7 +66,7 @@ def daily_attribution(curve, px):
 
 
 def reflect():
-    px,_,_=load_prices(); decisions=pd.read_csv(HERE/'r19_decision_audit.csv',parse_dates=['decision'])
+    px,_,_=load_prices(); decisions=read_frame(HERE/'r19_decision_audit.csv',parse_dates=['decision'])
     minutes={a:pd.read_parquet(HERE/f'r13_data/{a}USDT_1m.parquet') for a in ASSETS}
     results={}
     for label,start,end in WINDOWS:
@@ -73,7 +79,7 @@ def reflect():
         coverage['vetoed_original_active_weeks_by_reason']=selected.loc[active & ~selected.allow].reason.value_counts().to_dict()
         for cost in (.0012,.0024):
             for name in ('Cov10_baseline','term_confirmation'):
-                key=f'{label}_{name}_cost{cost}'; curve=pd.read_csv(HERE/f'r19_{key}_daily.csv',index_col='date',parse_dates=True)
+                key=f'{label}_{name}_cost{cost}'; curve=read_frame(HERE/f'r19_{key}_daily.csv',index_col='date',parse_dates=True)
                 pnl,gap=daily_attribution(curve,px)
                 dd=curve.equity/curve.equity.cummax().clip(lower=1.)-1; trough=dd.idxmin(); past=curve.equity.loc[:trough]
                 peak=past.idxmax() if past.max()>=1 else None
@@ -84,7 +90,7 @@ def reflect():
                     all_days_attribution_max_abs_gap=gap,mean_held_exposure_pct=float(curve.pre_close_exposure.mean()*100),
                     wholly_cash_days=int(curve.pre_close_exposure.lt(1e-12).sum()),total_days=len(curve))
                 if label=='recent_reused':
-                    orders=pd.read_csv(HERE/f'r19_{key}_orders.csv',parse_dates=['time'])
+                    orders=read_frame(HERE/f'r19_{key}_orders.csv',parse_dates=['time'])
                     v['independent_source_native_ledger']=native_reconcile(curve,orders,minutes,cost)
                 versions[f'{name}_cost{cost}']=v
         delta={a:versions['term_confirmation_cost0.0012']['whole_window_asset_pnl_USDT_10000_start'][a]-versions['Cov10_baseline_cost0.0012']['whole_window_asset_pnl_USDT_10000_start'][a] for a in [*ASSETS,'fees']}

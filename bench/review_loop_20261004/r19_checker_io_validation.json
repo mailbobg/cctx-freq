@@ -1,0 +1,10 @@
+{
+  "before_full_outcomes": true,
+  "focused_tests": 27,
+  "prior_full_applicable_test_pass": "393 plus16 subtests before this checker IO change",
+  "source_price_csv_io": "round-trip parse retained repr, no price/quantity/rule change",
+  "source_sha256": {
+    "r19_reflection.py": "64d8d84e11850b2e0051d54d8dd37c003b4f7041d98cf74eafea454845cecf05",
+    "test_r19_reflection.py": "bd8d1a596b374b10554a49bef97a7ef71d8e0be6908ca66812bbb24d6df486af"
+  }
+}
