@@ -1,0 +1,259 @@
+{
+  "new_performance": false,
+  "source_only": true,
+  "sources": {
+    "oi_early_day": {
+      "bytes": 12278,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-01.zip",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:10:22 GMT",
+        "ETag": "\"7b14f95da52a870d2fdd6b729725520b\"",
+        "Last-Modified": "Wed, 18 Mar 2026 11:35:13 GMT"
+      },
+      "path": "raw/5ecacde6c27046129302716e62f9cb42d42091d632b4b5c93478220540e7e56e",
+      "requested_utc": "2026-10-04T14:10:21.679308+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.977139+00:00",
+      "sha256": "9c42e4fa6048b185439a3d744066fa1d2bf0637b3654da53bb8930d1a3da364a",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-01.zip"
+    },
+    "oi_early_day_checksum": {
+      "bytes": 97,
+      "final_url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "binary/octet-stream",
+        "Date": "Sun, 04 Oct 2026 14:12:03 GMT",
+        "ETag": "\"8ae3dc456352bff89b87f8cb539b9897\"",
+        "Last-Modified": "Wed, 18 Mar 2026 11:35:13 GMT"
+      },
+      "path": "raw/596fac8512222499c1f87c1f48d4beb33f3c32b1b84493e5cd63c6e6d2e0a7f1",
+      "requested_utc": "2026-10-04T14:12:02.668017+00:00",
+      "retrieved_utc": "2026-10-04T14:12:02.987583+00:00",
+      "sha256": "22b044b57a0aa47aad0f6963682cdb12e1ccdaa8918ff4317eaf094fe9fea31e",
+      "status": 200,
+      "url": "https://data.binance.vision/data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2021-01-01.zip.CHECKSUM"
+    },
+    "oi_listing": {
+      "bytes": 1344,
+      "final_url": "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision/?prefix=data%2Ffutures%2Fum%2Fdaily%2Fmetrics%2FBTCUSDT%2F&max-keys=3",
+      "headers": {
+        "Content-Type": "application/xml",
+        "Date": "Sun, 04 Oct 2026 14:10:22 GMT"
+      },
+      "path": "raw/dcbeffd26e76b23622dd0646e82f1c3f4a2e209a7e07cab7d96dcb47610357e8",
+      "requested_utc": "2026-10-04T14:10:21.666853+00:00",
+      "retrieved_utc": "2026-10-04T14:10:22.009635+00:00",
+      "sha256": "49d1101468f7afff96267df7c5208b28c5a7990cf1f77b1514e3182878f84a42",
+      "status": 200,
+      "url": "https://s3-ap-northeast-1.amazonaws.com/data.binance.vision/?prefix=data%2Ffutures%2Fum%2Fdaily%2Fmetrics%2FBTCUSDT%2F&max-keys=3"
+    },
+    "publisher_readme": {
+      "bytes": 5282,
+      "final_url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md",
+      "headers": {
+        "Content-Type": "text/plain; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "W/\"99289dcc5965e880e0f3a6e57e6ac3fd4dcaf8d9c5111c7953fc5407dbbb44af\""
+      },
+      "path": "raw/39ef57387ab7455446bcb9432c5832c1b2ca636cff4460164ccaaa9b1cc2be53",
+      "requested_utc": "2026-10-04T14:10:21.556069+00:00",
+      "retrieved_utc": "2026-10-04T14:10:22.009752+00:00",
+      "sha256": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad",
+      "status": 200,
+      "url": "https://raw.githubusercontent.com/binance/binance-public-data/master/README.md"
+    },
+    "spot_ADAUSDT_2021-01": {
+      "bytes": 2064,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1d/ADAUSDT-1d-2021-01.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "\"bf91f1f2ab85b1ef0efe0aa4c0046d2a\"",
+        "Last-Modified": "Tue, 22 Jun 2021 15:00:28 GMT"
+      },
+      "path": "raw/efc07c066359e638d1c90c54ae51c16628543293ee14ec90235b11d59435c85b",
+      "requested_utc": "2026-10-04T14:10:21.024172+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.375637+00:00",
+      "sha256": "e6cb149267d1ed9436b06dcbd2f63ae8df5e2e8d4b2ed0930db6cb94d555f4fa",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1d/ADAUSDT-1d-2021-01.zip"
+    },
+    "spot_ADAUSDT_2021-01_checksum": {
+      "bytes": 88,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1d/ADAUSDT-1d-2021-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:22 GMT",
+        "ETag": "\"382a182f7e806b0675f20ce6f99d8d33\"",
+        "Last-Modified": "Tue, 22 Jun 2021 15:00:28 GMT"
+      },
+      "path": "raw/49d01c1f18be6882500bff074460f36d3ebeb7e85e7971c3d019271f30c00e1c",
+      "requested_utc": "2026-10-04T14:10:21.144102+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.407110+00:00",
+      "sha256": "11a0e480f49b00f4375c178e87556be98a659082d92bcbf1992948fbfc502398",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/ADAUSDT/1d/ADAUSDT-1d-2021-01.zip.CHECKSUM"
+    },
+    "spot_AVAXUSDT_2021-01": {
+      "bytes": 1967,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1d/AVAXUSDT-1d-2021-01.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "\"bad3e16b09641052f41e6eabc1b1d018\"",
+        "Last-Modified": "Tue, 22 Jun 2021 19:15:29 GMT"
+      },
+      "path": "raw/9238d6143877596bb4d0c2e0d516ea3c09f4c0bc4edacc635fbebc1b6ff1a859",
+      "requested_utc": "2026-10-04T14:10:21.408501+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.678504+00:00",
+      "sha256": "c2c0906255914e37385a2d32bc717c4f0adef8ac2704fe5bf09fff246eee8ed0",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1d/AVAXUSDT-1d-2021-01.zip"
+    },
+    "spot_AVAXUSDT_2021-01_checksum": {
+      "bytes": 89,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1d/AVAXUSDT-1d-2021-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "\"adb7ade2a10250f727af50580e4f5c0f\"",
+        "Last-Modified": "Tue, 22 Jun 2021 19:15:29 GMT"
+      },
+      "path": "raw/cb10f28e1d593202eb412a7cab9b3c60a097c85b7095979d92e5dcf778743296",
+      "requested_utc": "2026-10-04T14:10:21.424104+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.687910+00:00",
+      "sha256": "34581167a5fdbc6b54737083c2800c017b99a738d0f33618a5da5c8fae099271",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/AVAXUSDT/1d/AVAXUSDT-1d-2021-01.zip.CHECKSUM"
+    },
+    "spot_BNBUSDT_2021-01": {
+      "bytes": 2089,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1d/BNBUSDT-1d-2021-01.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:22 GMT",
+        "ETag": "\"23611d59d2ea12498578114db41a512b\"",
+        "Last-Modified": "Tue, 22 Jun 2021 12:45:22 GMT"
+      },
+      "path": "raw/fb072f2cf311d26ad428b98f6382b5a96407bc380cc2c6d7c74adba25d46a608",
+      "requested_utc": "2026-10-04T14:10:20.763262+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.143026+00:00",
+      "sha256": "417c1e3b8cd487e59678bdeb773132a6ce1a5cf0d294789a438a397874b2ef1c",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1d/BNBUSDT-1d-2021-01.zip"
+    },
+    "spot_BNBUSDT_2021-01_checksum": {
+      "bytes": 88,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1d/BNBUSDT-1d-2021-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "\"c397734a8559ab616a72e0fbe5412dbb\"",
+        "Last-Modified": "Tue, 22 Jun 2021 12:45:22 GMT"
+      },
+      "path": "raw/c337fbbc4092df0e8fdd97150b560431c3fef776124e739c0dc24350bc6721d9",
+      "requested_utc": "2026-10-04T14:10:20.957354+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.213337+00:00",
+      "sha256": "b8ca57822b2f75e99cff72f87693c4b98b9cd73dd11787c72ca5b9b8fa8bef42",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/BNBUSDT/1d/BNBUSDT-1d-2021-01.zip.CHECKSUM"
+    },
+    "spot_DOGEUSDT_2021-01": {
+      "bytes": 2054,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1d/DOGEUSDT-1d-2021-01.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:22 GMT",
+        "ETag": "\"68313cfc1313e781046b46857fb30579\"",
+        "Last-Modified": "Tue, 22 Jun 2021 17:07:55 GMT"
+      },
+      "path": "raw/3e6195999a5ad02123c86e2a7d633da086d26be7cd44625bc02f2f0749167f59",
+      "requested_utc": "2026-10-04T14:10:21.214603+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.555203+00:00",
+      "sha256": "97eb6a9187e490a280b08b2fecdcd2b77593cf4063ee91f2a9df415ed947a6af",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1d/DOGEUSDT-1d-2021-01.zip"
+    },
+    "spot_DOGEUSDT_2021-01_checksum": {
+      "bytes": 89,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1d/DOGEUSDT-1d-2021-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:22 GMT",
+        "ETag": "\"8646959ded53ebe82c932fc04cfbf7d1\"",
+        "Last-Modified": "Tue, 22 Jun 2021 17:07:55 GMT"
+      },
+      "path": "raw/ec2e0d2f50e50b4ea15e5bd849808a2daae7b5c5d9482534feb58aef795132bd",
+      "requested_utc": "2026-10-04T14:10:21.377387+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.665947+00:00",
+      "sha256": "2e9d5936c7b08f398c9dedbda1096099c4ece7f36a66e94cf29f0e8293ae98bd",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/DOGEUSDT/1d/DOGEUSDT-1d-2021-01.zip.CHECKSUM"
+    },
+    "spot_SOLUSDT_2021-01": {
+      "bytes": 1937,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1d/SOLUSDT-1d-2021-01.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "\"9e77ad50c513ce74746c876a4c5fd222\"",
+        "Last-Modified": "Tue, 22 Jun 2021 18:18:10 GMT"
+      },
+      "path": "raw/4bd6656d3652bff7e832ffcbf88e4c9cb8270f7d0883cced3f8dc2d4d29f53d5",
+      "requested_utc": "2026-10-04T14:10:20.315419+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.422959+00:00",
+      "sha256": "d7883e8cf9558b3735c2c36e27baccd1ee241d294e3ef85a6b3db5da36d7e040",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1d/SOLUSDT-1d-2021-01.zip"
+    },
+    "spot_SOLUSDT_2021-01_checksum": {
+      "bytes": 88,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1d/SOLUSDT-1d-2021-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:20 GMT",
+        "ETag": "\"2440392f602483e8446e3bdcf791dec0\"",
+        "Last-Modified": "Tue, 22 Jun 2021 18:18:10 GMT"
+      },
+      "path": "raw/4b3cd2c79c40d2149df1c3cb881f3b9045f351f2d5e923b53a8cfbbe59028664",
+      "requested_utc": "2026-10-04T14:10:20.315596+00:00",
+      "retrieved_utc": "2026-10-04T14:10:20.760196+00:00",
+      "sha256": "d3d36e4e3d450149639592c80767b6a9ec092fc7d63559955f3843114cb4e3ce",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/SOLUSDT/1d/SOLUSDT-1d-2021-01.zip.CHECKSUM"
+    },
+    "spot_XRPUSDT_2021-01": {
+      "bytes": 2040,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1d/XRPUSDT-1d-2021-01.zip",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "\"5b19fdbd4de48eca02a481cbeb280c1e\"",
+        "Last-Modified": "Tue, 22 Jun 2021 15:06:28 GMT"
+      },
+      "path": "raw/498ed5c50d45ea621d8b3f1755d48c936d57ad5305ca87c619ee4f38d51be3e2",
+      "requested_utc": "2026-10-04T14:10:20.315696+00:00",
+      "retrieved_utc": "2026-10-04T14:10:20.956218+00:00",
+      "sha256": "53b2af75344e28cf5b87c6b88451cff0c5155c511ebd776a357a38b60aa7511b",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1d/XRPUSDT-1d-2021-01.zip"
+    },
+    "spot_XRPUSDT_2021-01_checksum": {
+      "bytes": 88,
+      "final_url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1d/XRPUSDT-1d-2021-01.zip.CHECKSUM",
+      "headers": {
+        "Content-Type": "application/zip",
+        "Date": "Sun, 04 Oct 2026 14:10:21 GMT",
+        "ETag": "\"88b8c8bd8ee9b2366dead5de2c4fc679\"",
+        "Last-Modified": "Tue, 22 Jun 2021 15:06:28 GMT"
+      },
+      "path": "raw/19ea5ab7308bb18ff4a4fda2379877eed0f750b68e82bfad48b80a019af52c51",
+      "requested_utc": "2026-10-04T14:10:20.315789+00:00",
+      "retrieved_utc": "2026-10-04T14:10:21.023032+00:00",
+      "sha256": "3eb22ca345b864c235b863428971cd89989945be39876423a75ce84bfd84626a",
+      "status": 200,
+      "url": "https://data.binance.vision/data/spot/monthly/klines/XRPUSDT/1d/XRPUSDT-1d-2021-01.zip.CHECKSUM"
+    }
+  }
+}

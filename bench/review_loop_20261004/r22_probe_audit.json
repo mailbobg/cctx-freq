@@ -1,0 +1,244 @@
+{
+  "historical_publication_certified": false,
+  "new_performance": false,
+  "no_feature_cohort_outcomes_or_bot_change": true,
+  "not_a_complete_historical_market_or_past_top_six": true,
+  "oi": {
+    "actual_early_first_row": [
+      "2021-01-01 00:00:00",
+      "BTCUSDT",
+      "34935.88100000",
+      "1011332738.14749436",
+      "1.59041180",
+      "1.22061180",
+      "1.60088917",
+      "0.44027971"
+    ],
+    "actual_early_last_row": [
+      "2021-01-01 23:55:00",
+      "BTCUSDT",
+      "36157.80900000",
+      "1059723551.93661000",
+      "1.51345446",
+      "1.18575028",
+      "1.57427888",
+      "1.09879227"
+    ],
+    "actual_early_native_header": [
+      "create_time",
+      "symbol",
+      "sum_open_interest",
+      "sum_open_interest_value",
+      "count_toptrader_long_short_ratio",
+      "sum_toptrader_long_short_ratio",
+      "count_long_short_ratio",
+      "sum_taker_long_short_vol_ratio"
+    ],
+    "actual_early_native_rows": 576,
+    "early_day_http_status": 200,
+    "full_coverage_certified": false,
+    "native_checksum_verified": true,
+    "next_distinct_information_entrance": true,
+    "prefix_keys": [
+      "data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-09-01.zip",
+      "data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-09-01.zip.CHECKSUM",
+      "data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-09-02.zip"
+    ],
+    "raw_zip_sha256": "9c42e4fa6048b185439a3d744066fa1d2bf0637b3654da53bb8930d1a3da364a",
+    "selected_as_hypothesis": false,
+    "truncated": "true"
+  },
+  "panel": [
+    {
+      "first_native_row": {
+        "close": "1.84210000",
+        "high": "1.86000000",
+        "interval_end": "2021-01-02 00:00:00+00:00",
+        "low": "1.49900000",
+        "native_close_epoch": "1609545599999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1609459200000",
+        "open": "1.50880000",
+        "quote_volume": "7454786.75142100",
+        "trades": 55297,
+        "volume": "4421991.45000000"
+      },
+      "fixed_friday_native_row": {
+        "close": "3.82930000",
+        "high": "3.91200000",
+        "interval_end": "2021-01-30 00:00:00+00:00",
+        "low": "3.60000000",
+        "native_close_epoch": "1611964799999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1611878400000",
+        "open": "3.80920000",
+        "quote_volume": "11255370.83607500",
+        "trades": 42872,
+        "volume": "2992168.86000000"
+      },
+      "raw_zip_sha256": "d7883e8cf9558b3735c2c36e27baccd1ee241d294e3ef85a6b3db5da36d7e040",
+      "rows": 31,
+      "symbol": "SOLUSDT"
+    },
+    {
+      "first_native_row": {
+        "close": "0.23746000",
+        "high": "0.25000000",
+        "interval_end": "2021-01-02 00:00:00+00:00",
+        "low": "0.21600000",
+        "native_close_epoch": "1609545599999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1609459200000",
+        "open": "0.21953000",
+        "quote_volume": "351730366.62146100",
+        "trades": 652631,
+        "volume": "1490489727.40000000"
+      },
+      "fixed_friday_native_row": {
+        "close": "0.28290000",
+        "high": "0.31724000",
+        "interval_end": "2021-01-30 00:00:00+00:00",
+        "low": "0.25915000",
+        "native_close_epoch": "1611964799999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1611878400000",
+        "open": "0.26413000",
+        "quote_volume": "482447395.07353400",
+        "trades": 725747,
+        "volume": "1695844598.80000000"
+      },
+      "raw_zip_sha256": "53b2af75344e28cf5b87c6b88451cff0c5155c511ebd776a357a38b60aa7511b",
+      "rows": 31,
+      "symbol": "XRPUSDT"
+    },
+    {
+      "first_native_row": {
+        "close": "37.77620000",
+        "high": "38.95900000",
+        "interval_end": "2021-01-02 00:00:00+00:00",
+        "low": "36.95550000",
+        "native_close_epoch": "1609545599999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1609459200000",
+        "open": "37.35960000",
+        "quote_volume": "92358608.11308390",
+        "trades": 287020,
+        "volume": "2435989.12700000"
+      },
+      "fixed_friday_native_row": {
+        "close": "42.86180000",
+        "high": "44.00000000",
+        "interval_end": "2021-01-30 00:00:00+00:00",
+        "low": "41.80170000",
+        "native_close_epoch": "1611964799999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1611878400000",
+        "open": "42.52770000",
+        "quote_volume": "147364483.45470290",
+        "trades": 481047,
+        "volume": "3433689.48400000"
+      },
+      "raw_zip_sha256": "417c1e3b8cd487e59678bdeb773132a6ce1a5cf0d294789a438a397874b2ef1c",
+      "rows": 31,
+      "symbol": "BNBUSDT"
+    },
+    {
+      "first_native_row": {
+        "close": "0.17509000",
+        "high": "0.18473000",
+        "interval_end": "2021-01-02 00:00:00+00:00",
+        "low": "0.17000000",
+        "native_close_epoch": "1609545599999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1609459200000",
+        "open": "0.18134000",
+        "quote_volume": "82720467.01026700",
+        "trades": 178824,
+        "volume": "462201570.90000000"
+      },
+      "fixed_friday_native_row": {
+        "close": "0.34752000",
+        "high": "0.36836000",
+        "interval_end": "2021-01-30 00:00:00+00:00",
+        "low": "0.33050000",
+        "native_close_epoch": "1611964799999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1611878400000",
+        "open": "0.34409000",
+        "quote_volume": "235094446.38598800",
+        "trades": 438205,
+        "volume": "666472809.50000000"
+      },
+      "raw_zip_sha256": "e6cb149267d1ed9436b06dcbd2f63ae8df5e2e8d4b2ed0930db6cb94d555f4fa",
+      "rows": 31,
+      "symbol": "ADAUSDT"
+    },
+    {
+      "first_native_row": {
+        "close": "0.00568000",
+        "high": "0.00569700",
+        "interval_end": "2021-01-02 00:00:00+00:00",
+        "low": "0.00460100",
+        "native_close_epoch": "1609545599999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1609459200000",
+        "open": "0.00467160",
+        "quote_volume": "15572484.05525460",
+        "trades": 64119,
+        "volume": "3019717963.00000000"
+      },
+      "fixed_friday_native_row": {
+        "close": "0.04590590",
+        "high": "0.08750000",
+        "interval_end": "2021-01-30 00:00:00+00:00",
+        "low": "0.03130000",
+        "native_close_epoch": "1611964799999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1611878400000",
+        "open": "0.03644200",
+        "quote_volume": "5748142275.43206520",
+        "trades": 6250186,
+        "volume": "109073693231.00000000"
+      },
+      "raw_zip_sha256": "97eb6a9187e490a280b08b2fecdcd2b77593cf4063ee91f2a9df415ed947a6af",
+      "rows": 31,
+      "symbol": "DOGEUSDT"
+    },
+    {
+      "first_native_row": {
+        "close": "3.64970000",
+        "high": "3.86000000",
+        "interval_end": "2021-01-02 00:00:00+00:00",
+        "low": "3.01780000",
+        "native_close_epoch": "1609545599999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1609459200000",
+        "open": "3.18590000",
+        "quote_volume": "13320352.51523900",
+        "trades": 70279,
+        "volume": "3817118.74000000"
+      },
+      "fixed_friday_native_row": {
+        "close": "11.61580000",
+        "high": "12.67570000",
+        "interval_end": "2021-01-30 00:00:00+00:00",
+        "low": "11.31450000",
+        "native_close_epoch": "1611964799999",
+        "native_epoch_scale": 1000,
+        "native_open_epoch": "1611878400000",
+        "open": "11.95960000",
+        "quote_volume": "17407967.39137200",
+        "trades": 63114,
+        "volume": "1470197.45000000"
+      },
+      "raw_zip_sha256": "c2c0906255914e37385a2d32bc717c4f0adef8ac2704fe5bf09fff246eee8ed0",
+      "rows": 31,
+      "symbol": "AVAXUSDT"
+    }
+  ],
+  "publisher_readme_sha256": "2e133d9945a9263a02781369078e72805eff074680f305cd5460016471c6caad",
+  "selected_panel_has_actual_native_source_sample": true,
+  "source_plan_commit": "a7a4a68",
+  "source_responses": 16,
+  "source_stage_only": true
+}
