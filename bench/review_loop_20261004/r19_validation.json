@@ -1,0 +1,22 @@
+{
+  "adopted": false,
+  "all_eight_fixed_outcomes_replayed_offline": true,
+  "all_prior_immutable_registry_hashes_unchanged": true,
+  "all_six_reference_curves_unchanged": true,
+  "captured_utc": "2026-10-04T13:21:52.245190+00:00",
+  "final_plot_visually_checked": true,
+  "focused_tests_passed": 27,
+  "full_directory_discovery_claimed": false,
+  "independent_daily_and_recent_source_native_ledgers_replayed": true,
+  "no_new_rule_or_numeric_curve_change_after_replay": true,
+  "no_strategy_bot_or_cohort_change": true,
+  "offline_replay_artifact_snapshot_count": 324,
+  "offline_snapshot_SHA_unchanged": true,
+  "plot_only_date_label_layout_refined_after_replay": true,
+  "real_held_exact_prefix_and_native_order_prefix": true,
+  "shared_ledgers_refreshed_with_previous_versions_preserved_in_git": true,
+  "stable_tests_passed": 394,
+  "stable_tracked_owned_test_files": 46,
+  "subtests_passed": 16,
+  "warnings": 4
+}
