@@ -1,0 +1,273 @@
+{
+  "results": {
+    "early_reused": {
+      "decision_coverage": {
+        "active_original_weeks": 90,
+        "decision_weeks": 152,
+        "known_weeks": 152,
+        "per_member_positive_weeks": {
+          "ADAUSDT": 61,
+          "AVAXUSDT": 69,
+          "BNBUSDT": 81,
+          "DOGEUSDT": 65,
+          "SOLUSDT": 76,
+          "XRPUSDT": 72
+        },
+        "positive_member_count_histogram": {
+          "0": 43,
+          "1": 18,
+          "2": 15,
+          "3": 12,
+          "4": 15,
+          "5": 14,
+          "6": 35
+        },
+        "source_reason_counts": {
+          "majority_positive": 64,
+          "no_majority": 88
+        },
+        "vetoed_original_active_coin_weeks": {
+          "BTC": 26,
+          "ETH": 27
+        },
+        "vetoed_original_active_weeks_by_reason": {
+          "no_majority": 32
+        }
+      },
+      "participation_minus_control_PnL_USDT_10000_start": {
+        "BTC": -1569.15830904571,
+        "ETH": -1215.387938371919,
+        "fees": 35.31918963790004
+      },
+      "versions": {
+        "Cov10_baseline_cost0.0012": {
+          "all_days_attribution_max_abs_gap": 2.8579569266717897e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -352.3813357747062,
+            "ETH": -474.0597635445698,
+            "fees": 0.0
+          },
+          "mean_held_exposure_pct": 11.002255675134121,
+          "peak": "2022-11-04 00:00:00+00:00",
+          "total_days": 1064,
+          "trough": "2022-11-09 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": 1553.051648314856,
+            "ETH": 2196.00859049159,
+            "fees": -111.61835542199329
+          },
+          "wholly_cash_days": 434
+        },
+        "Cov10_baseline_cost0.0024": {
+          "all_days_attribution_max_abs_gap": 2.8449465006019636e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -350.86672469459984,
+            "ETH": -472.02215230469335,
+            "fees": 0.0
+          },
+          "mean_held_exposure_pct": 11.004592876610149,
+          "peak": "2022-11-04 00:00:00+00:00",
+          "total_days": 1064,
+          "trough": "2022-11-09 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": 1541.1466389275452,
+            "ETH": 2188.5493288286443,
+            "fees": -222.20001176424628
+          },
+          "wholly_cash_days": 434
+        },
+        "participation_confirmation_cost0.0012": {
+          "all_days_attribution_max_abs_gap": 2.3800948191488036e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -514.2010999788785,
+            "ETH": -692.7903510010651,
+            "fees": -23.586090803994487
+          },
+          "mean_held_exposure_pct": 6.949578887146441,
+          "peak": "2021-05-11 00:00:00+00:00",
+          "total_days": 1064,
+          "trough": "2022-11-09 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": -16.106660730854042,
+            "ETH": 980.6206521196709,
+            "fees": -76.29916578409325
+          },
+          "wholly_cash_days": 658
+        },
+        "participation_confirmation_cost0.0024": {
+          "all_days_attribution_max_abs_gap": 3.1138286393783687e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -552.8495953411388,
+            "ETH": -637.0645113819609,
+            "fees": -71.00833831598396
+          },
+          "mean_held_exposure_pct": 6.951111025550276,
+          "peak": "2021-05-11 00:00:00+00:00",
+          "total_days": 1064,
+          "trough": "2023-01-18 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": -17.04978845727399,
+            "ETH": 978.5025922829349,
+            "fees": -152.08333444571315
+          },
+          "wholly_cash_days": 658
+        }
+      }
+    },
+    "recent_reused": {
+      "decision_coverage": {
+        "active_original_weeks": 86,
+        "decision_weeks": 140,
+        "known_weeks": 140,
+        "per_member_positive_weeks": {
+          "ADAUSDT": 58,
+          "AVAXUSDT": 58,
+          "BNBUSDT": 80,
+          "DOGEUSDT": 61,
+          "SOLUSDT": 71,
+          "XRPUSDT": 61
+        },
+        "positive_member_count_histogram": {
+          "0": 39,
+          "1": 19,
+          "2": 16,
+          "3": 5,
+          "4": 15,
+          "5": 13,
+          "6": 33
+        },
+        "source_reason_counts": {
+          "majority_positive": 61,
+          "no_majority": 79
+        },
+        "vetoed_original_active_coin_weeks": {
+          "BTC": 24,
+          "ETH": 21
+        },
+        "vetoed_original_active_weeks_by_reason": {
+          "no_majority": 30
+        }
+      },
+      "participation_minus_control_PnL_USDT_10000_start": {
+        "BTC": -653.7595092401257,
+        "ETH": -1496.5098698991837,
+        "fees": 37.59972481972878
+      },
+      "versions": {
+        "Cov10_baseline_cost0.0012": {
+          "all_days_attribution_max_abs_gap": 3.3523531173251797e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -380.91736597393475,
+            "ETH": -616.9752495257128,
+            "fees": -29.44877441335239
+          },
+          "independent_source_native_ledger": {
+            "actual_exchange_execution_certified": false,
+            "final_native_cash": 1.390512973203888,
+            "max_abs_cash_units_equity_fees_turnover_gap": 2.220446049250313e-16,
+            "source_matched_native_fills": 91,
+            "terminal_native_units": [
+              2.117582368135751e-22,
+              0.0
+            ]
+          },
+          "mean_held_exposure_pct": 13.509913922573336,
+          "peak": "2025-10-06 00:00:00+00:00",
+          "total_days": 974,
+          "trough": "2026-03-29 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": 1787.4776631817856,
+            "ETH": 2285.6783185351146,
+            "fees": -168.0262496780076
+          },
+          "wholly_cash_days": 378
+        },
+        "Cov10_baseline_cost0.0024": {
+          "all_days_attribution_max_abs_gap": 3.3138639402019443e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -377.01844787940394,
+            "ETH": -610.6177642103148,
+            "fees": -58.28030756494192
+          },
+          "independent_source_native_ledger": {
+            "actual_exchange_execution_certified": false,
+            "final_native_cash": 1.3710207195954334,
+            "max_abs_cash_units_equity_fees_turnover_gap": 6.661338147750939e-16,
+            "source_matched_native_fills": 91,
+            "terminal_native_units": [
+              0.0,
+              0.0
+            ]
+          },
+          "mean_held_exposure_pct": 13.513453279546637,
+          "peak": "2025-10-06 00:00:00+00:00",
+          "total_days": 974,
+          "trough": "2026-03-29 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": 1778.1162893717615,
+            "ETH": 2265.7598071071898,
+            "fees": -333.66890052461997
+          },
+          "wholly_cash_days": 378
+        },
+        "participation_confirmation_cost0.0012": {
+          "all_days_attribution_max_abs_gap": 2.949029909160572e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -442.6509659100472,
+            "ETH": -760.7133384625736,
+            "fees": -41.92442676971215
+          },
+          "independent_source_native_ledger": {
+            "actual_exchange_execution_certified": false,
+            "final_native_cash": 1.1792460077719307,
+            "max_abs_cash_units_equity_fees_turnover_gap": 2.220446049250313e-16,
+            "source_matched_native_fills": 74,
+            "terminal_native_units": [
+              0.0,
+              -1.3552527156068805e-20
+            ]
+          },
+          "mean_held_exposure_pct": 8.9814700798176,
+          "peak": "2025-10-06 00:00:00+00:00",
+          "total_days": 974,
+          "trough": "2026-08-01 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": 1133.71815394166,
+            "ETH": 789.1684486359308,
+            "fees": -130.4265248582788
+          },
+          "wholly_cash_days": 588
+        },
+        "participation_confirmation_cost0.0024": {
+          "all_days_attribution_max_abs_gap": 2.723515857283587e-16,
+          "episode_asset_pnl_USDT_10000_start": {
+            "BTC": -439.29682742962257,
+            "ETH": -754.9524841459983,
+            "fees": -83.14470911969889
+          },
+          "independent_source_native_ledger": {
+            "actual_exchange_execution_certified": false,
+            "final_native_cash": 1.1660250293260388,
+            "max_abs_cash_units_equity_fees_turnover_gap": 4.440892098500626e-16,
+            "source_matched_native_fills": 74,
+            "terminal_native_units": [
+              -4.235164736271502e-22,
+              0.0
+            ]
+          },
+          "mean_held_exposure_pct": 8.983815635652096,
+          "peak": "2025-10-06 00:00:00+00:00",
+          "total_days": 974,
+          "trough": "2026-08-01 00:00:00+00:00",
+          "whole_window_asset_pnl_USDT_10000_start": {
+            "BTC": 1130.6937687782665,
+            "ETH": 788.985999662665,
+            "fees": -259.42947518054575
+          },
+          "wholly_cash_days": 588
+        }
+      }
+    }
+  },
+  "scope": "Independent retained native price/fill accounting and descriptive panel decisions. No causal skipped-trade alpha or sign/horizon/member/majority/day/sizing/fee sweep; no adoption."
+}
