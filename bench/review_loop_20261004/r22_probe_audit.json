@@ -35,9 +35,14 @@
       "sum_taker_long_short_vol_ratio"
     ],
     "actual_early_native_rows": 576,
+    "all_duplicate_rows_native_equal": true,
+    "duplicates_not_deleted": true,
     "early_day_http_status": 200,
     "full_coverage_certified": false,
     "native_checksum_verified": true,
+    "native_duplicate_multiplicities": {
+      "2": 288
+    },
     "next_distinct_information_entrance": true,
     "prefix_keys": [
       "data/futures/um/daily/metrics/BTCUSDT/BTCUSDT-metrics-2020-09-01.zip",
@@ -46,7 +51,9 @@
     ],
     "raw_zip_sha256": "9c42e4fa6048b185439a3d744066fa1d2bf0637b3654da53bb8930d1a3da364a",
     "selected_as_hypothesis": false,
-    "truncated": "true"
+    "timezone_and_calendar_publication_semantics_not_certified": true,
+    "truncated": "true",
+    "unique_declared_times": 288
   },
   "panel": [
     {
