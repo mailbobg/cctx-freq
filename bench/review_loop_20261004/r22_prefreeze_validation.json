@@ -1,0 +1,54 @@
+{
+  "baseline_max_abs_gap": {
+    "early_reused_daily_cost0.0012": 2.220446049250313e-16,
+    "early_reused_daily_cost0.0024": 2.220446049250313e-16,
+    "recent_reused_daily_cost0.0012": 2.220446049250313e-16,
+    "recent_reused_daily_cost0.0024": 2.220446049250313e-16,
+    "recent_reused_minute_cost0.0012": 2.220446049250313e-16,
+    "recent_reused_minute_cost0.0024": 2.220446049250313e-16
+  },
+  "candidate_daily_minute_prefix_gap": 0.0,
+  "collection_corrections_before_cohort": [
+    "Original target merge raised duplicate-key TypeError before fetching; exact URLs unchanged.",
+    "176 original transport failures retained; all176 same-URL explicit retries succeed. Retry client reuses worker connections with two workers and25s timeouts. Manifest writes are atomic. No archive value/default/clock substitution."
+  ],
+  "exact_native_feature_and_weight_prefix_equal": true,
+  "focused_tests_passed": 25,
+  "historical_publication_certified": false,
+  "no_aggregate_candidate_outcomes_yet": true,
+  "no_strategy_bot_image_or_forward_cohort_change": true,
+  "protocol_commit": "67fd65a",
+  "real_held_execution_and_native_order_prefix_equal": true,
+  "source_code_sha256": {
+    "../../docs/plans/2026-10-04-external-panel-participation-design.md": "baf8c720813b33fb2132084ee27ef4025bef35d5788bcf922e915839e58e2d16",
+    "R22_PROTOCOL.md": "edf999a1c77338601b0e4ac24925b0efab45acb20256e7ce9593d3353411d3fb",
+    "R22_SOURCE_PLAN.md": "f90cc9ee878ebe510128b78dd5c1f13c35297e15b84dd5f31e988f7cfe5fb94f",
+    "r10_gold.py": "d83c4c2a115b7129ee762d20c91c5a68d117e60044836811bf9f27c3bcc33064",
+    "r13_atr.py": "38a3f6157fb9d461ba7c582bcb82e6f4d0787d11b6c0e655aee38f558a31c763",
+    "r17_prices.py": "49a529029d4e89fd322091b8bec50e8d8a8371f584afe7eb0accb5807f3af868",
+    "r19_reflection.py": "64d8d84e11850b2e0051d54d8dd37c003b4f7041d98cf74eafea454845cecf05",
+    "r19_run.py": "971170c2bfc92b36f6c6de251789048207e89cf9c1b4645e9e5c3cda29424bde",
+    "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+    "r20_audit.py": "e83289d3c70e694e64fa585d52b08f3682eb700de82e5a34e46f6827ce784817",
+    "r21_basis.py": "d41bf07d0b4bc5d2c17eb2c4701241e6dc607dfc00b9b045800742c1637b073a",
+    "r22_participation.py": "5fbeee8047a9c4dfd7004fd6c1def4ae68dc5512a33592fee5505fffb4df6502",
+    "r22_reflection.py": "e591b047c5f52956dae8a67e50261bdc80021d486a2b2acb221050dacf17946c",
+    "r22_run.py": "637291caa0ef878d0b495ddeaa933b4c8cb80b1b065c81e18a5f6f998a223c61",
+    "r22_source_audit.json": "8e978f6d1b548659f2c25db7f477b9667b14a2bb514192b925cd4e65fcb3231a",
+    "r22_sources.py": "fa50ace84bb83b32b75c08959985a588085532c26ce297a98b0d4fb0f69cce1e",
+    "r8_crowding.py": "5d66cc5b5a9237375409c71e1a6c6c36a2172de591f49bb02bc286147e7d0f59",
+    "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91",
+    "test_r22_participation.py": "a09baa2a431ff55b74d4b971589b834c203829032a281aeaa172baddc0601b32",
+    "test_r22_sources.py": "ffa80e0487a7f25e6ce0137b15c885d10eea1d8ef8d2a2279d50bf47cba929e5"
+  },
+  "source_input_manifest_sha256": "eb2d57a2aa8e4c0863c73d1faf5c18d84601999f642fb616220223995842eac4",
+  "stable_suite": {
+    "broad_all_current_tree_pass_claimed": false,
+    "new_owned_files": 2,
+    "subtests_passed": 16,
+    "tests_passed": 445,
+    "tracked_files": 48,
+    "warnings": 4
+  },
+  "stage": "before full outcomes"
+}
