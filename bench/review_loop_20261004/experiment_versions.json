@@ -4965,6 +4965,7 @@
     "r35_final_replay.log": "e04fcd484f16c6ca0264027ac832efb643d8c5f1312306ba69229d75a9f10b5f",
     "r35_initial_bot_census_failure.json": "9a094e35e1b22e5d1fa4879218ce22ca0207f0d315d3ea72d629fddffb581403",
     "r35_initial_checks.log": "72cfe18b9a817369323645b2942195074e6b2078def8316a9e7e8e85e77f1b1c",
+    "r35_initial_final_worktree_check_failure.json": "0da5d763ffeb1448f5e290cea33a19061f9ac974cea48b31e6452d1c3bb6368a",
     "r35_initial_registered_ledger_write_guard.json": "e817099b6e985a382263549a1d892a545453c4149670d54d2e24d7d22b3cecf7",
     "r35_initial_strict_source_audit.json": "489a629ecf7f30a58d2ccec2362646d7add6c5eb403e5a16a86a8ca9f09c14ac",
     "r35_native_span_forensics.json": "a96d50d6dc502696f7a9e45419302fc98fd264cc73828a583d5c7e5ff3607e36",

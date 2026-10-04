@@ -1,0 +1,6 @@
+{
+  "no_model_price_quantity_cost_gate_or_risk_output_changed": true,
+  "old_test_payload_retained_byte_identically_as_py_txt": true,
+  "original_failure": "Owned review worktree is not clean: tracked old archived test filename deletion was not staged",
+  "resolution": "Stage only the owned obsolete archived .py filename deletion; the retained .py.txt remains committed"
+}
