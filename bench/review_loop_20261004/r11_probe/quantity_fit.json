@@ -1,0 +1,54 @@
+{
+  "initial_USDT_diagnostic_scale": 10000,
+  "holdings_quantity_fit": {
+    "early_reused": {
+      "BTC": {
+        "source_instrument": "BTC-26MAR21-28000-P",
+        "observed_min_native_option_amount": 0.1,
+        "active_research_Monday_holdings": 76,
+        "holdings_below_one_option_lot": 69,
+        "fraction_below_one_lot_pct": 90.78947368421053,
+        "median_ceil_cover_to_underlying_quantity_ratio": 2.2991832216857606,
+        "max_ceil_cover_to_underlying_quantity_ratio": 9.313136091700986,
+        "median_active_asset_quantity": 0.04349370639834438,
+        "baseline_curve_sha256": "9b7a0b6e2b5cf21dcbbbe0d89005379768760f6a9f80f0c15cd3699ed05d6659"
+      },
+      "ETH": {
+        "source_instrument": "ETH-26MAR21-960-P",
+        "observed_min_native_option_amount": 1,
+        "active_research_Monday_holdings": 82,
+        "holdings_below_one_option_lot": 74,
+        "fraction_below_one_lot_pct": 90.2439024390244,
+        "median_ceil_cover_to_underlying_quantity_ratio": 2.3897491934432913,
+        "max_ceil_cover_to_underlying_quantity_ratio": 6.306146691469478,
+        "median_active_asset_quantity": 0.4184539543913983,
+        "baseline_curve_sha256": "9b7a0b6e2b5cf21dcbbbe0d89005379768760f6a9f80f0c15cd3699ed05d6659"
+      }
+    },
+    "recent_reused": {
+      "BTC": {
+        "source_instrument": "BTC-29MAR24-40000-P",
+        "observed_min_native_option_amount": 0.1,
+        "active_research_Monday_holdings": 74,
+        "holdings_below_one_option_lot": 74,
+        "fraction_below_one_lot_pct": 100.0,
+        "median_ceil_cover_to_underlying_quantity_ratio": 5.542839094515226,
+        "max_ceil_cover_to_underlying_quantity_ratio": 8.972641093316543,
+        "median_active_asset_quantity": 0.018041295858462217,
+        "baseline_curve_sha256": "c95f388ecb891cfa1db778f7ee6a695651a0a7606a98bb6c195b353cbe6b82f7"
+      },
+      "ETH": {
+        "source_instrument": "ETH-29MAR24-2000-P",
+        "observed_min_native_option_amount": 1,
+        "active_research_Monday_holdings": 69,
+        "holdings_below_one_option_lot": 68,
+        "fraction_below_one_lot_pct": 98.55072463768117,
+        "median_ceil_cover_to_underlying_quantity_ratio": 2.0755251956084413,
+        "max_ceil_cover_to_underlying_quantity_ratio": 4.998734920241719,
+        "median_active_asset_quantity": 0.48180576276109693,
+        "baseline_curve_sha256": "c95f388ecb891cfa1db778f7ee6a695651a0a7606a98bb6c195b353cbe6b82f7"
+      }
+    }
+  },
+  "limitations": "Quantity-fit diagnostic on unchanged common research Cov10 spot holdings, not actual Freqtrade option execution/P&L. Source-sampled inverse-option minimum quantities, not a reconstructed historical schedule for every option. Ceil purchases extra downside notional, not exact price/delta hedging. No premiums, strikes or profits optimized."
+}

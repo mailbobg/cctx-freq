@@ -1,0 +1,202 @@
+{
+  "captured_utc": "2026-10-04T10:12:13.914688+00:00",
+  "samples": {
+    "BTC-26MAR21-30000-P": {
+      "get_instrument": {
+        "error": {
+          "message": "Invalid params",
+          "data": {
+            "reason": "wrong format",
+            "param": "instrument_name"
+          },
+          "code": -32602
+        }
+      },
+      "get_last_trades_by_instrument_and_time": {
+        "error": {
+          "message": "Invalid params",
+          "data": {
+            "reason": "wrong format",
+            "param": "instrument_name"
+          },
+          "code": -32602
+        }
+      }
+    },
+    "ETH-26MAR21-1000-P": {
+      "get_instrument": {
+        "error": {
+          "message": "Invalid params",
+          "data": {
+            "reason": "wrong format",
+            "param": "instrument_name"
+          },
+          "code": -32602
+        }
+      },
+      "get_last_trades_by_instrument_and_time": {
+        "error": {
+          "message": "Invalid params",
+          "data": {
+            "reason": "wrong format",
+            "param": "instrument_name"
+          },
+          "code": -32602
+        }
+      }
+    },
+    "BTC-29MAR24-40000-P": {
+      "get_instrument": {
+        "instrument_name": "BTC-29MAR24-40000-P",
+        "kind": "option",
+        "option_type": "put",
+        "creation_timestamp": 1680163260000,
+        "expiration_timestamp": 1711699200000,
+        "strike": 40000.0,
+        "quote_currency": "BTC",
+        "settlement_currency": "BTC",
+        "contract_size": 1.0,
+        "min_trade_amount": 0.1,
+        "state": null,
+        "is_active": false
+      },
+      "get_last_trades_by_instrument_and_time": {
+        "count": 11,
+        "has_more": false,
+        "fields": [
+          "trade_seq",
+          "trade_id",
+          "timestamp",
+          "tick_direction",
+          "price",
+          "mark_price",
+          "iv",
+          "instrument_name",
+          "index_price",
+          "direction",
+          "contracts",
+          "amount"
+        ],
+        "first_timestamp": 1711096916850,
+        "last_timestamp": 1711349183322,
+        "mark_field_coverage": 11,
+        "index_field_coverage": 11
+      }
+    },
+    "ETH-29MAR24-2000-P": {
+      "get_instrument": {
+        "instrument_name": "ETH-29MAR24-2000-P",
+        "kind": "option",
+        "option_type": "put",
+        "creation_timestamp": 1680163260000,
+        "expiration_timestamp": 1711699200000,
+        "strike": 2000.0,
+        "quote_currency": "ETH",
+        "settlement_currency": "ETH",
+        "contract_size": 1.0,
+        "min_trade_amount": 1,
+        "state": null,
+        "is_active": false
+      },
+      "get_last_trades_by_instrument_and_time": {
+        "count": 28,
+        "has_more": false,
+        "fields": [
+          "trade_seq",
+          "trade_id",
+          "timestamp",
+          "tick_direction",
+          "price",
+          "mark_price",
+          "iv",
+          "instrument_name",
+          "index_price",
+          "direction",
+          "contracts",
+          "amount"
+        ],
+        "first_timestamp": 1711102269927,
+        "last_timestamp": 1711549970228,
+        "mark_field_coverage": 28,
+        "index_field_coverage": 28
+      }
+    },
+    "BTC-26JUN26-50000-P": {
+      "get_instrument": {
+        "instrument_name": "BTC-26JUN26-50000-P",
+        "kind": "option",
+        "option_type": "put",
+        "creation_timestamp": 1750924810000,
+        "expiration_timestamp": 1782460800000,
+        "strike": 50000.0,
+        "quote_currency": "BTC",
+        "settlement_currency": "BTC",
+        "contract_size": 1.0,
+        "min_trade_amount": 0.1,
+        "state": null,
+        "is_active": true
+      },
+      "get_last_trades_by_instrument_and_time": {
+        "count": 100,
+        "has_more": true,
+        "fields": [
+          "trade_seq",
+          "trade_id",
+          "timestamp",
+          "tick_direction",
+          "price",
+          "mark_price",
+          "iv",
+          "instrument_name",
+          "index_price",
+          "direction",
+          "contracts",
+          "amount"
+        ],
+        "first_timestamp": 1781864261251,
+        "last_timestamp": 1782310454722,
+        "mark_field_coverage": 100,
+        "index_field_coverage": 100
+      }
+    },
+    "ETH-26JUN26-2000-P": {
+      "get_instrument": {
+        "instrument_name": "ETH-26JUN26-2000-P",
+        "kind": "option",
+        "option_type": "put",
+        "creation_timestamp": 1750924813000,
+        "expiration_timestamp": 1782460800000,
+        "strike": 2000.0,
+        "quote_currency": "ETH",
+        "settlement_currency": "ETH",
+        "contract_size": 1.0,
+        "min_trade_amount": 1,
+        "state": null,
+        "is_active": true
+      },
+      "get_last_trades_by_instrument_and_time": {
+        "count": 33,
+        "has_more": false,
+        "fields": [
+          "trade_seq",
+          "trade_id",
+          "timestamp",
+          "tick_direction",
+          "price",
+          "mark_price",
+          "iv",
+          "instrument_name",
+          "index_price",
+          "direction",
+          "contracts",
+          "amount"
+        ],
+        "first_timestamp": 1781968584614,
+        "last_timestamp": 1782458021840,
+        "mark_field_coverage": 33,
+        "index_field_coverage": 33
+      }
+    }
+  },
+  "scope": "Identity/tape-schema availability only; no P&L or option rule experiment."
+}

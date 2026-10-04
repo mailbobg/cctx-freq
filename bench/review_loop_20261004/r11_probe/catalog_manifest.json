@@ -1,0 +1,17 @@
+{
+  "rows": 248196,
+  "sha256": "a5afb44efcdd187fc498bdfb9ff61f4407f6c9d100d3a4e953262adddb66824d",
+  "columns": [
+    "instrument_name",
+    "option_type",
+    "creation_timestamp",
+    "expiration_timestamp",
+    "strike",
+    "quote_currency",
+    "settlement_currency",
+    "contract_size",
+    "min_trade_amount",
+    "is_active"
+  ],
+  "limitation": "Archived metadata identity, not bid/ask history or proof of current tradability. Must filter creation/expiry at every decision."
+}

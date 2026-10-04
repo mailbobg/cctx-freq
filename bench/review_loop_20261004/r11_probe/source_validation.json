@@ -1,0 +1,146 @@
+{
+  "raw_records_replayed": 18,
+  "metadata": {
+    "BTC-29MAR24-40000-P": {
+      "quote_currency": "BTC",
+      "settlement_currency": "BTC",
+      "contract_size": 1.0,
+      "min_trade_amount": 0.1,
+      "creation_timestamp": 1680163260000,
+      "expiration_timestamp": 1711699200000,
+      "is_active": false
+    },
+    "ETH-29MAR24-2000-P": {
+      "quote_currency": "ETH",
+      "settlement_currency": "ETH",
+      "contract_size": 1.0,
+      "min_trade_amount": 1,
+      "creation_timestamp": 1680163260000,
+      "expiration_timestamp": 1711699200000,
+      "is_active": false
+    },
+    "BTC-26JUN26-50000-P": {
+      "quote_currency": "BTC",
+      "settlement_currency": "BTC",
+      "contract_size": 1.0,
+      "min_trade_amount": 0.1,
+      "creation_timestamp": 1750924810000,
+      "expiration_timestamp": 1782460800000,
+      "is_active": true
+    },
+    "ETH-26JUN26-2000-P": {
+      "quote_currency": "ETH",
+      "settlement_currency": "ETH",
+      "contract_size": 1.0,
+      "min_trade_amount": 1,
+      "creation_timestamp": 1750924813000,
+      "expiration_timestamp": 1782460800000,
+      "is_active": true
+    },
+    "BTC-26MAR21-28000-P": {
+      "quote_currency": "BTC",
+      "settlement_currency": "BTC",
+      "contract_size": 1.0,
+      "min_trade_amount": 0.1,
+      "creation_timestamp": 1593072793000,
+      "expiration_timestamp": 1616745600000,
+      "is_active": false
+    },
+    "ETH-26MAR21-960-P": {
+      "quote_currency": "ETH",
+      "settlement_currency": "ETH",
+      "contract_size": 1.0,
+      "min_trade_amount": 1,
+      "creation_timestamp": 1595878959000,
+      "expiration_timestamp": 1616745600000,
+      "is_active": false
+    }
+  },
+  "tapes": {
+    "BTC-29MAR24-40000-P": {
+      "count": 11,
+      "has_more": false,
+      "first_utc": "2024-03-22T08:41:56.850000+00:00",
+      "last_utc": "2024-03-25T06:46:23.322000+00:00",
+      "mark_field_count": 11,
+      "index_field_count": 11,
+      "historical_bid_ask_quote_fields": []
+    },
+    "ETH-29MAR24-2000-P": {
+      "count": 28,
+      "has_more": false,
+      "first_utc": "2024-03-22T10:11:09.927000+00:00",
+      "last_utc": "2024-03-27T14:32:50.228000+00:00",
+      "mark_field_count": 28,
+      "index_field_count": 28,
+      "historical_bid_ask_quote_fields": []
+    },
+    "BTC-26JUN26-50000-P": {
+      "count": 100,
+      "has_more": true,
+      "first_utc": "2026-06-19T10:17:41.251000+00:00",
+      "last_utc": "2026-06-24T14:14:14.722000+00:00",
+      "mark_field_count": 100,
+      "index_field_count": 100,
+      "historical_bid_ask_quote_fields": []
+    },
+    "ETH-26JUN26-2000-P": {
+      "count": 33,
+      "has_more": false,
+      "first_utc": "2026-06-20T15:16:24.614000+00:00",
+      "last_utc": "2026-06-26T07:13:41.840000+00:00",
+      "mark_field_count": 33,
+      "index_field_count": 33,
+      "historical_bid_ask_quote_fields": []
+    },
+    "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=BTC-26MAR21-28000-P&include_old=true&start_timestamp=1616140800000&end_timestamp=1616745600000&count=100&sorting=asc": {
+      "count": 0,
+      "has_more": false
+    },
+    "ETH-26MAR21-960-P": {
+      "count": 2,
+      "has_more": false,
+      "first_utc": "2021-03-19T14:26:58.414000+00:00",
+      "last_utc": "2021-03-19T23:12:03.561000+00:00",
+      "mark_field_count": 2,
+      "index_field_count": 2,
+      "historical_bid_ask_quote_fields": []
+    }
+  },
+  "api_errors": {
+    "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=BTC-26MAR21-30000-P&include_old=true": {
+      "message": "Invalid params",
+      "data": {
+        "reason": "wrong format",
+        "param": "instrument_name"
+      },
+      "code": -32602
+    },
+    "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=BTC-26MAR21-30000-P&include_old=true&start_timestamp=1616140800000&end_timestamp=1616745600000&count=100&sorting=asc": {
+      "message": "Invalid params",
+      "data": {
+        "reason": "wrong format",
+        "param": "instrument_name"
+      },
+      "code": -32602
+    },
+    "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=ETH-26MAR21-1000-P&include_old=true": {
+      "message": "Invalid params",
+      "data": {
+        "reason": "wrong format",
+        "param": "instrument_name"
+      },
+      "code": -32602
+    },
+    "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=ETH-26MAR21-1000-P&include_old=true&start_timestamp=1616140800000&end_timestamp=1616745600000&count=100&sorting=asc": {
+      "message": "Invalid params",
+      "data": {
+        "reason": "wrong format",
+        "param": "instrument_name"
+      },
+      "code": -32602
+    }
+  },
+  "source_only": true,
+  "limitations": "Fixed schema/identity availability only, no premium/P&L selection. Sparse trade-event marks cannot certify a continuous daily/intraday executable bid/ask or mark path. Capped pages with has_more are explicitly incomplete. Inverse premiums and payouts are native BTC/ETH, not USDT. Minimum amounts constrain small-account protection; no fractional units invented."
+}

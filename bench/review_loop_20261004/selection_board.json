@@ -612,5 +612,11 @@
     "daily_MTM_DD_pct": -11.78125888975673,
     "adoption_gate": false,
     "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R11 contractual insurance source feasibility",
+    "performance_trial": false,
+    "adoption_gate": false,
+    "disposition": "Historical identities/trades available; continuous historical bid/ask/marks and minimum-lot economics unresolved. No premium/P&L selection or profitability result. Fixed tape errors/sparsity retained."
   }
 ]

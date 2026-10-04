@@ -37,7 +37,11 @@
     "r10_gold.py": "d83c4c2a115b7129ee762d20c91c5a68d117e60044836811bf9f27c3bcc33064",
     "r10_data.py": "e080d749ba8c0f3a589e4f379c087206e1680588874423a360fbe4de833b39b0",
     "test_r10_gold.py": "efd25b25100761bbdb345a49aff15fd93dad39568e764ce33da9501dc9885b26",
-    "r10_attribution.py": "c156a36b5b47eae55b767e732e29e207b578a0a30980034e6759fa1cc97ce04f"
+    "r10_attribution.py": "c156a36b5b47eae55b767e732e29e207b578a0a30980034e6759fa1cc97ce04f",
+    "R11_SOURCE_PLAN.md": "82cbd4608512ba0b563b77f87e8a93dc284824519ef7a02b04042e6bed53c676",
+    "r11_source_probe.py": "f3d89390d515439fd532ba0306415073b2f8daab9e672c7fcde060d68b8be914",
+    "r11_quantity_fit.py": "3ffccf366e799d2756b48f4f02ea317cde7c3c77f3a0c4447e1f50d4be0f3ce9",
+    "plot_extensions.py": "08e143b8566ea465c968e8493412e23c812b56083ea6480da4ee3c92fd38ab60"
   },
   "output_sha256": {
     "r1_results.json": "3e6ea8516f1a07e3cf4d867eb13b0485157a64ec77f683340e8f7de00cad9fc4",
@@ -141,9 +145,19 @@
     "r10_weight_audit.csv": "703185b8f0ec5c723a3925a72d30f1e3efdd1aa9413e07d92875fecbfb95aa4c",
     "r10_recent_reused_fixed_gold_cost0.0012_daily.csv": "191acab424d3aced402a95fa9aa4274c03d92a1fad2b1937e6cc20046a0fe843",
     "r10_results.json": "c0fb5cf4e4d9e52479e774d72fe9e6515740d5bc622bf7606a3a66e283b9d933",
-    "r10_data/manifest.json": "fa731cace45cdade7ff4a9cf01ac64aebba9f85c4971399b5caa8066c00f6caa"
+    "r10_data/manifest.json": "fa731cace45cdade7ff4a9cf01ac64aebba9f85c4971399b5caa8066c00f6caa",
+    "r11_probe/sources.json": "f7374b6864bb30671f8c6a3086994380eccedf1530ed526afff8c6f89083d91d",
+    "r11_probe/api_sources.json": "2066cf26aaaf2f537acca519c1e69deedb64cb50dcfa6de7040da58d09979b1c",
+    "r11_probe/quantity_fit.json": "271f453c598c82e7c1532e4140f4976a11707af3fe3a430dca01a0cec60d500b",
+    "r11_probe/deribit_openapi.json": "78543b1b2259c37511ea6998cdcab3bd8b888c5252fafa1fe9d2a8deb36dca4f",
+    "r11_probe/catalog_manifest.json": "c40a484e5274ede520d04a81e4372993780d106618bee6459b435ee0214c478e",
+    "r11_probe/availability.json": "e1c388b4136750830c334e4ebfc3a536da13057c38f50979f8e8244b040d8477",
+    "r11_probe/source_validation.json": "8fafaa2aacfd3820f26238722ba671b30df0f842eee75f5efc6a43258fc3c3b5",
+    "r11_probe/catalog_probe.json": "578839e6ca89dbaa1e345ad3f11169c26180df79db86509be5f104c04dde0bc9",
+    "r11_probe/option_catalog.parquet": "a5afb44efcdd187fc498bdfb9ff61f4407f6c9d100d3a4e953262adddb66824d",
+    "r9_r10_matched_risk.png": "32bbe9479b112c79b0c4d3d821c2273b6c7298216ec8addccedca198599ac6c9"
   },
-  "note": "R1 terminal-liquidation flag added only for Freqtrade matching; original screens use default False. Baseline pair processing and available-stake constraints differ from the simple common engine. No adoption threshold or running cohort changed. Cov10 missing-date guard added after historical outcomes; full/prefix tests prove unchanged original continuous-input weights. New gap tests pass. Funding upper bound and delayed-exit attribution are diagnostics, not new profit trials. Clean R2 completed: cap-only version rejects first2024 screen; no additional-year/cap/fee tuning. STRAX first actual trades only Dec28, so worst July/August loss was not a March swap position loss. Primary5m-open wallet risk separately reported. R6 data/engine/protocol frozen in b8931e0 before outcomes; reject central and sensitivity results, no tuning. Root d52cfaa0a fixes other-short UPnL direction locally, not deployed. Signed helper absolute-gross fix preserves long-only weights.165 current-source tests plus16 subtests pass. R7 individual dated inputs and separate-collateral engine frozen1973619 before results; candidate positive at doubled costs, default12% yield fails. ETH early diagnostic has19 margin-envelope concerns.178 tests plus16 subtests pass. R8 external crowding veto preregistered without outcomes or tuning. R8 inputs/engine frozenad68f4d: risk objective rejected. R9 frozen5a5d328: return/risk rejected; actual held-high/low risk worse than daily close.192 tests plus16 subtests pass. R10 preregistered before gold prices/outcomes, no running cohort changed. R10 inputs/engine1690b82 before outcomes; control parity <=1e-12, full offline source replay. Gold dominates worst loss paths, rejectwithouttuning.200 tests plus16 subtests pass. Source-probe only for optional contractual insurance, no pricing/outcome assumption or adoption.",
+  "note": "R1 terminal-liquidation flag added only for Freqtrade matching; original screens use default False. Baseline pair processing and available-stake constraints differ from the simple common engine. No adoption threshold or running cohort changed. Cov10 missing-date guard added after historical outcomes; full/prefix tests prove unchanged original continuous-input weights. New gap tests pass. Funding upper bound and delayed-exit attribution are diagnostics, not new profit trials. Clean R2 completed: cap-only version rejects first2024 screen; no additional-year/cap/fee tuning. STRAX first actual trades only Dec28, so worst July/August loss was not a March swap position loss. Primary5m-open wallet risk separately reported. R6 data/engine/protocol frozen in b8931e0 before outcomes; reject central and sensitivity results, no tuning. Root d52cfaa0a fixes other-short UPnL direction locally, not deployed. Signed helper absolute-gross fix preserves long-only weights.165 current-source tests plus16 subtests pass. R7 individual dated inputs and separate-collateral engine frozen1973619 before results; candidate positive at doubled costs, default12% yield fails. ETH early diagnostic has19 margin-envelope concerns.178 tests plus16 subtests pass. R8 external crowding veto preregistered without outcomes or tuning. R8 inputs/engine frozenad68f4d: risk objective rejected. R9 frozen5a5d328: return/risk rejected; actual held-high/low risk worse than daily close.192 tests plus16 subtests pass. R10 preregistered before gold prices/outcomes, no running cohort changed. R10 inputs/engine1690b82 before outcomes; control parity <=1e-12, full offline source replay. Gold dominates worst loss paths, rejectwithouttuning.200 tests plus16 subtests pass. Source-probe only for optional contractual insurance, no pricing/outcome assumption or adoption. R11 source feasibility only: fixed trade tape does not contain continuous bid/ask quotes. Sampled min0.1BTC/1ETH overshoots most control holdings at10k scale. Original nonexistent-strike errors retained; actual below-strike identities repaired without premium selection. Historical is_active is not current tradability. No option P&L trial or adoption.",
   "root_source_sha256": {
     "freqtrade/exchange/binance.py": "837dd93b25517b5d73d4ea3aafe14a085e945fbd60edf93057ba474418e34a5b"
   }

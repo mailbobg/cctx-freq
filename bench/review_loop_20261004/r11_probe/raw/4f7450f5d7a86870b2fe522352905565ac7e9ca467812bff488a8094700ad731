@@ -1,0 +1,1 @@
+{"usOut":1791108718644902,"usIn":1791108718644566,"usDiff":336,"testnet":false,"jsonrpc":"2.0","error":{"message":"Invalid params","data":{"reason":"wrong format","param":"instrument_name"},"code":-32602}}

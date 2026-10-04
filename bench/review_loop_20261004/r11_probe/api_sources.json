@@ -1,0 +1,114 @@
+{
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=BTC-26MAR21-30000-P&include_old=true": {
+    "path": "raw/a73c264def9c497cc80bccd5992f22f03daa5b9197d46f01f39d68c9d9fe6944",
+    "sha256": "0b13da99f8e924b385eb61c9ef0d27834ac54fca68c2839483c3b26c769cabda",
+    "status": 400,
+    "retrieved_utc": "2026-10-04T10:11:55.796597+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=BTC-26MAR21-30000-P&include_old=true&start_timestamp=1616140800000&end_timestamp=1616745600000&count=100&sorting=asc": {
+    "path": "raw/f82a464d18dafc772f4fab04fcfd6facec050c3b8e44754c5403fabdf931a4a4",
+    "sha256": "9296d869a014c5c24ea409262e5ac38237a6250968384536522dd33a2f341da2",
+    "status": 400,
+    "retrieved_utc": "2026-10-04T10:11:57.348296+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=ETH-26MAR21-1000-P&include_old=true": {
+    "path": "raw/4f7450f5d7a86870b2fe522352905565ac7e9ca467812bff488a8094700ad731",
+    "sha256": "26ce241a176111ed5c3937174afb276cfc623c36a116b4524c89b243a1bf5449",
+    "status": 400,
+    "retrieved_utc": "2026-10-04T10:11:58.807788+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=ETH-26MAR21-1000-P&include_old=true&start_timestamp=1616140800000&end_timestamp=1616745600000&count=100&sorting=asc": {
+    "path": "raw/6973def695f2d3b4d2e4c43e98149dc1b34cadfee7d756f11f5755535369a213",
+    "sha256": "daef60025209302a639f6308644e96236d3ee1bf62b79bc5dc73f07db22fab4a",
+    "status": 400,
+    "retrieved_utc": "2026-10-04T10:12:00.366632+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=BTC-29MAR24-40000-P&include_old=true": {
+    "path": "raw/ef1627cefae252271461cb0714bfed47ef9bcafd1e3685f7def75f17eca66a11",
+    "sha256": "0b6f8dda13c16fc44543404f080929c5f05ec0189d8577fdf6e7b2bb2a81589d",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:01.939912+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=BTC-29MAR24-40000-P&include_old=true&start_timestamp=1711094400000&end_timestamp=1711699200000&count=100&sorting=asc": {
+    "path": "raw/b542baed77683412701e93a1199cb8122a9b71114e3f1fcb9336d649dc01b38d",
+    "sha256": "7350ebadc0c84d7c28fc537552ead255e81f38dcb9edd1c82c6fdfed5ce1e6d5",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:03.519298+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=ETH-29MAR24-2000-P&include_old=true": {
+    "path": "raw/59e5a99258b3d7884c4845231cef33714f3fa6408df414cfd741aa61519f9213",
+    "sha256": "fc96c0ce7afed1341f3b7d3f729caa305cd99703e1a6bbb690adbc2314105cea",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:04.994836+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=ETH-29MAR24-2000-P&include_old=true&start_timestamp=1711094400000&end_timestamp=1711699200000&count=100&sorting=asc": {
+    "path": "raw/1b22671fc6b08cba27ddfb5d8a1e9fc5ca09c3b172c6162468b4799130822440",
+    "sha256": "6f258776a972c2a8912ecd030754ff6ad782b56c911881ffcaf545a0ad44ac8a",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:06.567411+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=BTC-26JUN26-50000-P&include_old=true": {
+    "path": "raw/d68b40a25c92e9c89eb350c11612f5562437b0c0f8ca3bbb1865403aa3b89a0a",
+    "sha256": "0f3d7a1b28af18363d17daf1a8f9da9260074e81f8b02f2ba1e289c3b4851bcd",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:08.122098+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=BTC-26JUN26-50000-P&include_old=true&start_timestamp=1781856000000&end_timestamp=1782460800000&count=100&sorting=asc": {
+    "path": "raw/3c711dde1fe8cb466ab034f93459a710505794932186f140a26f0027948077cf",
+    "sha256": "ae5fff3984287dd978707c2639f27435251155ce3c41d02aaefc6d5544d92a78",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:09.807328+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=ETH-26JUN26-2000-P&include_old=true": {
+    "path": "raw/121ff6b45472b702c27668ea49657b305e5a33712b613bbc59ce86be1df9bde2",
+    "sha256": "f56c8111a5ce97ec0f616c5e7d855de514cdcd2bf7bdbc8f01d8a7a00f045a3b",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:11.278183+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=ETH-26JUN26-2000-P&include_old=true&start_timestamp=1781856000000&end_timestamp=1782460800000&count=100&sorting=asc": {
+    "path": "raw/5fd002dd868ec952be202dbb766b0c58a5641c86d966cea312d82f4994bcda3c",
+    "sha256": "f801e4477652e93c9f1b53bd54fc7a6a63b8482fca7d54bdb34e6eae8fe39f3e",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:12.858558+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_instruments?currency=BTC&kind=option&expired=true&include_old=true": {
+    "path": "raw/8dcaa297515b188cc8ddd171856eb2181bfd74a94c226e2b3a74bbcdab2bdeab.json.gz",
+    "sha256": "0f4bae9526c875bd830121dfce5f1c9fb595fd921e09f7a21dc63a30d720599c",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:12:57.123274+00:00",
+    "storage_encoding": "gzip",
+    "stored_sha256": "f313d34d5e68700d8f439fe6010e037a5086254fc4b74123123144f84eb28e97"
+  },
+  "https://history.deribit.com/api/v2/public/get_instruments?currency=ETH&kind=option&expired=true&include_old=true": {
+    "path": "raw/8d529ffca1c952a5d59edc61a1af4bb5f6004f169e93eafd34e00116998aef15.json.gz",
+    "sha256": "9d28711b2af003efbcf6a0d1150bd9f3ace170136e2e2e4a73068d02ead59b1f",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:13:19.118204+00:00",
+    "storage_encoding": "gzip",
+    "stored_sha256": "b87986fb9499d4b853f624b1621823f277b55abbe50255e72fc4530c0e967bf7"
+  },
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=BTC-26MAR21-28000-P&include_old=true": {
+    "path": "raw/e8de3f5876f272695c071d588dc7d3314e397eedadc7b3d4500dde473fab63a4",
+    "sha256": "8d2002751ca9431ec6fb9ce4248a757184aca64cb9c5f837887d0288eb0abae2",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:15:48.309710+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=BTC-26MAR21-28000-P&include_old=true&start_timestamp=1616140800000&end_timestamp=1616745600000&count=100&sorting=asc": {
+    "path": "raw/40a34c02f844bb63fe98865ec172779a0422f9ca179cac801f2b17aef9292adb",
+    "sha256": "4e813a5f116e6a4f2b132e87ae3fd9838ff29e223ac6ea5f4c68350a89748f6b",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:15:49.861516+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_instrument?instrument_name=ETH-26MAR21-960-P&include_old=true": {
+    "path": "raw/1c61327741eb945fb3d5cadde987b38b76dcfe94b1260c1abfe38e26b6927ee0",
+    "sha256": "fa4f88a7241114328e1f07770ab438e7f9b3d1f12ac7209cec8963e1903f8661",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:15:51.362359+00:00"
+  },
+  "https://history.deribit.com/api/v2/public/get_last_trades_by_instrument_and_time?instrument_name=ETH-26MAR21-960-P&include_old=true&start_timestamp=1616140800000&end_timestamp=1616745600000&count=100&sorting=asc": {
+    "path": "raw/7292986ce16c8dd47925434e3ef429eeb656818ec88d1832091d7757593bfa37",
+    "sha256": "3ca4791523ed49aa2834d085cff6d6f4cd10947b7b148b4a8a5dd39fa686eff8",
+    "status": 200,
+    "retrieved_utc": "2026-10-04T10:15:52.944435+00:00"
+  }
+}
