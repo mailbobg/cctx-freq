@@ -8,6 +8,9 @@
   "wta": {
     "description": "E0V1ENWTA：E0V1EN + 双信号2倍仓 + buy_new出场放宽（fastk 91），118 币现货模拟盘 · 和 e0v1en 对照，回测三窗口均单全赢"
   },
+  "wta2": {
+    "description": "E0V1ENWTA2：WTA + X12崩盘保护（2单/小时+止损锁24h），双信号1.5倍仓 · 四窗口总利润全超X12，最差回撤21.85%（2022）"
+  },
   "x7": {
     "description": "NFI X7，100 币动态选币"
   },

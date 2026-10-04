@@ -1,0 +1,14 @@
+{
+  "add_config_files": [
+    "common.json",
+    "family-spot118.json",
+    "secrets.json",
+    "local-network.json"
+  ],
+  "strategy": "E0V1ENWTA2",
+  "bot_name": "wta2",
+  "db_url": "sqlite:///user_data/tradesv3.wta2.dryrun.sqlite",
+  "api_server": {
+    "listen_port": 8098
+  }
+}
