@@ -1,0 +1,108 @@
+{
+  "new_economic_variant": false,
+  "no_original_code_curve_order_or_rule_changed": true,
+  "post_outcome_checker": true,
+  "results": {
+    "recent_reused_Cov10_baseline_cost0.0012": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.037111949476413,
+        "equity": 1.067697493098705,
+        "stage": "CLOSE",
+        "time": "2024-08-02T21:30:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 2.220446049250313e-16,
+      "max_abs_daily_risk_label_gap": 2.220446049250313e-14,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -8.670291985752165,
+      "native_fills_checked": 91,
+      "worst_peak": {
+        "equity": 1.1243313203897638,
+        "stage": "OPEN",
+        "time": "2024-03-13T08:29:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.0268485120247086,
+        "stage": "CLOSE",
+        "time": "2024-08-05T06:24:00+00:00"
+      }
+    },
+    "recent_reused_Cov10_baseline_cost0.0024": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.02928167591924,
+        "equity": 1.0655393635102794,
+        "stage": "CLOSE",
+        "time": "2024-08-02T21:14:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 6.661338147750939e-16,
+      "max_abs_daily_risk_label_gap": 1.1546319456101628e-14,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -8.839367774741913,
+      "native_fills_checked": 91,
+      "worst_peak": {
+        "equity": 1.1219662042296057,
+        "stage": "OPEN",
+        "time": "2024-03-13T08:29:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.0227914851294388,
+        "stage": "CLOSE",
+        "time": "2024-08-05T06:24:00+00:00"
+      }
+    },
+    "recent_reused_official_funding_spread_cost0.0012": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.18783851880208,
+        "equity": 1.1736532713712906,
+        "stage": "CLOSE",
+        "time": "2026-05-23T07:50:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 2.220446049250313e-16,
+      "max_abs_daily_risk_label_gap": 2.220446049250313e-16,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -5.191517430663173,
+      "native_fills_checked": 75,
+      "worst_peak": {
+        "equity": 1.2378720757294794,
+        "stage": "CLOSE",
+        "time": "2025-07-20T16:50:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.1736077311486715,
+        "stage": "CLOSE",
+        "time": "2026-07-13T18:12:00+00:00"
+      }
+    },
+    "recent_reused_official_funding_spread_cost0.0024": {
+      "account_days_checked": 974,
+      "first_5pct_breach": {
+        "drawdown_pct": -5.077590581409098,
+        "equity": 1.1662357271501307,
+        "stage": "CLOSE",
+        "time": "2026-05-22T19:30:00+00:00"
+      },
+      "first_public_receipt_actual_exchange_fills_quote_depth_or_tick_risk_certified": false,
+      "max_abs_cash_units_equity_gap": 2.220446049250313e-16,
+      "max_abs_daily_risk_label_gap": 1.0658141036401503e-14,
+      "minute_open_close_marks_checked": 2805120,
+      "native_account_max_DD_pct": -5.567030932944883,
+      "native_fills_checked": 75,
+      "worst_peak": {
+        "equity": 1.228620021650777,
+        "stage": "CLOSE",
+        "time": "2025-07-20T16:50:00+00:00"
+      },
+      "worst_trough": {
+        "equity": 1.1602223649971242,
+        "stage": "CLOSE",
+        "time": "2026-07-13T18:12:00+00:00"
+      }
+    }
+  },
+  "scope": "Independent actual native minute OPEN/CLOSE capital marks and native modeled fill ledger. Prefill and terminal fees included. No actual exchange-fill, continuous quote/tick risk or source/publication/forward certification."
+}
