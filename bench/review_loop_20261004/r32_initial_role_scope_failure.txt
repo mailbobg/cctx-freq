@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r32_audit.py", line 77, in <module>
+    result=audit()
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r32_audit.py", line 23, in audit
+    reports={role[10:]:parse_publisher(retained(DATA,r),role[10:]) for role,r in records.items()
+                       ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r31_native.py", line 78, in parse_publisher
+    day = date.fromisoformat(release)
+ValueError: Invalid isoformat string: 'processing'

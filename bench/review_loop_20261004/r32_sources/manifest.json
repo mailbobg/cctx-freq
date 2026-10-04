@@ -1,0 +1,341 @@
+{
+  "no_full_cohort_or_policy_or_performance": true,
+  "source_plan_commit": "89bba77",
+  "source_stage_only": true,
+  "sources": {
+    "calendar_json": {
+      "bytes": 79873,
+      "final_url": "https://www.federalreserve.gov/releases/h41/releaseDates.json",
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Sun, 04 Oct 2026 17:52:17 GMT",
+        "ETag": "W/\"592013a3e351dd1:0\"",
+        "Last-Modified": "Thu, 01 Oct 2026 20:30:02 GMT"
+      },
+      "inherited": false,
+      "path": "raw/f85661e3847b8579c9ba3df201c18be345a5f57bc87ef65604a3b569b4420180",
+      "requested_utc": "2026-10-04T17:52:16.212918+00:00",
+      "retrieved_utc": "2026-10-04T17:52:17.744085+00:00",
+      "sha256": "0511d3f5bd470277e767c48f864e668e154bf159cd8db61c80d95cf2d4046919",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/releaseDates.json"
+    },
+    "publisher_2019-08-22": {
+      "bytes": 48746,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20190822/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:09 GMT",
+        "Last-Modified": "Thu, 29 Aug 2019 20:30:03 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2019-08-22",
+      "path": "raw/70ee1f4295dd7b1e9f419a0585916d0041ca1b456b4691ddd7ab78f4fa0df08e",
+      "requested_utc": "2026-10-04T17:25:06.757159+00:00",
+      "retrieved_utc": "2026-10-04T17:25:10.238924+00:00",
+      "sha256": "9da748c96814e3caee94bccd2e83c586074b8a2604a0b16854ca247609a7c2fe",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20190822/"
+    },
+    "publisher_2019-09-19": {
+      "bytes": 48764,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20190919/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:08 GMT",
+        "Last-Modified": "Thu, 26 Sep 2019 20:30:09 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2019-09-19",
+      "path": "raw/042e8eaf1d3b10ffbcc8c0c9569d1cb03e9e9aabc649700baeec801b866299e8",
+      "requested_utc": "2026-10-04T17:25:06.756846+00:00",
+      "retrieved_utc": "2026-10-04T17:25:09.154811+00:00",
+      "sha256": "ba642c2503c2ca71f81f70a99790b2373a10b986f5c25779dc301d9c888c54ff",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20190919/"
+    },
+    "publisher_2020-12-31": {
+      "bytes": 59709,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20201231/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:12 GMT",
+        "Last-Modified": "Thu, 07 Jan 2021 21:30:19 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2020-12-31",
+      "path": "raw/bac4b3abe30e6d1b59dc0af9ef833f55f462f2b839cd90047721b78aa961fa21",
+      "requested_utc": "2026-10-04T17:25:12.444310+00:00",
+      "retrieved_utc": "2026-10-04T17:25:13.319224+00:00",
+      "sha256": "9152d194464d66dad1f4f1ffdf8bff66728bab040de3aa2682e516141add527a",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20201231/"
+    },
+    "publisher_2021-01-28": {
+      "bytes": 59698,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20210128/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:10 GMT",
+        "Last-Modified": "Thu, 04 Feb 2021 21:30:12 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2021-01-28",
+      "path": "raw/7d0ded29f05d466b89bfd32b18b47751a94f92b3a61be63d6705df180afd08c1",
+      "requested_utc": "2026-10-04T17:25:10.238993+00:00",
+      "retrieved_utc": "2026-10-04T17:25:14.851152+00:00",
+      "sha256": "2d85dc1d07c42d948ed5526cbbe16ed4535c8f1bdc2722b9361b7f79253b59b4",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20210128/"
+    },
+    "publisher_2023-11-30": {
+      "bytes": 748911,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20231130/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:15 GMT",
+        "Last-Modified": "Thu, 30 Nov 2023 21:30:38 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2023-11-30",
+      "path": "raw/b7cb329fc2fb227579d3115326daa0c4b4a3fae000f8741a553193520c2188bc",
+      "requested_utc": "2026-10-04T17:25:14.851284+00:00",
+      "retrieved_utc": "2026-10-04T17:25:16.528086+00:00",
+      "sha256": "c2221d4c0d9ee46b331545c270333a15d0de5246bb3216b24c0f01999065152d",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20231130/"
+    },
+    "publisher_2023-12-28": {
+      "bytes": 735785,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20231228/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:14 GMT",
+        "Last-Modified": "Thu, 28 Dec 2023 21:30:38 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2023-12-28",
+      "path": "raw/42609955b0806f3876d1550ac074792771efc9fdeccf5454c249b612d7631e09",
+      "requested_utc": "2026-10-04T17:25:14.018457+00:00",
+      "retrieved_utc": "2026-10-04T17:25:15.221966+00:00",
+      "sha256": "e183460d3735fe5f9b59ea21a753e11f291233077776bb4878da3d81c84442fa",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20231228/"
+    },
+    "publisher_2024-10-31": {
+      "bytes": 722801,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20241031/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:17 GMT",
+        "Last-Modified": "Thu, 31 Oct 2024 20:30:01 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2024-10-31",
+      "path": "raw/2250f118ef06ef66d2084c267d8d3da90b262f2aaab6a741218e9945acfff472",
+      "requested_utc": "2026-10-04T17:25:17.567594+00:00",
+      "retrieved_utc": "2026-10-04T17:25:19.784591+00:00",
+      "sha256": "9d7341f9d28e7dcb863af37441917d3d43f5f40f9bc0ef91a70d94dfdb2d46bc",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20241031/"
+    },
+    "publisher_2024-11-29": {
+      "bytes": 725406,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20241129/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:17 GMT",
+        "Last-Modified": "Fri, 29 Nov 2024 21:30:07 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2024-11-29",
+      "path": "raw/53ab5960f0e0ffc87b35179581475228d15c04f76a93bd7ecb7372903980a8a3",
+      "requested_utc": "2026-10-04T17:25:17.498872+00:00",
+      "retrieved_utc": "2026-10-04T17:25:18.269880+00:00",
+      "sha256": "0aef6e75705b9c1f8fabd70c8dcd7006506457731f9d4a41dc61cb56a79099e1",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20241129/"
+    },
+    "publisher_2025-03-06": {
+      "bytes": 716209,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20250306/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:52:18 GMT",
+        "Last-Modified": "Thu, 06 Mar 2025 21:30:07 GMT"
+      },
+      "inherited": false,
+      "path": "raw/7a39530b0e7d3cd3d31fadd8a2ce49a09586b99a51895f2bda6a6ebb1b152dc7",
+      "requested_utc": "2026-10-04T17:52:18.566358+00:00",
+      "retrieved_utc": "2026-10-04T17:52:19.134962+00:00",
+      "sha256": "a4a2c78e1b1b9bdbb08cc5c0f524718e04e1187037d04fd658ffe9010ed3cf92",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20250306/"
+    },
+    "publisher_2025-04-03": {
+      "bytes": 705857,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20250403/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:52:18 GMT",
+        "Last-Modified": "Thu, 03 Apr 2025 20:30:02 GMT"
+      },
+      "inherited": false,
+      "path": "raw/cc35ea2b969cabebb7cec70834f1ed7d0e09c085c309d49b0144a9105bda1c99",
+      "requested_utc": "2026-10-04T17:52:17.764518+00:00",
+      "retrieved_utc": "2026-10-04T17:52:18.563608+00:00",
+      "sha256": "533bee16085e0a4d2a86e7d4b00710f8a22f3a9c093a5d8a9196ef4d45911339",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20250403/"
+    },
+    "publisher_2025-11-06": {
+      "bytes": 706666,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20251106/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:31:06 GMT",
+        "Last-Modified": "Thu, 06 Nov 2025 21:30:09 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_units_sources/manifest.json",
+      "original_manifest_sha256": "90565dfae01592152d10d390a926f78c4052b4083e64c6ff95f670145feab88a",
+      "original_record": "publisher_2025-11-06",
+      "path": "raw/f1de45158f06fd8966e5b517831c193e0b7de5eee07ec9a56f7fa8e9bcf68d3c",
+      "requested_utc": "2026-10-04T17:31:04.787265+00:00",
+      "retrieved_utc": "2026-10-04T17:31:06.865451+00:00",
+      "sha256": "c8a059f3f0bd47a40b91eba7149f838a2c1ef3f4e8dabab3112a43bca7243966",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20251106/"
+    },
+    "publisher_2025-11-13": {
+      "bytes": 706371,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20251113/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:31:07 GMT",
+        "Last-Modified": "Thu, 13 Nov 2025 21:30:03 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_units_sources/manifest.json",
+      "original_manifest_sha256": "90565dfae01592152d10d390a926f78c4052b4083e64c6ff95f670145feab88a",
+      "original_record": "publisher_2025-11-13",
+      "path": "raw/25937e3ae0282ad52373513e934729ea6edbb3edc62dad2534dad4ac9fa57a1c",
+      "requested_utc": "2026-10-04T17:31:06.865992+00:00",
+      "retrieved_utc": "2026-10-04T17:31:07.702404+00:00",
+      "sha256": "cd8a52e1193c63eefb0a4a41710c164081c2f42150e97ab0ba389cce7a1847f3",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20251113/"
+    },
+    "publisher_2026-07-30": {
+      "bytes": 702115,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20260730/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:16 GMT",
+        "Last-Modified": "Thu, 30 Jul 2026 20:30:10 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2026-07-30",
+      "path": "raw/85d2787ba2d12ef76671cd487559c7f4a528a44219ba04742304bbc2ce487056",
+      "requested_utc": "2026-10-04T17:25:16.528426+00:00",
+      "retrieved_utc": "2026-10-04T17:25:17.567274+00:00",
+      "sha256": "70c932558dace0862f051aec065df3d66479fc0bf686a934d940959969c3ad31",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20260730/"
+    },
+    "publisher_2026-08-27": {
+      "bytes": 702014,
+      "final_url": "https://www.federalreserve.gov/releases/h41/20260827/",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:16 GMT",
+        "Last-Modified": "Thu, 27 Aug 2026 20:30:02 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_2026-08-27",
+      "path": "raw/a8e5cc307726e7a059e879f6b6064eaede29c530baf08f9bfe4f2cddf0ddabfe",
+      "requested_utc": "2026-10-04T17:25:15.904215+00:00",
+      "retrieved_utc": "2026-10-04T17:25:16.900024+00:00",
+      "sha256": "7f4a1e867c255c6f5194d56cafb38a6e695aa24c0e54e8916dd37cb21685d0e6",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/20260827/"
+    },
+    "publisher_calendar": {
+      "bytes": 78178,
+      "final_url": "https://www.federalreserve.gov/releases/h41/default.htm",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:19 GMT",
+        "Last-Modified": "Thu, 01 Oct 2026 20:30:02 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_calendar",
+      "path": "raw/dbcc9a52e2e4f368d68d8c0c7e44b18eb0aab531c7687ae82c1924fa8fa4c527",
+      "requested_utc": "2026-10-04T17:25:18.901406+00:00",
+      "retrieved_utc": "2026-10-04T17:25:19.604098+00:00",
+      "sha256": "31441487cc7ee8b99150eeb9e1a2d0272e397d9f749916bba9217c301124bb3d",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/default.htm"
+    },
+    "publisher_explanation": {
+      "bytes": 81494,
+      "final_url": "https://www.federalreserve.gov/RELEASES/h41/about.htm",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:19 GMT",
+        "Last-Modified": "Mon, 27 Mar 2023 13:56:06 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_explanation",
+      "path": "raw/7a4e154d7ce13291296b42ff2d0e14917746f3944848dbe8d0bfda9a0cc0e8d6",
+      "requested_utc": "2026-10-04T17:25:19.604222+00:00",
+      "retrieved_utc": "2026-10-04T17:25:20.621306+00:00",
+      "sha256": "71a368d2da34e8bb9f34da334ffc18e5a43378a04e6342a325adb31c339eeee4",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/RELEASES/h41/about.htm"
+    },
+    "publisher_processing": {
+      "bytes": 96821,
+      "final_url": "https://www.federalreserve.gov/releases/h41/perfeval2012.htm",
+      "headers": {
+        "Content-Type": "text/html",
+        "Date": "Sun, 04 Oct 2026 17:25:20 GMT",
+        "Last-Modified": "Wed, 22 Mar 2023 13:25:20 GMT"
+      },
+      "inherited": true,
+      "original_manifest": "r31_sources/manifest.json",
+      "original_manifest_sha256": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+      "original_record": "publisher_processing",
+      "path": "raw/805dffd268d9409f2cc05652bb61f81a6f757db888522e0af6673d066b57dd66",
+      "requested_utc": "2026-10-04T17:25:19.785139+00:00",
+      "retrieved_utc": "2026-10-04T17:25:21.101773+00:00",
+      "sha256": "3285c3c4dd5b34b176fd1b085aec5c797d426592688d8ff602748d723ca2203c",
+      "status": 200,
+      "url": "https://www.federalreserve.gov/releases/h41/perfeval2012.htm"
+    }
+  }
+}

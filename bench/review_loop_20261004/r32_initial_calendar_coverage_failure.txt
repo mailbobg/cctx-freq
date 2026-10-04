@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r32_audit.py", line 78, in <module>
+    result=audit()
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r32_audit.py", line 45, in audit
+    chosen=report_for_observation(calendar,observation.isoformat())
+  File "/Users/bobmax/Documents/07-Hero/CCXT-Fr/user_data/bench/review_loop_20261004/r32_calendar.py", line 45, in report_for_observation
+    if not candidates:raise ValueError('No actual listed Thursday/Friday publisher report for exact Wednesday')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: No actual listed Thursday/Friday publisher report for exact Wednesday
