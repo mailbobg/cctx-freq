@@ -1,0 +1,62 @@
+{
+  "initial_schema_assumption": "NFCI_<ISO-date>",
+  "no_alpha_or_outcomes_defined": true,
+  "observed_schema": "NFCI_<YYYYMMDD>",
+  "original_code": {
+    "r28_revision.py": {
+      "sha256": "5f0ce4138f0dd9fa4d0334f0b86aea1f7f075626441ce43cb15360d9bae1320e",
+      "text": "\"\"\"Keep version identity and native signed decimals before same-week subtraction.\"\"\"\nimport csv\nfrom datetime import date, timedelta\nfrom decimal import Decimal, localcontext\nimport io\nimport re\n\nfrom r28_sources import iso_date\n\n\ndef parse_archive(body, vintage):\n    cutoff = iso_date(vintage)\n    if cutoff.weekday() != 5:\n        raise ValueError('Unreviewed vintage weekday')\n    earliest = cutoff-timedelta(days=28)\n    reader = csv.reader(io.StringIO(body.decode('utf-8')))\n    if next(reader, None) != ['observation_date', 'NFCI_'+vintage]:\n        raise ValueError('Native series or historical version header differs')\n    rows = {}\n    previous = None\n    for fields in reader:\n        if len(fields) != 2:\n            raise ValueError('Native column count differs')\n        day = iso_date(fields[0])\n        if day.weekday() != 4 or not earliest <= day <= cutoff:\n            raise ValueError('Native observation outside the frozen Friday grid/range')\n        if previous is not None and day <= previous:\n            raise ValueError('Native observations duplicated or unordered')\n        text = fields[1]\n        if text in ('', '.'):\n            number = None\n        elif re.fullmatch(r'-?\\d+(?:\\.\\d+)?', text):\n            number = Decimal(text)\n            if not number.is_finite():\n                raise ValueError('Native value is not finite')\n        else:\n            raise ValueError('Unreviewed native signed decimal text')\n        rows[day] = dict(native_value=text, decimal_value=number)\n        previous = day\n    return dict(series='NFCI', vintage=vintage, rows=rows,\n                observation_bounds=(earliest.isoformat(), vintage))\n\n\ndef same_week_revision(pair, current, prior):\n    monday = iso_date(pair['monday'])\n    if monday.weekday() != 0 or pair != dict(\n        monday=monday.isoformat(),\n        current_vintage=(monday-timedelta(days=2)).isoformat(),\n        prior_vintage=(monday-timedelta(days=9)).isoformat(),\n        observation_week=(monday-timedelta(days=17)).isoformat()):\n        raise ValueError('Frozen same-week identity or vintage dates differ')\n    for parsed, key in ((current, 'current_vintage'), (prior, 'prior_vintage')):\n        if parsed['series'] != 'NFCI' or parsed['vintage'] != pair[key]:\n            raise ValueError('Historical version counterpart differs')\n    week = iso_date(pair['observation_week'])\n    old = prior['rows'].get(week)\n    now = current['rows'].get(week)\n    out = dict(**pair, prior_native=old['native_value'] if old else None,\n               current_native=now['native_value'] if now else None,\n               revision_decimal=None, historical_first_public_receipt_certified=False)\n    if old is None or now is None:\n        out['state'] = 'missing_required_observation'\n    elif old['decimal_value'] is None or now['decimal_value'] is None:\n        out['state'] = 'unknown_native_value'\n    else:\n        with localcontext() as ctx:\n            ctx.prec = max(50, len(old['native_value'])+len(now['native_value'])+2)\n            difference = now['decimal_value']-old['decimal_value']\n        out.update(state='known_same_week_revision', revision_decimal=format(difference, 'f'))\n    return out\n"
+    },
+    "test_r28_revision.py": {
+      "sha256": "13ed3152fa5f9c58551345c1f73836cca18a75a663da6f525bcacce740ec8b1c",
+      "text": "\"\"\"Historical version identity, signed precision and same-week revisions.\"\"\"\nfrom datetime import date\nfrom decimal import Decimal\nfrom urllib.parse import parse_qs,urlparse\n\nimport pytest\n\nfrom r28_sources import probe_pairs,probe_targets,archive_url\nfrom r28_revision import parse_archive,same_week_revision\n\n\ndef body(vintage,rows):\n    return ('observation_date,NFCI_'+vintage+'\\n'+''.join(day+','+value+'\\n' for day,value in rows)).encode()\n\n\ndef parsed(vintage,rows):\n    return parse_archive(body(vintage,rows),vintage)\n\n\ndef test_fixed_probe_dates_roles_and_original_vintage_query():\n    pairs=probe_pairs();assert len(pairs)==3 and len(probe_targets())==13\n    first=pairs[0]\n    assert first==dict(monday='2021-02-01',current_vintage='2021-01-30',prior_vintage='2021-01-23',observation_week='2021-01-15')\n    q=parse_qs(urlparse(archive_url('2021-01-30')).query)\n    assert q==dict(id=['NFCI'],vintage_date=['2021-01-30'],cosd=['2021-01-02'],coed=['2021-01-30'])\n\n\ndef test_negative_native_values_and_sub_float_revision_are_preserved():\n    old=parsed('2021-01-23',[('2021-01-15','-0.5000000000000001')])\n    now=parsed('2021-01-30',[('2021-01-15','-0.5000000000000000'),('2021-01-22','-0.4')])\n    result=same_week_revision(probe_pairs()[0],now,old)\n    assert result['state']=='known_same_week_revision'\n    assert result['revision_decimal']=='0.0000000000000001'\n    assert result['prior_native']=='-0.5000000000000001'\n    assert result['current_native']=='-0.5000000000000000'\n    assert result['observation_week']=='2021-01-15'\n    assert not result['historical_first_public_receipt_certified']\n\n\ndef test_missing_blank_dot_and_actual_signed_zero_do_not_become_cash():\n    old=parsed('2021-01-23',[('2021-01-15','-0.000')])\n    for value in ('','.'):\n        now=parsed('2021-01-30',[('2021-01-15',value)])\n        out=same_week_revision(probe_pairs()[0],now,old)\n        assert out['state']=='unknown_native_value' and out['revision_decimal'] is None\n    out=same_week_revision(probe_pairs()[0],parsed('2021-01-30',[]),old)\n    assert out['state']=='missing_required_observation' and out['revision_decimal'] is None\n    known=same_week_revision(probe_pairs()[0],parsed('2021-01-30',[('2021-01-15','0.000')]),old)\n    assert Decimal(known['revision_decimal'])==0 and known['state']=='known_same_week_revision'\n    assert old['rows'][date(2021,1,15)]['native_value']=='-0.000'\n\n\n@pytest.mark.parametrize('changed',[\n    b'observation_date,ANFCI_2021-01-30\\n2021-01-15,-0.2\\n',\n    b'observation_date,NFCI_2021-02-06\\n2021-01-15,-0.2\\n',\n    body('2021-01-30',[('2021-01-14','-0.2')]),\n    body('2021-01-30',[('2021-02-05','-0.2')]),\n    body('2021-01-30',[('2021-01-15','NaN')]),\n    body('2021-01-30',[('2021-01-15','inf')]),\n    body('2021-01-30',[('2021-01-15','0.1'),('2021-01-15','0.2')]),\n    body('2021-01-30',[('2021-01-22','0.1'),('2021-01-15','0.2')]),\n])\ndef test_wrong_series_version_grid_future_duplicate_or_invalid_native_rejected(changed):\n    with pytest.raises(ValueError):parse_archive(changed,'2021-01-30')\n\n\ndef test_wrong_vintage_pair_cannot_compare_different_known_versions():\n    now=parsed('2021-01-30',[('2021-01-15','-0.2')])\n    old=parsed('2021-01-30',[('2021-01-15','-0.1')])\n    with pytest.raises(ValueError):same_week_revision(probe_pairs()[0],now,old)\n"
+    }
+  },
+  "rationale": "Native request date remains ISO; response column encodes exactly the same historical vintage without hyphens. Correct the native header contract before a full cohort or outcome, retaining every original response and this failure. Do not accept both schemas or mutate old data.",
+  "samples": [
+    {
+      "body_sha256": "dc0e2a4c2d2a9031af119d4e3f727b2b4647ff4dc34e49cd28b46b25a83d4d2f",
+      "initial_contract_error": "Native series or historical version header differs",
+      "key": "archive_2021-01-30",
+      "native_header": "observation_date,NFCI_20210130",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2021-01-30&cosd=2021-01-02&coed=2021-01-30"
+    },
+    {
+      "body_sha256": "acd3ef2c7b9de0934ecd855467132bf6afb699e28503303ff46aceaa1538901b",
+      "initial_contract_error": "Native series or historical version header differs",
+      "key": "archive_2021-01-23",
+      "native_header": "observation_date,NFCI_20210123",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2021-01-23&cosd=2020-12-26&coed=2021-01-23"
+    },
+    {
+      "body_sha256": "9c5485ba488ace4c2ac5b4d499df485496d397eaf16d49ef8433e7b52eba3e48",
+      "initial_contract_error": "Native series or historical version header differs",
+      "key": "archive_2022-11-05",
+      "native_header": "observation_date,NFCI_20221105",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2022-11-05&cosd=2022-10-08&coed=2022-11-05"
+    },
+    {
+      "body_sha256": "cb81ed8da3458fadf0f6e2b4c8699e229bfc60b2e36f22ff7f3b2d21fa942cfb",
+      "initial_contract_error": "Native series or historical version header differs",
+      "key": "archive_2022-10-29",
+      "native_header": "observation_date,NFCI_20221029",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2022-10-29&cosd=2022-10-01&coed=2022-10-29"
+    },
+    {
+      "body_sha256": "716e062467cdcbf610f99af02c4d024b460852a4f7c27d62611e96c674ce614b",
+      "initial_contract_error": "Native series or historical version header differs",
+      "key": "archive_2024-01-06",
+      "native_header": "observation_date,NFCI_20240106",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2024-01-06&cosd=2023-12-09&coed=2024-01-06"
+    },
+    {
+      "body_sha256": "100b4a034b7c69b0cfcce2448117b52d277a522427c0c30c1ece3b7b3fbfed60",
+      "initial_contract_error": "Native series or historical version header differs",
+      "key": "archive_2023-12-30",
+      "native_header": "observation_date,NFCI_20231230",
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2023-12-30&cosd=2023-12-02&coed=2023-12-30"
+    }
+  ],
+  "source_plan_commit": "d1437ea",
+  "source_stage_only": true
+}

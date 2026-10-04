@@ -1,0 +1,3071 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  
+
+    <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta http-equiv="Content-Language" content="en-us"> <meta http-equiv="imagetoolbar" content="false"> <meta name="MSSmartTagsPreventParsing" content="true"> <meta name="robots" content="index, follow"> <meta name="google-site-verification" content="VxDqAhtsy11WBtllzLFHn7vU5iSLUfQ1w6RQ6KHlaEQ" /> <meta name="google-site-verification" content="5okRoSAu5prwTjUhAqW8ZtNyzX5gEUtvEc39V_05OOs" /> <style>     html {         visibility: hidden;         opacity: 0;     } </style> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link     href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=block"     rel="stylesheet"> <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js?"></script> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/bootstrapmin.css"> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/grid-pro.css"> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/chicagofed.css?a=ox"> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/SitecoreCssClasses.css"> <script src="/~/media/admin/scripts/jquery341min.js"></script> <script type="text/javascript" src="/~/media/admin/scripts/bootstrapbundlemin.js"></script> <script type="text/javascript" src="/~/media/admin/scripts/application.js"></script> <link href="/favicon.ico" rel="icon" type="image/x-icon"> <meta name="og:image" content="https://www.chicagofed.org/-/media/admin/images/footer/chicagofedseal-png.svg"> <meta name="facebook-domain-verification" content="1zrkqvmrz2td8xcwo4ve6x0rl26nzp" />
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <title>
+Chicago Fed Data Releases - Federal Reserve Bank of Chicago    </title>
+</head>
+<body>
+    <div class="container-fluid cfedContainerFluid">
+            <div class="container">
+                
+        <div class="nav justify-content-end">
+                <div class="nav-item">
+                            <a class="nav-link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            Office of the President
+
+        </a>
+
+                </div>
+                <div class="nav-item">
+                            <a class="nav-link" href="/education/money-museum/index">
+            Money Museum
+
+        </a>
+
+                </div>
+        </div>
+
+
+
+
+            </div>
+        <div class="row cfedHeaderContainerRow">
+            <div class="col">
+                <!-- mobile logo -->
+<div class="row d-block d-md-none">
+    <div class="col">
+        <a href="/" title="Home"><img class="cfedLogo cfedLogo--small" alt="Federal Reserve Bank of Chicago" src="/-/media/admin/images/header/chicago-fed-logo-png.svg?h=33&amp;w=570&amp;sc_lang=en&amp;hash=4497DBA67FD97304EAC3580002229ED2" /></a>
+    </div>
+</div>
+<!-- begin header for all sizes above xs -->
+        
+
+
+<div class="cfedContentLimiter d-none d-md-block"> <!-- restart contentLimiter -->
+<div class="row cfedHeader__logoRow">
+    <div class="col-sm-8 cfedHeader__logoRowColumn">
+        <a href="/" title="Home"><img class="cfedLogo" alt="Federal Reserve Bank of Chicago" src="/-/media/admin/images/header/chicago-fed-logo-png.svg?sc_lang=en&amp;hash=7A0BD35555EFBD4BC75901A5B7BC7BD5" /></a>
+    </div>
+<!-- housekeeping links -->
+
+    <div class="col-sm-4 cfedHeader__logoRowColumn cfedHeader__logoRowColumn--icons">
+
+      
+ <div class="cfedSearchContainer" id="search"> 
+          
+            <div class="cfedSearchFormElementWrapper">
+                <label for="searchbox" class="sr-only">Search</label>
+                <input name="searchbox" id="searchbox" type="text" value="" class="cfedSearchbox" />
+        
+            </div>
+            <div class="cfedSearchFormElementWrapper">
+    			<input type="image" id="searchButtonFull" class="cfedHeaderSearchButton" src="~/media/admin/images/icons/search-icon" name="submit" alt="Search" />
+    			</div>
+            
+        		
+            </div>
+
+
+
+
+    </div>
+    
+    
+    
+</div>
+</div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="row cfedTopNavigationContainerRow">
+            <div class="col">
+                <div class="cfedContentLimiter">
+                    
+
+
+
+
+
+
+
+
+        <!--- Mobile Nav -->
+        <nav class="navbar cfedNavbar d-block d-md-none" style="z-index:9999">
+            <div class="navbar-header">
+                <div class="row">
+                    <div class="col-6 cfedSmallMenuIcon--left">
+                        <button class="navbar-toggle cfedHamburgerButton" data-target="#cfedNavbarMenu" data-toggle="collapse" type="button" aria-controls="cfedNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="cfedIconBar">
+                                ☰ Menu
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-6 cfedSmallMenuIcon--right">
+                        <button class="navbar-toggle cfedHamburgerButton" data-target="#cfedSearch" data-toggle="collapse" type="button" id="visibleSearchBoxToggle">
+                            <div class="cfedIconBar">
+                                <img alt="Search" src="/~/media/admin/images/header/search.svg?h=24&amp;w=38&amp;la=en" class="cfedIconImage" />Search
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="cfedSearch" class="collapse navbar-collapse cfedNavbarCollapse cfedNavbarSearch">
+                <ul class="nav navbar-nav ">
+                    <li class="dropdown cfedDropdown open">
+                        <ul class="dropdown-menu cfedPlatterContainer cfedSearchPlatter">
+                            <li>
+                                <!-- Begin Search Box -->
+                                <div class="input-group search-bar">
+                                    <input id="Search-bar" tabindex="1">
+                                    <span class="input-group-btn">
+                                        <button id="searchButton" class="btn btn-default" type="button">
+                                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <!-- End Search Box -->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="cfedNavbarMenu" class="collapse navbar-collapse cfedNavbarCollapse">
+                <ul class="nav navbar-nav cfedNavbar__nav--desktop">
+
+                        <li class="dropdown cfedDropdown" id="bankingDropdownMobile">
+                            <a href="#collapseBankingMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Banking
+                            </a>
+
+                            <ul id="collapseBankingMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/banking/index">
+            Banking
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a href="#collapseBankingResourcesMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Banking Resources</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseBankingResourcesMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/index">
+            Banking Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbdiscountwindow.org/">
+            Federal Reserve Discount Window
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbservices.org/index.html">
+            Federal Reserve Bank Services
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/regulatory-applications-and-membership-information-preview">
+            Regulatory Applications And Membership Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/tools-resources-data">
+            Banker Training And Resources
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/supervision-and-regulation/index">
+            Supervision And Regulation
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseConsumerResourcesMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Consumer Resources</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseConsumerResourcesMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/index">
+            Consumer Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="http://www.consumerfinance.gov/">
+            Consumer Financial Protection Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/consumer-information">
+            Consumer Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://federalreserveconsumerhelp.gov/?District=7">
+            Federal Reserve Consumer Help
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/markets/payments-policy/payments-policy-group">
+            Payments
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="researchDropdownMobile">
+                            <a href="#collapseResearchMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Research
+                            </a>
+
+                            <ul id="collapseResearchMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/research/index">
+            Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a href="#collapseOurPeopleMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Our People</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseOurPeopleMobile">
+                            <li>
+                            <a href="#collapseResearchTeamsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Research Teams</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseResearchTeamsMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/research-teams">
+            Research Teams
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.chicagofed.org/people/teams/research-leadership/index">
+            Leadership
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-economics/index">
+            Financial Economics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/macroeconomics/index">
+            Macroeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/microeconomics/index">
+            Microeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/community-development/index">
+            Community Development
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-analysis-and-engagement/index">
+            Regional Analysis and Engagement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-research/index">
+            Regional Research
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets Group
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/monetary-policy-and-communications/index">
+            Monetary Policy and Communications
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/team">
+            Economic Mobility Project
+
+        </a>
+
+                </li>
+
+        </ul>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/resident-and-visiting-scholars">
+            Resident And Visiting Scholars
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/research-assistants">
+            Research Assistants
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseEconomicDataMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Economic Data</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseEconomicDataMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/data/index">
+            Economic Data
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/beige-book/current-data">
+            Beige Book
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/carts/index">
+            Chicago Fed Advance Retail Trade Summary (CARTS)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/chicago-fed-labor-market-indicators/latest-release">
+            Chicago Fed Labor Market Indicators
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfnai/current-data">
+            Chicago Fed National Activity Index (CFNAI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfsec/current-data">
+            Chicago Fed Survey Of Economic Conditions (CFSEC)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/ag-conditions/index">
+            Chicago Fed Survey: Agricultural Conditions
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/nfci/current-data">
+            National Financial Conditions Index (NFCI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/data-release-calendar">
+            Economic Data Release Calendar
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapsePublicationsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Publications</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapsePublicationsMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/publications/index">
+            Publications
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/agletter/index">
+            AgLetter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-insights/index">
+            Chicago Fed Insights
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-letter/index">
+            Chicago Fed Letter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/economic-perspectives/index">
+            Economic Perspectives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/working-papers/index">
+            Working Papers
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/archives">
+            Archives
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseSpecialtyResearchMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Specialty Research</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseSpecialtyResearchMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/specialty-research">
+            Specialty Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/about">
+            Economic Mobility
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/lead/about">
+            Lead Service Line Replacement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-munitrack/current-data">
+            MuniTrack
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/research/content-areas/agriculture/index">
+            Agricultural Sector
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/automotive/index">
+            Automotive Industry
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-insurance-research-center/index">
+            Chicago Fed Insurance Research Center
+
+        </a>
+        <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="eventsDropdownMobile">
+                            <a href="#collapseEventsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Events
+                            </a>
+
+                            <ul id="collapseEventsMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/events/index">
+            Events
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/events/upcoming-events">
+            Upcoming Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/events/past-events">
+            Past Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-speaking">
+            President Goolsbee
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="educationDropdownMobile">
+                            <a href="#collapseEducationMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Education
+                            </a>
+
+                            <ul id="collapseEducationMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/education/index">
+            Education
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/education/educator">
+            Educator Resources
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/fed-challenge/college-fed-challenge">
+            Fed Challenge
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/index">
+            Chicago Money Museum
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/branch-visitor-center/index">
+            Detroit Visitor Center
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="RegionDropdownMobile">
+                            <a href="#collapseRegionMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Region &amp; Communities
+                            </a>
+
+                            <ul id="collapseRegionMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/region/index">
+            Region &amp; Communities
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/region/regional-economy">
+            Regional Economy
+
+        </a>
+        <a class="cfedNavigation__link" href="/region/community-development">
+            Community Development
+
+        </a>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/snapshot#/seventh_federal_reserve_district">
+            Local Economic Snapshot
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="careersDropdownMobile">
+                            <a href="#collapseCareersMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Careers
+                            </a>
+
+                            <ul id="collapseCareersMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/Careers">
+            Careers
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="https://rb.wd5.myworkdayjobs.com/FRS?hiringCompany=7186c32a743f01e4caeeb8caaf01430c">
+            Search Jobs
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/areasofwork">
+            Areas Of Work
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/thebenefits">
+            Benefits
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="aboutusDropdownMobile">
+                            <a href="#collapseAboutUsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                About Us
+                            </a>
+
+                            <ul id="collapseAboutUsMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/utilities/about-us/index">
+            About Us
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/people/board-of-directors/index">
+            Board Of Directors
+
+        </a>
+        <a href="#collapsePeopleMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">People</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapsePeopleMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/people/board-of-directors/members">
+            Board Members
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            President Austan D. Goolsbee
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/senior-executives">
+            Senior Executives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/academic-advisory-council">
+            Academic Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/financial-stability-council">
+            Financial Stability Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/speakers-bureau">
+            Speakers Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/advisory-council">
+            Chicago Fed Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/cdiac">
+            Community Depository Institutions Advisory Council
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/utilities/about-us/about-our-history">
+            Our History
+
+        </a>
+        <a class="cfedNavigation__link" href="/publications/annual-report/index">
+            Financial Statements
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/omwi-reports">
+            OMWI
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/financial-disclosures">
+            Ethics Policies &amp; Disclosures
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/newsroom/newsroom-home">
+            Newsroom
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/federal-reserve-calendars">
+            Federal Reserve Calendars
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/contactus">
+            Contact Us
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+
+                            <ul>
+                                        <a class="nav-link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            Office of the President
+
+        </a>
+
+                            </ul>
+                            <ul>
+                                        <a class="nav-link" href="/education/money-museum/index">
+            Money Museum
+
+        </a>
+
+                            </ul>
+
+                </ul>
+            </div>
+        </nav>
+        <!--- Desktop Nav-->
+        <nav role="navigation" style="z-index:100; padding-left:35px; padding-right:35px;" class="d-none d-md-block">
+            <div id="menuGroup">
+                <ul class="cfedNavigation">
+
+                        <li class="cfedNavigation__item2" id="bankingDropdown">
+                            <a href="#collapseBanking" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Banking
+                            </a>
+
+
+
+                            <ul id="collapseBanking" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/banking/index">
+            Banking
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a href="#collapseBankingResources" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Banking Resources</a>
+        <ul class="collapse" id="collapseBankingResources">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/index">
+            Banking Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbdiscountwindow.org/">
+            Federal Reserve Discount Window
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbservices.org/index.html">
+            Federal Reserve Bank Services
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/regulatory-applications-and-membership-information-preview">
+            Regulatory Applications And Membership Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/tools-resources-data">
+            Banker Training And Resources
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/supervision-and-regulation/index">
+            Supervision And Regulation
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseConsumerResources" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Consumer Resources</a>
+        <ul class="collapse" id="collapseConsumerResources">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/index">
+            Consumer Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="http://www.consumerfinance.gov/">
+            Consumer Financial Protection Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/consumer-information">
+            Consumer Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://federalreserveconsumerhelp.gov/?District=7">
+            Federal Reserve Consumer Help
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/markets/payments-policy/payments-policy-group">
+            Payments
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="researchDropdown">
+                            <a href="#collapseResearch" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Research
+                            </a>
+
+
+
+                            <ul id="collapseResearch" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/research/index">
+            Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a href="#collapseOurPeople" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Our People</a>
+        <ul class="collapse" id="collapseOurPeople">
+                            <li>
+                            <a href="#collapseResearchTeams" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Research Teams</a>
+        <ul class="collapse" id="collapseResearchTeams">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/research-teams">
+            Research Teams
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.chicagofed.org/people/teams/research-leadership/index">
+            Leadership
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-economics/index">
+            Financial Economics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/macroeconomics/index">
+            Macroeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/microeconomics/index">
+            Microeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/community-development/index">
+            Community Development
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-analysis-and-engagement/index">
+            Regional Analysis and Engagement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-research/index">
+            Regional Research
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets Group
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/monetary-policy-and-communications/index">
+            Monetary Policy and Communications
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/team">
+            Economic Mobility Project
+
+        </a>
+
+                </li>
+
+        </ul>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/resident-and-visiting-scholars">
+            Resident And Visiting Scholars
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/research-assistants">
+            Research Assistants
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseEconomicData" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Economic Data</a>
+        <ul class="collapse" id="collapseEconomicData">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/data/index">
+            Economic Data
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/beige-book/current-data">
+            Beige Book
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/carts/index">
+            Chicago Fed Advance Retail Trade Summary (CARTS)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/chicago-fed-labor-market-indicators/latest-release">
+            Chicago Fed Labor Market Indicators
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfnai/current-data">
+            Chicago Fed National Activity Index (CFNAI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfsec/current-data">
+            Chicago Fed Survey Of Economic Conditions (CFSEC)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/ag-conditions/index">
+            Chicago Fed Survey: Agricultural Conditions
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/nfci/current-data">
+            National Financial Conditions Index (NFCI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/data-release-calendar">
+            Economic Data Release Calendar
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapsePublications" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Publications</a>
+        <ul class="collapse" id="collapsePublications">
+                            <li>
+                            <a class="cfedNavigation__link" href="/publications/index">
+            Publications
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/agletter/index">
+            AgLetter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-insights/index">
+            Chicago Fed Insights
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-letter/index">
+            Chicago Fed Letter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/economic-perspectives/index">
+            Economic Perspectives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/working-papers/index">
+            Working Papers
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/archives">
+            Archives
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseSpecialtyResearch" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Specialty Research</a>
+        <ul class="collapse" id="collapseSpecialtyResearch">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/specialty-research">
+            Specialty Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/about">
+            Economic Mobility
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/lead/about">
+            Lead Service Line Replacement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-munitrack/current-data">
+            MuniTrack
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/research/content-areas/agriculture/index">
+            Agricultural Sector
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/automotive/index">
+            Automotive Industry
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-insurance-research-center/index">
+            Chicago Fed Insurance Research Center
+
+        </a>
+        <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="eventsDropdown">
+                            <a href="#collapseEvents" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Events
+                            </a>
+
+
+
+                            <ul id="collapseEvents" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/events/index">
+            Events
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/events/upcoming-events">
+            Upcoming Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/events/past-events">
+            Past Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-speaking">
+            President Goolsbee
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="educationDropdown">
+                            <a href="#collapseEducation" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Education
+                            </a>
+
+
+
+                            <ul id="collapseEducation" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/education/index">
+            Education
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/educator">
+            Educator Resources
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/fed-challenge/college-fed-challenge">
+            Fed Challenge
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/index">
+            Chicago Money Museum
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/branch-visitor-center/index">
+            Detroit Visitor Center
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="RegionDropdown">
+                            <a href="#collapseRegion" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Region &amp; Communities
+                            </a>
+
+
+
+                            <ul id="collapseRegion" class="cfedNavigation__submenu2 collapse submenu-right" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/region/index">
+            Region &amp; Communities
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/region/regional-economy">
+            Regional Economy
+
+        </a>
+        <a class="cfedNavigation__link" href="/region/community-development">
+            Community Development
+
+        </a>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/snapshot#/seventh_federal_reserve_district">
+            Local Economic Snapshot
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="careersDropdown">
+                            <a href="#collapseCareers" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Careers
+                            </a>
+
+
+
+                            <ul id="collapseCareers" class="cfedNavigation__submenu2 collapse submenu-right" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/Careers">
+            Careers
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="https://rb.wd5.myworkdayjobs.com/FRS?hiringCompany=7186c32a743f01e4caeeb8caaf01430c">
+            Search Jobs
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/areasofwork">
+            Areas Of Work
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/thebenefits">
+            Benefits
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="aboutusDropdown">
+                            <a href="#collapseAboutUs" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                About Us
+                            </a>
+
+
+
+                            <ul id="collapseAboutUs" class="cfedNavigation__submenu2 collapse submenu-right" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/utilities/about-us/index">
+            About Us
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/people/board-of-directors/index">
+            Board Of Directors
+
+        </a>
+        <a href="#collapsePeople" class="cfedNavbarLink--small collapsed" data-toggle="collapse">People</a>
+        <ul class="collapse" id="collapsePeople">
+                            <li>
+                            <a class="cfedNavigation__link" href="/people/board-of-directors/members">
+            Board Members
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            President Austan D. Goolsbee
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/senior-executives">
+            Senior Executives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/academic-advisory-council">
+            Academic Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/financial-stability-council">
+            Financial Stability Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/speakers-bureau">
+            Speakers Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/advisory-council">
+            Chicago Fed Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/cdiac">
+            Community Depository Institutions Advisory Council
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/utilities/about-us/about-our-history">
+            Our History
+
+        </a>
+        <a class="cfedNavigation__link" href="/publications/annual-report/index">
+            Financial Statements
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/omwi-reports">
+            OMWI
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/financial-disclosures">
+            Ethics Policies &amp; Disclosures
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/newsroom/newsroom-home">
+            Newsroom
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/federal-reserve-calendars">
+            Federal Reserve Calendars
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/contactus">
+            Contact Us
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+
+<style>
+    @ media screen and (max-width:900px) and (min-width:768px) {
+        .cfedNavigation__item2 .cfedNavigation__menuLink {
+            font-size: 0.9rem
+        }
+    }
+</style>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="cfedContentLimiter">
+            <div class="row content-row">
+                <div class="col">
+                    <div id="content">
+                            
+<div class="row">
+    <div class="col-sm-12">
+
+    <div class="cfedDetail__content">
+
+       
+                                    <div class="cfedDetail__title"><h1>Chicago Fed Data Releases</h1></div>
+
+        <div class="cfedDetail__introduction"><!-- 
+/****** INSTRUCTIONS FOR UPDATING *******/
+1. Delete past months from the Upcoming Data Releases <div> and add new ones
+  a. Update the values in the data-date attribute. This represents the month and year - so 1-21 is January 21
+  b. Add data-position="last" to the last month (December)
+2. Update the indiviaul release calendars
+  a. Delete past dates
+  b. Add new <tr>s for each release date for the index. Make sure to update the data-date attribute to the correct date. 
+    i. Note: Sometimes an index will have two releases in a month. In these instances, make sure to create a new <tr> for each. Each will have the same data-date attribute. 
+-->
+<div class="cfedContent__text">
+    <div class="view-control">
+        <label for="view-selector"></label>
+        <h3>Viewing: </h3>
+        <select id="view-selector" class="form-control">
+            <option value="monthly" />Releases by month
+            <option value="release" />Releases by index
+            <option value="all-releases" />All releases
+        </select>
+    </div>
+    <!-- Remove past months and update this section with the months for the coming year, making sure to udpate the data-date attribute as appropriate. -->
+    <div id="upcoming-data-releases">
+        <div class="release-months text-center">
+            <button class="change-month disabled" data-direction="left"></button>
+            <h2 class="month-header" data-date="12-25" data-position="first">December 2025 Releases</h2>
+            <h2 class="month-header" data-date="1-26">January 2026 Releases</h2>
+            <h2 class="month-header" data-date="2-26">February 2026 Releases</h2>
+            <h2 class="month-header" data-date="2-26">February 2026 Releases</h2>
+            <h2 class="month-header" data-date="3-26">March 2026 Releases</h2>
+            <h2 class="month-header" data-date="4-26">April 2026 Releases</h2>
+            <h2 class="month-header" data-date="5-26">May 2026 Releases</h2>
+            <h2 class="month-header" data-date="6-26">June 2026 Releases</h2>
+            <h2 class="month-header" data-date="7-26">July 2026 Releases</h2>
+            <h2 class="month-header" data-date="8-26">August 2026 Releases</h2>
+            <h2 class="month-header" data-date="9-26">September 2026 Releases</h2>
+            <h2 class="month-header" data-date="10-26">October 2026 Releases</h2>
+            <h2 class="month-header" data-date="11-26">November 2026 Releases</h2>
+            <h2 class="month-header" data-date="12-26" data-position="last">December 2026 Releases</h2>
+
+
+            <button class="change-month" data-direction="right"></button>
+        </div>
+        <div class="upcoming-release-dates table-responsive">
+            <table id="monthly-releases" class="table table-striped d-none">
+                <thead>
+                    <tr>
+                        <th><strong>Data Name</strong></th>
+                        <th><strong>Date of Release</strong></th>
+                        <th><strong>Reference Period</strong></th>
+                        <th><strong>Released?</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive d-none all-releases-table">
+            <h2 class="text-center">All Federal Reserve Bank of Chicago Data Releases</h2>
+            <table class="table table-striped" id="release-matrix">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>AgLetter</th>
+                        <th>Beige Book</th>
+                        <th>Chicago Fed Advance Retail Trade Summary (CARTS)</th>
+                        <th>Chicago Fed Labor Market Indicators</th>
+                        <th>Chicago Fed National Activity Index (CFNAI)</th>
+                        <th>Chicago Fed Survey of Economic Conditions (CFSEC)</th>
+                        <th>National Financial Conditions Index (NFCI)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="all-releases-header">
+        <hr />
+        <h2 class="text-center">Release Dates by Index</h2>
+        <p id="release-toc" class="text-center">Jump to:
+            <a href="#agletter-table">AgLetter</a> | <a href="#beige-book-table">Beige Book</a> |
+            <a href="#carts-table">CARTS</a> | <a href="#chicago-labor-market-indicators-table">Chicago Fed Labor Market
+                Indicators</a> | <a href="#cfnai-table">CFNAI</a>
+            | <a href="#cfsec-table">CFSEC</a> | <a href="#nfci-table">NFCI</a>
+        </p>
+    </div>
+    <ul class="nav nav-tabs d-none mb-3 mt-3" id="index-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="beige-book-tab" data-toggle="tab" href="#beige-book-holder" role="tab" aria-controls="beige-book" aria-selected="true">Beige Book</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" id="carts-tab" data-toggle="tab" href="#carts-holder" role="tab" aria-controls="carts" aria-selected="true">CARTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" id="cfmli-tab" data-toggle="tab" href="#chicago-fed-labor-market-indicators-holder" role="tab" aria-controls="cflmi" aria-selected="true">Chicago Fed Labor Market Indicators</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" id="cfnai-tab" data-toggle="tab" href="#cfnai-holder" role="tab" aria-controls="cfnai" aria-selected="true">CFNAI</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="cfsec-tab" data-toggle="tab" href="#cfsec-holder" role="tab" aria-controls="cfsec" aria-selected="false">CFSEC</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" id="nfci-tab" data-toggle="tab" href="#nfci-holder" role="tab" aria-controls="nfci" aria-selected="false">NFCI</a>
+        </li>
+    </ul>
+
+    <!--Ag Letter-->
+
+    <div class="release-calendars">
+
+        <div class="table-responsive calendar-holder" id="agletter-holder">
+            <p class="text-center back-to-top-link"><a href="#view-selector">Back to top</a></p>
+            <table id="agletter-table" class="table table-striped release-calendar">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="release-header"><a href="/publications/agletter/index">AgLetter</a>
+                            <p>Releases at 4:00 p.m. ET/3:00 p.m. CT</p>
+                            <p>Add to calendar: <a href="/-/media/publications/agletter/agletter-release-dates-2026.ics?sc_lang=en&amp;hash=D2F1A47EDD2A305F8DA67D1E4B06A23B">2026</a></p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date of Release</th>
+                        <th>Reference Period</th>
+                    </tr>
+                </thead>
+                <tbody data-name="AgLetter">
+
+                    <tr data-date="2-26">
+                        <td>February 12, 2026</td>
+                        <td>Fourth quarter of 2025</td>
+                    </tr>
+
+                    <tr data-date="5-26">
+                        <td>May 14, 2026</td>
+                        <td>First quarter of 2026</td>
+                    </tr>
+
+                    <tr data-date="8-26">
+                        <td>August 13, 2026</td>
+                        <td>Second quarter of 2026</td>
+                    </tr>
+
+                    <tr data-date="11-26">
+                        <td>November 12, 2026</td>
+                        <td>Third quarter of 2026</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <hr />
+        </div>
+
+        <!--Beige Book-->
+
+        <div class="table-responsive calendar-holder" id="beige-book-holder">
+            <p class="text-center back-to-top-link"><a href="#view-selector">Back to top</a></p>
+            <table id="beige-book-table" class="table table-striped release-calendar">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="release-header"><a href="/research/data/beige-book/current-data">Beige Book</a>
+                            <p>Releases at 3:00 p.m. ET/2:00 p.m. CT</p>
+                            <p>Add to calendar: <a href="/-/media/publications/beige-book/beige-book-calendar-dates-2026.ics?sc_lang=en&amp;hash=E0DAF2F301BFE90CD1C969CE30FB5E3A">2026</a></p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date of Release</th>
+                        <th>Reference Period</th>
+                    </tr>
+                </thead>
+                <tbody data-name="Beige Book">
+
+                    <tr data-date="1-26">
+                        <td>January 14, 2026</td>
+                        <td>Late November and December</td>
+                    </tr>
+                    <tr data-date="3-26">
+                        <td>March 4, 2026</td>
+                        <td>January and early February</td>
+                    </tr>
+                    <tr data-date="4-26">
+                        <td>April 15, 2026</td>
+                        <td>Late February and March</td>
+                    </tr>
+                    <tr data-date="6-26">
+                        <td>June 3, 2026</td>
+                        <td>April and early May</td>
+                    </tr>
+                    <tr data-date="7-26">
+                        <td>July 15, 2026</td>
+                        <td>Late May and June</td>
+                    </tr>
+                    <tr data-date="9-26">
+                        <td>September 2, 2026</td>
+                        <td>July and early August</td>
+                    </tr>
+                    <tr data-date="10-26">
+                        <td>October 14, 2026</td>
+                        <td>Late August and September</td>
+                    </tr>
+                    <tr data-date="11-26">
+                        <td>November 25, 2026</td>
+                        <td>October and early November</td>
+                    </tr>
+                    <tr data-date="1-27">
+                        <td>January 13, 2027</td>
+                        <td>Late November and December</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+        </div>
+
+        <!--CARTS-->
+        <div class="table-responsive calendar-holder" id="carts-holder">
+            <p class="text-center back-to-top-link"><a href="#view-selector">Back to top</a></p>
+            <table id="carts-table" class="table table-striped release-calendar">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="release-header"><a href="/research/data/carts/current-data">Chicago Fed Advance
+                                Retail Trade Summary (CARTS)</a>
+                            <p>Releases at 8:30 a.m. ET/7:30 a.m. CT</p>
+                        <!--    <p>Add to calendar: <a href="/-/media/publications/carts/carts-release-dates-2026.ics?sc_lang=en&amp;hash=B32A20CDA8B429E7CA62A2B9BB96EAF1">2026</a></p> -->
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date of Release</th>
+                        <th>Reference Period</th>
+                    </tr>
+                </thead>
+                <tbody data-name="Chicago Fed Advance Retail Trade Summary (CARTS)">
+
+                    <tr data-date="12-25">
+                        <td>December 5, 2025</td>
+                        <td>November 2025 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="12-25">
+                        <td>December 19, 2025</td>
+                        <td>November 2025 (Final)</td>
+                    </tr>
+
+                    <tr data-date="1-26">
+                        <td>January 7, 2026</td>
+                        <td>December 2025 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="1-26">
+                        <td>January 15, 2026</td>
+                        <td>December 2025 (Final)</td>
+                    </tr>
+                    <tr data-date="2-26">
+                        <td>February 6, 2026</td>
+                        <td>January 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="2-26">
+                        <td>February 17, 2026</td>
+                        <td>January 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="3-26">
+                        <td>March 9, 2026</td>
+                        <td>February 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="3-26">
+                        <td>March 16, 2026</td>
+                        <td>February 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="4-26">
+                        <td>April 6, 2026</td>
+                        <td>March 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="4-26">
+                        <td>April 16, 2026</td>
+                        <td>March 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="5-26">
+                        <td>May 7, 2026</td>
+                        <td>April 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="5-26">
+                        <td>May 13, 2026</td>
+                        <td>April 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="6-26">
+                        <td>June 8, 2026</td>
+                        <td>May 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="6-26">
+                        <td>June 16, 2026</td>
+                        <td>May 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="7-26">
+                        <td>July 9, 2026</td>
+                        <td>June 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="7-26">
+                        <td>July 15, 2026</td>
+                        <td>June 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="8-26">
+                        <td>August 6, 2026</td>
+                        <td>July 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="8-26">
+                        <td>August 13, 2026</td>
+                        <td>July 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="9-26">
+                        <td>September 9, 2026</td>
+                        <td>August 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="9-26">
+                        <td>September 15, 2026</td>
+                        <td>August 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="10-26">
+                        <td>October 8, 2026</td>
+                        <td>September 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="10-26">
+                        <td>October 14, 2026</td>
+                        <td>September 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="11-26">
+                        <td>November 6, 2026</td>
+                        <td>October 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="11-26">
+                        <td>November 16, 2026</td>
+                        <td>October 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="12-26">
+                        <td>December 7, 2026</td>
+                        <td>November 2026 (Preliminary)</td>
+                    </tr>
+                    <tr data-date="12-26">
+                        <td>December 15, 2026</td>
+                        <td>November 2026 (Final)</td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <hr />
+        </div>
+
+        <!--CFLMI-->
+
+        <div class="table-responsive calendar-holder" id="labor-market-indicator-holder">
+            <p class="text-center back-to-top-link"><a href="#view-selector">Back to top</a></p>
+            <table id="chicago-labor-market-indicators-table" class="table table-striped release-calendar">
+                <thead>
+                    <tr>
+                        <th colspan="3" class="release-header"><a href="/research/data/chicago-fed-labor-market-indicators/latest-release">Chicago Fed
+                                Labor Market Indicators</a>
+                            <p>Releases at 8:30 a.m. ET/7:30 a.m. CT</p>
+                            <p>Add to calendar: <a href="/-/media/publications/chicago-fed-labor-market-indicators/chicago-fed-labor-market-indicators-release-dates-2026.ics?sc_lang=en&amp;hash=6F6A1DD45031B1491D0AD86BFB39CA3B">2026</a></p>
+                        </th>
+                    </tr>
+                    <tr class="release-headings">
+                        <th>Date of Release</th>
+                        <th>Corresponding BLS Report</th>
+                    </tr>
+                </thead>
+                <tbody data-name="Chicago Fed Labor Market Indicators">
+
+                    <tr data-date="12-25">
+                        <td>December 4, 2025</td>
+                        <td>November 2025 (Final)</td>
+                    </tr>
+                    <tr data-date="12-25">
+                        <td>December 30, 2025</td>
+                        <td>December 2025 (Advance)</td>
+                    </tr>
+                    <tr data-date="1-26">
+                        <td>January 8, 2026</td>
+                        <td>December 2025 (Final)</td>
+                    </tr>
+                    <tr data-date="1-26">
+                        <td>January 29, 2026</td>
+                        <td>January 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="2-26">
+                        <td>February 5, 2026</td>
+                        <td>January 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="2-26">
+                        <td>February 26, 2026</td>
+                        <td>February 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="3-26">
+                        <td>March 5, 2026</td>
+                        <td>February 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="3-26">
+                        <td>March 26, 2026</td>
+                        <td>March 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="4-26">
+                        <td>April 2, 2026</td>
+                        <td>March 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="4-26">
+                        <td>April 30, 2026</td>
+                        <td>April 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="5-26">
+                        <td>May 7, 2026</td>
+                        <td>April 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="5-26">
+                        <td>May 28, 2026</td>
+                        <td>May 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="6-26">
+                        <td>June 4, 2026</td>
+                        <td>May 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="6-26">
+                        <td>June 25, 2026</td>
+                        <td>June 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="7-26">
+                        <td>July 1, 2026</td>
+                        <td>June 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="7-26">
+                        <td>July 30, 2026</td>
+                        <td>July 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="8-26">
+                        <td>August 6, 2026</td>
+                        <td>July 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="8-26">
+                        <td>August 27, 2026</td>
+                        <td>August 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="9-26">
+                        <td>September 3, 2026</td>
+                        <td>August 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="9-26">
+                        <td>September 24, 2026</td>
+                        <td>September 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="10-26">
+                        <td>October 1, 2026</td>
+                        <td>September 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="10-26">
+                        <td>October 29, 2026</td>
+                        <td>October 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="11-26">
+                        <td>November 5, 2026</td>
+                        <td>October 2026 (Final)</td>
+                    </tr>
+                    <tr data-date="11-26">
+                        <td>November 24, 2026</td>
+                        <td>November 2026 (Advance)</td>
+                    </tr>
+                    <tr data-date="12-26">
+                        <td>December 3, 2026</td>
+                        <td>November 2026 (Final)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+        </div>
+
+        <!--CFNAI-->
+        <div class="table-responsive calendar-holder" id="cfnai-holder">
+            <p class="text-center back-to-top-link"><a href="#view-selector">Back to top</a></p>
+            <table id="cfnai-table" class="table table-striped release-calendar">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="release-header"><a href="/research/data/cfnai/current-data">Chicago Fed National
+                                Activity Index (CFNAI)</a>
+                            <p>Releases at 8:30 a.m. ET/7:30 a.m. CT</p>
+                            <p> Add to calendar: <a href="/-/media/publications/cfnai/cfnai-release-dates-2026.ics?sc_lang=en&amp;hash=5FC83D7B52CE0686DCA5226BAB57A541">2026</a></p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date of Release</th>
+                        <th>Monthly Data</th>
+                    </tr>
+                </thead>
+                <tbody data-name="Chicago Fed National Activity Index (CFNAI)">
+                    <tr data-date="12-25">
+                        <td>December 22, 2025</td>
+                        <td>September 2025</td>
+                    </tr>
+                    <tr data-date="1-26">
+                        <td>January 26, 2026</td>
+                        <td>October & November 2025</td>
+                    </tr>
+                    <tr data-date="2-26">
+                        <td>February 23, 2026</td>
+                        <td>December 2025 & January 2026</td>
+                    </tr>
+                    <tr data-date="3-26">
+                        <td>March 23, 2026</td>
+                        <td>February 2026</td>
+                    </tr>
+                    <tr data-date="4-26">
+                        <td>April 23, 2026</td>
+                        <td>March 2026</td>
+                    </tr>
+                    <tr data-date="5-26">
+                        <td>May 26, 2026</td>
+                        <td>April 2026</td>
+                    </tr>
+                    <tr data-date="6-26">
+                        <td>June 25, 2026</td>
+                        <td>May 2026</td>
+                    </tr>
+                    <tr data-date="7-26">
+                        <td>July 23, 2026</td>
+                        <td>June 2026</td>
+                    </tr>
+                    <tr data-date="8-26">
+                        <td>August 24, 2026</td>
+                        <td>July 2026</td>
+                    </tr>
+                    <tr data-date="9-26">
+                        <td>September 21, 2026</td>
+                        <td>August 2026</td>
+                    </tr>
+                    <tr data-date="10-26">
+                        <td>October 26, 2026</td>
+                        <td>September 2026</td>
+                    </tr>
+                    <tr data-date="11-26">
+                        <td>November 23, 2026</td>
+                        <td>October 2026</td>
+                    </tr>
+                    <tr data-date="12-26">
+                        <td>December 21, 2026</td>
+                        <td>November 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+        </div>
+
+
+        <!--CFSEC-->
+
+
+        <div class="table-responsive calendar-holder" id="cfsec-holder">
+            <p class="text-center back-to-top-link"><a href="#view-selector">Back to top</a></p>
+            <table id="cfsec-table" class="table table-striped release-calendar">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="release-header"><a href="/research/data/cfsec/current-data">Chicago Fed Survey of
+                                Economic Conditions (CFSEC)</a>
+                            <p>Releases at 10 a.m. ET/9 a.m. CT</p>
+                              <p>Add to calendar: <a href="/-/media/publications/cfsec/2025/cfsec-release-dates-2026.ics?&amp;sc_lang=en&amp;hash=390D05D583D068D826031CBEE02AF6E1">2026</a></p> 
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date of Release</th>
+                        <th>Monthly Data</th>
+                    </tr>
+                </thead>
+                <tbody data-name="Chicago Fed Survey of Economic Conditions (CFSEC)">
+                    <tr data-date="1-26">
+                        <td>January 23, 2026</td>
+                        <td>January 2026</td>
+                    </tr>
+                    <tr data-date="2-26">
+                        <td>February 24, 2026</td>
+                        <td>February 2026</td>
+                    </tr>
+                    <tr data-date="3-26">
+                        <td>March 23, 2026</td>
+                        <td>March 2026</td>
+                    </tr>
+                    <tr data-date="4-26">
+                        <td>April 22, 2026</td>
+                        <td>April 2026</td>
+                    </tr>
+                    <tr data-date="5-26">
+                        <td>May 22, 2026</td>
+                        <td>May 2026</td>
+                    </tr>
+                    <tr data-date="6-26">
+                        <td>June 23, 2026</td>
+                        <td>June 2026</td>
+                    </tr>
+                    <tr data-date="7-26">
+                        <td>July 22, 2026</td>
+                        <td>July 2026</td>
+                    </tr>
+                    <tr data-date="8-26">
+                        <td>August 24, 2026</td>
+                        <td>August 2026</td>
+                    </tr>
+                    <tr data-date="9-26">
+                        <td>September 22, 2026</td>
+                        <td>September 2026</td>
+                    </tr>
+                    <tr data-date="10-26">
+                        <td>October 22, 2026</td>
+                        <td>October 2026</td>
+                    </tr>
+                    <tr data-date="11-26">
+                        <td>November 23, 2026</td>
+                        <td>November 2026</td>
+                    </tr>
+                    <tr data-date="12-26">
+                        <td>December 22, 2026</td>
+                        <td>December 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+        </div>
+
+        <!--NFCI-->
+
+        <div class="table-responsive calendar-holder" id="nfci-holder">
+            <p class="text-center back-to-top-link"><a href="#view-selector">Back to top</a></p>
+            <table id="nfci-table" class="table table-striped release-calendar">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="release-header"><a href="/research/data/nfci/current-data">National
+                                Financial Conditions Index (NFCI)</a>
+                            <p>Releases at 8:30 a.m. ET/7:30 a.m. CT</p>
+                            <p>Add to calendar: <a href="/-/media/publications/nfci/nfci-release-dates-2026.ics?sc_lang=en&amp;hash=54B1773BCD6C9D31A7B9A1DF909E518B">2026</a></p>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Date of Release</th>
+                        <th>Weekly Data Ending</th>
+                    </tr>
+                </thead>
+                <tbody data-name="National Financial Conditions Index (NFCI)">
+
+
+                    <tr data-date="12-25">
+                        <td>December 3, 2025</td>
+                        <td>November 28, 2025</td>
+                    </tr>
+                    <tr data-date="12-25">
+                        <td>December 10, 2025</td>
+                        <td>December 5, 2025</td>
+                    </tr>
+                    <tr data-date="12-25">
+                        <td>December 17, 2025</td>
+                        <td>December 12, 2025</td>
+                    </tr>
+                    <tr data-date="12-25">
+                        <td>December 24, 2025</td>
+                        <td>December 19, 2025</td>
+                    </tr>
+                    <tr data-date="12-25">
+                        <td>December 31, 2025</td>
+                        <td>December 26, 2025</td>
+                    </tr>
+
+                    <tr data-date="1-26">
+                        <td>January 7, 2026</td>
+                        <td>January 2, 2026</td>
+                    </tr>
+
+                    <tr data-date="1-26">
+                        <td>January 14, 2026</td>
+                        <td>January 9, 2026</td>
+                    </tr>
+
+                    <tr data-date="1-26">
+                        <td>January 22, 2026</td>
+                        <td>January 16, 2026</td>
+                    </tr>
+
+                    <tr data-date="1-26">
+                        <td>January 28, 2026</td>
+                        <td>January 23, 2026</td>
+                    </tr>
+
+                    <tr data-date="2-26">
+                        <td>February 4, 2026</td>
+                        <td>January 30, 2026</td>
+                    </tr>
+
+                    <tr data-date="2-26">
+                        <td>February 11, 2026</td>
+                        <td>February 6, 2026</td>
+                    </tr>
+
+                    <tr data-date="2-26">
+                        <td>February 19, 2026</td>
+                        <td>February 13, 2026</td>
+                    </tr>
+
+                    <tr data-date="2-26">
+                        <td>February 25, 2026</td>
+                        <td>February 20, 2026</td>
+                    </tr>
+
+                    <tr data-date="3-26">
+                        <td>March 4, 2026</td>
+                        <td>February 27, 2026</td>
+                    </tr>
+
+                    <tr data-date="3-26">
+                        <td>March 11, 2026</td>
+                        <td>March 6, 2026</td>
+                    </tr>
+
+                    <tr data-date="3-26">
+                        <td>March 18, 2026</td>
+                        <td>March 13, 2026</td>
+                    </tr>
+
+                    <tr data-date="3-26">
+                        <td>March 25, 2026</td>
+                        <td>March 20, 2026</td>
+                    </tr>
+
+                    <tr data-date="4-26">
+                        <td>April 1, 2026</td>
+                        <td>March 27, 2026</td>
+                    </tr>
+
+                    <tr data-date="4-26">
+                        <td>April 8, 2026</td>
+                        <td>April 3, 2026</td>
+                    </tr>
+
+                    <tr data-date="4-26">
+                        <td>April 15, 2026</td>
+                        <td>April 10, 2026</td>
+                    </tr>
+
+                    <tr data-date="4-26">
+                        <td>April 22, 2026</td>
+                        <td>April 17, 2026</td>
+                    </tr>
+
+                    <tr data-date="4-26">
+                        <td>April 29, 2026</td>
+                        <td>April 24, 2026</td>
+                    </tr>
+
+                    <tr data-date="5-26">
+                        <td>May 6, 2026</td>
+                        <td>May 1, 2026</td>
+                    </tr>
+
+                    <tr data-date="5-26">
+                        <td>May 13, 2026</td>
+                        <td>May 8, 2026</td>
+                    </tr>
+
+                    <tr data-date="5-26">
+                        <td>May 20, 2026</td>
+                        <td>May 15, 2026</td>
+                    </tr>
+
+                    <tr data-date="5-26">
+                        <td>May 28, 2026</td>
+                        <td>May 22, 2026</td>
+                    </tr>
+
+                    <tr data-date="6-26">
+                        <td>June 3, 2026</td>
+                        <td>May 29, 2026</td>
+                    </tr>
+
+                    <tr data-date="6-26">
+                        <td>June 10, 2026</td>
+                        <td>June 5, 2026</td>
+                    </tr>
+
+                    <tr data-date="6-26">
+                        <td>June 17, 2026</td>
+                        <td>June 12, 2026</td>
+                    </tr>
+
+                    <tr data-date="6-26">
+                        <td>June 24, 2026</td>
+                        <td>June 19, 2026</td>
+                    </tr>
+
+                    <tr data-date="7-26">
+                        <td>July 1, 2026</td>
+                        <td>June 26, 2026</td>
+                    </tr>
+
+                    <tr data-date="7-26">
+                        <td>July 8, 2026</td>
+                        <td>July 3, 2026</td>
+                    </tr>
+
+                    <tr data-date="7-26">
+                        <td>July 15, 2026</td>
+                        <td>July 10, 2026</td>
+                    </tr>
+
+                    <tr data-date="7-26">
+                        <td>July 22, 2026</td>
+                        <td>July 17, 2026</td>
+                    </tr>
+
+                    <tr data-date="7-26">
+                        <td>July 29, 2026</td>
+                        <td>July 24, 2026</td>
+                    </tr>
+
+                    <tr data-date="8-26">
+                        <td>August 5, 2026</td>
+                        <td>July 31, 2026</td>
+                    </tr>
+
+                    <tr data-date="8-26">
+                        <td>August 12, 2026</td>
+                        <td>August 7, 2026</td>
+                    </tr>
+
+                    <tr data-date="8-26">
+                        <td>August 19, 2026</td>
+                        <td>August 14, 2026</td>
+                    </tr>
+
+                    <tr data-date="8-26">
+                        <td>August 26, 2026</td>
+                        <td>August 21, 2026</td>
+                    </tr>
+
+                    <tr data-date="9-26">
+                        <td>September 2, 2026</td>
+                        <td>August 28, 2026</td>
+                    </tr>
+
+                    <tr data-date="9-26">
+                        <td>September 10, 2026</td>
+                        <td>September 4, 2026</td>
+                    </tr>
+
+                    <tr data-date="9-26">
+                        <td>September 16, 2026</td>
+                        <td>September 11, 2026</td>
+                    </tr>
+
+                    <tr data-date="9-26">
+                        <td>September 23, 2026</td>
+                        <td>September 18, 2026</td>
+                    </tr>
+
+                    <tr data-date="9-26">
+                        <td>September 30, 2026</td>
+                        <td>September 25, 2026</td>
+                    </tr>
+
+                    <tr data-date="10-26">
+                        <td>October 7, 2026</td>
+                        <td>October 2, 2026</td>
+                    </tr>
+
+                    <tr data-date="10-26">
+                        <td>October 15, 2026</td>
+                        <td>October 9, 2026</td>
+                    </tr>
+
+                    <tr data-date="10-26">
+                        <td>October 21, 2026</td>
+                        <td>October 16, 2026</td>
+                    </tr>
+
+                    <tr data-date="10-26">
+                        <td>October 28, 2026</td>
+                        <td>October 23, 2026</td>
+                    </tr>
+
+                    <tr data-date="11-26">
+                        <td>November 4, 2026</td>
+                        <td>October 30, 2026</td>
+                    </tr>
+
+                    <tr data-date="11-26">
+                        <td>November 12, 2026</td>
+                        <td>November 6, 2026</td>
+                    </tr>
+
+                    <tr data-date="11-26">
+                        <td>November 18, 2026</td>
+                        <td>November 13, 2026</td>
+                    </tr>
+
+                    <tr data-date="11-26">
+                        <td>November 25, 2026</td>
+                        <td>November 20, 2026</td>
+                    </tr>
+
+                    <tr data-date="12-26">
+                        <td>December 2, 2026</td>
+                        <td>November 27, 2026</td>
+                    </tr>
+
+                    <tr data-date="12-26">
+                        <td>December 9, 2026</td>
+                        <td>December 4, 2026</td>
+                    </tr>
+
+                    <tr data-date="12-26">
+                        <td>December 16, 2026</td>
+                        <td>December 11, 2026</td>
+                    </tr>
+
+                    <tr data-date="12-26">
+                        <td>December 23, 2026</td>
+                        <td>December 18, 2026</td>
+                    </tr>
+
+                    <tr data-date="12-26">
+                        <td>December 30, 2026</td>
+                        <td>December 25, 2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<style type="text/css">
+    .table td.correspondingBLSReport {
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .view-control {
+        max-width: 500px;
+        margin-bottom: 15px;
+    }
+
+    #release-matrix tbody td,
+    #release-matrix thead th {
+        text-align: center;
+    }
+
+    #upcoming-data-releases {
+        border: solid 2px #666;
+        padding: 20px;
+    }
+
+    #upcoming-data-releases .release-months {
+        border-bottom: solid 2px #666;
+        padding-bottom: 10px;
+    }
+
+    #upcoming-data-releases .release-months .change-month {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-top: solid 5px #666;
+        border-right: solid 5px #666;
+        border-left: none;
+        border-bottom: none;
+        background-color: #fff;
+    }
+
+    #upcoming-data-releases .release-months .change-month.disabled {
+        border-top: solid 5px #d9d9d9;
+        border-right: solid 5px #d9d9d9;
+    }
+
+    #upcoming-data-releases .release-months .change-month[data-direction="left"] {
+        transform: rotate(-135deg);
+    }
+
+    #upcoming-data-releases .release-months .change-month[data-direction="right"] {
+        transform: rotate(45deg);
+    }
+
+    #upcoming-data-releases .release-months h2 {
+        display: none;
+    }
+
+    #upcoming-data-releases .release-months h2.currently-selected {
+        display: inline-block;
+    }
+
+    .release-calendars .release-calendar {
+        width: 66%;
+        margin: auto;
+        border: solid 1px #4b4a4b;
+    }
+
+    .release-calendars .release-calendar th,
+    .release-calendars .release-calendar td {
+        width: 33%;
+    }
+
+    .release-calendars .release-calendar {
+        width: 50%;
+        margin: auto;
+        border: solid 1px #4b4a4b;
+    }
+
+    .release-calendars .release-calendar th,
+    .release-calendars .release-calendar td {
+        width: 50%;
+    }
+
+    .release-calendars .release-calendar thead th {
+        font-weight: bold;
+    }
+
+    .release-calendars .release-calendar thead .release-header,
+    #release-matrix thead th {
+        background-color: #060606;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    #release-matrix tbody td:first-of-type {
+        font-weight: bold;
+    }
+
+    li.nav-item>a:focus {
+        display: block;
+    }
+
+    @media (max-width: 767px) {
+        .release-calendars .release-calendar {
+            width: 100%;
+            margin: auto;
+            border: solid 1px #4b4a4b;
+        }
+    }
+
+    .release-headings,
+    .release-calendars tbody {
+
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .release-calendars {
+
+        margin-bottom: 30px;
+    }
+
+    .release-calendars p {
+
+        font-size: 1rem;
+    }
+
+    .releaseType {
+
+        font-weight: 500;
+    }
+
+    span.releaseType::before {
+        content: "(";
+    }
+
+    span.releaseType::after {
+        content: ")";
+    }
+
+    #chicago-labor-market-indicators-table tbody tr:nth-child(4n+4),
+    #chicago-labor-market-indicators-table tbody tr:nth-child(4n+1) {
+        background-color: rgba(0, 0, 0, .05)
+    }
+
+
+    #chicago-labor-market-indicators-table tbody tr:nth-child(4n+2),
+    #chicago-labor-market-indicators-table tbody tr:nth-child(4n+3) {
+        background-color: transparent;
+    }
+
+    #chicago-labor-market-indicators-table.table tbody td {
+        vertical-align: middle;
+
+    }
+
+    .table td.correspondingBLSReport {
+
+        vertical-align: middle;
+        text-align: center;
+    }
+</style></div>
+            </div>
+</div>    
+</div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cfedFooterContainerRow">
+            <div class="col cfedFooterContainerColumn">
+                <div class="cfedContentLimiter">
+                    
+<a class="visibleOnFocus" title="Having trouble accessing something on this page? Please send us an email and we will get back to you as quickly as we can." href="mailto:accessibility@chi.frb.org">Having trouble accessing something on this page? Please send us an email and
+    we will get back to you as quickly as we can.</a>
+
+
+<div class="cfedContentLimiter">
+    <!-- restart content limiter -->
+    <div class="cfedFooter visible-lg-block visible-md-block hidden-sm hidden-xs">
+        <!-- begin cfedFooter for lg -->
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <ul class="cfedFooter__navigation">
+                    <!-- <li><a href="/"  class="cfedFooter__sectionLink">Home&nbsp;</a></li> -->
+                    <li><a href="/banking/index" class="cfedFooter__sectionLink">Banking</a></li>
+                    <li><a href="/research/index" class="cfedFooter__sectionLink">Research</a></li>
+
+                    <li><a href="/events/index" class="cfedFooter__sectionLink">Events</a></li>
+                    <li><a href="/education/index" class="cfedFooter__sectionLink">Education</a></li>
+                    <li><a href="/region/index" class="cfedFooter__sectionLink">Region &amp; Community</a></li>
+                    <li><a href="/careers" class="cfedFooter__sectionLink">Careers</a></li>
+                    <li><a href="/utilities/about-us/index" class="cfedFooter__sectionLink">About Us</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <ul class="cfedFooter__navigation">
+
+                    <li><a href="/utilities/contactus" class="cfedFooter__sectionLink">Contact Us</a></li>
+                    <li><a href="https://video.chicagofed.org/" class="cfedFooter__sectionLink">Video</a>
+                    </li>
+
+                    <li><a href="/utilities/newsroom/newsroom-home" class="cfedFooter__sectionLink">Newsroom</a>
+                    </li>
+                    <li><a href="/education/money-museum/index" class="cfedFooter__sectionLink">Museum</a></li>
+
+                    <li><a href="https://public.govdelivery.com/accounts/USFRBCHICAGO/subscriber/new" class="cfedFooter__sectionLink">Subscribe</a></li>
+<!--                    <li><a href="/utilities/about-us/style-guide" class="cfedFooter__sectionLink">Style Guide</a></li>-->
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="cfedFooter__heading">Follow Us</div>
+                <ul class="cfedFooter__iconLinks cfedFooter__iconLinks--4across">
+                    <li><a href="https://x.com/ChicagoFed" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="Twitter" src="/-/media/admin/images/footer/twitter-png.svg?sc_lang=en&amp;hash=C5CE9D9E7E099C582FA847B9321AEE6E" />
+                        </a></li>
+                    <li><a href="https://www.youtube.com/@chicagofed" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="YouTube" src="/-/media/admin/images/footer/youtube-png.svg?sc_lang=en&amp;hash=B5E296FA3E370D176D6FC4E7F7EBD91F" />
+                        </a></li>
+                    <li><a href="https://www.facebook.com/frbchicago/" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="FaceBook" src="/-/media/admin/images/footer/facebook-png.svg?sc_lang=en&amp;hash=EDD821009FFBDA5FD93C52F791C9BA9D" />
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/company/federal-reserve-bank-of-chicago" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="LinkedIn" src="/-/media/admin/images/footer/linkedin-png.svg?sc_lang=en&amp;hash=6834AB815FCE0EE31A4867246E73C560" />
+                        </a></li>
+                    <li><a href="https://www.instagram.com/chicagofed/" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="Instagram" src="/-/media/admin/images/footer/instagram-png.svg?sc_lang=en&amp;hash=50065911870FADC3260DBFF955ACC49F" />
+                        </a></li>
+
+                    <li><a href="/rss" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="RSS" src="/-/media/admin/images/footer/rss-png.svg?sc_lang=en&amp;hash=6A76818A37C7C443BE74C249BB1D4EEB" />
+                        </a></li>
+                </ul>
+               
+            </div>
+            <div class="col-lg-3 col-md-3 cfedFooter__ornamentColumn">
+                <img alt="" class="cfedFooter__ornament" src="/-/media/admin/images/footer/chicagofedseal-png.svg?sc_lang=en&amp;hash=E4AB87F37CC95CE4152B4298195AB481" />
+                <div>Our Values
+                    <hr />
+                </div>
+                <div>Integrity</div>
+                <div>Respect</div>
+                <div>Responsibility</div>
+                <div>Excellence</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end cfedFooter for md-lg -->
+
+    <!-- end cfedFooter for xs-md -->
+</div>
+<!-- end content limiter -->
+<hr class="cfedFooterHR" />
+<div class="cfedContentLimiter">
+    <!-- restart content limiter -->
+    <div class="cfedFooter">
+        <div class="row">
+            <div class="col-md-12 cfedFooter__info">
+                <p>Federal Reserve Bank of Chicago, 230 South LaSalle Street, Chicago, Illinois 60604-1413, USA. Tel.
+                    (312) 322-5322</p>
+                <p>Copyright © 2026. All rights reserved.</p>
+                <p>Please review our <a href="/utilities/privacy-policy">Privacy Policy</a> | <a href="/utilities/legal-notices">Legal Notices</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-970V6TDQ5K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-970V6TDQ5K');
+    </script>
+
+    <div class="device-xs visible-xs"></div>
+    <div class="device-sm visible-sm"></div>
+    <div class="device-md visible-md"></div>
+    <div class="device-lg visible-lg"></div>
+
+    
+
+                <script type="text/javascript">
+                
+var generatedHolder = document.getElementById('upcoming-data-releases');
+var current;
+var displaying;
+var monthHeaders = document.querySelector('.release-months');
+var monthlyTable = document.getElementById('monthly-releases');
+var monthlyTableBody = monthlyTable.querySelector('tbody');
+var allDates = document.querySelectorAll('.release-calendars .release-calendar tbody tr');
+var matrixHolder = document.querySelector('.all-releases-table');
+var today = new Date();
+var arrows = document.querySelectorAll('.change-month');
+var leftArrow = arrows[0];
+var rightArrow = arrows[1];
+var viewSelector = document.getElementById('view-selector');
+var acceptableFilters = ['bbki', 'cfnai', 'cfsbc', 'deai', 'carts'];
+
+function populateDataReleases() {
+
+    function determineView() {
+        var params = {};
+        window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+            params[key] = value;
+        });
+
+        if (params.showOnly) {
+            params.showOnly = params.showOnly.toLowerCase();
+        }
+        
+        if (acceptableFilters.indexOf(params.showOnly) === -1) {
+            for (var i = 0; i < arrows.length; i++) {
+                arrows[i].addEventListener('click', changeDate);
+            }
+            
+
+            viewSelector.addEventListener('change', changeView);
+         
+            setCurrentDate();
+            populateTable(true);
+
+        } else {
+            var viewHolder = document.querySelector('.view-control');
+            var allReleasesHeader = document.getElementById('all-releases-header');
+            var allReleases = document.querySelectorAll('.release-calendars .calendar-holder');
+            
+            generatedHolder.classList.add('d-none');
+            viewHolder.classList.add('d-none');
+            allReleasesHeader.classList.add('d-none');
+            
+            for (var i = 0; i < allReleases.length; i++) {
+                if (allReleases[i].id !== params.showOnly + "-holder") {
+                    allReleases[i].classList.add('d-none');
+                }
+            }
+        }
+    }
+
+    function setCurrentDate() {
+        var month = today.getMonth() + 1;
+        var year = today.getFullYear() - 2000;
+        let selector = '.month-header[data-date="' + month + '-' + year + '"]';
+       
+        var newCurrent = document.querySelector(selector);
+        current = newCurrent;
+        newCurrent.dataset.position = 'first';
+        newCurrent.classList.add('currently-selected');
+        displaying = newCurrent.dataset.date;
+    }
+
+    function populateRow(date) {
+       
+        var html = '';
+        var cols = date.querySelectorAll('td');
+        var releaseDate = cols[0].innerText;
+        var released = today > new Date(releaseDate + ' 23:59');
+        var releasedIndicator = released ? '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.532" height="24.017" viewbox="0 0 5333 5221"><image x="2" width="5330" height="5221" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAMAAAA4a6b0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA3lBMVEUmjMP///8mjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMmjMMAAACzUJvjAAAASHRSTlMAAC2+x4faCMTmGh7k3hQu9dgNOP3ZDDs59ycy/EYoc+qrbN+7cAvbD+mqKcZOa5Oln13wFWZugtGxVRFRU6LOGPJkb+gH5ZjQMTWlAAAAAWJLR0RJhwXkfAAAAAlwSFlzAAAuIwAALiMBeKU/dgAAAAd0SU1FB+MLEwoxJem2XM8AAADESURBVCjPbc5rWwFhEAbgZ0LZxSqlnHKoEK2SohxCSc3//0Xe2ctazPt8mcP9YQY4CklOYhyHTRLMfGqRs6QBx9WSShvIeKQke27gIkdKLq8M5K9JyY3Zc9ojJQWBYomUlCsit6SkKse5RkrcukCDQrm7f2h6Aq22gPO4k47M3SfAl4Z7tJPnYMEv/aC8IhIMOMrb+75gGMkIB4KPED5xJBhvZaJkGjzIPpRgFsiXRTA3sIBNlt/MP1bBin/XdsHfPw5lAymqKsBxmqAEAAAAAElFTkSuQmCC"></image></svg>' : '';
+        var dataName = date.parentNode.dataset.name;
+
+        html += "<tr>";
+        html +=     "<td>" + dataName + "</td>";
+        html +=     "<td>" + releaseDate + "</td>";
+        html +=     "<td>" + cols[1].innerText + "</td>";
+        html +=     "<td>" + releasedIndicator + "</td>";
+        html += "</tr>";
+        
+        return html;
+    }
+
+    function populateTable(initial) {
+        var monthlyTableHTML = "";
+        var releases = [];
+        
+        if (!initial) {
+            monthlyTableBody.innerHTML = "";
+        }
+        
+        for (var i = 0; i < allDates.length; i++) {
+            var date = allDates[i];
+            var releaseDate = date.querySelector('td');
+            if (initial && today > new Date(releaseDate.innerText + ' 23:59')) {
+                date.classList.add('d-none');
+            }
+            
+            if (date.dataset.date === displaying) {
+                releases.push(date);
+            }
+        }
+        
+        releases.sort(function(a, b) {
+            return new Date(a.querySelector('td').innerText) - new Date(b.querySelector('td').innerText);
+        });
+        
+        releases.forEach(function(date) {
+            monthlyTableHTML += populateRow(date, monthlyTableHTML);
+        });
+        
+        monthlyTableBody.insertAdjacentHTML('afterbegin', monthlyTableHTML);
+        monthlyTable.classList.remove('d-none');
+    }
+
+    function changeDate(e) {
+        var button = e.currentTarget;
+        var direction = button.dataset.direction;
+        var next = getNextNumber(displaying, direction);
+        var nextMonth = document.querySelector('.month-header[data-date="' + next + '"]');
+        
+        if (current.dataset.position === 'first' || current.dataset.position === 'last') {
+            var disabled = document.querySelector('button.disabled');
+            disabled.classList.remove('disabled');
+            disabled.disabled = false;
+        }
+        
+        if (nextMonth.dataset.position === 'first' || nextMonth.dataset.position === 'last') {
+            var buttonDirection = nextMonth.dataset.position === 'first' ? 'left' : 'right';
+            var buttonToDisable = document.querySelector('button[data-direction="' + buttonDirection + '"]');
+            buttonToDisable.classList.add('disabled');
+            buttonToDisable.disabled = true;
+        }
+        
+        current.classList.remove('currently-selected');
+        nextMonth.classList.add('currently-selected');
+        current = nextMonth;
+        displaying = current.dataset.date;
+        
+        populateTable(false);
+    }
+
+    function getNextNumber(date, direction) {
+        var parts = date.split('-');
+        var increment = direction === 'right' ? 1 : -1;
+        if (parts[0] === '12' && direction === 'right') {
+            return '1-' + (parseInt(parts[1]) + 1);
+        }
+        
+        if (parts[0] === '1' && direction === 'left') {
+            return '12-' + (parseInt(parts[1]) - 1);
+        }
+        
+        return (parseInt(parts[0]) + increment) + '-' + parts[1];
+    }
+
+    function populateAllReleasesTable() {
+        var headers = document.querySelectorAll('.month-header');
+    
+        var matrixBody = document.querySelector('table#release-matrix tbody');
+        
+        // We only want to go through and populate the table once. If it's already been populated, just un-hide everything
+        if (!matrixBody.querySelector('tr')) {
+            var bbki = document.getElementById('bbki-table');
+            var cfnai = document.getElementById('cfnai-table');
+            var cfsbc = document.getElementById('cfsbc-table');
+            var deai = document.getElementById('deai-table');
+          var nfci = document.getElementById('nfci-table');
+            var carts = document.getElementById('carts-table');
+            var tableHTML = "";
+            
+            for (var i = 0; i < headers.length; i++) {
+                var date = headers[i].dataset.date;
+                tableHTML += "<tr>";
+                tableHTML += "<td>" + headers[i].innerText.replace(' Releases', '') + "</td>";
+                tableHTML += populateAllReleaseRow(bbki.querySelectorAll('[data-date="' + date + '"]'));
+                tableHTML += populateAllReleaseRow(cfnai.querySelectorAll('[data-date="' + date + '"]'));
+                tableHTML += populateAllReleaseRow(cfsbc.querySelectorAll('[data-date="' + date + '"]'));
+                tableHTML += populateAllReleaseRow(deai.querySelectorAll('[data-date="' + date + '"]'));
+              tableHTML += populateAllReleaseRow(nfci.querySelectorAll('[data-date="' + date + '"]'));
+                tableHTML += populateAllReleaseRow(carts.querySelectorAll('[data-date="' + date + '"]'));
+                tableHTML += "</tr>";
+            }
+            
+            matrixBody.insertAdjacentHTML('afterbegin', tableHTML);
+        }
+        
+        monthlyTable.classList.add('d-none');
+        monthHeaders.classList.add('d-none');
+        matrixHolder.classList.remove('d-none');
+    }
+
+    function populateAllReleaseRow(dates) {
+        if (dates.length > 0) {
+            var html = "<td>";
+            for (var i = 0; i < dates.length; i++) {
+                var col = dates[i].querySelector('td');
+                html += col.innerText;
+                if (i < (dates.length - 1)) {
+                    html += "<br />";
+                }
+            }
+            return html += "</td>";
+        }
+        
+        return "<td>&mdash;</td>";
+    }
+
+    function revertToMonthView() {
+        populateTable();
+        monthlyTable.classList.remove('d-none');
+        monthHeaders.classList.remove('d-none');
+        matrixHolder.classList.add('d-none');
+    }
+
+    function changeView(e) {
+        if (e.currentTarget.value === 'all-releases') {
+            unHideIfHidden();
+            return populateAllReleasesTable();
+        }
+        if (e.currentTarget.value === 'release') {
+            return generatedHolder.classList.add('d-none');
+        }
+        
+        unHideIfHidden();
+        return revertToMonthView();
+    }
+
+    function unHideIfHidden() {
+        if (generatedHolder.classList.contains('d-none')) {
+            generatedHolder.classList.remove('d-none');
+        }
+    }
+
+    determineView();
+}
+populateDataReleases();
+                </script>
+
+
+<script type="text/javascript"  src="/O5kc6V/ezMJBO/ZEFS8sN/XA4Lh/uaEr2DNpQhXVLN/CiMWKzkB/OjxhcA/gWDRE"></script></body>
+</html>

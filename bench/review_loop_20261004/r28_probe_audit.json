@@ -1,0 +1,275 @@
+{
+  "adopted": false,
+  "code_sha256": {
+    "R28_SOURCE_PLAN.md": "73ed87335fd4312a704f38469784a005345665cd1543cf1a4fb5299337eb02d0",
+    "r28_initial_schema_observation.json": "8aac46fa114ae91dee71a43c24edcd4b5843fb32099fdbb12972a138e8c9ef56",
+    "r28_probe_audit.py": "be368f28ae51f1107636f9f440c9fd8ea2c547f7bf85b6d10dd034872d73e69b",
+    "r28_revision.py": "57db82a383cc097018bfd6b7eacb28e01a510dd815729c620ab8052dd3e27a97",
+    "r28_sources.py": "e40fd2265400176b4a99e4d83a958d22680c52c6a5a57579954ecab8b4a0a09e",
+    "test_r28_revision.py": "6f1c42f882943a21a73f5bb0f07a3d986b88d89a6f0a6dd870cec16055db380a"
+  },
+  "earlier_iso_header_assumption_and_failures_retained_in": "r28_initial_schema_observation.json",
+  "full_feature_cohort_not_requested_or_evaluated": true,
+  "historical_first_public_receipts_certified": false,
+  "historical_versions_supported_by_primary_archive_semantics": true,
+  "known_same_week_revision_samples": 3,
+  "limits": [
+    "A historical as-of vintage is not an authenticated original publisher receipt at a precise second.",
+    "Current HTTP Last-Modified values describe server metadata; they are not first-public timestamps.",
+    "Week-ending Friday is an observation label, not the Wednesday/holiday-Thursday publication date.",
+    "The current 2026 calendar does not authenticate every 2021-2024 release.",
+    "Revisions reflect new inputs, revised inputs, model reestimation and native reporting precision.",
+    "The source paper concerns equity volatility; there is no demonstrated crypto lead or alpha.",
+    "These three forensic dates are not a selected trade cohort and supply no return outcomes."
+  ],
+  "native_archive_header": "observation_date,NFCI_<YYYYMMDD>",
+  "new_alpha_trial": false,
+  "new_performance": false,
+  "no_rule_sign_threshold_day_window_asset_fee_risk_or_missingness_search": true,
+  "no_strategy_bot_image_or_independent_forward_change": true,
+  "original_request_roles": 13,
+  "pairs": [
+    {
+      "current_body_sha256": "dc0e2a4c2d2a9031af119d4e3f727b2b4647ff4dc34e49cd28b46b25a83d4d2f",
+      "current_latest_observation": "2021-01-22",
+      "current_native": "-0.63294",
+      "current_native_rows": 3,
+      "current_source_key": "archive_2021-01-30",
+      "current_vintage": "2021-01-30",
+      "decision_availability_is_conservative_as_of_assumption": true,
+      "historical_first_public_receipt_certified": false,
+      "monday": "2021-02-01",
+      "observation_week": "2021-01-15",
+      "prior_body_sha256": "acd3ef2c7b9de0934ecd855467132bf6afb699e28503303ff46aceaa1538901b",
+      "prior_latest_observation": "2021-01-15",
+      "prior_native": "-0.61710",
+      "prior_native_rows": 3,
+      "prior_source_key": "archive_2021-01-23",
+      "prior_vintage": "2021-01-23",
+      "revision_decimal": "-0.01584",
+      "state": "known_same_week_revision",
+      "units": "Standardized financial-condition index; no percent or crypto capital-flow unit"
+    },
+    {
+      "current_body_sha256": "9c5485ba488ace4c2ac5b4d499df485496d397eaf16d49ef8433e7b52eba3e48",
+      "current_latest_observation": "2022-10-28",
+      "current_native": "-0.08536",
+      "current_native_rows": 3,
+      "current_source_key": "archive_2022-11-05",
+      "current_vintage": "2022-11-05",
+      "decision_availability_is_conservative_as_of_assumption": true,
+      "historical_first_public_receipt_certified": false,
+      "monday": "2022-11-07",
+      "observation_week": "2022-10-21",
+      "prior_body_sha256": "cb81ed8da3458fadf0f6e2b4c8699e229bfc60b2e36f22ff7f3b2d21fa942cfb",
+      "prior_latest_observation": "2022-10-21",
+      "prior_native": "-0.11154",
+      "prior_native_rows": 3,
+      "prior_source_key": "archive_2022-10-29",
+      "prior_vintage": "2022-10-29",
+      "revision_decimal": "0.02618",
+      "state": "known_same_week_revision",
+      "units": "Standardized financial-condition index; no percent or crypto capital-flow unit"
+    },
+    {
+      "current_body_sha256": "716e062467cdcbf610f99af02c4d024b460852a4f7c27d62611e96c674ce614b",
+      "current_latest_observation": "2023-12-29",
+      "current_native": "-0.47592",
+      "current_native_rows": 3,
+      "current_source_key": "archive_2024-01-06",
+      "current_vintage": "2024-01-06",
+      "decision_availability_is_conservative_as_of_assumption": true,
+      "historical_first_public_receipt_certified": false,
+      "monday": "2024-01-08",
+      "observation_week": "2023-12-22",
+      "prior_body_sha256": "100b4a034b7c69b0cfcce2448117b52d277a522427c0c30c1ece3b7b3fbfed60",
+      "prior_latest_observation": "2023-12-22",
+      "prior_native": "-0.54284",
+      "prior_native_rows": 3,
+      "prior_source_key": "archive_2023-12-30",
+      "prior_vintage": "2023-12-30",
+      "revision_decimal": "0.06692",
+      "state": "known_same_week_revision",
+      "units": "Standardized financial-condition index; no percent or crypto capital-flow unit"
+    }
+  ],
+  "permitted_next_stage": "Separate critic and one preregistered economic rule before full cohort/outcomes, only if exact same-week sources remain known.",
+  "primary_context_native_body_and_semantic_markers_verified": true,
+  "retained_attempts": 13,
+  "retained_inputs_sha256": {
+    "r28_sources/manifest.json": "1b40cea44846a7db59f69597c15e49badb1af2f184ecaad0dd36c736ff5b8a02",
+    "r28_sources/raw/053528365ce3f9a0edb7c4d0d5950fb8c59bfb3426f73495ed2836e8cd5fda1b": "ff16dfa99b8e234980f3dcd036ec37d241bba5b2aeac68c6ac04d9a77721483b",
+    "r28_sources/raw/2117df3b569dc9933e3118ae4ba65ffed2fff1a975c9c57057d24d2607bbfb16": "8bdcd36d23fc9639043e5626a371d9a768e21c6a5be84552d68112de30755532",
+    "r28_sources/raw/252972f54d428fc5bfeab9fa4e735101450272a4925ee51189e8f2a6e2b02ca8": "100b4a034b7c69b0cfcce2448117b52d277a522427c0c30c1ece3b7b3fbfed60",
+    "r28_sources/raw/666dbc2d995dc4c6eef1a875de6a856d9af75d0a81c325da93c90a7aeebd00e0": "dc0e2a4c2d2a9031af119d4e3f727b2b4647ff4dc34e49cd28b46b25a83d4d2f",
+    "r28_sources/raw/765b366a1d5b77d2a0060e42d331a922b7caf2964d981e2df0c654612bd8ea58": "107d2b5728adcd907f71980426158d3f784616ff7549e9c861dde1ebde13eaa6",
+    "r28_sources/raw/84f83ff7fe8a9850b6e0b183838d02edc59ca5724179e354eeda8a846ac05a7d": "ac935bce4998b605f5bc0d247c19957bbc9ddbfb5e387a4d63f9f11117fe395c",
+    "r28_sources/raw/8d4ed9c33cdd72855742ac90e5582f444245600bab0fbbb1932d1a3264cf2d32": "acd3ef2c7b9de0934ecd855467132bf6afb699e28503303ff46aceaa1538901b",
+    "r28_sources/raw/963240a0e363e2c4228e10c3d88d04397c0a12f69093070109351a66c71e942d": "716e062467cdcbf610f99af02c4d024b460852a4f7c27d62611e96c674ce614b",
+    "r28_sources/raw/d101bb8f84facd65564079f108d0faeda2265af1132e81e0478e5a57844ebd93": "8dd6fbc03f648278c11540486fdfc225578d1574c56189ce566c8a7a2a88a7ec",
+    "r28_sources/raw/d24b6ea45d50364844d2fa28a9fc93368557ec5c60b7005974402d8e84ec7e7c": "be462b3370dd1eab4493179c6aaffb22e0e1bd11fc6a2e378849c1fc88db3ea3",
+    "r28_sources/raw/dcb8ce9702e043b855af56d7bad8febec7187092a3c59ebfbef46dd8470748c6": "cb81ed8da3458fadf0f6e2b4c8699e229bfc60b2e36f22ff7f3b2d21fa942cfb",
+    "r28_sources/raw/e41e9a75acd73b504ddb5c63c89d598392ab4753c12db79b474d2c399807b202": "9c5485ba488ace4c2ac5b4d499df485496d397eaf16d49ef8433e7b52eba3e48",
+    "r28_sources/raw/ea79d173a3a31b9b125e7fe809403fd6c8466686b95cebbe2d51a26896fe5817": "a37e77526072712b2b6853667266a5780d30aae0732bd55a23ea93185662e086"
+  },
+  "source_plan_commit": "d1437ea",
+  "source_provenance": {
+    "alfred_help": {
+      "body_sha256": "8bdcd36d23fc9639043e5626a371d9a768e21c6a5be84552d68112de30755532",
+      "capture_received_utc": "2026-10-04T15:48:09.613565+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:09.285109+00:00",
+      "http_headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 15:48:09 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/help/downloaddata"
+    },
+    "alfred_identity": {
+      "body_sha256": "ff16dfa99b8e234980f3dcd036ec37d241bba5b2aeac68c6ac04d9a77721483b",
+      "capture_received_utc": "2026-10-04T15:48:10.859762+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:09.456605+00:00",
+      "http_headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 04 Oct 2026 15:48:10 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/series?seid=NFCI"
+    },
+    "archive_2021-01-23": {
+      "body_sha256": "acd3ef2c7b9de0934ecd855467132bf6afb699e28503303ff46aceaa1538901b",
+      "capture_received_utc": "2026-10-04T15:48:09.284724+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:04.394148+00:00",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 15:48:05 GMT",
+        "Last-Modified": "Thu, 21 Jan 2021 13:33:44 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2021-01-23&cosd=2020-12-26&coed=2021-01-23"
+    },
+    "archive_2021-01-30": {
+      "body_sha256": "dc0e2a4c2d2a9031af119d4e3f727b2b4647ff4dc34e49cd28b46b25a83d4d2f",
+      "capture_received_utc": "2026-10-04T15:48:06.522029+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:04.393856+00:00",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 15:48:06 GMT",
+        "Last-Modified": "Wed, 27 Jan 2021 13:33:03 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2021-01-30&cosd=2021-01-02&coed=2021-01-30"
+    },
+    "archive_2022-10-29": {
+      "body_sha256": "cb81ed8da3458fadf0f6e2b4c8699e229bfc60b2e36f22ff7f3b2d21fa942cfb",
+      "capture_received_utc": "2026-10-04T15:48:08.024687+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:07.282947+00:00",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 15:48:07 GMT",
+        "Last-Modified": "Wed, 26 Oct 2022 12:43:08 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2022-10-29&cosd=2022-10-01&coed=2022-10-29"
+    },
+    "archive_2022-11-05": {
+      "body_sha256": "9c5485ba488ace4c2ac5b4d499df485496d397eaf16d49ef8433e7b52eba3e48",
+      "capture_received_utc": "2026-10-04T15:48:07.281985+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:06.524633+00:00",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 15:48:06 GMT",
+        "Last-Modified": "Wed, 02 Nov 2022 12:33:22 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2022-11-05&cosd=2022-10-08&coed=2022-11-05"
+    },
+    "archive_2023-12-30": {
+      "body_sha256": "100b4a034b7c69b0cfcce2448117b52d277a522427c0c30c1ece3b7b3fbfed60",
+      "capture_received_utc": "2026-10-04T15:48:09.456049+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:08.764114+00:00",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 15:48:09 GMT",
+        "Last-Modified": "Thu, 28 Dec 2023 13:33:03 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2023-12-30&cosd=2023-12-02&coed=2023-12-30"
+    },
+    "archive_2024-01-06": {
+      "body_sha256": "716e062467cdcbf610f99af02c4d024b460852a4f7c27d62611e96c674ce614b",
+      "capture_received_utc": "2026-10-04T15:48:08.763323+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:08.025500+00:00",
+      "http_headers": {
+        "Content-Type": "application/csv",
+        "Date": "Sun, 04 Oct 2026 15:48:08 GMT",
+        "Last-Modified": "Thu, 04 Jan 2024 13:34:03 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://alfred.stlouisfed.org/graph/alfredgraph.csv?id=NFCI&vintage_date=2024-01-06&cosd=2023-12-09&coed=2024-01-06"
+    },
+    "publisher_background": {
+      "body_sha256": "8dd6fbc03f648278c11540486fdfc225578d1574c56189ce566c8a7a2a88a7ec",
+      "capture_received_utc": "2026-10-04T15:48:14.344074+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:09.614213+00:00",
+      "http_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 15:48:13 GMT",
+        "Last-Modified": "Tue, 05 May 2026 17:20:36 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://www.chicagofed.org/research/data/nfci/background"
+    },
+    "publisher_calendar": {
+      "body_sha256": "ac935bce4998b605f5bc0d247c19957bbc9ddbfb5e387a4d63f9f11117fe395c",
+      "capture_received_utc": "2026-10-04T15:48:16.470863+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:15.634889+00:00",
+      "http_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 15:48:15 GMT",
+        "Last-Modified": "Mon, 15 Jun 2026 19:30:40 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://www.chicagofed.org/research/data/data-release-calendar"
+    },
+    "publisher_current": {
+      "body_sha256": "be462b3370dd1eab4493179c6aaffb22e0e1bd11fc6a2e378849c1fc88db3ea3",
+      "capture_received_utc": "2026-10-04T15:48:15.634437+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:10.862389+00:00",
+      "http_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 15:48:15 GMT",
+        "Last-Modified": "Tue, 05 May 2026 15:48:37 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://www.chicagofed.org/research/data/nfci/current-data"
+    },
+    "publisher_faq": {
+      "body_sha256": "107d2b5728adcd907f71980426158d3f784616ff7549e9c861dde1ebde13eaa6",
+      "capture_received_utc": "2026-10-04T15:48:16.099152+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:14.345887+00:00",
+      "http_headers": {
+        "Content-Type": "application/pdf",
+        "Date": "Sun, 04 Oct 2026 15:48:14 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://www.chicagofed.org/-/media/publications/nfci/nfci-faqs-pdf.pdf"
+    },
+    "publisher_revision_study": {
+      "body_sha256": "a37e77526072712b2b6853667266a5780d30aae0732bd55a23ea93185662e086",
+      "capture_received_utc": "2026-10-04T15:48:17.324563+00:00",
+      "capture_requested_utc": "2026-10-04T15:48:16.100468+00:00",
+      "http_headers": {
+        "Content-Type": "text/html; charset=utf-8",
+        "Date": "Sun, 04 Oct 2026 15:48:16 GMT",
+        "Last-Modified": "Tue, 28 May 2024 17:52:04 GMT"
+      },
+      "source_capture_is_not_past_publication": true,
+      "url": "https://www.chicagofed.org/publications/blogs/chicago-fed-insights/2020/nfci-revisions"
+    }
+  },
+  "source_stage_only": true,
+  "status_counts": {
+    "200": 13
+  }
+}

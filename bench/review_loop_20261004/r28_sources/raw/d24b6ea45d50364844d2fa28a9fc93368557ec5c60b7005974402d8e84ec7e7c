@@ -1,0 +1,2159 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  
+
+    <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1"> <meta http-equiv="Content-Language" content="en-us"> <meta http-equiv="imagetoolbar" content="false"> <meta name="MSSmartTagsPreventParsing" content="true"> <meta name="robots" content="index, follow"> <meta name="google-site-verification" content="VxDqAhtsy11WBtllzLFHn7vU5iSLUfQ1w6RQ6KHlaEQ" /> <meta name="google-site-verification" content="5okRoSAu5prwTjUhAqW8ZtNyzX5gEUtvEc39V_05OOs" /> <style>     html {         visibility: hidden;         opacity: 0;     } </style> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link     href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=block"     rel="stylesheet"> <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js?"></script> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/bootstrapmin.css"> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/grid-pro.css"> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/chicagofed.css?a=ox"> <link rel="stylesheet" type="text/css" href="/~/media/admin/css/SitecoreCssClasses.css"> <script src="/~/media/admin/scripts/jquery341min.js"></script> <script type="text/javascript" src="/~/media/admin/scripts/bootstrapbundlemin.js"></script> <script type="text/javascript" src="/~/media/admin/scripts/application.js"></script> <link href="/favicon.ico" rel="icon" type="image/x-icon"> <meta name="og:image" content="https://www.chicagofed.org/-/media/admin/images/footer/chicagofedseal-png.svg"> <meta name="facebook-domain-verification" content="1zrkqvmrz2td8xcwo4ve6x0rl26nzp" />
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <title>
+National Financial Conditions Index: Current Data - Federal Reserve Bank of Chicago    </title>
+</head>
+<body>
+    <div class="container-fluid cfedContainerFluid">
+            <div class="container">
+                
+        <div class="nav justify-content-end">
+                <div class="nav-item">
+                            <a class="nav-link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            Office of the President
+
+        </a>
+
+                </div>
+                <div class="nav-item">
+                            <a class="nav-link" href="/education/money-museum/index">
+            Money Museum
+
+        </a>
+
+                </div>
+        </div>
+
+
+
+
+            </div>
+        <div class="row cfedHeaderContainerRow">
+            <div class="col">
+                <!-- mobile logo -->
+<div class="row d-block d-md-none">
+    <div class="col">
+        <a href="/" title="Home"><img class="cfedLogo cfedLogo--small" alt="Federal Reserve Bank of Chicago" src="/-/media/admin/images/header/chicago-fed-logo-png.svg?h=33&amp;w=570&amp;sc_lang=en&amp;hash=4497DBA67FD97304EAC3580002229ED2" /></a>
+    </div>
+</div>
+<!-- begin header for all sizes above xs -->
+        
+
+
+<div class="cfedContentLimiter d-none d-md-block"> <!-- restart contentLimiter -->
+<div class="row cfedHeader__logoRow">
+    <div class="col-sm-8 cfedHeader__logoRowColumn">
+        <a href="/" title="Home"><img class="cfedLogo" alt="Federal Reserve Bank of Chicago" src="/-/media/admin/images/header/chicago-fed-logo-png.svg?sc_lang=en&amp;hash=7A0BD35555EFBD4BC75901A5B7BC7BD5" /></a>
+    </div>
+<!-- housekeeping links -->
+
+    <div class="col-sm-4 cfedHeader__logoRowColumn cfedHeader__logoRowColumn--icons">
+
+      
+ <div class="cfedSearchContainer" id="search"> 
+          
+            <div class="cfedSearchFormElementWrapper">
+                <label for="searchbox" class="sr-only">Search</label>
+                <input name="searchbox" id="searchbox" type="text" value="" class="cfedSearchbox" />
+        
+            </div>
+            <div class="cfedSearchFormElementWrapper">
+    			<input type="image" id="searchButtonFull" class="cfedHeaderSearchButton" src="~/media/admin/images/icons/search-icon" name="submit" alt="Search" />
+    			</div>
+            
+        		
+            </div>
+
+
+
+
+    </div>
+    
+    
+    
+</div>
+</div>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="row cfedTopNavigationContainerRow">
+            <div class="col">
+                <div class="cfedContentLimiter">
+                    
+
+
+
+
+
+
+
+
+        <!--- Mobile Nav -->
+        <nav class="navbar cfedNavbar d-block d-md-none" style="z-index:9999">
+            <div class="navbar-header">
+                <div class="row">
+                    <div class="col-6 cfedSmallMenuIcon--left">
+                        <button class="navbar-toggle cfedHamburgerButton" data-target="#cfedNavbarMenu" data-toggle="collapse" type="button" aria-controls="cfedNavbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="cfedIconBar">
+                                ☰ Menu
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-6 cfedSmallMenuIcon--right">
+                        <button class="navbar-toggle cfedHamburgerButton" data-target="#cfedSearch" data-toggle="collapse" type="button" id="visibleSearchBoxToggle">
+                            <div class="cfedIconBar">
+                                <img alt="Search" src="/~/media/admin/images/header/search.svg?h=24&amp;w=38&amp;la=en" class="cfedIconImage" />Search
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="cfedSearch" class="collapse navbar-collapse cfedNavbarCollapse cfedNavbarSearch">
+                <ul class="nav navbar-nav ">
+                    <li class="dropdown cfedDropdown open">
+                        <ul class="dropdown-menu cfedPlatterContainer cfedSearchPlatter">
+                            <li>
+                                <!-- Begin Search Box -->
+                                <div class="input-group search-bar">
+                                    <input id="Search-bar" tabindex="1">
+                                    <span class="input-group-btn">
+                                        <button id="searchButton" class="btn btn-default" type="button">
+                                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                        </button>
+                                    </span>
+                                </div>
+                                <!-- End Search Box -->
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="cfedNavbarMenu" class="collapse navbar-collapse cfedNavbarCollapse">
+                <ul class="nav navbar-nav cfedNavbar__nav--desktop">
+
+                        <li class="dropdown cfedDropdown" id="bankingDropdownMobile">
+                            <a href="#collapseBankingMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Banking
+                            </a>
+
+                            <ul id="collapseBankingMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/banking/index">
+            Banking
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a href="#collapseBankingResourcesMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Banking Resources</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseBankingResourcesMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/index">
+            Banking Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbdiscountwindow.org/">
+            Federal Reserve Discount Window
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbservices.org/index.html">
+            Federal Reserve Bank Services
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/regulatory-applications-and-membership-information-preview">
+            Regulatory Applications And Membership Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/tools-resources-data">
+            Banker Training And Resources
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/supervision-and-regulation/index">
+            Supervision And Regulation
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseConsumerResourcesMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Consumer Resources</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseConsumerResourcesMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/index">
+            Consumer Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="http://www.consumerfinance.gov/">
+            Consumer Financial Protection Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/consumer-information">
+            Consumer Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://federalreserveconsumerhelp.gov/?District=7">
+            Federal Reserve Consumer Help
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/markets/payments-policy/payments-policy-group">
+            Payments
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="researchDropdownMobile">
+                            <a href="#collapseResearchMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Research
+                            </a>
+
+                            <ul id="collapseResearchMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/research/index">
+            Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a href="#collapseOurPeopleMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Our People</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseOurPeopleMobile">
+                            <li>
+                            <a href="#collapseResearchTeamsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Research Teams</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseResearchTeamsMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/research-teams">
+            Research Teams
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.chicagofed.org/people/teams/research-leadership/index">
+            Leadership
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-economics/index">
+            Financial Economics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/macroeconomics/index">
+            Macroeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/microeconomics/index">
+            Microeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/community-development/index">
+            Community Development
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-analysis-and-engagement/index">
+            Regional Analysis and Engagement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-research/index">
+            Regional Research
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets Group
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/monetary-policy-and-communications/index">
+            Monetary Policy and Communications
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/team">
+            Economic Mobility Project
+
+        </a>
+
+                </li>
+
+        </ul>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/resident-and-visiting-scholars">
+            Resident And Visiting Scholars
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/research-assistants">
+            Research Assistants
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseEconomicDataMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Economic Data</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseEconomicDataMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/data/index">
+            Economic Data
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/beige-book/current-data">
+            Beige Book
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/carts/index">
+            Chicago Fed Advance Retail Trade Summary (CARTS)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/chicago-fed-labor-market-indicators/latest-release">
+            Chicago Fed Labor Market Indicators
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfnai/current-data">
+            Chicago Fed National Activity Index (CFNAI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfsec/current-data">
+            Chicago Fed Survey Of Economic Conditions (CFSEC)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/ag-conditions/index">
+            Chicago Fed Survey: Agricultural Conditions
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/nfci/current-data">
+            National Financial Conditions Index (NFCI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/data-release-calendar">
+            Economic Data Release Calendar
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapsePublicationsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Publications</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapsePublicationsMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/publications/index">
+            Publications
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/agletter/index">
+            AgLetter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-insights/index">
+            Chicago Fed Insights
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-letter/index">
+            Chicago Fed Letter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/economic-perspectives/index">
+            Economic Perspectives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/working-papers/index">
+            Working Papers
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/archives">
+            Archives
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseSpecialtyResearchMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Specialty Research</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapseSpecialtyResearchMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/specialty-research">
+            Specialty Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/about">
+            Economic Mobility
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/lead/about">
+            Lead Service Line Replacement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-munitrack/current-data">
+            MuniTrack
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/research/content-areas/agriculture/index">
+            Agricultural Sector
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/automotive/index">
+            Automotive Industry
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-insurance-research-center/index">
+            Chicago Fed Insurance Research Center
+
+        </a>
+        <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="eventsDropdownMobile">
+                            <a href="#collapseEventsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Events
+                            </a>
+
+                            <ul id="collapseEventsMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/events/index">
+            Events
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/events/upcoming-events">
+            Upcoming Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/events/past-events">
+            Past Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-speaking">
+            President Goolsbee
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="educationDropdownMobile">
+                            <a href="#collapseEducationMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Education
+                            </a>
+
+                            <ul id="collapseEducationMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/education/index">
+            Education
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/education/educator">
+            Educator Resources
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/fed-challenge/college-fed-challenge">
+            Fed Challenge
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/index">
+            Chicago Money Museum
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/branch-visitor-center/index">
+            Detroit Visitor Center
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="RegionDropdownMobile">
+                            <a href="#collapseRegionMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Region &amp; Communities
+                            </a>
+
+                            <ul id="collapseRegionMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/region/index">
+            Region &amp; Communities
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/region/regional-economy">
+            Regional Economy
+
+        </a>
+        <a class="cfedNavigation__link" href="/region/community-development">
+            Community Development
+
+        </a>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/snapshot#/seventh_federal_reserve_district">
+            Local Economic Snapshot
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="careersDropdownMobile">
+                            <a href="#collapseCareersMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                Careers
+                            </a>
+
+                            <ul id="collapseCareersMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/Careers">
+            Careers
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="https://rb.wd5.myworkdayjobs.com/FRS?hiringCompany=7186c32a743f01e4caeeb8caaf01430c">
+            Search Jobs
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/areasofwork">
+            Areas Of Work
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/thebenefits">
+            Benefits
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown cfedDropdown" id="aboutusDropdownMobile">
+                            <a href="#collapseAboutUsMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">
+                                About Us
+                            </a>
+
+                            <ul id="collapseAboutUsMobile" class="cfedPlatter__navigation collapse">
+                                
+                                            <li>
+                <div class="cfedPlatter">
+                    <div class="row">
+                        <div class="col-md-3 cfedPlatterColumn">
+        <a class="cfedNavigation__link" href="/utilities/about-us/index">
+            About Us
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+        </a>
+        <a class="cfedNavigation__link" href="/people/board-of-directors/index">
+            Board Of Directors
+
+        </a>
+        <a href="#collapsePeopleMobile" class="cfedNavbarLink--small collapsed" data-toggle="collapse">People</a>
+        <ul class="cfedPlatter__navigation collapse" id="collapsePeopleMobile">
+                            <li>
+                            <a class="cfedNavigation__link" href="/people/board-of-directors/members">
+            Board Members
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            President Austan D. Goolsbee
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/senior-executives">
+            Senior Executives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/academic-advisory-council">
+            Academic Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/financial-stability-council">
+            Financial Stability Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/speakers-bureau">
+            Speakers Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/advisory-council">
+            Chicago Fed Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/cdiac">
+            Community Depository Institutions Advisory Council
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/utilities/about-us/about-our-history">
+            Our History
+
+        </a>
+        <a class="cfedNavigation__link" href="/publications/annual-report/index">
+            Financial Statements
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/omwi-reports">
+            OMWI
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/financial-disclosures">
+            Ethics Policies &amp; Disclosures
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/newsroom/newsroom-home">
+            Newsroom
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/federal-reserve-calendars">
+            Federal Reserve Calendars
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/contactus">
+            Contact Us
+
+        </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+
+                            <ul>
+                                        <a class="nav-link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            Office of the President
+
+        </a>
+
+                            </ul>
+                            <ul>
+                                        <a class="nav-link" href="/education/money-museum/index">
+            Money Museum
+
+        </a>
+
+                            </ul>
+
+                </ul>
+            </div>
+        </nav>
+        <!--- Desktop Nav-->
+        <nav role="navigation" style="z-index:100; padding-left:35px; padding-right:35px;" class="d-none d-md-block">
+            <div id="menuGroup">
+                <ul class="cfedNavigation">
+
+                        <li class="cfedNavigation__item2" id="bankingDropdown">
+                            <a href="#collapseBanking" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Banking
+                            </a>
+
+
+
+                            <ul id="collapseBanking" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/banking/index">
+            Banking
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a href="#collapseBankingResources" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Banking Resources</a>
+        <ul class="collapse" id="collapseBankingResources">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/index">
+            Banking Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbdiscountwindow.org/">
+            Federal Reserve Discount Window
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.frbservices.org/index.html">
+            Federal Reserve Bank Services
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/regulatory-applications-and-membership-information-preview">
+            Regulatory Applications And Membership Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/banker-resources/tools-resources-data">
+            Banker Training And Resources
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/supervision-and-regulation/index">
+            Supervision And Regulation
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseConsumerResources" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Consumer Resources</a>
+        <ul class="collapse" id="collapseConsumerResources">
+                            <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/index">
+            Consumer Resources
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="http://www.consumerfinance.gov/">
+            Consumer Financial Protection Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/banking/consumer-banking/consumer-information">
+            Consumer Information
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://federalreserveconsumerhelp.gov/?District=7">
+            Federal Reserve Consumer Help
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/markets/payments-policy/payments-policy-group">
+            Payments
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="researchDropdown">
+                            <a href="#collapseResearch" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Research
+                            </a>
+
+
+
+                            <ul id="collapseResearch" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/research/index">
+            Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a href="#collapseOurPeople" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Our People</a>
+        <ul class="collapse" id="collapseOurPeople">
+                            <li>
+                            <a href="#collapseResearchTeams" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Research Teams</a>
+        <ul class="collapse" id="collapseResearchTeams">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/research-teams">
+            Research Teams
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="https://www.chicagofed.org/people/teams/research-leadership/index">
+            Leadership
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-economics/index">
+            Financial Economics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/macroeconomics/index">
+            Macroeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/microeconomics/index">
+            Microeconomics
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/community-development/index">
+            Community Development
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-analysis-and-engagement/index">
+            Regional Analysis and Engagement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/regional-research/index">
+            Regional Research
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets Group
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/monetary-policy-and-communications/index">
+            Monetary Policy and Communications
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/team">
+            Economic Mobility Project
+
+        </a>
+
+                </li>
+
+        </ul>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/resident-and-visiting-scholars">
+            Resident And Visiting Scholars
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/research-assistants">
+            Research Assistants
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseEconomicData" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Economic Data</a>
+        <ul class="collapse" id="collapseEconomicData">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/data/index">
+            Economic Data
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/beige-book/current-data">
+            Beige Book
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/carts/index">
+            Chicago Fed Advance Retail Trade Summary (CARTS)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/chicago-fed-labor-market-indicators/latest-release">
+            Chicago Fed Labor Market Indicators
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfnai/current-data">
+            Chicago Fed National Activity Index (CFNAI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/cfsec/current-data">
+            Chicago Fed Survey Of Economic Conditions (CFSEC)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/ag-conditions/index">
+            Chicago Fed Survey: Agricultural Conditions
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/nfci/current-data">
+            National Financial Conditions Index (NFCI)
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/data/data-release-calendar">
+            Economic Data Release Calendar
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapsePublications" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Publications</a>
+        <ul class="collapse" id="collapsePublications">
+                            <li>
+                            <a class="cfedNavigation__link" href="/publications/index">
+            Publications
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/agletter/index">
+            AgLetter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-insights/index">
+            Chicago Fed Insights
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/chicago-fed-letter/index">
+            Chicago Fed Letter
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/economic-perspectives/index">
+            Economic Perspectives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/working-papers/index">
+            Working Papers
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/publications/archives">
+            Archives
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a href="#collapseSpecialtyResearch" class="cfedNavbarLink--small collapsed" data-toggle="collapse">Specialty Research</a>
+        <ul class="collapse" id="collapseSpecialtyResearch">
+                            <li>
+                            <a class="cfedNavigation__link" href="/research/specialty-research">
+            Specialty Research
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/mobility/about">
+            Economic Mobility
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/lead/about">
+            Lead Service Line Replacement
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-munitrack/current-data">
+            MuniTrack
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="/research/content-areas/agriculture/index">
+            Agricultural Sector
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/automotive/index">
+            Automotive Industry
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/chicago-fed-insurance-research-center/index">
+            Chicago Fed Insurance Research Center
+
+        </a>
+        <a class="cfedNavigation__link" href="/people/teams/financial-markets-group/index">
+            Financial Markets
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="eventsDropdown">
+                            <a href="#collapseEvents" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Events
+                            </a>
+
+
+
+                            <ul id="collapseEvents" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/events/index">
+            Events
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/events/upcoming-events">
+            Upcoming Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/events/past-events">
+            Past Events
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-speaking">
+            President Goolsbee
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="educationDropdown">
+                            <a href="#collapseEducation" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Education
+                            </a>
+
+
+
+                            <ul id="collapseEducation" class="cfedNavigation__submenu2 collapse" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/education/index">
+            Education
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/educator">
+            Educator Resources
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/fed-challenge/college-fed-challenge">
+            Fed Challenge
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/index">
+            Chicago Money Museum
+
+        </a>
+        <a class="cfedNavigation__link" href="/education/money-museum/branch-visitor-center/index">
+            Detroit Visitor Center
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="RegionDropdown">
+                            <a href="#collapseRegion" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Region &amp; Communities
+                            </a>
+
+
+
+                            <ul id="collapseRegion" class="cfedNavigation__submenu2 collapse submenu-right" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/region/index">
+            Region &amp; Communities
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/region/regional-economy">
+            Regional Economy
+
+        </a>
+        <a class="cfedNavigation__link" href="/region/community-development">
+            Community Development
+
+        </a>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/snapshot#/seventh_federal_reserve_district">
+            Local Economic Snapshot
+
+        </a>
+        <a class="cfedNavigation__link" href="/research/content-areas/childcare/spotlight-on-childcare-and-the-labor-market">
+            Spotlight on Childcare and the Labor Market
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="careersDropdown">
+                            <a href="#collapseCareers" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                Careers
+                            </a>
+
+
+
+                            <ul id="collapseCareers" class="cfedNavigation__submenu2 collapse submenu-right" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/Careers">
+            Careers
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="https://rb.wd5.myworkdayjobs.com/FRS?hiringCompany=7186c32a743f01e4caeeb8caaf01430c">
+            Search Jobs
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/areasofwork">
+            Areas Of Work
+
+        </a>
+        <a class="cfedNavigation__link" href="/careers/thebenefits">
+            Benefits
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                        <li class="cfedNavigation__item2" id="aboutusDropdown">
+                            <a href="#collapseAboutUs" class="cfedNavigation__menuLink cfedNavigation__menuLink--large collapsed" data-toggle="collapse" aria-expanded="false">
+                                About Us
+                            </a>
+
+
+
+                            <ul id="collapseAboutUs" class="cfedNavigation__submenu2 collapse submenu-right" data-parent="#menuGroup">
+                                
+                                            <li class="cfedNavigation__submenuItem">
+
+                <div class="row">
+                    <div class="col-12">
+        <a class="cfedNavigation__link" href="/utilities/about-us/index">
+            About Us
+                    <img src="/~/media/admin/images/icons/house-icon" alt="Home" class="menu-icon" />
+
+        </a>
+        <a class="cfedNavigation__link" href="/people/board-of-directors/index">
+            Board Of Directors
+
+        </a>
+        <a href="#collapsePeople" class="cfedNavbarLink--small collapsed" data-toggle="collapse">People</a>
+        <ul class="collapse" id="collapsePeople">
+                            <li>
+                            <a class="cfedNavigation__link" href="/people/board-of-directors/members">
+            Board Members
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/utilities/about-us/office-of-the-president/office-of-the-president-home">
+            President Austan D. Goolsbee
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/teams/senior-executives">
+            Senior Executives
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/economists">
+            Economists
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/research/policy-professionals">
+            Policy Professionals
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/academic-advisory-council">
+            Academic Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/financial-stability-council">
+            Financial Stability Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/speakers-bureau">
+            Speakers Bureau
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/advisory-council">
+            Chicago Fed Advisory Council
+
+        </a>
+
+                </li>
+                <li>
+                            <a class="cfedNavigation__link" href="/people/cdiac">
+            Community Depository Institutions Advisory Council
+
+        </a>
+
+                </li>
+
+        </ul>
+        <a class="cfedNavigation__link" href="https://www.chicagofed.org/utilities/about-us/about-our-history">
+            Our History
+
+        </a>
+        <a class="cfedNavigation__link" href="/publications/annual-report/index">
+            Financial Statements
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/omwi-reports">
+            OMWI
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/financial-disclosures">
+            Ethics Policies &amp; Disclosures
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/newsroom/newsroom-home">
+            Newsroom
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/about-us/federal-reserve-calendars">
+            Federal Reserve Calendars
+
+        </a>
+        <a class="cfedNavigation__link" href="/utilities/contactus">
+            Contact Us
+
+        </a>
+                    </div>
+                </div>
+            </li>
+
+                            </ul>
+                        </li>
+                </ul>
+
+            </div>
+        </nav>
+
+
+
+
+<style>
+    @ media screen and (max-width:900px) and (min-width:768px) {
+        .cfedNavigation__item2 .cfedNavigation__menuLink {
+            font-size: 0.9rem
+        }
+    }
+</style>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="cfedContentLimiter">
+            <div class="row content-row">
+                <div class="col">
+                    <div id="content">
+                        
+
+    <div class="cfedContent">
+        
+        <div class="cfedContent__body">
+            
+                <div class="cfedContent__text"><div class="header2023">
+<div class="header2023-text-wrapper">
+    <div class="header2023-text-block">
+<span class="header2023-section">National Financial Conditions Index (NFCI)</span>
+<hr />
+<h1 class="header2023-page">Current Data
+    </h1></div>
+</div>
+</div></div>
+                        
+
+
+        </div>
+    </div>
+
+
+    <div class="cfedContent">
+        
+        <div class="cfedContent__body">
+            
+                <div class="cfedContent__text"><!--
+<div class="cyanSubMenu">
+<a class="cyanCurrentPage" href="/research/data/nfci/current-data">Current Data</a>
+<a href="/research/data/nfci/about">About the NFCI</a>
+</div>
+-->
+
+<div class="submenu2023">
+<a class="currentPage2023" href="/research/data/nfci/current-data">Current Data</a>
+<a href="/research/data/nfci/about">About the NFCI</a>
+</div>
+</div>
+                        
+
+
+        </div>
+    </div>
+
+
+    <div class="cfedContent">
+        
+        <div class="cfedContent__body">
+            
+                <div class="cfedContent__text"><p class="cyanLargeText">The Chicago Fed’s National Financial Conditions Index (NFCI) provides a comprehensive weekly update on U.S. financial conditions in money markets, debt and equity markets, and the traditional and “shadow” banking systems. Because U.S. economic and financial conditions tend to be highly correlated, we also present an alternative index, the adjusted NFCI (ANFCI). This index isolates a component of financial conditions uncorrelated with economic conditions to provide an update on financial conditions relative to current economic conditions.</p>
+
+<p class="cyanLargeText">The NFCI and ANFCI are updated on a <a href="https://www.chicagofed.org/research/data/data-release-calendar#nfci-table">weekly basis</a> at 8:30 a.m. ET on Wednesday, and cover the time period through the previous Friday. When a federal holiday falls on a Wednesday or earlier in the week, the NFCI and ANFCI will be updated on Thursday.</p>
+
+<hr />
+
+</div>
+                        
+
+
+        </div>
+    </div>
+
+
+    <div class="cfedContent">
+        
+        <div class="cfedContent__body">
+            
+                <div class="cfedContent__text"><style>
+fedrelease-context{
+padding:0px;
+}
+</style>
+<fedrelease-context>
+   <fedrelease-provider name="NFCI" endpoint="https://data.chicagofed.org/cfed-drm-chicago/NFCI"></fedrelease-provider>
+  
+   
+   <fedrelease-text provider-name="NFCI" definition-name="nfci-headline-and-blurb" inline-css="
+@import url('https://www.chicagofed.org/~/media/admin/css/bootstrapmin.css');
+@import url('https://www.chicagofed.org/~/media/admin/css/chicagofed.css');
+.announcement {
+    background: #e8f1f1;
+    padding: 20px 30px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+h2{    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: .25rem;
+    line-height: 1.15;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    margin-bottom: .75rem;
+    font-family: 'Amiri', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+"></fedrelease-text>
+
+ <fedrelease-download-center provider-name="NFCI" definition-name="nfci-downloads" injectcss=""></fedrelease-download-center> 
+<fedrelease-chart provider-name="NFCI" definition-name="nfci-decomposition" injectcss=""></fedrelease-chart>
+<p class="caption">Notes: This figure plots the NFCI, along with contributions to the index from the three categories of financial indicators (risk, credit, and leverage). The contributions sum to the overall index.</p>
+
+<fedrelease-chart provider-name="NFCI" definition-name="anfci-decomposition" injectcss=""></fedrelease-chart>
+<p class="caption">Notes: This figure plots the ANFCI, along with contributions to the index from the three categories of financial indicators (risk, credit, and leverage) and from the macroeconomic adjustments. The contributions sum to the overall index.</p>
+
+<h2>Contributions to the NFCI and ANFCI</h2>
+<p>The first two columns in the table below denote how many series of the 105 used to construct the NFCI and ANFCI indicated tighter-than-average or looser-than average conditions in the most recent week. The latter two columns indicate how many of the 105 indicators have tightened or loosened in the past week.</p>
+
+<fedrelease-chart provider-name="NFCI" definition-name="nfci-contributions-table" height="auto" injectcss="" inline-css=".highcharts-data-table table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    min-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}"></fedrelease-chart>
+
+
+<p>The figures below present the contribution of each indicator to the NFCI and ANFCI, which are the weighted averages of 105 measures of financial activity. The sum of the contributions will result in the current value of the index. The contributions can be used to assess which indicators have the largest impact on the current value of the index. This is done by identifying the largest positive and largest negative contributions, as highlighted below.</p>
+
+
+<fedrelease-chart provider-name="NFCI" definition-name="nfci-contributions-chart" injectcss=""></fedrelease-chart>
+
+<fedrelease-chart provider-name="NFCI" definition-name="anfci-contributions-chart" injectcss=""></fedrelease-chart>
+
+
+<p>The contributions capture both what a given indicator reveals about current financial conditions and how related that indicator is to other measures of financial activity. While some measures on their own may indicate substantially tighter or substantially looser financial conditions, their contributions to the index may be modest if these measures receive small weights in the index. Similarly, measures that indicate only modestly tighter or modestly looser financial conditions may have larger contributions to the index if these measures receive large weights. For the construction of the indexes, the weights are calculated to capture the relative importance of each indicator in explaining the historical fluctuations in all 105 measures of financial activity.</p>
+
+
+<h2>Revisions to the NFCI and ANFCI</h2>
+<h3>Mean Absolute Values of Week-to-Week Revisions</h3>
+<fedrelease-chart provider-name="NFCI" definition-name="nfci-revisions-table" height="auto" injectcss=""></fedrelease-chart>
+<figcaption class="caption">
+    Note: T denotes the last week of the index at the time of release.
+</figcaption>
+<br />
+<p>The history of the NFCI and the ANFCI can change from week to week depending on incoming data, data revisions, and changes in the estimated weight given each financial indicator, although these changes tend to be very small. Because they include a number of monthly and quarterly financial indicators that are regularly revised, revisions to the NFCI and ANFCI will tend to be more pronounced near the beginning of each month. The ANFCI is additionally influenced by economic activity and inflation. For details see <a href="/publications/chicago-fed-letter/2017/386"><cite>Chicago Fed Letter</cite> No. 386</a>.</p>
+
+
+
+
+
+</fedrelease-context>
+
+</div>
+                        
+
+
+        </div>
+    </div>
+
+
+
+<div class="row">
+              <div class="col-xs-12 col-sm-6 cfedXs__padded" >
+
+    <div class="detail-promo">
+
+                                    <div class="detail-promo-description"><form id="GD-snippet-form" action="https://public.govdelivery.com/accounts/USFRBCHICAGO/subscribers/qualify" accept-charset="UTF-8" method="post" class="footerBox2023 leftColumn"><input name="utf8" type="hidden" value="&#x2713;" />
+    <input type="hidden" name="topic_id" id="topic_id" value="USFRBCHICAGO_6" />
+    <fieldset>
+        <legend class="cyan-section-header">
+            Subscribe to NFCI
+        </legend>
+        <div class="footerBox2023-contents">
+            <div class="mb-3">
+                <p>To sign up for updates or to access your subscriber preferences, please enter your contact
+                    information below.</p>
+            </div>
+            <ol class='form'>
+                <li class='email_fields' style='display: block'>
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address" class="long email_text_field" required="required" />
+
+                </li>
+            </ol>
+            <div class='button_panel'>
+                <input type="submit" name="commit" value="Submit" class="sr-button reverse cfedDefaultButton--extra-words submit-button" data-disable-with="Submit" />
+            </div>
+        </div>
+    </fieldset>
+
+</form>
+</div>
+
+
+        <div class="promo-link-list">
+                <div class="link-container">
+
+
+                </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="cfedContent">
+        
+        <div class="cfedContent__body">
+            
+                                    
+
+
+        </div>
+    </div>
+</div>
+    <div class="col-xs-12 col-sm-6 cfedXs__padded">
+
+    <div class="cfedContent">
+        
+        <div class="cfedContent__body">
+            
+                <div class="cfedContent__text"><iframe class="qualtricsHalfPageContactUsFrame" src="https://frbchicagodistrict.gov1.qualtrics.com/jfe/form/SV_3DG25vaMJogwzPM?id=nfci"></iframe></div>
+                        
+
+
+        </div>
+    </div>
+</div>
+</div>
+     
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row cfedFooterContainerRow">
+            <div class="col cfedFooterContainerColumn">
+                <div class="cfedContentLimiter">
+                    
+<a class="visibleOnFocus" title="Having trouble accessing something on this page? Please send us an email and we will get back to you as quickly as we can." href="mailto:accessibility@chi.frb.org">Having trouble accessing something on this page? Please send us an email and
+    we will get back to you as quickly as we can.</a>
+
+
+<div class="cfedContentLimiter">
+    <!-- restart content limiter -->
+    <div class="cfedFooter visible-lg-block visible-md-block hidden-sm hidden-xs">
+        <!-- begin cfedFooter for lg -->
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <ul class="cfedFooter__navigation">
+                    <!-- <li><a href="/"  class="cfedFooter__sectionLink">Home&nbsp;</a></li> -->
+                    <li><a href="/banking/index" class="cfedFooter__sectionLink">Banking</a></li>
+                    <li><a href="/research/index" class="cfedFooter__sectionLink">Research</a></li>
+
+                    <li><a href="/events/index" class="cfedFooter__sectionLink">Events</a></li>
+                    <li><a href="/education/index" class="cfedFooter__sectionLink">Education</a></li>
+                    <li><a href="/region/index" class="cfedFooter__sectionLink">Region &amp; Community</a></li>
+                    <li><a href="/careers" class="cfedFooter__sectionLink">Careers</a></li>
+                    <li><a href="/utilities/about-us/index" class="cfedFooter__sectionLink">About Us</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <ul class="cfedFooter__navigation">
+
+                    <li><a href="/utilities/contactus" class="cfedFooter__sectionLink">Contact Us</a></li>
+                    <li><a href="https://video.chicagofed.org/" class="cfedFooter__sectionLink">Video</a>
+                    </li>
+
+                    <li><a href="/utilities/newsroom/newsroom-home" class="cfedFooter__sectionLink">Newsroom</a>
+                    </li>
+                    <li><a href="/education/money-museum/index" class="cfedFooter__sectionLink">Museum</a></li>
+
+                    <li><a href="https://public.govdelivery.com/accounts/USFRBCHICAGO/subscriber/new" class="cfedFooter__sectionLink">Subscribe</a></li>
+<!--                    <li><a href="/utilities/about-us/style-guide" class="cfedFooter__sectionLink">Style Guide</a></li>-->
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="cfedFooter__heading">Follow Us</div>
+                <ul class="cfedFooter__iconLinks cfedFooter__iconLinks--4across">
+                    <li><a href="https://x.com/ChicagoFed" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="Twitter" src="/-/media/admin/images/footer/twitter-png.svg?sc_lang=en&amp;hash=C5CE9D9E7E099C582FA847B9321AEE6E" />
+                        </a></li>
+                    <li><a href="https://www.youtube.com/@chicagofed" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="YouTube" src="/-/media/admin/images/footer/youtube-png.svg?sc_lang=en&amp;hash=B5E296FA3E370D176D6FC4E7F7EBD91F" />
+                        </a></li>
+                    <li><a href="https://www.facebook.com/frbchicago/" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="FaceBook" src="/-/media/admin/images/footer/facebook-png.svg?sc_lang=en&amp;hash=EDD821009FFBDA5FD93C52F791C9BA9D" />
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/company/federal-reserve-bank-of-chicago" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="LinkedIn" src="/-/media/admin/images/footer/linkedin-png.svg?sc_lang=en&amp;hash=6834AB815FCE0EE31A4867246E73C560" />
+                        </a></li>
+                    <li><a href="https://www.instagram.com/chicagofed/" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="Instagram" src="/-/media/admin/images/footer/instagram-png.svg?sc_lang=en&amp;hash=50065911870FADC3260DBFF955ACC49F" />
+                        </a></li>
+
+                    <li><a href="/rss" class="cfedFooter__iconAnchor">
+                            <img class="cfedFooter__iconImage" alt="RSS" src="/-/media/admin/images/footer/rss-png.svg?sc_lang=en&amp;hash=6A76818A37C7C443BE74C249BB1D4EEB" />
+                        </a></li>
+                </ul>
+               
+            </div>
+            <div class="col-lg-3 col-md-3 cfedFooter__ornamentColumn">
+                <img alt="" class="cfedFooter__ornament" src="/-/media/admin/images/footer/chicagofedseal-png.svg?sc_lang=en&amp;hash=E4AB87F37CC95CE4152B4298195AB481" />
+                <div>Our Values
+                    <hr />
+                </div>
+                <div>Integrity</div>
+                <div>Respect</div>
+                <div>Responsibility</div>
+                <div>Excellence</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end cfedFooter for md-lg -->
+
+    <!-- end cfedFooter for xs-md -->
+</div>
+<!-- end content limiter -->
+<hr class="cfedFooterHR" />
+<div class="cfedContentLimiter">
+    <!-- restart content limiter -->
+    <div class="cfedFooter">
+        <div class="row">
+            <div class="col-md-12 cfedFooter__info">
+                <p>Federal Reserve Bank of Chicago, 230 South LaSalle Street, Chicago, Illinois 60604-1413, USA. Tel.
+                    (312) 322-5322</p>
+                <p>Copyright © 2026. All rights reserved.</p>
+                <p>Please review our <a href="/utilities/privacy-policy">Privacy Policy</a> | <a href="/utilities/legal-notices">Legal Notices</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-970V6TDQ5K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-970V6TDQ5K');
+    </script>
+
+    <div class="device-xs visible-xs"></div>
+    <div class="device-sm visible-sm"></div>
+    <div class="device-md visible-md"></div>
+    <div class="device-lg visible-lg"></div>
+
+    
+            <script type="text/javascript" src="/-/media/admin/scripts/fedrelease/fedrelease.js?sc_lang=en"></script>
+
+
+
+                <script type="text/javascript">
+                
+    
+    function setRecaptchaToken(token, formid) {
+        $("#g-recaptcha-response").val(token);
+        $(formid).submit();
+    }
+
+    function failureCallback(error) {
+        console.log("Chicagofed.org failureCallback()");
+        console.log(error);
+    }
+
+    function verifyRecaptchaV3(formid) {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Les1MsUAAAAAACwVZ9HB1CFS30VRjWyPEr7eVtW', { action: 'default' })
+                .then(function(token){return setRecaptchaToken(token,formid)},failureCallback);
+        });
+    }
+
+    
+    function contactUsClearForm() {
+        $("#contact-comment-characters").text("5000 characters remaining");
+    }
+
+    function autotab(original, destination) {
+        if (original.getAttribute && original.value.length == original.getAttribute("maxlength")) {
+            destination.focus();
+        }
+    }
+
+
+    $(document).ready(function() {
+
+        var email_check = /^[A-Z0-9._%+-]+@@[A-Z0-9.-]+\.[A-Z]{2,6}$/i;
+        $("#contact-email").on("blur", function () {
+            var email_check = /^[A-Z0-9._%+-]+@@[A-Z0-9.-]+\.[A-Z]{2,6}$/i;
+            if ($("#contact-email").val().length != 0 && !email_check.test($("#contact-email").val())) {
+                $("#email-error")
+                    .text(
+                        "Please enter a valid email address. Email addresses must contain a '@@'symbol and a domain such as .com or .org. ");
+            } else {
+                $("#email-error").text("");
+            }
+        });
+
+       
+
+        $('#contact-comment').on("keyup", function () {
+            var max = 5000;
+            var len = $(this).val().length;
+            if (len >= max) {
+                $('#contact-comment-characters').text('You have reached the limit');
+            } else {
+                var char = max - len;
+                $('#contact-comment-characters').text(char + ' characters remaining');
+            }
+        });
+
+    });
+
+    $("#contact-us-submit").on("click", function (event) {
+        event.preventDefault();
+
+        if (document.getElementById("contact-comment").value == "") {
+            $("#comment-error").text("Please enter comments.");
+            return false;
+        }
+        if (($("#contact-areaphone").val().length != 0 && $("#contact-areaphone").val().length != 3) ||
+            ($("#contact-areaphone").val().length != 0 && !$.isNumeric($("#contact-areaphone").val()))) {
+            $("#phone-error").text("Please enter a valid phone number. Phone numbers should only contain numbers.");
+            return false;
+        } else if (($("#contact-prephone").val().length != 0 && $("#contact-prephone").val().length != 3) ||
+            ($("#contact-prephone").val().length != 0 && !$.isNumeric($("#contact-prephone").val()))) {
+            $("#phone-error").text("Please enter a valid phone number. Phone numbers should only contain numbers.");
+            return false;
+        } else if (($("#contact-digitphone").val().length != 0 && $("#contact-digitphone").val().length != 4) ||
+            ($("#contact-digitphone").val().length != 0 && !$.isNumeric($("#contact-digitphone").val()))) {
+            $("#phone-error").text("Please enter a valid phone number. Phone numbers should only contain numbers.");
+            return false;
+        } else if ($("#contact-extphone").val().length != 0 && !$.isNumeric($("#contact-extphone").val())) {
+            $("#phone-error").text("Please enter a valid phone number. Phone numbers should only contain numbers.");
+            return false;
+        } else if (($("#contact-areaphone").val().length != 0 ||
+                $("#contact-prephone").val().length != 0 ||
+                $("#contact-digitphone").val().length != 0) &&
+            $("#contact-areaphone").val().length +
+            $("#contact-prephone").val().length +
+            $("#contact-digitphone").val().length !=
+            10) {
+            $("#phone-error").text("Please enter a valid phone number.Phone numbers should only contain numbers.");
+            return false;
+        } else {
+            $("#phone-error").text("");
+        }
+
+        var email_check = /^[A-Z0-9._%+-]+@@[A-Z0-9.-]+\.[A-Z]{2,6}$/i;
+        if ($("#contact-email").val().length != 0 && !email_check.test($("#contact-email").val())) {
+            $("#email-error")
+                .text(
+                    "Please enter a valid email address. Email addresses must contain a '@@' symbol and a domain such as .com or .org. ");
+            return false;
+        } else {
+            $("#email-error").text("");
+        }
+
+        var selectedOption = $("#contact-subject option:selected").text();
+        $("<input/>", { type: 'hidden', name: 'subjectOption' }).val(selectedOption).appendTo("#contact-us-form");
+
+        verifyRecaptchaV3("#contact-us-form");
+    });
+                </script>
+
+
+
+                <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function () {
+  const SUBSCRIBE_BUTTON = ".subscribe-btn";
+  const PAGE = "CFNAI"; // change this value to either 'CFNAI', 'NFCI', 'CFSEC', 'CARTS', or 'BANKNOTES'
+  const PERCENT = 0.5; // change value to affect more than X% of users
+
+  // Create a new MutationObserver instance
+  const observer = new MutationObserver(function (mutationsList, observer) {
+    window.addEventListener("message", (event) => {
+      // returns '[iFrameSizer]signup-frame:515:400:resizeParent' on initialization
+      // returns '[iFrameSizer]signup-frame:276:400:mutationObserver' on signup completion
+      if (event.data.length >= 50) {
+        cookieStore.set("email-status", "subscriber");
+      }
+    });
+  });
+
+  // Select the element to observe
+  const targetNode = document.querySelector("body");
+
+  // Configure the observer to watch for child list and attribute changes
+  const config = { childList: true, attributes: true };
+
+  // Start observing the target node with the specified configuration
+  observer.observe(targetNode, config);
+
+  // check subscribe button
+  const subscribeButton = document.querySelector(SUBSCRIBE_BUTTON);
+
+  if (subscribeButton) {
+    subscribeButton.addEventListener("click", () => currentSubscriber(PERCENT));
+  }
+
+  // check cookie for current subscriber then
+  // only show to X% of users who aren't subscribed
+  const currentSubscriber = async function () {
+    const cookie = await cookieStore.get("email-status");
+    if (cookie?.value !== "subscriber") {
+      let chance = Math.random();
+      if (chance <= PERCENT) {
+        addScript(PAGE);
+      }
+    }
+  };
+
+  currentSubscriber(PERCENT);
+});
+
+// Page = string referring to corresponding PAGE (e.g. NFCI, CFNAI, CFSEC)
+// Width (optional) = number referring to width in pixels of overlay; default is 400px
+const addScript = function (PAGE, width = 400) {
+  // Allows for re-trigger of overlay form by removing localstorage key:value pair set by govDelivery
+  let partialMatch = "VVNGUkJDSElDQUdPL";
+  // VVNGUkJDSElDQUdPLTM2MDU4
+  Object.keys(localStorage).forEach((key) => {
+    if (key.match(partialMatch)) {
+      localStorage.removeItem(key);
+    }
+  });
+
+  const signupFormIds = {
+    CFNAI: "46502",
+    NFCI: "46552",
+    CFSEC: "46553",
+    CARTS: "47917",
+    LABORMARKETINDICATORS: "48058",
+    // TEST: "36058",
+  };
+
+  const govDeliverySignup = document.createElement("script");
+  govDeliverySignup.type = "text/javascript";
+
+  govDeliverySignup.src =
+    "https://public.govdelivery.com/assets/SignupOverlay.js";
+  govDeliverySignup.setAttribute("data-account-code", "USFRBCHICAGO");
+  govDeliverySignup.setAttribute("data-signup-id", signupFormIds[PAGE]);
+  govDeliverySignup.setAttribute("async", "");
+  govDeliverySignup.setAttribute("data-width", width);
+
+  document.body.appendChild(govDeliverySignup);
+};
+
+                </script>
+
+
+<script type="text/javascript"  src="/O5kc6V/ezMJBO/ZEFS8sN/XA4Lh/uaEr2DNpQhXVLN/CiMWKzkB/OjxhcA/gWDRE"></script></body>
+</html>
