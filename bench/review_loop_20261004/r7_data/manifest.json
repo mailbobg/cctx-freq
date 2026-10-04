@@ -1,0 +1,439 @@
+{
+  "captured_utc": "2026-10-04T09:34:39.810786+00:00",
+  "coverage": {
+    "BTCUSDT": {
+      "spot_rows": 2069,
+      "contracts": {
+        "BTCUSDT_210326": {
+          "expiry": "2021-03-26T08:00:00+00:00",
+          "rows": 52,
+          "first_archived_day": "2021-02-03T00:00:00+00:00",
+          "last_archived_day": "2021-03-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_210625": {
+          "expiry": "2021-06-25T08:00:00+00:00",
+          "rows": 102,
+          "first_archived_day": "2021-03-16T00:00:00+00:00",
+          "last_archived_day": "2021-06-25T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_210924": {
+          "expiry": "2021-09-24T08:00:00+00:00",
+          "rows": 99,
+          "first_archived_day": "2021-06-18T00:00:00+00:00",
+          "last_archived_day": "2021-09-24T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_211231": {
+          "expiry": "2021-12-31T08:00:00+00:00",
+          "rows": 101,
+          "first_archived_day": "2021-09-22T00:00:00+00:00",
+          "last_archived_day": "2021-12-31T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_220325": {
+          "expiry": "2022-03-25T08:00:00+00:00",
+          "rows": 92,
+          "first_archived_day": "2021-12-24T00:00:00+00:00",
+          "last_archived_day": "2022-03-25T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_220624": {
+          "expiry": "2022-06-24T08:00:00+00:00",
+          "rows": 95,
+          "first_archived_day": "2022-03-22T00:00:00+00:00",
+          "last_archived_day": "2022-06-24T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_220930": {
+          "expiry": "2022-09-30T08:00:00+00:00",
+          "rows": 103,
+          "first_archived_day": "2022-06-20T00:00:00+00:00",
+          "last_archived_day": "2022-09-30T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_221230": {
+          "expiry": "2022-12-30T08:00:00+00:00",
+          "rows": 99,
+          "first_archived_day": "2022-09-23T00:00:00+00:00",
+          "last_archived_day": "2022-12-30T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_230331": {
+          "expiry": "2023-03-31T08:00:00+00:00",
+          "rows": 99,
+          "first_archived_day": "2022-12-23T00:00:00+00:00",
+          "last_archived_day": "2023-03-31T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_230630": {
+          "expiry": "2023-06-30T08:00:00+00:00",
+          "rows": 96,
+          "first_archived_day": "2023-03-27T00:00:00+00:00",
+          "last_archived_day": "2023-06-30T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_230929": {
+          "expiry": "2023-09-29T08:00:00+00:00",
+          "rows": 97,
+          "first_archived_day": "2023-06-25T00:00:00+00:00",
+          "last_archived_day": "2023-09-29T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 46,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_231229": {
+          "expiry": "2023-12-29T08:00:00+00:00",
+          "rows": 134,
+          "first_archived_day": "2023-08-18T00:00:00+00:00",
+          "last_archived_day": "2023-12-29T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 11,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_240329": {
+          "expiry": "2024-03-29T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2023-09-29T00:00:00+00:00",
+          "last_archived_day": "2024-03-29T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_240628": {
+          "expiry": "2024-06-28T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2023-12-29T00:00:00+00:00",
+          "last_archived_day": "2024-06-28T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 3,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_240927": {
+          "expiry": "2024-09-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-03-29T00:00:00+00:00",
+          "last_archived_day": "2024-09-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_241227": {
+          "expiry": "2024-12-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-06-28T00:00:00+00:00",
+          "last_archived_day": "2024-12-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_250328": {
+          "expiry": "2025-03-28T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-09-27T00:00:00+00:00",
+          "last_archived_day": "2025-03-28T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_250627": {
+          "expiry": "2025-06-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-12-27T00:00:00+00:00",
+          "last_archived_day": "2025-06-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_250926": {
+          "expiry": "2025-09-26T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-03-28T00:00:00+00:00",
+          "last_archived_day": "2025-09-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_251226": {
+          "expiry": "2025-12-26T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-06-27T00:00:00+00:00",
+          "last_archived_day": "2025-12-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 25,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_260327": {
+          "expiry": "2026-03-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-09-26T00:00:00+00:00",
+          "last_archived_day": "2026-03-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 20,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_260626": {
+          "expiry": "2026-06-26T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-12-26T00:00:00+00:00",
+          "last_archived_day": "2026-06-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "BTCUSDT_260925": {
+          "expiry": "2026-09-25T08:00:00+00:00",
+          "rows": 158,
+          "first_archived_day": "2026-03-27T00:00:00+00:00",
+          "last_archived_day": "2026-08-31T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        }
+      }
+    },
+    "ETHUSDT": {
+      "spot_rows": 2069,
+      "contracts": {
+        "ETHUSDT_210326": {
+          "expiry": "2021-03-26T08:00:00+00:00",
+          "rows": 51,
+          "first_archived_day": "2021-02-04T00:00:00+00:00",
+          "last_archived_day": "2021-03-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_210625": {
+          "expiry": "2021-06-25T08:00:00+00:00",
+          "rows": 102,
+          "first_archived_day": "2021-03-16T00:00:00+00:00",
+          "last_archived_day": "2021-06-25T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_210924": {
+          "expiry": "2021-09-24T08:00:00+00:00",
+          "rows": 99,
+          "first_archived_day": "2021-06-18T00:00:00+00:00",
+          "last_archived_day": "2021-09-24T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_211231": {
+          "expiry": "2021-12-31T08:00:00+00:00",
+          "rows": 101,
+          "first_archived_day": "2021-09-22T00:00:00+00:00",
+          "last_archived_day": "2021-12-31T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_220325": {
+          "expiry": "2022-03-25T08:00:00+00:00",
+          "rows": 92,
+          "first_archived_day": "2021-12-24T00:00:00+00:00",
+          "last_archived_day": "2022-03-25T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_220624": {
+          "expiry": "2022-06-24T08:00:00+00:00",
+          "rows": 95,
+          "first_archived_day": "2022-03-22T00:00:00+00:00",
+          "last_archived_day": "2022-06-24T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_220930": {
+          "expiry": "2022-09-30T08:00:00+00:00",
+          "rows": 103,
+          "first_archived_day": "2022-06-20T00:00:00+00:00",
+          "last_archived_day": "2022-09-30T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_221230": {
+          "expiry": "2022-12-30T08:00:00+00:00",
+          "rows": 99,
+          "first_archived_day": "2022-09-23T00:00:00+00:00",
+          "last_archived_day": "2022-12-30T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_230331": {
+          "expiry": "2023-03-31T08:00:00+00:00",
+          "rows": 99,
+          "first_archived_day": "2022-12-23T00:00:00+00:00",
+          "last_archived_day": "2023-03-31T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_230630": {
+          "expiry": "2023-06-30T08:00:00+00:00",
+          "rows": 96,
+          "first_archived_day": "2023-03-27T00:00:00+00:00",
+          "last_archived_day": "2023-06-30T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_230929": {
+          "expiry": "2023-09-29T08:00:00+00:00",
+          "rows": 97,
+          "first_archived_day": "2023-06-25T00:00:00+00:00",
+          "last_archived_day": "2023-09-29T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 46,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_231229": {
+          "expiry": "2023-12-29T08:00:00+00:00",
+          "rows": 134,
+          "first_archived_day": "2023-08-18T00:00:00+00:00",
+          "last_archived_day": "2023-12-29T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 11,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_240329": {
+          "expiry": "2024-03-29T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2023-09-29T00:00:00+00:00",
+          "last_archived_day": "2024-03-29T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_240628": {
+          "expiry": "2024-06-28T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2023-12-29T00:00:00+00:00",
+          "last_archived_day": "2024-06-28T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 3,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_240927": {
+          "expiry": "2024-09-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-03-29T00:00:00+00:00",
+          "last_archived_day": "2024-09-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_241227": {
+          "expiry": "2024-12-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-06-28T00:00:00+00:00",
+          "last_archived_day": "2024-12-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_250328": {
+          "expiry": "2025-03-28T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-09-27T00:00:00+00:00",
+          "last_archived_day": "2025-03-28T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_250627": {
+          "expiry": "2025-06-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2024-12-27T00:00:00+00:00",
+          "last_archived_day": "2025-06-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_250926": {
+          "expiry": "2025-09-26T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-03-28T00:00:00+00:00",
+          "last_archived_day": "2025-09-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_251226": {
+          "expiry": "2025-12-26T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-06-27T00:00:00+00:00",
+          "last_archived_day": "2025-12-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 25,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_260327": {
+          "expiry": "2026-03-27T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-09-26T00:00:00+00:00",
+          "last_archived_day": "2026-03-27T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 20,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_260626": {
+          "expiry": "2026-06-26T08:00:00+00:00",
+          "rows": 183,
+          "first_archived_day": "2025-12-26T00:00:00+00:00",
+          "last_archived_day": "2026-06-26T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        },
+        "ETHUSDT_260925": {
+          "expiry": "2026-09-25T08:00:00+00:00",
+          "rows": 158,
+          "first_archived_day": "2026-03-27T00:00:00+00:00",
+          "last_archived_day": "2026-08-31T00:00:00+00:00",
+          "zero_trade_expired_padding_removed": 0,
+          "first_day_is_not_listing_metadata": true
+        }
+      }
+    }
+  },
+  "output_sha256": {
+    "ETHUSDT_231229.parquet": "0a8ef357f7c1d26ce8468c41fe522ad579a236648e161b4e6a1ea79811b89e65",
+    "BTCUSDT_250627.parquet": "a3a1511079ddab09971243c1bd4d7c20609837207548d5c495d6ea89f45de7cc",
+    "BTCUSDT_240628.parquet": "091aee44812bd6a5f35b767e5ba5e6e238ea3670bb625dc38825fc41a260727d",
+    "BTCUSDT_230331.parquet": "14a2f5b20a1d1f2ac3ef9e4daee57b66b06c212e953ab22634bddad98c60d4b3",
+    "ETHUSDT_230630.parquet": "2ed726035b3a9ddd97ba7de7efb1d63f201894a6e3aa454257e9f8d9f827c5df",
+    "ETHUSDT_240329.parquet": "977ad748834c9e3fa85414b8b6708889ce1e5c5b4f7e5d30197826ac15afd7fa",
+    "ETHUSDT_210625.parquet": "9dc96fe2f000fdb56f070606c93f4323e06e5637f80056837fbde0aa781b32c3",
+    "BTCUSDT_251226.parquet": "c2f2f3c608dddd73ccd1fabdf46441a8cfa1f29753a7bcbfad227287cca5d710",
+    "BTCUSDT_240927.parquet": "da43d0ff9750ff43ad20cc4ff9236dcbc67b70eb8de2fa7fd5f2a1292e2577b2",
+    "BTCUSDT_211231.parquet": "ec1572ec455a7d93681ba08979f7fe7aabf8e54788179f1899be295bde6a407e",
+    "ETHUSDT_220930.parquet": "394dd808c0b95abdf5a502c1bca81e81c624ee65c7eccf31cc8eab3cb24621ca",
+    "BTCUSDT_210326.parquet": "42b7ed4465a5d0a11b2ed1699a11780156036acd63790b6b2b2e11f785ee29b0",
+    "BTCUSDT_230929.parquet": "1649592221c41abdbd62d9a00c69135c6e1a4b61236fc6af645d22083308d4fb",
+    "BTCUSDT_250328.parquet": "3f8800538e2dac5b06e098707b73cff86c5022d234536b0a9dd68bb3d2722fd2",
+    "ETHUSDT_260925.parquet": "c0c61030f757fae02013b1d4b57825f550146fd2cd450029006c2618989ce74e",
+    "ETHUSDT_260327.parquet": "b2bf261f082cc9f75a274ea08ea6f7c6d0514f680df63bd9a1137d8a00b3a073",
+    "BTCUSDT_260626.parquet": "32a48c016009bf786c909f183b5927776af3b800f49f9408158665b43fddceba",
+    "BTCUSDT_210924.parquet": "ac1251c0c38efb546810841028310fa1e2e20301f39f65e0e8e8faf076884c87",
+    "ETHUSDT_250926.parquet": "ebbb0d0af75e9bf5d3845b59283d036927321487ac45ee676d9ab5b9e5f402c0",
+    "BTCUSDT_220325.parquet": "413953b98942ea0fa0bf3b91a82d2aa51a05115ef92d93d719425321d6252bf8",
+    "ETHUSDT_220624.parquet": "42bae4107b2b6ce16f258dacffedf223b8596ef6c359b324b5d9b0cf2e17d61d",
+    "BTCUSDT_221230.parquet": "40c7e15ab1381ae9db4a56906fa4d1e24dd11aab5c999e0436acd336b10e070a",
+    "ETHUSDT_241227.parquet": "a0955b6108794ec9853281458d8abcc29a53ab871545d127ce3d9a8c90e7816e",
+    "BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+    "BTCUSDT_260327.parquet": "6a44039b6fdb813ceb6698a1be0870c2c8293a903e12d13341b64ac40e716c1e",
+    "ETHUSDT_260626.parquet": "d44a398b48841d0178df453dcb5a1eb7ea36dcd2a6c2af53a6761962c2610229",
+    "ETHUSDT_210924.parquet": "5ef4bda04556efd099dc15038f90bc5039192f7f99a941cf917761a37eb91bb3",
+    "ETHUSDT_230929.parquet": "10b47e4a6ac31dd194b9359e8ca421bd152d3bae3cd050176d817d6b93494ec0",
+    "ETHUSDT_210326.parquet": "4ab3957a2ae643f227d616b541664b929d72c506f9a91058b366876823f6901b",
+    "ETHUSDT_250328.parquet": "cf28bbd0e0c4f9c41a90fc5a8e21389ec604250757c2fd5b4d6647743622542c",
+    "BTCUSDT_260925.parquet": "2fffcb33a7aa0838e917f9915123835fb0447de14c578bd9f00fe90d2ff3c017",
+    "ETHUSDT_221230.parquet": "3b2848b378a7a64445e06f3010d0103f31ae784a2c7c3e805343b4606ea5730c",
+    "BTCUSDT_241227.parquet": "c46e39efc6da5cdbaa8fdb49dcfa44a028264fbeb012740cf55392b795e7a771",
+    "BTCUSDT_250926.parquet": "3cad118a5fa785540d4ff434604a2d592e83083b6e8a769a1be3511a37bae3cb",
+    "ETHUSDT_220325.parquet": "1c04978619f79e5462d72311834d2e3505f741dcc5d548c80755f9246c84a803",
+    "BTCUSDT_220624.parquet": "690dbb7637aef743516dd073731540e59194b06e4384c94c8e301e32b8132bf1",
+    "ETHUSDT_230331.parquet": "4e383c5202086dbe3c25e86c2e6ac03d7a6573b95b381bebe6331e7435d5dedc",
+    "ETHUSDT_250627.parquet": "f5bc9ff622c7466c24749367a9653162b9474c2ba4c873147555b2c43fc14da1",
+    "ETHUSDT_240628.parquet": "a9e695f845f97939fdcf1174461e7275ff70878112d0283fb4863822de14a392",
+    "BTCUSDT_240329.parquet": "c5484a9a9d56846028180818e20350dde4dfdb1838efdd64e6ca15599a83cb2f",
+    "BTCUSDT_230630.parquet": "31d3a24aeb18d0a5d0b5627acdaa937fce50705913554eb1888602945c3425a9",
+    "BTCUSDT_231229.parquet": "ed69a8598ed05cf632618d1d70b180a711c755d1ce2a66dffcd813d622c042ab",
+    "ETHUSDT_240927.parquet": "9f11324b28899e67b32a7dc94c19a21c688a60a5011d2b75718034cb96463743",
+    "BTCUSDT_220930.parquet": "e8947907e8a7270795bd3ad2c93ca0be1ef4710edfd470c9c36df3fbf13e712e",
+    "ETHUSDT_211231.parquet": "d8c1676b740358c71ac7f4039e11488ce1c0a619593bae27b4543266788d32d0",
+    "ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+    "BTCUSDT_210625.parquet": "140fa84f6361ce1b432f0e31cb8d491197030c720508f65d92522ece81f7806d",
+    "ETHUSDT_251226.parquet": "9cb2bfd46eb1841a540d5eeba233020393461231a925adee4401cb9167881d3a"
+  },
+  "first_contract_listing": {
+    "source": "https://www.binance.com/en/support/announcement/detail/ee59b5c8ddf84d6bbbde4ebff7bdfaa0",
+    "BTCUSDT_210326": "2021-02-03T07:00:00Z",
+    "ETHUSDT_210326": "2021-02-04T07:00:00Z"
+  },
+  "limitations": "Spot2025+ microsecond times normalized with strict precision/calendar checks; futures preserve individual expiry symbols. Trade prices are not mark prices. First archived date alone is not listing proof; missing decision data after initial confirmed listing requires repair/evidence."
+}

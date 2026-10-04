@@ -1,0 +1,22 @@
+{
+  "2021-02": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT_210326/1d/BTCUSDT_210326-1d-2021-02.zip",
+    "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT_210326/1d/BTCUSDT_210326-1d-2021-02.zip.CHECKSUM",
+    "sha256": "6fa344c9bbb698066fd0dc861749923bbd867bfa3200c35e3d6ed672e359e875",
+    "checksum_sha256": "981bd9597adf238e42f4c1622a41ada583f24bd200fd377232fdac7f2cbe0023",
+    "retrieved_utc": "2026-10-04T09:29:35.339165+00:00",
+    "rows": 26,
+    "first_open_time": "1612310400000",
+    "last_open_time": "1614470400000"
+  },
+  "2021-03": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT_210326/1d/BTCUSDT_210326-1d-2021-03.zip",
+    "checksum_url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT_210326/1d/BTCUSDT_210326-1d-2021-03.zip.CHECKSUM",
+    "sha256": "59c589824acc9ea67646d9d4357dadc9bb05f55a45407d1da6c8eca493ccccd9",
+    "checksum_sha256": "de0e2ad285e4a41026e4997661774e24ae0b3335b3306482b2247ee63399d9d5",
+    "retrieved_utc": "2026-10-04T09:29:35.869888+00:00",
+    "rows": 26,
+    "first_open_time": "1614556800000",
+    "last_open_time": "1616716800000"
+  }
+}
