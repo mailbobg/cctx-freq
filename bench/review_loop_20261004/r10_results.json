@@ -1,0 +1,451 @@
+{
+  "captured_utc": "2026-10-04T10:07:17.645908+00:00",
+  "source_sha256": {
+    "R10_PROTOCOL.md": "90afdb84016cac54f3d807b2a1c61da9166f4a75f42f47747f972a3c7942e527",
+    "r10_gold.py": "d83c4c2a115b7129ee762d20c91c5a68d117e60044836811bf9f27c3bcc33064",
+    "r10_data.py": "e080d749ba8c0f3a589e4f379c087206e1680588874423a360fbe4de833b39b0",
+    "test_r10_gold.py": "efd25b25100761bbdb345a49aff15fd93dad39568e764ce33da9501dc9885b26",
+    "r1_r2b_risk.py": "1a5dcde42f7ffdf02cd8964b38f7906e5860220fd9f93625b53064ed22c97d79",
+    "r8_crowding.py": "5d66cc5b5a9237375409c71e1a6c6c36a2172de591f49bb02bc286147e7d0f59",
+    "r9_selection.py": "239dd31eeda7156dd6def42080a4094859907fe18d66e266e34687ef4f567f91"
+  },
+  "input_manifest": {
+    "source_inputs_sha256": {
+      "user_data/bench/events/c_daily.parquet": "cf37938983e40989ab0f2c1d6706ae9084995f6f46dc6412abea0c79bb55e7c4",
+      "user_data/bench/review_loop_20261004/r7_data/BTCUSDT_spot.parquet": "4cf57625e2948e24e0ccb71aec3a4050116ea0d4735f6258cb26375d5abc265e",
+      "user_data/bench/review_loop_20261004/r7_data/ETHUSDT_spot.parquet": "f0f2301fdc4c611a2f67e579b62d3d4d768111616703cd2aef2ba502d6e0d313",
+      "user_data/bench/review_loop_20261004/r10_data/PAXGUSDT_spot.parquet": "253cf550a165f88e1df4b6c2c62cdfe498da5e0c943e14cf01d4aeacfd36fb43"
+    },
+    "baseline_max_abs_csv_gap": {
+      "early_reused_cost0.0012": 2.220446049250313e-16,
+      "early_reused_cost0.0024": 2.220446049250313e-16,
+      "recent_reused_cost0.0012": 2.220446049250313e-16,
+      "recent_reused_cost0.0024": 2.220446049250313e-16
+    },
+    "full_prefix_weights_equal": true,
+    "real_held_execution_prefix_equal": true
+  },
+  "results": {
+    "early_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 36.374418833844466,
+      "CAGR_pct": 11.229367408484547,
+      "daily_MTM_DD_pct": -6.9902620719863195,
+      "year_return_pct": {
+        "2021": 13.280589957514,
+        "2022": -2.609186830643029,
+        "2023": 23.61165431381118
+      },
+      "fees_USDT_10000_start": 111.61835542199329,
+      "turnover_times_starting_equity": 9.30152961849944,
+      "min_cash": 0.7546049773442272,
+      "max_exposure_pct": 40.08856510570543,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -7.397226528056122,
+      "max_accounting_gap": 1.1102230246251565e-15,
+      "realized_price_profit_USDT_10000_start": 3749.0602388064463,
+      "mean_gold_weight_pct": 0.0,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 38,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0002575292808428064
+        },
+        "ETH": {
+          "modeled_trade_days": 41,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0006422300451619676
+        },
+        "PAXG": {
+          "modeled_trade_days": 0,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "early_reused_fixed_gold_cost0.0012": {
+      "return_pct": 28.02253464020097,
+      "CAGR_pct": 8.843896951946629,
+      "daily_MTM_DD_pct": -14.116665553292595,
+      "year_return_pct": {
+        "2021": 11.882628730505296,
+        "2022": -7.763126850044511,
+        "2023": 24.056403847230467
+      },
+      "fees_USDT_10000_start": 231.33089723951838,
+      "turnover_times_starting_equity": 19.27757476995987,
+      "min_cash": 0.2835750044401686,
+      "max_exposure_pct": 75.40189541722864,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -14.737463309082822,
+      "max_accounting_gap": 8.881784197001252e-16,
+      "realized_price_profit_USDT_10000_start": 3033.584361259608,
+      "mean_gold_weight_pct": 29.330322553435884,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 36,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0002379976884171946
+        },
+        "ETH": {
+          "modeled_trade_days": 39,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0005379440128462391
+        },
+        "PAXG": {
+          "modeled_trade_days": 49,
+          "max_daily_quote_participation_pct_at_10000_start": 0.47213637163661437
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "early_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 35.074959559919414,
+      "CAGR_pct": 10.86464299766494,
+      "daily_MTM_DD_pct": -6.991267639401788,
+      "year_return_pct": {
+        "2021": 13.050915288711117,
+        "2022": -2.9260073155683686,
+        "2023": 23.08294262729005
+      },
+      "fees_USDT_10000_start": 222.20001176424628,
+      "turnover_times_starting_equity": 9.258333823510263,
+      "min_cash": 0.7512000624231663,
+      "max_exposure_pct": 40.10124204514624,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -7.398290638369143,
+      "max_accounting_gap": 4.440892098500626e-16,
+      "realized_price_profit_USDT_10000_start": 3729.695967756188,
+      "mean_gold_weight_pct": 0.0,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 38,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0002554634709572959
+        },
+        "ETH": {
+          "modeled_trade_days": 41,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00063903160676738
+        },
+        "PAXG": {
+          "modeled_trade_days": 0,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "early_reused_fixed_gold_cost0.0024": {
+      "return_pct": 25.385583929264932,
+      "CAGR_pct": 8.06955455125291,
+      "daily_MTM_DD_pct": -14.387420347415969,
+      "year_return_pct": {
+        "2021": 11.303542277490507,
+        "2022": -8.408187905006015,
+        "2023": 22.993445905518108
+      },
+      "fees_USDT_10000_start": 458.0683606266425,
+      "turnover_times_starting_equity": 19.086181692776773,
+      "min_cash": 0.2777039906469181,
+      "max_exposure_pct": 75.43312689699462,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -15.006560027511618,
+      "max_accounting_gap": 6.661338147750939e-16,
+      "realized_price_profit_USDT_10000_start": 2996.626753553139,
+      "mean_gold_weight_pct": 29.34409731722822,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 36,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00023364067497403174
+        },
+        "ETH": {
+          "modeled_trade_days": 39,
+          "max_daily_quote_participation_pct_at_10000_start": 0.000531655064607819
+        },
+        "PAXG": {
+          "modeled_trade_days": 49,
+          "max_daily_quote_participation_pct_at_10000_start": 0.46693330867784183
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "early_reused_Cov10_baseline_PAXG_cost2": {
+      "return_pct": 36.374418833844466,
+      "CAGR_pct": 11.229367408484547,
+      "daily_MTM_DD_pct": -6.9902620719863195,
+      "year_return_pct": {
+        "2021": 13.280589957514,
+        "2022": -2.609186830643029,
+        "2023": 23.61165431381118
+      },
+      "fees_USDT_10000_start": 111.61835542199329,
+      "turnover_times_starting_equity": 9.30152961849944,
+      "min_cash": 0.7546049773442272,
+      "max_exposure_pct": 40.08856510570543,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -7.397226528056122,
+      "max_accounting_gap": 1.1102230246251565e-15,
+      "realized_price_profit_USDT_10000_start": 3749.0602388064463,
+      "mean_gold_weight_pct": 0.0,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 38,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0002575292808428064
+        },
+        "ETH": {
+          "modeled_trade_days": 41,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0006422300451619676
+        },
+        "PAXG": {
+          "modeled_trade_days": 0,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "early_reused_fixed_gold_PAXG_cost2": {
+      "return_pct": 26.506803214675156,
+      "CAGR_pct": 8.400096285121617,
+      "daily_MTM_DD_pct": -14.283734311648622,
+      "year_return_pct": {
+        "2021": 11.510077370915184,
+        "2022": -8.13406298281869,
+        "2023": 23.49382863715568
+      },
+      "fees_USDT_10000_start": 361.4985954957036,
+      "turnover_times_starting_equity": 19.161929883606025,
+      "min_cash": 0.280249757787261,
+      "max_exposure_pct": 75.4126013549641,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -14.903499271442778,
+      "max_accounting_gap": 8.881784197001252e-16,
+      "realized_price_profit_USDT_10000_start": 3012.178916963215,
+      "mean_gold_weight_pct": 29.33871587972085,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 36,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0002353763739311748
+        },
+        "ETH": {
+          "modeled_trade_days": 39,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0005341130576227302
+        },
+        "PAXG": {
+          "modeled_trade_days": 49,
+          "max_daily_quote_participation_pct_at_10000_start": 0.46885879093472294
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "recent_reused_Cov10_baseline_cost0.0012": {
+      "return_pct": 39.05129732038881,
+      "CAGR_pct": 13.149826581062207,
+      "daily_MTM_DD_pct": -7.5565427275781865,
+      "year_return_pct": {
+        "2024": 16.216072620353096,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483695
+      },
+      "fees_USDT_10000_start": 168.0262496780076,
+      "turnover_times_starting_equity": 14.0021874731673,
+      "min_cash": 0.7390518110831137,
+      "max_exposure_pct": 44.03206260520997,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -8.53789540260511,
+      "max_accounting_gap": 1.3322676295501878e-15,
+      "realized_price_profit_USDT_10000_start": 4073.1559817168995,
+      "mean_gold_weight_pct": 0.0,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 50,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0005336161948315014
+        },
+        "ETH": {
+          "modeled_trade_days": 41,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00048150371202105777
+        },
+        "PAXG": {
+          "modeled_trade_days": 0,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "recent_reused_fixed_gold_cost0.0012": {
+      "return_pct": 67.70828058697107,
+      "CAGR_pct": 21.380885854385756,
+      "daily_MTM_DD_pct": -11.682500231754355,
+      "year_return_pct": {
+        "2024": 24.314556848001168,
+        "2025": 31.623446535253862,
+        "2026": 2.494193328698713
+      },
+      "fees_USDT_10000_start": 364.1515573123573,
+      "turnover_times_starting_equity": 30.34596310936311,
+      "min_cash": 0.35880215053929787,
+      "max_exposure_pct": 78.00803621775077,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -11.96545633792574,
+      "max_accounting_gap": 6.661338147750939e-16,
+      "realized_price_profit_USDT_10000_start": 7134.979616009467,
+      "mean_gold_weight_pct": 27.078557763306655,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 50,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00047914762989417433
+        },
+        "ETH": {
+          "modeled_trade_days": 39,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00033273480853640244
+        },
+        "PAXG": {
+          "modeled_trade_days": 66,
+          "max_daily_quote_participation_pct_at_10000_start": 0.40735252525377735
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "recent_reused_Cov10_baseline_cost0.0024": {
+      "return_pct": 37.102071959543295,
+      "CAGR_pct": 12.552807184389646,
+      "daily_MTM_DD_pct": -7.768151264532685,
+      "year_return_pct": {
+        "2024": 15.533131827406233,
+        "2025": 12.05867236516287,
+        "2026": 5.8990341516533595
+      },
+      "fees_USDT_10000_start": 333.66890052461997,
+      "turnover_times_starting_equity": 13.9028708551925,
+      "min_cash": 0.7376655793339459,
+      "max_exposure_pct": 44.05320608111078,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -8.70721365868883,
+      "max_accounting_gap": 6.661338147750939e-16,
+      "realized_price_profit_USDT_10000_start": 4043.8760964789517,
+      "mean_gold_weight_pct": 0.0,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 50,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0005270467591054674
+        },
+        "ETH": {
+          "modeled_trade_days": 41,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00047503535672863666
+        },
+        "PAXG": {
+          "modeled_trade_days": 0,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "recent_reused_fixed_gold_cost0.0024": {
+      "return_pct": 63.20988558658212,
+      "CAGR_pct": 20.150426356004502,
+      "daily_MTM_DD_pct": -11.869429890228943,
+      "year_return_pct": {
+        "2024": 22.790652118587353,
+        "2025": 30.294697760128763,
+        "2026": 2.0127397880687514
+      },
+      "fees_USDT_10000_start": 717.875740126362,
+      "turnover_times_starting_equity": 29.91148917193175,
+      "min_cash": 0.35152140361146733,
+      "max_exposure_pct": 78.05266911761099,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -12.162490415931282,
+      "max_accounting_gap": 1.1102230246251565e-15,
+      "realized_price_profit_USDT_10000_start": 7038.864298784575,
+      "mean_gold_weight_pct": 27.09007813162256,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 50,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00046744340680194717
+        },
+        "ETH": {
+          "modeled_trade_days": 39,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0003319711715779733
+        },
+        "PAXG": {
+          "modeled_trade_days": 66,
+          "max_daily_quote_participation_pct_at_10000_start": 0.40678854780548745
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "recent_reused_Cov10_baseline_PAXG_cost2": {
+      "return_pct": 39.05129732038881,
+      "CAGR_pct": 13.149826581062207,
+      "daily_MTM_DD_pct": -7.5565427275781865,
+      "year_return_pct": {
+        "2024": 16.216072620353096,
+        "2025": 12.620921094963622,
+        "2026": 6.240419090483695
+      },
+      "fees_USDT_10000_start": 168.0262496780076,
+      "turnover_times_starting_equity": 14.0021874731673,
+      "min_cash": 0.7390518110831137,
+      "max_exposure_pct": 44.03206260520997,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -8.53789540260511,
+      "max_accounting_gap": 1.3322676295501878e-15,
+      "realized_price_profit_USDT_10000_start": 4073.1559817168995,
+      "mean_gold_weight_pct": 0.0,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 50,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0005336161948315014
+        },
+        "ETH": {
+          "modeled_trade_days": 41,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00048150371202105777
+        },
+        "PAXG": {
+          "modeled_trade_days": 0,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    },
+    "recent_reused_fixed_gold_PAXG_cost2": {
+      "return_pct": 65.2813662704426,
+      "CAGR_pct": 20.71964455409685,
+      "daily_MTM_DD_pct": -11.78125888975673,
+      "year_return_pct": {
+        "2024": 23.486015235454573,
+        "2025": 30.898637507782034,
+        "2026": 2.251806965795633
+      },
+      "fees_USDT_10000_start": 554.5422648533762,
+      "turnover_times_starting_equity": 30.110684793960125,
+      "min_cash": 0.3551248799938257,
+      "max_exposure_pct": 78.01847153842166,
+      "terminal_cash_equity_gap": 0.0,
+      "necessary_screen_gate": false,
+      "daily_multiasset_low_envelope_vs_prior_close_peak_pct": -12.075087135566577,
+      "max_accounting_gap": 1.3322676295501878e-15,
+      "realized_price_profit_USDT_10000_start": 7082.678891897647,
+      "mean_gold_weight_pct": 27.08518021043787,
+      "activity_diagnostics": {
+        "BTC": {
+          "modeled_trade_days": 50,
+          "max_daily_quote_participation_pct_at_10000_start": 0.0004728115025768393
+        },
+        "ETH": {
+          "modeled_trade_days": 39,
+          "max_daily_quote_participation_pct_at_10000_start": 0.00033227020265013757
+        },
+        "PAXG": {
+          "modeled_trade_days": 66,
+          "max_daily_quote_participation_pct_at_10000_start": 0.40703907018743757
+        }
+      },
+      "risk_limitation": "Weighted sum of actual held-asset daily lows; extremes need not coincide. Prior CLOSE peaks are observed. Monday before-order OPEN separately captured, actual quotes/fills/intraday path not certified."
+    }
+  },
+  "limitations": "Preregistered fixed gold sleeve, no weight/filter/universe/cost sweep. Reused history, modeled OPEN fills, no cash yield or redemption. No actual Freqtrade/intraday/forward certification or activation."
+}

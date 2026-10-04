@@ -1,0 +1,70 @@
+{
+  "early_reused": {
+    "peak": "2022-03-08 00:00:00+00:00",
+    "trough": "2022-11-09 00:00:00+00:00",
+    "daily_MTM_DD_pct": -14.116665553292595,
+    "episode_asset_pnl_USDT_at_10000_start": {
+      "BTC": -233.4363078116706,
+      "ETH": -210.5883937728438,
+      "PAXG": -1172.2513364665483,
+      "fees": -33.594269810684146
+    },
+    "episode_net_equity_change_USDT": -1649.8703078618448,
+    "all_days_attribution_max_abs_gap": 5.4262150328554526e-15,
+    "annual_asset_pnl_USDT_at_10000_start": {
+      "2021": {
+        "BTC": 220.45620168923227,
+        "ETH": 1170.4141404716254,
+        "PAXG": -145.61583209918103,
+        "fees": -56.991637011112424
+      },
+      "2022": {
+        "BTC": -286.01000444267123,
+        "ETH": -106.99641153049014,
+        "PAXG": -399.17329710831507,
+        "fees": -76.37932606987114
+      },
+      "2023": {
+        "BTC": 1467.658023069617,
+        "ETH": 864.4306918600938,
+        "PAXG": 248.4208493496571,
+        "fees": -97.959934158509
+      }
+    },
+    "note": "Existing fixed-rule holdings attribution only; neither a no-fee counterfactual nor an alternative hedge backtest."
+  },
+  "recent_reused": {
+    "peak": "2026-01-28 00:00:00+00:00",
+    "trough": "2026-06-10 00:00:00+00:00",
+    "daily_MTM_DD_pct": -11.682500231754368,
+    "episode_asset_pnl_USDT_at_10000_start": {
+      "BTC": 32.576799981312135,
+      "ETH": -26.519485958129366,
+      "PAXG": -2004.5913527453183,
+      "fees": -33.63497294218
+    },
+    "episode_net_equity_change_USDT": -2032.1690116653012,
+    "all_days_attribution_max_abs_gap": 3.8094527532450684e-14,
+    "annual_asset_pnl_USDT_at_10000_start": {
+      "2024": {
+        "BTC": 1014.8506270059074,
+        "ETH": 671.097555318058,
+        "PAXG": 881.5378557845683,
+        "fees": -136.0303533087073
+      },
+      "2025": {
+        "BTC": 749.4055871988792,
+        "ETH": 868.1497354316195,
+        "PAXG": 2465.019037941137,
+        "fees": -151.31961853573
+      },
+      "2026": {
+        "BTC": -80.09223466727983,
+        "ETH": 539.1139722070508,
+        "PAXG": 25.89747978874419,
+        "fees": -76.801585467886
+      }
+    },
+    "note": "Existing fixed-rule holdings attribution only; neither a no-fee counterfactual nor an alternative hedge backtest."
+  }
+}

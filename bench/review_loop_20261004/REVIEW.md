@@ -210,3 +210,23 @@ Protocol `5ad08c6` and tested engine/input manifest `5a5d328` preceded outcomes.
 **Reject R9 without signal, threshold, horizon or risk-target tuning.** It reduces early drawdown only modestly and worsens recent risk while reducing both windows' returns. Early allocation counts:62 cash,46 ETH,44 BTC weeks; recent54 cash,50 ETH,36 BTC. Non-cash switches12/11. Cost allowances are138.90/160.74USDT per10,000 starting account, against matched baseline111.62/168.03. The recent failure cannot be attributed simply to greater fees. Candidate years2021+15.46%,2022-2.60%,2023+16.82%,2024+7.56%,2025+14.27%,2026 partial+5.19%.
 
 Daily CLOSE also understates held-position risk: actual single-asset daily lows versus previously observed high peaks produce7.20%/9.81% drawdowns (7.21%/9.99% at doubled costs). This diagnostic uses actual held-asset highs/lows, ignores unheld-asset extremes and verifies peak precedence across days. It is not a quote/fill or before-Monday-order path; same-day high/low order remains unknown. Keep separate from daily MTM. No strategy class or bot follows this rejection. Current-source bench/cross-venue/panel suite:192 tests plus16 subtests pass, two existing dependency deprecation warnings. No running cohort changed.
+
+## R10 fixed gold result and reflection
+
+Protocol `b3874dc` preceded new PAXG prices; inputs and tested engine `1690b82` preceded performance outcomes.72 official monthly spot archives and their checksums retain144 sources and2,191 consecutive actual daily bars, with nonzero trading activity every day. Network-disabled cache replay reproduces the parsed calendar/activity/OHLC. The generalized three-asset ledger reproduces all four R8 two-asset control curves within1e-12. Long-only units, realized/unrealized price profit, initial/partial/final costs, genuine held execution prefixes and causal covariance prefixes reconcile; no funding or cash yield added.
+
+| Fixed gold sleeve | 2021-02–2023-12 | 2024-01–2026-08 |
+|---|---|---|
+| Costed CAGR | +8.84% | +21.38% |
+| Daily account MTM drawdown | 14.12% | 11.68% |
+| Doubled-cost CAGR /drawdown | +8.07% /14.39% | +20.15% /11.87% |
+| PAXG-only doubled-cost CAGR | +8.40% | +20.72% |
+| Mean account PAXG weight |29.33%|27.08%|
+
+**Reject R10 without gold weight/filter/asset/risk tuning.** Early return fails12% and both risk windows materially worsen.2021+11.88%,2022-7.76%,2023+24.06%,2024+24.31%,2025+31.62%,2026 partial+2.49%. Adding a distinct asset replaces part of low-risk cash with another loss-bearing position. Lower instantaneous covariance does not prevent a prolonged gold decline. The recent high return reflects favorable gold/crypto paths, not a proven downside hedge.
+
+Daily portfolio price changes reconcile to held-unit asset P&L minus fees within4e-14 normalized account units. Worst early peak2022-03-08 to trough2022-11-09 loses1,649.87USDT per10,000 starting account: BTC-233.44,ETH-210.59,PAXG-1,172.25,fees-33.59. Worst recent peak2026-01-28 to trough2026-06-10 loses2,032.17USDT: BTC+32.58,ETH-26.52,PAXG-2,004.59,fees-33.63. Gold dominates these losses. This is attribution of existing holdings, not an alternative-rule counterfactual. Keep replayable `r10_attribution.py/json`.
+
+Actual held-asset daily low envelopes give14.74%/11.97% below prior CLOSE peaks, but multi-asset extremes need not coincide and cannot certify exact intraday risk. Largest modeled PAXG daily quote-volume participation at10,000 initial capital is0.47%/0.41%; this only checks daily activity/capacity, not spread or timestamp fill proof. Final account identity error stays below9e-16.200 current-source tests plus16 subtests pass with the same two warnings. No Freqtrade class, bot or deployment follows this rejection.
+
+The next source investigation is contractual downside insurance rather than another directional filter. Real historical option premiums, marks, expiry identity and quote availability must be established first; a theoretical payoff or an invented volatility-based premium cannot establish a profitable tradable strategy.

@@ -382,7 +382,7 @@
     "historical_profitability_lead": "RiskHoldR2bCov10",
     "strict_default_gate_winner": null,
     "adopted_new_strategy": false,
-    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR. R8 crowding veto does not improve worst loss paths; R9 rotation fails returns and risk. Reused history is not fresh OOS. R10 fixed PAXG sleeve preregistered before its prices/outcomes. No adopted winner.",
+    "reason": "R1 actual Freqtrade Cov10 remains profitable but exceeds5% daily risk. R7 dated carry is positive at doubled costs but below12% CAGR. R8 crowding veto does not improve worst loss paths; R9 rotation fails returns and risk. Reused history is not fresh OOS. R10 fixed PAXG sleeve preregistered before its prices/outcomes. No adopted winner. R10 raises gold downside risk:8.84%/21.38% CAGR and14.12%/11.68% daily DD; rejected. Contractual insurance source availability investigation follows; no candidate/price result yet.",
     "low_return_price_screen_lead": "R7 equal-allocation dated carry: costed CAGR2.20%/3.73%, double cost1.45%/2.84%; not exact mark/execution certified"
   },
   {
@@ -516,5 +516,101 @@
     "adoption_gate": false,
     "disposition": "rejected frozen necessary screen; no tuning or activation",
     "held_low_vs_prior_high_DD_pct": -9.993454282115245
+  },
+  {
+    "trial": "R10 matched control",
+    "window": "early_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 11.229367408484547,
+    "daily_MTM_DD_pct": -6.9902620719863195,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 fixed gold",
+    "window": "early_reused_fixed_gold_cost0.0012",
+    "CAGR_pct": 8.843896951946629,
+    "daily_MTM_DD_pct": -14.116665553292595,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 matched control",
+    "window": "early_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 10.86464299766494,
+    "daily_MTM_DD_pct": -6.991267639401788,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 fixed gold",
+    "window": "early_reused_fixed_gold_cost0.0024",
+    "CAGR_pct": 8.06955455125291,
+    "daily_MTM_DD_pct": -14.387420347415969,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 matched control",
+    "window": "early_reused_Cov10_baseline_PAXG_cost2",
+    "CAGR_pct": 11.229367408484547,
+    "daily_MTM_DD_pct": -6.9902620719863195,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 fixed gold",
+    "window": "early_reused_fixed_gold_PAXG_cost2",
+    "CAGR_pct": 8.400096285121617,
+    "daily_MTM_DD_pct": -14.283734311648622,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 matched control",
+    "window": "recent_reused_Cov10_baseline_cost0.0012",
+    "CAGR_pct": 13.149826581062207,
+    "daily_MTM_DD_pct": -7.5565427275781865,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 fixed gold",
+    "window": "recent_reused_fixed_gold_cost0.0012",
+    "CAGR_pct": 21.380885854385756,
+    "daily_MTM_DD_pct": -11.682500231754355,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 matched control",
+    "window": "recent_reused_Cov10_baseline_cost0.0024",
+    "CAGR_pct": 12.552807184389646,
+    "daily_MTM_DD_pct": -7.768151264532685,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 fixed gold",
+    "window": "recent_reused_fixed_gold_cost0.0024",
+    "CAGR_pct": 20.150426356004502,
+    "daily_MTM_DD_pct": -11.869429890228943,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 matched control",
+    "window": "recent_reused_Cov10_baseline_PAXG_cost2",
+    "CAGR_pct": 13.149826581062207,
+    "daily_MTM_DD_pct": -7.5565427275781865,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
+  },
+  {
+    "trial": "R10 fixed gold",
+    "window": "recent_reused_fixed_gold_PAXG_cost2",
+    "CAGR_pct": 20.71964455409685,
+    "daily_MTM_DD_pct": -11.78125888975673,
+    "adoption_gate": false,
+    "disposition": "rejected; early return and both risk gates fail; no gold/risk/filter tuning or activation"
   }
 ]
