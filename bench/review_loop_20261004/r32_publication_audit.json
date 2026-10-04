@@ -1,0 +1,170 @@
+{
+  "adopted": false,
+  "anomaly_plan_commit": "cbf2d76",
+  "archive_value_exactly_matches_publisher_average": true,
+  "calendar_entry": {
+    "native_date_text": "20251229",
+    "native_day_index": 3,
+    "native_month_index": 0,
+    "native_year_index": 1,
+    "release_date": "2025-12-29",
+    "report_url": "https://www.federalreserve.gov/releases/h41/20251229/"
+  },
+  "current_headers_or_calendar_not_authenticated_first_receipt": true,
+  "current_http_last_modified_as_corrobation_only": "Mon, 29 Dec 2025 21:30:05 GMT",
+  "full_required_source_gate": false,
+  "modeled_decision_eastern": "2025-12-28T19:00:00-05:00",
+  "modeled_decision_utc": "2025-12-29T00:00:00+00:00",
+  "native_input_sha256": {
+    "r31_cohort_sources/manifest.json": "472dcfa75e3a4cc62b11244c5b303e4f12456c4e60d587d53aaca54c84e0a38f",
+    "r31_cohort_sources/raw/172d3ce13e6559ca8a64dd801cbd1d15221a6cde1ad23b350074ba87bcabef26": "9703aa6f9cd9512c6bbcfb444f7dcd10fce0c674ff7f5f39fc30c216253238b9",
+    "r31_cohort_sources/raw/97d06bd5b30a4a9ff2e554dc7a56ea7bd557de94a3b310970f346a553856c724": "57a7b2c3e60080d27aa507bbc1058ee335e9f8954a8ac063d92ad58aa5ee4291",
+    "r31_failed_cohort_snapshot.json": "472dcfa75e3a4cc62b11244c5b303e4f12456c4e60d587d53aaca54c84e0a38f",
+    "r31_initial_cohort_contract_failure.json": "757aec0535b7acfd703471d85f9922d169c6476f79064b763297cd77e87e22a9",
+    "r31_sources/manifest.json": "79983323b3d5a892595c095935b44d97541115c3d16f24729bdf6ab31544ef5f",
+    "r31_units_sources/manifest.json": "90565dfae01592152d10d390a926f78c4052b4083e64c6ff95f670145feab88a",
+    "r31_units_sources/raw/4803d46f5002c51a38e17fd0cd3689ac7a5c629abaec43faa42c4d1931954381": "c9c5fbf1d06b233b3345c61f7e8ed9666398088c56b225c451f22ab1a919c6e1",
+    "r31_version_aware_source_audit.json": "cb46550121edbb3813a18a38b3e4c83758e8182724392ff735357fe8117f96e4",
+    "r32_delayed_source/manifest.json": "a6115ec3719b0572bc3aba705f8afdafae3f0217555517677d5e3f5206c46a96",
+    "r32_delayed_source/raw/237cf9b94dc89f73b851e77d38a7064b52b75fcb091fa94900f83d158e35c5e3": "4aefd80a237747ff30309d7513168d79f2cab0a13f3f3c7a0f4b62c459b10ba8",
+    "r32_source_audit.json": "9d33dc42506e46bf2ee591f75cf3ceb11ebd784017699b1826d96af22b8327dc",
+    "r32_sources/manifest.json": "eae990a50a7f923cf7de3dad44889e308a91025e2916273b51ffa90127768d1f",
+    "r32_sources/raw/042e8eaf1d3b10ffbcc8c0c9569d1cb03e9e9aabc649700baeec801b866299e8": "ba642c2503c2ca71f81f70a99790b2373a10b986f5c25779dc301d9c888c54ff",
+    "r32_sources/raw/2250f118ef06ef66d2084c267d8d3da90b262f2aaab6a741218e9945acfff472": "9d7341f9d28e7dcb863af37441917d3d43f5f40f9bc0ef91a70d94dfdb2d46bc",
+    "r32_sources/raw/25937e3ae0282ad52373513e934729ea6edbb3edc62dad2534dad4ac9fa57a1c": "cd8a52e1193c63eefb0a4a41710c164081c2f42150e97ab0ba389cce7a1847f3",
+    "r32_sources/raw/42609955b0806f3876d1550ac074792771efc9fdeccf5454c249b612d7631e09": "e183460d3735fe5f9b59ea21a753e11f291233077776bb4878da3d81c84442fa",
+    "r32_sources/raw/53ab5960f0e0ffc87b35179581475228d15c04f76a93bd7ecb7372903980a8a3": "0aef6e75705b9c1f8fabd70c8dcd7006506457731f9d4a41dc61cb56a79099e1",
+    "r32_sources/raw/70ee1f4295dd7b1e9f419a0585916d0041ca1b456b4691ddd7ab78f4fa0df08e": "9da748c96814e3caee94bccd2e83c586074b8a2604a0b16854ca247609a7c2fe",
+    "r32_sources/raw/7a39530b0e7d3cd3d31fadd8a2ce49a09586b99a51895f2bda6a6ebb1b152dc7": "a4a2c78e1b1b9bdbb08cc5c0f524718e04e1187037d04fd658ffe9010ed3cf92",
+    "r32_sources/raw/7a4e154d7ce13291296b42ff2d0e14917746f3944848dbe8d0bfda9a0cc0e8d6": "71a368d2da34e8bb9f34da334ffc18e5a43378a04e6342a325adb31c339eeee4",
+    "r32_sources/raw/7d0ded29f05d466b89bfd32b18b47751a94f92b3a61be63d6705df180afd08c1": "2d85dc1d07c42d948ed5526cbbe16ed4535c8f1bdc2722b9361b7f79253b59b4",
+    "r32_sources/raw/805dffd268d9409f2cc05652bb61f81a6f757db888522e0af6673d066b57dd66": "3285c3c4dd5b34b176fd1b085aec5c797d426592688d8ff602748d723ca2203c",
+    "r32_sources/raw/85d2787ba2d12ef76671cd487559c7f4a528a44219ba04742304bbc2ce487056": "70c932558dace0862f051aec065df3d66479fc0bf686a934d940959969c3ad31",
+    "r32_sources/raw/a8e5cc307726e7a059e879f6b6064eaede29c530baf08f9bfe4f2cddf0ddabfe": "7f4a1e867c255c6f5194d56cafb38a6e695aa24c0e54e8916dd37cb21685d0e6",
+    "r32_sources/raw/b7cb329fc2fb227579d3115326daa0c4b4a3fae000f8741a553193520c2188bc": "c2221d4c0d9ee46b331545c270333a15d0de5246bb3216b24c0f01999065152d",
+    "r32_sources/raw/bac4b3abe30e6d1b59dc0af9ef833f55f462f2b839cd90047721b78aa961fa21": "9152d194464d66dad1f4f1ffdf8bff66728bab040de3aa2682e516141add527a",
+    "r32_sources/raw/cc35ea2b969cabebb7cec70834f1ed7d0e09c085c309d49b0144a9105bda1c99": "533bee16085e0a4d2a86e7d4b00710f8a22f3a9c093a5d8a9196ef4d45911339",
+    "r32_sources/raw/dbcc9a52e2e4f368d68d8c0c7e44b18eb0aab531c7687ae82c1924fa8fa4c527": "31441487cc7ee8b99150eeb9e1a2d0272e397d9f749916bba9217c301124bb3d",
+    "r32_sources/raw/f1de45158f06fd8966e5b517831c193e0b7de5eee07ec9a56f7fa8e9bcf68d3c": "c8a059f3f0bd47a40b91eba7149f838a2c1ef3f4e8dabab3112a43bca7243966",
+    "r32_sources/raw/f85661e3847b8579c9ba3df201c18be345a5f57bc87ef65604a3b569b4420180": "0511d3f5bd470277e767c48f864e668e154bf159cd8db61c80d95cf2d4046919"
+  },
+  "no_general_claim_all_archive_versions_wrong": true,
+  "no_r31_rewrite_or_missing_cash_or_late_report_rescue": true,
+  "no_valid_full_report_policy_or_economic_outcomes": true,
+  "original_native_archive": {
+    "native_csv_row_index": 6,
+    "native_units": {
+      "exact_multiplier_to_million_usd": 1,
+      "native_observation_interval": "2002-12-18 to 2026-09-30",
+      "native_release_interval": "2025-11-13 to 2026-10-01",
+      "observation_end": "2026-09-30",
+      "observation_start": "2002-12-18",
+      "release_end": "2026-10-01",
+      "release_start": "2025-11-13",
+      "units": "Millions of U.S. Dollars"
+    },
+    "native_value_text": "2955581",
+    "normalized_million_usd": "2955581",
+    "observation_date": "2025-12-24",
+    "source_sha256": "9703aa6f9cd9512c6bbcfb444f7dcd10fce0c674ff7f5f39fc30c216253238b9",
+    "vintage": "2025-12-27"
+  },
+  "publisher": {
+    "forensic_exception_only": true,
+    "native_header_cells": {
+      "t2h1c2": {
+        "attributes": {
+          "colspan": "3",
+          "id": "t2h1c2",
+          "style": "width:251.5pt; border-top-style:solid; border-top-width:1pt; border-right-style:solid; border-right-width:1pt; border-bottom-style:solid; border-bottom-width:1pt"
+        },
+        "table_index": 2,
+        "text": "Averages of daily figures"
+      },
+      "t2h1c3": {
+        "attributes": {
+          "id": "t2h1c3",
+          "rowspan": "3",
+          "style": "width:85.5pt; border-top-style:solid; border-top-width:1pt; border-bottom-style:solid; border-bottom-width:1pt"
+        },
+        "table_index": 2,
+        "text": "WednesdayDec 24, 2025"
+      },
+      "t2h2c1": {
+        "attributes": {
+          "id": "t2h2c1",
+          "rowspan": "2",
+          "style": "width:85pt; border-right-style:solid; border-right-width:1pt; border-bottom-style:solid; border-bottom-width:1pt"
+        },
+        "table_index": 2,
+        "text": "Week endedDec 24, 2025"
+      },
+      "t2h3c1": {
+        "attributes": {
+          "id": "t2h3c1",
+          "style": "width:80.5pt; border-right-style:solid; border-right-width:1pt; border-bottom-style:solid; border-bottom-width:1pt"
+        },
+        "table_index": 2,
+        "text": "Dec 17, 2025"
+      },
+      "t2h3c2": {
+        "attributes": {
+          "id": "t2h3c2",
+          "style": "width:85pt; border-right-style:solid; border-right-width:1pt; border-bottom-style:solid; border-bottom-width:1pt"
+        },
+        "table_index": 2,
+        "text": "Dec 25, 2024"
+      }
+    },
+    "native_units": "Millions of dollars",
+    "native_value_cells": [
+      {
+        "attributes": {
+          "header": "t2r1c1 t2h1c2 t2h2c1 ",
+          "id": "t2r16c2",
+          "style": "width:85pt; border-right-style:solid; border-right-width:1pt; border-bottom-style:solid; border-bottom-width:1pt; vertical-align:bottom"
+        },
+        "table_index": 2,
+        "text": "2,955,581"
+      },
+      {
+        "attributes": {
+          "header": "t2r1c1 t2h1c2 t2h2c2 t2h3c1 ",
+          "id": "t2r16c3",
+          "style": "width:80.5pt; border-right-style:solid; border-right-width:1pt; border-bottom-style:solid; border-bottom-width:1pt; vertical-align:bottom"
+        },
+        "table_index": 2,
+        "text": "-\u00a0\u00a0\u00a0 3,463"
+      },
+      {
+        "attributes": {
+          "header": "t2r1c1 t2h1c2 t2h2c2 t2h3c2 ",
+          "id": "t2r16c4",
+          "style": "width:85pt; border-right-style:solid; border-right-width:1pt; border-bottom-style:solid; border-bottom-width:1pt; vertical-align:bottom"
+        },
+        "table_index": 2,
+        "text": "-\u00a0 291,801"
+      },
+      {
+        "attributes": {
+          "header": "t2r1c1 t2h1c3 ",
+          "id": "t2r16c5",
+          "style": "width:85.5pt; border-bottom-style:solid; border-bottom-width:1pt; vertical-align:bottom"
+        },
+        "table_index": 2,
+        "text": "2,980,514"
+      }
+    ],
+    "no_generalized_or_relaxed_r31_parser": true,
+    "observation_date": "2025-12-24",
+    "release_date": "2025-12-29",
+    "signed_week_change_million_usd": -3463,
+    "signed_year_change_million_usd": -291801,
+    "source_body_sha256": "4aefd80a237747ff30309d7513168d79f2cab0a13f3f3c7a0f4b62c459b10ba8",
+    "wednesday_level_million_usd": 2980514,
+    "week_average_million_usd": 2955581
+  },
+  "source_only": true,
+  "source_publication_date_after_decision_eastern_date": true,
+  "vintage_label_is_not_sufficient_publication_clock_certificate": true
+}

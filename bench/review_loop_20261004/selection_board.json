@@ -1668,5 +1668,22 @@
     "trial": "R31 four-week reserve quantity source gate",
     "unavailable_native_cells": 1,
     "window": "full_292_native_versions_source_only"
+  },
+  {
+    "adopted": false,
+    "adoption_gate": false,
+    "anomaly_plan_commit": "cbf2d76",
+    "calendar_selected_cells": 582,
+    "disposition": "Retain actual Monday release and original premature-vintage counterexample; no fixed-date or missing cash rescue",
+    "fresh_OOS": false,
+    "full_required_source_gate": false,
+    "no_valid_full_policy_or_performance": true,
+    "publication_clock_counterexample": true,
+    "required_cells": 584,
+    "source_plan_commit": "89bba77",
+    "trial": "R32 original publisher calendar source gate",
+    "unavailable_calendar_cells": 2,
+    "unique_available_editions": 295,
+    "window": "full_292_decisions_source_only"
   }
 ]

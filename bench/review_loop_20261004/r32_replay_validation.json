@@ -1,0 +1,10 @@
+{
+  "adopted": false,
+  "offline_network_disabled": true,
+  "original_audit_sha256": {
+    "r32_publication_audit.json": "6d3cd1073a0bc2e299df6bf43c92b77df4bc2a6a5e2503f39d41c82ca71c5368",
+    "r32_source_audit.json": "9d33dc42506e46bf2ee591f75cf3ceb11ebd784017699b1826d96af22b8327dc"
+  },
+  "original_source_audits_byte_identical": true,
+  "source_input_hashes_verified": 31
+}

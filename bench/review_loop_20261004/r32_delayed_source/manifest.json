@@ -1,0 +1,20 @@
+{
+  "anomaly_plan_commit": "cbf2d76",
+  "no_new_full_cohort_or_policy_or_performance": true,
+  "source": {
+    "bytes": 706315,
+    "final_url": "https://www.federalreserve.gov/releases/h41/20251229/",
+    "headers": {
+      "Content-Type": "text/html",
+      "Date": "Sun, 04 Oct 2026 17:59:31 GMT",
+      "Last-Modified": "Mon, 29 Dec 2025 21:30:05 GMT"
+    },
+    "path": "raw/237cf9b94dc89f73b851e77d38a7064b52b75fcb091fa94900f83d158e35c5e3",
+    "requested_utc": "2026-10-04T17:59:29.646329+00:00",
+    "retrieved_utc": "2026-10-04T17:59:31.477241+00:00",
+    "sha256": "4aefd80a237747ff30309d7513168d79f2cab0a13f3f3c7a0f4b62c459b10ba8",
+    "status": 200,
+    "url": "https://www.federalreserve.gov/releases/h41/20251229/"
+  },
+  "source_stage_only": true
+}
