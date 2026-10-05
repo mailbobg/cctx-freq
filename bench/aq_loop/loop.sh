@@ -29,8 +29,8 @@ print(pend[0]['id'] if pend else 'NONE')
 if [[ $ITEM == NONE ]]; then
   # queue drained: ask the LLM advisor for the next batch (max 5 refills)
   REFILLS=$($PY -c "import json; print(json.load(open('$LOOP/queue.json')).get('refills', 0))")
-  if [[ $REFILLS -lt 50 ]]; then
-    echo "$(date -u +%FT%TZ) queue drained, asking advisor (refill $((REFILLS+1))/50)"
+  if [[ $REFILLS -lt 5 ]]; then
+    echo "$(date -u +%FT%TZ) queue drained, asking advisor (refill $((REFILLS+1))/5)"
     $PY $LOOP/advise.py $LOOP/queue.json >> $LOOP/cron.log 2>&1
     $PY -c "
 import json
