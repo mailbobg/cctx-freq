@@ -1,0 +1,58 @@
+{
+  "add_config_files": [
+    "common.json",
+    "secrets.json",
+    "local-network.json"
+  ],
+  "strategy": "E1V1BEARDBLONLYH",
+  "bot_name": "e1v1beardblonlyh",
+  "dry_run": true,
+  "dry_run_wallet": 10000,
+  "trading_mode": "spot",
+  "margin_mode": "",
+  "stake_currency": "USDT",
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 0.99,
+  "timeframe": "1h",
+  "max_open_trades": 5,
+  "fee": 0.001,
+  "process_only_new_candles": true,
+  "use_exit_signal": true,
+  "force_entry_enable": false,
+  "unfilledtimeout": {
+    "entry": 10,
+    "exit": 10,
+    "exit_timeout_count": 0,
+    "unit": "minutes"
+  },
+  "entry_pricing": {
+    "price_side": "other",
+    "use_order_book": false,
+    "order_book_top": 1,
+    "price_last_balance": 0.0
+  },
+  "exit_pricing": {
+    "price_side": "other",
+    "use_order_book": false,
+    "order_book_top": 1
+  },
+  "db_url": "sqlite:///user_data/tradesv3.e1v1beardblonlyh.dryrun.sqlite",
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "exchange": {
+    "name": "binance",
+    "enable_ws": false,
+    "pair_whitelist": [
+      "BTC/USDT",
+      "SOL/USDT",
+      "AVAX/USDT"
+    ],
+    "pair_blacklist": []
+  },
+  "api_server": {
+    "listen_port": 8102
+  }
+}

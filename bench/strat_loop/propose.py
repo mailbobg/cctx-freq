@@ -35,7 +35,7 @@ MAX_TOKENS = 12000
 
 SYSTEM = (
     "You write freqtrade IStrategy files. Reply with EXACTLY this shape, nothing else: "
-    "first line `# FILE: E1V1xxxH.py` (E1V1 + 1-16 uppercase alnum + H), "
+    "first line `# FILE: PiE1V1xxxH.py` (PiE1V1 + 1-12 uppercase alnum + H), "
     "second line `# WHY: one sentence hypothesis`, then ONE python fenced block "
     "with the COMPLETE strategy file. Hard constraints: single self-contained file, "
     "class name == filename stem, INTERFACE_VERSION=3, timeframe 1h, "
@@ -48,9 +48,54 @@ SYSTEM = (
     "No prose outside the 2 header lines + 1 code block."
 )
 
-FILE_RE = re.compile(r"^#\s*FILE:\s*(E1V1[A-Z0-9]{1,16}H)\.py\s*$", re.M)
+FILE_RE = re.compile(r"^#\s*FILE:\s*(PiE1V1[A-Z0-9]{1,12}H)\.py\s*$", re.M)
 WHY_RE = re.compile(r"^#\s*WHY:\s*(.+?)\s*$", re.M)
 CODE_RE = re.compile(r"```python\n(.*?)```", re.S)
+
+
+def bots_dir(qpath: Path) -> Path:
+    return qpath.parent.parent.parent / "bots"
+
+
+def ensure_bot_entry(qpath: Path, fname: str) -> str:
+    """Every new strategy gets a stopped panel entry (panel defaults unknown bots to stopped)."""
+    bdir = bots_dir(qpath)
+    bname = fname.lower()
+    bpath = bdir / f"{bname}.json"
+    if bpath.exists():
+        return "exists"
+    used = set()
+    for f in bdir.glob("*.json"):
+        try:
+            p = json.loads(f.read_text()).get("api_server", {}).get("listen_port")
+            if isinstance(p, int):
+                used.add(p)
+        except Exception:
+            pass
+    port = 8102
+    while port in used:
+        port += 1
+    cfg = {
+        "add_config_files": ["common.json", "secrets.json", "local-network.json"],
+        "strategy": fname, "bot_name": bname,
+        "dry_run": True, "dry_run_wallet": 10000,
+        "trading_mode": "spot", "margin_mode": "",
+        "stake_currency": "USDT", "stake_amount": "unlimited",
+        "tradable_balance_ratio": 0.99, "timeframe": "1h",
+        "max_open_trades": 5, "fee": 0.001,
+        "process_only_new_candles": True, "use_exit_signal": True,
+        "force_entry_enable": False,
+        "unfilledtimeout": {"entry": 10, "exit": 10, "exit_timeout_count": 0, "unit": "minutes"},
+        "entry_pricing": {"price_side": "other", "use_order_book": False, "order_book_top": 1, "price_last_balance": 0.0},
+        "exit_pricing": {"price_side": "other", "use_order_book": False, "order_book_top": 1},
+        "db_url": f"sqlite:///user_data/tradesv3.{bname}.dryrun.sqlite",
+        "pairlists": [{"method": "StaticPairList"}],
+        "exchange": {"name": "binance", "enable_ws": False,
+            "pair_whitelist": ["BTC/USDT", "SOL/USDT", "AVAX/USDT"], "pair_blacklist": []},
+        "api_server": {"listen_port": port},
+    }
+    bpath.write_text(json.dumps(cfg, indent=2) + "\n")
+    return f"created port={port}"
 
 
 def strategies_dir(qpath: Path) -> Path:
@@ -156,7 +201,8 @@ def main() -> None:
             continue
         q["items"].append({"id": fname.lower(), "file": fname, "strategy": fname,
                            "status": "pending", "why": why, "code_sha": sha})
-        print(f"queued {fname}: {why}")
+        bot = ensure_bot_entry(qpath, fname)
+        print(f"queued {fname}: {why} (bot-entry {bot})")
         tried_names.add(fname)
         tried_hash.add(sha)
         added += 1
