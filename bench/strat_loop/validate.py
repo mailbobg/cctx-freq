@@ -10,9 +10,10 @@ import re
 import sys
 from pathlib import Path
 
-# filename: PiE1V1 + alnum signal tag + H, e.g. PiE1V1RSICTIH.py
-# ("Pi-" with a hyphen is illegal in Python class names, so Pi is prefixed directly)
-NAME_RE = re.compile(r"^PiE1V1[A-Z0-9]{1,12}H$")
+# filename: PiE1V1 + alnum signal tag + H for new files ("Pi-" with a hyphen is
+# illegal in Python class names, so Pi is prefixed directly). Bare E1V1* names
+# from round 1 are grandfathered so they keep running.
+NAME_RE = re.compile(r"^(Pi)?E1V1[A-Z0-9]{1,12}H$")
 CLASS_RE = re.compile(r"^class\s+(\w+)\s*\(\s*IStrategy\s*\)", re.M)
 TIMEFRAME_RE = re.compile(r"""timeframe\s*=\s*["']1h["']""")
 STARTUP_RE = re.compile(r"startup_candle_count\s*=\s*(\d+)")
