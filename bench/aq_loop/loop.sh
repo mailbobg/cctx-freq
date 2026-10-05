@@ -39,7 +39,7 @@ cfg = {
   "dry_run_wallet": 10000, "trading_mode": "spot",
   "unfilledtimeout": {"entry": 10, "exit": 10, "exit_timeout_count": 0, "unit": "minutes"},
   "entry_pricing": {"price_side": "other", "use_order_book": False, "order_book_top": 1, "price_last_balance": 0.0},
-  "exit_pricing": {"price_side": "same", "use_order_book": False, "order_book_top": 1},
+  "exit_pricing": {"price_side": "other", "use_order_book": False, "order_book_top": 1},
   "exchange": {"name": "binance", "key": "", "secret": "",
     "pair_whitelist": ["BTC/USDT", "SOL/USDT", "AVAX/USDT"], "pair_blacklist": []},
   "pairlists": [{"method": "StaticPairList"}],
