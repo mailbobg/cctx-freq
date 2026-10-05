@@ -68,6 +68,11 @@ done
 
 TS=$(date -u +%FT%TZ)
 if [[ $OK -eq 1 ]]; then
+  # freqtrade drops result files next to --backtest-directory using its
+  # basename as filename prefix; collect this item's files into its subdir
+  mkdir -p $LOOP/results/$ITEM
+  mv $LOOP/results/$ITEM-*.zip $LOOP/results/$ITEM/ 2>/dev/null
+  mv $LOOP/results/$ITEM-*.meta.json $LOOP/results/$ITEM/ 2>/dev/null
   EVAL=$($PY $LOOP/evaluate.py "$LOOP/results/$ITEM" $STRAT "$LOOP/queue.json" $ITEM)
   echo "EVAL: $EVAL"
   VERDICT=$(echo $EVAL | $PY -c "import json,sys; print(json.load(sys.stdin)['verdict'])")
