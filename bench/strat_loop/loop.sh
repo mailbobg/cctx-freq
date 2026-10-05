@@ -93,12 +93,31 @@ EOF
 fi
 
 PAIRS="BTC/USDT SOL/USDT AVAX/USDT"
+# base config (same economics as aq_loop, no aq overrides: E1 files are self-contained)
+$PY - > $SLOOP/cfg-$ITEM.json << 'EOF'
+import json
+cfg = {
+  "max_open_trades": 5, "stake_currency": "USDT", "stake_amount": "unlimited",
+  "tradable_balance_ratio": 0.99, "timeframe": "1h", "dry_run": True,
+  "dry_run_wallet": 10000, "trading_mode": "spot",
+  "unfilledtimeout": {"entry": 10, "exit": 10, "exit_timeout_count": 0, "unit": "minutes"},
+  "entry_pricing": {"price_side": "other", "use_order_book": False, "order_book_top": 1, "price_last_balance": 0.0},
+  "exit_pricing": {"price_side": "other", "use_order_book": False, "order_book_top": 1},
+  "exchange": {"name": "binance", "key": "", "secret": "",
+    "pair_whitelist": ["BTC/USDT", "SOL/USDT", "AVAX/USDT"], "pair_blacklist": []},
+  "pairlists": [{"method": "StaticPairList"}],
+  "fee": 0.001, "dataformat_ohlcv": "feather",
+  "internals": {"process_throttle_secs": 5},
+}
+print(json.dumps(cfg))
+EOF
 OK=1
 for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
   timeout 1500 docker run --rm -m 1500m \
     -v /opt/ccxt/user_data:/freqtrade/user_data -w /freqtrade \
     ccxt-freqtrade:local backtesting \
     --userdir /freqtrade/user_data \
+    -c /freqtrade/user_data/bench/strat_loop/cfg-$ITEM.json \
     --strategy $STRAT --timeframe 1h --timerange $TR -p $PAIRS \
     --datadir /freqtrade/user_data/data_aq/binance \
     --backtest-directory /freqtrade/user_data/bench/strat_loop/results/$ITEM \
@@ -166,3 +185,4 @@ json.dump(q, open(p, "w"), indent=1)
 EOF
   echo "$TS $ITEM ERROR"
 fi
+rm -f $SLOOP/cfg-$ITEM.json
