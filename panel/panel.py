@@ -606,23 +606,6 @@ def list_loops():
     return [loop_status(k) for k in LOOPS]
 
 
-@app.post("/api/loops/{name}/{action}")
-def act_loop(name: str, action: str):
-    if name not in LOOPS:
-        raise HTTPException(404, "没有这个 loop")
-    flag = ROOT / "user_data" / LOOPS[name]["dir"] / "RUN"
-    if action == "start":
-        flag.touch()
-    elif action == "stop":
-        try:
-            flag.unlink()
-        except FileNotFoundError:
-            pass
-    else:
-        raise HTTPException(400, "未知操作")
-    return {"ok": True, "enabled": flag.exists()}
-
-
 class HypIn(BaseModel):
     text: str = ""
 
@@ -640,6 +623,23 @@ def post_hypothesis(name: str, body: HypIn):
     ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     (ib / f"hyp-{ts}.txt").write_text(text)
     return {"ok": True}
+
+
+@app.post("/api/loops/{name}/{action}")
+def act_loop(name: str, action: str):
+    if name not in LOOPS:
+        raise HTTPException(404, "没有这个 loop")
+    flag = ROOT / "user_data" / LOOPS[name]["dir"] / "RUN"
+    if action == "start":
+        flag.touch()
+    elif action == "stop":
+        try:
+            flag.unlink()
+        except FileNotFoundError:
+            pass
+    else:
+        raise HTTPException(400, "未知操作")
+    return {"ok": True, "enabled": flag.exists()}
 
 
 def _closed_events(bot: dict, exclude: str | None) -> int | None:
