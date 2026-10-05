@@ -58,6 +58,11 @@ if [[ $ITEM == NONE ]]; then
     exec "$0"
   fi
   if [[ $REFILLS -lt $MAX_REFILLS ]]; then
+    # hypothesis switch (panel): no HYP file = stop inventing, keep backtesting queue
+    if [[ ! -f $SLOOP/HYP ]]; then
+      echo "$(date -u +%FT%TZ) hypothesis paused (no HYP file, enable from panel); queue waits"
+      exit 0
+    fi
     echo "$(date -u +%FT%TZ) queue drained, researcher invents direction (refill $((REFILLS+1))/$MAX_REFILLS)"
     $PY $SLOOP/hypothesize.py $SLOOP/queue.json >> $SLOOP/cron.log 2>&1
     echo "$(date -u +%FT%TZ) queue drained, asking strategist (refill $((REFILLS+1))/$MAX_REFILLS)"

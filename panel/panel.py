@@ -597,6 +597,8 @@ def loop_status(key: str) -> dict:
         out["hypothesis"] = f"[{ex.get('mode')}] {ex.get('brief', '')[:180]}"
     except Exception:
         out["hypothesis"] = ""
+    if key == "strat_loop":
+        out["hyp_enabled"] = (base / "HYP").exists()
     try:
         lines = (base / "cron.log").read_text().strip().splitlines()
         out["last"] = lines[-1][:160] if lines else ""
@@ -615,6 +617,7 @@ def act_loop(name: str, action: str):
     if name not in LOOPS:
         raise HTTPException(404, "没有这个 loop")
     flag = ROOT / "user_data" / LOOPS[name]["dir"] / "RUN"
+    hyp = ROOT / "user_data" / LOOPS[name]["dir"] / "HYP"
     if action == "start":
         flag.touch()
     elif action == "stop":
@@ -622,9 +625,17 @@ def act_loop(name: str, action: str):
             flag.unlink()
         except FileNotFoundError:
             pass
+    elif action == "hyp_on":
+        hyp.touch()
+    elif action == "hyp_off":
+        try:
+            hyp.unlink()
+        except FileNotFoundError:
+            pass
     else:
         raise HTTPException(400, "未知操作")
-    return {"ok": True, "enabled": flag.exists()}
+    return {"ok": True, "enabled": flag.exists(),
+            "hyp_enabled": hyp.exists() if name == "strat_loop" else None}
 
 
 def _closed_events(bot: dict, exclude: str | None) -> int | None:

@@ -303,7 +303,8 @@ async function refresh() {
 
 /* ---------- 24h loops card ---------- */
 async function loopAct(name, action) {
-  if (action === "stop" && !confirm(`暂停 ${name}？进行中的回测跑完当前窗口后停，队列保留。`)) return;
+  const isHyp = action.indexOf("hyp_") === 0;
+  if ((action === "stop" || action === "hyp_off") && !confirm(isHyp ? `关假设？不再发明新策略，存量回测照跑。` : `暂停 ${name}？进行中的回测跑完当前窗口后停，队列保留。`)) return;
   try {
     const r = await fetch(`/api/loops/${encodeURIComponent(name)}/${action}`, { method: "POST" });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -329,7 +330,12 @@ async function refreshLoops() {
     const action = l.enabled ? "stop" : "start";
     const status = { open: "持续研究", dead: "研究已终止", paused: "已暂停", done: "已完成" }[l.status] || l.status || "—";
     const stats = l.error ? `<p class="loop-error">${esc(l.error)}</p>` : `<div class="loop-stats"><div class="loop-stat"><span>通过筛选</span><b>${esc(l.passed ?? 0)} <small>/ ${esc(l.total ?? 0)}</small></b></div><div class="loop-stat"><span>待跑候选</span><b>${esc(l.pending ?? 0)}</b></div><div class="loop-stat"><span>研究轮次</span><b>${esc(l.round ?? 1)}</b></div></div>`;
-    return `<article class="loop-card"><div class="loop-top"><div class="loop-title">${esc(l.title)}<small>${esc(l.name)}</small></div><span class="loop-state ${l.enabled ? "enabled" : ""}">${state}</span></div>${stats}<div class="loop-footer"><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div><button class="btn ${l.enabled ? "warn" : "solid"}" data-loop-name="${esc(l.name)}" data-loop-action="${action}" aria-label="${esc(l.title)}：${l.enabled ? "暂停调度" : "开启调度"}">${l.enabled ? "暂停调度" : "开启调度"}</button></div><details class="loop-details"><summary>研究详情与最近记录</summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p>${l.hypothesis ? `<p>本轮研究假设：${esc(l.hypothesis)}</p>` : ""}<p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
+    const hypBtn = (l.name === "strat_loop")
+      ? (l.hyp_enabled
+        ? `<button class="btn warn" data-loop-name="${esc(l.name)}" data-loop-action="hyp_off" aria-label="关闭假设">关假设</button>`
+        : `<button class="btn solid" data-loop-name="${esc(l.name)}" data-loop-action="hyp_on" aria-label="开启假设">开假设</button>`)
+      : "";
+    return `<article class="loop-card"><div class="loop-top"><div class="loop-title">${esc(l.title)}<small>${esc(l.name)}</small></div><span class="loop-state ${l.enabled ? "enabled" : ""}">${state}</span></div>${stats}<div class="loop-footer"><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div>${hypBtn}<button class="btn ${l.enabled ? "warn" : "solid"}" data-loop-name="${esc(l.name)}" data-loop-action="${action}" aria-label="${esc(l.title)}：${l.enabled ? "暂停调度" : "开启调度"}">${l.enabled ? "暂停调度" : "开启调度"}</button></div><details class="loop-details"><summary>研究详情与最近记录</summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p>${l.hypothesis ? `<p>本轮研究假设：${esc(l.hypothesis)}</p>` : ""}<p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
   }).join("") || '<div class="loops-notice">暂无研究循环</div>';
   setText($("#loops-updated"), "更新于 " + new Date().toLocaleTimeString("zh-CN", { hour12: false }));
 }
