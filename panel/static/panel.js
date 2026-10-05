@@ -106,7 +106,8 @@ function build(b, i) {
     <div class="row">
       <div class="id">
         <div class="name"><span class="led"></span>${esc(b.bot_name)}</div>
-        <div class="strat" title="${esc(b.strategy)}">:${b.port} · ${esc(b.strategy)}${b.strategy_created ? ` · 📅${esc(b.strategy_created)}` : ""}</div>
+        <div class="strat" title="${esc(b.strategy)}">:${b.port} · ${esc(b.strategy)}</div>
+        ${b.strategy_created ? `<div class="stratdate" title="策略文件产生日期">📅${esc(b.strategy_created)}</div>` : ""}
         <div class="desc">${esc(b.description)}</div>
         <div class="desc strategy-note" hidden></div>
         <div class="liqmsg" hidden></div>

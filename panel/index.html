@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CCXT-FR 控制台</title>
+<link rel="icon" type="image/svg+xml" href="/static/favicon.svg?v=1">
+<meta name="theme-color" content="#0b1215">
 <style>
   @font-face { font-family: "Chakra"; src: url(/static/chakra-petch-latin-400-normal.woff2) format("woff2"); font-weight: 400; }
   @font-face { font-family: "Chakra"; src: url(/static/chakra-petch-latin-600-normal.woff2) format("woff2"); font-weight: 600; }
@@ -89,10 +91,9 @@
   .id { padding: 16px 18px; border-right: 1px dashed var(--edge); display: flex; flex-direction: column; gap: 6px; }
   .name { display: flex; align-items: center; gap: 10px; font: 600 20px var(--display); letter-spacing: .03em; }
   .led { width: 10px; height: 10px; border-radius: 50%; background: #333; box-shadow: inset 0 0 0 1px #0008; flex: none; }
-  .led.on { background: var(--green); box-shadow: 0 0 10px var(--green), 0 0 2px #fff inset; animation: pulse 2.4s ease-in-out infinite; }
-  .led.boot { background: var(--amber); box-shadow: 0 0 10px var(--amber); animation: blink .6s steps(2) infinite; }
-  .led.fault { background: var(--red); box-shadow: 0 0 10px var(--red); animation: blink 1s steps(2) infinite; }
-  @keyframes pulse { 50% { box-shadow: 0 0 4px var(--green), 0 0 2px #fff inset; } }
+  .led.on { background: var(--green); box-shadow: inset 0 0 0 1px #ffffff30; }
+  .led.boot { background: var(--amber); box-shadow: inset 0 0 0 1px #ffffff30; animation: blink .6s steps(2) infinite; }
+  .led.fault { background: var(--red); box-shadow: inset 0 0 0 1px #ffffff30; animation: blink 1s steps(2) infinite; }
   @keyframes blink { 50% { opacity: .25; } }
   .strat { font: 12px var(--mono); color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .desc { font-size: 12.5px; color: var(--dim); }
@@ -246,16 +247,670 @@
     .metric .val { font-size: 20px; }
   }
   @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } .unit { opacity: 1; transform: none; } }
+
+/* Fleet workspace: compact overview, progressive detail. */
+:root {
+  --bg:#0b1215;
+  --rack:#101b20;
+  --rack-hi:#142329;
+  --edge:#25383e;
+  --edge-hi:#3a5057;
+  --ink:#e4efee;
+  --dim:#a1b5b7;
+  --faint:#7c969c;
+  --amber:#64d8bf;
+  --amber-dim:#316f63;
+  --green:#7de0b0;
+  --red:#ff8b83;
+  --blue:#90bbef;
+}
+[hidden] {
+  display:none !important;
+}
+body {
+  background:radial-gradient(ellipse at 85% 0%,#153b3b55,transparent 45%),var(--bg);
+}
+body::after,.unit::before,.unit::after {
+  display:none;
+}
+body::before {
+  opacity:.3;
+}
+.wrap {
+  max-width:none;
+  width:100%;
+  padding:24px 24px 40px;
+}
+.mast {
+  align-items:center;
+  padding-bottom:22px;
+}
+.brand {
+  font-size:25px;
+}
+.brand small {
+  font-size:10px;
+  letter-spacing:.18em;
+}
+.clocks {
+  gap:24px;
+}
+.clock b {
+  font-size:16px;
+}
+.strip {
+  grid-template-columns:repeat(3,minmax(0,1fr)) 150px 150px auto;
+  border:1px solid var(--edge);
+  border-radius:8px;
+  overflow:visible;
+  background:var(--rack);
+}
+.cell {
+  padding:18px 22px;
+}
+.cell .lbl {
+  font-size:11px;
+  letter-spacing:.05em;
+}
+.cell .val {
+  font-size:25px;
+}
+#s-net1,#s-net2 {
+  font-size:19px;
+}
+.master {
+  position:relative;
+  display:block;
+  padding:22px 16px;
+  border:0;
+}
+.master summary {
+  cursor:pointer;
+  color:var(--dim);
+  font-size:12px;
+}
+.master-menu {
+  position:absolute;
+  right:0;
+  top:60px;
+  z-index:8;
+  background:var(--rack-hi);
+  border:1px solid var(--edge-hi);
+  padding:12px;
+  display:flex;
+  gap:8px;
+  white-space:nowrap;
+  box-shadow:0 12px 30px #0006;
+}
+.workspace-nav {
+  display:flex;
+  gap:30px;
+  border-bottom:1px solid var(--edge);
+  margin-top:24px;
+}
+.nav-tab {
+  background:none;
+  color:var(--dim);
+  padding:15px 0;
+  border:0;
+  border-bottom:2px solid transparent;
+  cursor:pointer;
+  font:500 14px var(--body);
+}
+.nav-tab.active {
+  color:var(--ink);
+  border-bottom-color:var(--amber);
+}
+.nav-tab span {
+  font:11px var(--mono);
+  background:var(--edge);
+  padding:2px 6px;
+  border-radius:4px;
+  margin-left:5px;
+}
+.workspace-heading {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:28px 0 24px;
+  gap:20px;
+}
+.eyebrow {
+  font:10px var(--mono);
+  color:var(--amber);
+  letter-spacing:.16em;
+}
+h1 {
+  font:600 26px var(--display);
+  margin:7px 0;
+}
+.workspace-heading p {
+  color:var(--dim);
+  font-size:12px;
+  margin:0;
+}
+.scope-note {
+  font-size:11px;
+  color:var(--faint);
+  text-align:right;
+  line-height:1.8;
+}
+.fleet-toolbar {
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.filters {
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+  background:#081014;
+  padding:4px;
+  border:1px solid var(--edge);
+  border-radius:7px;
+}
+.filters button {
+  font:12px var(--body);
+  padding:8px 12px;
+  border:0;
+  border-radius:4px;
+  color:var(--dim);
+  background:none;
+  cursor:pointer;
+}
+.filters button.active {
+  background:var(--rack-hi);
+  color:var(--ink);
+  box-shadow:0 1px 3px #0005;
+}
+.filters span {
+  color:var(--faint);
+  font:11px var(--mono);
+  margin-left:6px;
+}
+.search-tools {
+  display:flex;
+  gap:10px;
+}
+.search {
+  white-space:nowrap;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  border:1px solid var(--edge);
+  border-radius:6px;
+  padding:0 12px;
+  color:var(--faint);
+  font-size:12px;
+}
+.search input {
+  width:170px;
+  padding:10px 0;
+  color:var(--ink);
+  background:transparent;
+  border:0;
+  font:12px var(--body);
+}
+select {
+  color:var(--dim);
+  background:var(--rack);
+  border:1px solid var(--edge);
+  border-radius:6px;
+  padding:8px;
+  font:12px var(--body);
+}
+input:focus {
+  outline:0;
+}
+.search:focus-within {
+  border-color:var(--amber);
+}
+button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible {
+  outline:2px solid var(--amber);
+  outline-offset:3px;
+}
+.list-meta {
+  display:flex;
+  justify-content:space-between;
+  margin:16px 0 10px;
+  color:var(--faint);
+  font-size:11px;
+}
+.rack {
+  gap:0;
+  margin-top:0;
+  border:1px solid var(--edge);
+  border-radius:8px;
+  overflow:hidden;
+}
+.unit {
+  border:0;
+  border-bottom:1px solid var(--edge);
+  border-left:3px solid transparent;
+  background:var(--rack);
+  animation:rise .2s ease forwards;
+  animation-delay:0s !important;
+}
+.unit:last-child {
+  border-bottom:0;
+}
+.unit.on {
+  border-left-color:var(--amber-dim);
+}
+.unit:hover {
+  background:var(--rack-hi);
+}
+.unit.expanded {
+  background:var(--rack-hi);
+}
+.row {
+  grid-template-columns:minmax(220px,1.2fr) minmax(330px,1.5fr) 125px;
+  align-items:center;
+}
+.id {
+  padding:16px 20px;
+  border:0;
+  gap:4px;
+}
+.name {
+  font-size:16px;
+  gap:8px;
+}
+.led {
+  width:7px;
+  height:7px;
+}
+.strat {
+  font-size:10px;
+}
+.stratdate {
+  font: 11px var(--mono);
+  color: var(--dim);
+  margin-top: 2px;
+}
+.tags {
+  gap:4px;
+}
+.tag {
+  border-radius:3px;
+  font-size:10px;
+  letter-spacing:0;
+}
+.unit:not(.expanded) .desc,.unit:not(.expanded) .up-t,.unit:not(.expanded) .rs {
+  display:none;
+}
+.metric {
+  padding:12px 16px;
+  border:0;
+}
+.metric .val,.metric .val.big {
+  font-size:21px;
+}
+.metric .lbl {
+  font-size:10px;
+}
+.metric .sub {
+  font-size:10px;
+}
+.chart {
+  display:none;
+}
+.controls {
+  padding:12px 16px;
+  gap:8px;
+}
+.controls .btns {
+  display:none;
+}
+.controls .switch {
+  display:none;
+}
+.inspect {
+  background:none;
+  color:var(--dim);
+  border:1px solid var(--edge-hi);
+  border-radius:5px;
+  padding:8px 10px;
+  font:12px var(--body);
+  cursor:pointer;
+}
+.inspect:hover,.expanded .inspect {
+  border-color:var(--amber-dim);
+  color:var(--amber);
+}
+.unit:not(.expanded) .drawer,.unit:not(.expanded) .log {
+  display:none;
+}
+.expanded .chart {
+  display:flex;
+  grid-column:1 / 3;
+  grid-row:2;
+  padding:16px 20px;
+  border-top:1px solid var(--edge);
+  border-right:0;
+  min-height:105px;
+}
+.expanded .controls {
+  grid-column:3;
+  grid-row:1 / 3;
+  align-self:stretch;
+  border-left:1px solid var(--edge);
+}
+.expanded .controls .switch,.expanded .controls .btns {
+  display:flex;
+}
+.expanded .drawer {
+  border-top:1px solid var(--edge);
+}
+.switch .track {
+  width:42px;
+  height:22px;
+}
+.switch .knob {
+  width:18px;
+  height:16px;
+}
+.switch.on .knob {
+  left:20px;
+}
+.btn {
+  border-radius:4px;
+  font-size:11px;
+  letter-spacing:0;
+  padding:7px 9px;
+}
+.btn:disabled {
+  opacity:.35;
+  cursor:default;
+}
+#list-empty {
+  text-align:center;
+  padding:60px 20px;
+  border:1px dashed var(--edge);
+  border-radius:8px;
+  color:var(--dim);
+}
+.foot {
+  font-size:10px;
+  margin-top:24px;
+}
+.signal,.verdicts {
+  margin-top:28px;
+}
+.vgrid {
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.vcard {
+  border-radius:8px;
+}
+.signal {
+  border-radius:8px;
+}
+.bars {
+  height:58px;
+  flex:none;
+}
+.unit .liqmsg {
+  font-size:11px;
+}
+@media(max-width:1050px) {
+  .wrap {
+    padding:24px;
+  }
+  .strip {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+  .master {
+    grid-column:auto;
+    border-top:1px solid var(--edge);
+  }
+  .row {
+    grid-template-columns:minmax(180px,1fr) minmax(300px,1.5fr) 110px;
+  }
+  .id,.metrics {
+    grid-column:auto;
+    border-bottom:0;
+  }
+  .metric {
+    padding:10px;
+  }
+  .metric .val,.metric .val.big {
+    font-size:18px;
+  }
+  .search-tools {
+    flex:1;
+  }
+  .search {
+    flex:1;
+  }
+  .search input {
+    width:100%;
+  }
+  .vgrid {
+    grid-template-columns:1fr;
+  }
+}
+@media(max-width:650px) {
+  .wrap {
+    padding:18px 14px;
+  }
+  .brand {
+    font-size:21px;
+  }
+  .clocks {
+    display:none;
+  }
+  .strip {
+    grid-template-columns:repeat(3,minmax(0,1fr));
+  }
+  .cell {
+    padding:12px 10px;
+  }
+  .cell .val {
+    font-size:19px;
+  }
+  .cell .lbl {
+    font-size:10px;
+  }
+  .workspace-heading {
+    margin:22px 0 18px;
+  }
+  .scope-note {
+    display:none;
+  }
+  .workspace-nav {
+    gap:25px;
+  }
+  .filters {
+    width:100%;
+  }
+  .filters button {
+    flex:1;
+    padding:8px 4px;
+    font-size:11px;
+  }
+  .filters span {
+    margin-left:2px;
+  }
+  .search-tools {
+    width:100%;
+  }
+  .list-meta>span:last-child {
+    display:none;
+  }
+  .row {
+    grid-template-columns:1fr 100px;
+  }
+  .id {
+    grid-column:1;
+    padding:14px;
+  }
+  .metrics {
+    grid-column:1 / -1;
+    grid-row:2;
+    padding:0 4px 10px;
+  }
+  .controls {
+    grid-column:2;
+    grid-row:1;
+    padding:10px;
+  }
+  .expanded .controls {
+    grid-column:1 / -1;
+    grid-row:4;
+    border-left:0;
+    border-top:1px solid var(--edge);
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    align-items:center;
+    gap:14px;
+  }
+  .expanded .chart {
+    grid-column:1 / -1;
+    grid-row:3;
+  }
+  .expanded .controls .btns {
+    flex:1;
+  }
+  .expanded .inspect {
+    order:-1;
+  }
+  .metric .val,.metric .val.big {
+    font-size:20px;
+  }
+  .pos-chip {
+    flex-wrap:wrap;
+  }
+  .vbot {
+    grid-template-columns:1fr;
+  }
+  .signal {
+    grid-template-columns:1fr;
+  }
+  .vgrid {
+    grid-template-columns:1fr;
+  }
+  .master-menu {
+    right:0;
+  }
+  dialog {
+    min-width:0;
+    width:calc(100% - 28px);
+  }
+}
+
+/* Robot cards: use the available width while keeping summaries readable. */
+.rack {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  align-items: start;
+  gap: 12px;
+  border: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+.rack .unit, .rack .unit:last-child {
+  min-width: 0;
+  border: 1px solid var(--edge);
+  border-top: 2px solid var(--edge-hi);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px #0002;
+  transition: border-color .18s, background .18s;
+}
+.rack .unit.on { border-top-color: var(--amber); }
+.rack .unit.fault { border-top-color: var(--red); }
+.rack .unit:hover { border-left-color: var(--edge-hi); border-right-color: var(--edge-hi); }
+.rack .unit .row {
+  grid-template-columns: minmax(0, 1fr) 92px;
+  align-items: start;
+  min-height: 202px;
+}
+.rack .unit .id { grid-column: 1; grid-row: 1; padding: 18px 16px 12px; min-width: 0; }
+.rack .unit .name { font-size: 17px; overflow-wrap: anywhere; }
+.rack .unit .strat { font-size: 10px; }
+.rack .unit .controls { grid-column: 2; grid-row: 1; padding: 18px 14px 12px 0; }
+.rack .unit .inspect { width: 100%; padding: 7px; }
+.rack .unit .metrics {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  grid-template-columns: .85fr 1.25fr .95fr;
+  border-top: 1px solid var(--edge);
+  border-bottom: 0;
+  margin: 0 16px;
+  padding: 12px 0 16px;
+}
+.rack .unit .metric { padding: 0 10px 0 0; min-width: 0; }
+.rack .unit .metric:last-child { padding-right: 0; }
+.rack .unit .metric .val { font-size: 20px; }
+.rack .unit .metric .val.big { font-size: 24px; letter-spacing: -.04em; }
+.rack .unit .metric .lbl { letter-spacing: 0; }
+.rack .unit .metric .sub { font-size: 10px; overflow-wrap: anywhere; }
+.rack .unit.expanded .chart { grid-column: 1 / -1; grid-row: 3; padding: 12px 16px; }
+.rack .unit.expanded .controls {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  border-left: 0;
+  border-top: 1px solid var(--edge);
+  padding: 12px 16px;
+}
+.rack .unit.expanded .inspect { width: auto; order: -1; }
+.rack .unit.expanded .controls .btns { flex: 1 1 100%; }
+.rack .unit .positions { padding: 12px 16px; }
+.rack .unit .pos-chip { flex-wrap: wrap; }
+@media (max-width: 1150px) { .rack { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 700px) { .rack { grid-template-columns: minmax(0, 1fr); gap: 12px; } }
+
+.resource-panel { margin-top:16px; border:1px solid var(--edge); border-radius:8px; background:#101b20a0; overflow:hidden; }
+.resource-head { display:flex; justify-content:space-between; gap:12px; padding:12px 18px; border-bottom:1px solid var(--edge); font-size:12px; color:var(--ink); }
+.resource-head small { margin-left:10px; color:var(--faint); font-size:10px; }
+#resource-updated { color:var(--faint); font:10px var(--mono); }
+.resource-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); }
+.resource-item { padding:14px 18px; border-right:1px solid var(--edge); min-width:0; }
+.resource-item:last-child { border:0; }
+.resource-label { color:var(--dim); font-size:11px; display:flex; justify-content:space-between; }
+.resource-item strong { display:block; font:500 22px var(--mono); margin:5px 0 8px; }
+.resource-item small { display:block; color:var(--faint); font:10px/1.6 var(--mono); margin-top:5px; }
+.resource-meter { height:4px; background:var(--edge); border-radius:3px; overflow:hidden; }
+.resource-meter i { display:block; width:0; height:100%; background:var(--amber); transition:width .4s; }
+.resource-meter i.warn { background:#f3c273; }.resource-meter i.hot { background:var(--red); }
+@media(max-width:650px) { .resource-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }.resource-item:nth-child(2) { border-right:0; }.resource-item:nth-child(n+3) { border-top:1px solid var(--edge); }.resource-head { flex-wrap:wrap; }.resource-item strong { font-size:20px; } }
+
+.rack .unit.is-running {
+  border-color:#3c8b76;
+  border-top:3px solid #7de0b0;
+  background:linear-gradient(140deg,#183a31,#12292a 70%);
+  box-shadow:0 0 0 1px #7de0b00a,0 5px 16px #0002;
+}
+.rack .unit.is-running:hover { background:linear-gradient(140deg,#204839,#163136 70%); border-color:#7de0b0; }
+.rack .unit.is-running .tag.state { background:#7de0b0; color:#082218; border-color:#7de0b0; font-weight:600; padding:2px 7px; }
+.rack .unit:not(.is-running) .name { color:var(--dim); }
+.rack .unit.fault { border-color:var(--red); }
+
+.mast-actions { display:flex; align-items:center; gap:28px; }
+.freq-entry { font:500 13px var(--body); padding:10px 16px; white-space:nowrap; }
+@media(max-width:650px) { .mast-actions { justify-content:flex-start; }.freq-entry { padding:9px 14px; } }
+
+.bot-resources { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--edge); padding:10px 16px; font:10px var(--mono); color:var(--faint); background:#00000012; }
+.bot-resources b { color:var(--dim); font-weight:500; margin-left:7px; }
+.is-running .bot-resources b { color:var(--ink); }
 </style>
 </head>
 <body>
 <div class="wrap">
   <header class="mast">
-    <div class="brand">CCXT<b>—</b>FR 交易控制台<small>FREQTRADE BOT RACK · 127.0.0.1:8090</small></div>
-    <div class="clocks">
+    <div class="brand">CCXT<b>—</b>FR 交易控制台<small>OPERATIONS / 策略运行工作台</small></div>
+    <div class="mast-actions"><div class="clocks">
       <div class="clock"><span>北京</span><b id="clk-bj" class="tk" data-noglow="1"></b></div>
       <div class="clock"><span>UTC</span><b id="clk-utc" class="tk" data-noglow="1"></b></div>
-    </div>
+    </div><a class="btn solid freq-entry" href="http://127.0.0.1:8089/" target="_blank" rel="noopener noreferrer">打开 FreqUI ↗</a></div>
   </header>
 
   <section class="strip">
@@ -264,38 +919,31 @@
     <div class="cell"><div class="lbl">总盈亏 USDT</div><div class="val" id="s-pnl"><span class="tk"></span></div></div>
     <div class="cell"><div class="lbl">行情线路</div><div class="val" id="s-net1"><span class="tk"></span><small></small></div></div>
     <div class="cell"><div class="lbl">交易接口</div><div class="val" id="s-net2"><span class="tk"></span><small></small></div></div>
-    <div class="cell master">
+    <details class="cell master"><summary>批量操作</summary><div class="master-menu">
       <button class="btn solid" onclick="ask('all','start','全部启动','按顺序逐个启动所有机器人，每个等上一个的接口连通后再启动。')">全部启动</button>
       <button class="btn warn" onclick="ask('all','stop','全部停止','停止所有机器人。持仓会保留在数据库里，重新启动后继续管理。')">全部停止</button>
-    </div>
+    </div></details>
   </section>
 
-  <section class="signal" id="csig">
-    <div class="head">
-      <div class="lbl">每周持仓信号 · C</div>
-      <div class="title">BTC <b>/</b> ETH 风险管理持有</div>
-      <div class="note">每周日收盘判断，周一开盘调仓。30 天上涨才持有，按波动率定仓位（年化 60%，单币最多 50%），目标变化超过 5 个百分点才调。</div>
-      <div class="tags"><span class="tag live" id="c-verdict">未通过预注册标准 1 · 仅作参考</span></div>
-    </div>
-    <div>
-      <div class="lbl" id="c-decided">本周目标仓位</div>
-      <div class="alloc" style="margin-top:8px"><span class="btc" id="c-bar-btc"></span><span class="eth" id="c-bar-eth"></span><span class="usdt" id="c-bar-usdt"></span></div>
-      <div class="coins">
-        <div class="coin"><div class="lbl">BTC <span class="onoff" id="c-btc-on"></span></div><div class="val"><span class="tk" id="c-btc-w"></span><small>%</small></div><div class="sub" id="c-btc-sub"></div></div>
-        <div class="coin"><div class="lbl">ETH <span class="onoff" id="c-eth-on"></span></div><div class="val"><span class="tk" id="c-eth-w"></span><small>%</small></div><div class="sub" id="c-eth-sub"></div></div>
-        <div class="coin"><div class="lbl">USDT</div><div class="val"><span class="tk" id="c-usdt-w"></span><small>%</small></div><div class="sub" id="c-change"></div></div>
-      </div>
-    </div>
-    <div class="side">
-      <div><div class="lbl">下次判断（周日收盘）</div><div class="val"><span class="tk" id="c-countdown"></span></div><div class="sub" id="c-trade"></div></div>
-      <div><div class="lbl">最近 13 周仓位</div><div class="hist" id="c-hist"></div></div>
-      <div class="sub" id="c-bt" style="line-height:1.6"></div>
-    </div>
-  </section>
 
-  <section class="rack" id="rack"></section>
-
-  <section class="verdicts" id="verdicts">
+<section class="resource-panel" aria-label="服务器资源监控">
+  <div class="resource-head"><span>服务器资源 <small>宿主机 · 数据盘</small></span><span id="resource-updated" aria-live="polite">正在采样…</span></div>
+  <div class="resource-grid">
+    <div class="resource-item"><div class="resource-label">CPU <span id="r-cores">—</span></div><strong id="r-cpu">—</strong><div class="resource-meter"><i id="r-cpu-bar"></i></div><small id="r-load">负载 —</small></div>
+    <div class="resource-item"><div class="resource-label">内存</div><strong id="r-memory">—</strong><div class="resource-meter"><i id="r-memory-bar"></i></div><small id="r-memory-size">—</small></div>
+    <div class="resource-item"><div class="resource-label">数据盘</div><strong id="r-disk">—</strong><div class="resource-meter"><i id="r-disk-bar"></i></div><small id="r-disk-size">—</small></div>
+    <div class="resource-item resource-uptime"><div class="resource-label">运行时间</div><strong id="r-uptime">—</strong><small id="r-swap">Swap —</small><small>每 10 秒更新</small></div>
+  </div>
+</section>
+  <nav class="workspace-nav" aria-label="工作区"><button class="nav-tab active" data-view="bots" aria-pressed="true">机器人 <span id="nav-count">—</span></button><button class="nav-tab" data-view="research" aria-pressed="false">研究判定</button></nav>
+<section id="bot-workspace">
+<div class="workspace-heading"><div><div class="eyebrow">FLEET OVERVIEW</div><h1>机器人工作台</h1><p>先看运行状态，再看策略表现。</p></div><div class="scope-note">汇总为各机器人账面盈亏之和<br>不同账户与模拟盘独立统计</div></div>
+<div class="fleet-toolbar"><div class="filters" aria-label="机器人状态"><button data-filter="all" class="active" aria-pressed="true">全部 <span></span></button><button data-filter="running" aria-pressed="false">运行中 <span></span></button><button data-filter="positions" aria-pressed="false">有持仓 <span></span></button><button data-filter="attention" aria-pressed="false">需关注 <span></span></button><button data-filter="stopped" aria-pressed="false">已停止 <span></span></button></div><div class="search-tools"><label class="search"><span>搜索</span><input id="bot-search" type="search" placeholder="名称 / 策略 / 端口" aria-label="搜索机器人"></label><select id="bot-sort" aria-label="排序"><option value="priority">运行优先</option><option value="pnl">盈亏从高到低</option><option value="name">名称 A–Z</option></select></div></div>
+<div class="list-meta"><span id="list-count" aria-live="polite">正在读取机器人…</span><span>展开查看持仓、运行控制与日志</span></div>
+<section class="rack" id="rack" aria-label="机器人列表"></section>
+<div id="list-empty" hidden><strong>没有匹配的机器人</strong><p>试试其他状态，或清空搜索。</p><button class="btn" id="reset-filters">重置筛选</button></div>
+</section>
+<section class="verdicts" id="verdicts" hidden>
     <div class="vhead">
       <div class="lbl">判定页</div>
       <div class="vtitle">什么时候 <b>/</b> 按什么标准判定</div>
