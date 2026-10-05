@@ -106,6 +106,15 @@ class E0V1ENMTF1H(IStrategy):
     max_volume_share = 0.10
     min_notional = 10.0
 
+    def __init__(self, config: dict) -> None:
+        super().__init__(config)
+        # mechanical-sweep overrides for the overnight loop (config "aq"
+        # block); unknown keys are rejected so typos fail loudly.
+        for key, value in config.get("aq", {}).items():
+            if key not in ("stake_double", "max_entries", "window_minutes"):
+                raise ValueError(f"unknown aq parameter {key}")
+            setattr(self, key, value)
+
     @property
     def protections(self):
         return [
