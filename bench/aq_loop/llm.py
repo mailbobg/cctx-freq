@@ -70,7 +70,27 @@ def _post(payload: dict, timeout: int = TIMEOUT) -> dict:
             raise RuntimeError(f"HTTP {e.code}: {body}")
 
 
+def _log_usage(data: dict) -> None:
+    """Append per-call token usage for bill reconciliation (outside the repo)."""
+    try:
+        u = data.get("usage") if isinstance(data, dict) else None
+        if not u:
+            return
+        import datetime
+        line = (f"{datetime.datetime.now(datetime.timezone.utc):%FT%TZ} "
+                f"model={data.get('model', MODEL)} "
+                f"in={u.get('input_tokens', 0)} "
+                f"out={u.get('output_tokens', 0)} "
+                f"cached={u.get('input_tokens_details', {}).get('cached_tokens', 0)}\n")
+        log = Path.home() / ".config" / "opencode" / "zen_usage.log"
+        with open(log, "a") as f:
+            f.write(line)
+    except Exception:
+        pass
+
+
 def _extract_text(data: dict) -> str:
+    _log_usage(data)
     if isinstance(data, dict) and data.get("type") == "error":
         err = data.get("error", {})
         raise RuntimeError(f"API error {err.get('type')}: {err.get('message')}")
