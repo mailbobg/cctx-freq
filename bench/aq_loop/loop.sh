@@ -54,7 +54,7 @@ STRAT=$($PY -c "import json; print(json.load(open('$LOOP/queue.json'))['strategy
 PAIRS="BTC/USDT SOL/USDT AVAX/USDT"
 OK=1
 for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
-  timeout 1500 docker run --rm \
+  timeout 1500 docker run --rm -m 1500m \
     -v /opt/ccxt/user_data:/freqtrade/user_data -w /freqtrade \
     ccxt-freqtrade:local backtesting \
     --userdir /freqtrade/user_data \
