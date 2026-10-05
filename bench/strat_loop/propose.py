@@ -126,10 +126,10 @@ def main() -> None:
         if sha in tried_hash:
             print(f"propose: duplicate logic {fname} (sha {sha}), skipped")
             continue
-        with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False) as t:
-            t.write(code)
-            tmp = t.name
-        ok, reasons = validate_file(tmp)
+        with tempfile.TemporaryDirectory() as td:
+            tmp = str(Path(td) / f"{fname}.py")
+            Path(tmp).write_text(code)
+            ok, reasons = validate_file(tmp)
         if not ok:
             q["items"].append({"id": fname.lower(), "file": fname,
                                "status": "done-fail-validate",
