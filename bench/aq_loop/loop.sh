@@ -98,12 +98,15 @@ if [[ $OK -eq 1 ]]; then
 import json, sys
 p = '/opt/ccxt/user_data/bench/aq_loop/queue.json'
 q = json.load(open(p))
+verdict = sys.argv[2]
+if sys.argv[1] == 'base':
+    verdict = 'BASELINE'  # reference run: gates don't apply to itself
 for i in q["items"]:
     if i["id"] == sys.argv[1]:
-        i["status"] = "done-" + sys.argv[2].lower()
+        i["status"] = "done-" + verdict.lower()
         i["robust_sharpe"] = float(sys.argv[3])
         i["worst_dd"] = float(sys.argv[4])
-if sys.argv[2] == "PASS":
+if verdict == "PASS":
     cur = q.get("champion")
     q["champion"] = sys.argv[1]  # latest passer (totals compared at review)
 json.dump(q, open(p, "w"), indent=1)
@@ -111,7 +114,7 @@ with open('/opt/ccxt/user_data/bench/aq_loop/results-aq.tsv', 'a') as f:
     import os as _os
     if _os.path.getsize('/opt/ccxt/user_data/bench/aq_loop/results-aq.tsv') == 0:
         f.write("round\tevent\tstrategy_name\tsharpe\tmax_dd\tnote\n")
-    f.write(f"{sys.argv[1]}\tevolve\tE0V1ENMTF1H-var\t{sys.argv[3]}\t-{sys.argv[4]}\t{sys.argv[1]} aq sweep {sys.argv[2]}\n")
+    f.write(f"{sys.argv[1]}\tevolve\tE0V1ENMTF1H-var\t{sys.argv[3]}\t-{sys.argv[4]}\t{sys.argv[1]} aq sweep {verdict}\n")
 EOF
   echo "$TS $ITEM $VERDICT"
 else
