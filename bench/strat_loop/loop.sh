@@ -30,6 +30,48 @@ if [[ ! -f $SLOOP/RUN ]]; then
   exit 0
 fi
 
+# inbox: user-posted hypotheses (.txt brief and/or .py seed file) open a new round at once
+if ls $SLOOP/inbox/*.py $SLOOP/inbox/*.txt >/dev/null 2>&1; then
+  echo "$(date -u +%FT%TZ) inbox has new hypothesis, opening round"
+  $PY - >> $SLOOP/cron.log 2>&1 << 'EOF'
+import json, shutil, sys
+sys.path.insert(0, '/opt/ccxt/user_data/bench/strat_loop')
+from validate import validate_file
+from pathlib import Path
+slo = Path('/opt/ccxt/user_data/bench/strat_loop')
+ib = slo / 'inbox'
+done = slo / 'archive' / 'inbox-done'
+done.mkdir(parents=True, exist_ok=True)
+new_parent, briefs = None, []
+for f in sorted(ib.glob('*.py')):
+    ok, reasons = validate_file(f, strict_naming=False)
+    if not ok:
+        print(f'inbox {f.name} rejected: {reasons[0] if reasons else ""}')
+        shutil.move(str(f), str(done / f.name))
+        continue
+    dest = Path('/opt/ccxt/user_data/strategies') / f.name
+    dest.write_text(f.read_text())
+    ok2, r2 = validate_file(dest, strict_naming=False)
+    if ok2 and new_parent is None:
+        new_parent = f.stem
+        print(f'inbox seed strategy: {f.stem}')
+    shutil.move(str(f), str(done / f.name))
+for f in sorted(ib.glob('*.txt')):
+    t = f.read_text().strip()[:2000]
+    if t:
+        briefs.append(t)
+    shutil.move(str(f), str(done / f.name))
+json.dump({"parent": new_parent or "", "brief": "\n".join(briefs)[:4000]},
+          open(slo / '.inbox_out.json', 'w'))
+print('inbox consumed')
+EOF
+  INBOX_PARENT=$($PY -c "import json; print(json.load(open('$SLOOP/.inbox_out.json')).get('parent',''))")
+  INBOX_BRIEF=$($PY -c "import json; print(json.load(open('$SLOOP/.inbox_out.json')).get('brief',''))")
+  rm -f $SLOOP/.inbox_out.json
+  $PY $SLOOP/rollover.py $SLOOP/queue.json inbox "$INBOX_PARENT" "$INBOX_BRIEF" >> $SLOOP/cron.log 2>&1
+  exec "$0"
+fi
+
 # disk guard: backtests write zips + logs
 USEPCT=$(df -P "$UD" | awk 'NR==2 {gsub(/%/,"",$5); print $5}')
 if [[ ${USEPCT:-0} -ge 80 ]]; then

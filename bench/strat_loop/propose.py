@@ -108,8 +108,10 @@ def build_prompt(q: dict, parent_src: str) -> str:
         f"baseline totals by window: {json.dumps(q['baseline'])}",
         f"parent strategy file: {q['parent']}.py",
         f"champion so far: {q.get('champion')}",
-        "tried files (file, status, sharpe, dd, reasons):",
     ]
+    if q.get("brief"):
+        lines.append(f"ROUND BRIEF (user hypothesis, overrides default fork direction): {q['brief']}")
+    lines.append("tried files (file, status, sharpe, dd, reasons):")
     for i in q["items"]:
         if i["status"] != "pending":
             det = " ".join([

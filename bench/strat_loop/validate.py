@@ -32,12 +32,20 @@ FORBIDDEN_RES = [
 ]
 
 
-def validate_file(path: str | Path) -> tuple[bool, list[str]]:
+def validate_file(path: str | Path, strict_naming: bool = True) -> tuple[bool, list[str]]:
+    """strict_naming=False for user inbox seeds: any sane stem allowed,
+    class must still equal the stem."""
     p = Path(path)
     reasons: list[str] = []
     stem = p.stem
-    if not NAME_RE.match(stem):
-        reasons.append(f"filename {stem}.py must match E1V1<1-16 ALNUM>H.py")
+    if strict_naming:
+        if not NAME_RE.match(stem):
+            reasons.append(f"filename {stem}.py must match PiE1V1<ALNUM>H.py")
+        expect_cls = stem
+    else:
+        if not stem.replace("_", "").isalnum() or stem[0].isdigit():
+            reasons.append(f"inbox filename {stem}.py is not a usable stem")
+        expect_cls = stem
     try:
         text = p.read_text()
     except OSError as e:
@@ -49,7 +57,7 @@ def validate_file(path: str | Path) -> tuple[bool, list[str]]:
     m = CLASS_RE.search(text)
     if not m:
         reasons.append("no `class <Name>(IStrategy)` found")
-    elif m.group(1) != stem:
+    elif m.group(1) != expect_cls:
         reasons.append(f"class {m.group(1)} != filename {stem} (harness requires equal)")
     if not INTERFACE_RE.search(text):
         reasons.append("missing INTERFACE_VERSION = 3")

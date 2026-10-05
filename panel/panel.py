@@ -27,6 +27,7 @@ import psutil
 import requests
 import uvicorn
 from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 from fastapi.responses import HTMLResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -620,6 +621,25 @@ def act_loop(name: str, action: str):
     else:
         raise HTTPException(400, "未知操作")
     return {"ok": True, "enabled": flag.exists()}
+
+
+class HypIn(BaseModel):
+    text: str = ""
+
+
+@app.post("/api/loops/{name}/hypothesis")
+def post_hypothesis(name: str, body: HypIn):
+    """User-posted hypothesis: .txt brief into inbox, next tick opens a new round."""
+    if name not in LOOPS:
+        raise HTTPException(404, "没有这个 loop")
+    text = (body.text or "").strip()[:2000]
+    if not text:
+        raise HTTPException(400, "假设不能为空")
+    ib = ROOT / "user_data" / LOOPS[name]["dir"] / "inbox"
+    ib.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    (ib / f"hyp-{ts}.txt").write_text(text)
+    return {"ok": True}
 
 
 def _closed_events(bot: dict, exclude: str | None) -> int | None:

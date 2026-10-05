@@ -304,23 +304,39 @@ async function refresh() {
 /* ---------- 24h loops card ---------- */
 async function loopAct(name, action) {
   if (action === "stop" && !confirm(`暂停 ${name}？进行中的回测跑完当前窗口后停，队列保留。`)) return;
-  await fetch(`/api/loops/${name}/${action}`, { method: "POST" });
-  refreshLoops();
+  try {
+    const r = await fetch(`/api/loops/${encodeURIComponent(name)}/${action}`, { method: "POST" });
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    await refreshLoops();
+  } catch (e) { alert(`操作未完成：${e.message}。请刷新后确认调度状态。`); }
 }
+$("#loops-list").addEventListener("click", async e => {
+  const button = e.target.closest("button[data-loop-action]");
+  if (!button || button.disabled) return;
+  button.disabled = true;
+  try { await loopAct(button.dataset.loopName, button.dataset.loopAction); }
+  finally { button.disabled = false; }
+});
 async function refreshLoops() {
   let loops;
   try { const r = await fetch("/api/loops"); if (!r.ok) throw 0; loops = await r.json(); }
-  catch (e) { setText($("#loops-list"), "读不到循环状态"); return; }
+  catch (e) { setText($("#loops-updated"), "连接失败 · 状态可能已过期"); return; }
   $("#loops-list").innerHTML = loops.map(l => {
-    const info = l.error ? esc(l.error)
-      : `第${l.round ?? 1}轮 · ${esc(l.status ?? "")} · champion ${esc(l.champion ?? "—")} · ${l.passed ?? 0}/${l.total ?? 0}通过 ${l.pending ?? 0}待跑 · refill ${l.refills ?? 0}`;
-    const btn = l.enabled
-      ? `<button class="btn warn" onclick="loopAct('${l.name}','stop')">暂停</button>`
-      : `<button class="btn solid" onclick="loopAct('${l.name}','start')">启动24h</button>`;
-    const dot = l.enabled ? "🟢" : "⚪";
-    return `<div style="display:flex;gap:12px;align-items:center;margin:8px 0"><b>${dot} ${esc(l.title)} <small>${esc(l.name)}</small></b><span style="flex:1">${info}</span>${btn}</div><div style="color:var(--dim);font-size:11px">${esc(l.last || "")}</div>`;
-  }).join("");
-  setText($("#loops-updated"), "随整页刷新");
+    const state = l.enabled ? "调度已开启" : "调度已暂停";
+    const action = l.enabled ? "stop" : "start";
+    const status = { open: "持续研究", dead: "研究已终止", paused: "已暂停", done: "已完成" }[l.status] || l.status || "—";
+    const stats = l.error ? `<p class="loop-error">${esc(l.error)}</p>` : `<div class="loop-stats"><div class="loop-stat"><span>通过筛选</span><b>${esc(l.passed ?? 0)} <small>/ ${esc(l.total ?? 0)}</small></b></div><div class="loop-stat"><span>待跑候选</span><b>${esc(l.pending ?? 0)}</b></div><div class="loop-stat"><span>研究轮次</span><b>${esc(l.round ?? 1)}</b></div></div>`;
+    return `<article class="loop-card"><div class="loop-top"><div class="loop-title">${esc(l.title)}<small>${esc(l.name)}</small></div><span class="loop-state ${l.enabled ? "enabled" : ""}">${state}</span></div>${stats}<div class="loop-footer"><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div><button class="btn ${l.enabled ? "warn" : "solid"}" data-loop-name="${esc(l.name)}" data-loop-action="${action}" aria-label="${esc(l.title)}：${l.enabled ? "暂停调度" : "开启调度"}">${l.enabled ? "暂停调度" : "开启调度"}</button></div><details class="loop-details"><summary>研究详情与最近记录</summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p><p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
+  }).join("") || '<div class="loops-notice">暂无研究循环</div>';
+  setText($("#loops-updated"), "更新于 " + new Date().toLocaleTimeString("zh-CN", { hour12: false }));
+}
+async function postHypothesis() {
+  const t = $("#hyp-text").value.trim();
+  if (!t) { alert("先写一句假设"); return; }
+  const r = await fetch("/api/loops/strat_loop/hypothesis", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text: t }) });
+  if (!r.ok) { alert("提交失败"); return; }
+  $("#hyp-text").value = "";
+  setText($("#hyp-done"), "已投递，下个 tick 自动开新一轮");
 }
 
 async function refreshNet() {

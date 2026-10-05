@@ -47,8 +47,9 @@ def main() -> None:
             if i["id"] == champ_id:
                 champ_strat = i.get("strategy")
                 break
-    new_parent = champ_strat or q["parent"]
-    nq = {"parent": new_parent, "round": n + 1,
+    new_parent = (sys.argv[3] if len(sys.argv) > 3 and sys.argv[3] else None) or champ_strat or q["parent"]
+    brief = (sys.argv[4] if len(sys.argv) > 4 else None) or None
+    nq = {"parent": new_parent, "round": n + 1, "brief": brief,
           "baseline": q["baseline"], "windows": q["windows"], "pairs": q["pairs"],
           "timeframe": "1h", "items": [], "champion": None,
           "refills": 0, "consecutive_fail": 0, "status": "open"}

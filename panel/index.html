@@ -158,7 +158,7 @@
   .liqmsg { font: 12px var(--mono); line-height: 1.5; }
   .foot { margin-top: 28px; font: 12px var(--mono); color: var(--dim); display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
   .flash { animation: flash .8s ease-out; }
-  @keyframes flash { from { text-shadow: 0 0 12px var(--amber); } }
+  @keyframes flash { from { opacity: .65; } }
   .toast { position: fixed; left: 50%; bottom: 22px; transform: translateX(-50%); background: var(--red); color: #fff;
     font: 12px var(--mono); padding: 8px 14px; display: none; z-index: 5; }
 
@@ -173,8 +173,8 @@
   .tk .d.dn .roll { animation: rollDn .55s cubic-bezier(.25,1.3,.4,1) both; }
   @keyframes rollUp { from { transform: translateY(0); } to { transform: translateY(-50%); } }
   @keyframes rollDn { from { transform: translateY(-50%); } to { transform: translateY(0); } }
-  .tk.glow-up { color: var(--green) !important; text-shadow: 0 0 14px rgba(141,255,106,.55); transition: none; }
-  .tk.glow-dn { color: var(--red) !important; text-shadow: 0 0 14px rgba(255,90,60,.55); transition: none; }
+  .tk.glow-up { color: var(--green) !important;  transition: none; }
+  .tk.glow-dn { color: var(--red) !important;  transition: none; }
   .bar i { transition: height .6s cubic-bezier(.2,.8,.2,1); }
   .led, .unit { transition: border-color .4s, background .4s, box-shadow .4s; }
 
@@ -901,6 +901,34 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
 .bot-resources { display:flex; justify-content:space-between; gap:12px; border-top:1px solid var(--edge); padding:10px 16px; font:10px var(--mono); color:var(--faint); background:#00000012; }
 .bot-resources b { color:var(--dim); font-weight:500; margin-left:7px; }
 .is-running .bot-resources b { color:var(--ink); }
+
+.research-loops { margin:0 0 24px; border:1px solid var(--edge); border-radius:8px; background:var(--rack); overflow:hidden; }
+.loops-heading { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; padding:14px 18px; border-bottom:1px solid var(--edge); }
+.loops-heading h2 { margin:0; font-size:15px; font-weight:600; }
+.loops-heading p { margin:3px 0 0; font-size:11px; color:var(--dim); }
+.loops-heading .always-on { display:inline-block; margin-left:8px; padding:2px 6px; border:1px solid var(--edge-hi); border-radius:4px; font:10px var(--mono); color:var(--amber); vertical-align:middle; }
+#loops-updated { color:var(--faint); font:10px var(--mono); }
+#loops-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); }
+.loop-card { min-width:0; padding:16px 18px; }
+.loop-card + .loop-card { border-left:1px solid var(--edge); }
+.loop-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.loop-title { font-size:14px; font-weight:600; }
+.loop-title small { display:block; margin-top:2px; font:10px var(--mono); color:var(--faint); }
+.loop-state { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--dim); white-space:nowrap; }
+.loop-state::before { content:""; width:6px; height:6px; border-radius:50%; background:var(--faint); }
+.loop-state.enabled { color:#7de0b0; }.loop-state.enabled::before { background:#7de0b0; }
+.loop-stats { display:flex; gap:28px; margin:16px 0; }
+.loop-stat span { display:block; color:var(--dim); font-size:10px; }
+.loop-stat b { display:block; margin-top:2px; font:500 22px var(--mono); }
+.loop-stat b small { font:11px var(--mono); color:var(--faint); }
+.loop-footer { display:flex; align-items:center; gap:12px; border-top:1px solid var(--edge); padding-top:12px; }
+.loop-candidate { flex:1; min-width:0; }.loop-candidate span { display:block; color:var(--faint); font-size:10px; }
+.loop-candidate strong { display:block; overflow-wrap:anywhere; color:var(--ink); font:12px var(--mono); margin-top:3px; }
+.loop-details { margin-top:10px; font-size:10px; color:var(--faint); }
+.loop-details summary { cursor:pointer; width:fit-content; }.loop-details p { margin:8px 0 0; overflow-wrap:anywhere; line-height:1.6; }
+.loop-error { color:var(--red); font-size:12px; margin:12px 0; overflow-wrap:anywhere; }
+.loops-notice { grid-column:1/-1; padding:18px; color:var(--dim); font-size:12px; }
+@media(max-width:700px) { #loops-list { grid-template-columns:1fr; }.loop-card + .loop-card { border-left:0; border-top:1px solid var(--edge); }.loops-heading,.loop-card { padding:14px; } }
 </style>
 </head>
 <body>
@@ -936,7 +964,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
   </div>
 </section>
   <nav class="workspace-nav" aria-label="工作区"><button class="nav-tab active" data-view="bots" aria-pressed="true">机器人 <span id="nav-count">—</span></button><button class="nav-tab" data-view="research" aria-pressed="false">研究判定</button></nav>
-<section class="vcard" id="loops" aria-label="24小时研究循环"><div class="resource-head"><span>研究循环 24h <small>服务器端 · 关电脑也跑</small></span><span id="loops-updated" aria-live="polite"></span></div><div id="loops-list">读取中…</div></section>
+<section class="research-loops" id="loops" aria-label="24小时研究循环"><div class="loops-heading"><div><h2>研究循环 <span class="always-on">24H / SERVER</span></h2><p>由服务器持续调度，关闭电脑不影响研究</p></div><span id="loops-updated" aria-live="polite">正在连接…</span></div><div id="loops-list"><div class="loops-notice">正在读取研究进度…</div></div><div class="hyp-box" style="margin-top:10px;display:flex;gap:8px"><input id="hyp-text" placeholder="新假设一句话（如：冬天只做BTC双信号，加4h过滤）" style="flex:1" aria-label="新假设"><button class="btn solid" onclick="postHypothesis()">投新假设开一轮</button><span id="hyp-done" style="color:var(--dim);font-size:11px"></span></div></section>
 <section id="bot-workspace">
 <div class="workspace-heading"><div><div class="eyebrow">FLEET OVERVIEW</div><h1>机器人工作台</h1><p>先看运行状态，再看策略表现。</p></div><div class="scope-note">汇总为各机器人账面盈亏之和<br>不同账户与模拟盘独立统计</div></div>
 <div class="fleet-toolbar"><div class="filters" aria-label="机器人状态"><button data-filter="all" class="active" aria-pressed="true">全部 <span></span></button><button data-filter="running" aria-pressed="false">运行中 <span></span></button><button data-filter="positions" aria-pressed="false">有持仓 <span></span></button><button data-filter="attention" aria-pressed="false">需关注 <span></span></button><button data-filter="stopped" aria-pressed="false">已停止 <span></span></button></div><div class="search-tools"><label class="search"><span>搜索</span><input id="bot-search" type="search" placeholder="名称 / 策略 / 端口" aria-label="搜索机器人"></label><select id="bot-sort" aria-label="排序"><option value="priority">运行优先</option><option value="pnl">盈亏从高到低</option><option value="name">名称 A–Z</option></select></div></div>
