@@ -39,8 +39,14 @@ q = json.load(open(p)); q['refills'] = q.get('refills', 0) + 1
 json.dump(q, open(p, 'w'), indent=1)"
     exec "$0"  # re-enter: process the refilled queue (or exit if still empty)
   fi
-  echo "$(date -u +%FT%TZ) queue drained, refills exhausted"
-  exit 0
+  # 24/7: refill caps reset instead of halting (history kept, advisor sees all tried)
+  echo "$(date -u +%FT%TZ) queue drained, refills exhausted -> reset to 0, keep running 24/7"
+  $PY -c "
+import json
+p = '$LOOP/queue.json'
+q = json.load(open(p)); q['refills'] = 0
+json.dump(q, open(p, 'w'), indent=1)"
+  exec "$0"
 fi
 echo "$(date -u +%FT%TZ) item $ITEM"
 

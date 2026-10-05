@@ -32,8 +32,9 @@ fi
 
 DEAD=$($PY -c "import json; print(json.load(open('$SLOOP/queue.json')).get('status','open'))")
 if [[ $DEAD == dead ]]; then
-  echo "$(date -u +%FT%TZ) STOP queue dead"
-  exit 0
+  # 24/7: dead rounds roll over instead of halting (archived, champion kept)
+  $PY $SLOOP/rollover.py $SLOOP/queue.json "dead-revive" >> $SLOOP/cron.log 2>&1
+  exec "$0"
 fi
 
 ITEM=$($PY -c "
@@ -46,14 +47,8 @@ if [[ $ITEM == NONE ]]; then
   REFILLS=$($PY -c "import json; print(json.load(open('$SLOOP/queue.json')).get('refills', 0))")
   CFAIL=$($PY -c "import json; print(json.load(open('$SLOOP/queue.json')).get('consecutive_fail', 0))")
   if [[ $CFAIL -ge $MAX_CONSEC_FAIL ]]; then
-    $PY - << 'EOF'
-import json
-p = '/opt/ccxt/user_data/bench/strat_loop/queue.json'
-q = json.load(open(p)); q['status'] = 'dead'
-json.dump(q, open(p, 'w'), indent=1)
-EOF
-    echo "$(date -u +%FT%TZ) queue dead: $CFAIL consecutive fails"
-    exit 0
+    $PY $SLOOP/rollover.py $SLOOP/queue.json "6-consec-fail" >> $SLOOP/cron.log 2>&1
+    exec "$0"
   fi
   if [[ $REFILLS -lt $MAX_REFILLS ]]; then
     echo "$(date -u +%FT%TZ) queue drained, asking strategist (refill $((REFILLS+1))/$MAX_REFILLS)"
@@ -65,8 +60,9 @@ q = json.load(open(p)); q['refills'] = q.get('refills', 0) + 1
 json.dump(q, open(p, 'w'), indent=1)"
     exec "$0"
   fi
-  echo "$(date -u +%FT%TZ) queue drained, refills exhausted"
-  exit 0
+  echo "$(date -u +%FT%TZ) queue drained, refills exhausted -> rollover to round $(( $($PY -c "import json; print(json.load(open('$SLOOP/queue.json')).get('round',1))") + 1 ))"
+  $PY $SLOOP/rollover.py $SLOOP/queue.json exhausted >> $SLOOP/cron.log 2>&1
+  exec "$0"
 fi
 echo "$(date -u +%FT%TZ) item $ITEM"
 
