@@ -1,0 +1,9 @@
+{
+  "timestamp_utc": "2026-10-05T00:53:00.248036+00:00",
+  "label": "com.ccxtfr.tunnel",
+  "added_forward": "8099:127.0.0.1:8099",
+  "backup_path": "/Users/bobmax/Library/LaunchAgents/com.ccxtfr.tunnel.plist.cov10-backup-20261005",
+  "reloaded": true,
+  "before_sha256": "d59b2a11db5d75dbbb050616ae01420793d82ab7eae745e14816f1c3201e7713",
+  "after_sha256": "bc263b4209a63d92b734419dc11cf4b175163b380cfc0d08f331ed6e22bcd087"
+}

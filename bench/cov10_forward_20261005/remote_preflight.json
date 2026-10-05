@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-05T00:52:49.325732+00:00",
+  "strategy": "RiskHoldR2bCov10",
+  "dry_run": true,
+  "wallet": 10000,
+  "fee": 0.0012,
+  "timeframe": "1d",
+  "max_open_trades": 2,
+  "paths": {
+    "strategy": "/freqtrade/user_data/strategies/cov10_paper/RiskHoldR2bCov10.py",
+    "parent": "/freqtrade/user_data/strategies/cov10_paper/RiskHoldR2b.py",
+    "risk_helper": "/freqtrade/user_data/strategies/cov10_paper/portfolio_risk.py"
+  },
+  "sha256": {
+    "RiskHoldR2b.py": "0691d6aa4a6bcec2e902e6642c52bf4e8b554f95dacb486e18202f7a4c15bd08",
+    "RiskHoldR2bCov10.py": "7daf79337d8df1c08eb6d9a7d01029b72003bc9847bc0052a21c03aa58685f2c",
+    "portfolio_risk.py": "c29d0f44d4af1ad6f5f0193258c6030904fd3103c61a6c6dce16b463af5912f7"
+  },
+  "shared_market_gateway": true,
+  "validated": true
+}

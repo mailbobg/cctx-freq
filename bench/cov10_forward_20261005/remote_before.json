@@ -1,0 +1,63 @@
+{
+  "containers": [
+    {
+      "name": "ccxt-bot-wta2",
+      "id": "dbdc559ee1be075110e6387988f16d1248af3b877fa4d2ba4748877132302ed0",
+      "started_at": "2026-10-04T17:46:05.550197425Z"
+    },
+    {
+      "name": "ccxt-bot-e0v1en",
+      "id": "6186c8da38e6e566dceca6d6fb5a63ea3d9ce3e587180a767d3c9cafa4fd5659",
+      "started_at": "2026-10-04T07:09:21.599233493Z"
+    },
+    {
+      "name": "ccxt-bot-c-hold-sma",
+      "id": "0b77051b6e7b3f2f1c7501574eb43dbc0edd9c3fb99c80f36d6c5869f0d1f5d7",
+      "started_at": "2026-10-02T02:57:45.67950924Z"
+    },
+    {
+      "name": "ccxt-bot-unlock-xs",
+      "id": "55d50f801aa2a56add172c26a434844deba8432eb1278b0e8e564858ecfa6a90",
+      "started_at": "2026-10-01T06:44:40.489048636Z"
+    },
+    {
+      "name": "ccxt-bot-l2p-listings",
+      "id": "b2ec8854d62c034df842624b118aca430caa647b079b998af71b74f0dd020432",
+      "started_at": "2026-10-01T06:44:20.015443756Z"
+    },
+    {
+      "name": "ccxt-panel",
+      "id": "a3ed6c821ee5793a0755e33357742b229f4bc71d7a45e0bcf39b6367635bc52b",
+      "started_at": "2026-10-01T03:49:43.957101185Z"
+    }
+  ],
+  "config_sha256": {
+    "e0v1en.json": "f601651c6dc53c3216930ddee5cb660b8604fcd738429f8cb1727e738ad6f49a",
+    "x14-bybit.json": "2730e36b7f064c473f846cef490210107680d6b400676ca7f5e6c866f197eff7",
+    "wta.json": "ba5dafb59f90092f053bf26896603ce549feb80b38c844167c6656397a3c33e3",
+    "c-hold.json": "db62f11e17b253793392ea6da5e6dda6d13de03fef636380c204b62c78804b9c",
+    "unlock-xs.json": "bbc9f0221ae58d4d69db07950872b23c1cd5e1ac7aa4a72d76b6b8e49af6da12",
+    "live-secrets.json": "e1d2f3298723df1be18bbd0164719a2a379f5eac01136041187b7d2613ba5de3",
+    "unlock-short.json": "cdd7665b0ec102191c71c03fe1fb7b9fe2de653564f76042cce2b7af76325cb5",
+    "l2p-listings.json": "b3f9bbfa8ca4c84ce69a45be3f9899ca0683c3a639beb650352914fcad9e4a5b",
+    "family-spot118.json": "9531413499ad46fe0a6159ffa9340aa4ff9faf69f5f89c3323954ce755833dc2",
+    "x12.json": "46c245cb9cd500e6b54145fbb3e01eda55754bad876deb10cc3a358518ed9505",
+    "x14-bitget.json": "21f95c0fafe53a8a2182f33260c5ce7b557d763d78ee9c181f53b18ae9a86343",
+    "x7.json": "03693e5d9faf77d4e3fb386a78c1ee482cd8a7c39fda7f3b4c3ee585af35c3c1",
+    "funding-spread.json": "6989d313eec0dad4e651470b4ffaf8e0f7d10700de772cc4fecfbd37c8834c51",
+    "e0v1en-live.json": "39cec3b40d8c7eccc0db8be5324f52447d103fd23948ae829acd579a51b332a0",
+    "local-network.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "x14.json": "7125991004eb8b8d4e412564b0e57a43aa45205aa7443767646f8e5eb82cf4ab",
+    "shared-market-data.json": "80c2062419aeb640d9d076cce2901a288b7be118a369859ecf96ca76ae3da6ee",
+    "c-hold-sma.json": "783e6b6a4f43b3b5eac7e350ac8e18661ff54d74c18bbadc25865f3094e969da",
+    "l2-listings.json": "77582392ea5a604f9ce0642dee035faba05d7be90672742e117c78a1af370396",
+    "verdicts.json": "a360af317797bf6a7b7917629d707b062f3c8893d55121905efda66de0ab081d",
+    "common.json": "89ba71b18b8d5f0d1a29465fa1faaa40714035c1674def02e8f35b81cbe9b2e9",
+    "x8.json": "5877aa2176d03479bf57c8b1eb9e7dc3ad8803958c51cf5940576e41390495fb",
+    "wta2.json": "112dddadc78be9f9402dcb7e78ae71051e49b9176dd7b211fafad73e4ce2ec8e",
+    "family-nfi.json": "559ccdf68f08284ef5cb674d58755a8471b28d7d30f800eaec823c427c66001e"
+  },
+  "global_risk_helper_sha256": "cd9b2e7c5454dac2a9b8026ae371ebe3f065c382c473ffeaee2d8edfec53d0ad",
+  "cov10_slot_empty": true,
+  "port_8099_available": true
+}

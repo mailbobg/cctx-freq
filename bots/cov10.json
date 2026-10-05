@@ -1,0 +1,54 @@
+{
+  "add_config_files": [
+    "common.json",
+    "secrets.json",
+    "local-network.json"
+  ],
+  "strategy": "RiskHoldR2bCov10",
+  "strategy_path": "user_data/strategies/cov10_paper",
+  "bot_name": "cov10",
+  "dry_run": true,
+  "dry_run_wallet": 10000,
+  "trading_mode": "spot",
+  "margin_mode": "",
+  "stake_currency": "USDT",
+  "stake_amount": "unlimited",
+  "tradable_balance_ratio": 0.99,
+  "timeframe": "1d",
+  "max_open_trades": 2,
+  "fee": 0.0012,
+  "position_adjustment_enable": true,
+  "process_only_new_candles": true,
+  "use_exit_signal": true,
+  "force_entry_enable": false,
+  "initial_state": "running",
+  "db_url": "sqlite:///user_data/tradesv3.cov10.dryrun.sqlite",
+  "pairlists": [
+    {
+      "method": "StaticPairList"
+    }
+  ],
+  "order_types": {
+    "entry": "limit",
+    "exit": "limit",
+    "emergency_exit": "market",
+    "force_entry": "limit",
+    "force_exit": "market",
+    "stoploss": "market",
+    "stoploss_on_exchange": false,
+    "stoploss_on_exchange_interval": 60,
+    "stoploss_on_exchange_limit_ratio": 0.99
+  },
+  "exchange": {
+    "name": "binance",
+    "enable_ws": false,
+    "pair_whitelist": [
+      "BTC/USDT",
+      "ETH/USDT"
+    ],
+    "pair_blacklist": []
+  },
+  "api_server": {
+    "listen_port": 8099
+  }
+}

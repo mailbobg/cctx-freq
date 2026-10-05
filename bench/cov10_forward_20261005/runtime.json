@@ -1,0 +1,96 @@
+{
+  "timestamp_utc": "2026-10-05T00:53:55.716406+00:00",
+  "config": {
+    "bot_name": "cov10",
+    "strategy": "RiskHoldR2bCov10",
+    "dry_run": true,
+    "state": "running",
+    "timeframe": "1d",
+    "max_open_trades": 2.0,
+    "trading_mode": "spot",
+    "stake_currency": "USDT",
+    "stake_amount": "unlimited"
+  },
+  "wallet": {
+    "total": 10000.239076999998,
+    "total_bot": 9900.239076999998,
+    "starting_capital": 9900.0,
+    "note": "Simulated balances"
+  },
+  "configured_wallet_usdt": 10000,
+  "whitelist": [
+    "BTC/USDT",
+    "ETH/USDT"
+  ],
+  "positions": [
+    {
+      "trade_id": 1,
+      "pair": "BTC/USDT",
+      "is_open": true,
+      "is_short": false,
+      "open_date": "2026-10-05 00:53:22",
+      "open_rate": 86665.7,
+      "amount": 0.01529,
+      "stake_amount": 1325.118553,
+      "fee_open": 0.0012,
+      "fee_close": 0.0012,
+      "enter_tag": "weekly_on",
+      "profit_abs": -3.60666905,
+      "profit_ratio": -0.00271851
+    },
+    {
+      "trade_id": 2,
+      "pair": "ETH/USDT",
+      "is_open": true,
+      "is_short": false,
+      "open_date": "2026-10-05 00:53:22",
+      "open_rate": 2729.75,
+      "amount": 0.4855,
+      "stake_amount": 1325.293625,
+      "fee_open": 0.0012,
+      "fee_close": 0.0012,
+      "enter_tag": "weekly_on",
+      "profit_abs": -3.28738653,
+      "profit_ratio": -0.00247752
+    }
+  ],
+  "candles": [
+    {
+      "pair": "BTC/USDT",
+      "length": 260,
+      "last": {
+        "date": "2026-10-04T00:00:00Z",
+        "close": 86530.0,
+        "weight": 0.133877321448715,
+        "decide": true,
+        "enter_long": 1.0,
+        "exit_long": null
+      }
+    },
+    {
+      "pair": "ETH/USDT",
+      "length": 260,
+      "last": {
+        "date": "2026-10-04T00:00:00Z",
+        "close": 2726.94,
+        "weight": 0.133877321448715,
+        "decide": true,
+        "enter_long": 1.0,
+        "exit_long": null
+      }
+    }
+  ],
+  "panel": {
+    "name": "cov10",
+    "port": 8099,
+    "api": "up",
+    "trading": "running",
+    "dry_run": true,
+    "open_trades": 2,
+    "closed_trades": 0,
+    "profit_all": -6.92784708,
+    "restarts_24h": 0
+  },
+  "frequi_login_present": true,
+  "verified": true
+}

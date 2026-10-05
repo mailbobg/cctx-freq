@@ -1,0 +1,37 @@
+{
+  "timestamp_utc": "2026-10-05T00:54:14.956176+00:00",
+  "container": {
+    "name": "ccxt-bot-cov10",
+    "id": "88c06816f0e54b7063d92e22e02bb7ce15bdaae3e93fca6248513a78e9536953",
+    "started_at": "2026-10-05T00:53:08.806212108Z",
+    "running": true,
+    "restart_count": 0,
+    "command": [
+      "trade",
+      "-c",
+      "user_data/bots/cov10.json",
+      "-c",
+      "user_data/bots/shared-market-data.json",
+      "--logfile",
+      "user_data/logs/cov10.log"
+    ],
+    "restart_policy": "unless-stopped"
+  },
+  "existing_active_containers_unchanged": 6,
+  "existing_configs_unchanged": 24,
+  "global_risk_helper_unchanged": true,
+  "frozen_source_sha256": {
+    "RiskHoldR2b.py": "0691d6aa4a6bcec2e902e6642c52bf4e8b554f95dacb486e18202f7a4c15bd08",
+    "RiskHoldR2bCov10.py": "7daf79337d8df1c08eb6d9a7d01029b72003bc9847bc0052a21c03aa58685f2c",
+    "portfolio_risk.py": "c29d0f44d4af1ad6f5f0193258c6030904fd3103c61a6c6dce16b463af5912f7"
+  },
+  "database": "/opt/ccxt/user_data/tradesv3.cov10.dryrun.sqlite",
+  "database_trades": 2,
+  "database_fee_pairs": [
+    [
+      0.0012,
+      0.0012
+    ]
+  ],
+  "verified": true
+}
