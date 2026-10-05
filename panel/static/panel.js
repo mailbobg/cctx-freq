@@ -326,19 +326,10 @@ async function refreshLoops() {
     const action = l.enabled ? "stop" : "start";
     const status = { open: "持续研究", dead: "研究已终止", paused: "已暂停", done: "已完成" }[l.status] || l.status || "—";
     const stats = l.error ? `<p class="loop-error">${esc(l.error)}</p>` : `<div class="loop-stats"><div class="loop-stat"><span>通过筛选</span><b>${esc(l.passed ?? 0)} <small>/ ${esc(l.total ?? 0)}</small></b></div><div class="loop-stat"><span>待跑候选</span><b>${esc(l.pending ?? 0)}</b></div><div class="loop-stat"><span>研究轮次</span><b>${esc(l.round ?? 1)}</b></div></div>`;
-    return `<article class="loop-card"><div class="loop-top"><div class="loop-title">${esc(l.title)}<small>${esc(l.name)}</small></div><span class="loop-state ${l.enabled ? "enabled" : ""}">${state}</span></div>${stats}<div class="loop-footer"><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div><button class="btn ${l.enabled ? "warn" : "solid"}" data-loop-name="${esc(l.name)}" data-loop-action="${action}" aria-label="${esc(l.title)}：${l.enabled ? "暂停调度" : "开启调度"}">${l.enabled ? "暂停调度" : "开启调度"}</button></div><details class="loop-details"><summary>研究详情与最近记录</summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p><p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
+    return `<article class="loop-card"><div class="loop-top"><div class="loop-title">${esc(l.title)}<small>${esc(l.name)}</small></div><span class="loop-state ${l.enabled ? "enabled" : ""}">${state}</span></div>${stats}<div class="loop-footer"><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div><button class="btn ${l.enabled ? "warn" : "solid"}" data-loop-name="${esc(l.name)}" data-loop-action="${action}" aria-label="${esc(l.title)}：${l.enabled ? "暂停调度" : "开启调度"}">${l.enabled ? "暂停调度" : "开启调度"}</button></div><details class="loop-details"><summary>研究详情与最近记录</summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p>${l.hypothesis ? `<p>本轮研究假设：${esc(l.hypothesis)}</p>` : ""}<p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
   }).join("") || '<div class="loops-notice">暂无研究循环</div>';
   setText($("#loops-updated"), "更新于 " + new Date().toLocaleTimeString("zh-CN", { hour12: false }));
 }
-async function postHypothesis() {
-  const t = $("#hyp-text").value.trim();
-  if (!t) { alert("先写一句假设"); return; }
-  const r = await fetch("/api/loops/strat_loop/hypothesis", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ text: t }) });
-  if (!r.ok) { alert("提交失败"); return; }
-  $("#hyp-text").value = "";
-  setText($("#hyp-done"), "已投递，下个 tick 自动开新一轮");
-}
-
 async function refreshNet() {
   try {
     const n = await (await fetch("/api/net")).json();

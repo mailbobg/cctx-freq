@@ -27,7 +27,6 @@ import psutil
 import requests
 import uvicorn
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
 from fastapi.responses import HTMLResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -594,6 +593,11 @@ def loop_status(key: str) -> dict:
     except Exception:
         out["error"] = "读不到 queue.json"
     try:
+        ex = json.loads((base / "explore.json").read_text())
+        out["hypothesis"] = f"[{ex.get('mode')}] {ex.get('brief', '')[:180]}"
+    except Exception:
+        out["hypothesis"] = ""
+    try:
         lines = (base / "cron.log").read_text().strip().splitlines()
         out["last"] = lines[-1][:160] if lines else ""
     except Exception:
@@ -604,25 +608,6 @@ def loop_status(key: str) -> dict:
 @app.get("/api/loops")
 def list_loops():
     return [loop_status(k) for k in LOOPS]
-
-
-class HypIn(BaseModel):
-    text: str = ""
-
-
-@app.post("/api/loops/{name}/hypothesis")
-def post_hypothesis(name: str, body: HypIn):
-    """User-posted hypothesis: .txt brief into inbox, next tick opens a new round."""
-    if name not in LOOPS:
-        raise HTTPException(404, "没有这个 loop")
-    text = (body.text or "").strip()[:2000]
-    if not text:
-        raise HTTPException(400, "假设不能为空")
-    ib = ROOT / "user_data" / LOOPS[name]["dir"] / "inbox"
-    ib.mkdir(parents=True, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    (ib / f"hyp-{ts}.txt").write_text(text)
-    return {"ok": True}
 
 
 @app.post("/api/loops/{name}/{action}")

@@ -103,14 +103,17 @@ def strategies_dir(qpath: Path) -> Path:
     return qpath.parent.parent.parent / "strategies"
 
 
-def build_prompt(q: dict, parent_src: str) -> str:
+def build_prompt(q: dict, parent_src: str, explore: dict | None = None) -> str:
     lines = [
         f"baseline totals by window: {json.dumps(q['baseline'])}",
         f"parent strategy file: {q['parent']}.py",
         f"champion so far: {q.get('champion')}",
     ]
     if q.get("brief"):
-        lines.append(f"ROUND BRIEF (user hypothesis, overrides default fork direction): {q['brief']}")
+        lines.append(f"ROUND BRIEF (autonomous research direction, overrides default fork): {q['brief']}")
+    ex = explore
+    if ex:
+        lines.append(f"LAB HYPOTHESIS [{ex['mode']}] (must follow): {ex['brief']}")
     lines.append("tried files (file, status, sharpe, dd, reasons):")
     for i in q["items"]:
         if i["status"] != "pending":
@@ -133,6 +136,13 @@ def build_prompt(q: dict, parent_src: str) -> str:
     return "\n".join(lines)
 
 
+def load_explore(qpath: Path) -> dict | None:
+    try:
+        return json.loads((qpath.parent / "explore.json").read_text())
+    except Exception:
+        return None
+
+
 def extract_one(raw: str) -> tuple[str, str, str] | None:
     fm = FILE_RE.search(raw)
     wm = WHY_RE.search(raw)
@@ -153,7 +163,7 @@ def main() -> None:
         h = i.get("code_sha")
         if h:
             tried_hash.add(h)
-    prompt = build_prompt(q, parent_src)
+    prompt = build_prompt(q, parent_src, load_explore(qpath))
     added = 0
     for _ in range(MAX_NEW):
         try:
