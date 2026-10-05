@@ -93,6 +93,7 @@ EOF
 fi
 
 PAIRS="BTC/USDT SOL/USDT AVAX/USDT"
+mkdir -p $SLOOP/results
 # base config (same economics as aq_loop, no aq overrides: E1 files are self-contained)
 $PY - > $SLOOP/cfg-$ITEM.json << 'EOF'
 import json
