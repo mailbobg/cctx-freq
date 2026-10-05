@@ -806,20 +806,29 @@ ui = FastAPI(title="FreqUI via panel")
 
 def _frequi_logins() -> dict:
     user, pw = credentials()
-    out = {}
-    for i, b in enumerate(bots().values()):
-        if b.get("runtime", "freqtrade") not in ("freqtrade", "cross_venue_paper"):
-            continue
+    bots_list = [(i, b) for i, b in enumerate(bots().values())
+                 if b.get("runtime", "freqtrade") in ("freqtrade", "cross_venue_paper")]
+
+    def login_one(args):
+        i, b = args
         url = f"http://127.0.0.1:{b['port']}"
         try:
-            r = requests.post(f"{url}/api/v1/token/login", auth=(user, pw), timeout=4)
+            r = requests.post(f"{url}/api/v1/token/login", auth=(user, pw), timeout=3)
             r.raise_for_status()
             tok = r.json()
         except Exception:
-            continue                                   # bot is not running: leave it out
-        out[f"ccxt.{b['name']}"] = {"botName": b["bot_name"], "apiUrl": url, "username": user,
-                                    "accessToken": tok["access_token"], "refreshToken": tok["refresh_token"],
-                                    "autoRefresh": True, "sortId": i}
+            return None  # bot is not running: leave it out
+        return (f"ccxt.{b['name']}", {"botName": b["bot_name"], "apiUrl": url, "username": user,
+                "accessToken": tok["access_token"], "refreshToken": tok["refresh_token"],
+                "autoRefresh": True, "sortId": i})
+
+    # parallel: 14 sequential blocking logins could stall the event loop ~1 min
+    import concurrent.futures
+    out = {}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as ex:
+        for res in ex.map(login_one, bots_list):
+            if res:
+                out[res[0]] = res[1]
     return out
 
 
