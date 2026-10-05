@@ -567,6 +567,61 @@ def list_bots():
     return [status(b) for b in bots().values()]
 
 
+# ---------- 24h research loops (one click, server-side, no Mac needed) ----------
+LOOPS = {
+    "aq_loop": {"title": "AQ 调参", "dir": "bench/aq_loop"},
+    "strat_loop": {"title": "策略进化", "dir": "bench/strat_loop"},
+}
+
+
+def loop_status(key: str) -> dict:
+    base = ROOT / "user_data" / LOOPS[key]["dir"]
+    running = (base / "RUN").exists()
+    out: dict = {"name": key, "title": LOOPS[key]["title"], "enabled": running}
+    try:
+        q = json.loads((base / "queue.json").read_text())
+        items = q.get("items", [])
+        out.update({
+            "round": q.get("round", 1),
+            "status": q.get("status", "open"),
+            "champion": q.get("champion"),
+            "refills": q.get("refills", 0),
+            "total": len(items),
+            "passed": sum(1 for i in items if str(i.get("status", "")).startswith("done-pass")),
+            "pending": sum(1 for i in items if i.get("status") == "pending"),
+        })
+    except Exception:
+        out["error"] = "读不到 queue.json"
+    try:
+        lines = (base / "cron.log").read_text().strip().splitlines()
+        out["last"] = lines[-1][:160] if lines else ""
+    except Exception:
+        out["last"] = ""
+    return out
+
+
+@app.get("/api/loops")
+def list_loops():
+    return [loop_status(k) for k in LOOPS]
+
+
+@app.post("/api/loops/{name}/{action}")
+def act_loop(name: str, action: str):
+    if name not in LOOPS:
+        raise HTTPException(404, "没有这个 loop")
+    flag = ROOT / "user_data" / LOOPS[name]["dir"] / "RUN"
+    if action == "start":
+        flag.touch()
+    elif action == "stop":
+        try:
+            flag.unlink()
+        except FileNotFoundError:
+            pass
+    else:
+        raise HTTPException(400, "未知操作")
+    return {"ok": True, "enabled": flag.exists()}
+
+
 def _closed_events(bot: dict, exclude: str | None) -> int | None:
     """Closed trades of a bot, optionally without one pair (the BTC hedge leg of the new-listing bots)."""
     try:

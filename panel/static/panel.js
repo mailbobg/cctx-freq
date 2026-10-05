@@ -290,6 +290,7 @@ async function refresh() {
   for (const [name, el] of units) if (!bots.some(b => b.name === name)) { el.remove(); units.delete(name); }
 
   fleet = bots; layoutFleet();
+  refreshLoops();
   const up = bots.filter(b => b.api === "up");
   const known = bots.filter(b => b.api === "up" || b.offline);
   const pnl = known.reduce((s, b) => s + (b.profit_all || 0), 0);
@@ -297,6 +298,29 @@ async function refresh() {
   setTick($("#s-open .tk"), known.reduce((s, b) => s + (b.open_trades || 0), 0));
   setTick($("#s-pnl .tk"), num(pnl)); setTone($("#s-pnl"), pnl);
   setText($("#updated"), "每 5 秒刷新 · 上次 " + new Date().toLocaleTimeString("zh-CN", { hour12: false }));
+}
+
+
+/* ---------- 24h loops card ---------- */
+async function loopAct(name, action) {
+  if (action === "stop" && !confirm(`暂停 ${name}？进行中的回测跑完当前窗口后停，队列保留。`)) return;
+  await fetch(`/api/loops/${name}/${action}`, { method: "POST" });
+  refreshLoops();
+}
+async function refreshLoops() {
+  let loops;
+  try { const r = await fetch("/api/loops"); if (!r.ok) throw 0; loops = await r.json(); }
+  catch (e) { setText($("#loops-list"), "读不到循环状态"); return; }
+  $("#loops-list").innerHTML = loops.map(l => {
+    const info = l.error ? esc(l.error)
+      : `第${l.round ?? 1}轮 · ${esc(l.status ?? "")} · champion ${esc(l.champion ?? "—")} · ${l.passed ?? 0}/${l.total ?? 0}通过 ${l.pending ?? 0}待跑 · refill ${l.refills ?? 0}`;
+    const btn = l.enabled
+      ? `<button class="btn warn" onclick="loopAct('${l.name}','stop')">暂停</button>`
+      : `<button class="btn solid" onclick="loopAct('${l.name}','start')">启动24h</button>`;
+    const dot = l.enabled ? "🟢" : "⚪";
+    return `<div style="display:flex;gap:12px;align-items:center;margin:8px 0"><b>${dot} ${esc(l.title)} <small>${esc(l.name)}</small></b><span style="flex:1">${info}</span>${btn}</div><div style="color:var(--dim);font-size:11px">${esc(l.last || "")}</div>`;
+  }).join("");
+  setText($("#loops-updated"), "随整页刷新");
 }
 
 async function refreshNet() {

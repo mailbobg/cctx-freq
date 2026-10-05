@@ -1,6 +1,7 @@
 #!/bin/bash
 # strat_loop tick: run the next pending strategy file (4 backtests in docker),
 # evaluate gates (reuse aq_loop/evaluate.py), log, advance queue.json.
+# 24h master switch: panel Loops card toggles $SLOOP/RUN (no file = paused).
 # One tick ~= 10-20 min on the Vultr box. Cron every 10 min with a lock.
 # Manual: ssh server -> /opt/ccxt/user_data/bench/strat_loop/loop.sh
 # NOTE: do NOT run together with aq_loop on the 2vCPU box (docker OOM).
@@ -22,6 +23,12 @@ if [[ -e $LOCK ]]; then
 fi
 echo $$ > $LOCK
 trap "rm -f $LOCK" EXIT
+
+# 24h master switch (panel Loops card): no RUN file = paused, tick exits quietly
+if [[ ! -f $SLOOP/RUN ]]; then
+  echo "$(date -u +%FT%TZ) PAUSED (no RUN file, enable from panel Loops card)"
+  exit 0
+fi
 
 # disk guard: backtests write zips + logs
 USEPCT=$(df -P "$UD" | awk 'NR==2 {gsub(/%/,"",$5); print $5}')

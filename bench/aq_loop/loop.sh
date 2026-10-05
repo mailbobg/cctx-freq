@@ -20,6 +20,12 @@ fi
 echo $$ > $LOCK
 trap "rm -f $LOCK" EXIT
 
+# 24h master switch (panel Loops card): no RUN file = paused, tick exits quietly
+if [[ ! -f $LOOP/RUN ]]; then
+  echo "$(date -u +%FT%TZ) PAUSED (no RUN file, enable from panel Loops card)"
+  exit 0
+fi
+
 ITEM=$($PY -c "
 import json
 q = json.load(open('$LOOP/queue.json'))
