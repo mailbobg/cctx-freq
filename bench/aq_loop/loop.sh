@@ -10,10 +10,14 @@ LOCK=/tmp/aq_loop.lock
 PY=python3
 
 if [[ -e $LOCK ]]; then
-  echo "$(date -u +%FT%TZ) SKIP locked"
-  exit 0
+  LPID=$(cat $LOCK 2>/dev/null)
+  if [[ "$LPID" != "$$" ]] && kill -0 "$LPID" 2>/dev/null; then
+    echo "$(date -u +%FT%TZ) SKIP locked by $LPID"
+    exit 0
+  fi
+  # stale lock (dead pid) or our own re-entry: proceed
 fi
-touch $LOCK
+echo $$ > $LOCK
 trap "rm -f $LOCK" EXIT
 
 ITEM=$($PY -c "
@@ -23,7 +27,19 @@ pend = [i for i in q['items'] if i['status'] == 'pending']
 print(pend[0]['id'] if pend else 'NONE')
 ")
 if [[ $ITEM == NONE ]]; then
-  echo "$(date -u +%FT%TZ) queue drained"
+  # queue drained: ask the LLM advisor for the next batch (max 5 refills)
+  REFILLS=$($PY -c "import json; print(json.load(open('$LOOP/queue.json')).get('refills', 0))")
+  if [[ $REFILLS -lt 5 ]]; then
+    echo "$(date -u +%FT%TZ) queue drained, asking advisor (refill $((REFILLS+1))/5)"
+    $PY $LOOP/advise.py $LOOP/queue.json >> $LOOP/cron.log 2>&1
+    $PY -c "
+import json
+p = '$LOOP/queue.json'
+q = json.load(open(p)); q['refills'] = q.get('refills', 0) + 1
+json.dump(q, open(p, 'w'), indent=1)"
+    exec "$0"  # re-enter: process the refilled queue (or exit if still empty)
+  fi
+  echo "$(date -u +%FT%TZ) queue drained, refills exhausted"
   exit 0
 fi
 echo "$(date -u +%FT%TZ) item $ITEM"
