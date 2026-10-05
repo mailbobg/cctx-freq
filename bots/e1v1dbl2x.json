@@ -4,7 +4,7 @@
     "secrets.json",
     "local-network.json"
   ],
-  "strategy": "E1V1DBL2XH",
+  "strategy": "E1V1BTCDBL2XH",
   "bot_name": "e1v1dbl2x",
   "dry_run": true,
   "dry_run_wallet": 10000,
@@ -37,7 +37,7 @@
     "use_order_book": false,
     "order_book_top": 1
   },
-  "db_url": "sqlite:///user_data/tradesv3.e1v1dbl2x.dryrun.sqlite",
+  "db_url": "sqlite:///user_data/tradesv3.e1v1btcdbl2x.dryrun.sqlite",
   "pairlists": [
     {
       "method": "StaticPairList"
