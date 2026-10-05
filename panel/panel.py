@@ -21,6 +21,7 @@ from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from panel.market_data import MarketDataGateway, install_routes
 from panel.waiting import listings_note, weekly_note
+from panel.resources import ResourceMonitor, ProcessResourceMonitor
 
 import psutil
 import requests
@@ -41,6 +42,7 @@ STOP_GRACE = 40           # seconds before SIGKILL
 lock = threading.RLock()
 restarts: dict[str, list[float]] = {}
 market_data = MarketDataGateway()
+process_resources = ProcessResourceMonitor()
 
 # PANEL_RUNNER=docker: bots run as containers (see panel/docker_runner.py); default: local processes
 RUNNER = os.environ.get("PANEL_RUNNER", "process")
@@ -85,6 +87,17 @@ def _common() -> dict:
         return {}
 
 
+def strategy_created(cfg: dict) -> str:
+    """Strategy file birth date (YYYY-MM-DD) for the bot card, '' if unknown."""
+    try:
+        base = ROOT / cfg.get("strategy_path", "user_data/strategies")
+        f = base / f"{cfg['strategy']}.py"
+        import datetime
+        return datetime.datetime.fromtimestamp(f.stat().st_mtime).strftime("%Y-%m-%d")
+    except Exception:
+        return ""
+
+
 def bots() -> dict[str, dict]:
     meta = {}
     try:
@@ -109,6 +122,7 @@ def bots() -> dict[str, dict]:
             "db_url": f"sqlite:///user_data/dev/tradesv3.{name}.sqlite" if PORT_OFFSET else cfg.get("db_url"),
             "max_trades": cfg.get("max_open_trades", _common().get("max_open_trades")),
             "description": meta.get(name, {}).get("description", ""),
+            "strategy_created": strategy_created(cfg),
             "wait": meta.get(name, {}).get("wait"),
             "runtime": cfg.get("runtime", "freqtrade"),
             "exchange": cfg.get("exchange",{}).get("name",_common().get("exchange",{}).get("name")),
@@ -387,7 +401,7 @@ def offline_stats(bot: dict) -> dict:
 def status(bot: dict) -> dict:
     st = load_state().get(bot["name"], {})
     p = find_process(bot)
-    out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description")}
+    out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description", "strategy_created")}
     out["runtime"] = bot.get("runtime", "freqtrade")
     try:
         if bot.get("wait"):
@@ -404,7 +418,12 @@ def status(bot: dict) -> dict:
         [t for t in restarts.get(bot["name"], []) if t > time.time() - 86400]))
     if p:
         out["uptime_s"] = int(time.time() - p.create_time())
-        out["mem_mb"] = int(p.memory_info().rss / 2**20)
+        try:
+            usage = docker.resource_usage(p.id) if RUNNER == "docker" else process_resources.snapshot(p)
+            out["cpu_percent"] = usage["cpu_percent"]
+            out["mem_mb"] = round(usage["memory_bytes"] / 2**20, 1) if usage["memory_bytes"] is not None else None
+        except Exception:
+            out.update(cpu_percent=None, mem_mb=None)
     try:
         cfg = bot_api(bot, "show_config")
         if out["runtime"] == "cross_venue_paper":
@@ -473,6 +492,14 @@ app = FastAPI(title="CCXT-Fr panel")
 install_routes(app,market_data)
 app.mount("/static", StaticFiles(directory=Path(__file__).parent / "static"), name="static")
 
+resource_monitor = ResourceMonitor(ROOT / "user_data")
+
+
+@app.get("/api/resources")
+def server_resources():
+    return resource_monitor.snapshot()
+
+
 _net = {"t": 0.0, "data": {}}
 
 
@@ -529,58 +556,10 @@ async def no_cache_static(request, call_next):
     return resp
 
 
-# ---------- C: BTC/ETH weekly holding signal (spec bench/specs/2026-09-27-c-btceth-risk-managed-hold.md) ----------
-_csig = {"t": 0.0, "data": None}
-C_LOOKBACK, C_VOL_TARGET, C_CAP, C_BAND = 30, 0.60, 0.5, 0.05
-
-
-def _daily(symbol: str) -> list[tuple[int, float]]:
-    r = market_data.get('spot','klines',[('symbol',symbol),('interval','1d'),('limit','200')])
-    if r.status!=200:raise ValueError('public daily candles unavailable')
-    now_ms = time.time() * 1000
-    return [(k[0], float(k[4])) for k in json.loads(r.body) if k[6] < now_ms]      # closed daily candles only
-
-
-def _weights(closes: list[float]) -> dict:
-    import math
-    mom = closes[-1] / closes[-1 - C_LOOKBACK] - 1
-    logr = [math.log(closes[i] / closes[i - 1]) for i in range(len(closes) - 30, len(closes))]
-    mean = sum(logr) / len(logr)
-    vol = math.sqrt(sum((x - mean) ** 2 for x in logr) / (len(logr) - 1)) * math.sqrt(365)
-    w = C_CAP * min(1.0, C_VOL_TARGET / vol) if mom > 0 else 0.0
-    return {"mom30": mom, "vol30": vol, "on": mom > 0, "weight": w}
-
-
+# Retain an explicit disabled response for old clients and bookmarks.
 @app.get("/api/c-signal")
 def c_signal():
-    """This week's target weights: decided on the last completed Sunday close (UTC), traded at Monday's open."""
-    if _csig["data"] is None or time.time() - _csig["t"] > 600:
-        series = {c: _daily(f"{c}USDT") for c in ("BTC", "ETH")}
-        days = [t for t, _ in series["BTC"]]
-        # Sunday candles: open time on a Sunday (UTC); the decision uses that candle's close
-        sundays = [i for i, t in enumerate(days) if time.gmtime(t / 1000).tm_wday == 6]
-        hist = []
-        for i in sundays[-13:]:
-            row = {"decided_on": time.strftime("%Y-%m-%d", time.gmtime(days[i] / 1000))}
-            for c in ("BTC", "ETH"):
-                row[c] = _weights([x for _, x in series[c][: i + 1]])
-            row["USDT"] = 1 - row["BTC"]["weight"] - row["ETH"]["weight"]
-            hist.append(row)
-        cur = hist[-1]
-        prev = hist[-2] if len(hist) > 1 else None
-        latest = {c: _weights([x for _, x in series[c]]) for c in ("BTC", "ETH")}
-        last_sun = days[sundays[-1]] / 1000
-        next_monday = last_sun + 8 * 86400                    # the Monday after the *next* Sunday close
-        _csig.update(t=time.time(), data={
-            "week": cur, "previous": prev, "history": hist,
-            "today_preview": {"as_of": time.strftime("%Y-%m-%d", time.gmtime(days[-1] / 1000)), **latest},
-            "trade_at": time.strftime("%Y-%m-%d 00:00 UTC", time.gmtime(last_sun + 86400)),
-            "next_decision_utc": next_monday, "band": C_BAND,
-            "backtest": {"oos": "2017-09→2020-12：年化 +79% vs 死拿 +64%，最大回撤 −49% vs −88%",
-                         "is": "2021-01→2026-09：年化 +45% vs +22%，最大回撤 −33% vs −76%",
-                         "verdict": "未通过预注册标准 1（回撤需 ≤ 死拿的一半，实际 56%），仅作参考"},
-        })
-    return _csig["data"]
+    raise HTTPException(status_code=410, detail="每周参考信号已停用")
 
 
 @app.get("/api/bots")

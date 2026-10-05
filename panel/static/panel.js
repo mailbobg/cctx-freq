@@ -60,6 +60,43 @@ function setTone(el, v) { setClass(el, "pos", v > 0); setClass(el, "neg", v < 0)
 const openLogs = new Set(JSON.parse(store.get("panel-open") || "[]"));
 const busy = new Set();
 const units = new Map();
+let fleet = [], fleetFilter = "all", expandedBot = null;
+const isAttention = b => (b.want === "running" && !b.pid) || (b.pid && b.api !== "up") || (b.liq && !b.liq.done) || (b.liq && ["失败", "超时"].includes(b.liq.stage));
+const matchesFilter = (b, filter) => filter === "all" || (filter === "running" && !!b.pid) || (filter === "positions" && Number(b.open_trades) > 0) || (filter === "attention" && isAttention(b)) || (filter === "stopped" && !b.pid);
+function layoutFleet() {
+  const query = $("#bot-search").value.trim().toLowerCase();
+  const sort = $("#bot-sort").value;
+  const filtered = fleet.filter(b => matchesFilter(b, fleetFilter) && [b.name,b.bot_name,b.strategy,b.port,b.description].join(" ").toLowerCase().includes(query));
+  const priority = b => isAttention(b) ? 0 : b.pid ? 1 : Number(b.open_trades) > 0 ? 2 : 3;
+  filtered.sort((a,b) => sort === "name" ? String(a.bot_name || a.name).localeCompare(String(b.bot_name || b.name)) : sort === "pnl" ? (b.profit_all ?? -Infinity) - (a.profit_all ?? -Infinity) || a.name.localeCompare(b.name) : priority(a)-priority(b) || a.name.localeCompare(b.name));
+  const visible = new Set(filtered.map(b=>b.name));
+  const rack = $("#rack");
+  for (const [name,el] of units) el.hidden = !visible.has(name);
+  // Move only when ordering changes, preserving focused controls across polling.
+  const ordered = [...filtered.map(b=>units.get(b.name)), ...fleet.filter(b=>!filtered.some(x=>x.name===b.name)).map(b=>units.get(b.name))];
+  ordered.forEach((el,i)=>{ if (rack.children[i] !== el) rack.insertBefore(el,rack.children[i] || null); });
+  $("#list-empty").hidden = filtered.length > 0;
+  rack.hidden = !filtered.length;
+  setText($("#list-count"), `${filtered.length} / ${fleet.length} 个机器人`);
+  setText($("#nav-count"), String(fleet.length));
+  document.querySelectorAll("[data-filter]").forEach(btn=>setText($("span",btn),String(fleet.filter(b=>matchesFilter(b,btn.dataset.filter)).length)));
+}
+function expandBot(name) {
+  expandedBot = expandedBot === name ? null : name;
+  for (const [key,el] of units) {
+    const expanded = key === expandedBot;
+    setClass(el,"expanded",expanded);
+    $(".inspect",el).setAttribute("aria-expanded",String(expanded));
+    setText($(".inspect",el),expanded ? "收起 ↑" : "详情 ↓");
+    if (!expanded) { openLogs.delete(key); $(".log",el).hidden = true; }
+  }
+  store.set("panel-open", JSON.stringify([...openLogs]));
+}
+function selectView(view) {
+  for (const [key,id] of [["bots","bot-workspace"],["research","verdicts"]]) $("#"+id).hidden = key !== view;
+  document.querySelectorAll("[data-view]").forEach(btn=>{ const active=btn.dataset.view===view; setClass(btn,"active",active); btn.setAttribute("aria-pressed",String(active)); });
+}
+
 
 function build(b, i) {
   const el = document.createElement("article");
@@ -69,7 +106,7 @@ function build(b, i) {
     <div class="row">
       <div class="id">
         <div class="name"><span class="led"></span>${esc(b.bot_name)}</div>
-        <div class="strat" title="${esc(b.strategy)}">:${b.port} · ${esc(b.strategy)}</div>
+        <div class="strat" title="${esc(b.strategy)}">:${b.port} · ${esc(b.strategy)}${b.strategy_created ? ` · 📅${esc(b.strategy_created)}` : ""}</div>
         <div class="desc">${esc(b.description)}</div>
         <div class="desc strategy-note" hidden></div>
         <div class="liqmsg" hidden></div>
@@ -82,6 +119,7 @@ function build(b, i) {
       </div>
       <div class="chart"><div class="lbl">近 14 天每日盈亏</div><div class="bars">${Array.from({ length: 14 }, () => `<div class="bar"><i></i></div>`).join("")}</div></div>
       <div class="controls">
+        <button class="inspect" type="button" aria-expanded="false" aria-label="${esc(b.bot_name)} 详情">详情 ↓</button>
         <button class="switch"><span class="track"><span class="knob"></span></span><span data-f="sw">OFF</span></button>
         <div class="btns">
           <button class="btn restart" hidden>重启</button>
@@ -92,8 +130,11 @@ function build(b, i) {
         </div>
       </div>
     </div>
+    <div class="bot-resources" title="机器人整体资源占用；CPU 100% 表示占满一核，内存单位为 MiB。CPU 为两次采样之间的平均值。"><span>CPU <b data-f="bot-cpu">—</b></span><span>内存 <b data-f="bot-memory">—</b></span></div>
     <div class="drawer" hidden><div class="positions"></div></div>
     <pre class="log" hidden></pre>`;
+  $(".inspect", el).onclick = () => expandBot(b.name);
+  $(".switch", el).setAttribute("aria-label", `${b.bot_name} 启停`);
   $(".switch", el).onclick = () => {
     const running = el.dataset.running === "1";
     const n = Number(el.dataset.open || 0);
@@ -118,6 +159,7 @@ function build(b, i) {
     store.set("panel-open", JSON.stringify([...openLogs]));
     renderLog(b.name, el);
   };
+  openLogs.delete(b.name);
   renderLog(b.name, el);
   return el;
 }
@@ -135,16 +177,19 @@ function update(el, b) {
   const st = stateOf(b), up = b.api === "up", running = !!b.pid;
   const has = up || !!b.offline;          // stopped bots: numbers read from their trade database
   el.dataset.running = running ? "1" : "0";
+  setClass(el, "is-running", running);
   setClass(el, "on", st.unit === "on"); setClass(el, "fault", st.unit === "fault");
   const led = $(".led", el); led.className = "led " + st.led;
   setText($(".tag.state", el), st.text);
   const mode = $(".tag.mode", el); mode.hidden = !has;
   if (up) { setText(mode, b.dry_run ? "模拟盘" : "实盘"); setClass(mode, "live", !b.dry_run); }
   else if (has) { setText(mode, "数据来自数据库"); setClass(mode, "live", false); }
-  const upt = $(".tag.up-t", el); upt.hidden = !running; if (running) setText(upt, `${dur(b.uptime_s)} · ${b.mem_mb}MB`);
+  const upt = $(".tag.up-t", el); upt.hidden = !running; if (running) setText(upt, `${dur(b.uptime_s)}`);
   const rs = $(".tag.rs", el); rs.hidden = !b.restarts_24h; if (b.restarts_24h) setText(rs, `24h 自动重启 ${b.restarts_24h}`);
 
   const f = k => $(`[data-f="${k}"]`, el);
+  setText(f("bot-cpu"), running ? (b.cpu_percent == null ? (b.mem_mb == null ? "不可用" : "采样中") : Number(b.cpu_percent).toFixed(1)+"%") : "已停止");
+  setText(f("bot-memory"), running ? (b.mem_mb == null ? "不可用" : Number(b.mem_mb).toFixed(1)+" MiB") : "—");
   setTick(f("open"), has ? b.open_trades : "–");
   setText(f("max"), has && b.max_trades != null ? `/ ${b.max_trades}` : "");
   setText(f("closed"), has ? `已平仓 ${b.closed_trades}` : "");
@@ -215,7 +260,12 @@ async function renderLog(name, el) {
   pre.hidden = !openLogs.has(name);
   setText($(".logbtn", el), openLogs.has(name) ? "收起" : "明细");
   if (pre.hidden) return;
-  const text = await (await fetch(`/api/bots/${name}/log?lines=80`)).text();
+  let text;
+  try {
+    const response = await fetch(`/api/bots/${name}/log?lines=80`);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    text = await response.text();
+  } catch { setText(pre, "日志暂时不可用，请稍后重试。"); return; }
   if (pre.dataset.raw === text) return;
   pre.dataset.raw = text;
   const atBottom = pre.scrollTop + pre.clientHeight >= pre.scrollHeight - 20 || !pre.dataset.init;
@@ -227,7 +277,7 @@ async function renderLog(name, el) {
 /* ---------- refresh loop ---------- */
 async function refresh() {
   let bots;
-  try { bots = await (await fetch("/api/bots")).json(); }
+  try { const response = await fetch("/api/bots"); if (!response.ok) throw new Error(`HTTP ${response.status}`); bots = await response.json(); }
   catch (e) { setText($("#updated"), "读不到控制台后台：" + e); return; }
   const rack = $("#rack");
   bots.forEach((b, i) => {
@@ -238,6 +288,7 @@ async function refresh() {
   });
   for (const [name, el] of units) if (!bots.some(b => b.name === name)) { el.remove(); units.delete(name); }
 
+  fleet = bots; layoutFleet();
   const up = bots.filter(b => b.api === "up");
   const known = bots.filter(b => b.api === "up" || b.offline);
   const pnl = known.reduce((s, b) => s + (b.profit_all || 0), 0);
@@ -283,50 +334,18 @@ function tick() {
   setTick($("#clk-utc"), n.toLocaleTimeString("zh-CN", { hour12: false, timeZone: "UTC" }));
 }
 
+document.querySelectorAll("[data-view]").forEach(btn=>btn.onclick=()=>selectView(btn.dataset.view));
+document.querySelectorAll("[data-filter]").forEach(btn=>btn.onclick=()=>{
+  fleetFilter=btn.dataset.filter;
+  document.querySelectorAll("[data-filter]").forEach(other=>{ const active=other===btn;setClass(other,"active",active);other.setAttribute("aria-pressed",String(active)); });
+  layoutFleet();
+});
+$("#bot-search").oninput=layoutFleet;
+$("#bot-sort").onchange=layoutFleet;
+$("#reset-filters").onclick=()=>{$("#bot-search").value="";$("[data-filter=all]").click();};
 tick(); setInterval(tick, 1000);
 refresh(); setInterval(refresh, 5000);
 refreshNet(); setInterval(refreshNet, 30000);
-
-/* ---------- C: weekly holding signal ---------- */
-let cNext = null;
-const pct = x => (x * 100).toFixed(1);
-async function refreshSignal() {
-  let d;
-  try { d = await (await fetch("/api/c-signal")).json(); } catch { return; }
-  const w = d.week;
-  const b = w.BTC.weight, e = w.ETH.weight, u = Math.max(0, w.USDT);
-  const bar = (id, v, label) => { const el = $(id); el.style.flexGrow = v; el.textContent = v >= 0.08 ? `${label} ${pct(v)}%` : ""; };
-  bar("#c-bar-btc", b, "BTC"); bar("#c-bar-eth", e, "ETH"); bar("#c-bar-usdt", u, "USDT");
-  setText($("#c-decided"), `本周目标仓位 · ${w.decided_on}（周日）收盘判断`);
-  for (const [c, k] of [["BTC", "btc"], ["ETH", "eth"]]) {
-    const x = w[c];
-    setTick($(`#c-${k}-w`), pct(x.weight));
-    const on = $(`#c-${k}-on`); on.className = "onoff " + (x.on ? "on" : "off"); on.textContent = x.on ? "ON" : "OFF";
-    setText($(`#c-${k}-sub`), `30天 ${x.mom30 >= 0 ? "+" : ""}${pct(x.mom30)}% · 波动 ${(x.vol30 * 100).toFixed(0)}%`);
-  }
-  setTick($("#c-usdt-w"), pct(u));
-  if (d.previous) {
-    const moves = [["BTC", w.BTC.weight - d.previous.BTC.weight], ["ETH", w.ETH.weight - d.previous.ETH.weight]]
-      .filter(([, dv]) => Math.abs(dv) > d.band).map(([c, dv]) => `${c} ${dv > 0 ? "+" : ""}${pct(dv)}`);
-    setText($("#c-change"), moves.length ? `需调仓：${moves.join("，")} 个百分点` : "和上周相比无需调仓");
-  }
-  setText($("#c-trade"), `本周调仓时间 ${d.trade_at}（北京时间周一 08:00）`);
-  $("#c-hist").innerHTML = d.history.map(h =>
-    `<div title="${h.decided_on}  BTC ${pct(h.BTC.weight)}%  ETH ${pct(h.ETH.weight)}%"><i class="b" style="height:${h.BTC.weight * 100}%"></i><i class="e" style="height:${h.ETH.weight * 100}%"></i></div>`).join("");
-  $("#c-bt").innerHTML = `样本外 ${esc(d.backtest.oos)}<br>样本内 ${esc(d.backtest.is)}`;
-  cNext = d.next_decision_utc * 1000;
-}
-function tickCountdown() {
-  if (!cNext) return;
-  let s = Math.max(0, Math.floor((cNext - Date.now()) / 1000));
-  const dd = Math.floor(s / 86400); s %= 86400;
-  const hh = String(Math.floor(s / 3600)).padStart(2, "0"), mm = String(Math.floor(s % 3600 / 60)).padStart(2, "0"), ss = String(s % 60).padStart(2, "0");
-  $("#c-countdown").dataset.noglow = "1";
-  setTick($("#c-countdown"), `${dd}天 ${hh}:${mm}:${ss}`);
-}
-refreshSignal(); setInterval(refreshSignal, 600000);
-setInterval(tickCountdown, 1000);
-
 
 /* ---------- judgement page: criteria are static text, only the numbers move ---------- */
 const vCards = new Map();
@@ -393,3 +412,35 @@ setInterval(async () => {
     if (uiVersion && v && v !== uiVersion) location.reload();
   } catch {}
 }, 30000);
+
+/* Server metrics: keep the last sample visible and mark failed refreshes. */
+const gib = bytes => (bytes / 1024 ** 3).toFixed(1) + " GiB";
+let resourcePending = false;
+async function refreshResources() {
+  if (resourcePending) return;
+  resourcePending = true;
+  try {
+    const response = await fetch("/api/resources", { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    for (const [key, value] of [["cpu",data.cpu], ["memory",data.memory], ["disk",data.disk]]) {
+      setText($("#r-"+key), value ? value.percent.toFixed(1)+"%" : "不可用");
+      const bar = $("#r-"+key+"-bar");
+      bar.style.width = value ? `${Math.max(0,Math.min(100,value.percent))}%` : "0%";
+      setClass(bar,"warn",value && value.percent >= 75 && value.percent < 90);
+      setClass(bar,"hot",value && value.percent >= 90);
+    }
+    setText($("#r-cores"), `${data.cpu.cores ?? "—"} 核`);
+    setText($("#r-load"), "负载 1/5/15m · "+data.cpu.load.map(n=>n.toFixed(2)).join(" / "));
+    setText($("#r-memory-size"), `${gib(data.memory.used)} / ${gib(data.memory.total)}`);
+    setText($("#r-disk-size"), data.disk ? `${gib(data.disk.used)} / ${gib(data.disk.total)} · 可用 ${gib(data.disk.free)}` : "数据盘读取失败");
+    setText($("#r-uptime"), dur(data.uptime_s));
+    setText($("#r-swap"), `Swap ${gib(data.swap.used)} / ${gib(data.swap.total)}`);
+    setText($("#resource-updated"), "采样 "+new Date(data.sampled_at).toLocaleTimeString("zh-CN",{hour12:false}));
+    setClass($("#resource-updated"),"neg",false);
+  } catch {
+    setText($("#resource-updated"), "更新失败 · 数据可能已过期");
+    setClass($("#resource-updated"),"neg",true);
+  } finally { resourcePending = false; }
+}
+refreshResources(); setInterval(refreshResources, 10000);
