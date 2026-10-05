@@ -149,7 +149,8 @@ if [[ $OK -eq 1 ]]; then
   SHARPE=$(echo $EVAL | $PY -c "import json,sys; ms=json.load(sys.stdin)['metrics']; print(round(min(m['sharpe'] for m in ms.values()),3))")
   DD=$(echo $EVAL | $PY -c "import json,sys; ms=json.load(sys.stdin)['metrics']; print(round(max(m['dd'] for m in ms.values()),2))")
   REASONS=$(echo $EVAL | $PY -c "import json,sys; print(json.dumps(json.load(sys.stdin).get('reasons',[])))")
-  $PY - "$ITEM" "$VERDICT" "$SHARPE" "$DD" "$REASONS" << 'EOF'
+  TOTALS=$(echo $EVAL | $PY -c "import json,sys; ms=json.load(sys.stdin)['metrics']; print(json.dumps({w: round(m['total'],1) for w,m in ms.items()}))")
+  $PY - "$ITEM" "$VERDICT" "$SHARPE" "$DD" "$REASONS" "$TOTALS" << 'EOF'
 import json, sys
 p = '/opt/ccxt/user_data/bench/strat_loop/queue.json'
 q = json.load(open(p))
@@ -160,6 +161,7 @@ for i in q["items"]:
         i["robust_sharpe"] = float(sys.argv[3])
         i["worst_dd"] = float(sys.argv[4])
         i["reasons"] = json.loads(sys.argv[5])
+        i["totals"] = json.loads(sys.argv[6])
 if verdict == "PASS":
     q["champion"] = sys.argv[1]
     q["consecutive_fail"] = 0

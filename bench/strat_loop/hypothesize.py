@@ -27,6 +27,13 @@ SYSTEM = (
     '{"mode": "explore" or "exploit", "brief": "2-4 sentences: concrete direction '
     'for the next batch (signals, filters, exits, sizing)", '
     '"why": "one line: what history justifies this"}. '
+    "Doctrine (same rules the human operator uses): "
+    "(1) Winter-2022 is the binding window: thin signals, any total<=0 there kills. "
+    "2024-26 is the volume window where gains come from. Judge by full+ winter + worst-dd together. "
+    "(2) Clone detection: items with near-identical totals/trades are the same logic renamed; "
+    "in explore mode demand a DIFFERENT trade-count regime or signal family, not a rename. "
+    "(3) Risk-adjusted: prefer higher full-period total per unit of worst-dd; "
+    "a +30% return for 2x dd is a bad trade. "
     "In explore mode the brief MUST name a signal family/logic NOT in the tried "
     "list (different indicators, different entry thesis, or different regime "
     "handling). In exploit mode the brief refines the champion with one change. "
@@ -49,7 +56,8 @@ def build_prompt(q: dict, parent: str) -> str:
             continue
         lines.append(
             f"  {i.get('file')} {i['status']} sharpe={i.get('robust_sharpe')} "
-            f"dd={i.get('worst_dd')} why={i.get('why', '')[:120]} "
+            f"dd={i.get('worst_dd')} totals={json.dumps(i.get('totals', {}))} "
+            f"why={i.get('why', '')[:120]} "
             f"reasons={json.dumps(i.get('reasons', []))[:160]}")
     lines.append("past explore briefs:")
     for e in q.get("explore_log", [])[-4:]:
