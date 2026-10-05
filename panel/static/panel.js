@@ -290,7 +290,7 @@ async function refresh() {
   for (const [name, el] of units) if (!bots.some(b => b.name === name)) { el.remove(); units.delete(name); }
 
   fleet = bots; layoutFleet();
-  refreshLoops();
+  try { if (typeof refreshLoops === "function") await refreshLoops(); } catch (e) { console.warn("loops", e); }
   const up = bots.filter(b => b.api === "up");
   const known = bots.filter(b => b.api === "up" || b.offline);
   const pnl = known.reduce((s, b) => s + (b.profit_all || 0), 0);
@@ -310,7 +310,8 @@ async function loopAct(name, action) {
     await refreshLoops();
   } catch (e) { alert(`操作未完成：${e.message}。请刷新后确认调度状态。`); }
 }
-$("#loops-list").addEventListener("click", async e => {
+const loopsList = $("#loops-list");
+if (loopsList) loopsList.addEventListener("click", async e => {
   const button = e.target.closest("button[data-loop-action]");
   if (!button || button.disabled) return;
   button.disabled = true;
@@ -318,10 +319,12 @@ $("#loops-list").addEventListener("click", async e => {
   finally { button.disabled = false; }
 });
 async function refreshLoops() {
+  const list = $("#loops-list");
+  if (!list) return;
   let loops;
   try { const r = await fetch("/api/loops"); if (!r.ok) throw 0; loops = await r.json(); }
   catch (e) { setText($("#loops-updated"), "连接失败 · 状态可能已过期"); return; }
-  $("#loops-list").innerHTML = loops.map(l => {
+  list.innerHTML = loops.map(l => {
     const state = l.enabled ? "调度已开启" : "调度已暂停";
     const action = l.enabled ? "stop" : "start";
     const status = { open: "持续研究", dead: "研究已终止", paused: "已暂停", done: "已完成" }[l.status] || l.status || "—";
