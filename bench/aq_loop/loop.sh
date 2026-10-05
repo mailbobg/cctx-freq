@@ -56,7 +56,7 @@ OK=1
 for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
   timeout 1500 docker run --rm \
     -v /opt/ccxt/user_data:/freqtrade/user_data -w /freqtrade \
-    ccxt-freqtrade:local freqtrade backtesting \
+    ccxt-freqtrade:local backtesting \
     --userdir /freqtrade/user_data \
     -c /freqtrade/user_data/bench/aq_loop/cfg-$ITEM.json \
     --datadir /freqtrade/user_data/data_aq/binance \
