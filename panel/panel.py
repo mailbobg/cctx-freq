@@ -22,6 +22,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from panel.market_data import MarketDataGateway, install_routes
 from panel.waiting import listings_note, weekly_note
 from panel.resources import ResourceMonitor, ProcessResourceMonitor
+from bench.research_scheduler.scheduler import Gate
 
 import psutil
 import requests
@@ -127,6 +128,7 @@ def bots() -> dict[str, dict]:
             "runtime": cfg.get("runtime", "freqtrade"),
             "exchange": cfg.get("exchange",{}).get("name",_common().get("exchange",{}).get("name")),
             "dry_run": cfg.get("dry_run",_common().get("dry_run",False)),
+            "historical_stop_reconstruction": cfg.get("historical_stop_reconstruction"),
         }
     order = list(meta)
     return dict(sorted(out.items(), key=lambda kv: order.index(kv[0]) if kv[0] in order else 99))
@@ -340,8 +342,8 @@ def waiting_note(bot: dict) -> str:
     return ""
 
 
-def offline_stats(bot: dict) -> dict:
-    """Numbers for a bot that is not running, read from its trade database."""
+def offline_stats(bot: dict, mark_live: bool = False) -> dict:
+    """Stopped history excludes residual positions; only running fallback may mark prices."""
     import sqlite3
     url = bot.get("db_url") or ""
     if not url.startswith("sqlite:///"):
@@ -360,23 +362,25 @@ def offline_stats(bot: dict) -> dict:
         summary = json.loads(row[0])
         return {"offline": True, "open_trades": summary["open_trades"], "max_trades": 1,
                 "closed_trades": summary["closed_trade_count"], "profit_closed": summary["profit_closed_coin"],
-                "profit_all": summary["profit_all_coin"], "winrate": summary["winrate"], "stake": "USDT",
-                "positions": [{"pair": p["pair"], "profit_pct": p["profit_ratio"]*100,
-                               "profit_abs": p["profit_abs"], "open_date": p["open_date"],
+                "profit_all": summary["profit_all_coin"] if mark_live else summary["profit_closed_coin"],
+                "valuation_mode": "last_snapshot" if mark_live else "realized_only",
+                "winrate": summary["winrate"], "stake": "USDT",
+                "positions": [{"pair": p["pair"], "profit_pct": p["profit_ratio"]*100 if mark_live else None,
+                               "profit_abs": p["profit_abs"] if mark_live else None, "open_date": p["open_date"],
                                "stake": p["stake_amount"], "tag": p["enter_tag"]} for p in summary["positions"]],
-                "note": "模拟服务已停止；权益与浮盈为最后一次采集估值", "daily": []}
+                "note": "已停止；仅统计已实现盈亏，残留持仓未估值", "daily": []}
     try:
         closed = con.execute("select close_profit_abs, close_date from trades where is_open = 0").fetchall()
         opened = con.execute("select pair, open_date, open_rate, amount, stake_amount from trades where is_open = 1").fetchall()
     finally:
         con.close()
-    px = _prices({p for p, *_ in opened}) if opened else {}
+    px = _prices({p for p, *_ in opened}) if mark_live and opened else {}
     positions, unreal = [], 0.0
     for pair, od, rate, amount, stake in opened:
         cur = px.get(pair)
         pct = (cur / rate - 1) * 100 if cur else None
-        pnl = (cur - rate) * amount if cur else 0.0
-        unreal += pnl
+        pnl = (cur - rate) * amount if cur else None
+        unreal += pnl or 0.0
         positions.append({"pair": pair, "profit_pct": round(pct, 2) if pct is not None else None,
                           "profit_abs": pnl, "open_date": str(od)[:19], "stake": stake, "tag": ""})
     wins = sum(1 for a, _ in closed if (a or 0) > 0)
@@ -394,7 +398,8 @@ def offline_stats(bot: dict) -> dict:
         "closed_trades": len(closed), "profit_closed": closed_sum, "profit_all": closed_sum + unreal,
         "winrate": wins / len(closed) if closed else 0, "stake": "USDT", "positions": positions,
         "daily": [{"date": d, "abs": v[0], "trades": v[1]} for d, v in per_day.items()],
-        "prices_as_of": today,
+        "valuation_mode": "live_fallback" if mark_live else "realized_only",
+        "note": "运行中，使用数据库及现价估值" if mark_live else "已停止；仅统计已实现盈亏，残留持仓未估值",
     }
 
 
@@ -461,7 +466,11 @@ def status(bot: dict) -> dict:
     except Exception:
         out["api"] = "starting" if p else "down"
         try:
-            out.update(offline_stats(bot))
+            out.update(offline_stats(bot, mark_live=bool(p)))
+            reconstructed = bot.get("historical_stop_reconstruction")
+            if reconstructed and not p:
+                out["historical_stop_reconstruction"] = reconstructed
+                out["note"] = f"历史模拟结算 · {reconstructed['at']} · {reconstructed['method']}"
         except Exception as e:  # noqa: BLE001
             print("offline stats", bot["name"], e, file=sys.stderr, flush=True)
     return out
@@ -570,17 +579,57 @@ def list_bots():
 # ---------- 24h research loops (one click, server-side, no Mac needed) ----------
 LOOPS = {
     "aq_loop": {"title": "AQ 调参", "dir": "bench/aq_loop"},
-    "strat_loop": {"title": "策略进化", "dir": "bench/strat_loop"},
+    "strat_loop": {"title": "策略进化", "dir": "bench/strat_loop", "hypothesis_supported": True},
+    "t_loop": {"title": "趋势跟踪", "dir": "bench/t_loop", "hypothesis_supported": True},
 }
+
+
+def research_gate() -> Gate:
+    return Gate(ROOT / "user_data")
+
+
+@app.get("/api/research-scheduler")
+def research_scheduler_status():
+    return research_gate().status()
+
+
+@app.post("/api/research-scheduler")
+def research_scheduler_update(payload: dict):
+    if not payload or set(payload) - {"enabled", "max_concurrent"}:
+        raise HTTPException(400, "仅支持 enabled 和 max_concurrent")
+    try:
+        research_gate().configure(**payload)
+        return research_gate().status()
+    except ValueError as e:
+        raise HTTPException(400, str(e)) from e
 
 
 def loop_status(key: str) -> dict:
     base = ROOT / "user_data" / LOOPS[key]["dir"]
     running = (base / "RUN").exists()
-    out: dict = {"name": key, "title": LOOPS[key]["title"], "enabled": running}
+    gate = research_gate().status()
+    out: dict = {"name": key, "title": LOOPS[key]["title"], "enabled": running,
+                 "active": any(r["name"] == key for r in gate["active"]), "scheduler_enabled": gate["enabled"]}
+    out["hypothesis_supported"] = LOOPS[key].get("hypothesis_supported", False)
+    if out["hypothesis_supported"]:
+        out["hyp_enabled"] = (base / "HYP").exists()
+    worker = next((r for r in gate["active"] if r["name"] == key), None)
+    if worker:
+        out["task_started_at"] = worker.get("started_at")
+        try:
+            progress = json.loads((base / "progress.json").read_text())
+            if progress.get("worker_started_at") == worker.get("started_at"):
+                out["current_task"] = progress
+        except (OSError, ValueError):
+            pass
     try:
         q = json.loads((base / "queue.json").read_text())
         items = q.get("items", [])
+        task = out.get("current_task")
+        if task:
+            selected = next((i for i in items if i.get("id") == task.get("item")), {})
+            if selected.get("aq"):
+                task["parameters"] = selected["aq"]
         out.update({
             "round": q.get("round", 1),
             "status": q.get("status", "open"),
@@ -597,8 +646,6 @@ def loop_status(key: str) -> dict:
         out["hypothesis"] = f"[{ex.get('mode')}] {ex.get('brief', '')[:180]}"
     except Exception:
         out["hypothesis"] = ""
-    if key == "strat_loop":
-        out["hyp_enabled"] = (base / "HYP").exists()
     try:
         lines = (base / "cron.log").read_text().strip().splitlines()
         out["last"] = lines[-1][:160] if lines else ""
@@ -617,7 +664,6 @@ def act_loop(name: str, action: str):
     if name not in LOOPS:
         raise HTTPException(404, "没有这个 loop")
     flag = ROOT / "user_data" / LOOPS[name]["dir"] / "RUN"
-    hyp = ROOT / "user_data" / LOOPS[name]["dir"] / "HYP"
     if action == "start":
         flag.touch()
     elif action == "stop":
@@ -625,17 +671,18 @@ def act_loop(name: str, action: str):
             flag.unlink()
         except FileNotFoundError:
             pass
-    elif action == "hyp_on":
-        hyp.touch()
-    elif action == "hyp_off":
-        try:
-            hyp.unlink()
-        except FileNotFoundError:
-            pass
+    elif action in ("hyp_on", "hyp_off"):
+        if not LOOPS[name].get("hypothesis_supported"):
+            raise HTTPException(400, "此任务未配置假设生成流程")
+        hyp = flag.with_name("HYP")
+        if action == "hyp_on":
+            hyp.touch()
+        else:
+            hyp.unlink(missing_ok=True)
     else:
         raise HTTPException(400, "未知操作")
     return {"ok": True, "enabled": flag.exists(),
-            "hyp_enabled": hyp.exists() if name == "strat_loop" else None}
+            "hyp_enabled": flag.with_name("HYP").exists() if LOOPS[name].get("hypothesis_supported") else None}
 
 
 def _closed_events(bot: dict, exclude: str | None) -> int | None:
