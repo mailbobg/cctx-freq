@@ -434,6 +434,83 @@ h1 {
 .search-tools {
   display:flex;
   gap:10px;
+  flex-wrap:wrap;
+  align-items:stretch;
+}
+.rejected-filter {
+  position:relative;
+  display:inline-flex;
+  cursor:pointer;
+  flex-shrink:0;
+}
+.rejected-filter input {
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:0;
+  opacity:0;
+}
+.rejected-filter-face {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  min-height:40px;
+  padding:0 12px;
+  border:1px solid var(--edge);
+  border-radius:6px;
+  background:var(--rack);
+  color:var(--dim);
+  font-size:12px;
+  white-space:nowrap;
+  transition:background .15s,border-color .15s,color .15s;
+}
+.rejected-filter-face svg { width:15px; height:15px; color:var(--faint); }
+.rejected-count {
+  min-width:22px;
+  padding:1px 5px;
+  border-radius:4px;
+  background:#ffffff09;
+  color:var(--faint);
+  text-align:center;
+  font:11px/1.5 var(--mono);
+}
+.rejected-switch {
+  width:28px;
+  height:16px;
+  padding:3px;
+  border-radius:12px;
+  background:var(--edge-hi);
+  margin-left:2px;
+}
+.rejected-switch::after {
+  content:"";
+  display:block;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background:var(--dim);
+  transition:transform .15s;
+}
+.rejected-filter:hover .rejected-filter-face { border-color:var(--faint); }
+.rejected-filter input:checked + .rejected-filter-face {
+  border-color:var(--amber);
+  background:#64d8bf12;
+  color:var(--amber);
+}
+.rejected-filter input:checked + .rejected-filter-face svg,
+.rejected-filter input:checked + .rejected-filter-face .rejected-count { color:var(--amber); }
+.rejected-filter input:checked + .rejected-filter-face .rejected-switch { background:var(--amber); }
+.rejected-filter input:checked + .rejected-filter-face .rejected-switch::after {
+  background:var(--bg);
+  transform:translateX(12px);
+}
+.rejected-filter input:focus-visible + .rejected-filter-face {
+  outline:2px solid var(--amber);
+  outline-offset:3px;
+}
+@media(prefers-reduced-motion:reduce) {
+  .rejected-filter-face,.rejected-switch::after { transition:none; }
 }
 .search {
   white-space:nowrap;
@@ -527,10 +604,14 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
   font-size:10px;
 }
 .stratdate {
+  display:flex;
+  align-items:center;
+  gap:6px;
   font: 11px var(--mono);
   color: var(--dim);
   margin-top: 2px;
 }
+.calendar-icon { width:13px; height:13px; flex-shrink:0; color:var(--faint); }
 .tags {
   gap:4px;
 }
@@ -738,6 +819,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
   .search-tools {
     width:100%;
   }
+  .search-tools .search { flex:1 0 100%; min-width:0; }
+  .search-tools select { flex:1; min-width:0; }
   .list-meta>span:last-child {
     display:none;
   }
@@ -907,6 +990,34 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
 .research-gate { display:flex; align-items:center; flex-wrap:wrap; gap:12px 20px; padding:14px 18px; margin-bottom:12px; border:1px solid var(--edge-hi); border-radius:8px; background:#16272b; }
 .gate-title strong { display:block; font-size:13px; }.gate-title span { display:block; margin-top:3px; font-size:10px; color:var(--dim); }
 .gate-limit { display:flex; align-items:center; gap:8px; font-size:12px; color:var(--dim); }.gate-limit select { padding:6px 10px; background:var(--rack); color:var(--ink); border:1px solid var(--edge-hi); border-radius:4px; }
+.gate-limit { flex-wrap:wrap; }
+.gate-apply {
+  display:inline-flex; align-items:center; justify-content:center; gap:6px;
+  min-height:34px; min-width:94px; padding:6px 12px; margin-left:4px;
+  border:1px solid var(--edge-hi); border-radius:6px;
+  background:transparent; color:var(--dim); font:500 12px var(--body);
+  cursor:pointer; transition:background .15s,border-color .15s;
+}
+.gate-apply:disabled { cursor:default; }
+.gate-apply svg { width:14px; height:14px; }
+.gate-apply .apply-arrow,.gate-apply .apply-spinner { display:none; }
+.gate-apply[data-state="applied"] .apply-check { color:var(--amber); }
+.gate-apply[data-state="pending"],.gate-apply[data-state="error"] {
+  background:var(--amber); border-color:var(--amber); color:var(--bg);
+}
+.gate-apply:not(:disabled):hover { background:#8ae5d0; border-color:#8ae5d0; }
+.gate-apply[data-state="pending"] .apply-check,.gate-apply[data-state="error"] .apply-check,
+.gate-apply[data-state="saving"] .apply-check { display:none; }
+.gate-apply[data-state="pending"] .apply-arrow,.gate-apply[data-state="error"] .apply-arrow { display:block; }
+.gate-apply[data-state="saving"] { color:var(--amber); border-color:var(--amber); background:#64d8bf12; }
+.gate-apply[data-state="saving"] .apply-spinner {
+  display:block; width:13px; height:13px; border:1.5px solid currentColor;
+  border-right-color:transparent; border-radius:50%; animation:gate-spin .8s linear infinite;
+}
+.gate-apply-note { font-size:10px; color:var(--faint); }
+.gate-apply-note.error { color:var(--red); }
+@keyframes gate-spin { to { transform:rotate(360deg); } }
+@media(prefers-reduced-motion:reduce) { .gate-apply { transition:none; }.gate-apply .apply-spinner { animation:none; } }
 .gate-running { margin-left:auto; text-align:right; }.gate-running strong { font:14px var(--mono); }.gate-running small { display:block; margin-top:3px; color:var(--faint); font-size:10px; overflow-wrap:anywhere; }
 .research-gate>p { flex:1 1 100%; margin:0; color:var(--faint); font-size:10px; }
 @media(max-width:650px) { .gate-running { margin-left:0; text-align:left; }.research-gate { padding:12px; }.gate-limit { flex:1 1 auto; } }
@@ -916,12 +1027,69 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
 .loops-heading p { margin:4px 0 0; font-size:11px; color:var(--dim); }
 .loops-heading .always-on { display:inline-block; margin-left:8px; padding:2px 6px; border:1px solid var(--edge-hi); border-radius:4px; font:10px var(--mono); color:var(--amber); vertical-align:middle; }
 #loops-updated { color:var(--faint); font:10px var(--mono); }
-#loops-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+#loops-list { display:grid; gap:18px; }
+.research-group { --group-accent:#72d6b3; --group-edge:#315e51; --group-bg:#0e211e; --group-head:#16332b; --group-card:#10231f; min-width:0; border:1px solid var(--group-edge); border-top:3px solid var(--group-accent); border-radius:10px; overflow:hidden; background:var(--group-bg); }
+.research-group-trend { --group-accent:#8abcf0; --group-edge:#355778; --group-bg:#101d2c; --group-head:#192e46; --group-card:#132333; }
+.research-group-other { --group-accent:var(--dim); --group-edge:var(--edge-hi); --group-bg:#0d191d; --group-head:#142025; --group-card:var(--rack); }
+.research-group-header { display:flex; align-items:center; gap:14px; padding:15px 18px; border-bottom:1px solid var(--group-edge); background:var(--group-head); }
+.research-group-index { display:flex; align-items:center; justify-content:center; width:34px; height:34px; flex-shrink:0; border:1px solid var(--group-edge); background:var(--group-bg); border-radius:7px; font:500 13px var(--mono); color:var(--group-accent); }
+.research-group-heading { min-width:0; }
+.research-group-heading h3 { margin:0; color:var(--group-accent); font-size:15px; font-weight:600; }
+.research-group-heading p { margin:3px 0 0; color:var(--faint); font-size:11px; }
+.research-group-status { margin-left:auto; display:flex; align-items:center; gap:14px; white-space:nowrap; font-size:11px; color:var(--faint); }
+.research-group-status strong { color:var(--dim); font-weight:500; }
+.research-group-status strong.has-active { color:var(--group-accent); }
+.research-group-status strong::before { content:""; display:inline-block; width:5px; height:5px; margin-right:6px; border-radius:50%; background:currentColor; vertical-align:middle; }
+.research-group-cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; padding:12px; align-items:start; }
+.research-group .loop-card { border:1px solid var(--group-edge); background:var(--group-card); }
+.research-group .research-slot { border-color:var(--group-edge); }
+.research-group .research-kind { color:var(--group-accent); }
+.research-group.is-active {
+  border-color:var(--group-accent);
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--group-accent) 12%,transparent),0 8px 24px #0003;
+}
+.research-group.is-active .research-group-header {
+  background:linear-gradient(105deg,color-mix(in srgb,var(--group-accent) 17%,var(--group-head)),var(--group-head) 72%);
+}
+.research-group.is-active .research-group-index {
+  background:var(--group-accent); color:var(--group-bg); border-color:var(--group-accent);
+}
+.research-group-status strong.has-active {
+  display:inline-flex; align-items:center; gap:8px; padding:6px 10px;
+  border:1px solid color-mix(in srgb,var(--group-accent) 45%,transparent);
+  border-radius:5px; background:color-mix(in srgb,var(--group-accent) 10%,transparent);
+}
+.research-group-status strong.has-active::before { display:none; }
+.activity-bars { display:inline-flex; align-items:center; gap:2px; height:14px; }
+.activity-bars i { display:block; width:2px; height:10px; border-radius:2px; background:currentColor; animation:research-activity 1.4s ease-in-out infinite; }
+.activity-bars i:nth-child(2) { height:14px; animation-delay:-.45s; }
+.activity-bars i:nth-child(3) { height:8px; animation-delay:-.9s; }
+@keyframes research-activity { 0%,100% { transform:scaleY(.45); opacity:.55; } 50% { transform:scaleY(1); opacity:1; } }
+.research-group .loop-card.is-executing {
+  border-color:color-mix(in srgb,var(--group-accent) 65%,var(--group-edge));
+  background:linear-gradient(125deg,color-mix(in srgb,var(--group-accent) 8%,var(--group-card)),var(--group-card) 75%);
+  box-shadow:inset 3px 0 0 var(--group-accent);
+}
+.research-group .loop-state.executing {
+  color:var(--group-accent); border:1px solid var(--group-edge); border-radius:4px;
+  padding:3px 7px; background:color-mix(in srgb,var(--group-accent) 10%,transparent);
+}
+.research-group .loop-state.executing::before { background:var(--group-accent); box-shadow:0 0 0 3px color-mix(in srgb,var(--group-accent) 12%,transparent); }
+.research-group .loop-state.enabled { color:var(--dim); }
+.research-group .loop-state.enabled::before { background:var(--faint); }
+.research-group .research-task { background:color-mix(in srgb,var(--group-accent) 6%,transparent); border-color:var(--group-edge); border-left-color:var(--group-accent); }
+.research-group .task-heading { color:var(--group-accent); }
+@media(prefers-reduced-motion:reduce) { .activity-bars i { animation:none; } }
+.research-slot { min-height:220px; align-self:stretch; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:7px; border:1px dashed var(--edge-hi); border-radius:8px; text-align:center; padding:24px; background:repeating-linear-gradient(135deg,transparent,transparent 12px,#ffffff02 12px,#ffffff02 13px); }
+.slot-symbol { display:flex; align-items:center; justify-content:center; width:32px; height:32px; border:1px dashed var(--edge-hi); border-radius:50%; color:var(--faint); font:20px var(--mono); margin-bottom:5px; }
+.slot-label { color:var(--dim); font-size:13px; }
+.research-slot strong { color:var(--group-accent); border:1px solid var(--edge-hi); border-radius:4px; padding:2px 7px; font-size:10px; font-weight:400; }
+.research-slot p { color:var(--faint); font-size:11px; margin:2px 0 0; }
 .loop-card { min-width:0; padding:16px 18px 12px; background:var(--rack); border:1px solid var(--edge); border-radius:8px; }
 .strategy-research { border-top:2px solid #72b6a0; }.parameter-research { border-top:2px solid #8c9bb7; }
 .loop-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
 .research-kind { color:var(--faint); font-size:10px; letter-spacing:.08em; }
-.loop-title h3 { font-size:16px; font-weight:600; margin:2px 0 0; }
+.loop-title h4 { font-size:16px; font-weight:600; margin:2px 0 0; }
 .loop-state { display:flex; align-items:center; gap:6px; font-size:11px; color:var(--dim); white-space:nowrap; }
 .loop-state::before { content:""; width:6px; height:6px; border-radius:50%; background:var(--faint); }
 .loop-state.enabled { color:#7de0b0; }.loop-state.enabled::before { background:#7de0b0; }.loop-state.fault { color:var(--red); }
@@ -946,7 +1114,8 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
 .loop-details summary { cursor:pointer; }.loop-details summary span { float:right; font:10px var(--mono); }.loop-details p { margin:8px 0 0; overflow-wrap:anywhere; line-height:1.6; }
 .loop-error { color:var(--red); font-size:12px; margin:12px 0; overflow-wrap:anywhere; }
 .loops-notice { grid-column:1/-1; padding:18px; color:var(--dim); font-size:12px; }
-@media(max-width:850px) { #loops-list { grid-template-columns:1fr; } }
+@media(max-width:850px) { .research-group-cards { grid-template-columns:1fr; }.research-slot { min-height:160px; } }
+@media(max-width:650px) { .research-group-header { gap:10px; padding:12px; flex-wrap:wrap; }.research-group-status { flex:1 1 100%; margin-left:44px; }.research-group-cards { padding:8px; gap:8px; }.research-group-heading { flex:1; } }
 @media(max-width:400px) { .loop-card { padding:14px 12px 10px; }.research-controls { grid-template-columns:1fr; }.research-control + .research-control { border-top:1px solid var(--edge); padding-top:9px; } }
 </style>
 </head>
@@ -983,10 +1152,10 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
     <div class="resource-item resource-uptime"><div class="resource-label">运行时间</div><strong id="r-uptime">—</strong><small id="r-swap">Swap —</small><small>每 10 秒更新</small></div>
   </div>
 </section>
-  <section class="research-loops" id="loops" aria-label="24小时研究循环"><div class="loops-heading"><div><h2>研究循环 <span class="always-on">24H / SERVER</span></h2><p>由服务器持续调度，关闭电脑不影响研究</p></div><span id="loops-updated" aria-live="polite">正在连接…</span></div><div id="research-gate" class="research-gate"><div class="gate-title"><strong>统一研究门控</strong><span class="gate-state" aria-live="polite">正在读取…</span></div><button type="button" class="hypothesis-switch" role="switch" aria-label="统一研究门控" aria-checked="false" disabled><span class="switch-track" aria-hidden="true"><i></i></span></button><label class="gate-limit">最多并行 <select aria-label="研究任务最大并行数"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select> 个 loop <button class="btn solid" id="gate-apply" disabled>确认生效</button></label><div class="gate-running"><strong class="gate-capacity">— / 2 执行中</strong><small class="gate-active">正在读取任务</small></div><p>暂停后，当前回测窗口完成再退出；降低并发上限不强制终止任务。</p></div><div id="loops-list"><div class="loops-notice">正在读取研究进度…</div></div></section>
+  <section class="research-loops" id="loops" aria-label="24小时研究循环"><div class="loops-heading"><div><h2>研究循环 <span class="always-on">24H / SERVER</span></h2><p>由服务器持续调度，关闭电脑不影响研究</p></div><span id="loops-updated" aria-live="polite">正在连接…</span></div><div id="research-gate" class="research-gate"><div class="gate-title"><strong>统一研究门控</strong><span class="gate-state" aria-live="polite">正在读取…</span></div><button type="button" class="hypothesis-switch" role="switch" aria-label="统一研究门控" aria-checked="false" disabled><span class="switch-track" aria-hidden="true"><i></i></span></button><div class="gate-limit"><label for="gate-concurrency">最多并行</label> <select id="gate-concurrency" disabled aria-label="研究任务最大并行数"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select> 个 loop <button type="button" class="gate-apply" id="gate-apply" aria-describedby="gate-apply-note" disabled><svg class="apply-check" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10 4 4 8-8"/></svg><svg class="apply-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5"/></svg><span class="apply-spinner" aria-hidden="true"></span><span class="gate-apply-label">读取中</span></button><small class="gate-apply-note" id="gate-apply-note" role="status"></small></div><div class="gate-running"><strong class="gate-capacity">— / 2 执行中</strong><small class="gate-active">正在读取任务</small></div><p>暂停后，当前回测窗口完成再退出；降低并发上限不强制终止任务。</p></div><div id="loops-list"><div class="loops-notice">正在读取研究进度…</div></div></section>
 <section id="bot-workspace" hidden>
 <div class="workspace-heading"><div><div class="eyebrow">FLEET OVERVIEW</div><h1>机器人工作台</h1><p>先看运行状态，再看策略表现。</p></div><div class="scope-note">汇总为各机器人账面盈亏之和<br>不同账户与模拟盘独立统计</div></div>
-<div class="fleet-toolbar"><div class="filters" aria-label="机器人状态"><button data-filter="all" class="active" aria-pressed="true">全部 <span></span></button><button data-filter="running" aria-pressed="false">运行中 <span></span></button><button data-filter="positions" aria-pressed="false">有持仓 <span></span></button><button data-filter="attention" aria-pressed="false">需关注 <span></span></button><button data-filter="stopped" aria-pressed="false">已停止 <span></span></button></div><div class="search-tools"><label class="search"><span>搜索</span><input id="bot-search" type="search" placeholder="名称 / 策略 / 端口" aria-label="搜索机器人"></label><select id="bot-sort" aria-label="排序"><option value="priority">运行优先</option><option value="pnl">盈亏从高到低</option><option value="name">名称 A–Z</option></select><label style="font-size:12px;color:var(--dim)"><input type="checkbox" id="hide-failed" onchange="layoutFleet()"> 隐藏落选</label></div></div>
+<div class="fleet-toolbar"><div class="filters" aria-label="机器人状态"><button data-filter="all" class="active" aria-pressed="true">全部 <span></span></button><button data-filter="running" aria-pressed="false">运行中 <span></span></button><button data-filter="positions" aria-pressed="false">有持仓 <span></span></button><button data-filter="attention" aria-pressed="false">需关注 <span></span></button><button data-filter="stopped" aria-pressed="false">已停止 <span></span></button></div><div class="search-tools"><label class="search"><span>搜索</span><input id="bot-search" type="search" placeholder="名称 / 策略 / 端口" aria-label="搜索机器人"></label><select id="bot-sort" aria-label="排序"><option value="priority">运行优先</option><option value="pnl">盈亏从高到低</option><option value="name">名称 A–Z</option></select><label class="rejected-filter" title="仅影响列表显示"><input type="checkbox" id="hide-failed" role="switch" aria-label="隐藏落选策略" onchange="layoutFleet()"><span class="rejected-filter-face"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16l-6 7v6l-4 2v-8z"/></svg><span>隐藏落选</span><span class="rejected-count" id="rejected-count" aria-hidden="true">0</span><span class="rejected-switch" aria-hidden="true"></span></span></label></div></div>
 <div class="list-meta"><span id="list-count" aria-live="polite">正在读取机器人…</span><span>展开查看持仓、运行控制与日志</span></div>
 <section class="rack" id="rack" aria-label="机器人列表"></section>
 <div id="list-empty" hidden><strong>没有匹配的机器人</strong><p>试试其他状态，或清空搜索。</p><button class="btn" id="reset-filters">重置筛选</button></div>

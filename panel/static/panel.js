@@ -67,7 +67,11 @@ const hideFailed = () => { const c = document.getElementById("hide-failed"); ret
 function layoutFleet() {
   const query = $("#bot-search").value.trim().toLowerCase();
   const sort = $("#bot-sort").value;
-  const filtered = fleet.filter(b => matchesFilter(b, fleetFilter) && !(hideFailed() && b.failed) && [b.name,b.bot_name,b.strategy,b.port,b.description].join(" ").toLowerCase().includes(query));
+  const matching = fleet.filter(b => matchesFilter(b, fleetFilter) && [b.name,b.bot_name,b.strategy,b.port,b.description].join(" ").toLowerCase().includes(query));
+  const rejectedCount = matching.filter(b => b.failed).length;
+  const filtered = matching.filter(b => !(hideFailed() && b.failed));
+  setText($("#rejected-count"), String(rejectedCount));
+  $(".rejected-filter").title = `当前筛选范围内 ${rejectedCount} 个落选机器人 · 仅影响列表显示`;
   const priority = b => isAttention(b) ? 0 : b.pid ? 1 : Number(b.open_trades) > 0 ? 2 : 3;
   filtered.sort((a,b) => sort === "name" ? String(a.bot_name || a.name).localeCompare(String(b.bot_name || b.name)) : sort === "pnl" ? (b.profit_all ?? -Infinity) - (a.profit_all ?? -Infinity) || a.name.localeCompare(b.name) : priority(a)-priority(b) || a.name.localeCompare(b.name));
   const visible = new Set(filtered.map(b=>b.name));
@@ -110,7 +114,7 @@ function build(b, i) {
       <div class="id">
         <div class="name"><span class="led"></span>${esc(b.bot_name)}</div>
         <div class="strat" title="${esc(b.strategy)}">:${b.port} · ${esc(b.strategy)}</div>
-        ${b.strategy_created ? `<div class="stratdate" title="策略文件产生日期">📅${esc(b.strategy_created)}</div>` : ""}
+        ${b.strategy_created ? `<div class="stratdate" title="策略文件产生日期"><svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2m-8 3h2"/></svg><span>${esc(b.strategy_created)}</span></div>` : ""}
         <div class="desc">${esc(b.description)}</div>
         <div class="desc strategy-note" hidden></div>
         <div class="liqmsg" hidden></div>
@@ -335,14 +339,50 @@ function renderResearchTask(l) {
   return `<div class="research-task" aria-label="正在执行的任务"><div class="task-heading"><strong>${esc(phases[task.phase] || "运行中，等待阶段上报")}</strong><span>本阶段 ${esc(elapsed)}</span></div><p>${task.item ? `候选 <b>${esc(task.item)}</b>` : ""}${task.strategy ? ` · ${esc(task.strategy)}` : ""}</p>${range ? `<p>窗口 ${windowIndex >= 0 ? windowIndex+1 : "—"} / 4 · ${esc(range)}</p>` : ""}${params ? `<details><summary>当前候选参数</summary><p>${esc(params)}</p></details>` : ""}<small>任务开始 ${esc(start)}</small></div>`;
 }
 function renderResearchLoop(l) {
-  const strategy = l.name === "strat_loop";
+  const strategy = !!l.hypothesis_supported;
   const status = { open: "持续研究", dead: "研究已终止", paused: "已暂停", done: "已完成" }[l.status] || l.status || "—";
   const state = l.error ? "状态异常" : l.active ? "执行中" : !l.enabled ? "任务停用" : l.scheduler_enabled === false ? "门控暂停" : "等待调度";
   const direction = l.hypothesis || (strategy ? "等待下一轮研究假设" : "围绕现有策略调整参数，通过回测筛选候选配置。");
   const stats = l.error ? `<p class="loop-error">${esc(l.error)}</p>` : `<div class="research-counts"><span><b>${esc(l.passed ?? 0)}</b> / ${esc(l.total ?? 0)} 通过</span><span><b>${esc(l.pending ?? 0)}</b> 待回测</span><span>第 <b>${esc(l.round ?? 1)}</b> 轮</span></div>`;
   const schedule = researchSwitch(l, "参与研究", l.enabled, l.enabled ? "stop" : "start", "启用后由统一门控分配并发");
   const hypothesis = l.hypothesis_supported ? researchSwitch(l, "参与假设", l.hyp_enabled, l.hyp_enabled ? "hyp_off" : "hyp_on", "关闭后继续验证已有候选，不再生成新策略") : "";
-  return `<article class="loop-card ${strategy ? "strategy-research" : "parameter-research"}" data-loop-card="${esc(l.name)}"><div class="loop-top"><div class="loop-title"><span class="research-kind">${strategy ? "策略探索" : "参数优化"}</span><h3>${esc(l.title)}</h3></div><span class="loop-state ${l.error ? "fault" : l.enabled ? "enabled" : ""}">${state}</span></div>${stats}${renderResearchTask(l)}<div class="research-direction"><span>${strategy ? "当前研究假设" : "研究方式"}</span><p>${esc(direction)}</p></div><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div><div class="research-controls">${schedule}${hypothesis}</div><details class="loop-details"><summary>运行记录 <span>${esc(l.name)}</span></summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p>${l.hypothesis ? `<p>${esc(l.hypothesis)}</p>` : ""}<p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
+  return `<article class="loop-card ${l.active ? "is-executing" : ""} ${strategy ? "strategy-research" : "parameter-research"}" data-loop-card="${esc(l.name)}"><div class="loop-top"><div class="loop-title"><span class="research-kind">${strategy ? "策略探索" : "参数优化"}</span><h4>${esc(l.title)}</h4></div><span class="loop-state ${l.error ? "fault" : l.active ? "executing" : l.enabled ? "enabled" : ""}">${state}</span></div>${stats}${renderResearchTask(l)}<div class="research-direction"><span>${strategy ? "当前研究假设" : "研究方式"}</span><p>${esc(direction)}</p></div><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div><div class="research-controls">${schedule}${hypothesis}</div><details class="loop-details"><summary>运行记录 <span>${esc(l.name)}</span></summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p>${l.hypothesis ? `<p>${esc(l.hypothesis)}</p>` : ""}<p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
+}
+function renderResearchGroups(loops) {
+  if (!loops.length) return '<div class="loops-notice">暂无研究循环</div>';
+  const groups = [
+    {id:"dip", title:"回调研究", note:"围绕回调买入，配合开展策略探索与参数优化", names:["aq_loop","strat_loop"]},
+    {id:"trend", title:"趋势研究", note:"独立探索趋势方向，配套研究循环即将接入", names:["t_loop"]},
+  ];
+  const assigned = new Set();
+  const sections = groups.map(group => {
+    const members = loops.filter(l => group.names.includes(l.name) || l.research_group === group.id);
+    members.forEach(l => assigned.add(l.name));
+    return {...group, members};
+  });
+  const remaining = loops.filter(l => !assigned.has(l.name));
+  if (remaining.length) sections.push({id:"other",title:"其他研究",note:"独立研究循环，共享统一门控",members:remaining});
+  return sections.filter(g => g.members.length).map((group,index) => {
+    const active = group.members.filter(l => l.active).length;
+    const pendingSlot = group.id === "trend" && group.members.length < 2;
+    const placeholder = pendingSlot ? `<div class="research-slot"><span class="slot-symbol" aria-hidden="true">+</span><span class="slot-label">配套研究</span><strong>待接入</strong><p>新循环将在这里与趋势跟踪组成一组</p></div>` : "";
+    return `<section class="research-group research-group-${group.id}${active ? " is-active" : ""}" data-research-group="${group.id}" aria-labelledby="research-group-${group.id}"><header class="research-group-header"><span class="research-group-index" aria-hidden="true">${String(index+1).padStart(2,"0")}</span><div class="research-group-heading"><h3 id="research-group-${group.id}">${esc(group.title)}</h3><p>${esc(group.id === "trend" && !pendingSlot ? "围绕趋势方向，配合开展独立研究" : group.note)}</p></div><div class="research-group-status"><span>${group.members.length} 个循环</span><strong class="${active ? "has-active" : ""}">${active ? `<span class="activity-bars" aria-hidden="true"><i></i><i></i><i></i></span>${active} 个循环执行中` : "暂无执行任务"}</strong></div></header><div class="research-group-cards">${group.members.map(renderResearchLoop).join("")}${placeholder}</div></section>`;
+  }).join("");
+}
+let gateAppliedLimit = null, gateSaving = false, gateApplyError = "";
+function renderGateApply() {
+  const root = $("#research-gate");
+  const select = root.querySelector("select"), button = root.querySelector("#gate-apply");
+  const ready = gateAppliedLimit !== null;
+  const dirty = ready && Number(select.value) !== gateAppliedLimit;
+  const state = gateSaving ? "saving" : gateApplyError ? "error" : dirty ? "pending" : "applied";
+  button.dataset.state = state;
+  button.disabled = !ready || gateSaving || !dirty;
+  button.setAttribute("aria-busy", String(gateSaving));
+  select.disabled = !ready || gateSaving;
+  setText(button.querySelector(".gate-apply-label"), !ready ? "读取中" : gateSaving ? "应用中" : dirty ? "应用设置" : "已生效");
+  setText($("#gate-apply-note"), gateApplyError || (!ready ? "" : dirty ? `${gateAppliedLimit} → ${select.value} 个并行` : `当前 ${gateAppliedLimit} 个并行`));
+  $("#gate-apply-note").classList.toggle("error", !!gateApplyError);
 }
 async function refreshResearchGate() {
   const root = $("#research-gate");
@@ -357,9 +397,12 @@ async function refreshResearchGate() {
     button.disabled = false;
     setText(root.querySelector(".gate-state"), g.enabled ? "接收新任务" : "暂停接收新任务");
     const select = root.querySelector("select");
-    if (document.activeElement !== select) select.value = String(g.max_concurrent);
-    const applyBtn = root.querySelector("#gate-apply");
-    if (applyBtn && document.activeElement !== select) { applyBtn.disabled = true; delete applyBtn.dataset.value; }
+    if (!gateSaving) {
+      const dirty = gateAppliedLimit !== null && Number(select.value) !== gateAppliedLimit;
+      gateAppliedLimit = Number(g.max_concurrent);
+      if (!dirty) select.value = String(g.max_concurrent);
+    }
+    renderGateApply();
     setText(root.querySelector(".gate-capacity"), `${g.active.length} / ${g.max_concurrent} 执行中`);
     setText(root.querySelector(".gate-active"), g.active.length ? "当前任务：" + g.active.map(a => a.name).join("、") : "当前没有任务执行");
   } catch (e) { setText(root.querySelector(".gate-state"), "门控状态读取失败"); }
@@ -380,20 +423,21 @@ if (gateRoot) {
     finally { button.disabled = false; }
   });
   gateRoot.querySelector("select").addEventListener("change", e => {
-    const apply = gateRoot.querySelector("#gate-apply");
-    apply.disabled = false;
-    apply.dataset.value = e.target.value;
-    setText(root.querySelector(".gate-state"), `待确认：并行 ${e.target.value}（点确认生效）`);
+    gateApplyError = "";
+    renderGateApply();
   });
   gateRoot.querySelector("#gate-apply").addEventListener("click", async e => {
     const apply = e.target.closest("#gate-apply");
-    const v = Number(apply.dataset.value || gateRoot.querySelector("select").value);
-    apply.disabled = true;
+    if (apply.disabled || gateSaving) return;
+    const v = Number(gateRoot.querySelector("select").value);
+    gateSaving = true;
+    gateApplyError = "";
+    renderGateApply();
     try {
       await updateResearchGate({ max_concurrent: v });
-      await refreshResearchGate();
-      alert(`并发上限已确认为 ${v}，即刻生效`);
-    } catch (error) { alert(`并发设置未完成：${error.message}`); await refreshResearchGate(); }
+      gateAppliedLimit = v;
+    } catch (error) { gateApplyError = `未能确认生效，请重试（${error.message}）`; }
+    finally { gateSaving = false; renderGateApply(); }
   });
 }
 async function refreshLoops() {
@@ -404,7 +448,7 @@ async function refreshLoops() {
   try { const r = await fetch("/api/loops"); if (!r.ok) throw 0; loops = await r.json(); }
   catch (e) { setText($("#loops-updated"), "连接失败 · 状态可能已过期"); return; }
   const expanded = new Set([...list.querySelectorAll(".loop-card")].filter(c => c.querySelector("details")?.open).map(c => c.dataset.loopCard));
-  list.innerHTML = loops.map(renderResearchLoop).join("") || '<div class="loops-notice">暂无研究循环</div>';
+  list.innerHTML = renderResearchGroups(loops);
   list.querySelectorAll(".loop-card").forEach(c => { if (expanded.has(c.dataset.loopCard)) c.querySelector("details").open = true; });
   setText($("#loops-updated"), "更新于 " + new Date().toLocaleTimeString("zh-CN", { hour12: false }));
 }
