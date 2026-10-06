@@ -357,6 +357,8 @@ async function refreshResearchGate() {
     setText(root.querySelector(".gate-state"), g.enabled ? "接收新任务" : "暂停接收新任务");
     const select = root.querySelector("select");
     if (document.activeElement !== select) select.value = String(g.max_concurrent);
+    const applyBtn = root.querySelector("#gate-apply");
+    if (applyBtn && document.activeElement !== select) { applyBtn.disabled = true; delete applyBtn.dataset.value; }
     setText(root.querySelector(".gate-capacity"), `${g.active.length} / ${g.max_concurrent} 执行中`);
     setText(root.querySelector(".gate-active"), g.active.length ? "当前任务：" + g.active.map(a => a.name).join("、") : "当前没有任务执行");
   } catch (e) { setText(root.querySelector(".gate-state"), "门控状态读取失败"); }
@@ -376,11 +378,21 @@ if (gateRoot) {
     catch (e) { alert(`门控操作未完成：${e.message}`); }
     finally { button.disabled = false; }
   });
-  gateRoot.querySelector("select").addEventListener("change", async e => {
-    e.target.disabled = true;
-    try { await updateResearchGate({max_concurrent:Number(e.target.value)}); }
-    catch (error) { alert(`并发设置未完成：${error.message}`); await refreshResearchGate(); }
-    finally { e.target.disabled = false; }
+  gateRoot.querySelector("select").addEventListener("change", e => {
+    const apply = gateRoot.querySelector("#gate-apply");
+    apply.disabled = false;
+    apply.dataset.value = e.target.value;
+    setText(root.querySelector(".gate-state"), `待确认：并行 ${e.target.value}（点确认生效）`);
+  });
+  gateRoot.querySelector("#gate-apply").addEventListener("click", async e => {
+    const apply = e.target.closest("#gate-apply");
+    const v = Number(apply.dataset.value || gateRoot.querySelector("select").value);
+    apply.disabled = true;
+    try {
+      await updateResearchGate({ max_concurrent: v });
+      await refreshResearchGate();
+      alert(`并发上限已确认为 ${v}，即刻生效`);
+    } catch (error) { alert(`并发设置未完成：${error.message}`); await refreshResearchGate(); }
   });
 }
 async function refreshLoops() {
