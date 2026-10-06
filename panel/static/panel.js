@@ -93,7 +93,9 @@ function expandBot(name) {
   store.set("panel-open", JSON.stringify([...openLogs]));
 }
 function selectView(view) {
-  for (const [key,id] of [["bots","bot-workspace"],["research","verdicts"]]) $("#"+id).hidden = key !== view;
+  const views = { home: ["strip", "resource", "loops"], bots: ["bot-workspace"], research: ["verdicts"] };
+  const show = views[view] || views.home;
+  for (const [key, ids] of Object.entries(views)) ids.forEach(id => { const el = document.getElementById(id); if (el) el.hidden = !show.includes(id); });
   document.querySelectorAll("[data-view]").forEach(btn=>{ const active=btn.dataset.view===view; setClass(btn,"active",active); btn.setAttribute("aria-pressed",String(active)); });
 }
 
@@ -194,15 +196,13 @@ function update(el, b) {
   setTick(f("open"), has ? b.open_trades : "–");
   setText(f("max"), has && b.max_trades != null ? `/ ${b.max_trades}` : "");
   setText(f("closed"), has ? `已平仓 ${b.closed_trades}` : "");
-  // running bot: one total (realised + unrealised). Stopped bot: realised (fixed) and unrealised (moves with price) apart.
-  const split = !up && b.offline;
-  const unreal = split ? (b.profit_all || 0) - (b.profit_closed || 0) : 0;
-  setText(f("pnl-lbl"), split ? "已实现 USDT（固定）" : "总盈亏 USDT");
+  // Stopped totals include realised history only; residual positions are not revalued.
+  const split = b.valuation_mode === "realized_only";
+  setText(f("pnl-lbl"), b.historical_stop_reconstruction && split ? "总盈亏 USDT（历史补算）" : split ? "已实现 USDT（固定）" : "总盈亏 USDT");
   const shown = split ? b.profit_closed : b.profit_all;
   setTick(f("pnl"), has ? num(shown) : "–"); setTone(f("pnl").parentElement, has ? shown : 0);
   setText(f("win"), has ? `${up ? "含浮动" : "已平仓"}${b.closed_trades ? ` · 胜率 ${(b.winrate * 100).toFixed(0)}%` : ""}` : "");
-  const ur = f("unreal"); ur.hidden = !(split && b.open_trades);
-  if (!ur.hidden) { setTick(f("unreal-v"), num(unreal)); setTone(f("unreal-v"), unreal); }
+  const ur = f("unreal"); ur.hidden = true;
   const week = (b.daily || []).slice(-7).reduce((s, d) => s + d.abs, 0);
   setTick(f("week"), has ? num(week) : "–"); setTone(f("week").parentElement, has ? week : 0);
 
@@ -303,8 +303,7 @@ async function refresh() {
 
 /* ---------- 24h loops card ---------- */
 async function loopAct(name, action) {
-  const isHyp = action.indexOf("hyp_") === 0;
-  if ((action === "stop" || action === "hyp_off") && !confirm(isHyp ? `关假设？不再发明新策略，存量回测照跑。` : `暂停 ${name}？进行中的回测跑完当前窗口后停，队列保留。`)) return;
+  if (action === "stop" && !confirm(`暂停 ${name}？进行中的回测跑完当前窗口后停，队列保留。`)) return;
   try {
     const r = await fetch(`/api/loops/${encodeURIComponent(name)}/${action}`, { method: "POST" });
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -319,24 +318,81 @@ if (loopsList) loopsList.addEventListener("click", async e => {
   try { await loopAct(button.dataset.loopName, button.dataset.loopAction); }
   finally { button.disabled = false; }
 });
+function researchSwitch(l, label, enabled, action, note) {
+  return `<div class="research-control"><div><strong>${esc(label)}</strong><small>${esc(note)}</small></div><button type="button" class="hypothesis-switch" role="switch" aria-checked="${enabled ? "true" : "false"}" aria-label="${esc(l.title)}：${esc(label)}" data-loop-name="${esc(l.name)}" data-loop-action="${action}"><span class="switch-track" aria-hidden="true"><i></i></span><span>${enabled ? "开启" : "关闭"}</span></button></div>`;
+}
+function renderResearchTask(l) {
+  if (!l.active) return "";
+  const task = l.current_task || {};
+  const phases = {starting:"准备执行",preparing:"准备候选",advising:"生成参数建议",hypothesizing:"生成研究假设",proposing:"生成策略代码",validating:"校验策略代码",backtesting:"执行回测",evaluating:"评估回测结果",rollover:"研究轮次切换"};
+  const windows = ["20210101-20211231","20220101-20221231","20230101-20251231","20210101-20251231"];
+  const windowIndex = windows.indexOf(task.window);
+  const start = l.task_started_at ? new Date(l.task_started_at*1000).toLocaleTimeString("zh-CN",{hour12:false}) : "—";
+  const elapsed = task.phase_started_at ? dur(Math.max(0,Date.now()/1000-task.phase_started_at)) : "—";
+  const range = task.window ? task.window.split("-").map(d => `${d.slice(0,4)}-${d.slice(4,6)}-${d.slice(6,8)}`).join(" → ") : "";
+  const params = task.parameters ? Object.entries(task.parameters).map(([k,v]) => `${k}=${JSON.stringify(v)}`).join(" · ") : "";
+  return `<div class="research-task" aria-label="正在执行的任务"><div class="task-heading"><strong>${esc(phases[task.phase] || "运行中，等待阶段上报")}</strong><span>本阶段 ${esc(elapsed)}</span></div><p>${task.item ? `候选 <b>${esc(task.item)}</b>` : ""}${task.strategy ? ` · ${esc(task.strategy)}` : ""}</p>${range ? `<p>窗口 ${windowIndex >= 0 ? windowIndex+1 : "—"} / 4 · ${esc(range)}</p>` : ""}${params ? `<details><summary>当前候选参数</summary><p>${esc(params)}</p></details>` : ""}<small>任务开始 ${esc(start)}</small></div>`;
+}
+function renderResearchLoop(l) {
+  const strategy = l.name === "strat_loop";
+  const status = { open: "持续研究", dead: "研究已终止", paused: "已暂停", done: "已完成" }[l.status] || l.status || "—";
+  const state = l.error ? "状态异常" : l.active ? "执行中" : !l.enabled ? "任务停用" : l.scheduler_enabled === false ? "门控暂停" : "等待调度";
+  const direction = l.hypothesis || (strategy ? "等待下一轮研究假设" : "围绕现有策略调整参数，通过回测筛选候选配置。");
+  const stats = l.error ? `<p class="loop-error">${esc(l.error)}</p>` : `<div class="research-counts"><span><b>${esc(l.passed ?? 0)}</b> / ${esc(l.total ?? 0)} 通过</span><span><b>${esc(l.pending ?? 0)}</b> 待回测</span><span>第 <b>${esc(l.round ?? 1)}</b> 轮</span></div>`;
+  const schedule = researchSwitch(l, "参与研究", l.enabled, l.enabled ? "stop" : "start", "启用后由统一门控分配并发");
+  const hypothesis = l.hypothesis_supported ? researchSwitch(l, "参与假设", l.hyp_enabled, l.hyp_enabled ? "hyp_off" : "hyp_on", "关闭后继续验证已有候选，不再生成新策略") : "";
+  return `<article class="loop-card ${strategy ? "strategy-research" : "parameter-research"}" data-loop-card="${esc(l.name)}"><div class="loop-top"><div class="loop-title"><span class="research-kind">${strategy ? "策略探索" : "参数优化"}</span><h3>${esc(l.title)}</h3></div><span class="loop-state ${l.error ? "fault" : l.enabled ? "enabled" : ""}">${state}</span></div>${stats}${renderResearchTask(l)}<div class="research-direction"><span>${strategy ? "当前研究假设" : "研究方式"}</span><p>${esc(direction)}</p></div><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div><div class="research-controls">${schedule}${hypothesis}</div><details class="loop-details"><summary>运行记录 <span>${esc(l.name)}</span></summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p>${l.hypothesis ? `<p>${esc(l.hypothesis)}</p>` : ""}<p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
+}
+async function refreshResearchGate() {
+  const root = $("#research-gate");
+  if (!root) return;
+  try {
+    const r = await fetch("/api/research-scheduler");
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    const g = await r.json();
+    const button = root.querySelector("[role=switch]");
+    button.setAttribute("aria-checked", String(g.enabled));
+    button.dataset.enabled = String(g.enabled);
+    button.disabled = false;
+    setText(root.querySelector(".gate-state"), g.enabled ? "接收新任务" : "暂停接收新任务");
+    const select = root.querySelector("select");
+    if (document.activeElement !== select) select.value = String(g.max_concurrent);
+    setText(root.querySelector(".gate-capacity"), `${g.active.length} / ${g.max_concurrent} 执行中`);
+    setText(root.querySelector(".gate-active"), g.active.length ? "当前任务：" + g.active.map(a => a.name).join("、") : "当前没有任务执行");
+  } catch (e) { setText(root.querySelector(".gate-state"), "门控状态读取失败"); }
+}
+async function updateResearchGate(payload) {
+  const r = await fetch("/api/research-scheduler", { method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(payload) });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  await refreshLoops();
+}
+const gateRoot = $("#research-gate");
+if (gateRoot) {
+  gateRoot.addEventListener("click", async e => {
+    const button = e.target.closest("button[role=switch]");
+    if (!button || button.disabled) return;
+    button.disabled = true;
+    try { await updateResearchGate({enabled:button.dataset.enabled !== "true"}); }
+    catch (e) { alert(`门控操作未完成：${e.message}`); }
+    finally { button.disabled = false; }
+  });
+  gateRoot.querySelector("select").addEventListener("change", async e => {
+    e.target.disabled = true;
+    try { await updateResearchGate({max_concurrent:Number(e.target.value)}); }
+    catch (error) { alert(`并发设置未完成：${error.message}`); await refreshResearchGate(); }
+    finally { e.target.disabled = false; }
+  });
+}
 async function refreshLoops() {
   const list = $("#loops-list");
   if (!list) return;
+  await refreshResearchGate();
   let loops;
   try { const r = await fetch("/api/loops"); if (!r.ok) throw 0; loops = await r.json(); }
   catch (e) { setText($("#loops-updated"), "连接失败 · 状态可能已过期"); return; }
-  list.innerHTML = loops.map(l => {
-    const state = l.enabled ? "调度已开启" : "调度已暂停";
-    const action = l.enabled ? "stop" : "start";
-    const status = { open: "持续研究", dead: "研究已终止", paused: "已暂停", done: "已完成" }[l.status] || l.status || "—";
-    const stats = l.error ? `<p class="loop-error">${esc(l.error)}</p>` : `<div class="loop-stats"><div class="loop-stat"><span>通过筛选</span><b>${esc(l.passed ?? 0)} <small>/ ${esc(l.total ?? 0)}</small></b></div><div class="loop-stat"><span>待跑候选</span><b>${esc(l.pending ?? 0)}</b></div><div class="loop-stat"><span>研究轮次</span><b>${esc(l.round ?? 1)}</b></div></div>`;
-    const hypBtn = (l.name === "strat_loop")
-      ? (l.hyp_enabled
-        ? `<button class="btn warn" data-loop-name="${esc(l.name)}" data-loop-action="hyp_off" aria-label="关闭假设">关假设</button>`
-        : `<button class="btn solid" data-loop-name="${esc(l.name)}" data-loop-action="hyp_on" aria-label="开启假设">开假设</button>`)
-      : "";
-    return `<article class="loop-card"><div class="loop-top"><div class="loop-title">${esc(l.title)}<small>${esc(l.name)}</small></div><span class="loop-state ${l.enabled ? "enabled" : ""}">${state}</span></div>${stats}<div class="loop-footer"><div class="loop-candidate"><span>当前选中候选</span><strong>${esc(l.champion || "尚未选出")}</strong></div>${hypBtn}<button class="btn ${l.enabled ? "warn" : "solid"}" data-loop-name="${esc(l.name)}" data-loop-action="${action}" aria-label="${esc(l.title)}：${l.enabled ? "暂停调度" : "开启调度"}">${l.enabled ? "暂停调度" : "开启调度"}</button></div><details class="loop-details"><summary>研究详情与最近记录</summary><p>队列状态：${esc(status)} · 补充候选 ${esc(l.refills ?? 0)} 次</p>${l.hypothesis ? `<p>本轮研究假设：${esc(l.hypothesis)}</p>` : ""}<p>${esc(l.last || "暂无运行记录")}</p></details></article>`;
-  }).join("") || '<div class="loops-notice">暂无研究循环</div>';
+  const expanded = new Set([...list.querySelectorAll(".loop-card")].filter(c => c.querySelector("details")?.open).map(c => c.dataset.loopCard));
+  list.innerHTML = loops.map(renderResearchLoop).join("") || '<div class="loops-notice">暂无研究循环</div>';
+  list.querySelectorAll(".loop-card").forEach(c => { if (expanded.has(c.dataset.loopCard)) c.querySelector("details").open = true; });
   setText($("#loops-updated"), "更新于 " + new Date().toLocaleTimeString("zh-CN", { hour12: false }));
 }
 async function refreshNet() {
