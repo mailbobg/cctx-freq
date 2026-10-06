@@ -958,7 +958,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
     </div><a class="btn solid freq-entry" href="http://127.0.0.1:8089/" target="_blank" rel="noopener noreferrer">打开 FreqUI ↗</a></div>
   </header>
 
-  <section class="strip" id="strip">
+  <section class="strip" id="strip" hidden>
     <div class="cell"><div class="lbl">运行中</div><div class="val" id="s-run"><span class="tk"></span><small></small></div></div>
     <div class="cell"><div class="lbl">持仓</div><div class="val" id="s-open"><span class="tk"></span></div></div>
     <div class="cell"><div class="lbl">总盈亏 USDT</div><div class="val" id="s-pnl"><span class="tk"></span></div></div>
@@ -971,7 +971,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible 
   </section>
 
 
-<section class="resource-panel" id="resource" aria-label="服务器资源监控">
+<section class="resource-panel" id="resource" aria-label="服务器资源监控" hidden>
   <div class="resource-head"><span>服务器资源 <small>宿主机 · 数据盘</small></span><span id="resource-updated" aria-live="polite">正在采样…</span></div>
   <div class="resource-grid">
     <div class="resource-item"><div class="resource-label">CPU <span id="r-cores">—</span></div><strong id="r-cpu">—</strong><div class="resource-meter"><i id="r-cpu-bar"></i></div><small id="r-load">负载 —</small></div>
