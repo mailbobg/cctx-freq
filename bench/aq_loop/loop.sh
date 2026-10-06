@@ -4,8 +4,17 @@
 # One tick ~= 10-20 min on the Vultr box. Cron every 30 min with a lock.
 # Manual: ssh server -> /opt/ccxt/user_data/bench/aq_loop/loop.sh
 set -u
-UD=/opt/ccxt/user_data
+UD=${RESEARCH_USER_DATA:-/opt/ccxt/user_data}
 LOOP=$UD/bench/aq_loop
+# All cron and manual entries acquire the shared gate before running this worker.
+GATE="$UD/bench/research_scheduler/scheduler.py"
+if [[ "${RESEARCH_GATE_LEASE:-}" != "aq_loop" ]]; then
+  exec python3 "$GATE" --user-data "$UD" run aq_loop
+fi
+checkpoint() { python3 "$GATE" --user-data "$UD" checkpoint aq_loop; }
+progress() { python3 "$UD/bench/research_scheduler/progress.py" "$UD" aq_loop "$@" || true; }
+checkpoint || exit 0
+
 LOCK=/tmp/aq_loop.lock
 PY=python3
 
@@ -37,6 +46,8 @@ if [[ $ITEM == NONE ]]; then
   REFILLS=$($PY -c "import json; print(json.load(open('$LOOP/queue.json')).get('refills', 0))")
   if [[ $REFILLS -lt 5 ]]; then
     echo "$(date -u +%FT%TZ) queue drained, asking advisor (refill $((REFILLS+1))/5)"
+    checkpoint || exit 0
+    progress advising
     $PY $LOOP/advise.py $LOOP/queue.json >> $LOOP/cron.log 2>&1
     $PY -c "
 import json
@@ -55,6 +66,7 @@ json.dump(q, open(p, 'w'), indent=1)"
   exec "$0"
 fi
 echo "$(date -u +%FT%TZ) item $ITEM"
+progress preparing --item "$ITEM"
 
 # build a temp config = base + aq block
 $PY - "$LOOP/queue.json" $ITEM > $LOOP/cfg-$ITEM.json << 'EOF'
@@ -81,7 +93,11 @@ EOF
 STRAT=$($PY -c "import json; print(json.load(open('$LOOP/queue.json'))['strategy'])")
 PAIRS="BTC/USDT SOL/USDT AVAX/USDT"
 OK=1
-for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
+JOBS=2  # parallel backtest windows per item (each docker capped 1500m); raise only with RAM headroom
+run_win() {
+  local TR=$1
+  checkpoint || { echo "$ITEM $TR SKIP-gate"; echo "$TR" >> $LOOP/.fail-$ITEM; return 0; }
+  progress backtesting --item "$ITEM" --strategy "$STRAT" --window "$TR"
   timeout 1500 docker run --rm -m 1500m \
     -v /opt/ccxt/user_data:/freqtrade/user_data -w /freqtrade \
     ccxt-freqtrade:local backtesting \
@@ -89,9 +105,24 @@ for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-2025123
     -c /freqtrade/user_data/bench/aq_loop/cfg-$ITEM.json \
     --datadir /freqtrade/user_data/data_aq/binance \
     --strategy $STRAT --timeframe 1h --timerange $TR -p $PAIRS \
-    --backtest-directory /freqtrade/user_data/bench/aq_loop/results/$ITEM \
-    > $LOOP/log-$ITEM-$TR.log 2>&1
-  if [[ $? -ne 0 ]]; then echo "$ITEM $TR FAILED"; OK=0; break; fi
+    --backtest-directory /freqtrade/user_data/bench/aq_loop/results/$ITEM-$TR \
+    > $LOOP/log-$ITEM-$TR.log 2>&1 || echo "$TR" >> $LOOP/.fail-$ITEM
+}
+rm -f $LOOP/.fail-$ITEM
+for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
+  while [[ $(jobs -r | wc -l) -ge $JOBS ]]; do sleep 15; done
+  run_win $TR &
+done
+wait || true
+if [[ -f $LOOP/.fail-$ITEM ]]; then echo "$ITEM FAILED windows: $(tr '\n' ' ' < $LOOP/.fail-$ITEM)"; OK=0; fi
+rm -f $LOOP/.fail-$ITEM
+# collect in window order (touch keeps mtime order for evaluate's windowing)
+for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
+  for f in $LOOP/results/$ITEM-$TR-*.zip $LOOP/results/$ITEM-$TR-*.meta.json; do
+    [[ -e $f ]] || continue
+    mv "$f" $LOOP/results/$ITEM/
+    touch $LOOP/results/$ITEM/$(basename "$f")
+  done
 done
 
 TS=$(date -u +%FT%TZ)
@@ -101,8 +132,24 @@ if [[ $OK -eq 1 ]]; then
   mkdir -p $LOOP/results/$ITEM
   mv $LOOP/results/$ITEM-*.zip $LOOP/results/$ITEM/ 2>/dev/null
   mv $LOOP/results/$ITEM-*.meta.json $LOOP/results/$ITEM/ 2>/dev/null
+  progress evaluating --item "$ITEM" --strategy "$STRAT"
   EVAL=$($PY $LOOP/evaluate.py "$LOOP/results/$ITEM" $STRAT "$LOOP/queue.json" $ITEM)
   echo "EVAL: $EVAL"
+  if [[ -z $EVAL ]]; then
+    $PY - "$ITEM" << 'EOF'
+import json, sys
+p = '/opt/ccxt/user_data/bench/aq_loop/queue.json'
+q = json.load(open(p))
+for i in q["items"]:
+    if i["id"] == sys.argv[1]:
+        i["status"] = "failed"
+        i["error"] = "evaluate crashed (see cron.log), no metrics"
+json.dump(q, open(p, "w"), indent=1)
+EOF
+    echo "$TS $ITEM ERROR-eval"
+    rm -f $LOOP/cfg-$ITEM.json
+    exit 0
+  fi
   VERDICT=$(echo $EVAL | $PY -c "import json,sys; print(json.load(sys.stdin)['verdict'])")
   SHARPE=$(echo $EVAL | $PY -c "import json,sys; ms=json.load(sys.stdin)['metrics']; print(round(min(m['sharpe'] for m in ms.values()),3))")
   DD=$(echo $EVAL | $PY -c "import json,sys; ms=json.load(sys.stdin)['metrics']; print(round(max(m['dd'] for m in ms.values()),2))")

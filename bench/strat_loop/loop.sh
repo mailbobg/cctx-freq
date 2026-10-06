@@ -142,8 +142,10 @@ cfg = {
 print(json.dumps(cfg))
 EOF
 OK=1
-for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
-  checkpoint || { echo "gate paused: keeping pending item for retry"; exit 0; }
+JOBS=2  # parallel backtest windows per item (each docker capped 1500m); raise only with RAM headroom
+run_win() {
+  local TR=$1
+  checkpoint || { echo "$ITEM $TR SKIP-gate"; echo "$TR" >> $SLOOP/.fail-$ITEM; return 0; }
   progress backtesting --item "$ITEM" --strategy "$STRAT" --window "$TR"
   timeout 1500 docker run --rm -m 1500m \
     -v /opt/ccxt/user_data:/freqtrade/user_data -w /freqtrade \
@@ -152,9 +154,24 @@ for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-2025123
     -c /freqtrade/user_data/bench/strat_loop/cfg-$ITEM.json \
     --strategy $STRAT --timeframe 1h --timerange $TR -p $PAIRS \
     --datadir /freqtrade/user_data/data_aq/binance \
-    --backtest-directory /freqtrade/user_data/bench/strat_loop/results/$ITEM \
-    > $SLOOP/log-$ITEM-$TR.log 2>&1
-  if [[ $? -ne 0 ]]; then echo "$ITEM $TR FAILED"; OK=0; break; fi
+    --backtest-directory /freqtrade/user_data/bench/strat_loop/results/$ITEM-$TR \
+    > $SLOOP/log-$ITEM-$TR.log 2>&1 || echo "$TR" >> $SLOOP/.fail-$ITEM
+}
+rm -f $SLOOP/.fail-$ITEM
+for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
+  while [[ $(jobs -r | wc -l) -ge $JOBS ]]; do sleep 15; done
+  run_win $TR &
+done
+wait || true
+if [[ -f $SLOOP/.fail-$ITEM ]]; then echo "$ITEM FAILED windows: $(tr '\n' ' ' < $SLOOP/.fail-$ITEM)"; OK=0; fi
+rm -f $SLOOP/.fail-$ITEM
+# collect in window order (touch keeps mtime order for evaluate's windowing)
+for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
+  for f in $SLOOP/results/$ITEM-$TR-*.zip $SLOOP/results/$ITEM-$TR-*.meta.json; do
+    [[ -e $f ]] || continue
+    mv "$f" $SLOOP/results/$ITEM/
+    touch $SLOOP/results/$ITEM/$(basename "$f")
+  done
 done
 
 TS=$(date -u +%FT%TZ)
