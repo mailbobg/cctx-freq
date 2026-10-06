@@ -244,7 +244,7 @@ else
   ERR_TAIL=""
   if [[ -f $SLOOP/.fail-$ITEM ]]; then
     for W in $(tr '\n' ' ' < $SLOOP/.fail-$ITEM); do
-      LINE=$(grep -a -m1 -E "Error|ERROR" $SLOOP/log-$ITEM-$W.log 2>/dev/null | head -c 200 || true)
+      LINE=$(grep -a -m1 -E "Error|ERROR" $SLOOP/log-$ITEM-$W.log 2>/dev/null | sed -E 's/^[0-9-]+ [0-9:,]+ - [^ ]+ - //' | head -c 200 || true)
       ERR_TAIL="$ERR_TAIL [$W: ${LINE:-no error line}]"
     done
   fi
