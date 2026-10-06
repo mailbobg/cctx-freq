@@ -18,6 +18,9 @@ CLASS_RE = re.compile(r"^class\s+(\w+)\s*\(\s*IStrategy\s*\)", re.M)
 TIMEFRAME_RE = re.compile(r"""timeframe\s*=\s*["']1h["']""")
 STARTUP_RE = re.compile(r"startup_candle_count\s*=\s*(\d+)")
 INTERFACE_RE = re.compile(r"INTERFACE_VERSION\s*=\s*3")
+TRAIL_POS_RE = re.compile(r"trailing_stop_positive\s*=\s*([0-9.]+)")
+TRAIL_OFF_RE = re.compile(r"trailing_stop_positive_offset\s*=\s*([0-9.]+)")
+TRAIL_ON_RE = re.compile(r"trailing_stop\s*=\s*True")
 
 FORBIDDEN_RES = [
     (re.compile(r"^\s*(import|from)\s+\."), "relative import"),
@@ -70,6 +73,14 @@ def validate_file(path: str | Path, strict_naming: bool = True) -> tuple[bool, l
         reasons.append(f"startup_candle_count {m.group(1)} > 400")
     if "def populate_entry_trend" not in text:
         reasons.append("missing populate_entry_trend")
+    if TRAIL_ON_RE.search(text):
+        try:
+            pos = float(TRAIL_POS_RE.search(text).group(1))
+            off = float(TRAIL_OFF_RE.search(text).group(1))
+            if not off > pos:
+                reasons.append(f"trailing_stop_positive_offset {off} must be > trailing_stop_positive {pos}")
+        except (AttributeError, ValueError):
+            reasons.append("trailing stop params unreadable")
     if "def populate_indicators" not in text:
         reasons.append("missing populate_indicators")
     if "Parent:" not in text:

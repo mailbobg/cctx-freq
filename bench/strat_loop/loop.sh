@@ -6,9 +6,18 @@
 # Manual: ssh server -> /opt/ccxt/user_data/bench/strat_loop/loop.sh
 # NOTE: do NOT run together with aq_loop on the 2vCPU box (docker OOM).
 set -u
-UD=/opt/ccxt/user_data
+UD=${RESEARCH_USER_DATA:-/opt/ccxt/user_data}
 LOOP=$UD/bench/aq_loop
 SLOOP=$UD/bench/strat_loop
+# All cron and manual entries acquire the shared gate before running this worker.
+GATE="$UD/bench/research_scheduler/scheduler.py"
+if [[ "${RESEARCH_GATE_LEASE:-}" != "strat_loop" ]]; then
+  exec python3 "$GATE" --user-data "$UD" run strat_loop
+fi
+checkpoint() { python3 "$GATE" --user-data "$UD" checkpoint strat_loop; }
+progress() { python3 "$UD/bench/research_scheduler/progress.py" "$UD" strat_loop "$@" || true; }
+checkpoint || exit 0
+
 LOCK=/tmp/strat_loop.lock
 PY=python3
 MAX_REFILLS=5
@@ -54,19 +63,26 @@ if [[ $ITEM == NONE ]]; then
   REFILLS=$($PY -c "import json; print(json.load(open('$SLOOP/queue.json')).get('refills', 0))")
   CFAIL=$($PY -c "import json; print(json.load(open('$SLOOP/queue.json')).get('consecutive_fail', 0))")
   if [[ $CFAIL -ge $MAX_CONSEC_FAIL ]]; then
+    progress rollover
     $PY $SLOOP/rollover.py $SLOOP/queue.json "6-consec-fail" >> $SLOOP/cron.log 2>&1
     exec "$0"
   fi
   if [[ $REFILLS -lt $MAX_REFILLS ]]; then
-    # hypothesis switch (panel): no HYP file = stop inventing, keep backtesting queue
     if [[ ! -f $SLOOP/HYP ]]; then
-      echo "$(date -u +%FT%TZ) hypothesis paused (no HYP file, enable from panel); queue waits"
+      echo "$(date -u +%FT%TZ) hypothesis participation off; existing queue drained, waiting"
       exit 0
     fi
     echo "$(date -u +%FT%TZ) queue drained, researcher invents direction (refill $((REFILLS+1))/$MAX_REFILLS)"
-    $PY $SLOOP/hypothesize.py $SLOOP/queue.json >> $SLOOP/cron.log 2>&1
+    checkpoint || exit 0
+    progress hypothesizing
+    if ! $PY $SLOOP/hypothesize.py $SLOOP/queue.json >> $SLOOP/cron.log 2>&1; then
+      echo "hypothesis failed: no strategy generation this tick"
+      exit 1
+    fi
+    checkpoint || exit 0
     echo "$(date -u +%FT%TZ) queue drained, asking strategist (refill $((REFILLS+1))/$MAX_REFILLS)"
-    $PY $SLOOP/propose.py $SLOOP/queue.json >> $SLOOP/cron.log 2>&1
+    progress proposing
+    $PY $SLOOP/propose.py $SLOOP/queue.json >> $SLOOP/cron.log 2>&1 || exit 1
     $PY -c "
 import json
 p = '$SLOOP/queue.json'
@@ -75,15 +91,18 @@ json.dump(q, open(p, 'w'), indent=1)"
     exec "$0"
   fi
   echo "$(date -u +%FT%TZ) queue drained, refills exhausted -> rollover to round $(( $($PY -c "import json; print(json.load(open('$SLOOP/queue.json')).get('round',1))") + 1 ))"
+  progress rollover
   $PY $SLOOP/rollover.py $SLOOP/queue.json exhausted >> $SLOOP/cron.log 2>&1
   exec "$0"
 fi
 echo "$(date -u +%FT%TZ) item $ITEM"
+progress preparing --item "$ITEM"
 
 STRAT=$($PY -c "import json; q=json.load(open('$SLOOP/queue.json')); print(next(i for i in q['items'] if i['id']=='$ITEM')['strategy'])")
 SFILE="$UD/strategies/$STRAT.py"
 
 # static re-validate (file may have been hand-edited since proposal)
+progress validating --item "$ITEM" --strategy "$STRAT"
 if ! $PY $SLOOP/validate.py "$SFILE" >> $SLOOP/cron.log 2>&1; then
   $PY - "$ITEM" << 'EOF'
 import json, sys
@@ -124,6 +143,8 @@ print(json.dumps(cfg))
 EOF
 OK=1
 for TR in 20210101-20211231 20220101-20221231 20230101-20251231 20210101-20251231; do
+  checkpoint || { echo "gate paused: keeping pending item for retry"; exit 0; }
+  progress backtesting --item "$ITEM" --strategy "$STRAT" --window "$TR"
   timeout 1500 docker run --rm -m 1500m \
     -v /opt/ccxt/user_data:/freqtrade/user_data -w /freqtrade \
     ccxt-freqtrade:local backtesting \
@@ -142,10 +163,30 @@ if [[ $OK -eq 1 ]]; then
   mv $SLOOP/results/$ITEM-*.zip $SLOOP/results/$ITEM/ 2>/dev/null
   mv $SLOOP/results/$ITEM-*.meta.json $SLOOP/results/$ITEM/ 2>/dev/null
   set +e
+  progress evaluating --item "$ITEM" --strategy "$STRAT"
   EVAL=$($PY $LOOP/evaluate.py "$SLOOP/results/$ITEM" $STRAT "$SLOOP/queue.json" $ITEM)
   EVRC=$?
   set -e
   echo "EVAL: $EVAL"
+  if [[ -z $EVAL ]]; then
+    # evaluate itself crashed (e.g. no zips): record infra failure, never parse empty
+    $PY - "$ITEM" << 'EOF'
+import json, sys
+p = '/opt/ccxt/user_data/bench/strat_loop/queue.json'
+q = json.load(open(p))
+for i in q["items"]:
+    if i["id"] == sys.argv[1]:
+        i["status"] = "done-fail-error"
+        i["error"] = "evaluate crashed (see cron.log), no metrics"
+q["consecutive_fail"] = q.get("consecutive_fail", 0) + 1
+if q["consecutive_fail"] >= 6:
+    q["status"] = "dead"
+json.dump(q, open(p, "w"), indent=1)
+EOF
+    echo "$TS $ITEM ERROR-eval"
+    rm -f $SLOOP/cfg-$ITEM.json
+    exit 0
+  fi
   if [[ $EVRC -eq 0 ]]; then
     VERDICT=PASS
   else
