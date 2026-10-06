@@ -48,3 +48,7 @@ data_x14_*/
 data_f1/
 live-secrets.json
 data_aq/
+
+# Large research snapshots stay local (GitHub file-size limit).
+/bench/review_loop_20261004/r35_observed_data/BTCUSDT_1m.parquet
+/bench/review_loop_20261004/r35_observed_data/ETHUSDT_1m.parquet
