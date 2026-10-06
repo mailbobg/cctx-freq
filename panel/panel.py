@@ -99,6 +99,25 @@ def strategy_created(cfg: dict) -> str:
         return ""
 
 
+def failed_strategies() -> set:
+    """Strategy names that failed screening (any round, any loop) -> fold away."""
+    bad = set()
+    for loop in ("strat_loop", "t_loop"):
+        base = ROOT / "user_data" / "bench" / loop
+        for qf in [base / "queue.json", *sorted((base / "archive").glob("r*/queue.json"))]:
+            try:
+                q = json.loads(qf.read_text())
+            except Exception:
+                continue
+            for i in q.get("items", []):
+                if str(i.get("status", "")).startswith("done-fail"):
+                    if i.get("strategy"):
+                        bad.add(i["strategy"])
+                    if i.get("file"):
+                        bad.add(str(i["file"]).replace("-", ""))
+    return bad
+
+
 def bots() -> dict[str, dict]:
     meta = {}
     try:
@@ -132,6 +151,9 @@ def bots() -> dict[str, dict]:
             "historical_stop_reconstruction": cfg.get("historical_stop_reconstruction"),
         }
     order = list(meta)
+    failed = failed_strategies()
+    for b in out.values():
+        b["failed"] = b["strategy"] in failed
     return dict(sorted(out.items(), key=lambda kv: order.index(kv[0]) if kv[0] in order else 99))
 
 
@@ -407,7 +429,7 @@ def offline_stats(bot: dict, mark_live: bool = False) -> dict:
 def status(bot: dict) -> dict:
     st = load_state().get(bot["name"], {})
     p = find_process(bot)
-    out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description", "strategy_created", "family")}
+    out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description", "strategy_created", "family", "failed")}
     out["runtime"] = bot.get("runtime", "freqtrade")
     try:
         if bot.get("wait"):

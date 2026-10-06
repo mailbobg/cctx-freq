@@ -63,10 +63,11 @@ const units = new Map();
 let fleet = [], fleetFilter = "all", expandedBot = null;
 const isAttention = b => (b.want === "running" && !b.pid) || (b.pid && b.api !== "up") || (b.liq && !b.liq.done) || (b.liq && ["失败", "超时"].includes(b.liq.stage));
 const matchesFilter = (b, filter) => filter === "all" || (filter === "running" && !!b.pid) || (filter === "positions" && Number(b.open_trades) > 0) || (filter === "attention" && isAttention(b)) || (filter === "stopped" && !b.pid);
+const hideFailed = () => { const c = document.getElementById("hide-failed"); return !!c && c.checked; };
 function layoutFleet() {
   const query = $("#bot-search").value.trim().toLowerCase();
   const sort = $("#bot-sort").value;
-  const filtered = fleet.filter(b => matchesFilter(b, fleetFilter) && [b.name,b.bot_name,b.strategy,b.port,b.description].join(" ").toLowerCase().includes(query));
+  const filtered = fleet.filter(b => matchesFilter(b, fleetFilter) && !(hideFailed() && b.failed) && [b.name,b.bot_name,b.strategy,b.port,b.description].join(" ").toLowerCase().includes(query));
   const priority = b => isAttention(b) ? 0 : b.pid ? 1 : Number(b.open_trades) > 0 ? 2 : 3;
   filtered.sort((a,b) => sort === "name" ? String(a.bot_name || a.name).localeCompare(String(b.bot_name || b.name)) : sort === "pnl" ? (b.profit_all ?? -Infinity) - (a.profit_all ?? -Infinity) || a.name.localeCompare(b.name) : priority(a)-priority(b) || a.name.localeCompare(b.name));
   const visible = new Set(filtered.map(b=>b.name));
