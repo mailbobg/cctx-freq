@@ -241,14 +241,21 @@ with open('/opt/ccxt/user_data/bench/t_loop/results-trend.tsv', 'a') as f:
 EOF
   echo "$TS $ITEM $VERDICT"
 else
-  $PY - "$ITEM" << 'EOF'
+  ERR_TAIL=""
+  if [[ -f $SLOOP/.fail-$ITEM ]]; then
+    for W in $(tr '\n' ' ' < $SLOOP/.fail-$ITEM); do
+      LINE=$(grep -a -m1 -E "Error|ERROR" $SLOOP/log-$ITEM-$W.log 2>/dev/null | head -c 200 || true)
+      ERR_TAIL="$ERR_TAIL [$W: ${LINE:-no error line}]"
+    done
+  fi
+  $PY - "$ITEM" "$ERR_TAIL" << 'EOF'
 import json, sys
 p = '/opt/ccxt/user_data/bench/t_loop/queue.json'
 q = json.load(open(p))
 for i in q["items"]:
     if i["id"] == sys.argv[1]:
         i["status"] = "done-fail-error"
-        i["error"] = "backtest crash/timeout, see log-*.log"
+        i["error"] = ("backtest crash: " + (sys.argv[2] or "see log-*.log"))[:500]
 q["consecutive_fail"] = q.get("consecutive_fail", 0) + 1
 if q["consecutive_fail"] >= 6:
     q["status"] = "dead"
