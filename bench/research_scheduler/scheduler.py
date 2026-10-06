@@ -73,7 +73,7 @@ class Gate:
 
     def status(self):
         with self.guard():
-            return {**self.control(), 'active': self.active(), 'interval_seconds': 600,
+            return {**self.control(), 'active': self.active(), 'interval_seconds': 300,
                     'pause_policy': 'finish_current_window', 'registered': list(LOOPS)}
 
     def claim(self, name):
@@ -122,7 +122,7 @@ class Gate:
                 except (OSError, ValueError): last = 0
                 order.append((last, name))
             for last, name in sorted(order):
-                if not self.allowed(name) or time.time() - last < 600: continue
+                if not self.allowed(name) or time.time() - last < 300: continue
                 if any(r['name'] == name for r in self.active()): continue
                 logfile = self.ud / 'bench' / name / 'cron.log'
                 with logfile.open('ab') as log:
