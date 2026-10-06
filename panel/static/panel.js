@@ -102,7 +102,7 @@ function selectView(view) {
 
 function build(b, i) {
   const el = document.createElement("article");
-  el.className = "unit";
+  el.className = "unit" + (b.family === "trend" ? " trend" : "");
   el.style.animationDelay = `${i * 90}ms`;
   el.innerHTML = `
     <div class="row">
@@ -113,7 +113,7 @@ function build(b, i) {
         <div class="desc">${esc(b.description)}</div>
         <div class="desc strategy-note" hidden></div>
         <div class="liqmsg" hidden></div>
-        <div class="tags"><span class="tag state"></span><span class="tag mode" hidden></span><span class="tag up-t" hidden></span><span class="tag live rs" hidden></span></div>
+        <div class="tags"><span class="tag state"></span>${b.family === "trend" ? `<span class="tag fam">趋势</span>` : ""}<span class="tag mode" hidden></span><span class="tag up-t" hidden></span><span class="tag live rs" hidden></span></div>
       </div>
       <div class="metrics">
         <div class="metric"><div class="lbl">持仓</div><div class="val"><span class="tk" data-f="open"></span><small data-f="max"></small></div><div class="sub" data-f="closed"></div></div>

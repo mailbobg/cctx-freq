@@ -123,6 +123,7 @@ def bots() -> dict[str, dict]:
             "db_url": f"sqlite:///user_data/dev/tradesv3.{name}.sqlite" if PORT_OFFSET else cfg.get("db_url"),
             "max_trades": cfg.get("max_open_trades", _common().get("max_open_trades")),
             "description": meta.get(name, {}).get("description", ""),
+            "family": "trend" if str(cfg.get("strategy", "")).startswith("PiT1V1") else "dip",
             "strategy_created": strategy_created(cfg),
             "wait": meta.get(name, {}).get("wait"),
             "runtime": cfg.get("runtime", "freqtrade"),
@@ -406,7 +407,7 @@ def offline_stats(bot: dict, mark_live: bool = False) -> dict:
 def status(bot: dict) -> dict:
     st = load_state().get(bot["name"], {})
     p = find_process(bot)
-    out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description", "strategy_created")}
+    out = {k: bot[k] for k in ("name", "strategy", "bot_name", "port", "description", "strategy_created", "family")}
     out["runtime"] = bot.get("runtime", "freqtrade")
     try:
         if bot.get("wait"):
