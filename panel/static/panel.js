@@ -93,7 +93,7 @@ function expandBot(name) {
   store.set("panel-open", JSON.stringify([...openLogs]));
 }
 function selectView(view) {
-  const views = { home: ["loops"], bots: ["strip", "resource", "bot-workspace"], research: ["verdicts"] };
+  const views = { home: ["resource", "loops"], bots: ["strip", "bot-workspace"], research: ["verdicts"] };
   const show = views[view] || views.home;
   for (const [key, ids] of Object.entries(views)) ids.forEach(id => { const el = document.getElementById(id); if (el) el.hidden = !show.includes(id); });
   document.querySelectorAll("[data-view]").forEach(btn=>{ const active=btn.dataset.view===view; setClass(btn,"active",active); btn.setAttribute("aria-pressed",String(active)); });
