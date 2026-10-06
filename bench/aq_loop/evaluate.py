@@ -52,6 +52,9 @@ def main() -> None:
         if m["dd"] > 25:
             ok = False
             reasons.append(f"{w}: dd {m['dd']:.1f} > 25")
+        if m["trades"] < 10:
+            ok = False
+            reasons.append(f"{w}: only {m['trades']} trades (< 10, too quiet to trust/live)")
         base = baseline[w]["total"]
         if m["total"] > base:
             wins += 1

@@ -1,6 +1,6 @@
 """Autonomous researcher for strat_loop: the loop invents its own hypotheses.
 
-Runs at every refill BEFORE propose.py. Reviews full history (tried files,
+Runs at every refill BEFORE propose.py. Reviews current and four recent archived rounds (tried files,
 metrics, failure reasons, champion lineage, past explore briefs) and decides:
 
 - EXPLOIT: recent passes -> refine winners (fork champion, single clear change)
@@ -20,6 +20,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 sys.path.insert(0, str(Path(__file__).parent.parent / "aq_loop"))
 from llm import complete  # noqa: E402
+from research_control import generation_allowed  # noqa: E402
 
 SYSTEM = (
     "You are the research lead of an automated crypto strategy lab. "
@@ -29,11 +30,13 @@ SYSTEM = (
     '"why": "one line: what history justifies this"}. '
     "Doctrine (same rules the human operator uses): "
     "(1) Winter-2022 is the binding window: thin signals, any total<=0 there kills. "
-    "2024-26 is the volume window where gains come from. Judge by full+ winter + worst-dd together. "
+    "2023-2025 is the recovery window where gains come from. Judge by full+ winter + worst-dd together. "
     "(2) Clone detection: items with near-identical totals/trades are the same logic renamed; "
     "in explore mode demand a DIFFERENT trade-count regime or signal family, not a rename. "
     "(3) Risk-adjusted: prefer higher full-period total per unit of worst-dd; "
     "a +30% return for 2x dd is a bad trade. "
+    "(4) Frequency: dead-quiet strategies waste live slots; demand >=10 trades "
+    "in EVERY window and prefer >=0.5 trades/week in the volume window. "
     "In explore mode the brief MUST name a signal family/logic NOT in the tried "
     "list (different indicators, different entry thesis, or different regime "
     "handling). In exploit mode the brief refines the champion with one change. "
@@ -42,7 +45,7 @@ SYSTEM = (
 
 
 def tail_statuses(items: list, n: int = 4) -> list:
-    return [i.get("status", "") for i in items[-n:] if i.get("status") != "pending"]
+    return [i.get("status", "") for i in items if i.get("status") != "pending"][-n:]
 
 
 def build_prompt(q: dict, parent: str) -> str:
@@ -73,17 +76,24 @@ def build_prompt(q: dict, parent: str) -> str:
 def main() -> None:
     qpath = Path(sys.argv[1])
     q = json.loads(qpath.read_text())
+    if not generation_allowed(qpath):
+        raise SystemExit("research task or global gate disabled")
     tried = {i.get("file") for i in q["items"] if i.get("file")}
     prompt = build_prompt(q, q["parent"])
+    archives = sorted((qpath.parent / "archive").glob("r*/queue.json"), key=lambda p: int(p.parent.name[1:]))[-4:]
+    for path in archives:
+        archived = json.loads(path.read_text())
+        prompt += "\nARCHIVED ROUND:\n" + build_prompt(archived, archived["parent"])
     try:
-        raw = complete(prompt, system=SYSTEM, max_tokens=1500)
+        # Muse includes reasoning tokens in this budget; 1500 can end before JSON.
+        raw = complete(prompt, system=SYSTEM, max_tokens=8000)
     except Exception as e:
         print(f"hypothesize: LLM call failed: {e}")
-        return
+        raise SystemExit(1)
     start, end = raw.find("{"), raw.rfind("}")
     if start < 0 or end < 0:
         print(f"hypothesize: non-JSON reply, skipped ({raw[:120]!r})")
-        return
+        raise SystemExit(1)
     try:
         data = json.loads(raw[start:end + 1])
         mode = data.get("mode", "exploit")
@@ -92,8 +102,10 @@ def main() -> None:
         assert mode in ("explore", "exploit") and brief
     except Exception as e:
         print(f"hypothesize: bad shape ({e}), skipped")
-        return
-    out = {"mode": mode, "brief": brief, "why": why,
+        raise SystemExit(1)
+    if not generation_allowed(qpath):
+        raise SystemExit("research paused during generation; result discarded")
+    out = {"mode": mode, "brief": brief, "why": why, "round": q.get("round", 1), "parent": q["parent"],
            "refill": q.get("refills", 0) + 1, "tried": sorted(tried)}
     (qpath.parent / "explore.json").write_text(json.dumps(out, indent=1))
     q.setdefault("explore_log", []).append(
